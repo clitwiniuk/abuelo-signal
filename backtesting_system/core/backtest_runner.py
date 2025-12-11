@@ -65,7 +65,7 @@ class BacktestRunner:
         self.available_workers = {
             'macdv': 'CLAUDE.trading_system_v3.strategies.workers.macdv_worker_logic.MacdvWorkerLogic',
             'daily_plays': 'CLAUDE.trading_system_v3.strategies.workers.daily_plays_worker_logic.DailyPlaysWorkerLogic',
-            'vwap': 'CLAUDE.trading_system_v3.strategies.workers.vwap_worker_logic.VWAPWorkerLogic',
+            'mean_reversion_alcista': 'CLAUDE.trading_system_v3.strategies.workers.mean_reversion_alcista_worker_logic.MeanReversionAlcistaWorkerLogic',
             'momentum_breakout': 'CLAUDE.trading_system_v3.strategies.workers.momentum_breakout_worker_logic.MomentumBreakoutWorkerLogic',
             'vcp_smallcap': 'CLAUDE.trading_system_v3.strategies.workers.vcp_smallcap_worker_logic.VCPSmallcapWorkerLogic',
             'volume_absorption': 'CLAUDE.trading_system_v3.strategies.workers.volume_absorption_worker_logic.VolumeAbsorptionWorkerLogic',
