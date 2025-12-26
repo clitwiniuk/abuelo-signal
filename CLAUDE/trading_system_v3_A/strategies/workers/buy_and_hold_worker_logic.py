@@ -568,9 +568,12 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             
             # CRITICAL FIX: Use StopManager instead of manual logic
             # Pass position as metadata to support dynamic/restored parameters
+            entry_price = position.get('entry_price', 0)
+            
             return self.stop_manager.check_exit(
                 symbol=symbol,
                 current_price=current_price,
+                entry_price=entry_price,
                 position_metadata=position
             )
 
