@@ -445,9 +445,28 @@ class ExecutionEngineAdapter:
                     else:
                         self.logger.info(f"⏰ {strategy}: Extended hours detected - using ADAPTIVE LIMIT order @ ${limit_price:.2f} (raw: ${raw_limit_price:.4f}, tick-adjusted)")
                 else:
-                    order_type = OrderType.MARKET
-                    limit_price = current_price
-                    self.logger.debug(f"⏰ {strategy}: Regular hours - using MARKET order")
+                    # REGULAR HOURS - CHECK CONFIG FOR ORDER TYPE
+                    # Default is MARKET, but user can override to LIMIT in config.ini [EXECUTION]
+                    default_order_type = getattr(self.config, 'default_order_type', 'MARKET').upper()
+                    
+                    if default_order_type == 'LIMIT':
+                        order_type = OrderType.LIMIT
+                        # Get limit offset (default 0.5% if not set)
+                        # We use getattr with fallback because config might be flattened or not have the key
+                        limit_offset = float(getattr(self.config, 'limit_price_offset_pct', 0.005))
+                        
+                        # Calculate limit price (Current + Offset) to ensure fill (Marketable Limit)
+                        # For BUY orders, Limit Price > Current Price helps ensure fill while protecting against massive spikes
+                        raw_limit_price = current_price * (1 + limit_offset)
+                        
+                        # Apply tick rounding
+                        limit_price = self._round_to_ibkr_tick_size(raw_limit_price)
+                        
+                        self.logger.info(f"⏰ {strategy}: Regular hours - using LIMIT order @ ${limit_price:.2f} (offset {limit_offset*100:.1f}%)")
+                    else:
+                        order_type = OrderType.MARKET
+                        limit_price = current_price
+                        self.logger.debug(f"⏰ {strategy}: Regular hours - using MARKET order")
 
                 # Create order with appropriate type and TIF (Time In Force)
                 # 🛡️ PROTECTION: Use OVERNIGHT + DAY TIF for extended hours as suggested by user
@@ -612,32 +631,32 @@ class ExecutionEngineAdapter:
                 else:
                     initial_trade_data['signal_strength'] = initial_trade_data['confidence']
 
-                # CRITICAL FIX: Extract SL/TP/Trailing from opportunity_data for persistence
-                # This ensures restored positions have exit criteria
-                if 'stop_loss_pct' in opportunity_data:
+                # CRITICAL FIX: Save exit parameters to DB columns (persistence)
+                # Stop Loss & Take Profit
+                if opportunity_data.get('stop_loss_pct') is not None:
                     initial_trade_data['stop_loss_pct'] = float(opportunity_data['stop_loss_pct'])
-                if 'take_profit_pct' in opportunity_data:
+                if opportunity_data.get('take_profit_pct') is not None:
                     initial_trade_data['take_profit_pct'] = float(opportunity_data['take_profit_pct'])
                 
-                # Persistence for Trailing Stop
-                if 'trailing_activation_pct' in opportunity_data:
+                # Dynamic targets (prices)
+                if opportunity_data.get('stop_loss') is not None:
+                    initial_trade_data['stop_loss_price'] = float(opportunity_data['stop_loss'])
+                if opportunity_data.get('take_profit') is not None:
+                    initial_trade_data['take_profit_price'] = float(opportunity_data['take_profit'])
+
+                # Trailing Stop (Handle both naming conventions)
+                # Activation
+                if opportunity_data.get('trailing_activation_pct') is not None:
                     initial_trade_data['trailing_activation_pct'] = float(opportunity_data['trailing_activation_pct'])
-                elif 'trailing_activation' in opportunity_data:
+                elif opportunity_data.get('trailing_activation') is not None:
+                     # Some strategies might pass '0.08' as 'trailing_activation'
                     initial_trade_data['trailing_activation_pct'] = float(opportunity_data['trailing_activation'])
-                    
-                if 'trailing_distance_pct' in opportunity_data:
+                
+                # Distance
+                if opportunity_data.get('trailing_distance_pct') is not None:
                     initial_trade_data['trailing_distance_pct'] = float(opportunity_data['trailing_distance_pct'])
-                elif 'trailing_distance' in opportunity_data:
+                elif opportunity_data.get('trailing_distance') is not None:
                     initial_trade_data['trailing_distance_pct'] = float(opportunity_data['trailing_distance'])
-
-                # Persistence for Price Targets
-                if 'stop_loss_price' in opportunity_data:
-                    initial_trade_data['stop_loss_price'] = float(opportunity_data['stop_loss_price'])
-                elif 'calculated_stop_loss' in opportunity_data: # Backup key
-                    initial_trade_data['stop_loss_price'] = float(opportunity_data['calculated_stop_loss'])
-
-                if 'take_profit_price' in opportunity_data:
-                    initial_trade_data['take_profit_price'] = float(opportunity_data['take_profit_price'])
 
                 # Save trade BEFORE waiting for execution
                 self.db_manager.save_trade(initial_trade_data)
@@ -681,6 +700,14 @@ class ExecutionEngineAdapter:
                 if hasattr(self.broker, 'smart_position_cache') and self.broker.smart_position_cache:
                     self.broker.smart_position_cache.clear_cache()
                     self.logger.debug(f"🔄 {strategy}: Forced position cache clear for fresh data")
+
+                # PAPER MODE DETECTION: Skip IBKR position wait if in paper trading
+                is_paper_mode = (hasattr(self.broker, 'paper_trading_mode') and self.broker.paper_trading_mode) or \
+                                (hasattr(self.broker, 'is_paper_trading') and self.broker.is_paper_trading)
+                if is_paper_mode:
+                    self.logger.debug(f"📄 {strategy}: Paper trading mode detected - using simulated price")
+                    actual_fill_price = current_price  # Use simulated price directly
+                    max_wait_seconds = 0  # Skip wait loop
 
                 while elapsed < max_wait_seconds and not actual_fill_price:
                     await asyncio.sleep(poll_interval)
@@ -1612,13 +1639,13 @@ class ExecutionEngineAdapter:
                     'trade_id': trade_data.get('trade_id'),
                     'entry_time': trade_data.get('entry_time'),
                     'opportunity_data': {
-                        # Restore critical exit parameters
+                        # Restored exit parameters (from DB columns)
                         'stop_loss_pct': trade_data.get('stop_loss_pct'),
                         'take_profit_pct': trade_data.get('take_profit_pct'),
+                        'stop_loss': trade_data.get('stop_loss_price'),
+                        'take_profit': trade_data.get('take_profit_price'),
                         'trailing_activation_pct': trade_data.get('trailing_activation_pct'),
-                        'trailing_distance_pct': trade_data.get('trailing_distance_pct'),
-                        'stop_loss_price': trade_data.get('stop_loss_price'),
-                        'take_profit_price': trade_data.get('take_profit_price')
+                        'trailing_distance_pct': trade_data.get('trailing_distance_pct')
                     }
                 }
 
