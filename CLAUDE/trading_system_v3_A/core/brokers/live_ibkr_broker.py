@@ -7,18 +7,34 @@ from core.interfaces.broker_adapter import AbstractBroker, BrokerOrder, BrokerPo
 class LiveIBKRBroker(AbstractBroker):
     """
     Live IBKR Broker Adapter using ib_insync.
-    Wraps existing IB instance to conform to AbstractBroker.
+    Wraps existing IBKRAdapter to conform to AbstractBroker while exposing IBKR-specific features.
+
+    This adapter:
+    - Implements AbstractBroker interface for strategy engine compatibility
+    - Exposes IBKRAdapter attributes (batch_price_manager, smart_position_cache) for worker access
+    - Prevents subscription leaks by proper subscribe/unsubscribe management
     """
 
-    def __init__(self, ib_client: Any, account_id: str, logger: Optional[logging.Logger] = None):
+    def __init__(self, ib_client: Any, account_id: str, ibkr_adapter: Any = None, logger: Optional[logging.Logger] = None):
         """
         Args:
             ib_client: Configured and connected IB instance (ib_insync)
             account_id: Account ID (e.g. U1234567)
+            ibkr_adapter: Full IBKRAdapter instance (optional, for accessing batch_price_manager, etc.)
+            logger: Logger instance
         """
         self.ib = ib_client
         self.account_id = account_id
+        self._ibkr_adapter = ibkr_adapter
         self.logger = logger or logging.getLogger("LiveIBKRBroker")
+
+        # Expose IBKRAdapter attributes if available (for worker compatibility)
+        if ibkr_adapter:
+            self.batch_price_manager = getattr(ibkr_adapter, 'batch_price_manager', None)
+            self.smart_position_cache = getattr(ibkr_adapter, 'smart_position_cache', None)
+        else:
+            self.batch_price_manager = None
+            self.smart_position_cache = None
 
         # Cache for account summary to prevent subscription leaks
         self._account_summary_cache = {}
