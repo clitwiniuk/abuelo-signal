@@ -78,12 +78,17 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
         """
         try:
             now = datetime.now()
-            if (now - self.last_monitor_time).total_seconds() >= self.monitor_interval:
+            elapsed = (now - self.last_monitor_time).total_seconds()
+
+            if elapsed >= self.monitor_interval:
+                self.logger.debug(f"🔄 Periodic task triggered (elapsed: {elapsed:.1f}s, is_running: {self.is_running})")
                 if self.is_running: # Only monitor if worker is running
                     await self._monitor_watchlist()
+                else:
+                    self.logger.warning(f"⚠️ Worker not running, skipping watchlist monitor")
                 self.last_monitor_time = now
         except Exception as e:
-            self.logger.error(f"Error in periodic watchlist monitor: {e}")
+            self.logger.error(f"Error in periodic watchlist monitor: {e}", exc_info=True)
 
     async def _monitor_watchlist(self):
         """
@@ -100,11 +105,10 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
                 candidates = [dict(row) for row in cursor.fetchall()]
 
             if not candidates:
-                # Silent debug to avoid spam
-                # self.logger.debug("No active candidates to monitor.")
+                self.logger.debug("📭 No active candidates to monitor (WATCHING/TRIGGERED)")
                 return
 
-            self.logger.info(f"🧐 Monitoring {len(candidates)} proactive candidates...")
+            self.logger.info(f"🧐 Monitoring {len(candidates)} proactive candidates: {[c['symbol'] for c in candidates]}")
             
             # 2. Extract symbols
             symbols = [c['symbol'] for c in candidates]
@@ -369,8 +373,8 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
                 self.logger.debug(f"{symbol}: {status} confirmed for squeeze play.")
                 
         except Exception as e:
-            self.logger.warning(f"{symbol}: Error checking borrows: {e}")
-            return True
+            self.logger.warning(f"{symbol}: Error checking borrows: {e} - Continuing without borrow data")
+            # Continue evaluation even if borrow check fails (e.g., paper trading)
 
         # Get bars for detailed analysis
         # bars = self.get_bars_from_opportunity(opportunity) # ALREADY FETCHED ABOVE

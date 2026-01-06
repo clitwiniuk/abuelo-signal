@@ -37082,3 +37082,46 @@
 2026-01-06 21:46:01 - Worker.vcp_strict_long - INFO - 🔍 SIDU: Evaluating opportunity - gap=25.0%, vol=2.0x, catalyst=TECHNICAL, Q=99.0
 2026-01-06 21:46:01 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for SIDU: Current time 15.77 outside EXTENDED (Premarket) window [4.00 - 15.75]
 2026-01-06 21:46:01 - Worker.vcp_strict_long - INFO - ⏰ SIDU: Entry rejected - outside allowed entry hours (current: 15.77)
+2026-01-06 21:47:02 - Worker.vcp_strict_long - INFO - Worker logging initialized - vcp_strict_long -> logs/worker_vcp_strict_long.log
+2026-01-06 21:47:02 - Worker.vcp_strict_long - INFO - 🔧 Worker vcp_strict_long initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-06 21:47:02 - Worker.vcp_strict_long - INFO - 🎯 VCP STRICT LONG Worker configured: contractions>=2, slope>+0.10%
+2026-01-06 21:47:02 - Worker.vcp_strict_long - INFO - 🚀 Worker vcp_strict_long starting monitoring loop
+2026-01-06 21:50:02 - Worker.vcp_strict_long - INFO - 🔍 ABP: Evaluating opportunity - gap=15.7%, vol=0.0x, catalyst=FDA, Q=64.6
+2026-01-06 21:50:02 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for ABP: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:02 - Worker.vcp_strict_long - INFO - ⏰ ABP: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - 🔍 SIDU: Evaluating opportunity - gap=26.1%, vol=2.0x, catalyst=TECHNICAL, Q=88.7
+2026-01-06 21:50:07 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for SIDU: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - ⏰ SIDU: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - 🔍 IMSR: Evaluating opportunity - gap=29.0%, vol=2.0x, catalyst=CONTRACT, Q=88.0
+2026-01-06 21:50:07 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for IMSR: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - ⏰ IMSR: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - 🔍 AZI: Evaluating opportunity - gap=75.9%, vol=2.0x, catalyst=CONTRACT, Q=88.0
+2026-01-06 21:50:07 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for AZI: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - ⏰ AZI: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - 🔍 IBIO: Evaluating opportunity - gap=11.4%, vol=1.8x, catalyst=TECHNICAL, Q=86.9
+2026-01-06 21:50:07 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for IBIO: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - ⏰ IBIO: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - 🔍 BNAI: Evaluating opportunity - gap=27.6%, vol=1.6x, catalyst=TECHNICAL, Q=83.7
+2026-01-06 21:50:07 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for BNAI: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:07 - Worker.vcp_strict_long - INFO - ⏰ BNAI: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 21:50:08 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for MRNO: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - 🔍 SOPA: Evaluating opportunity - gap=27.1%, vol=0.7x, catalyst=TECHNICAL, Q=75.3
+2026-01-06 21:50:08 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for SOPA: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - 🔍 ABP: Evaluating opportunity - gap=15.7%, vol=0.0x, catalyst=FDA, Q=64.6
+2026-01-06 21:50:08 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for ABP: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - ⏰ ABP: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - 🔍 ZNTL: Evaluating opportunity - gap=35.1%, vol=0.9x, catalyst=OTHER, Q=68.5
+2026-01-06 21:50:08 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for ZNTL: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - ⏰ ZNTL: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.7%, vol=2.0x, catalyst=TECHNICAL, Q=65.3
+2026-01-06 21:50:08 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for TSDD: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:08 - Worker.vcp_strict_long - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:09 - Worker.vcp_strict_long - INFO - 🔍 SIDU: Evaluating opportunity - gap=26.1%, vol=2.0x, catalyst=TECHNICAL, Q=99.0
+2026-01-06 21:50:09 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for SIDU: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:09 - Worker.vcp_strict_long - INFO - ⏰ SIDU: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:50:09 - Worker.vcp_strict_long - INFO - 🔍 IBIO: Evaluating opportunity - gap=11.4%, vol=1.8x, catalyst=TECHNICAL, Q=99.0
+2026-01-06 21:50:09 - Worker.vcp_strict_long - WARNING - ⏰ Entry rejected for IBIO: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:50:09 - Worker.vcp_strict_long - INFO - ⏰ IBIO: Entry rejected - outside allowed entry hours (current: 15.83)
