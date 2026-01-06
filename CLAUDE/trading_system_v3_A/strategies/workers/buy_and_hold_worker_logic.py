@@ -1,28 +1,28 @@
 #!/usr/bin/env python3
 """
-Buy and Hold Worker - VWAP Momentum Strategy (SIMPLIFIED)
+Buy and Hold Worker - SHORT VWAP Momentum Strategy (INVERTED)
 
 Strategy:
-- Simple momentum strategy: Buy when price is above VWAP with positive trend
+- Simple SHORT momentum strategy: Sell when price is BELOW VWAP with negative trend
 - NO complex filters (no support detection, no resistance checks)
-- Trust scanner quality + VWAP confirmation = Entry
+- Trust scanner quality + VWAP confirmation = Entry SHORT
 - Hold with trailing stop to capture extended moves
 
 Entry Criteria (5 filters only):
 1. Trading window (9:30-16:00 ET)
 2. Price range ($1-$50)
 3. Quality score ≥ 70
-4. Price > VWAP (+0.5% minimum)
-5. VWAP slope > 0 (uptrend)
+4. Price < VWAP (-0.5% minimum) - INVERTED for SHORT
+5. VWAP slope < 0 (downtrend) - INVERTED for SHORT
 
 Philosophy:
-- "Buy strength above VWAP" - Simple and reproducible
+- "Sell weakness below VWAP" - Simple and reproducible
 - All indicators are visualizable (VWAP, slope, quality)
 - Easy to debug and understand
 - Let trailing stop capture runners
 
 Author: Trading System
-Date: 2025-12-30 (Simplified Version)
+Date: 2026-01-06 (SHORT Version - Inverted from LONG)
 """
 
 import logging
@@ -141,30 +141,31 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
         momentum_threshold = f"{self.roc_min_threshold:.2f}%" if self.use_roc else f"{self.min_vwap_slope:.5f}"
 
         self.logger.info(
-            f"🚀 Buy & Hold - VWAP Momentum Strategy\n"
+            f"🚀 Buy & Hold - SHORT VWAP Momentum Strategy (INVERTED)\n"
             f"   📊 Momentum Indicator: {momentum_indicator}\n"
-            f"   ✅ Filters: Window + Price Range + Quality + VWAP Position + {momentum_indicator}\n"
+            f"   ✅ Filters: Window + Price Range + Quality + VWAP Position (BELOW) + {momentum_indicator} (NEGATIVE)\n"
+            f"   🔻 DIRECTION: SHORT (Sell weakness below VWAP)\n"
             f"   Trading window: {self.trading_start_hour:.2f}h - {self.trading_end_hour:.2f}h ET\n"
             f"   Price range: ${self.min_price:.0f} - ${self.max_price:.0f}\n"
             f"   Quality threshold: {self.min_quality_score:.0f}\n"
-            f"   VWAP: +{self.min_price_above_vwap_pct:.1f}% min\n"
-            f"   {momentum_indicator}: >{momentum_threshold}{' ('+str(self.roc_period)+' bars)' if self.use_roc else ''}\n"
+            f"   VWAP: -{self.min_price_above_vwap_pct:.1f}% max (BELOW)\n"
+            f"   {momentum_indicator}: <-{momentum_threshold}{' ('+str(self.roc_period)+' bars)' if self.use_roc else ''}\n"
             f"   Max trades/symbol: {self.max_trades_per_symbol_per_day}\n"
             f"   Stops: SL=5%, TP=15%, Trailing=8%/3%, Max=24h"
         )
 
     async def should_enter(self, opportunity: Dict[str, Any]) -> bool:
         """
-        VWAP Momentum Strategy - Simplified Decision Tree
+        SHORT VWAP Momentum Strategy - Simplified Decision Tree (INVERTED)
 
         5 Filters (Sequential):
         1. Trading window (9:30-16:00 ET)
         2. Price range ($1-$50)
         3. Quality score ≥ 70
-        4. Price > VWAP (+0.5% minimum)
-        5. VWAP slope > 0 (uptrend)
+        4. Price < VWAP (-0.5% minimum) - INVERTED for SHORT
+        5. VWAP slope < 0 (downtrend) - INVERTED for SHORT
 
-        All filters must pass to ENTER
+        All filters must pass to ENTER SHORT
         """
         try:
             symbol = opportunity.get('symbol')
@@ -294,76 +295,77 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
 
             # NOTE: SL/TP will be added ONLY if entry is approved (after all filters pass)
 
-            # Check Filter 4: Price > VWAP (if VWAP is available)
-            if momentum.is_above_vwap is not None and not momentum.is_above_vwap:
+            # Check Filter 4: Price < VWAP (INVERTED for SHORT - if VWAP is available)
+            if momentum.is_above_vwap is not None and momentum.is_above_vwap:
                 self.logger.info(
-                    f"⚪ {symbol}: REJECTED - Price BELOW VWAP "
+                    f"⚪ {symbol}: REJECTED - Price ABOVE VWAP (need BELOW for SHORT) "
                     f"(${current_price:.2f} vs ${momentum.vwap:.2f})"
                 )
                 return False
 
-            if momentum.price_above_vwap_pct is not None and momentum.price_above_vwap_pct < self.min_price_above_vwap_pct:
+            if momentum.price_above_vwap_pct is not None and momentum.price_above_vwap_pct > -self.min_price_above_vwap_pct:
                 self.logger.info(
-                    f"⚪ {symbol}: REJECTED - Price only {momentum.price_above_vwap_pct:.2f}% above VWAP "
-                    f"(minimum: {self.min_price_above_vwap_pct:.1f}%)"
+                    f"⚪ {symbol}: REJECTED - Price only {momentum.price_above_vwap_pct:.2f}% below VWAP "
+                    f"(minimum: -{self.min_price_above_vwap_pct:.1f}%)"
                 )
                 return False
 
-            if momentum.is_above_vwap:
+            if not momentum.is_above_vwap:
                 self.logger.info(
-                    f"✅ {symbol}: Price above VWAP (+{momentum.price_above_vwap_pct:.2f}%)"
+                    f"✅ {symbol}: Price below VWAP ({momentum.price_above_vwap_pct:.2f}%)"
                 )
 
-            # Check Filter 5: Momentum (ROC or VWAP Slope)
-            if not momentum.is_positive:
+            # Check Filter 5: Momentum NEGATIVE (INVERTED for SHORT - ROC or VWAP Slope)
+            if momentum.is_positive:
                 if momentum.indicator_type == "ROC":
                     self.logger.info(
-                        f"⚪ {symbol}: REJECTED - ROC too low "
-                        f"({momentum.value:+.2f}% < {self.roc_min_threshold:.2f}%)"
+                        f"⚪ {symbol}: REJECTED - ROC too high (need NEGATIVE for SHORT) "
+                        f"({momentum.value:+.2f}% > -{self.roc_min_threshold:.2f}%)"
                     )
                 else:
                     self.logger.info(
-                        f"⚪ {symbol}: REJECTED - VWAP not trending up "
-                        f"(slope: {momentum.value:.5f} < {self.min_vwap_slope:.5f})"
+                        f"⚪ {symbol}: REJECTED - VWAP trending up (need DOWN for SHORT) "
+                        f"(slope: {momentum.value:.5f} > -{self.min_vwap_slope:.5f})"
                     )
                 return False
 
             if momentum.indicator_type == "ROC":
                 self.logger.info(
-                    f"✅ {symbol}: ROC positive ({momentum.value:+.2f}%, {self.roc_period} bars)"
+                    f"✅ {symbol}: ROC negative ({momentum.value:+.2f}%, {self.roc_period} bars)"
                 )
             else:
                 self.logger.info(
-                    f"✅ {symbol}: VWAP trending UP (slope: {momentum.value:.5f})"
+                    f"✅ {symbol}: VWAP trending DOWN (slope: {momentum.value:.5f})"
                 )
 
             # ====
             # ALL FILTERS PASSED - ENTER!
             # ====
 
-            # NOW calculate and expose SL/TP (only for approved entries)
+            # NOW calculate and expose SL/TP (INVERTED for SHORT - only for approved entries)
             opportunity['suggested_stop_loss_pct'] = 5.0  # 5% SL
-            opportunity['stop_loss_price'] = current_price * 0.95
-            opportunity['take_profit_price'] = current_price * 1.15  # 15% TP
+            opportunity['stop_loss_price'] = current_price * 1.05  # SL ARRIBA para SHORT
+            opportunity['take_profit_price'] = current_price * 0.85  # TP ABAJO para SHORT (-15%)
 
             # Build entry log message with available momentum data
             entry_msg = (
-                f"✅✅✅ {symbol}: {momentum.indicator_type} MOMENTUM ENTRY ✅✅✅\n"
+                f"✅✅✅ {symbol}: {momentum.indicator_type} SHORT MOMENTUM ENTRY ✅✅✅\n"
                 f"   💰 Price: ${current_price:.2f}\n"
+                f"   🔻 DIRECTION: SHORT (Sell)\n"
             )
 
             if momentum.vwap is not None:
-                entry_msg += f"   📈 VWAP: ${momentum.vwap:.2f} (+{momentum.price_above_vwap_pct:.2f}%)\n"
+                entry_msg += f"   📉 VWAP: ${momentum.vwap:.2f} ({momentum.price_above_vwap_pct:.2f}% BELOW)\n"
 
             if momentum.indicator_type == "VWAP_SLOPE":
-                entry_msg += f"   📊 VWAP Slope: {momentum.value:.5f} (UPTREND)\n"
+                entry_msg += f"   📊 VWAP Slope: {momentum.value:.5f} (DOWNTREND)\n"
             elif momentum.indicator_type == "ROC":
-                entry_msg += f"   📊 ROC: {momentum.value:+.2f}% (POSITIVE)\n"
+                entry_msg += f"   📊 ROC: {momentum.value:+.2f}% (NEGATIVE)\n"
 
             entry_msg += (
                 f"   ⭐ Quality: {quality_score:.1f}/100\n"
-                f"   🛡️ Stop Loss: ${opportunity['stop_loss_price']:.2f} (-5%)\n"
-                f"   🎯 Take Profit: ${opportunity['take_profit_price']:.2f} (+15%)\n"
+                f"   🛡️ Stop Loss: ${opportunity['stop_loss_price']:.2f} (+5% - arriba para SHORT)\n"
+                f"   🎯 Take Profit: ${opportunity['take_profit_price']:.2f} (-15% - abajo para SHORT)\n"
                 f"   📐 R:R: 1:3 (Standard)"
             )
 
@@ -373,6 +375,14 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
         except Exception as e:
             self.logger.error(f"Error in should_enter for {symbol}: {e}", exc_info=True)
             return False
+
+    async def calculate_pattern_completion(self, opportunity: Dict[str, Any]) -> float:
+        """
+        Always return 100% for Buy and Hold strategy.
+        The ReplayEngine requires this method to return > 75% to approve entry.
+        Since should_enter already validated everything, we confirm it here.
+        """
+        return 100.0
 
     @staticmethod
     def _get_bar_value(bar, key: str):
@@ -390,6 +400,69 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             return bar.get(key, 0)
         else:
             return getattr(bar, key, 0)
+
+    def _analyze_momentum(self, bars, current_price: float) -> Optional[MomentumAnalysis]:
+        """
+        Analyze momentum using configured indicator (ROC or VWAP Slope)
+
+        This function unifies momentum detection to support A/B testing
+        between different indicators.
+
+        Args:
+            bars: List of price bars
+            current_price: Current price
+
+        Returns:
+            MomentumAnalysis object or None if analysis fails
+        """
+        try:
+            if self.use_roc:
+                # === OPTION A: ROC (Rate of Change) ===
+                roc = self._calculate_price_roc(bars, period=self.roc_period)
+
+                if roc is None:
+                    self.logger.debug(
+                        f"Could not calculate ROC (need {self.roc_period + 1}+ bars)"
+                    )
+                    return None
+
+                # INVERTED for SHORT: ROC debe ser NEGATIVO
+                is_positive = roc <= -self.roc_min_threshold
+
+                # Still calculate VWAP for context (price above VWAP filter)
+                vwap_analysis = self._analyze_vwap(bars, current_price)
+
+                return MomentumAnalysis(
+                    indicator_type="ROC",
+                    value=roc,
+                    is_positive=is_positive,
+                    current_price=current_price,
+                    vwap=vwap_analysis.vwap if vwap_analysis else None,
+                    price_above_vwap_pct=vwap_analysis.price_above_vwap_pct if vwap_analysis else None,
+                    is_above_vwap=vwap_analysis.is_above_vwap if vwap_analysis else None
+                )
+
+            else:
+                # === OPTION B: VWAP Slope (Original) ===
+                vwap_analysis = self._analyze_vwap(bars, current_price)
+
+                if not vwap_analysis:
+                    return None
+
+                # INVERTED for SHORT: VWAP slope debe ser NEGATIVO
+                return MomentumAnalysis(
+                    indicator_type="VWAP_SLOPE",
+                    value=vwap_analysis.vwap_slope,
+                    is_positive=vwap_analysis.vwap_slope <= -self.min_vwap_slope,
+                    current_price=current_price,
+                    vwap=vwap_analysis.vwap,
+                    price_above_vwap_pct=vwap_analysis.price_above_vwap_pct,
+                    is_above_vwap=vwap_analysis.is_above_vwap
+                )
+
+        except Exception as e:
+            self.logger.debug(f"Error analyzing momentum: {e}")
+            return None
 
     def _analyze_vwap(self, bars, current_price: float) -> Optional[VWAPAnalysis]:
         """
@@ -434,8 +507,9 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             else:
                 vwap_slope = 0
 
-            # Calculate position relative to VWAP
+            # Calculate position relative to VWAP (mantener el signo correcto)
             price_above_vwap_pct = ((current_price - vwap) / vwap) * 100 if vwap > 0 else 0
+            # Para SHORT: queremos que price_above_vwap_pct sea NEGATIVO
             is_above_vwap = current_price > vwap
 
             return VWAPAnalysis(
@@ -472,74 +546,14 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             self.logger.debug(f"Error calculating VWAP subset: {e}")
             return 0
 
-    def _analyze_momentum(self, bars, current_price: float) -> Optional[MomentumAnalysis]:
-        """
-        Analyze momentum using configured indicator (ROC or VWAP Slope)
-
-        This function unifies momentum detection to support A/B testing
-        between different indicators.
-
-        Args:
-            bars: List of price bars
-            current_price: Current price
-
-        Returns:
-            MomentumAnalysis object or None if analysis fails
-        """
-        try:
-            if self.use_roc:
-                # === OPTION A: ROC (Rate of Change) ===
-                roc = self._calculate_price_roc(bars, period=self.roc_period)
-
-                if roc is None:
-                    self.logger.debug(
-                        f"Could not calculate ROC (need {self.roc_period + 1}+ bars)"
-                    )
-                    return None
-
-                is_positive = roc >= self.roc_min_threshold
-
-                # Still calculate VWAP for context (price above VWAP filter)
-                vwap_analysis = self._analyze_vwap(bars, current_price)
-
-                return MomentumAnalysis(
-                    indicator_type="ROC",
-                    value=roc,
-                    is_positive=is_positive,
-                    current_price=current_price,
-                    vwap=vwap_analysis.vwap if vwap_analysis else None,
-                    price_above_vwap_pct=vwap_analysis.price_above_vwap_pct if vwap_analysis else None,
-                    is_above_vwap=vwap_analysis.is_above_vwap if vwap_analysis else None
-                )
-
-            else:
-                # === OPTION B: VWAP Slope (Original) ===
-                vwap_analysis = self._analyze_vwap(bars, current_price)
-
-                if not vwap_analysis:
-                    return None
-
-                return MomentumAnalysis(
-                    indicator_type="VWAP_SLOPE",
-                    value=vwap_analysis.vwap_slope,
-                    is_positive=vwap_analysis.vwap_slope >= self.min_vwap_slope,
-                    current_price=current_price,
-                    vwap=vwap_analysis.vwap,
-                    price_above_vwap_pct=vwap_analysis.price_above_vwap_pct,
-                    is_above_vwap=vwap_analysis.is_above_vwap
-                )
-
-        except Exception as e:
-            self.logger.debug(f"Error analyzing momentum: {e}")
-            return None
-
     def on_trade_executed(self, symbol: str, side: str, quantity: int, price: float):
         """
         Called after a trade is executed
 
         Track traded symbols to prevent overtrading
         """
-        if side == 'BUY':
+        # INVERTED: Now we track SELL (SHORT entries)
+        if side == 'SELL':
             self.traded_symbols_today.add(symbol)
             self.logger.info(f"✅ {symbol}: Added to traded list (total: {len(self.traded_symbols_today)})")
 
