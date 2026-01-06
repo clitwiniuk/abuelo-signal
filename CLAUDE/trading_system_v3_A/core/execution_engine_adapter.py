@@ -706,11 +706,18 @@ class ExecutionEngineAdapter:
                         positions = await self.broker.get_positions()
                         if symbol in positions:
                             pos = positions[symbol]
-                            if pos.quantity >= quantity and pos.avg_price > 0:
+                            # Support both LONG (positive quantity) and SHORT (negative quantity)
+                            # For LONG: pos.quantity >= quantity
+                            # For SHORT: pos.quantity <= -quantity (quantity is negative for SHORT)
+                            has_position = (
+                                (order_side == OrderSide.BUY and pos.quantity >= quantity) or
+                                (order_side == OrderSide.SELL and pos.quantity <= -quantity)
+                            )
+                            if has_position and pos.avg_price > 0:
                                 actual_fill_price = pos.avg_price
                                 self.logger.info(
                                     f"✅ {strategy}: Got REAL fill price from IBKR positions after {elapsed:.1f}s: "
-                                    f"{symbol} @ ${actual_fill_price:.2f} (qty: {pos.quantity})"
+                                    f"{symbol} @ ${actual_fill_price:.2f} (qty: {pos.quantity}, side: {order_side.name})"
                                 )
                                 break
                     except Exception as e:
