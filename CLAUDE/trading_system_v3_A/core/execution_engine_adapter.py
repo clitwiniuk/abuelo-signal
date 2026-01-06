@@ -404,7 +404,12 @@ class ExecutionEngineAdapter:
                     # Use adaptive limit price: ±0.5% range for better execution (reduced from 2%)
                     # REASONING: 2% was too wide, orders were not executing. 0.5% is more aggressive.
                     adaptive_range_pct = 0.005  # 0.5% range (was 0.02 = 2%)
-                    raw_limit_price = current_price * (1 + adaptive_range_pct)  # +0.5% for buys
+                    # Determine side for price adjustment
+                    order_side_str = opportunity_data.get('side', 'BUY')
+                    if order_side_str == 'SELL':
+                        raw_limit_price = current_price * (1 - adaptive_range_pct)  # -0.5% for sells (SHORT)
+                    else:
+                        raw_limit_price = current_price * (1 + adaptive_range_pct)  # +0.5% for buys
 
                     # 🛡️ PROTECTION: Apply IBKR tick size validation
                     limit_price = self._round_to_ibkr_tick_size(raw_limit_price)
@@ -459,10 +464,14 @@ class ExecutionEngineAdapter:
                 else:
                     tif = "DAY"  # Regular hours: Day order
 
+                # Determine order side from opportunity_data (defaults to BUY for backwards compatibility)
+                order_side_str = opportunity_data.get('side', 'BUY')
+                order_side = OrderSide.SELL if order_side_str == 'SELL' else OrderSide.BUY
+
                 order = Order(
                     order_id=f"{strategy}_{symbol}_{int(self.clock.now().timestamp())}",
                     symbol=symbol,
-                    side=OrderSide.BUY,
+                    side=order_side,
                     quantity=quantity,
                     order_type=order_type,
                     price=limit_price,

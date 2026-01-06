@@ -350,6 +350,7 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             opportunity['suggested_stop_loss_pct'] = 5.0  # 5% SL
             opportunity['stop_loss_price'] = current_price * 1.05  # SL ARRIBA para SHORT
             opportunity['take_profit_price'] = current_price * 0.85  # TP ABAJO para SHORT (-15%)
+            opportunity['side'] = 'SELL'  # CRITICAL: Specify SHORT side for execution engine
 
             # Build entry log message with available momentum data
             entry_msg = (
