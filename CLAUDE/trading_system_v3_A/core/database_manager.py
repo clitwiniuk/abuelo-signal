@@ -22,13 +22,27 @@ class DatabaseManager:
     def _init_database(self):
         """Initialize database and create tables"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
-                conn.execute("PRAGMA foreign_keys = ON")
+            with self._get_connection() as conn:
                 self._create_tables(conn)
             self.logger.info(f"Database initialized: {self.db_path}")
         except Exception as e:
             self.logger.error(f"Error initializing database: {e}")
             raise
+
+    def _get_connection(self) -> sqlite3.Connection:
+        """
+        Returns a sqlite3 connection with WAL mode and busy timeout enabled.
+        This improves concurrency and prevents 'database is locked' errors during heavy I/O.
+        """
+        conn = sqlite3.connect(self.db_path, timeout=30.0) # 30s busy timeout
+        
+        # Enable WAL mode for better concurrency
+        # See: https://www.sqlite.org/wal.html
+        conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA synchronous=NORMAL")
+        conn.execute("PRAGMA foreign_keys=ON")
+        
+        return conn
     
     def migrate_strategy_names(self, placeholder: str = "multi_strategy") -> int:
         """Update trades using placeholder strategy to real strategy based on recent trade per symbol.
@@ -37,7 +51,7 @@ class DatabaseManager:
         """
         updated = 0
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 # Get symbols that still have placeholder strategy
                 rows = conn.execute("SELECT DISTINCT symbol FROM trades WHERE strategy = ?", (placeholder,)).fetchall()
                 symbols = [r[0] for r in rows]
@@ -272,7 +286,7 @@ class DatabaseManager:
     def get_latest_strategy(self, symbol: str) -> Optional[str]:
         """Return strategy of most recent trade for symbol (any status)"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 row = conn.execute(
                     "SELECT strategy FROM trades WHERE symbol = ? ORDER BY entry_time DESC LIMIT 1",
                     (symbol,)
@@ -285,7 +299,7 @@ class DatabaseManager:
     def load_open_trades(self) -> List[Dict[str, Any]]:
         """Load all trades with status 'OPEN'. Returns list of dicts."""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.row_factory = sqlite3.Row
                 rows = conn.execute("SELECT * FROM trades WHERE status = 'OPEN'").fetchall()
                 return [dict(r) for r in rows]
@@ -296,7 +310,7 @@ class DatabaseManager:
     def load_latest_open_trades_by_symbol(self) -> List[Dict[str, Any]]:
         """Load most recent open trade per symbol. Returns list of dicts."""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.row_factory = sqlite3.Row
                 # Get most recent open trade per symbol
                 rows = conn.execute("""
@@ -318,7 +332,7 @@ class DatabaseManager:
     def save_trade(self, trade_data: Dict[str, Any]) -> bool:
         """Save a trade to the database (supports partial updates)"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 # NORMALIZE SIDE to LONG/SHORT for UI consistency
                 if 'side' in trade_data and trade_data['side']:
                     raw_side = str(trade_data['side']).upper()
@@ -498,7 +512,7 @@ class DatabaseManager:
             query += " ORDER BY entry_time DESC LIMIT ?"
             params.append(limit)
             
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 return pd.read_sql_query(query, conn, params=params)
                 
         except Exception as e:
@@ -508,7 +522,7 @@ class DatabaseManager:
     def get_open_trades(self) -> List[Dict[str, Any]]:
         """Get all open trades for position restoration"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.row_factory = sqlite3.Row
                 cursor = conn.cursor()
 
@@ -555,7 +569,7 @@ class DatabaseManager:
             target_date = date.today()
         
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 # Get trades for the day
                 trades_df = pd.read_sql_query("""
                     SELECT * FROM trades 
@@ -627,7 +641,7 @@ class DatabaseManager:
     def _save_daily_stats(self, stats: Dict[str, Any]):
         """Save daily stats to database"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.execute("""
                     INSERT OR REPLACE INTO daily_stats (
                         date, total_trades, winning_trades, losing_trades,
@@ -648,7 +662,7 @@ class DatabaseManager:
     def get_strategy_performance(self, days: int = 30) -> pd.DataFrame:
         """Get performance by strategy"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 # First, let's see what we have in the database for debugging
                 debug_df = pd.read_sql_query("""
                     SELECT 
@@ -689,7 +703,7 @@ class DatabaseManager:
     def get_today_stats(self) -> Dict[str, Any]:
         """Get today's trading statistics"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 # Get today's trades
                 today_df = pd.read_sql_query("""
                     SELECT 
@@ -760,7 +774,7 @@ class DatabaseManager:
                           mood_rating: int = None) -> bool:
         """Save trading journal entry"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.execute("""
                     INSERT OR REPLACE INTO trading_journal (
                         date, market_notes, strategy_notes, lessons_learned, mood_rating
@@ -775,7 +789,7 @@ class DatabaseManager:
     def get_journal_entries(self, days: int = 30) -> pd.DataFrame:
         """Get trading journal entries"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 return pd.read_sql_query("""
                     SELECT * FROM trading_journal
                     WHERE date >= date('now', '-{} days')
@@ -790,7 +804,7 @@ class DatabaseManager:
     def add_manual_symbol(self, symbol: str, notes: str = None) -> bool:
         """Add a symbol to manual symbols list"""
         try:
-            with sqlite3.connect(self.db_path) as conn:
+            with self._get_connection() as conn:
                 conn.execute("""
                     INSERT OR REPLACE INTO manual_symbols (symbol, notes, is_active)
                     VALUES (?, ?, 1)

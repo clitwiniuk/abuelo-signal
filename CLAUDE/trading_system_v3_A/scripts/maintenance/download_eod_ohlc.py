@@ -55,6 +55,16 @@ class EODOHLCDownloader:
             'processed_dates': 0
         }
 
+    def _get_db_connection(self) -> sqlite3.Connection:
+        """
+        Obtener una conexión a la base de datos con WAL mode y busy timeout.
+        Esto es crítico para evitar bloqueos con el proceso principal del Trader.
+        """
+        conn = sqlite3.connect(self.db_path, timeout=30.0) # 30s busy timeout
+        conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA synchronous=NORMAL")
+        return conn
+
     async def initialize(self):
         """Inicializar conexión IBKR"""
         try:
@@ -127,7 +137,7 @@ class EODOHLCDownloader:
         Returns: Lista ordenada de fechas en formato YYYY-MM-DD
         """
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = self._get_db_connection()
             cursor = conn.cursor()
 
             # Get all unique trading dates from trades
@@ -167,7 +177,7 @@ class EODOHLCDownloader:
         date_to_use = target_date or self.target_date
 
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = self._get_db_connection()
             cursor = conn.cursor()
 
             # Get all trades from target date (both entry and exit dates)
@@ -196,7 +206,7 @@ class EODOHLCDownloader:
     def _is_data_fresh(self, trade_id: str) -> bool:
         """Verificar si los datos ya fueron actualizados recientemente (4 horas)"""
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = self._get_db_connection()
             cursor = conn.cursor()
             cursor.execute("SELECT updated_at FROM trade_ohlc_snapshots WHERE trade_id = ?", (trade_id,))
             row = cursor.fetchone()
@@ -281,7 +291,7 @@ class EODOHLCDownloader:
             return
 
         try:
-            conn = sqlite3.connect(self.db_path)
+            conn = self._get_db_connection()
             cursor = conn.cursor()
 
             # Calcular datos del día (extended hours)

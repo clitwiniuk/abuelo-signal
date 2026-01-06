@@ -451,10 +451,19 @@ class IndependentTrader:
 
                 # Check PHASE 1: Pre-open (previous day complete data)
                 phase1_should_run = False
+                
+                # 🛡️ PROTECTION: Avoid triggering Phase 1 during critical EOD exit window (21:55 - 22:05 Spain)
+                # This prevents a late start/restart from blocking the system exactly at market close (15:59 ET)
+                is_in_critical_window = (now.time() >= time(21, 55) and now.time() < time(22, 5))
+                
                 if (now.time() >= pre_open_target and now.time() < post_close_target and
                     self.last_pre_close_download_date != today_date):
-                    phase1_should_run = True
-                    self.logger.info(f"🎯 PHASE 1: Pre-open download triggered! (now: {now.strftime('%H:%M')})")
+                    
+                    if is_in_critical_window:
+                        self.logger.info(f"⏳ PHASE 1: Postponed download until critical EOD window passes (now: {now.strftime('%H:%M')})")
+                    else:
+                        phase1_should_run = True
+                        self.logger.info(f"🎯 PHASE 1: Pre-open download triggered! (now: {now.strftime('%H:%M')})")
 
                 # Check PHASE 2: Post-close (current day complete data)
                 phase2_should_run = False
@@ -505,22 +514,31 @@ class IndependentTrader:
 
     async def _execute_phase_download(self, phase_name: str, target_date: str, description: str):
         """
-        Execute download for a specific phase
+        Execute download for a specific phase as a SEPARATE PROCESS.
+        This prevents blocking the main trader event loop and database.
         """
-        self.logger.info(f"📥 {phase_name}: Starting download - {description}")
+        self.logger.info(f"📥 {phase_name}: Starting download in background - {description}")
         self.logger.info(f"🎯 Target date: {target_date}")
 
         try:
-            # Import and run the downloader with specific date
-            from scripts.maintenance.download_eod_ohlc import EODOHLCDownloader
-
-            # Create downloader for specific date
-            downloader = EODOHLCDownloader(target_date=target_date)
-            success = await downloader.run()
-
-            if success:
-                self.logger.info(f"✅ {phase_name} download completed successfully for {target_date}")
-
+            # Run the script as a subprocess
+            python_path = sys.executable
+            script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts/maintenance/download_eod_ohlc.py")
+            
+            self.logger.info(f"🚀 Spawning subprocess: {python_path} {script_path} --target-date {target_date}")
+            
+            process = await asyncio.create_subprocess_exec(
+                python_path, script_path,
+                "--target-date", target_date,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            
+            # Wait for completion (asyncio.create_subprocess_exec is non-blocking for the event loop)
+            stdout, stderr = await process.communicate()
+            
+            if process.returncode == 0:
+                self.logger.info(f"✅ {phase_name} download completed via subprocess for {target_date}")
                 # Send Telegram notification
                 try:
                     from notifications.telegram_client import send_message
@@ -528,10 +546,12 @@ class IndependentTrader:
                 except Exception as e:
                     self.logger.debug(f"Telegram notification skipped: {e}")
             else:
-                self.logger.warning(f"⚠️ {phase_name} download completed with errors for {target_date}")
+                self.logger.warning(f"⚠️ {phase_name} download failed via subprocess (exit code {process.returncode})")
+                if stderr:
+                    self.logger.error(f"Error output: {stderr.decode()}")
 
         except Exception as e:
-            self.logger.error(f"❌ {phase_name} download failed for {target_date}: {e}")
+            self.logger.error(f"❌ {phase_name} download failed (subprocess spawn error) for {target_date}: {e}")
             import traceback
             self.logger.error(traceback.format_exc())
     
