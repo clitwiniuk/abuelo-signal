@@ -27,6 +27,21 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
         self.trailing_stop_pct = self.config.getfloat('SMALLCAP_VWAP_RUNNER', 'trailing_stop_pct', fallback=0.03)
         self.risk_per_trade = self.config.getfloat('SMALLCAP_VWAP_RUNNER', 'risk_per_trade', fallback=0.01)
 
+        # === STOP MANAGER INITIALIZATION ===
+        from .worker_stop_manager import create_worker_stop_manager, WorkerStopManager, WorkerStopConfig
+        if self.config:
+            self.stop_manager = create_worker_stop_manager(self.config, 'SMALLCAP_VWAP_RUNNER')
+        else:
+            # Default stop manager configuration
+            self.stop_manager = WorkerStopManager(WorkerStopConfig(
+                stop_loss_pct=5.0,           # 5% stop loss
+                take_profit_pct=15.0,        # 15% profit target
+                quick_target_pct=0.0,        # No quick target
+                trailing_activation=8.0,     # Trailing at 8% profit
+                trailing_distance=3.0,       # 3% trailing distance
+                max_position_hours=24.0      # 1 day max
+            ))
+
         self.logger.info(f"🚀 Initialized SmallcapVwapRunner: Q>={self.min_quality}, Stop={self.stop_loss_pct:.1%}, Trail={self.trailing_stop_pct:.1%}")
 
     def _get_current_time_decimal(self, current_bar: Dict[str, Any]) -> float:

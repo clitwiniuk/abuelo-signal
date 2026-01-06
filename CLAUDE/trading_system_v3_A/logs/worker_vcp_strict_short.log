@@ -4885,3 +4885,26 @@
 2026-01-06 21:50:08 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.7%, vol=2.0x, catalyst=TECHNICAL, Q=65.3
 2026-01-06 21:50:08 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 15.83 outside EXTENDED (Premarket) window [4.00 - 15.75]
 2026-01-06 21:50:08 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 15.83)
+2026-01-06 21:52:10 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=38.2%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 21:52:10 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 15.87 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:52:10 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 15.87)
+2026-01-06 21:52:11 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.3
+2026-01-06 21:52:11 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 15.87 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:52:11 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.87)
+2026-01-06 21:52:13 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=38.2%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 21:52:13 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 15.87 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:52:13 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 15.87)
+2026-01-06 21:52:13 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.3
+2026-01-06 21:52:13 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 15.87 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:52:13 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.87)
+2026-01-06 21:52:38 - Worker.vcp_strict_short - INFO - 🛑 Worker vcp_strict_short cancelled
+2026-01-06 21:52:47 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-06 21:52:47 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-06 21:52:47 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-06 21:52:47 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-06 21:57:22 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=27.1%, vol=0.7x, catalyst=TECHNICAL, Q=75.3
+2026-01-06 21:57:22 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 15.95 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:57:22 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.95)
+2026-01-06 21:57:23 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.7%, vol=2.0x, catalyst=TECHNICAL, Q=65.3
+2026-01-06 21:57:23 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 15.95 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:57:23 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 15.95)

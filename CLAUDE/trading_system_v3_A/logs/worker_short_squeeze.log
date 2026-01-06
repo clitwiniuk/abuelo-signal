@@ -520,3 +520,5 @@
 2026-01-06 21:15:22 - Worker.short_squeeze - INFO - 🔧 Worker short_squeeze initialized with separate logging + ODS support + Event Logger + Swing Transition
 2026-01-06 21:47:02 - Worker.short_squeeze - INFO - Worker logging initialized - short_squeeze -> logs/worker_short_squeeze.log
 2026-01-06 21:47:02 - Worker.short_squeeze - INFO - 🔧 Worker short_squeeze initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-06 21:52:47 - Worker.short_squeeze - INFO - Worker logging initialized - short_squeeze -> logs/worker_short_squeeze.log
+2026-01-06 21:52:47 - Worker.short_squeeze - INFO - 🔧 Worker short_squeeze initialized with separate logging + ODS support + Event Logger + Swing Transition
