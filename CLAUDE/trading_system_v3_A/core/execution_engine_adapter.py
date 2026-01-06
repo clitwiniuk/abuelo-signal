@@ -166,7 +166,8 @@ class ExecutionEngineAdapter:
 
             # DETERMINISTIC COMPETITION: Register entry and wait for winner selection
             # This replaces the old asyncio.sleep(0.05) race condition
-            competition_result = await self.competition.register_entry(
+            # Note: register_entry() is synchronous, not async
+            competition_result = self.competition.register_entry(
                 symbol=symbol,
                 strategy=strategy,
                 opportunity=opportunity_data,

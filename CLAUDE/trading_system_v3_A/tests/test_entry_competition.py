@@ -25,15 +25,15 @@ class TestEntryCompetition(unittest.IsolatedAsyncioTestCase):
         # Worker C: Score 85
         
         async def worker_a():
-            return await comp.register_entry(symbol, "WorkerA", {"symbol": symbol}, 80.0)
+            return comp.register_entry(symbol, "WorkerA", {"symbol": symbol}, 80.0)
 
         async def worker_b():
-            return await comp.register_entry(symbol, "WorkerB", {"symbol": symbol}, 90.0)
+            return comp.register_entry(symbol, "WorkerB", {"symbol": symbol}, 90.0)
 
         async def worker_c():
-            return await comp.register_entry(symbol, "WorkerC", {"symbol": symbol}, 85.0)
-            
-        # Launch concurrently
+            return comp.register_entry(symbol, "WorkerC", {"symbol": symbol}, 85.0)
+
+        # Launch concurrently (note: register_entry is sync, but we wrap in async for testing)
         results = await asyncio.gather(worker_a(), worker_b(), worker_c())
         
         # Check results
@@ -59,10 +59,10 @@ class TestEntryCompetition(unittest.IsolatedAsyncioTestCase):
         # So WorkerY should win.
         
         async def worker_x():
-            return await comp.register_entry(symbol, "WorkerX", {"symbol": symbol}, 90.0)
+            return comp.register_entry(symbol, "WorkerX", {"symbol": symbol}, 90.0)
 
         async def worker_y():
-            return await comp.register_entry(symbol, "WorkerY", {"symbol": symbol}, 90.0)
+            return comp.register_entry(symbol, "WorkerY", {"symbol": symbol}, 90.0)
             
         results = await asyncio.gather(worker_x(), worker_y())
         res_x, res_y = results
