@@ -1,0 +1,20 @@
+# Requirements for Daily Plays Filter Scanner
+
+# Core data processing
+yahooquery>=2.3.0
+pandas>=1.5.0
+numpy>=1.24.0
+
+# News APIs
+newsapi-python>=0.2.6
+sec-edgar-downloader>=5.0.0
+
+# Async HTTP requests
+aiohttp>=3.8.0
+requests>=2.28.0
+
+# Web interface (optional)
+streamlit>=1.28.0
+
+# Utilities
+python-dateutil>=2.8.0

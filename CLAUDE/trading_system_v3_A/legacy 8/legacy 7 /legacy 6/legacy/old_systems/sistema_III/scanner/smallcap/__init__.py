@@ -1,0 +1,1 @@
+# SmallCap Scanner Module for Sistema III

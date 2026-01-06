@@ -1,0 +1,38 @@
+ticker,last_price,change_percent,volume,signal
+SVT,46.98,0.0,33.47K,Top Losers
+BASG,25.13,-0.33,471.84K,Top Losers
+ACB,4.68,-20.41,6.27M,Top Losers
+CERO,11.5,-42.01,2.99M,Top Losers
+BMEA,1.91,-34.14,11.61M,Top Losers
+EYEN,4.83,-30.7,7.25M,Top Losers
+WOLF,0.87,-30.14,80.06M,Top Losers
+BRN,1.43,-27.78,1.27M,Top Losers
+LIXT,0.83,-24.98,343.77K,Top Losers
+PSTV,0.2,-34.38,23.26M,Top Losers
+TRUG,0.13,-22.59,8.12M,Top Losers
+MULN,1.32,-20.0,4.92M,Top Losers
+CREG,0.27,-7.82,1.20M,Top Losers
+FRAF,34.15,-0.44,14.09K,Top Losers
+ADIL,0.24,-0.67,3.98M,Top Losers
+ONDS,1.55,-0.64,10.81M,Top Losers
+PAL,0.0,0.0,TAOP,Top Losers
+CSHI,0.0,0.0,SOFR,Top Losers
+OOSP,0.0,0.0,MFLX,Top Losers
+OLLI,0.0,0.0,KALV,Top Losers
+FLDR,0.0,0.0,FLNG,Top Losers
+BKUI,0.0,0.0,SGOV,Top Losers
+BIL,0.0,0.0,FLCO,Top Losers
+GMMF,0.0,0.0,VTVT,Top Losers
+BNDW,0.0,0.0,MDLZ,Top Losers
+ASTC,0.0,0.0,SHV,Top Losers
+PRXV,0.0,0.0,RVRB,Top Losers
+AIO,0.0,0.0,FDGR,Top Losers
+MTH,0.0,0.0,NODK,Top Losers
+VWID,0.0,0.0,ELV,Top Losers
+EBIZ,0.0,0.0,UNL,Top Losers
+TODAY,0.0,0.0,Initial Claims,Top Losers
+PPTA,0.0,0.0,Buy,Top Losers
+BHC,0.0,0.0,Buy,Top Losers
+IT,0.0,0.0,Proposed Sale,Top Losers
+CPNG,0.0,0.0,Proposed Sale,Top Losers
+IONQ,0.0,0.0,Proposed Sale,Top Losers

@@ -1,0 +1,56 @@
+2025-11-09 05:46:23 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2025-11-09 05:46:23 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.20% (quality=50, patterns=0, atr=5.0%)
+2025-11-09 05:46:23 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.50% (quality=85, patterns=0, atr=5.0%)
+2025-11-09 05:46:59 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2025-11-09 05:46:59 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.20% (quality=50, patterns=0, atr=5.0%)
+2025-11-09 05:46:59 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.50% (quality=85, patterns=0, atr=5.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.20% (quality=50, patterns=0, atr=5.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.50% (quality=85, patterns=0, atr=5.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.40% (quality=50, patterns=4, atr=5.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.00% (quality=50, patterns=0, atr=9.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.70% (quality=90, patterns=4, atr=4.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.70% (quality=100, patterns=4, atr=3.0%)
+2025-11-09 05:47:43 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.00% (quality=30, patterns=0, atr=15.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.20% (quality=50, patterns=0, atr=5.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.50% (quality=85, patterns=0, atr=5.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.40% (quality=50, patterns=4, atr=5.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.00% (quality=50, patterns=0, atr=9.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.70% (quality=90, patterns=4, atr=4.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.70% (quality=100, patterns=4, atr=3.0%)
+2025-11-09 07:18:03 - Worker.test_worker - INFO - 💰 Adaptive Risk: 1.00% (quality=30, patterns=0, atr=15.0%)
+2026-01-04 15:41:20 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2026-01-04 15:41:20 - Worker.test_worker - INFO - 🔧 Worker test_worker initialized with Active Surveillance (Watch 30m, Max 50)
+2026-01-04 15:41:20 - Worker.test_worker - INFO - 🔍 TEST_SYM: Evaluating opportunity - gap=5.0%, vol=0.0x, catalyst=NONE, Q=80.0
+2026-01-04 15:41:20 - Worker.test_worker - INFO - ⚪ TEST_SYM: Entry criteria not met (rejected by strategy)
+2026-01-04 15:41:20 - Worker.test_worker - INFO - 👀 High Quality Rejection (Q=80.0): Adding to surveillance
+2026-01-04 15:41:20 - Worker.test_worker - ERROR - ❌ Error processing opportunity TEST_SYM: name 'timedelta' is not defined
+2026-01-04 15:41:20 - Worker.test_worker - ERROR - Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/strategies/workers/base_worker_logic.py", line 562, in process_opportunity
+    await self.watch_candidate(symbol, opportunity, duration_minutes=self.watch_time_minutes)
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/strategies/workers/base_worker_logic.py", line 624, in watch_candidate
+    expiry = datetime.now() + timedelta(minutes=duration_minutes)
+                              ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+
+2026-01-04 15:42:22 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2026-01-04 15:42:22 - Worker.test_worker - INFO - 🔧 Worker test_worker initialized with Active Surveillance (Watch 30m, Max 50)
+2026-01-04 15:42:22 - Worker.test_worker - INFO - 🔍 TEST_SYM: Evaluating opportunity - gap=5.0%, vol=0.0x, catalyst=NONE, Q=80.0
+2026-01-04 15:42:22 - Worker.test_worker - INFO - ⚪ TEST_SYM: Entry criteria not met (rejected by strategy)
+2026-01-04 15:42:22 - Worker.test_worker - INFO - 👀 High Quality Rejection (Q=80.0): Adding to surveillance
+2026-01-04 15:42:22 - Worker.test_worker - INFO - 👀 WATCHING TEST_SYM for 30m (Expires: 16:12:22)
+2026-01-04 15:42:22 - Worker.test_worker - INFO - ⚡ SURVEILLANCE TRIGGERED: TEST_SYM @ $105.00
+2026-01-04 15:42:22 - Worker.test_worker - INFO - 🚪 test_worker: Exiting TEST_SYM - Stop Loss Test (PnL: -19.05%)
+2026-01-04 15:42:22 - Worker.test_worker - WARNING - ⚠️ TEST_SYM: Quantity is 0, nothing to exit
+2026-01-04 15:43:34 - Worker.test_worker - INFO - Worker logging initialized - test_worker -> logs/worker_test_worker.log
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 🔧 Worker test_worker initialized with Active Surveillance (Watch 30m, Max 50)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 🔍 TEST_SYM: Evaluating opportunity - gap=5.0%, vol=0.0x, catalyst=NONE, Q=80.0
+2026-01-04 15:43:34 - Worker.test_worker - INFO - ⚪ TEST_SYM: Entry criteria not met (rejected by strategy)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 👀 High Quality Rejection (Q=80.0): Adding to surveillance
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 👀 WATCHING TEST_SYM for 30m (Expires: 16:13:34)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - ⚡ SURVEILLANCE TRIGGERED: TEST_SYM @ $105.00
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 🚪 test_worker: Exiting TEST_SYM - Stop Loss Test (PnL: -19.05%)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 👀 Cycle complete. Re-adding TEST_SYM to surveillance (Post-Trade Monitoring)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - 👀 WATCHING TEST_SYM for 390m (Expires: 22:13:34)
+2026-01-04 15:43:34 - Worker.test_worker - INFO - ✅ test_worker: Position closed - TEST_SYM

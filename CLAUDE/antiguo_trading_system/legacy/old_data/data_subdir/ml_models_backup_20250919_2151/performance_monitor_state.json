@@ -1,0 +1,189 @@
+{
+  "initialization_date": "2025-09-07T07:13:28.134029",
+  "baselines": {
+    "ml_exit_engine": {
+      "model_type": "ml_exit_engine",
+      "last_evaluation": "2025-09-07T07:13:28.132610",
+      "strategies": {
+        "smallcap_exit": {
+          "accuracy": 0.928,
+          "precision": 0.925,
+          "recall": 0.93,
+          "f1_score": 0.927,
+          "samples_count": 300000,
+          "feature_importance": {
+            "current_pnl_pct": 0.35,
+            "time_of_day": 0.2,
+            "rsi": 0.15,
+            "volume_trend": 0.12,
+            "price_momentum": 0.1,
+            "others": 0.08
+          }
+        }
+      },
+      "regression_metrics": {
+        "profit_predictor": {
+          "mae": 0.0302,
+          "rmse": 0.045,
+          "r2_score": 0.89,
+          "samples_count": 300000
+        }
+      },
+      "training_date": "2025-09-06T05:58:55",
+      "model_version": "v1.0"
+    },
+    "ml_volume_engine": {
+      "model_type": "ml_volume_engine",
+      "last_evaluation": "2025-09-07T07:13:28.132638",
+      "strategies": {
+        "macdv_smallcaps": {
+          "r2_score": 0.978,
+          "mae": 0.003,
+          "samples": 1446
+        },
+        "daily_plays": {
+          "r2_score": 0.986,
+          "mae": 0.001,
+          "samples": 1446
+        },
+        "gap_go": {
+          "r2_score": 1.0,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "orb": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "volume_breakout": {
+          "r2_score": 0.794,
+          "mae": 0.003,
+          "samples": 1446
+        },
+        "pmh_breakout": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "catalyst_momentum": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "vwap_reclaim": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "eod_momentum": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        },
+        "vcp": {
+          "r2_score": 0.999,
+          "mae": 0.0,
+          "samples": 1446
+        }
+      },
+      "overall_metrics": {
+        "average_r2": 0.9752000000000001,
+        "average_mae": 0.0007,
+        "total_strategies": 10,
+        "training_samples": 1446
+      },
+      "training_date": "2025-09-06T00:00:00",
+      "model_version": "v1.0"
+    },
+    "ml_strategy_selector": {
+      "model_type": "ml_strategy_selector",
+      "last_evaluation": "2025-09-07T07:13:28.132718",
+      "strategies": {
+        "orb": {
+          "avg_reward": 0.038,
+          "win_rate": 0.327,
+          "trades": 1606
+        },
+        "gap_go": {
+          "avg_reward": 0.032,
+          "win_rate": 0.323,
+          "trades": 1606
+        },
+        "macdv": {
+          "avg_reward": 0.061,
+          "win_rate": 0.517,
+          "trades": 1606
+        },
+        "vwap": {
+          "avg_reward": 0.034,
+          "win_rate": 0.577,
+          "trades": 26
+        },
+        "catalyst_momentum": {
+          "avg_reward": 0.084,
+          "win_rate": 0.377,
+          "trades": 1606
+        },
+        "eod_momentum": {
+          "avg_reward": 0.021,
+          "win_rate": 0.455,
+          "trades": 1606
+        },
+        "explosive_volume": {
+          "avg_reward": 0.024,
+          "win_rate": 0.387,
+          "trades": 1606
+        }
+      },
+      "overall_metrics": {
+        "selection_accuracy": 0.65,
+        "diversification_score": 0.85,
+        "thompson_sampling_exploration": 0.8,
+        "total_training_samples": 182,
+        "quality_events": 26
+      },
+      "training_date": "2025-09-07T07:13:28.132720",
+      "model_version": "v2.0"
+    },
+    "continuous_learning": {
+      "model_type": "continuous_learning",
+      "last_evaluation": "2025-09-07T07:13:28.132935",
+      "feedback_processing": {
+        "total_samples": 98,
+        "processing_accuracy": 0.95,
+        "retraining_frequency": "weekly",
+        "last_retrain": "2025-09-06T07:27:51.310059"
+      },
+      "retraining_results": {
+        "macdv_smallcaps": 0.15384615384615385,
+        "daily_plays": 0.6,
+        "gap_go": 0.6,
+        "orb": 0.75,
+        "volume_breakout": 0.5,
+        "catalyst_momentum": 1.0,
+        "eod_momentum": 0.85
+      },
+      "strategies_monitored": 7,
+      "auto_improvement_active": true,
+      "training_date": "2025-09-06T07:27:51.310059",
+      "model_version": "v1.0"
+    }
+  },
+  "thresholds": {
+    "accuracy_drop": 0.15,
+    "precision_drop": 0.2,
+    "data_staleness_days": 7,
+    "min_samples_for_eval": 20,
+    "critical_accuracy": 0.5
+  },
+  "models_monitored": [
+    "ml_exit_engine",
+    "ml_volume_engine",
+    "ml_strategy_selector",
+    "continuous_learning"
+  ],
+  "total_strategies": 18,
+  "monitoring_active": true,
+  "last_update": "2025-09-07T07:13:28.134033"
+}

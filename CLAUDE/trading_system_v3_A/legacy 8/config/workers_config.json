@@ -1,0 +1,60 @@
+{
+  "workers": {
+    "daily_plays": {
+      "enabled": true,
+      "description": "Catalyst-driven momentum breakouts on high-impact news",
+      "horizon": "intraday",
+      "priority": 95,
+      "contexts": [
+        "CATALYST",
+        "MOMENTUM"
+      ],
+      "params": {
+        "min_volume_ratio": 2.0,
+        "min_catalyst_score": 0.7,
+        "min_momentum_score": 0.6,
+        "max_entry_attempts": 2,
+        "enable_runner_detection": true
+      }
+    },
+    "smallcaps_long": {
+      "enabled": true,
+      "description": "Rule-based smallcap momentum with 17.6% edge",
+      "horizon": "swing",
+      "priority": 80,
+      "contexts": [
+        "TREND",
+        "MOMENTUM"
+      ],
+      "params": {
+        "min_volume_ratio": 1.5,
+        "min_price": 0.5,
+        "max_price": 15.0,
+        "min_daily_volume": 30000,
+        "max_entry_attempts": 2
+      }
+    },
+    "a_plus": {
+      "enabled": false,
+      "description": "AI-generated momentum worker (trailing stop mode)",
+      "horizon": "intraday",
+      "priority": 70,
+      "contexts": [
+        "MOMENTUM"
+      ],
+      "params": {
+        "min_volume_ratio": 1.2,
+        "max_entry_attempts": 2
+      }
+    }
+  },
+  "global_settings": {
+    "max_concurrent_workers": 2,
+    "position_check_interval_seconds": 30,
+    "orphan_position_check_interval_seconds": 60,
+    "enable_orphan_guard": true,
+    "enable_worker_metrics": true
+  },
+  "version": "3.0.0",
+  "last_updated": "2024-11-19"
+}

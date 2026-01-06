@@ -1,0 +1,1762 @@
+2025-05-26 23:55:44,299 - INFO - ======================================================================
+2025-05-26 23:55:44,299 - INFO - INICIO DEL ANÁLISIS DE PATRONES T+1+2+3
+2025-05-26 23:55:44,299 - INFO - ======================================================================
+2025-05-26 23:55:44,306 - INFO - Archivo cargado: screener_completo.csv
+2025-05-26 23:55:44,306 - INFO - Total de tickers encontrados: 106
+2025-05-26 23:55:44,306 - INFO - Columnas: ['ticker', 'bars']
+2025-05-26 23:55:44,306 - INFO - 
+Primeras 5 entradas:
+2025-05-26 23:55:44,308 - INFO - 
+ticker  bars
+  CLNE     9
+  PSEC     9
+  FTRE     9
+  CTMX     9
+  PSNY     9
+2025-05-26 23:55:44,309 - INFO - Procesando solo los primeros 5 tickers (modo prueba)
+2025-05-26 23:55:44,309 - INFO - 
+======================================================================
+2025-05-26 23:55:44,309 - INFO - INICIANDO ANÁLISIS DE 5 TICKERS
+2025-05-26 23:55:44,309 - INFO - ======================================================================
+2025-05-26 23:55:44,309 - INFO - 
+==================================================
+2025-05-26 23:55:44,309 - INFO - PROCESANDO 1/5: CLNE
+2025-05-26 23:55:44,309 - INFO - Número de velas a analizar: 9
+2025-05-26 23:55:44,309 - INFO - Analizando patrón para CLNE con 9 velas...
+2025-05-26 23:55:45,325 - INFO - Obteniendo datos para CLNE (intento 1/3)
+2025-05-26 23:55:45,769 - INFO - Datos obtenidos para CLNE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-26 23:55:45,772 - INFO - Análisis completado para CLNE: {'ticker': 'CLNE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7528342.0, 'T_close': 1.92, 'T_volume_ma': 2337458.0, 'volume_ratio': 3.22073893948041, 'T1_open': 1.92, 'T1_close': 2.08, 'T1_high': 2.13, 'T1_low': 1.92, 'T1_pct_change': 8.333333333333341, 'T1_high_pct': 10.937499999999998, 'T2_open': 2.05, 'T2_close': 1.94, 'T2_pct_change': -5.3658536585365795, 'T3_open': 1.92, 'T3_close': 1.96, 'T3_pct_change': 2.0833333333333353}
+2025-05-26 23:55:45,772 - INFO - [OK] Análisis completado para CLNE
+2025-05-26 23:55:45,772 - INFO - Esperando 15.9 segundos antes de la próxima solicitud...
+2025-05-26 23:56:01,657 - INFO - 
+==================================================
+2025-05-26 23:56:01,659 - INFO - PROCESANDO 2/5: PSEC
+2025-05-26 23:56:01,659 - INFO - Número de velas a analizar: 9
+2025-05-26 23:56:01,659 - INFO - Analizando patrón para PSEC con 9 velas...
+2025-05-26 23:56:04,342 - INFO - Obteniendo datos para PSEC (intento 1/3)
+2025-05-26 23:56:04,698 - INFO - Datos obtenidos para PSEC: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-26 23:56:04,700 - INFO - Análisis completado para PSEC: {'ticker': 'PSEC', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7609890.0, 'T_close': 3.69, 'T_volume_ma': 2843342.625, 'volume_ratio': 2.67638867475565, 'T1_open': 3.69, 'T1_close': 3.67, 'T1_high': 3.77, 'T1_low': 3.66, 'T1_pct_change': -0.542005420054201, 'T1_high_pct': 2.168021680216804, 'T2_open': 3.69, 'T2_close': 3.65, 'T2_pct_change': -1.084010840108402, 'T3_open': 3.63, 'T3_close': 3.64, 'T3_pct_change': 0.27548209366391824}
+2025-05-26 23:56:04,700 - INFO - [OK] Análisis completado para PSEC
+2025-05-26 23:56:04,700 - INFO - Esperando 27.6 segundos antes de la próxima solicitud...
+2025-05-26 23:56:32,334 - INFO - 
+==================================================
+2025-05-26 23:56:32,335 - INFO - PROCESANDO 3/5: FTRE
+2025-05-26 23:56:32,335 - INFO - Número de velas a analizar: 9
+2025-05-26 23:56:32,336 - INFO - Analizando patrón para FTRE con 9 velas...
+2025-05-26 23:56:33,479 - INFO - Obteniendo datos para FTRE (intento 1/3)
+2025-05-26 23:56:33,812 - INFO - Datos obtenidos para FTRE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-26 23:56:33,812 - INFO - Análisis completado para FTRE: {'ticker': 'FTRE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 8560874.0, 'T_close': 5.19, 'T_volume_ma': 2786383.1875, 'volume_ratio': 3.0723965168914873, 'T1_open': 5.26, 'T1_close': 5.0, 'T1_high': 5.4712, 'T1_low': 4.54, 'T1_pct_change': -4.942965779467677, 'T1_high_pct': 4.015209125475282, 'T2_open': 4.9, 'T2_close': 4.78, 'T2_pct_change': -2.4489795918367365, 'T3_open': 4.69, 'T3_close': 4.75, 'T3_pct_change': 1.2793176972281364}
+2025-05-26 23:56:33,812 - INFO - [OK] Análisis completado para FTRE
+2025-05-26 23:56:33,812 - INFO - Esperando 27.3 segundos antes de la próxima solicitud...
+2025-05-26 23:57:01,153 - INFO - 
+==================================================
+2025-05-26 23:57:01,154 - INFO - PROCESANDO 4/5: CTMX
+2025-05-26 23:57:01,154 - INFO - Número de velas a analizar: 9
+2025-05-26 23:57:01,154 - INFO - Analizando patrón para CTMX con 9 velas...
+2025-05-26 23:57:02,516 - INFO - Obteniendo datos para CTMX (intento 1/3)
+2025-05-26 23:57:02,916 - INFO - Datos obtenidos para CTMX: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-26 23:57:02,918 - INFO - Análisis completado para CTMX: {'ticker': 'CTMX', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 114154461.0, 'T_close': 2.13, 'T_volume_ma': 9996969.25, 'volume_ratio': 11.418906885204233, 'T1_open': 2.17, 'T1_close': 2.5, 'T1_high': 2.55, 'T1_low': 1.8602, 'T1_pct_change': 15.207373271889404, 'T1_high_pct': 17.511520737327185, 'T2_open': 2.37, 'T2_close': 2.38, 'T2_pct_change': 0.42194092827003316, 'T3_open': 2.5, 'T3_close': 2.0, 'T3_pct_change': -20.0}
+2025-05-26 23:57:02,918 - INFO - [OK] Análisis completado para CTMX
+2025-05-26 23:57:02,918 - INFO - Esperando 25.3 segundos antes de la próxima solicitud...
+2025-05-26 23:57:28,202 - INFO - 
+==================================================
+2025-05-26 23:57:28,203 - INFO - PROCESANDO 5/5: PSNY
+2025-05-26 23:57:28,203 - INFO - Número de velas a analizar: 9
+2025-05-26 23:57:28,204 - INFO - Analizando patrón para PSNY con 9 velas...
+2025-05-26 23:57:29,975 - INFO - Obteniendo datos para PSNY (intento 1/3)
+2025-05-26 23:57:30,328 - INFO - Datos obtenidos para PSNY: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-26 23:57:30,330 - INFO - Análisis completado para PSNY: {'ticker': 'PSNY', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 9954096.0, 'T_close': 1.09, 'T_volume_ma': 2970785.75, 'volume_ratio': 3.3506610161974826, 'T1_open': 1.08, 'T1_close': 1.04, 'T1_high': 1.09, 'T1_low': 0.9991, 'T1_pct_change': -3.703703703703707, 'T1_high_pct': 0.9259259259259267, 'T2_open': 1.05, 'T2_close': 1.15, 'T2_pct_change': 9.523809523809511, 'T3_open': 1.12, 'T3_close': 1.08, 'T3_pct_change': -3.571428571428574}
+2025-05-26 23:57:30,330 - INFO - [OK] Análisis completado para PSNY
+2025-05-26 23:57:30,330 - INFO - Esperando 28.5 segundos antes de la próxima solicitud...
+2025-05-26 23:57:58,873 - INFO - 
+======================================================================
+2025-05-26 23:57:58,874 - INFO - RESUMEN DEL ANÁLISIS
+2025-05-26 23:57:58,874 - INFO - ======================================================================
+2025-05-26 23:57:58,874 - INFO - Tickers analizados: 5 de 5
+2025-05-26 23:57:58,874 - INFO - Archivo de resultados: resultados_analisis.csv
+2025-05-26 23:57:58,880 - INFO - 
+======================================================================
+2025-05-26 23:57:58,880 - INFO - MÉTRICAS DE RENDIMIENTO DETALLADAS
+2025-05-26 23:57:58,880 - INFO - ======================================================================
+2025-05-26 23:57:58,880 - INFO - 
+MÉTRICAS GENERALES:
+2025-05-26 23:57:58,880 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,880 - INFO - TOTAL_ACCIONES_ANALIZADAS: 5
+2025-05-26 23:57:58,880 - INFO - TASA_EXITO_T1: 40.00
+2025-05-26 23:57:58,880 - INFO - TASA_EXITO_T2: 40.00
+2025-05-26 23:57:58,880 - INFO - TASA_EXITO_T3: 60.00
+2025-05-26 23:57:58,880 - INFO - PROMEDIO_RETORNO_T1: 2.87%
+2025-05-26 23:57:58,880 - INFO - PROMEDIO_RETORNO_T2: 0.21%
+2025-05-26 23:57:58,880 - INFO - PROMEDIO_RETORNO_T3: -3.99%
+2025-05-26 23:57:58,881 - INFO - MEDIANA_RETORNO_T1: -0.54%
+2025-05-26 23:57:58,881 - INFO - MEDIANA_RETORNO_T2: -1.08%
+2025-05-26 23:57:58,881 - INFO - MEDIANA_RETORNO_T3: 0.28%
+2025-05-26 23:57:58,881 - INFO - MAX_RETORNO_T1: 15.21%
+2025-05-26 23:57:58,881 - INFO - MAX_RETORNO_T2: 9.52%
+2025-05-26 23:57:58,881 - INFO - MAX_RETORNO_T3: 2.08%
+2025-05-26 23:57:58,881 - INFO - MIN_RETORNO_T1: -4.94%
+2025-05-26 23:57:58,881 - INFO - MIN_RETORNO_T2: -5.37%
+2025-05-26 23:57:58,881 - INFO - MIN_RETORNO_T3: -20.00%
+2025-05-26 23:57:58,881 - INFO - VOLUMEN_PROMEDIO: 29,561,532.60
+2025-05-26 23:57:58,881 - INFO - RATIO_VOLUMEN_PROMEDIO: 4.75
+2025-05-26 23:57:58,881 - INFO - RETORNO_ACUMULADO_PROMEDIO: -1.70%
+2025-05-26 23:57:58,881 - INFO - SHARPE_RATIO: 5.28
+2025-05-26 23:57:58,881 - INFO - 
+MÉTRICAS POR NÚMERO DE VELAS:
+2025-05-26 23:57:58,881 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,881 - INFO - VELAS_9_CANTIDAD: 5 acciones
+2025-05-26 23:57:58,881 - INFO - VELAS_9_TASA_EXITO_T1: 40.00%
+2025-05-26 23:57:58,881 - INFO - VELAS_9_RETORNO_PROMEDIO_T1: 2.87%
+2025-05-26 23:57:58,881 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+1:
+2025-05-26 23:57:58,881 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,887 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  CTMX 2025-05-12        15.21%         11.42
+  CLNE 2025-05-12         8.33%          3.22
+  PSEC 2025-05-12        -0.54%          2.68
+  PSNY 2025-05-12         -3.7%          3.35
+  FTRE 2025-05-12        -4.94%          3.07
+2025-05-26 23:57:58,887 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+1:
+2025-05-26 23:57:58,887 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,890 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  FTRE 2025-05-12        -4.94%          3.07
+  PSNY 2025-05-12         -3.7%          3.35
+  PSEC 2025-05-12        -0.54%          2.68
+  CLNE 2025-05-12         8.33%          3.22
+  CTMX 2025-05-12        15.21%         11.42
+2025-05-26 23:57:58,890 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+2:
+2025-05-26 23:57:58,890 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,892 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  PSNY 2025-05-12         9.52%          3.35
+  CTMX 2025-05-12         0.42%         11.42
+  PSEC 2025-05-12        -1.08%          2.68
+  FTRE 2025-05-12        -2.45%          3.07
+  CLNE 2025-05-12        -5.37%          3.22
+2025-05-26 23:57:58,892 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+2:
+2025-05-26 23:57:58,892 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,895 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  CLNE 2025-05-12        -5.37%          3.22
+  FTRE 2025-05-12        -2.45%          3.07
+  PSEC 2025-05-12        -1.08%          2.68
+  CTMX 2025-05-12         0.42%         11.42
+  PSNY 2025-05-12         9.52%          3.35
+2025-05-26 23:57:58,895 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+3:
+2025-05-26 23:57:58,895 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,897 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  CLNE 2025-05-12         2.08%          3.22
+  FTRE 2025-05-12         1.28%          3.07
+  PSEC 2025-05-12         0.28%          2.68
+  PSNY 2025-05-12        -3.57%          3.35
+  CTMX 2025-05-12        -20.0%         11.42
+2025-05-26 23:57:58,897 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+3:
+2025-05-26 23:57:58,897 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,899 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  CTMX 2025-05-12        -20.0%         11.42
+  PSNY 2025-05-12        -3.57%          3.35
+  PSEC 2025-05-12         0.28%          2.68
+  FTRE 2025-05-12         1.28%          3.07
+  CLNE 2025-05-12         2.08%          3.22
+2025-05-26 23:57:58,899 - INFO - 
+ANÁLISIS DE VOLUMEN:
+2025-05-26 23:57:58,899 - INFO - --------------------------------------------------
+2025-05-26 23:57:58,910 - INFO - 
+Rendimiento T+1 por ratio de volumen:
+2025-05-26 23:57:58,912 - INFO - 
+              count      mean    median       std
+volume_ratio                                     
+<1x               0       NaN       NaN       NaN
+1-1.5x            0       NaN       NaN       NaN
+1.5-2x            0       NaN       NaN       NaN
+2-3x              1 -0.542005 -0.542005       NaN
+>3x               4  3.723509  2.314815  9.719412
+2025-05-26 23:57:58,912 - INFO - 
+Tiempo total de ejecución: 2.2 minutos
+2025-05-26 23:57:58,912 - INFO - 
+======================================================================
+2025-05-26 23:57:58,912 - INFO - FIN DEL ANÁLISIS
+2025-05-26 23:57:58,912 - INFO - ======================================================================
+2025-05-27 05:21:33,452 - INFO - ======================================================================
+2025-05-27 05:21:33,453 - INFO - INICIO DEL ANÁLISIS DE PATRONES T+1+2+3
+2025-05-27 05:21:33,453 - INFO - ======================================================================
+2025-05-27 05:21:33,466 - INFO - Archivo cargado: screener_completo.csv
+2025-05-27 05:21:33,466 - INFO - Total de tickers encontrados: 106
+2025-05-27 05:21:33,466 - INFO - Columnas: ['ticker', 'bars']
+2025-05-27 05:21:33,466 - INFO - 
+Primeras 5 entradas:
+2025-05-27 05:21:33,468 - INFO - 
+ticker  bars
+  CLNE     9
+  PSEC     9
+  FTRE     9
+  CTMX     9
+  PSNY     9
+2025-05-27 05:21:33,468 - INFO - Procesando solo los primeros 5 tickers (modo prueba)
+2025-05-27 05:21:33,468 - INFO - 
+======================================================================
+2025-05-27 05:21:33,468 - INFO - INICIANDO ANÁLISIS DE 5 TICKERS
+2025-05-27 05:21:33,468 - INFO - ======================================================================
+2025-05-27 05:21:33,469 - INFO - 
+==================================================
+2025-05-27 05:21:33,469 - INFO - PROCESANDO 1/5: CLNE
+2025-05-27 05:21:33,469 - INFO - Número de velas a analizar: 9
+2025-05-27 05:21:33,469 - INFO - Analizando patrón para CLNE con 9 velas...
+2025-05-27 05:21:35,586 - INFO - Obteniendo datos para CLNE (intento 1/3)
+2025-05-27 05:21:36,201 - INFO - Datos obtenidos para CLNE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 05:21:36,203 - INFO - Análisis completado para CLNE: {'ticker': 'CLNE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7528342.0, 'T_close': 1.92, 'T_volume_ma': 2337458.0, 'volume_ratio': 3.22073893948041, 'T1_open': 1.92, 'T1_close': 2.08, 'T1_high': 2.13, 'T1_low': 1.92, 'T1_pct_change': 8.333333333333341, 'T1_high_pct': 10.937499999999998, 'T2_open': 2.05, 'T2_close': 1.94, 'T2_pct_change': -5.3658536585365795, 'T3_open': 1.92, 'T3_close': 1.96, 'T3_pct_change': 2.0833333333333353}
+2025-05-27 05:21:36,203 - INFO - [OK] Análisis completado para CLNE
+2025-05-27 05:21:36,204 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 05:21:37,465 - INFO - 
+==================================================
+2025-05-27 05:21:37,466 - INFO - PROCESANDO 2/5: PSEC
+2025-05-27 05:21:37,466 - INFO - Número de velas a analizar: 9
+2025-05-27 05:21:37,466 - INFO - Analizando patrón para PSEC con 9 velas...
+2025-05-27 05:21:40,337 - INFO - Obteniendo datos para PSEC (intento 1/3)
+2025-05-27 05:21:40,683 - INFO - Datos obtenidos para PSEC: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 05:21:40,684 - INFO - Análisis completado para PSEC: {'ticker': 'PSEC', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7609890.0, 'T_close': 3.69, 'T_volume_ma': 2843342.625, 'volume_ratio': 2.67638867475565, 'T1_open': 3.69, 'T1_close': 3.67, 'T1_high': 3.77, 'T1_low': 3.66, 'T1_pct_change': -0.542005420054201, 'T1_high_pct': 2.168021680216804, 'T2_open': 3.69, 'T2_close': 3.65, 'T2_pct_change': -1.084010840108402, 'T3_open': 3.63, 'T3_close': 3.64, 'T3_pct_change': 0.27548209366391824}
+2025-05-27 05:21:40,684 - INFO - [OK] Análisis completado para PSEC
+2025-05-27 05:21:40,685 - INFO - Esperando 1.2 segundos antes del siguiente ticker...
+2025-05-27 05:21:41,887 - INFO - 
+==================================================
+2025-05-27 05:21:41,888 - INFO - PROCESANDO 3/5: FTRE
+2025-05-27 05:21:41,888 - INFO - Número de velas a analizar: 9
+2025-05-27 05:21:41,888 - INFO - Analizando patrón para FTRE con 9 velas...
+2025-05-27 05:21:43,182 - INFO - Obteniendo datos para FTRE (intento 1/3)
+2025-05-27 05:21:43,537 - INFO - Datos obtenidos para FTRE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 05:21:43,538 - INFO - Análisis completado para FTRE: {'ticker': 'FTRE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 8560874.0, 'T_close': 5.19, 'T_volume_ma': 2786383.1875, 'volume_ratio': 3.0723965168914873, 'T1_open': 5.26, 'T1_close': 5.0, 'T1_high': 5.4712, 'T1_low': 4.54, 'T1_pct_change': -4.942965779467677, 'T1_high_pct': 4.015209125475282, 'T2_open': 4.9, 'T2_close': 4.78, 'T2_pct_change': -2.4489795918367365, 'T3_open': 4.69, 'T3_close': 4.75, 'T3_pct_change': 1.2793176972281364}
+2025-05-27 05:21:43,539 - INFO - [OK] Análisis completado para FTRE
+2025-05-27 05:21:43,539 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 05:21:45,037 - INFO - 
+==================================================
+2025-05-27 05:21:45,038 - INFO - PROCESANDO 4/5: CTMX
+2025-05-27 05:21:45,038 - INFO - Número de velas a analizar: 9
+2025-05-27 05:21:45,038 - INFO - Analizando patrón para CTMX con 9 velas...
+2025-05-27 05:21:46,069 - INFO - Obteniendo datos para CTMX (intento 1/3)
+2025-05-27 05:21:46,429 - INFO - Datos obtenidos para CTMX: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 05:21:46,431 - INFO - Análisis completado para CTMX: {'ticker': 'CTMX', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 114154461.0, 'T_close': 2.13, 'T_volume_ma': 9996969.25, 'volume_ratio': 11.418906885204233, 'T1_open': 2.17, 'T1_close': 2.5, 'T1_high': 2.55, 'T1_low': 1.8602, 'T1_pct_change': 15.207373271889404, 'T1_high_pct': 17.511520737327185, 'T2_open': 2.37, 'T2_close': 2.38, 'T2_pct_change': 0.42194092827003316, 'T3_open': 2.5, 'T3_close': 2.0, 'T3_pct_change': -20.0}
+2025-05-27 05:21:46,432 - INFO - [OK] Análisis completado para CTMX
+2025-05-27 05:21:46,432 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 05:21:49,316 - INFO - 
+==================================================
+2025-05-27 05:21:49,317 - INFO - PROCESANDO 5/5: PSNY
+2025-05-27 05:21:49,317 - INFO - Número de velas a analizar: 9
+2025-05-27 05:21:49,317 - INFO - Analizando patrón para PSNY con 9 velas...
+2025-05-27 05:21:50,447 - INFO - Obteniendo datos para PSNY (intento 1/3)
+2025-05-27 05:21:50,806 - INFO - Datos obtenidos para PSNY: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 05:21:50,807 - INFO - Análisis completado para PSNY: {'ticker': 'PSNY', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 9954096.0, 'T_close': 1.09, 'T_volume_ma': 2970785.75, 'volume_ratio': 3.3506610161974826, 'T1_open': 1.08, 'T1_close': 1.04, 'T1_high': 1.09, 'T1_low': 0.9991, 'T1_pct_change': -3.703703703703707, 'T1_high_pct': 0.9259259259259267, 'T2_open': 1.05, 'T2_close': 1.15, 'T2_pct_change': 9.523809523809511, 'T3_open': 1.12, 'T3_close': 1.08, 'T3_pct_change': -3.571428571428574}
+2025-05-27 05:21:50,807 - INFO - [OK] Análisis completado para PSNY
+2025-05-27 05:21:50,807 - INFO - 
+==================================================
+2025-05-27 05:21:50,807 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 05:21:50,807 - INFO - ==================================================
+2025-05-27 05:22:50,817 - INFO - 
+======================================================================
+2025-05-27 05:22:50,817 - INFO - RESUMEN DEL ANÁLISIS
+2025-05-27 05:22:50,817 - INFO - ======================================================================
+2025-05-27 05:22:50,818 - INFO - Tickers analizados: 5 de 5
+2025-05-27 05:22:50,818 - INFO - Archivo de resultados: resultados_analisis.csv
+2025-05-27 05:22:50,850 - INFO - 
+======================================================================
+2025-05-27 05:22:50,850 - INFO - MÉTRICAS DE RENDIMIENTO DETALLADAS
+2025-05-27 05:22:50,850 - INFO - ======================================================================
+2025-05-27 05:22:50,850 - INFO - 
+MÉTRICAS GENERALES:
+2025-05-27 05:22:50,850 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,851 - INFO - TOTAL_ACCIONES_ANALIZADAS: 5
+2025-05-27 05:22:50,851 - INFO - TASA_EXITO_T1: 40.00
+2025-05-27 05:22:50,851 - INFO - TASA_EXITO_T2: 40.00
+2025-05-27 05:22:50,852 - INFO - TASA_EXITO_T3: 60.00
+2025-05-27 05:22:50,852 - INFO - PROMEDIO_RETORNO_T1: 2.87%
+2025-05-27 05:22:50,852 - INFO - PROMEDIO_RETORNO_T2: 0.21%
+2025-05-27 05:22:50,852 - INFO - PROMEDIO_RETORNO_T3: -3.99%
+2025-05-27 05:22:50,852 - INFO - MEDIANA_RETORNO_T1: -0.54%
+2025-05-27 05:22:50,852 - INFO - MEDIANA_RETORNO_T2: -1.08%
+2025-05-27 05:22:50,853 - INFO - MEDIANA_RETORNO_T3: 0.28%
+2025-05-27 05:22:50,853 - INFO - MAX_RETORNO_T1: 15.21%
+2025-05-27 05:22:50,853 - INFO - MAX_RETORNO_T2: 9.52%
+2025-05-27 05:22:50,853 - INFO - MAX_RETORNO_T3: 2.08%
+2025-05-27 05:22:50,853 - INFO - MIN_RETORNO_T1: -4.94%
+2025-05-27 05:22:50,853 - INFO - MIN_RETORNO_T2: -5.37%
+2025-05-27 05:22:50,853 - INFO - MIN_RETORNO_T3: -20.00%
+2025-05-27 05:22:50,854 - INFO - VOLUMEN_PROMEDIO: 29,561,532.60
+2025-05-27 05:22:50,854 - INFO - RATIO_VOLUMEN_PROMEDIO: 4.75
+2025-05-27 05:22:50,854 - INFO - RETORNO_ACUMULADO_PROMEDIO: -1.70%
+2025-05-27 05:22:50,854 - INFO - SHARPE_RATIO: 5.28
+2025-05-27 05:22:50,854 - INFO - 
+MÉTRICAS POR NÚMERO DE VELAS:
+2025-05-27 05:22:50,854 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,854 - INFO - VELAS_9_CANTIDAD: 5 acciones
+2025-05-27 05:22:50,854 - INFO - VELAS_9_TASA_EXITO_T1: 40.00%
+2025-05-27 05:22:50,854 - INFO - VELAS_9_RETORNO_PROMEDIO_T1: 2.87%
+2025-05-27 05:22:50,854 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+1:
+2025-05-27 05:22:50,854 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,893 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  CTMX 2025-05-12        15.21%         11.42
+  CLNE 2025-05-12         8.33%          3.22
+  PSEC 2025-05-12        -0.54%          2.68
+  PSNY 2025-05-12         -3.7%          3.35
+  FTRE 2025-05-12        -4.94%          3.07
+2025-05-27 05:22:50,893 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+1:
+2025-05-27 05:22:50,893 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,898 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  FTRE 2025-05-12        -4.94%          3.07
+  PSNY 2025-05-12         -3.7%          3.35
+  PSEC 2025-05-12        -0.54%          2.68
+  CLNE 2025-05-12         8.33%          3.22
+  CTMX 2025-05-12        15.21%         11.42
+2025-05-27 05:22:50,898 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+2:
+2025-05-27 05:22:50,898 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,920 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  PSNY 2025-05-12         9.52%          3.35
+  CTMX 2025-05-12         0.42%         11.42
+  PSEC 2025-05-12        -1.08%          2.68
+  FTRE 2025-05-12        -2.45%          3.07
+  CLNE 2025-05-12        -5.37%          3.22
+2025-05-27 05:22:50,920 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+2:
+2025-05-27 05:22:50,920 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,924 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  CLNE 2025-05-12        -5.37%          3.22
+  FTRE 2025-05-12        -2.45%          3.07
+  PSEC 2025-05-12        -1.08%          2.68
+  CTMX 2025-05-12         0.42%         11.42
+  PSNY 2025-05-12         9.52%          3.35
+2025-05-27 05:22:50,924 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+3:
+2025-05-27 05:22:50,924 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,930 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  CLNE 2025-05-12         2.08%          3.22
+  FTRE 2025-05-12         1.28%          3.07
+  PSEC 2025-05-12         0.28%          2.68
+  PSNY 2025-05-12        -3.57%          3.35
+  CTMX 2025-05-12        -20.0%         11.42
+2025-05-27 05:22:50,930 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+3:
+2025-05-27 05:22:50,930 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,933 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  CTMX 2025-05-12        -20.0%         11.42
+  PSNY 2025-05-12        -3.57%          3.35
+  PSEC 2025-05-12         0.28%          2.68
+  FTRE 2025-05-12         1.28%          3.07
+  CLNE 2025-05-12         2.08%          3.22
+2025-05-27 05:22:50,933 - INFO - 
+ANÁLISIS DE VOLUMEN:
+2025-05-27 05:22:50,933 - INFO - --------------------------------------------------
+2025-05-27 05:22:50,942 - INFO - 
+Rendimiento T+1 por ratio de volumen:
+2025-05-27 05:22:50,945 - INFO - 
+              count      mean    median       std
+volume_ratio                                     
+<1x               0       NaN       NaN       NaN
+1-1.5x            0       NaN       NaN       NaN
+1.5-2x            0       NaN       NaN       NaN
+2-3x              1 -0.542005 -0.542005       NaN
+>3x               4  3.723509  2.314815  9.719412
+2025-05-27 05:22:50,946 - INFO - 
+Tiempo total de ejecución: 1.3 minutos
+2025-05-27 05:22:50,946 - INFO - 
+======================================================================
+2025-05-27 05:22:50,946 - INFO - FIN DEL ANÁLISIS
+2025-05-27 05:22:50,946 - INFO - ======================================================================
+2025-05-27 07:08:31,042 - INFO - ======================================================================
+2025-05-27 07:08:31,042 - INFO - INICIO DEL ANÁLISIS DE PATRONES T+1+2+3
+2025-05-27 07:08:31,042 - INFO - ======================================================================
+2025-05-27 07:08:31,059 - INFO - Archivo cargado: screener_completo.csv
+2025-05-27 07:08:31,059 - INFO - Total de tickers encontrados: 106
+2025-05-27 07:08:31,059 - INFO - Columnas: ['ticker', 'bars']
+2025-05-27 07:08:31,059 - INFO - 
+Primeras 5 entradas:
+2025-05-27 07:08:31,062 - INFO - 
+ticker  bars
+  CLNE     9
+  PSEC     9
+  FTRE     9
+  CTMX     9
+  PSNY     9
+2025-05-27 07:08:31,063 - INFO - 
+======================================================================
+2025-05-27 07:08:31,063 - INFO - INICIANDO ANÁLISIS DE 106 TICKERS
+2025-05-27 07:08:31,063 - INFO - ======================================================================
+2025-05-27 07:08:31,063 - INFO - 
+==================================================
+2025-05-27 07:08:31,063 - INFO - PROCESANDO 1/106: CLNE
+2025-05-27 07:08:31,063 - INFO - Número de velas a analizar: 9
+2025-05-27 07:08:31,063 - INFO - Analizando patrón para CLNE con 9 velas...
+2025-05-27 07:08:33,359 - INFO - Obteniendo datos para CLNE (intento 1/3)
+2025-05-27 07:08:33,775 - INFO - Datos obtenidos para CLNE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:08:33,777 - INFO - Análisis completado para CLNE: {'ticker': 'CLNE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7528342.0, 'T_close': 1.92, 'T_volume_ma': 2337458.0, 'volume_ratio': 3.22073893948041, 'T1_open': 1.92, 'T1_close': 2.08, 'T1_high': 2.13, 'T1_low': 1.92, 'T1_pct_change': 8.333333333333341, 'T1_high_pct': 10.937499999999998, 'T2_open': 2.05, 'T2_close': 1.94, 'T2_pct_change': -5.3658536585365795, 'T3_open': 1.92, 'T3_close': 1.96, 'T3_pct_change': 2.0833333333333353}
+2025-05-27 07:08:33,777 - INFO - [OK] Análisis completado para CLNE
+2025-05-27 07:08:33,777 - INFO - Esperando 2.5 segundos antes del siguiente ticker...
+2025-05-27 07:08:36,290 - INFO - 
+==================================================
+2025-05-27 07:08:36,291 - INFO - PROCESANDO 2/106: PSEC
+2025-05-27 07:08:36,291 - INFO - Número de velas a analizar: 9
+2025-05-27 07:08:36,291 - INFO - Analizando patrón para PSEC con 9 velas...
+2025-05-27 07:08:39,135 - INFO - Obteniendo datos para PSEC (intento 1/3)
+2025-05-27 07:08:39,505 - INFO - Datos obtenidos para PSEC: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:08:39,506 - INFO - Análisis completado para PSEC: {'ticker': 'PSEC', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7609890.0, 'T_close': 3.69, 'T_volume_ma': 2843342.625, 'volume_ratio': 2.67638867475565, 'T1_open': 3.69, 'T1_close': 3.67, 'T1_high': 3.77, 'T1_low': 3.66, 'T1_pct_change': -0.542005420054201, 'T1_high_pct': 2.168021680216804, 'T2_open': 3.69, 'T2_close': 3.65, 'T2_pct_change': -1.084010840108402, 'T3_open': 3.63, 'T3_close': 3.64, 'T3_pct_change': 0.27548209366391824}
+2025-05-27 07:08:39,506 - INFO - [OK] Análisis completado para PSEC
+2025-05-27 07:08:39,506 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:08:42,342 - INFO - 
+==================================================
+2025-05-27 07:08:42,343 - INFO - PROCESANDO 3/106: FTRE
+2025-05-27 07:08:42,343 - INFO - Número de velas a analizar: 9
+2025-05-27 07:08:42,343 - INFO - Analizando patrón para FTRE con 9 velas...
+2025-05-27 07:08:43,700 - INFO - Obteniendo datos para FTRE (intento 1/3)
+2025-05-27 07:08:44,055 - INFO - Datos obtenidos para FTRE: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:08:44,057 - INFO - Análisis completado para FTRE: {'ticker': 'FTRE', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 8560874.0, 'T_close': 5.19, 'T_volume_ma': 2786383.1875, 'volume_ratio': 3.0723965168914873, 'T1_open': 5.26, 'T1_close': 5.0, 'T1_high': 5.4712, 'T1_low': 4.54, 'T1_pct_change': -4.942965779467677, 'T1_high_pct': 4.015209125475282, 'T2_open': 4.9, 'T2_close': 4.78, 'T2_pct_change': -2.4489795918367365, 'T3_open': 4.69, 'T3_close': 4.75, 'T3_pct_change': 1.2793176972281364}
+2025-05-27 07:08:44,057 - INFO - [OK] Análisis completado para FTRE
+2025-05-27 07:08:44,057 - INFO - Esperando 1.9 segundos antes del siguiente ticker...
+2025-05-27 07:08:45,966 - INFO - 
+==================================================
+2025-05-27 07:08:45,966 - INFO - PROCESANDO 4/106: CTMX
+2025-05-27 07:08:45,966 - INFO - Número de velas a analizar: 9
+2025-05-27 07:08:45,967 - INFO - Analizando patrón para CTMX con 9 velas...
+2025-05-27 07:08:47,129 - INFO - Obteniendo datos para CTMX (intento 1/3)
+2025-05-27 07:08:47,487 - INFO - Datos obtenidos para CTMX: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:08:47,489 - INFO - Análisis completado para CTMX: {'ticker': 'CTMX', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 114154461.0, 'T_close': 2.13, 'T_volume_ma': 9996969.25, 'volume_ratio': 11.418906885204233, 'T1_open': 2.17, 'T1_close': 2.5, 'T1_high': 2.55, 'T1_low': 1.8602, 'T1_pct_change': 15.207373271889404, 'T1_high_pct': 17.511520737327185, 'T2_open': 2.37, 'T2_close': 2.38, 'T2_pct_change': 0.42194092827003316, 'T3_open': 2.5, 'T3_close': 2.0, 'T3_pct_change': -20.0}
+2025-05-27 07:08:47,489 - INFO - [OK] Análisis completado para CTMX
+2025-05-27 07:08:47,489 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:08:50,406 - INFO - 
+==================================================
+2025-05-27 07:08:50,407 - INFO - PROCESANDO 5/106: PSNY
+2025-05-27 07:08:50,407 - INFO - Número de velas a analizar: 9
+2025-05-27 07:08:50,407 - INFO - Analizando patrón para PSNY con 9 velas...
+2025-05-27 07:08:51,586 - INFO - Obteniendo datos para PSNY (intento 1/3)
+2025-05-27 07:08:51,938 - INFO - Datos obtenidos para PSNY: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:08:51,940 - INFO - Análisis completado para PSNY: {'ticker': 'PSNY', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 9954096.0, 'T_close': 1.09, 'T_volume_ma': 2970785.75, 'volume_ratio': 3.3506610161974826, 'T1_open': 1.08, 'T1_close': 1.04, 'T1_high': 1.09, 'T1_low': 0.9991, 'T1_pct_change': -3.703703703703707, 'T1_high_pct': 0.9259259259259267, 'T2_open': 1.05, 'T2_close': 1.15, 'T2_pct_change': 9.523809523809511, 'T3_open': 1.12, 'T3_close': 1.08, 'T3_pct_change': -3.571428571428574}
+2025-05-27 07:08:51,940 - INFO - [OK] Análisis completado para PSNY
+2025-05-27 07:08:51,940 - INFO - 
+==================================================
+2025-05-27 07:08:51,940 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:08:51,940 - INFO - ==================================================
+2025-05-27 07:09:51,990 - INFO - 
+==================================================
+2025-05-27 07:09:52,009 - INFO - PROCESANDO 6/106: RAY
+2025-05-27 07:09:52,009 - INFO - Número de velas a analizar: 9
+2025-05-27 07:09:52,014 - INFO - Analizando patrón para RAY con 9 velas...
+2025-05-27 07:09:54,355 - INFO - Obteniendo datos para RAY (intento 1/3)
+2025-05-27 07:09:54,865 - INFO - Datos obtenidos para RAY: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:09:54,871 - INFO - Análisis completado para RAY: {'ticker': 'RAY', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 8168467.0, 'T_close': 1.46, 'T_volume_ma': 1899491.9375, 'volume_ratio': 4.300343075291416, 'T1_open': 1.59, 'T1_close': 1.75, 'T1_high': 1.79, 'T1_low': 1.56, 'T1_pct_change': 10.062893081761, 'T1_high_pct': 12.578616352201255, 'T2_open': 1.78, 'T2_close': 1.71, 'T2_pct_change': -3.9325842696629247, 'T3_open': 1.71, 'T3_close': 1.66, 'T3_pct_change': -2.9239766081871372}
+2025-05-27 07:09:54,871 - INFO - [OK] Análisis completado para RAY
+2025-05-27 07:09:54,880 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 07:09:56,202 - INFO - 
+==================================================
+2025-05-27 07:09:56,202 - INFO - PROCESANDO 7/106: GRYP
+2025-05-27 07:09:56,202 - INFO - Número de velas a analizar: 9
+2025-05-27 07:09:56,202 - INFO - Analizando patrón para GRYP con 9 velas...
+2025-05-27 07:09:58,156 - INFO - Obteniendo datos para GRYP (intento 1/3)
+2025-05-27 07:09:58,508 - INFO - Datos obtenidos para GRYP: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:09:58,510 - INFO - Análisis completado para GRYP: {'ticker': 'GRYP', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 270770751.0, 'T_close': 1.42, 'T_volume_ma': 18672269.625, 'volume_ratio': 14.501223281259254, 'T1_open': 1.6, 'T1_close': 1.28, 'T1_high': 1.62, 'T1_low': 1.25, 'T1_pct_change': -20.000000000000004, 'T1_high_pct': 1.250000000000001, 'T2_open': 1.01, 'T2_close': 0.7511, 'T2_pct_change': -25.633663366336634, 'T3_open': 0.781, 'T3_close': 1.07, 'T3_pct_change': 37.00384122919335}
+2025-05-27 07:09:58,511 - INFO - [OK] Análisis completado para GRYP
+2025-05-27 07:09:58,511 - INFO - Esperando 2.4 segundos antes del siguiente ticker...
+2025-05-27 07:10:00,965 - INFO - 
+==================================================
+2025-05-27 07:10:00,966 - INFO - PROCESANDO 8/106: BTCS
+2025-05-27 07:10:00,966 - INFO - Número de velas a analizar: 9
+2025-05-27 07:10:00,966 - INFO - Analizando patrón para BTCS con 9 velas...
+2025-05-27 07:10:03,138 - INFO - Obteniendo datos para BTCS (intento 1/3)
+2025-05-27 07:10:03,499 - INFO - Datos obtenidos para BTCS: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:10:03,500 - INFO - Análisis completado para BTCS: {'ticker': 'BTCS', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7525741.0, 'T_close': 2.09, 'T_volume_ma': 1095386.6875, 'volume_ratio': 6.870396624205824, 'T1_open': 2.08, 'T1_close': 1.99, 'T1_high': 2.11, 'T1_low': 1.8701, 'T1_pct_change': -4.32692307692308, 'T1_high_pct': 1.4423076923076827, 'T2_open': 2.21, 'T2_close': 2.1, 'T2_pct_change': -4.977375565610854, 'T3_open': 2.07, 'T3_close': 2.0, 'T3_pct_change': -3.3816425120772875}
+2025-05-27 07:10:03,500 - INFO - [OK] Análisis completado para BTCS
+2025-05-27 07:10:03,501 - INFO - Esperando 2.0 segundos antes del siguiente ticker...
+2025-05-27 07:10:05,541 - INFO - 
+==================================================
+2025-05-27 07:10:05,541 - INFO - PROCESANDO 9/106: INDI
+2025-05-27 07:10:05,541 - INFO - Número de velas a analizar: 9
+2025-05-27 07:10:05,541 - INFO - Analizando patrón para INDI con 9 velas...
+2025-05-27 07:10:07,215 - INFO - Obteniendo datos para INDI (intento 1/3)
+2025-05-27 07:10:07,563 - INFO - Datos obtenidos para INDI: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:10:07,564 - INFO - Análisis completado para INDI: {'ticker': 'INDI', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 7156341.0, 'T_close': 2.64, 'T_volume_ma': 2403031.5625, 'volume_ratio': 2.9780470267959704, 'T1_open': 2.44, 'T1_close': 2.68, 'T1_high': 2.7, 'T1_low': 2.3901, 'T1_pct_change': 9.836065573770501, 'T1_high_pct': 10.655737704918042, 'T2_open': 2.65, 'T2_close': 2.74, 'T2_pct_change': 3.3962264150943513, 'T3_open': 2.75, 'T3_close': 2.78, 'T3_pct_change': 1.090909090909084}
+2025-05-27 07:10:07,565 - INFO - [OK] Análisis completado para INDI
+2025-05-27 07:10:07,565 - INFO - Esperando 2.1 segundos antes del siguiente ticker...
+2025-05-27 07:10:09,620 - INFO - 
+==================================================
+2025-05-27 07:10:09,621 - INFO - PROCESANDO 10/106: TAOP
+2025-05-27 07:10:09,621 - INFO - Número de velas a analizar: 9
+2025-05-27 07:10:09,621 - INFO - Analizando patrón para TAOP con 9 velas...
+2025-05-27 07:10:12,500 - INFO - Obteniendo datos para TAOP (intento 1/3)
+2025-05-27 07:10:12,861 - INFO - Datos obtenidos para TAOP: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:10:12,863 - INFO - Análisis completado para TAOP: {'ticker': 'TAOP', 'n_velas': 9, 'T_date': '2025-05-12', 'T_volume': 584994163.0, 'T_close': 0.295, 'T_volume_ma': 39213472.125, 'volume_ratio': 14.918193449823208, 'T1_open': 0.3358, 'T1_close': 0.275, 'T1_high': 0.346, 'T1_low': 0.22, 'T1_pct_change': -18.106015485407973, 'T1_high_pct': 3.037522334723046, 'T2_open': 0.256, 'T2_close': 0.204, 'T2_pct_change': -20.312500000000007, 'T3_open': 0.1934, 'T3_close': 0.2831, 'T3_pct_change': 46.380558428128246}
+2025-05-27 07:10:12,863 - INFO - [OK] Análisis completado para TAOP
+2025-05-27 07:10:12,864 - INFO - 
+==================================================
+2025-05-27 07:10:12,864 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:10:12,864 - INFO - ==================================================
+2025-05-27 07:11:12,909 - INFO - 
+==================================================
+2025-05-27 07:11:12,912 - INFO - PROCESANDO 11/106: HUMA
+2025-05-27 07:11:12,912 - INFO - Número de velas a analizar: 8
+2025-05-27 07:11:12,913 - INFO - Analizando patrón para HUMA con 8 velas...
+2025-05-27 07:11:14,889 - INFO - Obteniendo datos para HUMA (intento 1/3)
+2025-05-27 07:11:15,351 - INFO - Datos obtenidos para HUMA: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:11:15,354 - INFO - Análisis completado para HUMA: {'ticker': 'HUMA', 'n_velas': 8, 'T_date': '2025-05-13', 'T_volume': 15251959.0, 'T_close': 1.73, 'T_volume_ma': 3596456.117647059, 'volume_ratio': 4.240830000722607, 'T1_open': 1.77, 'T1_close': 1.87, 'T1_high': 2.045, 'T1_low': 1.7, 'T1_pct_change': 5.649717514124299, 'T1_high_pct': 15.536723163841803, 'T2_open': 1.9, 'T2_close': 1.89, 'T2_pct_change': -0.5263157894736847, 'T3_open': 1.91, 'T3_close': 2.24, 'T3_pct_change': 17.27748691099478}
+2025-05-27 07:11:15,354 - INFO - [OK] Análisis completado para HUMA
+2025-05-27 07:11:15,354 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:11:18,289 - INFO - 
+==================================================
+2025-05-27 07:11:18,290 - INFO - PROCESANDO 12/106: MVST
+2025-05-27 07:11:18,290 - INFO - Número de velas a analizar: 8
+2025-05-27 07:11:18,290 - INFO - Analizando patrón para MVST con 8 velas...
+2025-05-27 07:11:20,017 - INFO - Obteniendo datos para MVST (intento 1/3)
+2025-05-27 07:11:20,370 - INFO - Datos obtenidos para MVST: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:11:20,373 - INFO - Análisis completado para MVST: {'ticker': 'MVST', 'n_velas': 8, 'T_date': '2025-05-13', 'T_volume': 53627387.0, 'T_close': 3.11, 'T_volume_ma': 9523796.823529411, 'volume_ratio': 5.630883143948287, 'T1_open': 3.095, 'T1_close': 3.08, 'T1_high': 3.33, 'T1_low': 2.91, 'T1_pct_change': -0.48465266558966474, 'T1_high_pct': 7.592891760904681, 'T2_open': 2.94, 'T2_close': 3.3, 'T2_pct_change': 12.24489795918367, 'T3_open': 3.35, 'T3_close': 3.38, 'T3_pct_change': 0.8955223880596956}
+2025-05-27 07:11:20,373 - INFO - [OK] Análisis completado para MVST
+2025-05-27 07:11:20,373 - INFO - Esperando 2.1 segundos antes del siguiente ticker...
+2025-05-27 07:11:22,440 - INFO - 
+==================================================
+2025-05-27 07:11:22,441 - INFO - PROCESANDO 13/106: ABCL
+2025-05-27 07:11:22,441 - INFO - Número de velas a analizar: 8
+2025-05-27 07:11:22,441 - INFO - Analizando patrón para ABCL con 8 velas...
+2025-05-27 07:11:24,731 - INFO - Obteniendo datos para ABCL (intento 1/3)
+2025-05-27 07:11:25,085 - INFO - Datos obtenidos para ABCL: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:11:25,087 - INFO - Análisis completado para ABCL: {'ticker': 'ABCL', 'n_velas': 8, 'T_date': '2025-05-13', 'T_volume': 17015917.0, 'T_close': 2.1, 'T_volume_ma': 4706351.529411765, 'volume_ratio': 3.6155218949670718, 'T1_open': 2.1, 'T1_close': 2.05, 'T1_high': 2.21, 'T1_low': 2.005, 'T1_pct_change': -2.380952380952394, 'T1_high_pct': 5.238095238095232, 'T2_open': 2.04, 'T2_close': 2.02, 'T2_pct_change': -0.980392156862746, 'T3_open': 2.03, 'T3_close': 2.03, 'T3_pct_change': 0.0}
+2025-05-27 07:11:25,087 - INFO - [OK] Análisis completado para ABCL
+2025-05-27 07:11:25,087 - INFO - Esperando 1.1 segundos antes del siguiente ticker...
+2025-05-27 07:11:26,197 - INFO - 
+==================================================
+2025-05-27 07:11:26,198 - INFO - PROCESANDO 14/106: MVIS
+2025-05-27 07:11:26,198 - INFO - Número de velas a analizar: 8
+2025-05-27 07:11:26,198 - INFO - Analizando patrón para MVIS con 8 velas...
+2025-05-27 07:11:28,511 - INFO - Obteniendo datos para MVIS (intento 1/3)
+2025-05-27 07:11:28,916 - INFO - Datos obtenidos para MVIS: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:11:28,918 - INFO - Análisis completado para MVIS: {'ticker': 'MVIS', 'n_velas': 8, 'T_date': '2025-05-13', 'T_volume': 11242489.0, 'T_close': 1.07, 'T_volume_ma': 3197102.1764705884, 'volume_ratio': 3.516462214670612, 'T1_open': 1.06, 'T1_close': 1.1, 'T1_high': 1.11, 'T1_low': 1.05, 'T1_pct_change': 3.7735849056603805, 'T1_high_pct': 4.7169811320754755, 'T2_open': 1.08, 'T2_close': 1.07, 'T2_pct_change': -0.9259259259259267, 'T3_open': 1.06, 'T3_close': 1.12, 'T3_pct_change': 5.660377358490571}
+2025-05-27 07:11:28,918 - INFO - [OK] Análisis completado para MVIS
+2025-05-27 07:11:28,918 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:11:30,407 - INFO - 
+==================================================
+2025-05-27 07:11:30,408 - INFO - PROCESANDO 15/106: VFF
+2025-05-27 07:11:30,408 - INFO - Número de velas a analizar: 8
+2025-05-27 07:11:30,408 - INFO - Analizando patrón para VFF con 8 velas...
+2025-05-27 07:11:32,153 - INFO - Obteniendo datos para VFF (intento 1/3)
+2025-05-27 07:11:32,591 - INFO - Datos obtenidos para VFF: 25 velas desde 2025-04-21 hasta 2025-05-23
+2025-05-27 07:11:32,593 - INFO - Análisis completado para VFF: {'ticker': 'VFF', 'n_velas': 8, 'T_date': '2025-05-13', 'T_volume': 7297170.0, 'T_close': 0.96, 'T_volume_ma': 1111093.3529411764, 'volume_ratio': 6.567557965029359, 'T1_open': 1.01, 'T1_close': 1.0, 'T1_high': 1.05, 'T1_low': 0.9991, 'T1_pct_change': -0.990099009900991, 'T1_high_pct': 3.960396039603964, 'T2_open': 1.01, 'T2_close': 0.9321, 'T2_pct_change': -7.71287128712871, 'T3_open': 0.94, 'T3_close': 1.05, 'T3_pct_change': 11.70212765957448}
+2025-05-27 07:11:32,593 - INFO - [OK] Análisis completado para VFF
+2025-05-27 07:11:32,593 - INFO - 
+==================================================
+2025-05-27 07:11:32,593 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:11:32,593 - INFO - ==================================================
+2025-05-27 07:12:32,598 - INFO - 
+==================================================
+2025-05-27 07:12:32,601 - INFO - PROCESANDO 16/106: INVZ
+2025-05-27 07:12:32,601 - INFO - Número de velas a analizar: 7
+2025-05-27 07:12:32,601 - INFO - Analizando patrón para INVZ con 7 velas...
+2025-05-27 07:12:34,398 - INFO - Obteniendo datos para INVZ (intento 1/3)
+2025-05-27 07:12:34,801 - INFO - Datos obtenidos para INVZ: 23 velas desde 2025-04-23 hasta 2025-05-23
+2025-05-27 07:12:34,803 - INFO - Análisis completado para INVZ: {'ticker': 'INVZ', 'n_velas': 7, 'T_date': '2025-05-14', 'T_volume': 15071534.0, 'T_close': 0.95, 'T_volume_ma': 3455432.3125, 'volume_ratio': 4.361692731030743, 'T1_open': 0.95, 'T1_close': 0.9848, 'T1_high': 0.9849, 'T1_low': 0.8876, 'T1_pct_change': 3.663157894736848, 'T1_high_pct': 3.6736842105263205, 'T2_open': 1.0, 'T2_close': 0.9856, 'T2_pct_change': -1.4399999999999968, 'T3_open': 0.95, 'T3_close': 1.0, 'T3_pct_change': 5.263157894736848}
+2025-05-27 07:12:34,803 - INFO - [OK] Análisis completado para INVZ
+2025-05-27 07:12:34,803 - INFO - Esperando 2.6 segundos antes del siguiente ticker...
+2025-05-27 07:12:37,390 - INFO - 
+==================================================
+2025-05-27 07:12:37,390 - INFO - PROCESANDO 17/106: RR
+2025-05-27 07:12:37,390 - INFO - Número de velas a analizar: 7
+2025-05-27 07:12:37,390 - INFO - Analizando patrón para RR con 7 velas...
+2025-05-27 07:12:39,797 - INFO - Obteniendo datos para RR (intento 1/3)
+2025-05-27 07:12:40,144 - INFO - Datos obtenidos para RR: 23 velas desde 2025-04-23 hasta 2025-05-23
+2025-05-27 07:12:40,146 - INFO - Análisis completado para RR: {'ticker': 'RR', 'n_velas': 7, 'T_date': '2025-05-14', 'T_volume': 15771145.0, 'T_close': 2.41, 'T_volume_ma': 6426178.3125, 'volume_ratio': 2.4542028299031893, 'T1_open': 2.2, 'T1_close': 2.19, 'T1_high': 2.24, 'T1_low': 2.08, 'T1_pct_change': -0.454545454545465, 'T1_high_pct': 1.8181818181818195, 'T2_open': 2.23, 'T2_close': 2.58, 'T2_pct_change': 15.695067264573995, 'T3_open': 2.32, 'T3_close': 2.32, 'T3_pct_change': 0.0}
+2025-05-27 07:12:40,146 - INFO - [OK] Análisis completado para RR
+2025-05-27 07:12:40,146 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:12:42,362 - INFO - 
+==================================================
+2025-05-27 07:12:42,362 - INFO - PROCESANDO 18/106: IXHL
+2025-05-27 07:12:42,362 - INFO - Número de velas a analizar: 7
+2025-05-27 07:12:42,363 - INFO - Analizando patrón para IXHL con 7 velas...
+2025-05-27 07:12:44,972 - INFO - Obteniendo datos para IXHL (intento 1/3)
+2025-05-27 07:12:45,328 - INFO - Datos obtenidos para IXHL: 23 velas desde 2025-04-23 hasta 2025-05-23
+2025-05-27 07:12:45,330 - INFO - Análisis completado para IXHL: {'ticker': 'IXHL', 'n_velas': 7, 'T_date': '2025-05-14', 'T_volume': 1525152320.0, 'T_close': 0.7, 'T_volume_ma': 99163511.4375, 'volume_ratio': 15.380176618304416, 'T1_open': 0.7445, 'T1_close': 0.2685, 'T1_high': 1.06, 'T1_low': 0.2404, 'T1_pct_change': -63.935527199462726, 'T1_high_pct': 42.37743451981195, 'T2_open': 0.3399, 'T2_close': 0.26, 'T2_pct_change': -23.506913798175926, 'T3_open': 0.2258, 'T3_close': 0.1999, 'T3_pct_change': -11.47032772364925}
+2025-05-27 07:12:45,330 - INFO - [OK] Análisis completado para IXHL
+2025-05-27 07:12:45,330 - INFO - Esperando 1.2 segundos antes del siguiente ticker...
+2025-05-27 07:12:46,562 - INFO - 
+==================================================
+2025-05-27 07:12:46,563 - INFO - PROCESANDO 19/106: ABSI
+2025-05-27 07:12:46,563 - INFO - Número de velas a analizar: 7
+2025-05-27 07:12:46,563 - INFO - Analizando patrón para ABSI con 7 velas...
+2025-05-27 07:12:49,436 - INFO - Obteniendo datos para ABSI (intento 1/3)
+2025-05-27 07:12:49,785 - INFO - Datos obtenidos para ABSI: 23 velas desde 2025-04-23 hasta 2025-05-23
+2025-05-27 07:12:49,787 - INFO - Análisis completado para ABSI: {'ticker': 'ABSI', 'n_velas': 7, 'T_date': '2025-05-14', 'T_volume': 10466315.0, 'T_close': 2.91, 'T_volume_ma': 2758715.4375, 'volume_ratio': 3.7939088815498754, 'T1_open': 2.91, 'T1_close': 2.96, 'T1_high': 2.99, 'T1_low': 2.831, 'T1_pct_change': 1.7182130584192379, 'T1_high_pct': 2.7491408934707926, 'T2_open': 2.97, 'T2_close': 2.88, 'T2_pct_change': -3.03030303030304, 'T3_open': 2.81, 'T3_close': 2.77, 'T3_pct_change': -1.4234875444839872}
+2025-05-27 07:12:49,787 - INFO - [OK] Análisis completado para ABSI
+2025-05-27 07:12:49,787 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:12:52,034 - INFO - 
+==================================================
+2025-05-27 07:12:52,035 - INFO - PROCESANDO 20/106: SHLS
+2025-05-27 07:12:52,035 - INFO - Número de velas a analizar: 6
+2025-05-27 07:12:52,035 - INFO - Analizando patrón para SHLS con 6 velas...
+2025-05-27 07:12:53,221 - INFO - Obteniendo datos para SHLS (intento 1/3)
+2025-05-27 07:12:53,562 - INFO - Datos obtenidos para SHLS: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:12:53,563 - INFO - Análisis completado para SHLS: {'ticker': 'SHLS', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 24722901.0, 'T_close': 4.58, 'T_volume_ma': 9902786.2, 'volume_ratio': 2.496560109517461, 'T1_open': 4.92, 'T1_close': 4.855, 'T1_high': 5.035, 'T1_low': 4.72, 'T1_pct_change': -1.3211382113821037, 'T1_high_pct': 2.3373983739837443, 'T2_open': 4.74, 'T2_close': 4.72, 'T2_pct_change': -0.421940928270052, 'T3_open': 4.8, 'T3_close': 4.785, 'T3_pct_change': -0.31249999999999334}
+2025-05-27 07:12:53,563 - INFO - [OK] Análisis completado para SHLS
+2025-05-27 07:12:53,563 - INFO - 
+==================================================
+2025-05-27 07:12:53,563 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:12:53,563 - INFO - ==================================================
+2025-05-27 07:13:53,570 - INFO - 
+==================================================
+2025-05-27 07:13:53,571 - INFO - PROCESANDO 21/106: LAB
+2025-05-27 07:13:53,571 - INFO - Número de velas a analizar: 6
+2025-05-27 07:13:53,572 - INFO - Analizando patrón para LAB con 6 velas...
+2025-05-27 07:13:54,884 - INFO - Obteniendo datos para LAB (intento 1/3)
+2025-05-27 07:13:55,290 - INFO - Datos obtenidos para LAB: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:13:55,292 - INFO - Análisis completado para LAB: {'ticker': 'LAB', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 5810975.0, 'T_close': 1.05, 'T_volume_ma': 1350519.9333333333, 'volume_ratio': 4.302768775620688, 'T1_open': 1.04, 'T1_close': 1.08, 'T1_high': 1.115, 'T1_low': 1.04, 'T1_pct_change': 3.8461538461538494, 'T1_high_pct': 7.211538461538456, 'T2_open': 1.06, 'T2_close': 1.05, 'T2_pct_change': -0.9433962264150951, 'T3_open': 1.03, 'T3_close': 1.05, 'T3_pct_change': 1.9417475728155356}
+2025-05-27 07:13:55,292 - INFO - [OK] Análisis completado para LAB
+2025-05-27 07:13:55,292 - INFO - Esperando 2.4 segundos antes del siguiente ticker...
+2025-05-27 07:13:57,741 - INFO - 
+==================================================
+2025-05-27 07:13:57,743 - INFO - PROCESANDO 22/106: BTM
+2025-05-27 07:13:57,743 - INFO - Número de velas a analizar: 6
+2025-05-27 07:13:57,743 - INFO - Analizando patrón para BTM con 6 velas...
+2025-05-27 07:13:58,868 - INFO - Obteniendo datos para BTM (intento 1/3)
+2025-05-27 07:13:59,228 - INFO - Datos obtenidos para BTM: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:13:59,231 - INFO - Análisis completado para BTM: {'ticker': 'BTM', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 9685327.0, 'T_close': 2.09, 'T_volume_ma': 860998.2, 'volume_ratio': 11.248951507680273, 'T1_open': 2.18, 'T1_close': 2.68, 'T1_high': 2.87, 'T1_low': 2.14, 'T1_pct_change': 22.93577981651376, 'T1_high_pct': 31.651376146788984, 'T2_open': 2.65, 'T2_close': 3.0, 'T2_pct_change': 13.207547169811324, 'T3_open': 3.0, 'T3_close': 2.94, 'T3_pct_change': -2.0000000000000018}
+2025-05-27 07:13:59,231 - INFO - [OK] Análisis completado para BTM
+2025-05-27 07:13:59,231 - INFO - Esperando 1.6 segundos antes del siguiente ticker...
+2025-05-27 07:14:00,874 - INFO - 
+==================================================
+2025-05-27 07:14:00,875 - INFO - PROCESANDO 23/106: CLIK
+2025-05-27 07:14:00,875 - INFO - Número de velas a analizar: 6
+2025-05-27 07:14:00,876 - INFO - Analizando patrón para CLIK con 6 velas...
+2025-05-27 07:14:02,959 - INFO - Obteniendo datos para CLIK (intento 1/3)
+2025-05-27 07:14:03,319 - INFO - Datos obtenidos para CLIK: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:14:03,321 - INFO - Análisis completado para CLIK: {'ticker': 'CLIK', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 485748271.0, 'T_close': 0.7098, 'T_volume_ma': 36280181.4, 'volume_ratio': 13.38880491374831, 'T1_open': 0.59, 'T1_close': 0.4787, 'T1_high': 0.62, 'T1_low': 0.443, 'T1_pct_change': -18.86440677966101, 'T1_high_pct': 5.084745762711869, 'T2_open': 0.4451, 'T2_close': 0.52, 'T2_pct_change': 16.827679173219508, 'T3_open': 0.519, 'T3_close': 0.7, 'T3_pct_change': 34.87475915221579}
+2025-05-27 07:14:03,321 - INFO - [OK] Análisis completado para CLIK
+2025-05-27 07:14:03,321 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:14:05,084 - INFO - 
+==================================================
+2025-05-27 07:14:05,085 - INFO - PROCESANDO 24/106: LAZR
+2025-05-27 07:14:05,085 - INFO - Número de velas a analizar: 6
+2025-05-27 07:14:05,085 - INFO - Analizando patrón para LAZR con 6 velas...
+2025-05-27 07:14:07,265 - INFO - Obteniendo datos para LAZR (intento 1/3)
+2025-05-27 07:14:07,612 - INFO - Datos obtenidos para LAZR: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:14:07,614 - INFO - Análisis completado para LAZR: {'ticker': 'LAZR', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 4999563.0, 'T_close': 3.96, 'T_volume_ma': 1959869.0666666667, 'volume_ratio': 2.5509678605740875, 'T1_open': 4.005, 'T1_close': 4.72, 'T1_high': 4.82, 'T1_low': 3.91, 'T1_pct_change': 17.852684144818973, 'T1_high_pct': 20.34956304619227, 'T2_open': 4.49, 'T2_close': 4.54, 'T2_pct_change': 1.1135857461024459, 'T3_open': 4.57, 'T3_close': 4.17, 'T3_pct_change': -8.752735229759306}
+2025-05-27 07:14:07,614 - INFO - [OK] Análisis completado para LAZR
+2025-05-27 07:14:07,614 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:14:09,111 - INFO - 
+==================================================
+2025-05-27 07:14:09,111 - INFO - PROCESANDO 25/106: GTI
+2025-05-27 07:14:09,111 - INFO - Número de velas a analizar: 6
+2025-05-27 07:14:09,111 - INFO - Analizando patrón para GTI con 6 velas...
+2025-05-27 07:14:11,568 - INFO - Obteniendo datos para GTI (intento 1/3)
+2025-05-27 07:14:11,927 - INFO - Datos obtenidos para GTI: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:14:11,928 - INFO - Análisis completado para GTI: {'ticker': 'GTI', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 285108205.0, 'T_close': 0.147, 'T_volume_ma': 25433726.8, 'volume_ratio': 11.209847744373821, 'T1_open': 0.1487, 'T1_close': 0.131, 'T1_high': 0.1487, 'T1_low': 0.1192, 'T1_pct_change': -11.903160726294548, 'T1_high_pct': 0.0, 'T2_open': 0.1186, 'T2_close': 0.1526, 'T2_pct_change': 28.667790893760554, 'T3_open': 0.15, 'T3_close': 0.1668, 'T3_pct_change': 11.200000000000006}
+2025-05-27 07:14:11,929 - INFO - [OK] Análisis completado para GTI
+2025-05-27 07:14:11,929 - INFO - 
+==================================================
+2025-05-27 07:14:11,929 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:14:11,929 - INFO - ==================================================
+2025-05-27 07:15:11,952 - INFO - 
+==================================================
+2025-05-27 07:15:11,954 - INFO - PROCESANDO 26/106: BMGL
+2025-05-27 07:15:11,954 - INFO - Número de velas a analizar: 6
+2025-05-27 07:15:11,954 - INFO - Analizando patrón para BMGL con 6 velas...
+2025-05-27 07:15:14,527 - INFO - Obteniendo datos para BMGL (intento 1/3)
+2025-05-27 07:15:14,904 - INFO - Datos obtenidos para BMGL: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:15:14,905 - INFO - Análisis completado para BMGL: {'ticker': 'BMGL', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 15274779.0, 'T_close': 2.63, 'T_volume_ma': 1858602.4, 'volume_ratio': 8.218422078869585, 'T1_open': 2.9, 'T1_close': 2.37, 'T1_high': 3.62, 'T1_low': 2.1, 'T1_pct_change': -18.275862068965512, 'T1_high_pct': 24.82758620689656, 'T2_open': 2.37, 'T2_close': 2.13, 'T2_pct_change': -10.12658227848102, 'T3_open': 2.2, 'T3_close': 1.99, 'T3_pct_change': -9.545454545454552}
+2025-05-27 07:15:14,905 - INFO - [OK] Análisis completado para BMGL
+2025-05-27 07:15:14,905 - INFO - Esperando 1.9 segundos antes del siguiente ticker...
+2025-05-27 07:15:16,774 - INFO - 
+==================================================
+2025-05-27 07:15:16,775 - INFO - PROCESANDO 27/106: RENB
+2025-05-27 07:15:16,775 - INFO - Número de velas a analizar: 6
+2025-05-27 07:15:16,775 - INFO - Analizando patrón para RENB con 6 velas...
+2025-05-27 07:15:17,969 - INFO - Obteniendo datos para RENB (intento 1/3)
+2025-05-27 07:15:18,383 - INFO - Datos obtenidos para RENB: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:15:18,385 - INFO - Análisis completado para RENB: {'ticker': 'RENB', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 12942647.0, 'T_close': 0.3327, 'T_volume_ma': 1677770.6666666667, 'volume_ratio': 7.714193159494186, 'T1_open': 0.321, 'T1_close': 0.322, 'T1_high': 0.3565, 'T1_low': 0.311, 'T1_pct_change': 0.3115264797507791, 'T1_high_pct': 11.05919003115264, 'T2_open': 0.3012, 'T2_close': 0.3158, 'T2_pct_change': 4.847277556440903, 'T3_open': 0.31, 'T3_close': 0.2902, 'T3_pct_change': -6.387096774193543}
+2025-05-27 07:15:18,386 - INFO - [OK] Análisis completado para RENB
+2025-05-27 07:15:18,386 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:15:20,217 - INFO - 
+==================================================
+2025-05-27 07:15:20,217 - INFO - PROCESANDO 28/106: ABP
+2025-05-27 07:15:20,218 - INFO - Número de velas a analizar: 6
+2025-05-27 07:15:20,218 - INFO - Analizando patrón para ABP con 6 velas...
+2025-05-27 07:15:21,775 - INFO - Obteniendo datos para ABP (intento 1/3)
+2025-05-27 07:15:22,129 - INFO - Datos obtenidos para ABP: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:15:22,130 - INFO - Análisis completado para ABP: {'ticker': 'ABP', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 362297464.0, 'T_close': 0.2651, 'T_volume_ma': 26255868.066666666, 'volume_ratio': 13.798723511257945, 'T1_open': 0.2543, 'T1_close': 0.23, 'T1_high': 0.27, 'T1_low': 0.2207, 'T1_pct_change': -9.555642941407791, 'T1_high_pct': 6.173810460086508, 'T2_open': 0.28, 'T2_close': 0.272, 'T2_pct_change': -2.8571428571428594, 'T3_open': 0.27, 'T3_close': 0.2549, 'T3_pct_change': -5.592592592592593}
+2025-05-27 07:15:22,130 - INFO - [OK] Análisis completado para ABP
+2025-05-27 07:15:22,131 - INFO - Esperando 2.1 segundos antes del siguiente ticker...
+2025-05-27 07:15:24,275 - INFO - 
+==================================================
+2025-05-27 07:15:24,275 - INFO - PROCESANDO 29/106: NFE
+2025-05-27 07:15:24,275 - INFO - Número de velas a analizar: 6
+2025-05-27 07:15:24,275 - INFO - Analizando patrón para NFE con 6 velas...
+2025-05-27 07:15:26,743 - INFO - Obteniendo datos para NFE (intento 1/3)
+2025-05-27 07:15:27,139 - INFO - Datos obtenidos para NFE: 21 velas desde 2025-04-25 hasta 2025-05-23
+2025-05-27 07:15:27,142 - INFO - Análisis completado para NFE: {'ticker': 'NFE', 'n_velas': 6, 'T_date': '2025-05-15', 'T_volume': 92121102.0, 'T_close': 2.51, 'T_volume_ma': 11220075.733333332, 'volume_ratio': 8.210381479540342, 'T1_open': 2.6, 'T1_close': 2.66, 'T1_high': 2.66, 'T1_low': 2.26, 'T1_pct_change': 2.3076923076923097, 'T1_high_pct': 2.3076923076923097, 'T2_open': 2.655, 'T2_close': 3.29, 'T2_pct_change': 23.917137476459523, 'T3_open': 3.4, 'T3_close': 3.06, 'T3_pct_change': -9.999999999999996}
+2025-05-27 07:15:27,143 - INFO - [OK] Análisis completado para NFE
+2025-05-27 07:15:27,143 - INFO - Esperando 1.9 segundos antes del siguiente ticker...
+2025-05-27 07:15:29,038 - INFO - 
+==================================================
+2025-05-27 07:15:29,038 - INFO - PROCESANDO 30/106: PTLE
+2025-05-27 07:15:29,038 - INFO - Número de velas a analizar: 5
+2025-05-27 07:15:29,038 - INFO - Analizando patrón para PTLE con 5 velas...
+2025-05-27 07:15:31,052 - INFO - Obteniendo datos para PTLE (intento 1/3)
+2025-05-27 07:15:31,674 - INFO - Datos obtenidos para PTLE: 20 velas desde 2025-04-28 hasta 2025-05-23
+2025-05-27 07:15:31,676 - INFO - Análisis completado para PTLE: {'ticker': 'PTLE', 'n_velas': 5, 'T_date': '2025-05-16', 'T_volume': 5705955.0, 'T_close': 1.38, 'T_volume_ma': 1000433.0, 'volume_ratio': 5.703485390825772, 'T1_open': 1.43, 'T1_close': 1.41, 'T1_high': 1.47, 'T1_low': 1.38, 'T1_pct_change': -1.3986013986014, 'T1_high_pct': 2.7972027972028, 'T2_open': 1.41, 'T2_close': 1.43, 'T2_pct_change': 1.4184397163120581, 'T3_open': 1.45, 'T3_close': 1.37, 'T3_pct_change': -5.5172413793103345}
+2025-05-27 07:15:31,676 - INFO - [OK] Análisis completado para PTLE
+2025-05-27 07:15:31,676 - INFO - 
+==================================================
+2025-05-27 07:15:31,676 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:15:31,676 - INFO - ==================================================
+2025-05-27 07:16:31,685 - INFO - 
+==================================================
+2025-05-27 07:16:31,686 - INFO - PROCESANDO 31/106: URGN
+2025-05-27 07:16:31,687 - INFO - Número de velas a analizar: 5
+2025-05-27 07:16:31,687 - INFO - Analizando patrón para URGN con 5 velas...
+2025-05-27 07:16:34,083 - INFO - Obteniendo datos para URGN (intento 1/3)
+2025-05-27 07:16:34,455 - INFO - Datos obtenidos para URGN: 20 velas desde 2025-04-28 hasta 2025-05-23
+2025-05-27 07:16:34,457 - INFO - Análisis completado para URGN: {'ticker': 'URGN', 'n_velas': 5, 'T_date': '2025-05-16', 'T_volume': 9676034.0, 'T_close': 7.31, 'T_volume_ma': 1425860.0, 'volume_ratio': 6.786103825059964, 'T1_open': 7.18, 'T1_close': 7.97, 'T1_high': 8.19, 'T1_low': 7.0, 'T1_pct_change': 11.002785515320335, 'T1_high_pct': 14.066852367688021, 'T2_open': 8.0, 'T2_close': 7.54, 'T2_pct_change': -5.75, 'T3_open': 3.69, 'T3_close': 4.17, 'T3_pct_change': 13.008130081300811}
+2025-05-27 07:16:34,457 - INFO - [OK] Análisis completado para URGN
+2025-05-27 07:16:34,457 - INFO - Esperando 2.5 segundos antes del siguiente ticker...
+2025-05-27 07:16:36,979 - INFO - 
+==================================================
+2025-05-27 07:16:36,980 - INFO - PROCESANDO 32/106: OCGN
+2025-05-27 07:16:36,980 - INFO - Número de velas a analizar: 5
+2025-05-27 07:16:36,980 - INFO - Analizando patrón para OCGN con 5 velas...
+2025-05-27 07:16:38,234 - INFO - Obteniendo datos para OCGN (intento 1/3)
+2025-05-27 07:16:38,567 - INFO - Datos obtenidos para OCGN: 20 velas desde 2025-04-28 hasta 2025-05-23
+2025-05-27 07:16:38,569 - INFO - Análisis completado para OCGN: {'ticker': 'OCGN', 'n_velas': 5, 'T_date': '2025-05-16', 'T_volume': 8339460.0, 'T_close': 0.7584, 'T_volume_ma': 3471998.933333333, 'volume_ratio': 2.4019189406817025, 'T1_open': 0.7418, 'T1_close': 0.7698, 'T1_high': 0.7758, 'T1_low': 0.73, 'T1_pct_change': 3.774602318684285, 'T1_high_pct': 4.58344567268806, 'T2_open': 0.7447, 'T2_close': 0.81, 'T2_pct_change': 8.76863166375722, 'T3_open': 0.82, 'T3_close': 0.83, 'T3_pct_change': 1.2195121951219523}
+2025-05-27 07:16:38,569 - INFO - [OK] Análisis completado para OCGN
+2025-05-27 07:16:38,569 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:16:41,469 - INFO - 
+==================================================
+2025-05-27 07:16:41,469 - INFO - PROCESANDO 33/106: BLDP
+2025-05-27 07:16:41,469 - INFO - Número de velas a analizar: 5
+2025-05-27 07:16:41,469 - INFO - Analizando patrón para BLDP con 5 velas...
+2025-05-27 07:16:44,428 - INFO - Obteniendo datos para BLDP (intento 1/3)
+2025-05-27 07:16:44,991 - INFO - Datos obtenidos para BLDP: 20 velas desde 2025-04-28 hasta 2025-05-23
+2025-05-27 07:16:44,992 - INFO - Análisis completado para BLDP: {'ticker': 'BLDP', 'n_velas': 5, 'T_date': '2025-05-16', 'T_volume': 18037934.0, 'T_close': 1.42, 'T_volume_ma': 7233804.933333334, 'volume_ratio': 2.49356101888804, 'T1_open': 1.4, 'T1_close': 1.42, 'T1_high': 1.47, 'T1_low': 1.385, 'T1_pct_change': 1.42857142857143, 'T1_high_pct': 5.000000000000004, 'T2_open': 1.44, 'T2_close': 1.39, 'T2_pct_change': -3.472222222222225, 'T3_open': 1.38, 'T3_close': 1.31, 'T3_pct_change': -5.072463768115931}
+2025-05-27 07:16:44,993 - INFO - [OK] Análisis completado para BLDP
+2025-05-27 07:16:44,993 - INFO - Esperando 1.4 segundos antes del siguiente ticker...
+2025-05-27 07:16:46,376 - INFO - 
+==================================================
+2025-05-27 07:16:46,376 - INFO - PROCESANDO 34/106: VSTE
+2025-05-27 07:16:46,376 - INFO - Número de velas a analizar: 5
+2025-05-27 07:16:46,377 - INFO - Analizando patrón para VSTE con 5 velas...
+2025-05-27 07:16:49,133 - INFO - Obteniendo datos para VSTE (intento 1/3)
+2025-05-27 07:16:49,482 - INFO - Datos obtenidos para VSTE: 20 velas desde 2025-04-28 hasta 2025-05-23
+2025-05-27 07:16:49,483 - INFO - Análisis completado para VSTE: {'ticker': 'VSTE', 'n_velas': 5, 'T_date': '2025-05-16', 'T_volume': 157929276.0, 'T_close': 0.1564, 'T_volume_ma': 16139945.133333333, 'volume_ratio': 9.784994601613207, 'T1_open': 0.1746, 'T1_close': 0.1788, 'T1_high': 0.1859, 'T1_low': 0.155, 'T1_pct_change': 2.405498281786931, 'T1_high_pct': 6.471935853379154, 'T2_open': 0.1751, 'T2_close': 0.186, 'T2_pct_change': 6.225014277555678, 'T3_open': 0.1878, 'T3_close': 0.168, 'T3_pct_change': -10.543130990415326}
+2025-05-27 07:16:49,484 - INFO - [OK] Análisis completado para VSTE
+2025-05-27 07:16:49,484 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:16:52,313 - INFO - 
+==================================================
+2025-05-27 07:16:52,314 - INFO - PROCESANDO 35/106: FAAS
+2025-05-27 07:16:52,314 - INFO - Número de velas a analizar: 4
+2025-05-27 07:16:52,315 - INFO - Analizando patrón para FAAS con 4 velas...
+2025-05-27 07:16:54,316 - INFO - Obteniendo datos para FAAS (intento 1/3)
+2025-05-27 07:16:54,659 - INFO - Datos obtenidos para FAAS: 19 velas desde 2025-04-29 hasta 2025-05-23
+2025-05-27 07:16:54,663 - INFO - Análisis completado para FAAS: {'ticker': 'FAAS', 'n_velas': 4, 'T_date': '2025-05-19', 'T_volume': 623896233.0, 'T_close': 0.3553, 'T_volume_ma': 44509927.8, 'volume_ratio': 14.017012919081843, 'T1_open': 0.3009, 'T1_close': 0.3753, 'T1_high': 0.39, 'T1_low': 0.3001, 'T1_pct_change': 24.7258225324028, 'T1_high_pct': 29.61116650049851, 'T2_open': 0.3906, 'T2_close': 0.409, 'T2_pct_change': 4.710701484895026, 'T3_open': 0.4282, 'T3_close': 0.5162, 'T3_pct_change': 20.55114432508173}
+2025-05-27 07:16:54,663 - INFO - [OK] Análisis completado para FAAS
+2025-05-27 07:16:54,663 - INFO - 
+==================================================
+2025-05-27 07:16:54,664 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:16:54,666 - INFO - ==================================================
+2025-05-27 07:17:54,675 - INFO - 
+==================================================
+2025-05-27 07:17:54,676 - INFO - PROCESANDO 36/106: MRSN
+2025-05-27 07:17:54,677 - INFO - Número de velas a analizar: 4
+2025-05-27 07:17:54,677 - INFO - Analizando patrón para MRSN con 4 velas...
+2025-05-27 07:17:56,307 - INFO - Obteniendo datos para MRSN (intento 1/3)
+2025-05-27 07:17:56,717 - INFO - Datos obtenidos para MRSN: 19 velas desde 2025-04-29 hasta 2025-05-23
+2025-05-27 07:17:56,719 - INFO - Análisis completado para MRSN: {'ticker': 'MRSN', 'n_velas': 4, 'T_date': '2025-05-19', 'T_volume': 10171738.0, 'T_close': 0.385, 'T_volume_ma': 2970234.2, 'volume_ratio': 3.4245575651913236, 'T1_open': 0.3834, 'T1_close': 0.39, 'T1_high': 0.39, 'T1_low': 0.3573, 'T1_pct_change': 1.7214397496087621, 'T1_high_pct': 1.7214397496087621, 'T2_open': 0.3749, 'T2_close': 0.3533, 'T2_pct_change': -5.761536409709258, 'T3_open': 0.3465, 'T3_close': 0.39, 'T3_pct_change': 12.554112554112567}
+2025-05-27 07:17:56,719 - INFO - [OK] Análisis completado para MRSN
+2025-05-27 07:17:56,719 - INFO - Esperando 2.3 segundos antes del siguiente ticker...
+2025-05-27 07:17:59,042 - INFO - 
+==================================================
+2025-05-27 07:17:59,043 - INFO - PROCESANDO 37/106: PRME
+2025-05-27 07:17:59,043 - INFO - Número de velas a analizar: 4
+2025-05-27 07:17:59,043 - INFO - Analizando patrón para PRME con 4 velas...
+2025-05-27 07:18:00,088 - INFO - Obteniendo datos para PRME (intento 1/3)
+2025-05-27 07:18:00,436 - INFO - Datos obtenidos para PRME: 19 velas desde 2025-04-29 hasta 2025-05-23
+2025-05-27 07:18:00,438 - INFO - Análisis completado para PRME: {'ticker': 'PRME', 'n_velas': 4, 'T_date': '2025-05-19', 'T_volume': 9655747.0, 'T_close': 1.335, 'T_volume_ma': 2026184.8, 'volume_ratio': 4.765481904710764, 'T1_open': 1.33, 'T1_close': 1.175, 'T1_high': 1.34, 'T1_low': 1.11, 'T1_pct_change': -11.654135338345865, 'T1_high_pct': 0.7518796992481209, 'T2_open': 1.15, 'T2_close': 1.165, 'T2_pct_change': 1.3043478260869674, 'T3_open': 1.15, 'T3_close': 1.23, 'T3_pct_change': 6.956521739130442}
+2025-05-27 07:18:00,438 - INFO - [OK] Análisis completado para PRME
+2025-05-27 07:18:00,438 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:18:03,273 - INFO - 
+==================================================
+2025-05-27 07:18:03,274 - INFO - PROCESANDO 38/106: MULN
+2025-05-27 07:18:03,274 - INFO - Número de velas a analizar: 4
+2025-05-27 07:18:03,274 - INFO - Analizando patrón para MULN con 4 velas...
+2025-05-27 07:18:05,257 - INFO - Obteniendo datos para MULN (intento 1/3)
+2025-05-27 07:18:05,607 - INFO - Datos obtenidos para MULN: 19 velas desde 2025-04-29 hasta 2025-05-23
+2025-05-27 07:18:05,609 - INFO - Análisis completado para MULN: {'ticker': 'MULN', 'n_velas': 4, 'T_date': '2025-05-19', 'T_volume': 557427932.0, 'T_close': 0.34, 'T_volume_ma': 53145731.6, 'volume_ratio': 10.488667955414881, 'T1_open': 0.2882, 'T1_close': 0.1995, 'T1_high': 0.2991, 'T1_low': 0.191, 'T1_pct_change': -30.777238029146424, 'T1_high_pct': 3.782095766828579, 'T2_open': 0.1856, 'T2_close': 0.1698, 'T2_pct_change': -8.51293103448275, 'T3_open': 0.172, 'T3_close': 0.166, 'T3_pct_change': -3.4883720930232434}
+2025-05-27 07:18:05,609 - INFO - [OK] Análisis completado para MULN
+2025-05-27 07:18:05,609 - INFO - Esperando 2.4 segundos antes del siguiente ticker...
+2025-05-27 07:18:07,974 - INFO - 
+==================================================
+2025-05-27 07:18:07,974 - INFO - PROCESANDO 39/106: APLT
+2025-05-27 07:18:07,974 - INFO - Número de velas a analizar: 4
+2025-05-27 07:18:07,974 - INFO - Analizando patrón para APLT con 4 velas...
+2025-05-27 07:18:10,421 - INFO - Obteniendo datos para APLT (intento 1/3)
+2025-05-27 07:18:10,770 - INFO - Datos obtenidos para APLT: 19 velas desde 2025-04-29 hasta 2025-05-23
+2025-05-27 07:18:10,770 - INFO - Análisis completado para APLT: {'ticker': 'APLT', 'n_velas': 4, 'T_date': '2025-05-19', 'T_volume': 12523735.0, 'T_close': 0.4559, 'T_volume_ma': 2920596.1333333333, 'volume_ratio': 4.2880749094557, 'T1_open': 0.4604, 'T1_close': 0.4355, 'T1_high': 0.4684, 'T1_low': 0.4221, 'T1_pct_change': -5.408340573414418, 'T1_high_pct': 1.7376194613379685, 'T2_open': 0.4303, 'T2_close': 0.3779, 'T2_pct_change': -12.177550546130608, 'T3_open': 0.3986, 'T3_close': 0.41, 'T3_pct_change': 2.8600100351229214}
+2025-05-27 07:18:10,770 - INFO - [OK] Análisis completado para APLT
+2025-05-27 07:18:10,770 - INFO - Esperando 2.1 segundos antes del siguiente ticker...
+2025-05-27 07:18:12,831 - INFO - 
+==================================================
+2025-05-27 07:18:12,832 - INFO - PROCESANDO 40/106: WOOF
+2025-05-27 07:18:12,832 - INFO - Número de velas a analizar: 3
+2025-05-27 07:18:12,832 - INFO - Analizando patrón para WOOF con 3 velas...
+2025-05-27 07:18:14,993 - INFO - Obteniendo datos para WOOF (intento 1/3)
+2025-05-27 07:18:15,334 - INFO - Datos obtenidos para WOOF: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:18:15,336 - INFO - Análisis completado para WOOF: {'ticker': 'WOOF', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 7602044.0, 'T_close': 3.86, 'T_volume_ma': 3208922.0, 'volume_ratio': 2.369033588226825, 'T1_open': 3.77, 'T1_close': 3.65, 'T1_high': 3.84, 'T1_low': 3.61, 'T1_pct_change': -3.183023872679048, 'T1_high_pct': 1.8567639257294388, 'T2_open': 3.59, 'T2_close': 3.69, 'T2_pct_change': 2.7855153203342646, 'T3_open': 3.58, 'T3_close': 3.63, 'T3_pct_change': 1.3966480446927325}
+2025-05-27 07:18:15,336 - INFO - [OK] Análisis completado para WOOF
+2025-05-27 07:18:15,337 - INFO - 
+==================================================
+2025-05-27 07:18:15,337 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:18:15,337 - INFO - ==================================================
+2025-05-27 07:19:15,346 - INFO - 
+==================================================
+2025-05-27 07:19:15,348 - INFO - PROCESANDO 41/106: QSI
+2025-05-27 07:19:15,348 - INFO - Número de velas a analizar: 3
+2025-05-27 07:19:15,348 - INFO - Analizando patrón para QSI con 3 velas...
+2025-05-27 07:19:17,036 - INFO - Obteniendo datos para QSI (intento 1/3)
+2025-05-27 07:19:17,440 - INFO - Datos obtenidos para QSI: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:19:17,441 - INFO - Análisis completado para QSI: {'ticker': 'QSI', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 25872958.0, 'T_close': 1.68, 'T_volume_ma': 7057991.071428572, 'volume_ratio': 3.665768026363228, 'T1_open': 1.795, 'T1_close': 1.475, 'T1_high': 1.8, 'T1_low': 1.45, 'T1_pct_change': -17.827298050139266, 'T1_high_pct': 0.27855153203343264, 'T2_open': 1.56, 'T2_close': 1.74, 'T2_pct_change': 11.538461538461533, 'T3_open': 1.755, 'T3_close': 1.94, 'T3_pct_change': 10.541310541310544}
+2025-05-27 07:19:17,441 - INFO - [OK] Análisis completado para QSI
+2025-05-27 07:19:17,441 - INFO - Esperando 3.0 segundos antes del siguiente ticker...
+2025-05-27 07:19:20,419 - INFO - 
+==================================================
+2025-05-27 07:19:20,420 - INFO - PROCESANDO 42/106: XTIA
+2025-05-27 07:19:20,420 - INFO - Número de velas a analizar: 3
+2025-05-27 07:19:20,420 - INFO - Analizando patrón para XTIA con 3 velas...
+2025-05-27 07:19:22,414 - INFO - Obteniendo datos para XTIA (intento 1/3)
+2025-05-27 07:19:22,767 - INFO - Datos obtenidos para XTIA: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:19:22,769 - INFO - Análisis completado para XTIA: {'ticker': 'XTIA', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 2059493.0, 'T_close': 1.5, 'T_volume_ma': 449219.28571428574, 'volume_ratio': 4.584605036992751, 'T1_open': 1.52, 'T1_close': 1.61, 'T1_high': 1.76, 'T1_low': 1.41, 'T1_pct_change': 5.921052631578952, 'T1_high_pct': 15.789473684210526, 'T2_open': 1.76, 'T2_close': 1.86, 'T2_pct_change': 5.681818181818187, 'T3_open': 1.85, 'T3_close': 1.83, 'T3_pct_change': -1.081081081081082}
+2025-05-27 07:19:22,769 - INFO - [OK] Análisis completado para XTIA
+2025-05-27 07:19:22,770 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:19:24,939 - INFO - 
+==================================================
+2025-05-27 07:19:24,940 - INFO - PROCESANDO 43/106: ATAI
+2025-05-27 07:19:24,940 - INFO - Número de velas a analizar: 3
+2025-05-27 07:19:24,940 - INFO - Analizando patrón para ATAI con 3 velas...
+2025-05-27 07:19:26,265 - INFO - Obteniendo datos para ATAI (intento 1/3)
+2025-05-27 07:19:26,612 - INFO - Datos obtenidos para ATAI: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:19:26,613 - INFO - Análisis completado para ATAI: {'ticker': 'ATAI', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 7225148.0, 'T_close': 2.05, 'T_volume_ma': 1920747.5714285714, 'volume_ratio': 3.7616332866823505, 'T1_open': 1.98, 'T1_close': 1.91, 'T1_high': 2.0793, 'T1_low': 1.885, 'T1_pct_change': -3.5353535353535386, 'T1_high_pct': 5.015151515151512, 'T2_open': 1.91, 'T2_close': 2.02, 'T2_pct_change': 5.759162303664927, 'T3_open': 1.98, 'T3_close': 2.06, 'T3_pct_change': 4.040404040404044}
+2025-05-27 07:19:26,614 - INFO - [OK] Análisis completado para ATAI
+2025-05-27 07:19:26,614 - INFO - Esperando 2.6 segundos antes del siguiente ticker...
+2025-05-27 07:19:29,253 - INFO - 
+==================================================
+2025-05-27 07:19:29,254 - INFO - PROCESANDO 44/106: SANA
+2025-05-27 07:19:29,254 - INFO - Número de velas a analizar: 3
+2025-05-27 07:19:29,254 - INFO - Analizando patrón para SANA con 3 velas...
+2025-05-27 07:19:32,045 - INFO - Obteniendo datos para SANA (intento 1/3)
+2025-05-27 07:19:32,400 - INFO - Datos obtenidos para SANA: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:19:32,402 - INFO - Análisis completado para SANA: {'ticker': 'SANA', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 10250545.0, 'T_close': 2.09, 'T_volume_ma': 3709997.785714286, 'volume_ratio': 2.7629517838179685, 'T1_open': 2.075, 'T1_close': 1.96, 'T1_high': 2.075, 'T1_low': 1.9, 'T1_pct_change': -5.5421686746988055, 'T1_high_pct': 0.0, 'T2_open': 1.91, 'T2_close': 2.0, 'T2_pct_change': 4.712041884816758, 'T3_open': 1.94, 'T3_close': 1.99, 'T3_pct_change': 2.5773195876288684}
+2025-05-27 07:19:32,402 - INFO - [OK] Análisis completado para SANA
+2025-05-27 07:19:32,402 - INFO - Esperando 1.6 segundos antes del siguiente ticker...
+2025-05-27 07:19:33,959 - INFO - 
+==================================================
+2025-05-27 07:19:33,959 - INFO - PROCESANDO 45/106: EYEN
+2025-05-27 07:19:33,959 - INFO - Número de velas a analizar: 3
+2025-05-27 07:19:33,960 - INFO - Analizando patrón para EYEN con 3 velas...
+2025-05-27 07:19:36,343 - INFO - Obteniendo datos para EYEN (intento 1/3)
+2025-05-27 07:19:36,681 - INFO - Datos obtenidos para EYEN: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:19:36,685 - INFO - Análisis completado para EYEN: {'ticker': 'EYEN', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 49961376.0, 'T_close': 1.67, 'T_volume_ma': 4010865.6428571427, 'volume_ratio': 12.456507010893036, 'T1_open': 1.59, 'T1_close': 1.4, 'T1_high': 1.67, 'T1_low': 1.36, 'T1_pct_change': -11.949685534591206, 'T1_high_pct': 5.031446540880494, 'T2_open': 1.43, 'T2_close': 2.03, 'T2_pct_change': 41.95804195804195, 'T3_open': 1.91, 'T3_close': 1.77, 'T3_pct_change': -7.329842931937168}
+2025-05-27 07:19:36,685 - INFO - [OK] Análisis completado para EYEN
+2025-05-27 07:19:36,685 - INFO - 
+==================================================
+2025-05-27 07:19:36,685 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:19:36,685 - INFO - ==================================================
+2025-05-27 07:20:36,689 - INFO - 
+==================================================
+2025-05-27 07:20:36,690 - INFO - PROCESANDO 46/106: BLMZ
+2025-05-27 07:20:36,690 - INFO - Número de velas a analizar: 3
+2025-05-27 07:20:36,691 - INFO - Analizando patrón para BLMZ con 3 velas...
+2025-05-27 07:20:37,817 - INFO - Obteniendo datos para BLMZ (intento 1/3)
+2025-05-27 07:20:38,422 - INFO - Datos obtenidos para BLMZ: 17 velas desde 2025-05-01 hasta 2025-05-23
+2025-05-27 07:20:38,423 - INFO - Análisis completado para BLMZ: {'ticker': 'BLMZ', 'n_velas': 3, 'T_date': '2025-05-20', 'T_volume': 763108369.0, 'T_close': 0.1522, 'T_volume_ma': 74898462.78571428, 'volume_ratio': 10.188571842699435, 'T1_open': 0.141, 'T1_close': 0.1299, 'T1_high': 0.15, 'T1_low': 0.1217, 'T1_pct_change': -7.872340425531915, 'T1_high_pct': 6.382978723404261, 'T2_open': 0.12, 'T2_close': 0.134, 'T2_pct_change': 11.666666666666679, 'T3_open': 0.25, 'T3_close': 0.21, 'T3_pct_change': -16.000000000000004}
+2025-05-27 07:20:38,423 - INFO - [OK] Análisis completado para BLMZ
+2025-05-27 07:20:38,423 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:20:41,238 - INFO - 
+==================================================
+2025-05-27 07:20:41,240 - INFO - PROCESANDO 47/106: CIFR
+2025-05-27 07:20:41,240 - INFO - Número de velas a analizar: 2
+2025-05-27 07:20:41,240 - INFO - Analizando patrón para CIFR con 2 velas...
+2025-05-27 07:20:42,491 - INFO - Obteniendo datos para CIFR (intento 1/3)
+2025-05-27 07:20:42,843 - INFO - Datos obtenidos para CIFR: 15 velas desde 2025-05-05 hasta 2025-05-23
+2025-05-27 07:20:42,844 - INFO - Análisis completado para CIFR: {'ticker': 'CIFR', 'n_velas': 2, 'T_date': '2025-05-21', 'T_volume': 57678708.0, 'T_close': 3.505, 'T_volume_ma': 21483776.692307692, 'volume_ratio': 2.6847564479038724, 'T1_open': 3.65, 'T1_close': 3.57, 'T1_high': 3.7, 'T1_low': 3.5, 'T1_pct_change': -2.1917808219178103, 'T1_high_pct': 1.3698630136986376, 'T2_open': 3.42, 'T2_close': 3.47, 'T2_pct_change': 1.461988304093575, 'T3_open': 3.06, 'T3_close': 2.98, 'T3_pct_change': -2.6143790849673225}
+2025-05-27 07:20:42,844 - INFO - [OK] Análisis completado para CIFR
+2025-05-27 07:20:42,844 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:20:45,683 - INFO - 
+==================================================
+2025-05-27 07:20:45,683 - INFO - PROCESANDO 48/106: BDSX
+2025-05-27 07:20:45,683 - INFO - Número de velas a analizar: 2
+2025-05-27 07:20:45,683 - INFO - Analizando patrón para BDSX con 2 velas...
+2025-05-27 07:20:47,350 - INFO - Obteniendo datos para BDSX (intento 1/3)
+2025-05-27 07:20:47,695 - INFO - Datos obtenidos para BDSX: 15 velas desde 2025-05-05 hasta 2025-05-23
+2025-05-27 07:20:47,697 - INFO - Análisis completado para BDSX: {'ticker': 'BDSX', 'n_velas': 2, 'T_date': '2025-05-21', 'T_volume': 357533180.0, 'T_close': 0.3951, 'T_volume_ma': 36822737.84615385, 'volume_ratio': 9.709576226889508, 'T1_open': 0.3578, 'T1_close': 0.3559, 'T1_high': 0.3995, 'T1_low': 0.3425, 'T1_pct_change': -0.5310229178311943, 'T1_high_pct': 11.654555617663503, 'T2_open': 0.364, 'T2_close': 0.3426, 'T2_pct_change': -5.8791208791208724, 'T3_open': 0.527, 'T3_close': 0.4743, 'T3_pct_change': -10.000000000000005}
+2025-05-27 07:20:47,697 - INFO - [OK] Análisis completado para BDSX
+2025-05-27 07:20:47,697 - INFO - Esperando 3.0 segundos antes del siguiente ticker...
+2025-05-27 07:20:50,669 - INFO - 
+==================================================
+2025-05-27 07:20:50,669 - INFO - PROCESANDO 49/106: LTRY
+2025-05-27 07:20:50,669 - INFO - Número de velas a analizar: 2
+2025-05-27 07:20:50,669 - INFO - Analizando patrón para LTRY con 2 velas...
+2025-05-27 07:20:53,592 - INFO - Obteniendo datos para LTRY (intento 1/3)
+2025-05-27 07:20:53,940 - INFO - Datos obtenidos para LTRY: 15 velas desde 2025-05-05 hasta 2025-05-23
+2025-05-27 07:20:53,942 - INFO - Análisis completado para LTRY: {'ticker': 'LTRY', 'n_velas': 2, 'T_date': '2025-05-21', 'T_volume': 163530664.0, 'T_close': 1.78, 'T_volume_ma': 13034233.23076923, 'volume_ratio': 12.54624350391105, 'T1_open': 1.619, 'T1_close': 1.6, 'T1_high': 1.73, 'T1_low': 1.33, 'T1_pct_change': -1.1735639283508281, 'T1_high_pct': 6.856084002470659, 'T2_open': 1.995, 'T2_close': 1.76, 'T2_pct_change': -11.77944862155389, 'T3_open': 0.91, 'T3_close': 0.89, 'T3_pct_change': -2.1978021978021998}
+2025-05-27 07:20:53,942 - INFO - [OK] Análisis completado para LTRY
+2025-05-27 07:20:53,942 - INFO - Esperando 2.8 segundos antes del siguiente ticker...
+2025-05-27 07:20:56,795 - INFO - 
+==================================================
+2025-05-27 07:20:56,795 - INFO - PROCESANDO 50/106: IQ
+2025-05-27 07:20:56,795 - INFO - Número de velas a analizar: 2
+2025-05-27 07:20:56,795 - INFO - Analizando patrón para IQ con 2 velas...
+2025-05-27 07:20:59,192 - INFO - Obteniendo datos para IQ (intento 1/3)
+2025-05-27 07:20:59,533 - INFO - Datos obtenidos para IQ: 15 velas desde 2025-05-05 hasta 2025-05-23
+2025-05-27 07:20:59,535 - INFO - Análisis completado para IQ: {'ticker': 'IQ', 'n_velas': 2, 'T_date': '2025-05-21', 'T_volume': 63461105.0, 'T_close': 1.71, 'T_volume_ma': 19093089.153846152, 'volume_ratio': 3.32377356480401, 'T1_open': 1.69, 'T1_close': 1.69, 'T1_high': 1.7, 'T1_low': 1.66, 'T1_pct_change': 0.0, 'T1_high_pct': 0.5917159763313614, 'T2_open': 1.67, 'T2_close': 1.67, 'T2_pct_change': 0.0, 'T3_open': 1.91, 'T3_close': 1.96, 'T3_pct_change': 2.6178010471204214}
+2025-05-27 07:20:59,535 - INFO - [OK] Análisis completado para IQ
+2025-05-27 07:20:59,535 - INFO - 
+==================================================
+2025-05-27 07:20:59,535 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:20:59,535 - INFO - ==================================================
+2025-05-27 07:21:59,545 - INFO - 
+==================================================
+2025-05-27 07:21:59,547 - INFO - PROCESANDO 51/106: GCTK
+2025-05-27 07:21:59,548 - INFO - Número de velas a analizar: 17
+2025-05-27 07:21:59,548 - INFO - Analizando patrón para GCTK con 17 velas...
+2025-05-27 07:22:02,237 - INFO - Obteniendo datos para GCTK (intento 1/3)
+2025-05-27 07:22:02,646 - INFO - Datos obtenidos para GCTK: 36 velas desde 2025-04-03 hasta 2025-05-23
+2025-05-27 07:22:02,648 - INFO - Análisis completado para GCTK: {'ticker': 'GCTK', 'n_velas': 17, 'T_date': '2025-04-30', 'T_volume': 54092799.0, 'T_close': 0.1732, 'T_volume_ma': 4529870.052631579, 'volume_ratio': 11.941357781019649, 'T1_open': 0.175, 'T1_close': 0.1753, 'T1_high': 0.19, 'T1_low': 0.165, 'T1_pct_change': 0.17142857142858428, 'T1_high_pct': 8.57142857142858, 'T2_open': 0.165, 'T2_close': 0.1687, 'T2_pct_change': 2.2424242424242307, 'T3_open': 0.1624, 'T3_close': 0.1844, 'T3_pct_change': 13.546798029556664}
+2025-05-27 07:22:02,648 - INFO - [OK] Análisis completado para GCTK
+2025-05-27 07:22:02,648 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:22:04,139 - INFO - 
+==================================================
+2025-05-27 07:22:04,140 - INFO - PROCESANDO 52/106: NVNI
+2025-05-27 07:22:04,140 - INFO - Número de velas a analizar: 17
+2025-05-27 07:22:04,140 - INFO - Analizando patrón para NVNI con 17 velas...
+2025-05-27 07:22:06,687 - INFO - Obteniendo datos para NVNI (intento 1/3)
+2025-05-27 07:22:07,044 - INFO - Datos obtenidos para NVNI: 36 velas desde 2025-04-03 hasta 2025-05-23
+2025-05-27 07:22:07,047 - INFO - Análisis completado para NVNI: {'ticker': 'NVNI', 'n_velas': 17, 'T_date': '2025-04-30', 'T_volume': 363026814.0, 'T_close': 0.4499, 'T_volume_ma': 24719372.736842107, 'volume_ratio': 14.68592337939626, 'T1_open': 0.7067, 'T1_close': 0.405, 'T1_high': 0.7623, 'T1_low': 0.35, 'T1_pct_change': -42.69138248195839, 'T1_high_pct': 7.867553417291635, 'T2_open': 0.363, 'T2_close': 0.3363, 'T2_pct_change': -7.355371900826448, 'T3_open': 0.3986, 'T3_close': 0.5145, 'T3_pct_change': 29.076768690416444}
+2025-05-27 07:22:07,047 - INFO - [OK] Análisis completado para NVNI
+2025-05-27 07:22:07,047 - INFO - Esperando 2.6 segundos antes del siguiente ticker...
+2025-05-27 07:22:09,637 - INFO - 
+==================================================
+2025-05-27 07:22:09,637 - INFO - PROCESANDO 53/106: KIDZ
+2025-05-27 07:22:09,637 - INFO - Número de velas a analizar: 16
+2025-05-27 07:22:09,638 - INFO - Analizando patrón para KIDZ con 16 velas...
+2025-05-27 07:22:11,318 - INFO - Obteniendo datos para KIDZ (intento 1/3)
+2025-05-27 07:22:11,656 - INFO - Datos obtenidos para KIDZ: 34 velas desde 2025-04-07 hasta 2025-05-23
+2025-05-27 07:22:11,658 - INFO - Análisis completado para KIDZ: {'ticker': 'KIDZ', 'n_velas': 16, 'T_date': '2025-05-01', 'T_volume': 262873244.0, 'T_close': 5.36, 'T_volume_ma': 16199564.722222222, 'volume_ratio': 16.227179464852906, 'T1_open': 8.155, 'T1_close': 7.18, 'T1_high': 10.65, 'T1_low': 6.07, 'T1_pct_change': -11.955855303494785, 'T1_high_pct': 30.59472716125078, 'T2_open': 7.62, 'T2_close': 6.31, 'T2_pct_change': -17.191601049868773, 'T3_open': 6.2, 'T3_close': 6.5, 'T3_pct_change': 4.838709677419352}
+2025-05-27 07:22:11,658 - INFO - [OK] Análisis completado para KIDZ
+2025-05-27 07:22:11,658 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:22:13,851 - INFO - 
+==================================================
+2025-05-27 07:22:13,852 - INFO - PROCESANDO 54/106: FRGT
+2025-05-27 07:22:13,852 - INFO - Número de velas a analizar: 15
+2025-05-27 07:22:13,852 - INFO - Analizando patrón para FRGT con 15 velas...
+2025-05-27 07:22:16,148 - INFO - Obteniendo datos para FRGT (intento 1/3)
+2025-05-27 07:22:16,500 - INFO - Datos obtenidos para FRGT: 34 velas desde 2025-04-07 hasta 2025-05-23
+2025-05-27 07:22:16,503 - INFO - Análisis completado para FRGT: {'ticker': 'FRGT', 'n_velas': 15, 'T_date': '2025-05-02', 'T_volume': 40991316.75, 'T_close': 8.32, 'T_volume_ma': 2588397.6052631577, 'volume_ratio': 15.836561070312259, 'T1_open': 6.76, 'T1_close': 5.8, 'T1_high': 7.04, 'T1_low': 5.72, 'T1_pct_change': -14.201183431952662, 'T1_high_pct': 4.14201183431953, 'T2_open': 6.36, 'T2_close': 5.52, 'T2_pct_change': -13.207547169811331, 'T3_open': 5.64, 'T3_close': 5.32, 'T3_pct_change': -5.6737588652482165}
+2025-05-27 07:22:16,503 - INFO - [OK] Análisis completado para FRGT
+2025-05-27 07:22:16,503 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:22:18,324 - INFO - 
+==================================================
+2025-05-27 07:22:18,324 - INFO - PROCESANDO 55/106: ARDX
+2025-05-27 07:22:18,324 - INFO - Número de velas a analizar: 15
+2025-05-27 07:22:18,324 - INFO - Analizando patrón para ARDX con 15 velas...
+2025-05-27 07:22:19,625 - INFO - Obteniendo datos para ARDX (intento 1/3)
+2025-05-27 07:22:19,971 - INFO - Datos obtenidos para ARDX: 34 velas desde 2025-04-07 hasta 2025-05-23
+2025-05-27 07:22:19,973 - INFO - Análisis completado para ARDX: {'ticker': 'ARDX', 'n_velas': 15, 'T_date': '2025-05-02', 'T_volume': 20522378.0, 'T_close': 4.13, 'T_volume_ma': 6047691.947368421, 'volume_ratio': 3.3934231734356217, 'T1_open': 4.12, 'T1_close': 3.735, 'T1_high': 4.18, 'T1_low': 3.62, 'T1_pct_change': -9.344660194174763, 'T1_high_pct': 1.456310679611641, 'T2_open': 3.89, 'T2_close': 3.95, 'T2_pct_change': 1.5424164524421609, 'T3_open': 3.95, 'T3_close': 3.7, 'T3_pct_change': -6.329113924050632}
+2025-05-27 07:22:19,973 - INFO - [OK] Análisis completado para ARDX
+2025-05-27 07:22:19,973 - INFO - 
+==================================================
+2025-05-27 07:22:19,973 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:22:19,973 - INFO - ==================================================
+2025-05-27 07:23:19,981 - INFO - 
+==================================================
+2025-05-27 07:23:19,983 - INFO - PROCESANDO 56/106: NITO
+2025-05-27 07:23:19,983 - INFO - Número de velas a analizar: 14
+2025-05-27 07:23:19,983 - INFO - Analizando patrón para NITO con 14 velas...
+2025-05-27 07:23:21,392 - INFO - Obteniendo datos para NITO (intento 1/3)
+2025-05-27 07:23:21,804 - INFO - Datos obtenidos para NITO: 32 velas desde 2025-04-09 hasta 2025-05-23
+2025-05-27 07:23:21,805 - INFO - Análisis completado para NITO: {'ticker': 'NITO', 'n_velas': 14, 'T_date': '2025-05-05', 'T_volume': 601214610.0, 'T_close': 0.68, 'T_volume_ma': 39052026.722222224, 'volume_ratio': 15.395221719898187, 'T1_open': 0.5049, 'T1_close': 0.3898, 'T1_high': 0.5319, 'T1_low': 0.34275, 'T1_pct_change': -22.796593384828686, 'T1_high_pct': 5.347593582887705, 'T2_open': 0.3869, 'T2_close': 0.3605, 'T2_pct_change': -6.823468596536582, 'T3_open': 0.3448, 'T3_close': 0.38, 'T3_pct_change': 10.20881670533643}
+2025-05-27 07:23:21,806 - INFO - [OK] Análisis completado para NITO
+2025-05-27 07:23:21,806 - INFO - Esperando 1.9 segundos antes del siguiente ticker...
+2025-05-27 07:23:23,713 - INFO - 
+==================================================
+2025-05-27 07:23:23,713 - INFO - PROCESANDO 57/106: IBRX
+2025-05-27 07:23:23,713 - INFO - Número de velas a analizar: 14
+2025-05-27 07:23:23,714 - INFO - Analizando patrón para IBRX con 14 velas...
+2025-05-27 07:23:24,973 - INFO - Obteniendo datos para IBRX (intento 1/3)
+2025-05-27 07:23:25,312 - INFO - Datos obtenidos para IBRX: 32 velas desde 2025-04-09 hasta 2025-05-23
+2025-05-27 07:23:25,312 - INFO - Análisis completado para IBRX: {'ticker': 'IBRX', 'n_velas': 14, 'T_date': '2025-05-05', 'T_volume': 31017876.0, 'T_close': 2.1, 'T_volume_ma': 7266998.944444444, 'volume_ratio': 4.26831987139793, 'T1_open': 2.1, 'T1_close': 2.01, 'T1_high': 2.2699, 'T1_low': 1.96, 'T1_pct_change': -4.2857142857143, 'T1_high_pct': 8.090476190476178, 'T2_open': 2.005, 'T2_close': 1.89, 'T2_pct_change': -5.7356608478802995, 'T3_open': 1.98, 'T3_close': 2.09, 'T3_pct_change': 5.555555555555549}
+2025-05-27 07:23:25,312 - INFO - [OK] Análisis completado para IBRX
+2025-05-27 07:23:25,312 - INFO - Esperando 2.5 segundos antes del siguiente ticker...
+2025-05-27 07:23:27,847 - INFO - 
+==================================================
+2025-05-27 07:23:27,847 - INFO - PROCESANDO 58/106: EVGO
+2025-05-27 07:23:27,847 - INFO - Número de velas a analizar: 13
+2025-05-27 07:23:27,848 - INFO - Analizando patrón para EVGO con 13 velas...
+2025-05-27 07:23:29,747 - INFO - Obteniendo datos para EVGO (intento 1/3)
+2025-05-27 07:23:30,095 - INFO - Datos obtenidos para EVGO: 30 velas desde 2025-04-11 hasta 2025-05-23
+2025-05-27 07:23:30,097 - INFO - Análisis completado para EVGO: {'ticker': 'EVGO', 'n_velas': 13, 'T_date': '2025-05-06', 'T_volume': 21459772.0, 'T_close': 3.67, 'T_volume_ma': 3470030.6470588236, 'volume_ratio': 6.184317714366347, 'T1_open': 3.726, 'T1_close': 3.67, 'T1_high': 4.165, 'T1_low': 3.64, 'T1_pct_change': -1.50295222758991, 'T1_high_pct': 11.782071926999464, 'T2_open': 3.71, 'T2_close': 3.83, 'T2_pct_change': 3.234501347708898, 'T3_open': 3.845, 'T3_close': 3.66, 'T3_pct_change': -4.811443433029909}
+2025-05-27 07:23:30,097 - INFO - [OK] Análisis completado para EVGO
+2025-05-27 07:23:30,097 - INFO - Esperando 2.4 segundos antes del siguiente ticker...
+2025-05-27 07:23:32,455 - INFO - 
+==================================================
+2025-05-27 07:23:32,455 - INFO - PROCESANDO 59/106: OPK
+2025-05-27 07:23:32,455 - INFO - Número de velas a analizar: 13
+2025-05-27 07:23:32,455 - INFO - Analizando patrón para OPK con 13 velas...
+2025-05-27 07:23:33,822 - INFO - Obteniendo datos para OPK (intento 1/3)
+2025-05-27 07:23:34,172 - INFO - Datos obtenidos para OPK: 30 velas desde 2025-04-11 hasta 2025-05-23
+2025-05-27 07:23:34,173 - INFO - Análisis completado para OPK: {'ticker': 'OPK', 'n_velas': 13, 'T_date': '2025-05-06', 'T_volume': 9840930.0, 'T_close': 1.28, 'T_volume_ma': 3135798.529411765, 'volume_ratio': 3.138253273511813, 'T1_open': 1.27, 'T1_close': 1.25, 'T1_high': 1.28, 'T1_low': 1.24, 'T1_pct_change': -1.5748031496063006, 'T1_high_pct': 0.7874015748031503, 'T2_open': 1.26, 'T2_close': 1.26, 'T2_pct_change': 0.0, 'T3_open': 1.26, 'T3_close': 1.24, 'T3_pct_change': -1.5873015873015885}
+2025-05-27 07:23:34,173 - INFO - [OK] Análisis completado para OPK
+2025-05-27 07:23:34,173 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:23:36,422 - INFO - 
+==================================================
+2025-05-27 07:23:36,424 - INFO - PROCESANDO 60/106: MYGN
+2025-05-27 07:23:36,424 - INFO - Número de velas a analizar: 12
+2025-05-27 07:23:36,424 - INFO - Analizando patrón para MYGN con 12 velas...
+2025-05-27 07:23:38,309 - INFO - Obteniendo datos para MYGN (intento 1/3)
+2025-05-27 07:23:38,649 - INFO - Datos obtenidos para MYGN: 29 velas desde 2025-04-14 hasta 2025-05-23
+2025-05-27 07:23:38,650 - INFO - Análisis completado para MYGN: {'ticker': 'MYGN', 'n_velas': 12, 'T_date': '2025-05-07', 'T_volume': 12642104.0, 'T_close': 4.27, 'T_volume_ma': 2776658.7647058824, 'volume_ratio': 4.5529915885573775, 'T1_open': 4.29, 'T1_close': 4.03, 'T1_high': 4.31, 'T1_low': 3.98, 'T1_pct_change': -6.060606060606056, 'T1_high_pct': 0.46620046620045624, 'T2_open': 4.09, 'T2_close': 3.89, 'T2_pct_change': -4.889975550122243, 'T3_open': 4.0, 'T3_close': 4.25, 'T3_pct_change': 6.25}
+2025-05-27 07:23:38,650 - INFO - [OK] Análisis completado para MYGN
+2025-05-27 07:23:38,650 - INFO - 
+==================================================
+2025-05-27 07:23:38,651 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:23:38,651 - INFO - ==================================================
+2025-05-27 07:24:38,659 - INFO - 
+==================================================
+2025-05-27 07:24:38,660 - INFO - PROCESANDO 61/106: CLOV
+2025-05-27 07:24:38,660 - INFO - Número de velas a analizar: 12
+2025-05-27 07:24:38,661 - INFO - Analizando patrón para CLOV con 12 velas...
+2025-05-27 07:24:41,468 - INFO - Obteniendo datos para CLOV (intento 1/3)
+2025-05-27 07:24:41,870 - INFO - Datos obtenidos para CLOV: 29 velas desde 2025-04-14 hasta 2025-05-23
+2025-05-27 07:24:41,872 - INFO - Análisis completado para CLOV: {'ticker': 'CLOV', 'n_velas': 12, 'T_date': '2025-05-07', 'T_volume': 12949060.0, 'T_close': 3.77, 'T_volume_ma': 5059906.411764706, 'volume_ratio': 2.559150100067533, 'T1_open': 3.82, 'T1_close': 3.75, 'T1_high': 3.89, 'T1_low': 3.71, 'T1_pct_change': -1.8324607329842892, 'T1_high_pct': 1.8324607329843006, 'T2_open': 3.8, 'T2_close': 3.51, 'T2_pct_change': -7.631578947368423, 'T3_open': 3.6, 'T3_close': 3.47, 'T3_pct_change': -3.611111111111108}
+2025-05-27 07:24:41,872 - INFO - [OK] Análisis completado para CLOV
+2025-05-27 07:24:41,872 - INFO - Esperando 1.0 segundos antes del siguiente ticker...
+2025-05-27 07:24:42,894 - INFO - 
+==================================================
+2025-05-27 07:24:42,895 - INFO - PROCESANDO 62/106: HNST
+2025-05-27 07:24:42,895 - INFO - Número de velas a analizar: 11
+2025-05-27 07:24:42,895 - INFO - Analizando patrón para HNST con 11 velas...
+2025-05-27 07:24:44,701 - INFO - Obteniendo datos para HNST (intento 1/3)
+2025-05-27 07:24:45,056 - INFO - Datos obtenidos para HNST: 28 velas desde 2025-04-15 hasta 2025-05-23
+2025-05-27 07:24:45,059 - INFO - Análisis completado para HNST: {'ticker': 'HNST', 'n_velas': 11, 'T_date': '2025-05-08', 'T_volume': 6555250.0, 'T_close': 4.38, 'T_volume_ma': 2136738.705882353, 'volume_ratio': 3.067876283587539, 'T1_open': 4.66, 'T1_close': 4.84, 'T1_high': 5.19, 'T1_low': 4.66, 'T1_pct_change': 3.8626609442060027, 'T1_high_pct': 11.373390557939919, 'T2_open': 5.32, 'T2_close': 5.07, 'T2_pct_change': -4.6992481203007515, 'T3_open': 5.17, 'T3_close': 5.13, 'T3_pct_change': -0.773694390715668}
+2025-05-27 07:24:45,059 - INFO - [OK] Análisis completado para HNST
+2025-05-27 07:24:45,059 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:24:46,814 - INFO - 
+==================================================
+2025-05-27 07:24:46,814 - INFO - PROCESANDO 63/106: FLNC
+2025-05-27 07:24:46,814 - INFO - Número de velas a analizar: 11
+2025-05-27 07:24:46,814 - INFO - Analizando patrón para FLNC con 11 velas...
+2025-05-27 07:24:49,708 - INFO - Obteniendo datos para FLNC (intento 1/3)
+2025-05-27 07:24:50,062 - INFO - Datos obtenidos para FLNC: 28 velas desde 2025-04-15 hasta 2025-05-23
+2025-05-27 07:24:50,065 - INFO - Análisis completado para FLNC: {'ticker': 'FLNC', 'n_velas': 11, 'T_date': '2025-05-08', 'T_volume': 15080814.0, 'T_close': 4.82, 'T_volume_ma': 4813970.588235294, 'volume_ratio': 3.1327183503894913, 'T1_open': 4.749, 'T1_close': 4.58, 'T1_high': 4.93, 'T1_low': 4.4975, 'T1_pct_change': -3.558643925036842, 'T1_high_pct': 3.8113287007791126, 'T2_open': 5.05, 'T2_close': 5.69, 'T2_pct_change': 12.673267326732685, 'T3_open': 6.035, 'T3_close': 5.78, 'T3_pct_change': -4.225352112676054}
+2025-05-27 07:24:50,066 - INFO - [OK] Análisis completado para FLNC
+2025-05-27 07:24:50,066 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 07:24:51,383 - INFO - 
+==================================================
+2025-05-27 07:24:51,383 - INFO - PROCESANDO 64/106: APPS
+2025-05-27 07:24:51,383 - INFO - Número de velas a analizar: 11
+2025-05-27 07:24:51,383 - INFO - Analizando patrón para APPS con 11 velas...
+2025-05-27 07:24:52,644 - INFO - Obteniendo datos para APPS (intento 1/3)
+2025-05-27 07:24:53,000 - INFO - Datos obtenidos para APPS: 28 velas desde 2025-04-15 hasta 2025-05-23
+2025-05-27 07:24:53,002 - INFO - Análisis completado para APPS: {'ticker': 'APPS', 'n_velas': 11, 'T_date': '2025-05-08', 'T_volume': 6313352.0, 'T_close': 4.13, 'T_volume_ma': 2716189.529411765, 'volume_ratio': 2.324341483404238, 'T1_open': 4.1, 'T1_close': 4.16, 'T1_high': 4.38, 'T1_low': 4.09, 'T1_pct_change': 1.4634146341463536, 'T1_high_pct': 6.829268292682933, 'T2_open': 4.5, 'T2_close': 4.37, 'T2_pct_change': -2.8888888888888866, 'T3_open': 4.4, 'T3_close': 4.42, 'T3_pct_change': 0.4545454545454448}
+2025-05-27 07:24:53,002 - INFO - [OK] Análisis completado para APPS
+2025-05-27 07:24:53,002 - INFO - Esperando 1.2 segundos antes del siguiente ticker...
+2025-05-27 07:24:54,206 - INFO - 
+==================================================
+2025-05-27 07:24:54,207 - INFO - PROCESANDO 65/106: AKBA
+2025-05-27 07:24:54,207 - INFO - Número de velas a analizar: 11
+2025-05-27 07:24:54,207 - INFO - Analizando patrón para AKBA con 11 velas...
+2025-05-27 07:24:55,258 - INFO - Obteniendo datos para AKBA (intento 1/3)
+2025-05-27 07:24:55,633 - INFO - Datos obtenidos para AKBA: 28 velas desde 2025-04-15 hasta 2025-05-23
+2025-05-27 07:24:55,635 - INFO - Análisis completado para AKBA: {'ticker': 'AKBA', 'n_velas': 11, 'T_date': '2025-05-08', 'T_volume': 10590644.0, 'T_close': 2.62, 'T_volume_ma': 3576528.7647058824, 'volume_ratio': 2.961151635214355, 'T1_open': 2.62, 'T1_close': 2.55, 'T1_high': 2.77, 'T1_low': 2.54, 'T1_pct_change': -2.6717557251908506, 'T1_high_pct': 5.725190839694653, 'T2_open': 2.595, 'T2_close': 2.43, 'T2_pct_change': -6.3583815028901745, 'T3_open': 2.45, 'T3_close': 2.48, 'T3_pct_change': 1.2244897959183594}
+2025-05-27 07:24:55,635 - INFO - [OK] Análisis completado para AKBA
+2025-05-27 07:24:55,635 - INFO - 
+==================================================
+2025-05-27 07:24:55,635 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:24:55,635 - INFO - ==================================================
+2025-05-27 07:25:55,643 - INFO - 
+==================================================
+2025-05-27 07:25:55,645 - INFO - PROCESANDO 66/106: NXTT
+2025-05-27 07:25:55,645 - INFO - Número de velas a analizar: 10
+2025-05-27 07:25:55,645 - INFO - Analizando patrón para NXTT con 10 velas...
+2025-05-27 07:25:57,089 - INFO - Obteniendo datos para NXTT (intento 1/3)
+2025-05-27 07:25:57,433 - INFO - Datos obtenidos para NXTT: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:25:57,435 - INFO - Análisis completado para NXTT: {'ticker': 'NXTT', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 217838757.0, 'T_close': 2.36, 'T_volume_ma': 13659055.375, 'volume_ratio': 15.948303233231456, 'T1_open': 4.02, 'T1_close': 3.27, 'T1_high': 4.8, 'T1_low': 2.45, 'T1_pct_change': -18.656716417910438, 'T1_high_pct': 19.402985074626873, 'T2_open': 3.02, 'T2_close': 2.81, 'T2_pct_change': -6.95364238410596, 'T3_open': 2.81, 'T3_close': 1.86, 'T3_pct_change': -33.80782918149466}
+2025-05-27 07:25:57,435 - INFO - [OK] Análisis completado para NXTT
+2025-05-27 07:25:57,435 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 07:25:58,704 - INFO - 
+==================================================
+2025-05-27 07:25:58,704 - INFO - PROCESANDO 67/106: DNUT
+2025-05-27 07:25:58,704 - INFO - Número de velas a analizar: 10
+2025-05-27 07:25:58,705 - INFO - Analizando patrón para DNUT con 10 velas...
+2025-05-27 07:26:01,541 - INFO - Obteniendo datos para DNUT (intento 1/3)
+2025-05-27 07:26:01,952 - INFO - Datos obtenidos para DNUT: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:26:01,953 - INFO - Análisis completado para DNUT: {'ticker': 'DNUT', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 31902286.0, 'T_close': 2.73, 'T_volume_ma': 6858902.125, 'volume_ratio': 4.651223390944655, 'T1_open': 2.82, 'T1_close': 3.09, 'T1_high': 3.18, 'T1_low': 2.8, 'T1_pct_change': 9.574468085106384, 'T1_high_pct': 12.765957446808523, 'T2_open': 3.125, 'T2_close': 3.21, 'T2_pct_change': 2.719999999999999, 'T3_open': 3.2, 'T3_close': 3.07, 'T3_pct_change': -4.062500000000011}
+2025-05-27 07:26:01,953 - INFO - [OK] Análisis completado para DNUT
+2025-05-27 07:26:01,954 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:26:04,160 - INFO - 
+==================================================
+2025-05-27 07:26:04,160 - INFO - PROCESANDO 68/106: BTBT
+2025-05-27 07:26:04,160 - INFO - Número de velas a analizar: 10
+2025-05-27 07:26:04,160 - INFO - Analizando patrón para BTBT con 10 velas...
+2025-05-27 07:26:06,587 - INFO - Obteniendo datos para BTBT (intento 1/3)
+2025-05-27 07:26:06,935 - INFO - Datos obtenidos para BTBT: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:26:06,936 - INFO - Análisis completado para BTBT: {'ticker': 'BTBT', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 19667208.0, 'T_close': 2.08, 'T_volume_ma': 10769339.875, 'volume_ratio': 1.8262222409430644, 'T1_open': 2.14, 'T1_close': 2.15, 'T1_high': 2.21, 'T1_low': 2.11, 'T1_pct_change': 0.46728971962615823, 'T1_high_pct': 3.2710280373831697, 'T2_open': 2.23, 'T2_close': 2.24, 'T2_pct_change': 0.448430493273553, 'T3_open': 2.27, 'T3_close': 2.14, 'T3_pct_change': -5.726872246696031}
+2025-05-27 07:26:06,937 - INFO - [OK] Análisis completado para BTBT
+2025-05-27 07:26:06,937 - INFO - Esperando 2.0 segundos antes del siguiente ticker...
+2025-05-27 07:26:08,981 - INFO - 
+==================================================
+2025-05-27 07:26:08,981 - INFO - PROCESANDO 69/106: DCGO
+2025-05-27 07:26:08,981 - INFO - Número de velas a analizar: 10
+2025-05-27 07:26:08,982 - INFO - Analizando patrón para DCGO con 10 velas...
+2025-05-27 07:26:11,236 - INFO - Obteniendo datos para DCGO (intento 1/3)
+2025-05-27 07:26:11,583 - INFO - Datos obtenidos para DCGO: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:26:11,585 - INFO - Análisis completado para DCGO: {'ticker': 'DCGO', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 9533156.0, 'T_close': 1.4, 'T_volume_ma': 1166847.1875, 'volume_ratio': 8.170012407901527, 'T1_open': 1.43, 'T1_close': 1.445, 'T1_high': 1.46, 'T1_low': 1.35, 'T1_pct_change': 1.0489510489510576, 'T1_high_pct': 2.0979020979020997, 'T2_open': 1.45, 'T2_close': 1.5, 'T2_pct_change': 3.448275862068969, 'T3_open': 1.5, 'T3_close': 1.4, 'T3_pct_change': -6.666666666666672}
+2025-05-27 07:26:11,585 - INFO - [OK] Análisis completado para DCGO
+2025-05-27 07:26:11,585 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:26:13,090 - INFO - 
+==================================================
+2025-05-27 07:26:13,091 - INFO - PROCESANDO 70/106: NVVE
+2025-05-27 07:26:13,091 - INFO - Número de velas a analizar: 10
+2025-05-27 07:26:13,091 - INFO - Analizando patrón para NVVE con 10 velas...
+2025-05-27 07:26:15,078 - INFO - Obteniendo datos para NVVE (intento 1/3)
+2025-05-27 07:26:15,429 - INFO - Datos obtenidos para NVVE: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:26:15,430 - INFO - Análisis completado para NVVE: {'ticker': 'NVVE', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 263633188.0, 'T_close': 2.78, 'T_volume_ma': 16942920.75, 'volume_ratio': 15.560079155773659, 'T1_open': 2.05, 'T1_close': 1.58, 'T1_high': 2.48, 'T1_low': 1.4, 'T1_pct_change': -22.92682926829267, 'T1_high_pct': 20.975609756097573, 'T2_open': 1.61, 'T2_close': 1.45, 'T2_pct_change': -9.937888198757772, 'T3_open': 1.32, 'T3_close': 1.1, 'T3_pct_change': -16.666666666666664}
+2025-05-27 07:26:15,430 - INFO - [OK] Análisis completado para NVVE
+2025-05-27 07:26:15,430 - INFO - 
+==================================================
+2025-05-27 07:26:15,431 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:26:15,431 - INFO - ==================================================
+2025-05-27 07:27:15,435 - INFO - 
+==================================================
+2025-05-27 07:27:15,437 - INFO - PROCESANDO 71/106: IOVA
+2025-05-27 07:27:15,437 - INFO - Número de velas a analizar: 10
+2025-05-27 07:27:15,438 - INFO - Analizando patrón para IOVA con 10 velas...
+2025-05-27 07:27:18,377 - INFO - Obteniendo datos para IOVA (intento 1/3)
+2025-05-27 07:27:18,756 - INFO - Datos obtenidos para IOVA: 26 velas desde 2025-04-17 hasta 2025-05-23
+2025-05-27 07:27:18,757 - INFO - Análisis completado para IOVA: {'ticker': 'IOVA', 'n_velas': 10, 'T_date': '2025-05-09', 'T_volume': 112356789.0, 'T_close': 1.75, 'T_volume_ma': 16556749.5625, 'volume_ratio': 6.786162258229785, 'T1_open': 1.85, 'T1_close': 1.93, 'T1_high': 2.035, 'T1_low': 1.79, 'T1_pct_change': 4.324324324324317, 'T1_high_pct': 10.000000000000002, 'T2_open': 1.98, 'T2_close': 1.79, 'T2_pct_change': -9.595959595959593, 'T3_open': 1.8, 'T3_close': 1.705, 'T3_pct_change': -5.277777777777777}
+2025-05-27 07:27:18,757 - INFO - [OK] Análisis completado para IOVA
+2025-05-27 07:27:18,757 - INFO - Esperando 1.1 segundos antes del siguiente ticker...
+2025-05-27 07:27:19,852 - INFO - 
+==================================================
+2025-05-27 07:27:19,853 - INFO - PROCESANDO 72/106: VERV
+2025-05-27 07:27:19,853 - INFO - Número de velas a analizar: 28
+2025-05-27 07:27:19,853 - INFO - Analizando patrón para VERV con 28 velas...
+2025-05-27 07:27:22,465 - INFO - Obteniendo datos para VERV (intento 1/3)
+2025-05-27 07:27:22,824 - INFO - Datos obtenidos para VERV: 52 velas desde 2025-03-12 hasta 2025-05-23
+2025-05-27 07:27:22,826 - INFO - Análisis completado para VERV: {'ticker': 'VERV', 'n_velas': 28, 'T_date': '2025-04-14', 'T_volume': 31924331.0, 'T_close': 4.12, 'T_volume_ma': 3283082.0, 'volume_ratio': 9.723890844030091, 'T1_open': 4.91, 'T1_close': 4.97, 'T1_high': 5.81, 'T1_low': 4.88, 'T1_pct_change': 1.2219959266802365, 'T1_high_pct': 18.329938900203654, 'T2_open': 4.9, 'T2_close': 4.51, 'T2_pct_change': -7.959183673469399, 'T3_open': 4.56, 'T3_close': 4.59, 'T3_pct_change': 0.6578947368421107}
+2025-05-27 07:27:22,827 - INFO - [OK] Análisis completado para VERV
+2025-05-27 07:27:22,827 - INFO - Esperando 2.3 segundos antes del siguiente ticker...
+2025-05-27 07:27:25,172 - INFO - 
+==================================================
+2025-05-27 07:27:25,172 - INFO - PROCESANDO 73/106: CRML
+2025-05-27 07:27:25,172 - INFO - Número de velas a analizar: 28
+2025-05-27 07:27:25,172 - INFO - Analizando patrón para CRML con 28 velas...
+2025-05-27 07:27:26,242 - INFO - Obteniendo datos para CRML (intento 1/3)
+2025-05-27 07:27:26,585 - INFO - Datos obtenidos para CRML: 52 velas desde 2025-03-12 hasta 2025-05-23
+2025-05-27 07:27:26,585 - INFO - Análisis completado para CRML: {'ticker': 'CRML', 'n_velas': 28, 'T_date': '2025-04-14', 'T_volume': 11616858.0, 'T_close': 2.55, 'T_volume_ma': 1494131.55, 'volume_ratio': 7.774990093743753, 'T1_open': 2.675, 'T1_close': 2.15, 'T1_high': 2.675, 'T1_low': 2.06, 'T1_pct_change': -19.62616822429906, 'T1_high_pct': 0.0, 'T2_open': 2.13, 'T2_close': 2.25, 'T2_pct_change': 5.633802816901413, 'T3_open': 2.3, 'T3_close': 2.49, 'T3_pct_change': 8.260869565217408}
+2025-05-27 07:27:26,585 - INFO - [OK] Análisis completado para CRML
+2025-05-27 07:27:26,585 - INFO - Esperando 2.5 segundos antes del siguiente ticker...
+2025-05-27 07:27:29,105 - INFO - 
+==================================================
+2025-05-27 07:27:29,106 - INFO - PROCESANDO 74/106: RZLV
+2025-05-27 07:27:29,106 - INFO - Número de velas a analizar: 27
+2025-05-27 07:27:29,106 - INFO - Analizando patrón para RZLV con 27 velas...
+2025-05-27 07:27:30,112 - INFO - Obteniendo datos para RZLV (intento 1/3)
+2025-05-27 07:27:30,498 - INFO - Datos obtenidos para RZLV: 50 velas desde 2025-03-14 hasta 2025-05-23
+2025-05-27 07:27:30,500 - INFO - Análisis completado para RZLV: {'ticker': 'RZLV', 'n_velas': 27, 'T_date': '2025-04-15', 'T_volume': 15049089.0, 'T_close': 1.39, 'T_volume_ma': 3316013.9, 'volume_ratio': 4.5383069715117905, 'T1_open': 1.32, 'T1_close': 1.33, 'T1_high': 1.35, 'T1_low': 1.28, 'T1_pct_change': 0.7575757575757582, 'T1_high_pct': 2.2727272727272747, 'T2_open': 1.34, 'T2_close': 1.4, 'T2_pct_change': 4.477611940298495, 'T3_open': 1.36, 'T3_close': 1.35, 'T3_pct_change': -0.7352941176470594}
+2025-05-27 07:27:30,500 - INFO - [OK] Análisis completado para RZLV
+2025-05-27 07:27:30,500 - INFO - Esperando 1.4 segundos antes del siguiente ticker...
+2025-05-27 07:27:31,892 - INFO - 
+==================================================
+2025-05-27 07:27:31,892 - INFO - PROCESANDO 75/106: IOTR
+2025-05-27 07:27:31,892 - INFO - Número de velas a analizar: 26
+2025-05-27 07:27:31,892 - INFO - Analizando patrón para IOTR con 26 velas...
+2025-05-27 07:27:33,808 - INFO - Obteniendo datos para IOTR (intento 1/3)
+2025-05-27 07:27:34,154 - INFO - Datos obtenidos para IOTR: 31 velas desde 2025-04-10 hasta 2025-05-23
+2025-05-27 07:27:34,158 - INFO - Análisis completado para IOTR: {'ticker': 'IOTR', 'n_velas': 26, 'T_date': '2025-04-16', 'T_volume': 6370856.0, 'T_close': 1.85, 'T_volume_ma': 2181422.6, 'volume_ratio': 2.9205051785930887, 'T1_open': 1.28, 'T1_close': 1.15, 'T1_high': 1.33, 'T1_low': 1.09, 'T1_pct_change': -10.156250000000009, 'T1_high_pct': 3.9062500000000036, 'T2_open': 0.95, 'T2_close': 0.888, 'T2_pct_change': -6.526315789473679, 'T3_open': 0.89, 'T3_close': 0.9283, 'T3_pct_change': 4.303370786516854}
+2025-05-27 07:27:34,158 - INFO - [OK] Análisis completado para IOTR
+2025-05-27 07:27:34,158 - INFO - 
+==================================================
+2025-05-27 07:27:34,158 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:27:34,158 - INFO - ==================================================
+2025-05-27 07:28:34,173 - INFO - 
+==================================================
+2025-05-27 07:28:34,174 - INFO - PROCESANDO 76/106: CGC
+2025-05-27 07:28:34,174 - INFO - Número de velas a analizar: 26
+2025-05-27 07:28:34,174 - INFO - Analizando patrón para CGC con 26 velas...
+2025-05-27 07:28:37,090 - INFO - Obteniendo datos para CGC (intento 1/3)
+2025-05-27 07:28:37,495 - INFO - Datos obtenidos para CGC: 49 velas desde 2025-03-17 hasta 2025-05-23
+2025-05-27 07:28:37,497 - INFO - Análisis completado para CGC: {'ticker': 'CGC', 'n_velas': 26, 'T_date': '2025-04-16', 'T_volume': 15348801.0, 'T_close': 1.18, 'T_volume_ma': 5506531.65, 'volume_ratio': 2.787380873403315, 'T1_open': 1.2, 'T1_close': 1.19, 'T1_high': 1.3, 'T1_low': 1.12, 'T1_pct_change': -0.8333333333333341, 'T1_high_pct': 8.333333333333341, 'T2_open': 1.18, 'T2_close': 1.08, 'T2_pct_change': -8.474576271186429, 'T3_open': 1.09, 'T3_close': 1.18, 'T3_pct_change': 8.256880733944941}
+2025-05-27 07:28:37,497 - INFO - [OK] Análisis completado para CGC
+2025-05-27 07:28:37,497 - INFO - Esperando 1.6 segundos antes del siguiente ticker...
+2025-05-27 07:28:39,128 - INFO - 
+==================================================
+2025-05-27 07:28:39,129 - INFO - PROCESANDO 77/106: ALEC
+2025-05-27 07:28:39,129 - INFO - Número de velas a analizar: 23
+2025-05-27 07:28:39,129 - INFO - Analizando patrón para ALEC con 23 velas...
+2025-05-27 07:28:41,184 - INFO - Obteniendo datos para ALEC (intento 1/3)
+2025-05-27 07:28:41,546 - INFO - Datos obtenidos para ALEC: 44 velas desde 2025-03-24 hasta 2025-05-23
+2025-05-27 07:28:41,549 - INFO - Análisis completado para ALEC: {'ticker': 'ALEC', 'n_velas': 23, 'T_date': '2025-04-22', 'T_volume': 2733143.0, 'T_close': 1.11, 'T_volume_ma': 746756.9, 'volume_ratio': 3.6600170684730196, 'T1_open': 1.16, 'T1_close': 1.16, 'T1_high': 1.24, 'T1_low': 1.12, 'T1_pct_change': 0.0, 'T1_high_pct': 6.896551724137938, 'T2_open': 1.17, 'T2_close': 1.18, 'T2_pct_change': 0.8547008547008554, 'T3_open': 1.18, 'T3_close': 1.14, 'T3_pct_change': -3.3898305084745797}
+2025-05-27 07:28:41,549 - INFO - [OK] Análisis completado para ALEC
+2025-05-27 07:28:41,549 - INFO - Esperando 1.1 segundos antes del siguiente ticker...
+2025-05-27 07:28:42,641 - INFO - 
+==================================================
+2025-05-27 07:28:42,641 - INFO - PROCESANDO 78/106: OPEN
+2025-05-27 07:28:42,641 - INFO - Número de velas a analizar: 22
+2025-05-27 07:28:42,641 - INFO - Analizando patrón para OPEN con 22 velas...
+2025-05-27 07:28:44,708 - INFO - Obteniendo datos para OPEN (intento 1/3)
+2025-05-27 07:28:45,052 - INFO - Datos obtenidos para OPEN: 44 velas desde 2025-03-24 hasta 2025-05-23
+2025-05-27 07:28:45,053 - INFO - Análisis completado para OPEN: {'ticker': 'OPEN', 'n_velas': 22, 'T_date': '2025-04-23', 'T_volume': 138576780.0, 'T_close': 0.8411, 'T_volume_ma': 45670965.75, 'volume_ratio': 3.034242384068701, 'T1_open': 0.8615, 'T1_close': 0.7765, 'T1_high': 0.865, 'T1_low': 0.7266, 'T1_pct_change': -9.866511897852591, 'T1_high_pct': 0.4062681369703944, 'T2_open': 0.7735, 'T2_close': 0.7637, 'T2_pct_change': -1.266968325791845, 'T3_open': 0.7687, 'T3_close': 0.7766, 'T3_pct_change': 1.0277091192922996}
+2025-05-27 07:28:45,053 - INFO - [OK] Análisis completado para OPEN
+2025-05-27 07:28:45,054 - INFO - Esperando 1.4 segundos antes del siguiente ticker...
+2025-05-27 07:28:46,443 - INFO - 
+==================================================
+2025-05-27 07:28:46,443 - INFO - PROCESANDO 79/106: JYD
+2025-05-27 07:28:46,443 - INFO - Número de velas a analizar: 22
+2025-05-27 07:28:46,443 - INFO - Analizando patrón para JYD con 22 velas...
+2025-05-27 07:28:47,930 - INFO - Obteniendo datos para JYD (intento 1/3)
+2025-05-27 07:28:48,276 - INFO - Datos obtenidos para JYD: 44 velas desde 2025-03-24 hasta 2025-05-23
+2025-05-27 07:28:48,278 - INFO - Análisis completado para JYD: {'ticker': 'JYD', 'n_velas': 22, 'T_date': '2025-04-23', 'T_volume': 418375452.0, 'T_close': 0.2654, 'T_volume_ma': 32765161.65, 'volume_ratio': 12.768911579595397, 'T1_open': 0.2087, 'T1_close': 0.225, 'T1_high': 0.2276, 'T1_low': 0.1936, 'T1_pct_change': 7.81025395304265, 'T1_high_pct': 9.056061332055583, 'T2_open': 0.2444, 'T2_close': 0.2623, 'T2_pct_change': 7.324058919803589, 'T3_open': 0.2606, 'T3_close': 0.2649, 'T3_pct_change': 1.6500383729854282}
+2025-05-27 07:28:48,279 - INFO - [OK] Análisis completado para JYD
+2025-05-27 07:28:48,279 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:28:49,809 - INFO - 
+==================================================
+2025-05-27 07:28:49,810 - INFO - PROCESANDO 80/106: TMC
+2025-05-27 07:28:49,810 - INFO - Número de velas a analizar: 21
+2025-05-27 07:28:49,810 - INFO - Analizando patrón para TMC con 21 velas...
+2025-05-27 07:28:52,782 - INFO - Obteniendo datos para TMC (intento 1/3)
+2025-05-27 07:28:53,132 - INFO - Datos obtenidos para TMC: 42 velas desde 2025-03-26 hasta 2025-05-23
+2025-05-27 07:28:53,134 - INFO - Análisis completado para TMC: {'ticker': 'TMC', 'n_velas': 21, 'T_date': '2025-04-24', 'T_volume': 65605673.0, 'T_close': 3.69, 'T_volume_ma': 12356844.85, 'volume_ratio': 5.309257645975866, 'T1_open': 3.5, 'T1_close': 3.05, 'T1_high': 3.515, 'T1_low': 2.915, 'T1_pct_change': -12.857142857142861, 'T1_high_pct': 0.42857142857143216, 'T2_open': 3.28, 'T2_close': 3.31, 'T2_pct_change': 0.914634146341471, 'T3_open': 3.6, 'T3_close': 3.28, 'T3_pct_change': -8.888888888888896}
+2025-05-27 07:28:53,134 - INFO - [OK] Análisis completado para TMC
+2025-05-27 07:28:53,134 - INFO - 
+==================================================
+2025-05-27 07:28:53,134 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:28:53,134 - INFO - ==================================================
+2025-05-27 07:29:53,142 - INFO - 
+==================================================
+2025-05-27 07:29:53,143 - INFO - PROCESANDO 81/106: PET
+2025-05-27 07:29:53,144 - INFO - Número de velas a analizar: 21
+2025-05-27 07:29:53,144 - INFO - Analizando patrón para PET con 21 velas...
+2025-05-27 07:29:55,151 - INFO - Obteniendo datos para PET (intento 1/3)
+2025-05-27 07:29:55,531 - INFO - Datos obtenidos para PET: 42 velas desde 2025-03-26 hasta 2025-05-23
+2025-05-27 07:29:55,532 - INFO - Análisis completado para PET: {'ticker': 'PET', 'n_velas': 21, 'T_date': '2025-04-24', 'T_volume': 151411319.0, 'T_close': 0.1525, 'T_volume_ma': 10095108.5, 'volume_ratio': 14.998483572514353, 'T1_open': 0.1294, 'T1_close': 0.13, 'T1_high': 0.1425, 'T1_low': 0.1176, 'T1_pct_change': 0.4636785162287614, 'T1_high_pct': 10.123647604327669, 'T2_open': 0.127, 'T2_close': 0.1647, 'T2_pct_change': 29.685039370078748, 'T3_open': 0.16, 'T3_close': 0.1455, 'T3_pct_change': -9.062500000000009}
+2025-05-27 07:29:55,533 - INFO - [OK] Análisis completado para PET
+2025-05-27 07:29:55,533 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:29:58,476 - INFO - 
+==================================================
+2025-05-27 07:29:58,477 - INFO - PROCESANDO 82/106: TSHA
+2025-05-27 07:29:58,477 - INFO - Número de velas a analizar: 38
+2025-05-27 07:29:58,477 - INFO - Analizando patrón para TSHA con 38 velas...
+2025-05-27 07:30:00,007 - INFO - Obteniendo datos para TSHA (intento 1/3)
+2025-05-27 07:30:00,356 - INFO - Datos obtenidos para TSHA: 66 velas desde 2025-02-20 hasta 2025-05-23
+2025-05-27 07:30:00,359 - INFO - Análisis completado para TSHA: {'ticker': 'TSHA', 'n_velas': 38, 'T_date': '2025-03-31', 'T_volume': 12479435.0, 'T_close': 1.39, 'T_volume_ma': 2192101.05, 'volume_ratio': 5.692910461404141, 'T1_open': 1.42, 'T1_close': 1.265, 'T1_high': 1.42, 'T1_low': 1.21, 'T1_pct_change': -10.915492957746482, 'T1_high_pct': 0.0, 'T2_open': 1.26, 'T2_close': 1.32, 'T2_pct_change': 4.761904761904765, 'T3_open': 1.25, 'T3_close': 1.26, 'T3_pct_change': 0.8000000000000007}
+2025-05-27 07:30:00,359 - INFO - [OK] Análisis completado para TSHA
+2025-05-27 07:30:00,359 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:30:03,297 - INFO - 
+==================================================
+2025-05-27 07:30:03,297 - INFO - PROCESANDO 83/106: RPAY
+2025-05-27 07:30:03,297 - INFO - Número de velas a analizar: 36
+2025-05-27 07:30:03,298 - INFO - Analizando patrón para RPAY con 36 velas...
+2025-05-27 07:30:04,841 - INFO - Obteniendo datos para RPAY (intento 1/3)
+2025-05-27 07:30:05,193 - INFO - Datos obtenidos para RPAY: 64 velas desde 2025-02-24 hasta 2025-05-23
+2025-05-27 07:30:05,195 - INFO - Análisis completado para RPAY: {'ticker': 'RPAY', 'n_velas': 36, 'T_date': '2025-04-02', 'T_volume': 5149406.0, 'T_close': 5.77, 'T_volume_ma': 980287.8, 'volume_ratio': 5.252953265357378, 'T1_open': 5.49, 'T1_close': 5.33, 'T1_high': 5.535, 'T1_low': 5.25, 'T1_pct_change': -2.9143897996357038, 'T1_high_pct': 0.8196721311475397, 'T2_open': 5.1, 'T2_close': 5.11, 'T2_pct_change': 0.19607843137256228, 'T3_open': 4.91, 'T3_close': 5.16, 'T3_pct_change': 5.091649694501018}
+2025-05-27 07:30:05,196 - INFO - [OK] Análisis completado para RPAY
+2025-05-27 07:30:05,196 - INFO - Esperando 1.5 segundos antes del siguiente ticker...
+2025-05-27 07:30:06,718 - INFO - 
+==================================================
+2025-05-27 07:30:06,718 - INFO - PROCESANDO 84/106: SLS
+2025-05-27 07:30:06,718 - INFO - Número de velas a analizar: 32
+2025-05-27 07:30:06,718 - INFO - Analizando patrón para SLS con 32 velas...
+2025-05-27 07:30:07,980 - INFO - Obteniendo datos para SLS (intento 1/3)
+2025-05-27 07:30:08,336 - INFO - Datos obtenidos para SLS: 58 velas desde 2025-03-04 hasta 2025-05-23
+2025-05-27 07:30:08,337 - INFO - Análisis completado para SLS: {'ticker': 'SLS', 'n_velas': 32, 'T_date': '2025-04-08', 'T_volume': 2179668.0, 'T_close': 1.04, 'T_volume_ma': 970146.05, 'volume_ratio': 2.2467421271261165, 'T1_open': 1.03, 'T1_close': 1.12, 'T1_high': 1.14, 'T1_low': 1.01, 'T1_pct_change': 8.73786407766991, 'T1_high_pct': 10.679611650485425, 'T2_open': 1.12, 'T2_close': 1.11, 'T2_pct_change': -0.8928571428571435, 'T3_open': 1.12, 'T3_close': 1.13, 'T3_pct_change': 0.8928571428571237}
+2025-05-27 07:30:08,337 - INFO - [OK] Análisis completado para SLS
+2025-05-27 07:30:08,338 - INFO - Esperando 2.6 segundos antes del siguiente ticker...
+2025-05-27 07:30:10,916 - INFO - 
+==================================================
+2025-05-27 07:30:10,916 - INFO - PROCESANDO 85/106: BTOG
+2025-05-27 07:30:10,916 - INFO - Número de velas a analizar: 32
+2025-05-27 07:30:10,916 - INFO - Analizando patrón para BTOG con 32 velas...
+2025-05-27 07:30:12,071 - INFO - Obteniendo datos para BTOG (intento 1/3)
+2025-05-27 07:30:15,185 - INFO - Datos obtenidos para BTOG: 58 velas desde 2025-03-04 hasta 2025-05-23
+2025-05-27 07:30:15,187 - INFO - Análisis completado para BTOG: {'ticker': 'BTOG', 'n_velas': 32, 'T_date': '2025-04-08', 'T_volume': 340820381.0, 'T_close': 0.1481, 'T_volume_ma': 32207565.6, 'volume_ratio': 10.581997572644857, 'T1_open': 0.1596, 'T1_close': 0.151, 'T1_high': 0.18239, 'T1_low': 0.1335, 'T1_pct_change': -5.388471177944861, 'T1_high_pct': 14.27944862155389, 'T2_open': 0.1582, 'T2_close': 0.15, 'T2_pct_change': -5.183312262958289, 'T3_open': 0.1503, 'T3_close': 0.142, 'T3_pct_change': -5.522288755821691}
+2025-05-27 07:30:15,187 - INFO - [OK] Análisis completado para BTOG
+2025-05-27 07:30:15,187 - INFO - 
+==================================================
+2025-05-27 07:30:15,187 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:30:15,187 - INFO - ==================================================
+2025-05-27 07:31:15,190 - INFO - 
+==================================================
+2025-05-27 07:31:15,191 - INFO - PROCESANDO 86/106: SABR
+2025-05-27 07:31:15,191 - INFO - Número de velas a analizar: 31
+2025-05-27 07:31:15,191 - INFO - Analizando patrón para SABR con 31 velas...
+2025-05-27 07:31:17,722 - INFO - Obteniendo datos para SABR (intento 1/3)
+2025-05-27 07:31:18,129 - INFO - Datos obtenidos para SABR: 56 velas desde 2025-03-06 hasta 2025-05-23
+2025-05-27 07:31:18,131 - INFO - Análisis completado para SABR: {'ticker': 'SABR', 'n_velas': 31, 'T_date': '2025-04-09', 'T_volume': 25246160.0, 'T_close': 2.49, 'T_volume_ma': 8408924.9, 'volume_ratio': 3.0023053244297615, 'T1_open': 2.36, 'T1_close': 2.27, 'T1_high': 2.365, 'T1_low': 2.12, 'T1_pct_change': -3.813559322033892, 'T1_high_pct': 0.21186440677967533, 'T2_open': 2.26, 'T2_close': 2.31, 'T2_pct_change': 2.2123893805309858, 'T3_open': 2.38, 'T3_close': 2.12, 'T3_pct_change': -10.924369747899151}
+2025-05-27 07:31:18,131 - INFO - [OK] Análisis completado para SABR
+2025-05-27 07:31:18,131 - INFO - Esperando 2.1 segundos antes del siguiente ticker...
+2025-05-27 07:31:20,273 - INFO - 
+==================================================
+2025-05-27 07:31:20,273 - INFO - PROCESANDO 87/106: PACB
+2025-05-27 07:31:20,274 - INFO - Número de velas a analizar: 31
+2025-05-27 07:31:20,274 - INFO - Analizando patrón para PACB con 31 velas...
+2025-05-27 07:31:23,218 - INFO - Obteniendo datos para PACB (intento 1/3)
+2025-05-27 07:31:23,558 - INFO - Datos obtenidos para PACB: 56 velas desde 2025-03-06 hasta 2025-05-23
+2025-05-27 07:31:23,561 - INFO - Análisis completado para PACB: {'ticker': 'PACB', 'n_velas': 31, 'T_date': '2025-04-09', 'T_volume': 28549594.0, 'T_close': 1.45, 'T_volume_ma': 9245516.9, 'volume_ratio': 3.087939193534977, 'T1_open': 1.45, 'T1_close': 1.38, 'T1_high': 1.467, 'T1_low': 1.32, 'T1_pct_change': -4.827586206896556, 'T1_high_pct': 1.172413793103457, 'T2_open': 1.37, 'T2_close': 1.36, 'T2_pct_change': -0.7299270072992706, 'T3_open': 1.38, 'T3_close': 1.32, 'T3_pct_change': -4.34782608695651}
+2025-05-27 07:31:23,561 - INFO - [OK] Análisis completado para PACB
+2025-05-27 07:31:23,561 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:31:25,332 - INFO - 
+==================================================
+2025-05-27 07:31:25,333 - INFO - PROCESANDO 88/106: ESPR
+2025-05-27 07:31:25,333 - INFO - Número de velas a analizar: 30
+2025-05-27 07:31:25,333 - INFO - Analizando patrón para ESPR con 30 velas...
+2025-05-27 07:31:26,412 - INFO - Obteniendo datos para ESPR (intento 1/3)
+2025-05-27 07:31:26,790 - INFO - Datos obtenidos para ESPR: 54 velas desde 2025-03-10 hasta 2025-05-23
+2025-05-27 07:31:26,792 - INFO - Análisis completado para ESPR: {'ticker': 'ESPR', 'n_velas': 30, 'T_date': '2025-04-10', 'T_volume': 15177340.0, 'T_close': 0.96, 'T_volume_ma': 5173440.5, 'volume_ratio': 2.933703402986852, 'T1_open': 0.98, 'T1_close': 1.02, 'T1_high': 1.02, 'T1_low': 0.95, 'T1_pct_change': 4.081632653061228, 'T1_high_pct': 4.081632653061228, 'T2_open': 1.04, 'T2_close': 0.9991, 'T2_pct_change': -3.932692307692312, 'T3_open': 0.9822, 'T3_close': 0.9957, 'T3_pct_change': 1.3744654856444785}
+2025-05-27 07:31:26,792 - INFO - [OK] Análisis completado para ESPR
+2025-05-27 07:31:26,792 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 07:31:28,094 - INFO - 
+==================================================
+2025-05-27 07:31:28,094 - INFO - PROCESANDO 89/106: CAN
+2025-05-27 07:31:28,094 - INFO - Número de velas a analizar: 45
+2025-05-27 07:31:28,094 - INFO - Analizando patrón para CAN con 45 velas...
+2025-05-27 07:31:29,801 - INFO - Obteniendo datos para CAN (intento 1/3)
+2025-05-27 07:31:30,153 - INFO - Datos obtenidos para CAN: 75 velas desde 2025-02-06 hasta 2025-05-23
+2025-05-27 07:31:30,154 - INFO - Análisis completado para CAN: {'ticker': 'CAN', 'n_velas': 45, 'T_date': '2025-03-20', 'T_volume': 40278417.0, 'T_close': 0.9915, 'T_volume_ma': 14900000.2, 'volume_ratio': 2.7032494268020213, 'T1_open': 0.9657, 'T1_close': 0.9586, 'T1_high': 1.01, 'T1_low': 0.94, 'T1_pct_change': -0.7352179765972865, 'T1_high_pct': 4.587345966656312, 'T2_open': 1.01, 'T2_close': 1.07, 'T2_pct_change': 5.940594059405946, 'T3_open': 1.07, 'T3_close': 1.08, 'T3_pct_change': 0.9345794392523372}
+2025-05-27 07:31:30,154 - INFO - [OK] Análisis completado para CAN
+2025-05-27 07:31:30,154 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:31:31,983 - INFO - 
+==================================================
+2025-05-27 07:31:31,984 - INFO - PROCESANDO 90/106: IRWD
+2025-05-27 07:31:31,984 - INFO - Número de velas a analizar: 44
+2025-05-27 07:31:31,984 - INFO - Analizando patrón para IRWD con 44 velas...
+2025-05-27 07:31:34,318 - INFO - Obteniendo datos para IRWD (intento 1/3)
+2025-05-27 07:31:36,877 - INFO - Datos obtenidos para IRWD: 73 velas desde 2025-02-10 hasta 2025-05-23
+2025-05-27 07:31:36,879 - INFO - Análisis completado para IRWD: {'ticker': 'IRWD', 'n_velas': 44, 'T_date': '2025-03-21', 'T_volume': 14622338.0, 'T_close': 1.41, 'T_volume_ma': 3112694.9, 'volume_ratio': 4.697645760270305, 'T1_open': 1.46, 'T1_close': 1.49, 'T1_high': 1.5, 'T1_low': 1.37, 'T1_pct_change': 2.054794520547947, 'T1_high_pct': 2.739726027397263, 'T2_open': 1.5, 'T2_close': 1.5, 'T2_pct_change': 0.0, 'T3_open': 1.52, 'T3_close': 1.46, 'T3_pct_change': -3.947368421052635}
+2025-05-27 07:31:36,879 - INFO - [OK] Análisis completado para IRWD
+2025-05-27 07:31:36,879 - INFO - 
+==================================================
+2025-05-27 07:31:36,880 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:31:36,880 - INFO - ==================================================
+2025-05-27 07:32:36,889 - INFO - 
+==================================================
+2025-05-27 07:32:36,892 - INFO - PROCESANDO 91/106: MLGO
+2025-05-27 07:32:36,892 - INFO - Número de velas a analizar: 43
+2025-05-27 07:32:36,892 - INFO - Analizando patrón para MLGO con 43 velas...
+2025-05-27 07:32:38,526 - INFO - Obteniendo datos para MLGO (intento 1/3)
+2025-05-27 07:32:38,933 - INFO - Datos obtenidos para MLGO: 73 velas desde 2025-02-10 hasta 2025-05-23
+2025-05-27 07:32:38,934 - INFO - Análisis completado para MLGO: {'ticker': 'MLGO', 'n_velas': 43, 'T_date': '2025-03-24', 'T_volume': 304722008.0, 'T_close': 13.99, 'T_volume_ma': 21379953.35, 'volume_ratio': 14.252697515825028, 'T1_open': 11.35, 'T1_close': 11.93, 'T1_high': 19.6899, 'T1_low': 9.0, 'T1_pct_change': 5.110132158590309, 'T1_high_pct': 73.47929515418504, 'T2_open': 12.76, 'T2_close': 11.86, 'T2_pct_change': -7.0532915360501605, 'T3_open': 11.28, 'T3_close': 15.94, 'T3_pct_change': 41.312056737588655}
+2025-05-27 07:32:38,934 - INFO - [OK] Análisis completado para MLGO
+2025-05-27 07:32:38,934 - INFO - Esperando 1.3 segundos antes del siguiente ticker...
+2025-05-27 07:32:40,275 - INFO - 
+==================================================
+2025-05-27 07:32:40,275 - INFO - PROCESANDO 92/106: PSTV
+2025-05-27 07:32:40,276 - INFO - Número de velas a analizar: 55
+2025-05-27 07:32:40,276 - INFO - Analizando patrón para PSTV con 55 velas...
+2025-05-27 07:32:42,398 - INFO - Obteniendo datos para PSTV (intento 1/3)
+2025-05-27 07:32:42,747 - INFO - Datos obtenidos para PSTV: 88 velas desde 2025-01-17 hasta 2025-05-23
+2025-05-27 07:32:42,749 - INFO - Análisis completado para PSTV: {'ticker': 'PSTV', 'n_velas': 55, 'T_date': '2025-03-06', 'T_volume': 359585031.0, 'T_close': 1.44, 'T_volume_ma': 18410815.55, 'volume_ratio': 19.531184266304813, 'T1_open': 2.015, 'T1_close': 1.57, 'T1_high': 2.3099, 'T1_low': 1.27, 'T1_pct_change': -22.08436724565757, 'T1_high_pct': 14.63523573200991, 'T2_open': 1.42, 'T2_close': 1.27, 'T2_pct_change': -10.563380281690135, 'T3_open': 1.3, 'T3_close': 1.43, 'T3_pct_change': 9.999999999999991}
+2025-05-27 07:32:42,749 - INFO - [OK] Análisis completado para PSTV
+2025-05-27 07:32:42,749 - INFO - Esperando 2.7 segundos antes del siguiente ticker...
+2025-05-27 07:32:45,439 - INFO - 
+==================================================
+2025-05-27 07:32:45,439 - INFO - PROCESANDO 93/106: XERS
+2025-05-27 07:32:45,439 - INFO - Número de velas a analizar: 55
+2025-05-27 07:32:45,439 - INFO - Analizando patrón para XERS con 55 velas...
+2025-05-27 07:32:48,294 - INFO - Obteniendo datos para XERS (intento 1/3)
+2025-05-27 07:32:48,706 - INFO - Datos obtenidos para XERS: 88 velas desde 2025-01-17 hasta 2025-05-23
+2025-05-27 07:32:48,708 - INFO - Análisis completado para XERS: {'ticker': 'XERS', 'n_velas': 55, 'T_date': '2025-03-06', 'T_volume': 9650889.0, 'T_close': 4.13, 'T_volume_ma': 2207421.2, 'volume_ratio': 4.372019712413743, 'T1_open': 4.12, 'T1_close': 4.24, 'T1_high': 4.4, 'T1_low': 4.05, 'T1_pct_change': 2.9126213592233037, 'T1_high_pct': 6.796116504854374, 'T2_open': 4.12, 'T2_close': 4.59, 'T2_pct_change': 11.407766990291256, 'T3_open': 4.57, 'T3_close': 4.39, 'T3_pct_change': -3.9387308533916974}
+2025-05-27 07:32:48,708 - INFO - [OK] Análisis completado para XERS
+2025-05-27 07:32:48,708 - INFO - Esperando 3.0 segundos antes del siguiente ticker...
+2025-05-27 07:32:51,663 - INFO - 
+==================================================
+2025-05-27 07:32:51,663 - INFO - PROCESANDO 94/106: ONDS
+2025-05-27 07:32:51,663 - INFO - Número de velas a analizar: 52
+2025-05-27 07:32:51,663 - INFO - Analizando patrón para ONDS con 52 velas...
+2025-05-27 07:32:53,934 - INFO - Obteniendo datos para ONDS (intento 1/3)
+2025-05-27 07:32:54,291 - INFO - Datos obtenidos para ONDS: 85 velas desde 2025-01-23 hasta 2025-05-23
+2025-05-27 07:32:54,293 - INFO - Análisis completado para ONDS: {'ticker': 'ONDS', 'n_velas': 52, 'T_date': '2025-03-11', 'T_volume': 104014692.0, 'T_close': 0.7235, 'T_volume_ma': 7929894.95, 'volume_ratio': 13.116780569709817, 'T1_open': 0.6898, 'T1_close': 0.697, 'T1_high': 0.7065, 'T1_low': 0.57, 'T1_pct_change': 1.0437808060307312, 'T1_high_pct': 2.4209915917657363, 'T2_open': 0.67, 'T2_close': 0.6767, 'T2_pct_change': 0.9999999999999892, 'T3_open': 0.6619, 'T3_close': 0.7384, 'T3_pct_change': 11.5576371053029}
+2025-05-27 07:32:54,293 - INFO - [OK] Análisis completado para ONDS
+2025-05-27 07:32:54,293 - INFO - Esperando 1.8 segundos antes del siguiente ticker...
+2025-05-27 07:32:56,053 - INFO - 
+==================================================
+2025-05-27 07:32:56,053 - INFO - PROCESANDO 95/106: TLRY
+2025-05-27 07:32:56,054 - INFO - Número de velas a analizar: 75
+2025-05-27 07:32:56,054 - INFO - Analizando patrón para TLRY con 75 velas...
+2025-05-27 07:32:57,157 - INFO - Obteniendo datos para TLRY (intento 1/3)
+2025-05-27 07:32:57,523 - INFO - Datos obtenidos para TLRY: 114 velas desde 2024-12-09 hasta 2025-05-23
+2025-05-27 07:32:57,524 - INFO - Análisis completado para TLRY: {'ticker': 'TLRY', 'n_velas': 75, 'T_date': '2025-02-05', 'T_volume': 114368673.0, 'T_close': 1.07, 'T_volume_ma': 46538447.45, 'volume_ratio': 2.457509419988182, 'T1_open': 1.07, 'T1_close': 1.06, 'T1_high': 1.13, 'T1_low': 1.03, 'T1_pct_change': -0.9345794392523372, 'T1_high_pct': 5.607476635514002, 'T2_open': 1.04, 'T2_close': 1.0, 'T2_pct_change': -3.8461538461538494, 'T3_open': 1.01, 'T3_close': 0.9805, 'T3_pct_change': -2.920792079207918}
+2025-05-27 07:32:57,524 - INFO - [OK] Análisis completado para TLRY
+2025-05-27 07:32:57,524 - INFO - 
+==================================================
+2025-05-27 07:32:57,524 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:32:57,524 - INFO - ==================================================
+2025-05-27 07:33:57,528 - INFO - 
+==================================================
+2025-05-27 07:33:57,530 - INFO - PROCESANDO 96/106: GOSS
+2025-05-27 07:33:57,530 - INFO - Número de velas a analizar: 75
+2025-05-27 07:33:57,530 - INFO - Analizando patrón para GOSS con 75 velas...
+2025-05-27 07:33:59,511 - INFO - Obteniendo datos para GOSS (intento 1/3)
+2025-05-27 07:33:59,907 - INFO - Datos obtenidos para GOSS: 114 velas desde 2024-12-09 hasta 2025-05-23
+2025-05-27 07:33:59,909 - INFO - Análisis completado para GOSS: {'ticker': 'GOSS', 'n_velas': 75, 'T_date': '2025-02-05', 'T_volume': 3079998.0, 'T_close': 1.15, 'T_volume_ma': 927849.85, 'volume_ratio': 3.319500455811897, 'T1_open': 1.18, 'T1_close': 1.11, 'T1_high': 1.19, 'T1_low': 1.055, 'T1_pct_change': -5.932203389830495, 'T1_high_pct': 0.8474576271186449, 'T2_open': 1.08, 'T2_close': 1.06, 'T2_pct_change': -1.8518518518518534, 'T3_open': 1.05, 'T3_close': 1.17, 'T3_pct_change': 11.428571428571416}
+2025-05-27 07:33:59,909 - INFO - [OK] Análisis completado para GOSS
+2025-05-27 07:33:59,909 - INFO - Esperando 1.1 segundos antes del siguiente ticker...
+2025-05-27 07:34:01,063 - INFO - 
+==================================================
+2025-05-27 07:34:01,063 - INFO - PROCESANDO 97/106: ULCC
+2025-05-27 07:34:01,063 - INFO - Número de velas a analizar: 73
+2025-05-27 07:34:01,063 - INFO - Analizando patrón para ULCC con 73 velas...
+2025-05-27 07:34:03,610 - INFO - Obteniendo datos para ULCC (intento 1/3)
+2025-05-27 07:34:03,959 - INFO - Datos obtenidos para ULCC: 111 velas desde 2024-12-12 hasta 2025-05-23
+2025-05-27 07:34:03,961 - INFO - Análisis completado para ULCC: {'ticker': 'ULCC', 'n_velas': 73, 'T_date': '2025-02-07', 'T_volume': 5873184.0, 'T_close': 9.34, 'T_volume_ma': 2455368.45, 'volume_ratio': 2.3919766501846187, 'T1_open': 9.61, 'T1_close': 10.06, 'T1_high': 10.26, 'T1_low': 9.015, 'T1_pct_change': 4.682622268470355, 'T1_high_pct': 6.763787721123833, 'T2_open': 10.06, 'T2_close': 9.73, 'T2_pct_change': -3.2803180914512926, 'T3_open': 9.53, 'T3_close': 9.25, 'T3_pct_change': -2.9380902413431205}
+2025-05-27 07:34:03,961 - INFO - [OK] Análisis completado para ULCC
+2025-05-27 07:34:03,961 - INFO - Esperando 2.0 segundos antes del siguiente ticker...
+2025-05-27 07:34:05,942 - INFO - 
+==================================================
+2025-05-27 07:34:05,942 - INFO - PROCESANDO 98/106: LCID
+2025-05-27 07:34:05,942 - INFO - Número de velas a analizar: 69
+2025-05-27 07:34:05,942 - INFO - Analizando patrón para LCID con 69 velas...
+2025-05-27 07:34:07,114 - INFO - Obteniendo datos para LCID (intento 1/3)
+2025-05-27 07:34:07,469 - INFO - Datos obtenidos para LCID: 105 velas desde 2024-12-20 hasta 2025-05-23
+2025-05-27 07:34:07,471 - INFO - Análisis completado para LCID: {'ticker': 'LCID', 'n_velas': 69, 'T_date': '2025-02-13', 'T_volume': 144898268.0, 'T_close': 3.26, 'T_volume_ma': 75074876.15, 'volume_ratio': 1.93005004377886, 'T1_open': 3.295, 'T1_close': 3.31, 'T1_high': 3.42, 'T1_low': 3.27, 'T1_pct_change': 0.45523520485584595, 'T1_high_pct': 3.793626707132018, 'T2_open': 3.305, 'T2_close': 3.48, 'T2_pct_change': 5.295007564296514, 'T3_open': 3.48, 'T3_close': 3.37, 'T3_pct_change': -3.160919540229881}
+2025-05-27 07:34:07,472 - INFO - [OK] Análisis completado para LCID
+2025-05-27 07:34:07,472 - INFO - Esperando 1.9 segundos antes del siguiente ticker...
+2025-05-27 07:34:09,339 - INFO - 
+==================================================
+2025-05-27 07:34:09,339 - INFO - PROCESANDO 99/106: GRAB
+2025-05-27 07:34:09,339 - INFO - Número de velas a analizar: 67
+2025-05-27 07:34:09,339 - INFO - Analizando patrón para GRAB con 67 velas...
+2025-05-27 07:34:10,486 - INFO - Obteniendo datos para GRAB (intento 1/3)
+2025-05-27 07:34:10,852 - INFO - Datos obtenidos para GRAB: 103 velas desde 2024-12-24 hasta 2025-05-23
+2025-05-27 07:34:10,855 - INFO - Análisis completado para GRAB: {'ticker': 'GRAB', 'n_velas': 67, 'T_date': '2025-02-18', 'T_volume': 111637010.0, 'T_close': 5.3, 'T_volume_ma': 37255009.85, 'volume_ratio': 2.9965636957146047, 'T1_open': 5.36, 'T1_close': 5.34, 'T1_high': 5.37, 'T1_low': 5.1, 'T1_pct_change': -0.3731343283582175, 'T1_high_pct': 0.1865671641791005, 'T2_open': 5.08, 'T2_close': 4.785, 'T2_pct_change': -5.807086614173227, 'T3_open': 5.01, 'T3_close': 4.9, 'T3_pct_change': -2.1956087824351185}
+2025-05-27 07:34:10,855 - INFO - [OK] Análisis completado para GRAB
+2025-05-27 07:34:10,855 - INFO - Esperando 2.9 segundos antes del siguiente ticker...
+2025-05-27 07:34:13,776 - INFO - 
+==================================================
+2025-05-27 07:34:13,778 - INFO - PROCESANDO 100/106: BYND
+2025-05-27 07:34:13,778 - INFO - Número de velas a analizar: 67
+2025-05-27 07:34:13,779 - INFO - Analizando patrón para BYND con 67 velas...
+2025-05-27 07:34:15,937 - INFO - Obteniendo datos para BYND (intento 1/3)
+2025-05-27 07:34:16,302 - INFO - Datos obtenidos para BYND: 103 velas desde 2024-12-24 hasta 2025-05-23
+2025-05-27 07:34:16,304 - INFO - Análisis completado para BYND: {'ticker': 'BYND', 'n_velas': 67, 'T_date': '2025-02-18', 'T_volume': 8272577.0, 'T_close': 4.4, 'T_volume_ma': 2955371.4, 'volume_ratio': 2.799166629277119, 'T1_open': 4.5, 'T1_close': 4.32, 'T1_high': 4.74, 'T1_low': 4.28, 'T1_pct_change': -3.999999999999994, 'T1_high_pct': 5.3333333333333375, 'T2_open': 4.25, 'T2_close': 4.08, 'T2_pct_change': -3.9999999999999982, 'T3_open': 4.17, 'T3_close': 4.02, 'T3_pct_change': -3.597122302158282}
+2025-05-27 07:34:16,305 - INFO - [OK] Análisis completado para BYND
+2025-05-27 07:34:16,305 - INFO - 
+==================================================
+2025-05-27 07:34:16,305 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:34:16,305 - INFO - ==================================================
+2025-05-27 07:35:16,314 - INFO - 
+==================================================
+2025-05-27 07:35:16,316 - INFO - PROCESANDO 101/106: UNIT
+2025-05-27 07:35:16,316 - INFO - Número de velas a analizar: 65
+2025-05-27 07:35:16,316 - INFO - Analizando patrón para UNIT con 65 velas...
+2025-05-27 07:35:17,935 - INFO - Obteniendo datos para UNIT (intento 1/3)
+2025-05-27 07:35:18,348 - INFO - Datos obtenidos para UNIT: 100 velas desde 2024-12-30 hasta 2025-05-23
+2025-05-27 07:35:18,350 - INFO - Análisis completado para UNIT: {'ticker': 'UNIT', 'n_velas': 65, 'T_date': '2025-02-20', 'T_volume': 5042944.0, 'T_close': 5.42, 'T_volume_ma': 1837505.4, 'volume_ratio': 2.744451254401756, 'T1_open': 5.69, 'T1_close': 5.62, 'T1_high': 5.98, 'T1_low': 5.56, 'T1_pct_change': -1.2302284710017624, 'T1_high_pct': 5.0966608084358525, 'T2_open': 5.92, 'T2_close': 5.77, 'T2_pct_change': -2.53378378378379, 'T3_open': 5.74, 'T3_close': 5.9, 'T3_pct_change': 2.7874564459930338}
+2025-05-27 07:35:18,350 - INFO - [OK] Análisis completado para UNIT
+2025-05-27 07:35:18,350 - INFO - Esperando 1.1 segundos antes del siguiente ticker...
+2025-05-27 07:35:19,446 - INFO - 
+==================================================
+2025-05-27 07:35:19,446 - INFO - PROCESANDO 102/106: LESL
+2025-05-27 07:35:19,446 - INFO - Número de velas a analizar: 63
+2025-05-27 07:35:19,446 - INFO - Analizando patrón para LESL con 63 velas...
+2025-05-27 07:35:21,265 - INFO - Obteniendo datos para LESL (intento 1/3)
+2025-05-27 07:35:21,610 - INFO - Datos obtenidos para LESL: 98 velas desde 2025-01-02 hasta 2025-05-23
+2025-05-27 07:35:21,611 - INFO - Análisis completado para LESL: {'ticker': 'LESL', 'n_velas': 63, 'T_date': '2025-02-24', 'T_volume': 38605942.0, 'T_close': 1.32, 'T_volume_ma': 9180509.2, 'volume_ratio': 4.205207048863913, 'T1_open': 1.33, 'T1_close': 1.26, 'T1_high': 1.36, 'T1_low': 1.25, 'T1_pct_change': -5.263157894736847, 'T1_high_pct': 2.2556390977443628, 'T2_open': 1.25, 'T2_close': 1.1, 'T2_pct_change': -11.999999999999993, 'T3_open': 1.12, 'T3_close': 1.025, 'T3_pct_change': -8.482142857142874}
+2025-05-27 07:35:21,611 - INFO - [OK] Análisis completado para LESL
+2025-05-27 07:35:21,612 - INFO - Esperando 2.6 segundos antes del siguiente ticker...
+2025-05-27 07:35:24,224 - INFO - 
+==================================================
+2025-05-27 07:35:24,224 - INFO - PROCESANDO 103/106: GERN
+2025-05-27 07:35:24,225 - INFO - Número de velas a analizar: 61
+2025-05-27 07:35:24,225 - INFO - Analizando patrón para GERN con 61 velas...
+2025-05-27 07:35:25,952 - INFO - Obteniendo datos para GERN (intento 1/3)
+2025-05-27 07:35:26,298 - INFO - Datos obtenidos para GERN: 96 velas desde 2025-01-06 hasta 2025-05-23
+2025-05-27 07:35:26,299 - INFO - Análisis completado para GERN: {'ticker': 'GERN', 'n_velas': 61, 'T_date': '2025-02-26', 'T_volume': 93422748.0, 'T_close': 1.61, 'T_volume_ma': 17741189.25, 'volume_ratio': 5.265867281135057, 'T1_open': 1.6, 'T1_close': 1.74, 'T1_high': 1.82, 'T1_low': 1.57, 'T1_pct_change': 8.749999999999995, 'T1_high_pct': 13.749999999999998, 'T2_open': 1.74, 'T2_close': 1.76, 'T2_pct_change': 1.1494252873563229, 'T3_open': 1.84, 'T3_close': 1.71, 'T3_pct_change': -7.065217391304354}
+2025-05-27 07:35:26,299 - INFO - [OK] Análisis completado para GERN
+2025-05-27 07:35:26,299 - INFO - Esperando 1.6 segundos antes del siguiente ticker...
+2025-05-27 07:35:27,959 - INFO - 
+==================================================
+2025-05-27 07:35:27,960 - INFO - PROCESANDO 104/106: GEVO
+2025-05-27 07:35:27,960 - INFO - Número de velas a analizar: 101
+2025-05-27 07:35:27,960 - INFO - Analizando patrón para GEVO con 101 velas...
+2025-05-27 07:35:30,656 - INFO - Obteniendo datos para GEVO (intento 1/3)
+2025-05-27 07:35:31,024 - INFO - Datos obtenidos para GEVO: 150 velas desde 2024-10-17 hasta 2025-05-23
+2025-05-27 07:35:31,028 - INFO - Análisis completado para GEVO: {'ticker': 'GEVO', 'n_velas': 101, 'T_date': '2024-12-26', 'T_volume': 25960199.0, 'T_close': 2.04, 'T_volume_ma': 4485917.3, 'volume_ratio': 5.787043599756063, 'T1_open': 2.1, 'T1_close': 2.1, 'T1_high': 2.24, 'T1_low': 2.03, 'T1_pct_change': 0.0, 'T1_high_pct': 6.666666666666672, 'T2_open': 2.13, 'T2_close': 2.17, 'T2_pct_change': 1.8779342723004713, 'T3_open': 2.18, 'T3_close': 2.09, 'T3_pct_change': -4.12844036697249}
+2025-05-27 07:35:31,028 - INFO - [OK] Análisis completado para GEVO
+2025-05-27 07:35:31,028 - INFO - Esperando 2.4 segundos antes del siguiente ticker...
+2025-05-27 07:35:33,450 - INFO - 
+==================================================
+2025-05-27 07:35:33,451 - INFO - PROCESANDO 105/106: REKR
+2025-05-27 07:35:33,451 - INFO - Número de velas a analizar: 99
+2025-05-27 07:35:33,451 - INFO - Analizando patrón para REKR con 99 velas...
+2025-05-27 07:35:35,658 - INFO - Obteniendo datos para REKR (intento 1/3)
+2025-05-27 07:35:36,020 - INFO - Datos obtenidos para REKR: 148 velas desde 2024-10-21 hasta 2025-05-23
+2025-05-27 07:35:36,021 - INFO - Análisis completado para REKR: {'ticker': 'REKR', 'n_velas': 99, 'T_date': '2024-12-30', 'T_volume': 73426047.0, 'T_close': 1.86, 'T_volume_ma': 5747551.75, 'volume_ratio': 12.775186756691664, 'T1_open': 2.04, 'T1_close': 1.56, 'T1_high': 2.05, 'T1_low': 1.42, 'T1_pct_change': -23.52941176470588, 'T1_high_pct': 0.49019607843136215, 'T2_open': 1.69, 'T2_close': 1.74, 'T2_pct_change': 2.9585798816568074, 'T3_open': 1.79, 'T3_close': 1.83, 'T3_pct_change': 2.2346368715083815}
+2025-05-27 07:35:36,021 - INFO - [OK] Análisis completado para REKR
+2025-05-27 07:35:36,021 - INFO - 
+==================================================
+2025-05-27 07:35:36,022 - INFO - Lote de 5 tickers completado. Esperando 60 segundos...
+2025-05-27 07:35:36,022 - INFO - ==================================================
+2025-05-27 07:36:36,032 - INFO - 
+==================================================
+2025-05-27 07:36:36,034 - INFO - PROCESANDO 106/106: JBLU
+2025-05-27 07:36:36,034 - INFO - Número de velas a analizar: 81
+2025-05-27 07:36:36,035 - INFO - Analizando patrón para JBLU con 81 velas...
+2025-05-27 07:36:38,014 - INFO - Obteniendo datos para JBLU (intento 1/3)
+2025-05-27 07:36:38,430 - INFO - Datos obtenidos para JBLU: 122 velas desde 2024-11-26 hasta 2025-05-23
+2025-05-27 07:36:38,431 - INFO - Análisis completado para JBLU: {'ticker': 'JBLU', 'n_velas': 81, 'T_date': '2025-01-28', 'T_volume': 124928632.0, 'T_close': 6.01, 'T_volume_ma': 21897336.9, 'volume_ratio': 5.7051975119403675, 'T1_open': 6.0, 'T1_close': 6.1, 'T1_high': 6.26, 'T1_low': 5.74, 'T1_pct_change': 1.6666666666666607, 'T1_high_pct': 4.33333333333333, 'T2_open': 6.07, 'T2_close': 6.32, 'T2_pct_change': 4.118616144975288, 'T3_open': 6.43, 'T3_close': 6.58, 'T3_pct_change': 2.332814930015558}
+2025-05-27 07:36:38,431 - INFO - [OK] Análisis completado para JBLU
+2025-05-27 07:36:38,431 - INFO - Esperando 2.2 segundos antes del siguiente ticker...
+2025-05-27 07:36:40,654 - INFO - 
+======================================================================
+2025-05-27 07:36:40,654 - INFO - RESUMEN DEL ANÁLISIS
+2025-05-27 07:36:40,654 - INFO - ======================================================================
+2025-05-27 07:36:40,654 - INFO - Tickers analizados: 106 de 106
+2025-05-27 07:36:40,654 - INFO - Archivo de resultados: resultados_analisis.csv
+2025-05-27 07:36:40,674 - INFO - 
+======================================================================
+2025-05-27 07:36:40,674 - INFO - MÉTRICAS DE RENDIMIENTO DETALLADAS
+2025-05-27 07:36:40,674 - INFO - ======================================================================
+2025-05-27 07:36:40,674 - INFO - 
+MÉTRICAS GENERALES:
+2025-05-27 07:36:40,674 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,674 - INFO - TOTAL_ACCIONES_ANALIZADAS: 106
+2025-05-27 07:36:40,674 - INFO - TASA_EXITO_T1: 38.68
+2025-05-27 07:36:40,674 - INFO - TASA_EXITO_T2: 45.28
+2025-05-27 07:36:40,674 - INFO - TASA_EXITO_T3: 48.11
+2025-05-27 07:36:40,674 - INFO - PROMEDIO_RETORNO_T1: -3.44%
+2025-05-27 07:36:40,674 - INFO - PROMEDIO_RETORNO_T2: -0.04%
+2025-05-27 07:36:40,674 - INFO - PROMEDIO_RETORNO_T3: 1.02%
+2025-05-27 07:36:40,674 - INFO - MEDIANA_RETORNO_T1: -1.08%
+2025-05-27 07:36:40,674 - INFO - MEDIANA_RETORNO_T2: -0.63%
+2025-05-27 07:36:40,674 - INFO - MEDIANA_RETORNO_T3: -0.16%
+2025-05-27 07:36:40,674 - INFO - MAX_RETORNO_T1: 24.73%
+2025-05-27 07:36:40,674 - INFO - MAX_RETORNO_T2: 41.96%
+2025-05-27 07:36:40,674 - INFO - MAX_RETORNO_T3: 46.38%
+2025-05-27 07:36:40,674 - INFO - MIN_RETORNO_T1: -63.94%
+2025-05-27 07:36:40,674 - INFO - MIN_RETORNO_T2: -25.63%
+2025-05-27 07:36:40,674 - INFO - MIN_RETORNO_T3: -33.81%
+2025-05-27 07:36:40,674 - INFO - VOLUMEN_PROMEDIO: 112,365,891.14
+2025-05-27 07:36:40,674 - INFO - RATIO_VOLUMEN_PROMEDIO: 6.66
+2025-05-27 07:36:40,675 - INFO - RETORNO_ACUMULADO_PROMEDIO: -2.51%
+2025-05-27 07:36:40,675 - INFO - SHARPE_RATIO: -4.62
+2025-05-27 07:36:40,675 - INFO - 
+MÉTRICAS POR NÚMERO DE VELAS:
+2025-05-27 07:36:40,675 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,675 - INFO - VELAS_9_CANTIDAD: 10 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_9_TASA_EXITO_T1: 40.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_9_RETORNO_PROMEDIO_T1: -0.82%
+2025-05-27 07:36:40,675 - INFO - VELAS_8_CANTIDAD: 5 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_8_TASA_EXITO_T1: 40.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_8_RETORNO_PROMEDIO_T1: 1.11%
+2025-05-27 07:36:40,675 - INFO - VELAS_7_CANTIDAD: 4 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_7_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_7_RETORNO_PROMEDIO_T1: -14.75%
+2025-05-27 07:36:40,675 - INFO - VELAS_6_CANTIDAD: 10 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_6_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_6_RETORNO_PROMEDIO_T1: -1.27%
+2025-05-27 07:36:40,675 - INFO - VELAS_5_CANTIDAD: 5 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_5_TASA_EXITO_T1: 80.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_5_RETORNO_PROMEDIO_T1: 3.44%
+2025-05-27 07:36:40,675 - INFO - VELAS_4_CANTIDAD: 5 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_4_TASA_EXITO_T1: 40.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_4_RETORNO_PROMEDIO_T1: -4.28%
+2025-05-27 07:36:40,675 - INFO - VELAS_3_CANTIDAD: 7 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_3_TASA_EXITO_T1: 14.29%
+2025-05-27 07:36:40,675 - INFO - VELAS_3_RETORNO_PROMEDIO_T1: -6.28%
+2025-05-27 07:36:40,675 - INFO - VELAS_2_CANTIDAD: 4 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_2_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_2_RETORNO_PROMEDIO_T1: -0.97%
+2025-05-27 07:36:40,675 - INFO - VELAS_17_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_17_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_17_RETORNO_PROMEDIO_T1: -21.26%
+2025-05-27 07:36:40,675 - INFO - VELAS_16_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_16_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,675 - INFO - VELAS_16_RETORNO_PROMEDIO_T1: -11.96%
+2025-05-27 07:36:40,675 - INFO - VELAS_15_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,675 - INFO - VELAS_15_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_15_RETORNO_PROMEDIO_T1: -11.77%
+2025-05-27 07:36:40,676 - INFO - VELAS_14_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_14_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_14_RETORNO_PROMEDIO_T1: -13.54%
+2025-05-27 07:36:40,676 - INFO - VELAS_13_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_13_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_13_RETORNO_PROMEDIO_T1: -1.54%
+2025-05-27 07:36:40,676 - INFO - VELAS_12_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_12_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_12_RETORNO_PROMEDIO_T1: -3.95%
+2025-05-27 07:36:40,676 - INFO - VELAS_11_CANTIDAD: 4 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_11_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_11_RETORNO_PROMEDIO_T1: -0.23%
+2025-05-27 07:36:40,676 - INFO - VELAS_10_CANTIDAD: 6 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_10_TASA_EXITO_T1: 66.67%
+2025-05-27 07:36:40,676 - INFO - VELAS_10_RETORNO_PROMEDIO_T1: -4.36%
+2025-05-27 07:36:40,676 - INFO - VELAS_28_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_28_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_28_RETORNO_PROMEDIO_T1: -9.20%
+2025-05-27 07:36:40,676 - INFO - VELAS_27_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_27_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_27_RETORNO_PROMEDIO_T1: 0.76%
+2025-05-27 07:36:40,676 - INFO - VELAS_26_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_26_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_26_RETORNO_PROMEDIO_T1: -5.49%
+2025-05-27 07:36:40,676 - INFO - VELAS_23_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_23_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_23_RETORNO_PROMEDIO_T1: 0.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_22_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_22_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_22_RETORNO_PROMEDIO_T1: -1.03%
+2025-05-27 07:36:40,676 - INFO - VELAS_21_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_21_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,676 - INFO - VELAS_21_RETORNO_PROMEDIO_T1: -6.20%
+2025-05-27 07:36:40,676 - INFO - VELAS_38_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,676 - INFO - VELAS_38_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_38_RETORNO_PROMEDIO_T1: -10.92%
+2025-05-27 07:36:40,677 - INFO - VELAS_36_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_36_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_36_RETORNO_PROMEDIO_T1: -2.91%
+2025-05-27 07:36:40,677 - INFO - VELAS_32_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_32_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_32_RETORNO_PROMEDIO_T1: 1.67%
+2025-05-27 07:36:40,677 - INFO - VELAS_31_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_31_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_31_RETORNO_PROMEDIO_T1: -4.32%
+2025-05-27 07:36:40,677 - INFO - VELAS_30_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_30_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_30_RETORNO_PROMEDIO_T1: 4.08%
+2025-05-27 07:36:40,677 - INFO - VELAS_45_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_45_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_45_RETORNO_PROMEDIO_T1: -0.74%
+2025-05-27 07:36:40,677 - INFO - VELAS_44_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_44_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_44_RETORNO_PROMEDIO_T1: 2.05%
+2025-05-27 07:36:40,677 - INFO - VELAS_43_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_43_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_43_RETORNO_PROMEDIO_T1: 5.11%
+2025-05-27 07:36:40,677 - INFO - VELAS_55_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_55_TASA_EXITO_T1: 50.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_55_RETORNO_PROMEDIO_T1: -9.59%
+2025-05-27 07:36:40,677 - INFO - VELAS_52_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_52_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_52_RETORNO_PROMEDIO_T1: 1.04%
+2025-05-27 07:36:40,677 - INFO - VELAS_75_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,677 - INFO - VELAS_75_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,677 - INFO - VELAS_75_RETORNO_PROMEDIO_T1: -3.43%
+2025-05-27 07:36:40,677 - INFO - VELAS_73_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_73_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_73_RETORNO_PROMEDIO_T1: 4.68%
+2025-05-27 07:36:40,678 - INFO - VELAS_69_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_69_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_69_RETORNO_PROMEDIO_T1: 0.46%
+2025-05-27 07:36:40,678 - INFO - VELAS_67_CANTIDAD: 2 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_67_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_67_RETORNO_PROMEDIO_T1: -2.19%
+2025-05-27 07:36:40,678 - INFO - VELAS_65_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_65_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_65_RETORNO_PROMEDIO_T1: -1.23%
+2025-05-27 07:36:40,678 - INFO - VELAS_63_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_63_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_63_RETORNO_PROMEDIO_T1: -5.26%
+2025-05-27 07:36:40,678 - INFO - VELAS_61_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_61_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_61_RETORNO_PROMEDIO_T1: 8.75%
+2025-05-27 07:36:40,678 - INFO - VELAS_101_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_101_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_101_RETORNO_PROMEDIO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_99_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_99_TASA_EXITO_T1: 0.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_99_RETORNO_PROMEDIO_T1: -23.53%
+2025-05-27 07:36:40,678 - INFO - VELAS_81_CANTIDAD: 1 acciones
+2025-05-27 07:36:40,678 - INFO - VELAS_81_TASA_EXITO_T1: 100.00%
+2025-05-27 07:36:40,678 - INFO - VELAS_81_RETORNO_PROMEDIO_T1: 1.67%
+2025-05-27 07:36:40,679 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+1:
+2025-05-27 07:36:40,679 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,688 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  FAAS 2025-05-19        24.73%         14.02
+   BTM 2025-05-15        22.94%         11.25
+  LAZR 2025-05-15        17.85%          2.55
+  CTMX 2025-05-12        15.21%         11.42
+  URGN 2025-05-16         11.0%          6.79
+2025-05-27 07:36:40,688 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+1:
+2025-05-27 07:36:40,688 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,690 - INFO - 
+ticker     T_date T1_pct_change  volume_ratio
+  IXHL 2025-05-14       -63.94%         15.38
+  NVNI 2025-04-30       -42.69%         14.69
+  MULN 2025-05-19       -30.78%         10.49
+  REKR 2024-12-30       -23.53%         12.78
+  NVVE 2025-05-09       -22.93%         15.56
+2025-05-27 07:36:40,690 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+2:
+2025-05-27 07:36:40,690 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,692 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  EYEN 2025-05-20        41.96%         12.46
+   PET 2025-04-24        29.69%         15.00
+   GTI 2025-05-15        28.67%         11.21
+   NFE 2025-05-15        23.92%          8.21
+  CLIK 2025-05-15        16.83%         13.39
+2025-05-27 07:36:40,692 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+2:
+2025-05-27 07:36:40,692 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,694 - INFO - 
+ticker     T_date T2_pct_change  volume_ratio
+  GRYP 2025-05-12       -25.63%         14.50
+  IXHL 2025-05-14       -23.51%         15.38
+  TAOP 2025-05-12       -20.31%         14.92
+  KIDZ 2025-05-01       -17.19%         16.23
+  FRGT 2025-05-02       -13.21%         15.84
+2025-05-27 07:36:40,694 - INFO - 
+TOP 5 MEJORES RENDIMIENTOS T+3:
+2025-05-27 07:36:40,694 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,695 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  TAOP 2025-05-12        46.38%         14.92
+  MLGO 2025-03-24        41.31%         14.25
+  GRYP 2025-05-12         37.0%         14.50
+  CLIK 2025-05-15        34.87%         13.39
+  NVNI 2025-04-30        29.08%         14.69
+2025-05-27 07:36:40,695 - INFO - 
+TOP 5 PEORES RENDIMIENTOS T+3:
+2025-05-27 07:36:40,695 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,697 - INFO - 
+ticker     T_date T3_pct_change  volume_ratio
+  NXTT 2025-05-09       -33.81%         15.95
+  CTMX 2025-05-12        -20.0%         11.42
+  NVVE 2025-05-09       -16.67%         15.56
+  BLMZ 2025-05-20        -16.0%         10.19
+  IXHL 2025-05-14       -11.47%         15.38
+2025-05-27 07:36:40,697 - INFO - 
+ANÁLISIS DE VOLUMEN:
+2025-05-27 07:36:40,697 - INFO - --------------------------------------------------
+2025-05-27 07:36:40,718 - INFO - 
+Rendimiento T+1 por ratio de volumen:
+2025-05-27 07:36:40,719 - INFO - 
+              count      mean    median        std
+volume_ratio                                      
+<1x               0       NaN       NaN        NaN
+1-1.5x            0       NaN       NaN        NaN
+1.5-2x            2  0.461262  0.461262   0.008524
+2-3x             23  0.689384 -0.735218   5.717622
+>3x              81 -4.713735 -1.574803  12.950097
+2025-05-27 07:36:40,719 - INFO - 
+Tiempo total de ejecución: 28.2 minutos
+2025-05-27 07:36:40,719 - INFO - 
+======================================================================
+2025-05-27 07:36:40,719 - INFO - FIN DEL ANÁLISIS
+2025-05-27 07:36:40,719 - INFO - ======================================================================

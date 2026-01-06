@@ -10,6 +10,7 @@ from typing import Dict, Any, Tuple, Optional, List
 from datetime import datetime
 
 from core.trade_arbiter import TradingHorizon
+from core.market_hours import get_market_hours, should_force_exit_short
 
 
 class BarDataWrapper:
@@ -94,6 +95,9 @@ class BaseWorkerLogic(ABC):
         # Estado
         self.is_running = False
 
+        # Trade Direction for Replay/Scaling (can be overridden by subclasses)
+        self.scaling_side = 'LONG'
+
         self.logger.info(f"🔧 Worker {worker_name} initialized with separate logging + ODS support + Event Logger + Swing Transition")
 
     def set_replay_date(self, date_str: str):
@@ -151,32 +155,48 @@ class BaseWorkerLogic(ABC):
 
     def _restore_position(self, symbol: str, position_data: Dict[str, Any]):
         """Restore position from ExecutionEngine worker_positions"""
-        self.active_positions[symbol] = {
+        position_metadata = {
             'position': position_data,
             'entry_time': position_data.get('entry_time'),
             'entry_price': position_data.get('entry_price', 0),
             'quantity': position_data.get('quantity', 0),
-            'opportunity_data': position_data.get('opportunity_data', {})
+            'opportunity_data': position_data.get('opportunity_data', {}),
+            'EOD_safe': position_data.get('EOD_safe', False),
+            'trading_horizon': position_data.get('trading_horizon', 'unknown'),
+            'expected_hold_hours': position_data.get('expected_hold_hours', 0),
+            'side': position_data.get('side', 'LONG'),
+            'strategy': self.worker_name
         }
+        self.active_positions[symbol] = position_metadata
 
-        # CRITICAL FIX: Ensure SL/TP parameters exist
-        # If restored from old DB schema, these might be missing. Inject defaults.
-        opp_data = self.active_positions[symbol]['opportunity_data']
-        if 'stop_loss_pct' not in opp_data:
-            # Inject default safety parameters
-            from strategies.workers.worker_stop_manager import WorkerStopManager
-            defaults = WorkerStopManager.config.get(self.worker_name, WorkerStopManager.config['default'])
-            
-            opp_data['stop_loss_pct'] = defaults.get('stop_loss_pct', 0.05)
-            opp_data['take_profit_pct'] = defaults.get('take_profit_pct', 0.20)
-            opp_data['trailing_activation_pct'] = defaults.get('trailing_activation_pct', 0.10)
-            opp_data['trailing_distance_pct'] = defaults.get('trailing_distance_pct', 0.05)
-            
-            self.logger.warning(f"⚠️ {symbol}: Injected default SL/TP parameters for restored position (missing in DB)")
-
-        # Register with stop manager
         if position_data.get('entry_time'):
             self.stop_manager.register_position(symbol, position_data['entry_time'])
+
+            # ROBUSTNESS: Ensure exit parameters exist in opportunity_data
+            # If restored from DB but fields are missing (old trades), inject defaults from config
+            opp_data = self.active_positions[symbol]['opportunity_data']
+            
+            # 1. Stop Loss
+            if not opp_data.get('stop_loss_pct'):
+                default_sl = self.stop_manager.config.stop_loss_pct
+                opp_data['stop_loss_pct'] = default_sl
+                self.logger.warning(f"⚠️ {symbol}: Injected default SL {default_sl}% (missing in DB)")
+            
+            # 2. Take Profit
+            if not opp_data.get('take_profit_pct'):
+                default_tp = self.stop_manager.config.take_profit_pct
+                opp_data['take_profit_pct'] = default_tp
+                self.logger.warning(f"⚠️ {symbol}: Injected default TP {default_tp}% (missing in DB)")
+                
+            # 3. Trailing Stop
+            if not opp_data.get('trailing_activation_pct'):
+                default_act = self.stop_manager.config.trailing_activation
+                opp_data['trailing_activation_pct'] = default_act
+                # No warning needed for trailing, might be disabled by strategy, but good to have default
+                
+            if not opp_data.get('trailing_distance_pct'):
+                default_dist = self.stop_manager.config.trailing_distance
+                opp_data['trailing_distance_pct'] = default_dist
 
         self.logger.info(
             f"🔄 Restored: {symbol} @ ${position_data.get('entry_price', 0):.2f} "
@@ -431,13 +451,22 @@ class BaseWorkerLogic(ABC):
                         f"♻️ {symbol}: Allowing retry (attempt #{attempts + 1}/{self.max_entry_attempts})"
                     )
 
-            # Check 3: Risk manager permite?
+            # Check 3: ¿Estamos dentro del horario permitido para entradas?
+            is_valid_time, current_hour = self.is_within_entry_hours(symbol)
+            if not is_valid_time:
+                self.logger.info(f"⏰ {symbol}: Entry rejected - outside allowed entry hours (current: {current_hour:.2f})")
+                return False
+
+            # Check 4: Risk manager permite?
             if not await self._check_risk_approval(symbol):
                 self.logger.debug(f"🚫 {symbol}: Risk manager denied")
                 return False
 
-            # Check 4: Estrategia específica aprueba entrada?
-            entry_approved = await self.should_enter(opportunity)
+            # Check 5: Estrategia específica aprueba entrada?
+            res = await self.should_enter(opportunity)
+            
+            # Subclasses might return bool or Tuple[bool, float, str]
+            entry_approved = res[0] if isinstance(res, tuple) else res
 
             if entry_approved:
                 self.logger.info(f"✅ {symbol}: Entry criteria met for {self.worker_name}")
@@ -1892,12 +1921,13 @@ class BaseWorkerLogic(ABC):
         Monitorea todas las posiciones activas del worker
         Evalúa salidas y ejecuta si es necesario
 
-        NUEVO: A las 15:30 ET, evalúa swing transitions (mantener overnight)
+        NUEVO: A las 15:50 ET, evalúa swing transitions (mantener overnight)
+        CRITICAL: SHORT positions force-close at 15:45 ET (NO OVERNIGHT)
         """
         if not self.active_positions:
             return
 
-        # SWING TRANSITION CHECK (15:30 ET - once per day)
+        # SWING TRANSITION CHECK (15:50 ET - once per day, 10 min before close)
         await self._check_swing_transition()
 
         # Iterar sobre copia para poder modificar dict durante iteración
@@ -1912,6 +1942,17 @@ class BaseWorkerLogic(ABC):
 
                 # Use entry_price from position data (already set correctly from IBKR during entry)
                 position_data = data['position'].copy()
+
+                # CRITICAL: Check if SHORT position needs force exit (before normal exit logic)
+                is_short = position_data.get('side') == 'SELL'
+                if is_short:
+                    force_exit, force_reason = should_force_exit_short()
+                    if force_exit:
+                        self.logger.warning(
+                            f"⚠️ {symbol}: FORCE CLOSING SHORT - {force_reason}"
+                        )
+                        await self._execute_exit(symbol, f"FORCED EXIT: {force_reason}", current_price)
+                        continue  # Skip normal exit logic
 
                 # Evaluate exit with strategy-specific logic
                 should_exit, reason = await self.should_exit(
@@ -2298,6 +2339,45 @@ class BaseWorkerLogic(ABC):
             return bars
         return []
 
+    def _calculate_price_roc(self, bars: list, period: int = 5) -> Optional[float]:
+        """
+        Calculate Rate of Change (ROC) for price momentum
+
+        ROC = ((Current Price - Price N periods ago) / Price N periods ago) * 100
+
+        Args:
+            bars: List of price bars
+            period: Number of periods to look back (default: 5 bars = 5 minutes)
+
+        Returns:
+            ROC as percentage, or None if insufficient data
+
+        Example:
+            Current: $10.00, 5 bars ago: $9.50
+            ROC = ((10.00 - 9.50) / 9.50) * 100 = +5.26%
+        """
+        try:
+            if not bars or len(bars) < period + 1:
+                return None
+
+            # Get current price (most recent bar)
+            current_price = self._get_bar_value(bars[-1], 'close')
+
+            # Get price N periods ago
+            past_price = self._get_bar_value(bars[-(period + 1)], 'close')
+
+            if past_price == 0:
+                return None
+
+            # Calculate ROC as percentage
+            roc = ((current_price - past_price) / past_price) * 100
+
+            return roc
+
+        except Exception as e:
+            self.logger.debug(f"Error calculating ROC: {e}")
+            return None
+
     def validate_vwap_strength(
         self,
         bars: list,
@@ -2427,6 +2507,176 @@ class BaseWorkerLogic(ABC):
         except Exception as e:
             self.logger.error(f"Error validating VWAP strength: {e}")
             return False, f"VWAP validation error: {str(e)}"
+
+    def _calculate_vwap_slope(
+        self,
+        bars: list,
+        window: int = 10
+    ) -> float:
+        """
+        Calcula la pendiente (slope) del VWAP en % basado en una ventana de barras
+
+        Args:
+            bars: Lista de barras de 1 minuto
+            window: Ventana de barras para calcular slope (default: 10)
+
+        Returns:
+            float: Slope del VWAP en porcentaje (ej: 0.15 = +0.15%)
+                   0.0 si no se puede calcular
+        """
+        try:
+            if not bars or len(bars) < window + 1:
+                return 0.0
+
+            # VWAP actual (todas las barras)
+            current_vwap = self.calculate_vwap_from_bars(bars)
+            if current_vwap is None:
+                return 0.0
+
+            # VWAP anterior (excluyendo últimas 'window' barras)
+            previous_bars = bars[:-window]
+            previous_vwap = self.calculate_vwap_from_bars(previous_bars)
+            if previous_vwap is None or previous_vwap == 0:
+                return 0.0
+
+            # Calcular slope en %
+            slope_pct = ((current_vwap - previous_vwap) / previous_vwap) * 100
+            return slope_pct
+
+        except Exception as e:
+            self.logger.debug(f"Error calculating VWAP slope: {e}")
+            return 0.0
+
+    def validate_vwap_direction(
+        self,
+        bars: list,
+        current_price: float,
+        intended_direction: str,
+        min_slope_pct: float = 0.10,
+        tolerance_pct: float = 0.5,
+        symbol: str = "UNKNOWN"
+    ) -> Tuple[bool, str, Dict]:
+        """
+        Validación UNIVERSAL de dirección de trade basada en VWAP
+
+        Valida que la dirección del trade (LONG/SHORT) sea coherente con:
+        1. Posición del precio vs VWAP (institucional positioning)
+        2. Pendiente de VWAP (institutional flow direction)
+
+        FILOSOFÍA:
+        - LONG: Precio cerca/arriba de VWAP + VWAP slope positivo = Acumulación institucional
+        - SHORT: Precio cerca/abajo de VWAP + VWAP slope negativo = Distribución institucional
+        - Evita trades contra el flujo institucional
+
+        Args:
+            bars: Lista de barras de 1 minuto
+            current_price: Precio actual del símbolo
+            intended_direction: 'LONG' o 'SHORT'
+            min_slope_pct: Slope mínimo requerido en % (default: 0.10%)
+            tolerance_pct: Tolerancia de precio vs VWAP en % (default: 0.5%)
+            symbol: Símbolo del ticker (para logging)
+
+        Returns:
+            Tuple[bool, str, Dict]:
+                - is_valid: True si dirección es válida según VWAP
+                - reason: Explicación detallada del resultado
+                - vwap_data: {'vwap': float, 'slope_pct': float, 'distance_pct': float}
+
+        Example:
+            >>> is_valid, reason, data = self.validate_vwap_direction(
+            ...     bars=bars,
+            ...     current_price=10.50,
+            ...     intended_direction='LONG',
+            ...     min_slope_pct=0.10,
+            ...     tolerance_pct=0.5
+            ... )
+            >>> # LONG válido si: precio >= $10.45 (VWAP - 0.5%) y slope >= +0.10%
+        """
+        try:
+            # Validar inputs
+            if not bars or len(bars) < 10:
+                return False, f"Insufficient bars for VWAP direction validation (need 10+, got {len(bars)})", {}
+
+            if intended_direction not in ['LONG', 'SHORT']:
+                return False, f"Invalid direction '{intended_direction}' (must be 'LONG' or 'SHORT')", {}
+
+            # Calcular VWAP
+            vwap_val = self.calculate_vwap_from_bars(bars)
+            if vwap_val is None or vwap_val == 0:
+                return False, "Could not calculate VWAP", {}
+
+            # Calcular slope de VWAP (últimas 10 barras)
+            vwap_slope_pct = self._calculate_vwap_slope(bars, window=10)
+
+            # Calcular distancia precio vs VWAP
+            distance_pct = ((current_price - vwap_val) / vwap_val) * 100
+
+            # Datos de retorno
+            vwap_data = {
+                'vwap': vwap_val,
+                'slope_pct': vwap_slope_pct,
+                'distance_pct': distance_pct
+            }
+
+            # ========== VALIDACIÓN LONG ==========
+            if intended_direction == 'LONG':
+                # Validación 1: Precio debe estar arriba o dentro de tolerancia
+                if distance_pct < -tolerance_pct:
+                    return (
+                        False,
+                        f"LONG rejected: Price ${current_price:.2f} too far below VWAP ${vwap_val:.2f} "
+                        f"({distance_pct:.2f}% < -{tolerance_pct}% tolerance)",
+                        vwap_data
+                    )
+
+                # Validación 2: VWAP slope debe ser positivo (acumulación institucional)
+                if vwap_slope_pct < min_slope_pct:
+                    return (
+                        False,
+                        f"LONG rejected: VWAP slope {vwap_slope_pct:+.2f}% insufficient "
+                        f"(min +{min_slope_pct:.2f}% required for institutional accumulation)",
+                        vwap_data
+                    )
+
+                # ✅ LONG VÁLIDO
+                return (
+                    True,
+                    f"✅ LONG valid: Price {distance_pct:+.2f}% vs VWAP ${vwap_val:.2f}, "
+                    f"slope {vwap_slope_pct:+.2f}% (institutional accumulation)",
+                    vwap_data
+                )
+
+            # ========== VALIDACIÓN SHORT ==========
+            elif intended_direction == 'SHORT':
+                # Validación 1: Precio debe estar abajo o dentro de tolerancia
+                if distance_pct > +tolerance_pct:
+                    return (
+                        False,
+                        f"SHORT rejected: Price ${current_price:.2f} too far above VWAP ${vwap_val:.2f} "
+                        f"({distance_pct:.2f}% > +{tolerance_pct}% tolerance)",
+                        vwap_data
+                    )
+
+                # Validación 2: VWAP slope debe ser negativo (distribución institucional)
+                if vwap_slope_pct > -min_slope_pct:
+                    return (
+                        False,
+                        f"SHORT rejected: VWAP slope {vwap_slope_pct:+.2f}% insufficient "
+                        f"(max -{min_slope_pct:.2f}% required for institutional distribution)",
+                        vwap_data
+                    )
+
+                # ✅ SHORT VÁLIDO
+                return (
+                    True,
+                    f"✅ SHORT valid: Price {distance_pct:+.2f}% vs VWAP ${vwap_val:.2f}, "
+                    f"slope {vwap_slope_pct:+.2f}% (institutional distribution)",
+                    vwap_data
+                )
+
+        except Exception as e:
+            self.logger.error(f"Error in validate_vwap_direction for {symbol}: {e}")
+            return False, f"VWAP direction validation error: {str(e)}", {}
 
     def check_multi_timeframe_trend(
         self,
@@ -2767,15 +3017,15 @@ class BaseWorkerLogic(ABC):
         """
         Check if any positions should transition to swing (overnight hold)
 
-        TIMING: Ejecuta UNA VEZ al día a las 15:30 ET
+        TIMING: Ejecuta UNA VEZ al día a las 15:50 ET (10 min antes del cierre)
         DECISION: Evalúa cada posición INTRADAY/SCALP para posible swing transition
 
         Flujo:
-        1. Verificar timing (15:30-15:35 ET window)
+        1. Verificar timing (15:50-15:55 ET window)
         2. Para cada posición INTRADAY/SCALP:
            - Evaluar con SwingTransitionAnalyzer (scoring 80/100 min)
            - Si aprueba: Actualizar trading_horizon, EOD_safe=True, reducir 40%
-           - Si rechaza: Mantener EOD_safe=False (cierra a las 15:50)
+           - Si rechaza: Mantener EOD_safe=False (cierra a las 15:58 EOD)
 
         Safety Limits:
         - Max 3 swing transitions por día
@@ -2796,8 +3046,8 @@ class BaseWorkerLogic(ABC):
             current_time_et = datetime.now(ZoneInfo('US/Eastern'))
             current_time_obj = current_time_et.time()
 
-            # Only execute between 15:30 - 15:35 ET (5-minute window)
-            if current_time_obj < time(15, 30) or current_time_obj > time(15, 35):
+            # Only execute between 15:50 - 15:55 ET (5-minute window, 10 min before close)
+            if current_time_obj < time(15, 50) or current_time_obj > time(15, 55):
                 return
 
             # Only execute ONCE per day

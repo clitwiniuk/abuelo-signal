@@ -1,0 +1,632 @@
+2025-06-01 11:32:05,462 - FridayEffect - INFO - 🎯 FRIDAY EFFECT ALGORITHM BACKTEST
+2025-06-01 11:32:05,462 - FridayEffect - INFO - ==================================================
+2025-06-01 11:32:05,462 - FridayEffect - INFO - 🚀 Iniciando backtest del Efecto Viernes...
+2025-06-01 11:32:05,462 - FridayEffect - INFO - Período: 2022-01-01 a 2024-12-31
+2025-06-01 11:32:05,462 - FridayEffect - INFO - Capital inicial: $100,000.00
+2025-06-01 11:32:05,462 - FridayEffect - INFO - Tamaño de posición: 5.0%
+2025-06-01 11:32:05,462 - FridayEffect - INFO - --------------------------------------------------
+2025-06-01 11:32:05,463 - FridayEffect - ERROR - ❌ Error en el backtest: name 'requests' is not defined
+Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/friday_effect/friday_effect_backtest.py", line 723, in run_friday_effect_backtest
+    backtest = FridayEffectBacktest(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/friday_effect/friday_effect_backtest.py", line 187, in __init__
+    self.data_fetcher = DataFetcher()
+                        ^^^^^^^^^^^^^
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/friday_effect/friday_effect_backtest.py", line 42, in __init__
+    self.session = requests.Session()
+                   ^^^^^^^^
+NameError: name 'requests' is not defined
+2025-06-01 11:40:26,649 - FridayEffect - INFO - 🎯 FRIDAY EFFECT ALGORITHM BACKTEST
+2025-06-01 11:40:26,649 - FridayEffect - INFO - ==================================================
+2025-06-01 11:40:26,649 - FridayEffect - INFO - 🚀 Iniciando backtest del Efecto Viernes...
+2025-06-01 11:40:26,649 - FridayEffect - INFO - Período: 2022-01-01 a 2024-12-31
+2025-06-01 11:40:26,649 - FridayEffect - INFO - Capital inicial: $100,000.00
+2025-06-01 11:40:26,649 - FridayEffect - INFO - Tamaño de posición: 5.0%
+2025-06-01 11:40:26,649 - FridayEffect - INFO - --------------------------------------------------
+2025-06-01 11:40:26,649 - FridayEffect - INFO - ⏳ Cargando datos de mercado...
+2025-06-01 11:40:26,649 - FridayEffect - INFO - Cargando datos para 15 tickers...
+2025-06-01 11:40:26,650 - FridayEffect - INFO - Descargando datos para ROKU (intento 1/3)
+2025-06-01 11:40:26,651 - FridayEffect - ERROR - Error en intento 1 para ROKU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,652 - FridayEffect - INFO - Descargando datos para ROKU (intento 2/3)
+2025-06-01 11:40:31,654 - FridayEffect - ERROR - Error en intento 2 para ROKU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,655 - FridayEffect - INFO - Descargando datos para CVNA (intento 1/3)
+2025-06-01 11:40:31,655 - FridayEffect - INFO - Descargando datos para DOCU (intento 1/3)
+2025-06-01 11:40:31,655 - FridayEffect - INFO - Descargando datos para DASH (intento 1/3)
+2025-06-01 11:40:31,655 - FridayEffect - INFO - Descargando datos para NET (intento 1/3)
+2025-06-01 11:40:31,656 - FridayEffect - INFO - Descargando datos para RBLX (intento 1/3)
+2025-06-01 11:40:31,656 - FridayEffect - INFO - Descargando datos para DKNG (intento 1/3)
+2025-06-01 11:40:31,656 - FridayEffect - INFO - Descargando datos para PLTR (intento 1/3)
+2025-06-01 11:40:31,656 - FridayEffect - INFO - Descargando datos para CRWD (intento 1/3)
+2025-06-01 11:40:31,656 - FridayEffect - INFO - Descargando datos para PINS (intento 1/3)
+2025-06-01 11:40:31,663 - FridayEffect - ERROR - Error en intento 1 para CVNA: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,663 - FridayEffect - ERROR - Error en intento 1 para DOCU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,664 - FridayEffect - ERROR - Error en intento 1 para DASH: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,664 - FridayEffect - ERROR - Error en intento 1 para NET: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,665 - FridayEffect - ERROR - Error en intento 1 para RBLX: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,665 - FridayEffect - ERROR - Error en intento 1 para DKNG: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,665 - FridayEffect - ERROR - Error en intento 1 para PLTR: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,666 - FridayEffect - ERROR - Error en intento 1 para CRWD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:31,666 - FridayEffect - ERROR - Error en intento 1 para PINS: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,659 - FridayEffect - INFO - Descargando datos para DASH (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para PLTR (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para DKNG (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para CVNA (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para DOCU (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para CRWD (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para NET (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para RBLX (intento 2/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para ROKU (intento 3/3)
+2025-06-01 11:40:36,660 - FridayEffect - INFO - Descargando datos para PINS (intento 2/3)
+2025-06-01 11:40:36,661 - FridayEffect - ERROR - Error en intento 2 para DASH: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,661 - FridayEffect - ERROR - Error en intento 2 para PLTR: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,661 - FridayEffect - ERROR - Error en intento 2 para DKNG: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,661 - FridayEffect - ERROR - Error en intento 2 para CVNA: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,662 - FridayEffect - ERROR - Error en intento 2 para DOCU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,662 - FridayEffect - ERROR - Error en intento 2 para CRWD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,662 - FridayEffect - ERROR - Error en intento 2 para NET: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,662 - FridayEffect - ERROR - Error en intento 2 para RBLX: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,662 - FridayEffect - ERROR - Error en intento 3 para ROKU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,663 - FridayEffect - ERROR - Error en intento 2 para PINS: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:36,664 - FridayEffect - ERROR - No se pudo descargar ROKU después de 3 intentos
+2025-06-01 11:40:36,664 - FridayEffect - WARNING - No se encontraron datos para ROKU
+2025-06-01 11:40:41,663 - FridayEffect - INFO - Descargando datos para RBLX (intento 3/3)
+2025-06-01 11:40:41,663 - FridayEffect - ERROR - Error en intento 3 para RBLX: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,663 - FridayEffect - ERROR - No se pudo descargar RBLX después de 3 intentos
+2025-06-01 11:40:41,663 - FridayEffect - WARNING - No se encontraron datos para RBLX
+2025-06-01 11:40:41,664 - FridayEffect - INFO - Descargando datos para CVNA (intento 3/3)
+2025-06-01 11:40:41,664 - FridayEffect - INFO - Descargando datos para PLTR (intento 3/3)
+2025-06-01 11:40:41,664 - FridayEffect - INFO - Descargando datos para DKNG (intento 3/3)
+2025-06-01 11:40:41,664 - FridayEffect - INFO - Descargando datos para DASH (intento 3/3)
+2025-06-01 11:40:41,664 - FridayEffect - INFO - Descargando datos para DOCU (intento 3/3)
+2025-06-01 11:40:41,664 - FridayEffect - ERROR - Error en intento 3 para CVNA: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - Error en intento 3 para PLTR: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - Error en intento 3 para DKNG: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - Error en intento 3 para DASH: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - Error en intento 3 para DOCU: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - No se pudo descargar CVNA después de 3 intentos
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - No se pudo descargar PLTR después de 3 intentos
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - No se pudo descargar DKNG después de 3 intentos
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - No se pudo descargar DASH después de 3 intentos
+2025-06-01 11:40:41,665 - FridayEffect - ERROR - No se pudo descargar DOCU después de 3 intentos
+2025-06-01 11:40:41,665 - FridayEffect - WARNING - No se encontraron datos para CVNA
+2025-06-01 11:40:41,665 - FridayEffect - WARNING - No se encontraron datos para PLTR
+2025-06-01 11:40:41,665 - FridayEffect - INFO - Descargando datos para U (intento 1/3)
+2025-06-01 11:40:41,665 - FridayEffect - WARNING - No se encontraron datos para DKNG
+2025-06-01 11:40:41,665 - FridayEffect - INFO - Descargando datos para CRWD (intento 3/3)
+2025-06-01 11:40:41,665 - FridayEffect - WARNING - No se encontraron datos para DASH
+2025-06-01 11:40:41,665 - FridayEffect - INFO - Descargando datos para PINS (intento 3/3)
+2025-06-01 11:40:41,665 - FridayEffect - INFO - Descargando datos para NET (intento 3/3)
+2025-06-01 11:40:41,665 - FridayEffect - WARNING - No se encontraron datos para DOCU
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - Error en intento 3 para CRWD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - Error en intento 3 para PINS: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - Error en intento 3 para NET: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - No se pudo descargar CRWD después de 3 intentos
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - No se pudo descargar PINS después de 3 intentos
+2025-06-01 11:40:41,666 - FridayEffect - ERROR - No se pudo descargar NET después de 3 intentos
+2025-06-01 11:40:41,666 - FridayEffect - WARNING - No se encontraron datos para CRWD
+2025-06-01 11:40:41,667 - FridayEffect - WARNING - No se encontraron datos para PINS
+2025-06-01 11:40:41,667 - FridayEffect - WARNING - No se encontraron datos para NET
+2025-06-01 11:40:41,668 - FridayEffect - ERROR - Error en intento 1 para U: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:46,666 - FridayEffect - INFO - Descargando datos para U (intento 2/3)
+2025-06-01 11:40:46,667 - FridayEffect - ERROR - Error en intento 2 para U: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:46,668 - FridayEffect - INFO - Descargando datos para SHOP (intento 1/3)
+2025-06-01 11:40:46,668 - FridayEffect - INFO - Descargando datos para OPEN (intento 1/3)
+2025-06-01 11:40:46,668 - FridayEffect - INFO - Descargando datos para HOOD (intento 1/3)
+2025-06-01 11:40:46,671 - FridayEffect - ERROR - Error en intento 1 para SHOP: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:46,671 - FridayEffect - ERROR - Error en intento 1 para OPEN: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:46,671 - FridayEffect - INFO - Descargando datos para SQ (intento 1/3)
+2025-06-01 11:40:46,671 - FridayEffect - ERROR - Error en intento 1 para HOOD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:46,672 - FridayEffect - ERROR - Error en intento 1 para SQ: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,673 - FridayEffect - INFO - Descargando datos para SHOP (intento 2/3)
+2025-06-01 11:40:51,673 - FridayEffect - ERROR - Error en intento 2 para SHOP: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,674 - FridayEffect - INFO - Descargando datos para HOOD (intento 2/3)
+2025-06-01 11:40:51,674 - FridayEffect - INFO - Descargando datos para SQ (intento 2/3)
+2025-06-01 11:40:51,674 - FridayEffect - INFO - Descargando datos para U (intento 3/3)
+2025-06-01 11:40:51,674 - FridayEffect - INFO - Descargando datos para OPEN (intento 2/3)
+2025-06-01 11:40:51,674 - FridayEffect - ERROR - Error en intento 2 para HOOD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,674 - FridayEffect - ERROR - Error en intento 2 para SQ: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,675 - FridayEffect - ERROR - Error en intento 3 para U: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,675 - FridayEffect - ERROR - Error en intento 2 para OPEN: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:51,675 - FridayEffect - ERROR - No se pudo descargar U después de 3 intentos
+2025-06-01 11:40:51,675 - FridayEffect - WARNING - No se encontraron datos para U
+2025-06-01 11:40:56,675 - FridayEffect - INFO - Descargando datos para OPEN (intento 3/3)
+2025-06-01 11:40:56,678 - FridayEffect - ERROR - Error en intento 3 para OPEN: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:56,678 - FridayEffect - ERROR - No se pudo descargar OPEN después de 3 intentos
+2025-06-01 11:40:56,678 - FridayEffect - WARNING - No se encontraron datos para OPEN
+2025-06-01 11:40:56,679 - FridayEffect - INFO - Descargando datos para HOOD (intento 3/3)
+2025-06-01 11:40:56,679 - FridayEffect - INFO - Descargando datos para SHOP (intento 3/3)
+2025-06-01 11:40:56,679 - FridayEffect - ERROR - Error en intento 3 para HOOD: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:56,679 - FridayEffect - INFO - Descargando datos para SQ (intento 3/3)
+2025-06-01 11:40:56,679 - FridayEffect - ERROR - Error en intento 3 para SHOP: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:56,680 - FridayEffect - ERROR - No se pudo descargar HOOD después de 3 intentos
+2025-06-01 11:40:56,680 - FridayEffect - ERROR - Error en intento 3 para SQ: PriceHistory.history() got an unexpected keyword argument 'threads'
+2025-06-01 11:40:56,680 - FridayEffect - ERROR - No se pudo descargar SHOP después de 3 intentos
+2025-06-01 11:40:56,680 - FridayEffect - WARNING - No se encontraron datos para HOOD
+2025-06-01 11:40:56,680 - FridayEffect - ERROR - No se pudo descargar SQ después de 3 intentos
+2025-06-01 11:40:56,680 - FridayEffect - WARNING - No se encontraron datos para SHOP
+2025-06-01 11:40:56,680 - FridayEffect - WARNING - No se encontraron datos para SQ
+2025-06-01 11:40:56,682 - FridayEffect - INFO - Datos cargados para 0/15 tickers
+2025-06-01 11:40:56,683 - FridayEffect - ERROR - ❌ No se pudieron cargar datos para ningún ticker
+2025-06-01 11:43:55,016 - FridayEffect - INFO - 🎯 FRIDAY EFFECT ALGORITHM BACKTEST
+2025-06-01 11:43:55,017 - FridayEffect - INFO - ==================================================
+2025-06-01 11:43:55,018 - FridayEffect - INFO - 🚀 Iniciando backtest del Efecto Viernes...
+2025-06-01 11:43:55,018 - FridayEffect - INFO - Período: 2022-01-01 a 2024-12-31
+2025-06-01 11:43:55,018 - FridayEffect - INFO - Capital inicial: $100,000.00
+2025-06-01 11:43:55,018 - FridayEffect - INFO - Tamaño de posición: 5.0%
+2025-06-01 11:43:55,018 - FridayEffect - INFO - --------------------------------------------------
+2025-06-01 11:43:55,018 - FridayEffect - INFO - ⏳ Cargando datos de mercado...
+2025-06-01 11:43:55,018 - FridayEffect - INFO - Cargando datos para 15 tickers...
+2025-06-01 11:43:55,018 - FridayEffect - INFO - Descargando datos para ROKU (intento 1/3)
+2025-06-01 11:43:57,683 - FridayEffect - ERROR - Error en intento 1 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:00,021 - FridayEffect - INFO - Descargando datos para ROKU (intento 2/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para DASH (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para DOCU (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para DKNG (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para PLTR (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para CVNA (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para PINS (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para RBLX (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para CRWD (intento 1/3)
+2025-06-01 11:44:00,024 - FridayEffect - INFO - Descargando datos para NET (intento 1/3)
+2025-06-01 11:44:01,690 - FridayEffect - ERROR - Error en intento 1 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,695 - FridayEffect - ERROR - Error en intento 1 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,696 - FridayEffect - ERROR - Error en intento 2 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,697 - FridayEffect - ERROR - Error en intento 1 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,697 - FridayEffect - ERROR - Error en intento 1 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,697 - FridayEffect - ERROR - Error en intento 1 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,698 - FridayEffect - ERROR - Error en intento 1 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,698 - FridayEffect - ERROR - Error en intento 1 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,698 - FridayEffect - ERROR - Error en intento 1 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:01,699 - FridayEffect - ERROR - Error en intento 1 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:05,025 - FridayEffect - INFO - Descargando datos para NET (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para DASH (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para DKNG (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para PINS (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para PLTR (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para CRWD (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para RBLX (intento 2/3)
+2025-06-01 11:44:05,029 - FridayEffect - INFO - Descargando datos para CVNA (intento 2/3)
+2025-06-01 11:44:05,030 - FridayEffect - INFO - Descargando datos para DOCU (intento 2/3)
+2025-06-01 11:44:05,030 - FridayEffect - INFO - Descargando datos para ROKU (intento 3/3)
+2025-06-01 11:44:06,575 - FridayEffect - ERROR - Error en intento 2 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,577 - FridayEffect - ERROR - Error en intento 2 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,578 - FridayEffect - ERROR - Error en intento 2 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,578 - FridayEffect - ERROR - Error en intento 2 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,579 - FridayEffect - ERROR - Error en intento 3 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,579 - FridayEffect - ERROR - Error en intento 2 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,580 - FridayEffect - ERROR - Error en intento 2 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,580 - FridayEffect - ERROR - Error en intento 2 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,580 - FridayEffect - ERROR - Error en intento 2 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:06,580 - FridayEffect - ERROR - No se pudo descargar ROKU después de 3 intentos
+2025-06-01 11:44:06,581 - FridayEffect - WARNING - No se encontraron datos para ROKU
+2025-06-01 11:44:06,583 - FridayEffect - ERROR - Error en intento 2 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:10,033 - FridayEffect - INFO - Descargando datos para PLTR (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para PINS (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para CVNA (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para NET (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para DOCU (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para RBLX (intento 3/3)
+2025-06-01 11:44:10,034 - FridayEffect - INFO - Descargando datos para DASH (intento 3/3)
+2025-06-01 11:44:10,039 - FridayEffect - INFO - Descargando datos para U (intento 1/3)
+2025-06-01 11:44:10,039 - FridayEffect - INFO - Descargando datos para CRWD (intento 3/3)
+2025-06-01 11:44:10,039 - FridayEffect - INFO - Descargando datos para DKNG (intento 3/3)
+2025-06-01 11:44:11,786 - FridayEffect - ERROR - Error en intento 3 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,786 - FridayEffect - ERROR - Error en intento 3 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,786 - FridayEffect - ERROR - No se pudo descargar DASH después de 3 intentos
+2025-06-01 11:44:11,786 - FridayEffect - ERROR - No se pudo descargar NET después de 3 intentos
+2025-06-01 11:44:11,786 - FridayEffect - WARNING - No se encontraron datos para DASH
+2025-06-01 11:44:11,786 - FridayEffect - WARNING - No se encontraron datos para NET
+2025-06-01 11:44:11,787 - FridayEffect - ERROR - Error en intento 3 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - Error en intento 3 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - Error en intento 3 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - Error en intento 3 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - Error en intento 3 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - No se pudo descargar PINS después de 3 intentos
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - No se pudo descargar DKNG después de 3 intentos
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - No se pudo descargar RBLX después de 3 intentos
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - No se pudo descargar DOCU después de 3 intentos
+2025-06-01 11:44:11,788 - FridayEffect - ERROR - No se pudo descargar PLTR después de 3 intentos
+2025-06-01 11:44:11,788 - FridayEffect - WARNING - No se encontraron datos para PINS
+2025-06-01 11:44:11,788 - FridayEffect - WARNING - No se encontraron datos para DKNG
+2025-06-01 11:44:11,789 - FridayEffect - WARNING - No se encontraron datos para RBLX
+2025-06-01 11:44:11,789 - FridayEffect - WARNING - No se encontraron datos para DOCU
+2025-06-01 11:44:11,789 - FridayEffect - WARNING - No se encontraron datos para PLTR
+2025-06-01 11:44:11,790 - FridayEffect - ERROR - Error en intento 1 para U: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,791 - FridayEffect - ERROR - Error en intento 3 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,791 - FridayEffect - ERROR - No se pudo descargar CVNA después de 3 intentos
+2025-06-01 11:44:11,791 - FridayEffect - WARNING - No se encontraron datos para CVNA
+2025-06-01 11:44:11,857 - FridayEffect - ERROR - Error en intento 3 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:11,857 - FridayEffect - ERROR - No se pudo descargar CRWD después de 3 intentos
+2025-06-01 11:44:11,858 - FridayEffect - WARNING - No se encontraron datos para CRWD
+2025-06-01 11:44:15,042 - FridayEffect - INFO - Descargando datos para U (intento 2/3)
+2025-06-01 11:44:15,045 - FridayEffect - INFO - Descargando datos para SHOP (intento 1/3)
+2025-06-01 11:44:15,045 - FridayEffect - INFO - Descargando datos para OPEN (intento 1/3)
+2025-06-01 11:44:15,045 - FridayEffect - INFO - Descargando datos para SQ (intento 1/3)
+2025-06-01 11:44:15,045 - FridayEffect - INFO - Descargando datos para HOOD (intento 1/3)
+2025-06-01 11:44:16,371 - FridayEffect - ERROR - Error en intento 1 para HOOD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:16,372 - FridayEffect - ERROR - Error en intento 1 para OPEN: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:16,376 - FridayEffect - ERROR - Error en intento 1 para SQ: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:16,377 - FridayEffect - ERROR - Error en intento 2 para U: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:16,377 - FridayEffect - ERROR - Error en intento 1 para SHOP: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:20,047 - FridayEffect - INFO - Descargando datos para SQ (intento 2/3)
+2025-06-01 11:44:20,047 - FridayEffect - INFO - Descargando datos para OPEN (intento 2/3)
+2025-06-01 11:44:20,047 - FridayEffect - INFO - Descargando datos para U (intento 3/3)
+2025-06-01 11:44:20,047 - FridayEffect - INFO - Descargando datos para HOOD (intento 2/3)
+2025-06-01 11:44:20,048 - FridayEffect - INFO - Descargando datos para SHOP (intento 2/3)
+2025-06-01 11:44:21,440 - FridayEffect - ERROR - Error en intento 2 para OPEN: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:21,440 - FridayEffect - ERROR - Error en intento 3 para U: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:21,441 - FridayEffect - ERROR - Error en intento 2 para SQ: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:21,441 - FridayEffect - ERROR - No se pudo descargar U después de 3 intentos
+2025-06-01 11:44:21,441 - FridayEffect - WARNING - No se encontraron datos para U
+2025-06-01 11:44:21,443 - FridayEffect - ERROR - Error en intento 2 para HOOD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:21,443 - FridayEffect - ERROR - Error en intento 2 para SHOP: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:25,050 - FridayEffect - INFO - Descargando datos para SQ (intento 3/3)
+2025-06-01 11:44:25,052 - FridayEffect - INFO - Descargando datos para SHOP (intento 3/3)
+2025-06-01 11:44:25,052 - FridayEffect - INFO - Descargando datos para OPEN (intento 3/3)
+2025-06-01 11:44:25,052 - FridayEffect - INFO - Descargando datos para HOOD (intento 3/3)
+2025-06-01 11:44:25,900 - FridayEffect - ERROR - Error en intento 3 para HOOD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:25,901 - FridayEffect - ERROR - Error en intento 3 para SQ: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - Error en intento 3 para OPEN: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - No se pudo descargar HOOD después de 3 intentos
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - Error en intento 3 para SHOP: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - No se pudo descargar SQ después de 3 intentos
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - No se pudo descargar OPEN después de 3 intentos
+2025-06-01 11:44:25,902 - FridayEffect - WARNING - No se encontraron datos para HOOD
+2025-06-01 11:44:25,902 - FridayEffect - ERROR - No se pudo descargar SHOP después de 3 intentos
+2025-06-01 11:44:25,902 - FridayEffect - WARNING - No se encontraron datos para SQ
+2025-06-01 11:44:25,902 - FridayEffect - WARNING - No se encontraron datos para OPEN
+2025-06-01 11:44:25,902 - FridayEffect - WARNING - No se encontraron datos para SHOP
+2025-06-01 11:44:25,904 - FridayEffect - INFO - Datos cargados para 0/15 tickers
+2025-06-01 11:44:25,904 - FridayEffect - ERROR - ❌ No se pudieron cargar datos para ningún ticker
+2025-06-01 11:47:34,162 - FridayEffect - INFO - 🎯 FRIDAY EFFECT ALGORITHM BACKTEST
+2025-06-01 11:47:34,165 - FridayEffect - INFO - ==================================================
+2025-06-01 11:47:34,165 - FridayEffect - INFO - 🚀 Iniciando backtest del Efecto Viernes...
+2025-06-01 11:47:34,165 - FridayEffect - INFO - Período: 2022-01-01 a 2024-12-31
+2025-06-01 11:47:34,165 - FridayEffect - INFO - Capital inicial: $100,000.00
+2025-06-01 11:47:34,165 - FridayEffect - INFO - Tamaño de posición: 5.0%
+2025-06-01 11:47:34,165 - FridayEffect - INFO - --------------------------------------------------
+2025-06-01 11:47:34,165 - FridayEffect - INFO - ⏳ Cargando datos de mercado...
+2025-06-01 11:47:34,165 - FridayEffect - INFO - Cargando datos para 15 tickers...
+2025-06-01 11:47:35,512 - FridayEffect - INFO - Descargando datos para PINS (intento 1/5)
+2025-06-01 11:47:36,743 - FridayEffect - ERROR - Error en intento 1 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:36,743 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:39,988 - FridayEffect - INFO - Descargando datos para NET (intento 1/5)
+2025-06-01 11:47:40,046 - FridayEffect - INFO - Descargando datos para DKNG (intento 1/5)
+2025-06-01 11:47:40,050 - FridayEffect - INFO - Descargando datos para PLTR (intento 1/5)
+2025-06-01 11:47:40,136 - FridayEffect - INFO - Descargando datos para DOCU (intento 1/5)
+2025-06-01 11:47:40,157 - FridayEffect - INFO - Descargando datos para RBLX (intento 1/5)
+2025-06-01 11:47:40,239 - FridayEffect - INFO - Descargando datos para DASH (intento 1/5)
+2025-06-01 11:47:40,246 - FridayEffect - INFO - Descargando datos para CVNA (intento 1/5)
+2025-06-01 11:47:40,378 - FridayEffect - INFO - Descargando datos para CRWD (intento 1/5)
+2025-06-01 11:47:40,397 - FridayEffect - INFO - Descargando datos para ROKU (intento 1/5)
+2025-06-01 11:47:41,011 - FridayEffect - ERROR - Error en intento 1 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,011 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,098 - FridayEffect - ERROR - Error en intento 1 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,098 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,106 - FridayEffect - ERROR - Error en intento 1 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,107 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,914 - FridayEffect - ERROR - Error en intento 1 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,914 - FridayEffect - ERROR - Error en intento 1 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,915 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,915 - FridayEffect - ERROR - Error en intento 1 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,915 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,915 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,917 - FridayEffect - ERROR - Error en intento 1 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,917 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,928 - FridayEffect - ERROR - Error en intento 1 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,928 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:41,988 - FridayEffect - ERROR - Error en intento 1 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:41,988 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:47:48,008 - FridayEffect - INFO - Descargando datos para PINS (intento 2/5)
+2025-06-01 11:47:49,329 - FridayEffect - ERROR - Error en intento 2 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:49,329 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:52,762 - FridayEffect - INFO - Descargando datos para DKNG (intento 2/5)
+2025-06-01 11:47:53,060 - FridayEffect - INFO - Descargando datos para NET (intento 2/5)
+2025-06-01 11:47:53,177 - FridayEffect - INFO - Descargando datos para PLTR (intento 2/5)
+2025-06-01 11:47:53,900 - FridayEffect - ERROR - Error en intento 2 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:53,900 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:56,650 - FridayEffect - ERROR - Error en intento 2 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:56,650 - FridayEffect - ERROR - Error en intento 2 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:56,651 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:56,651 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:57,314 - FridayEffect - INFO - Descargando datos para CVNA (intento 2/5)
+2025-06-01 11:47:57,399 - FridayEffect - INFO - Descargando datos para CRWD (intento 2/5)
+2025-06-01 11:47:57,633 - FridayEffect - INFO - Descargando datos para DOCU (intento 2/5)
+2025-06-01 11:47:58,021 - FridayEffect - INFO - Descargando datos para ROKU (intento 2/5)
+2025-06-01 11:47:58,025 - FridayEffect - INFO - Descargando datos para DASH (intento 2/5)
+2025-06-01 11:47:58,147 - FridayEffect - INFO - Descargando datos para RBLX (intento 2/5)
+2025-06-01 11:47:58,684 - FridayEffect - ERROR - Error en intento 2 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:58,685 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:58,690 - FridayEffect - ERROR - Error en intento 2 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:58,690 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:59,626 - FridayEffect - ERROR - Error en intento 2 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:59,626 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:59,629 - FridayEffect - ERROR - Error en intento 2 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:59,629 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:59,631 - FridayEffect - ERROR - Error en intento 2 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:59,632 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:47:59,696 - FridayEffect - ERROR - Error en intento 2 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:47:59,696 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:48:10,432 - FridayEffect - INFO - Descargando datos para PINS (intento 3/5)
+2025-06-01 11:48:11,681 - FridayEffect - ERROR - Error en intento 3 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:11,681 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:15,315 - FridayEffect - INFO - Descargando datos para DKNG (intento 3/5)
+2025-06-01 11:48:16,268 - FridayEffect - ERROR - Error en intento 3 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:16,269 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:20,223 - FridayEffect - INFO - Descargando datos para CRWD (intento 3/5)
+2025-06-01 11:48:20,233 - FridayEffect - INFO - Descargando datos para PLTR (intento 3/5)
+2025-06-01 11:48:20,500 - FridayEffect - INFO - Descargando datos para NET (intento 3/5)
+2025-06-01 11:48:20,514 - FridayEffect - INFO - Descargando datos para CVNA (intento 3/5)
+2025-06-01 11:48:21,330 - FridayEffect - ERROR - Error en intento 3 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:21,331 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:21,396 - FridayEffect - ERROR - Error en intento 3 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:21,396 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:22,608 - FridayEffect - ERROR - Error en intento 3 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:22,608 - FridayEffect - ERROR - Error en intento 3 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:22,609 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:22,609 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:25,058 - FridayEffect - INFO - Descargando datos para DASH (intento 3/5)
+2025-06-01 11:48:25,250 - FridayEffect - INFO - Descargando datos para ROKU (intento 3/5)
+2025-06-01 11:48:25,319 - FridayEffect - INFO - Descargando datos para DOCU (intento 3/5)
+2025-06-01 11:48:25,664 - FridayEffect - INFO - Descargando datos para RBLX (intento 3/5)
+2025-06-01 11:48:26,070 - FridayEffect - ERROR - Error en intento 3 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:26,071 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:27,029 - FridayEffect - ERROR - Error en intento 3 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:27,029 - FridayEffect - ERROR - Error en intento 3 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:27,029 - FridayEffect - ERROR - Error en intento 3 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:27,029 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:27,030 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:27,030 - FridayEffect - INFO - Esperando 30 segundos antes de reintentar...
+2025-06-01 11:48:42,713 - FridayEffect - INFO - Descargando datos para PINS (intento 4/5)
+2025-06-01 11:48:43,784 - FridayEffect - ERROR - Error en intento 4 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:43,784 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:48,045 - FridayEffect - INFO - Descargando datos para DKNG (intento 4/5)
+2025-06-01 11:48:49,318 - FridayEffect - ERROR - Error en intento 4 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:49,318 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:53,064 - FridayEffect - INFO - Descargando datos para CRWD (intento 4/5)
+2025-06-01 11:48:53,143 - FridayEffect - INFO - Descargando datos para PLTR (intento 4/5)
+2025-06-01 11:48:54,015 - FridayEffect - ERROR - Error en intento 4 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:54,015 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:54,019 - FridayEffect - ERROR - Error en intento 4 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:54,019 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:57,706 - FridayEffect - INFO - Descargando datos para NET (intento 4/5)
+2025-06-01 11:48:57,830 - FridayEffect - INFO - Descargando datos para DASH (intento 4/5)
+2025-06-01 11:48:57,940 - FridayEffect - INFO - Descargando datos para CVNA (intento 4/5)
+2025-06-01 11:48:59,036 - FridayEffect - ERROR - Error en intento 4 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:59,037 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:59,963 - FridayEffect - ERROR - Error en intento 4 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:59,963 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:48:59,969 - FridayEffect - ERROR - Error en intento 4 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:48:59,970 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:49:02,727 - FridayEffect - INFO - Descargando datos para RBLX (intento 4/5)
+2025-06-01 11:49:02,946 - FridayEffect - INFO - Descargando datos para DOCU (intento 4/5)
+2025-06-01 11:49:02,990 - FridayEffect - INFO - Descargando datos para ROKU (intento 4/5)
+2025-06-01 11:49:03,879 - FridayEffect - ERROR - Error en intento 4 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:03,879 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:49:04,839 - FridayEffect - ERROR - Error en intento 4 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:04,840 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:49:04,843 - FridayEffect - ERROR - Error en intento 4 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:04,844 - FridayEffect - INFO - Esperando 40 segundos antes de reintentar...
+2025-06-01 11:49:24,872 - FridayEffect - INFO - Descargando datos para PINS (intento 5/5)
+2025-06-01 11:49:25,746 - FridayEffect - ERROR - Error en intento 5 para PINS: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:25,747 - FridayEffect - ERROR - No se pudo descargar PINS después de 5 intentos
+2025-06-01 11:49:25,747 - FridayEffect - WARNING - No se encontraron datos para PINS
+2025-06-01 11:49:30,158 - FridayEffect - INFO - Descargando datos para U (intento 1/5)
+2025-06-01 11:49:31,560 - FridayEffect - ERROR - Error en intento 1 para U: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:31,560 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:49:35,244 - FridayEffect - INFO - Descargando datos para DKNG (intento 5/5)
+2025-06-01 11:49:36,774 - FridayEffect - ERROR - Error en intento 5 para DKNG: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:36,774 - FridayEffect - ERROR - No se pudo descargar DKNG después de 5 intentos
+2025-06-01 11:49:36,774 - FridayEffect - WARNING - No se encontraron datos para DKNG
+2025-06-01 11:49:39,516 - FridayEffect - INFO - Descargando datos para OPEN (intento 1/5)
+2025-06-01 11:49:39,747 - FridayEffect - INFO - Descargando datos para PLTR (intento 5/5)
+2025-06-01 11:49:39,827 - FridayEffect - INFO - Descargando datos para CRWD (intento 5/5)
+2025-06-01 11:49:40,491 - FridayEffect - ERROR - Error en intento 1 para OPEN: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:40,491 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:49:41,647 - FridayEffect - ERROR - Error en intento 5 para PLTR: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:41,648 - FridayEffect - ERROR - Error en intento 5 para CRWD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:41,648 - FridayEffect - ERROR - No se pudo descargar PLTR después de 5 intentos
+2025-06-01 11:49:41,648 - FridayEffect - ERROR - No se pudo descargar CRWD después de 5 intentos
+2025-06-01 11:49:41,649 - FridayEffect - WARNING - No se encontraron datos para PLTR
+2025-06-01 11:49:41,649 - FridayEffect - WARNING - No se encontraron datos para CRWD
+2025-06-01 11:49:44,623 - FridayEffect - INFO - Descargando datos para U (intento 2/5)
+2025-06-01 11:49:44,682 - FridayEffect - INFO - Descargando datos para HOOD (intento 1/5)
+2025-06-01 11:49:44,804 - FridayEffect - INFO - Descargando datos para SQ (intento 1/5)
+2025-06-01 11:49:45,156 - FridayEffect - INFO - Descargando datos para CVNA (intento 5/5)
+2025-06-01 11:49:45,244 - FridayEffect - INFO - Descargando datos para DASH (intento 5/5)
+2025-06-01 11:49:45,269 - FridayEffect - INFO - Descargando datos para NET (intento 5/5)
+2025-06-01 11:49:45,699 - FridayEffect - ERROR - Error en intento 1 para HOOD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:45,699 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:49:45,784 - FridayEffect - ERROR - Error en intento 2 para U: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:45,784 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:49:46,581 - FridayEffect - ERROR - Error en intento 5 para CVNA: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:46,581 - FridayEffect - ERROR - No se pudo descargar CVNA después de 5 intentos
+2025-06-01 11:49:46,581 - FridayEffect - WARNING - No se encontraron datos para CVNA
+2025-06-01 11:49:46,583 - FridayEffect - ERROR - Error en intento 1 para SQ: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:46,583 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:49:46,586 - FridayEffect - ERROR - Error en intento 5 para NET: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:46,586 - FridayEffect - ERROR - No se pudo descargar NET después de 5 intentos
+2025-06-01 11:49:46,586 - FridayEffect - WARNING - No se encontraron datos para NET
+2025-06-01 11:49:46,590 - FridayEffect - ERROR - Error en intento 5 para DASH: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:46,590 - FridayEffect - ERROR - No se pudo descargar DASH después de 5 intentos
+2025-06-01 11:49:46,590 - FridayEffect - WARNING - No se encontraron datos para DASH
+2025-06-01 11:49:49,426 - FridayEffect - INFO - Descargando datos para SHOP (intento 1/5)
+2025-06-01 11:49:49,725 - FridayEffect - INFO - Descargando datos para RBLX (intento 5/5)
+2025-06-01 11:49:49,849 - FridayEffect - INFO - Descargando datos para DOCU (intento 5/5)
+2025-06-01 11:49:49,995 - FridayEffect - INFO - Descargando datos para ROKU (intento 5/5)
+2025-06-01 11:49:50,698 - FridayEffect - ERROR - Error en intento 1 para SHOP: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:50,699 - FridayEffect - INFO - Esperando 10 segundos antes de reintentar...
+2025-06-01 11:49:51,830 - FridayEffect - ERROR - Error en intento 5 para ROKU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:51,830 - FridayEffect - ERROR - Error en intento 5 para DOCU: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:51,830 - FridayEffect - ERROR - No se pudo descargar ROKU después de 5 intentos
+2025-06-01 11:49:51,831 - FridayEffect - ERROR - No se pudo descargar DOCU después de 5 intentos
+2025-06-01 11:49:51,831 - FridayEffect - WARNING - No se encontraron datos para ROKU
+2025-06-01 11:49:51,831 - FridayEffect - WARNING - No se encontraron datos para DOCU
+2025-06-01 11:49:51,896 - FridayEffect - ERROR - Error en intento 5 para RBLX: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:51,896 - FridayEffect - ERROR - No se pudo descargar RBLX después de 5 intentos
+2025-06-01 11:49:51,896 - FridayEffect - WARNING - No se encontraron datos para RBLX
+2025-06-01 11:49:54,504 - FridayEffect - INFO - Descargando datos para OPEN (intento 2/5)
+2025-06-01 11:49:55,707 - FridayEffect - ERROR - Error en intento 2 para OPEN: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:49:55,707 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:49:59,858 - FridayEffect - INFO - Descargando datos para HOOD (intento 2/5)
+2025-06-01 11:50:00,143 - FridayEffect - INFO - Descargando datos para SQ (intento 2/5)
+2025-06-01 11:50:00,702 - FridayEffect - ERROR - Error en intento 2 para HOOD: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:50:00,702 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:50:01,644 - FridayEffect - ERROR - Error en intento 2 para SQ: Too Many Requests. Rate limited. Try after a while.
+2025-06-01 11:50:01,644 - FridayEffect - INFO - Esperando 20 segundos antes de reintentar...
+2025-06-01 11:59:19,398 - FridayEffect - INFO - 🎯 FRIDAY EFFECT ALGORITHM BACKTEST
+2025-06-01 11:59:19,399 - FridayEffect - INFO - ==================================================
+2025-06-01 11:59:19,399 - FridayEffect - INFO - 🚀 Iniciando backtest del Efecto Viernes...
+2025-06-01 11:59:19,399 - FridayEffect - INFO - Período: 2022-01-01 a 2024-12-31
+2025-06-01 11:59:19,400 - FridayEffect - INFO - Capital inicial: $100,000.00
+2025-06-01 11:59:19,400 - FridayEffect - INFO - Tamaño de posición: 5.0%
+2025-06-01 11:59:19,400 - FridayEffect - INFO - --------------------------------------------------
+2025-06-01 11:59:19,400 - FridayEffect - INFO - ⏳ Cargando datos de mercado...
+2025-06-01 11:59:19,400 - FridayEffect - INFO - Cargando datos para 15 tickers...
+2025-06-01 11:59:19,989 - FridayEffect - INFO - Descargando datos para PINS (intento 1/3)
+2025-06-01 11:59:21,266 - FridayEffect - ERROR - Error en intento 1 para PINS: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/PINS/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:21,266 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:31,912 - FridayEffect - INFO - Descargando datos para RBLX (intento 1/3)
+2025-06-01 11:59:31,938 - FridayEffect - INFO - Descargando datos para PLTR (intento 1/3)
+2025-06-01 11:59:32,019 - FridayEffect - INFO - Descargando datos para CRWD (intento 1/3)
+2025-06-01 11:59:32,118 - FridayEffect - INFO - Descargando datos para DOCU (intento 1/3)
+2025-06-01 11:59:32,294 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:32,314 - FridayEffect - INFO - Descargando datos para CVNA (intento 1/3)
+2025-06-01 11:59:32,426 - FridayEffect - INFO - Descargando datos para DKNG (intento 1/3)
+2025-06-01 11:59:32,480 - FridayEffect - INFO - Descargando datos para ROKU (intento 1/3)
+2025-06-01 11:59:32,592 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:32,614 - FridayEffect - INFO - Descargando datos para DASH (intento 1/3)
+2025-06-01 11:59:32,659 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:32,755 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:32,802 - FridayEffect - INFO - Descargando datos para NET (intento 1/3)
+2025-06-01 11:59:32,945 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,020 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,053 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,168 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,168 - FridayEffect - ERROR - Error en intento 1 para RBLX: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/RBLX/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,168 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,288 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,289 - FridayEffect - ERROR - Error en intento 1 para CRWD: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/CRWD/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,289 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,445 - FridayEffect - ERROR - Error en intento 1 para PLTR: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/PLTR/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,445 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,557 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,641 - FridayEffect - ERROR - Error en intento 1 para DOCU: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DOCU/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,641 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,642 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,744 - FridayEffect - ERROR - Error en intento 1 para DKNG: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DKNG/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,745 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,788 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,788 - FridayEffect - ERROR - Error en intento 1 para CVNA: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/CVNA/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,788 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:33,863 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:33,863 - FridayEffect - ERROR - Error en intento 1 para ROKU: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/ROKU/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:33,863 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:34,067 - FridayEffect - ERROR - Error en intento 1 para NET: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/NET/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:34,067 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:34,384 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:34,384 - FridayEffect - ERROR - Error en intento 1 para DASH: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DASH/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:34,384 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 11:59:44,472 - FridayEffect - INFO - Descargando datos para PINS (intento 2/3)
+2025-06-01 11:59:45,541 - FridayEffect - ERROR - Error en intento 2 para PINS: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/PINS/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:45,541 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:56,058 - FridayEffect - INFO - Descargando datos para DASH (intento 2/3)
+2025-06-01 11:59:56,203 - FridayEffect - INFO - Descargando datos para CRWD (intento 2/3)
+2025-06-01 11:59:56,296 - FridayEffect - INFO - Descargando datos para CVNA (intento 2/3)
+2025-06-01 11:59:56,328 - FridayEffect - INFO - Descargando datos para ROKU (intento 2/3)
+2025-06-01 11:59:56,367 - FridayEffect - INFO - Descargando datos para RBLX (intento 2/3)
+2025-06-01 11:59:56,536 - FridayEffect - INFO - Descargando datos para DOCU (intento 2/3)
+2025-06-01 11:59:56,543 - FridayEffect - INFO - Descargando datos para NET (intento 2/3)
+2025-06-01 11:59:56,593 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:56,726 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:56,728 - FridayEffect - INFO - Descargando datos para DKNG (intento 2/3)
+2025-06-01 11:59:56,815 - FridayEffect - INFO - Descargando datos para PLTR (intento 2/3)
+2025-06-01 11:59:56,838 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,012 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,013 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 0
+2025-06-01 11:59:57,122 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,122 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,327 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,342 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,540 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,565 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,566 - FridayEffect - ERROR - Error en intento 2 para DASH: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DASH/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:57,566 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:57,631 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,631 - FridayEffect - ERROR - Error en intento 2 para ROKU: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/ROKU/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:57,631 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:57,747 - FridayEffect - ERROR - Error en intento 2 para CRWD: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/CRWD/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:57,747 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:57,841 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:57,841 - FridayEffect - ERROR - Error en intento 2 para RBLX: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/RBLX/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:57,841 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:57,982 - FridayEffect - ERROR - Error en intento 2 para CVNA: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/CVNA/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:57,982 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:58,044 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:58,044 - FridayEffect - ERROR - Error en intento 2 para DOCU: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DOCU/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:58,044 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:58,056 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:58,056 - FridayEffect - ERROR - Error en intento 2 para DKNG: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DKNG/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:58,057 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:58,065 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:58,065 - FridayEffect - ERROR - Error en intento 2 para PLTR: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/PLTR/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:58,066 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 11:59:58,270 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 11:59:58,270 - FridayEffect - ERROR - Error en intento 2 para NET: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/NET/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 11:59:58,270 - FridayEffect - INFO - Esperando 24 segundos antes de reintentar...
+2025-06-01 12:00:10,777 - FridayEffect - INFO - Descargando datos para PINS (intento 3/3)
+2025-06-01 12:00:22,385 - FridayEffect - INFO - Descargando datos para U (intento 1/3)
+2025-06-01 12:00:34,074 - FridayEffect - INFO - Descargando datos para CRWD (intento 3/3)
+2025-06-01 12:00:34,081 - FridayEffect - INFO - Descargando datos para PLTR (intento 3/3)
+2025-06-01 12:00:34,124 - FridayEffect - INFO - Descargando datos para ROKU (intento 3/3)
+2025-06-01 12:00:34,196 - FridayEffect - INFO - Descargando datos para OPEN (intento 1/3)
+2025-06-01 12:00:34,346 - FridayEffect - INFO - Descargando datos para DOCU (intento 3/3)
+2025-06-01 12:00:34,443 - FridayEffect - INFO - Descargando datos para DKNG (intento 3/3)
+2025-06-01 12:00:34,532 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:34,562 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:34,596 - FridayEffect - INFO - Descargando datos para RBLX (intento 3/3)
+2025-06-01 12:00:34,646 - FridayEffect - INFO - Descargando datos para DASH (intento 3/3)
+2025-06-01 12:00:34,874 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:34,919 - FridayEffect - INFO - Descargando datos para NET (intento 3/3)
+2025-06-01 12:00:35,057 - FridayEffect - INFO - Descargando datos para CVNA (intento 3/3)
+2025-06-01 12:00:35,141 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,141 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,392 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,452 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,591 - FridayEffect - ERROR - Error en intento 3 para DOCU: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DOCU/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:35,592 - FridayEffect - ERROR - No se pudo descargar DOCU después de 3 intentos
+2025-06-01 12:00:35,595 - FridayEffect - WARNING - No se encontraron datos para DOCU
+2025-06-01 12:00:35,653 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,653 - FridayEffect - ERROR - Error en intento 3 para RBLX: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/RBLX/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:35,653 - FridayEffect - ERROR - No se pudo descargar RBLX después de 3 intentos
+2025-06-01 12:00:35,654 - FridayEffect - WARNING - No se encontraron datos para RBLX
+2025-06-01 12:00:35,680 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:35,680 - FridayEffect - ERROR - Error en intento 1 para OPEN: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/OPEN/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:35,681 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 12:00:35,966 - FridayEffect - ERROR - Error en intento 3 para NET: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/NET/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:35,966 - FridayEffect - ERROR - No se pudo descargar NET después de 3 intentos
+2025-06-01 12:00:35,967 - FridayEffect - WARNING - No se encontraron datos para NET
+2025-06-01 12:00:36,121 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:36,121 - FridayEffect - ERROR - Error en intento 3 para DASH: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DASH/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:36,121 - FridayEffect - ERROR - No se pudo descargar DASH después de 3 intentos
+2025-06-01 12:00:36,124 - FridayEffect - WARNING - No se encontraron datos para DASH
+2025-06-01 12:00:36,128 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:36,129 - FridayEffect - ERROR - Error en intento 3 para DKNG: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/DKNG/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:36,129 - FridayEffect - ERROR - No se pudo descargar DKNG después de 3 intentos
+2025-06-01 12:00:36,135 - FridayEffect - WARNING - No se encontraron datos para DKNG
+2025-06-01 12:00:36,321 - FridayEffect - ERROR - Error en intento 3 para CVNA: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/CVNA/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:36,322 - FridayEffect - ERROR - No se pudo descargar CVNA después de 3 intentos
+2025-06-01 12:00:36,327 - FridayEffect - WARNING - No se encontraron datos para CVNA
+2025-06-01 12:00:46,646 - FridayEffect - INFO - Descargando datos para HOOD (intento 1/3)
+2025-06-01 12:00:46,807 - FridayEffect - INFO - Descargando datos para SHOP (intento 1/3)
+2025-06-01 12:00:47,010 - FridayEffect - INFO - Descargando datos para SQ (intento 1/3)
+2025-06-01 12:00:47,288 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:47,455 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:47,844 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.polygon.io. Connection pool size: 1
+2025-06-01 12:00:47,965 - FridayEffect - ERROR - Error en intento 1 para HOOD: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/HOOD/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:47,965 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 12:00:48,074 - FridayEffect - ERROR - Error en intento 1 para SQ: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/SQ/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:48,074 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...
+2025-06-01 12:00:48,354 - FridayEffect - ERROR - Error en intento 1 para SHOP: HTTPSConnectionPool(host='api.polygon.io', port=443): Max retries exceeded with url: /v2/aggs/ticker/SHOP/range/1/day/2022-01-01/2024-12-31?limit=50000 (Caused by ResponseError('too many 429 error responses'))
+2025-06-01 12:00:48,355 - FridayEffect - INFO - Esperando 12 segundos antes de reintentar...

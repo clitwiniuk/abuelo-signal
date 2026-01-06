@@ -1,0 +1,65 @@
+{
+  "test_timestamp": "2025-08-12T07:58:19.020319",
+  "summary": {
+    "passed_categories": 5,
+    "total_categories": 5,
+    "success_rate": 1.0
+  },
+  "detailed_results": {
+    "strategy_migration": {
+      "migration_successful": true,
+      "trades_migrated": 21,
+      "strategies_before": [
+        "unknown"
+      ],
+      "strategies_after": [
+        "macdv_smallcaps",
+        "gap_go",
+        "orb"
+      ],
+      "errors": []
+    },
+    "backup_restore": {
+      "backup_created": true,
+      "backup_size": 81920,
+      "restore_successful": true,
+      "data_integrity_verified": true,
+      "errors": []
+    },
+    "data_cleanup": {
+      "cleanup_successful": true,
+      "old_trades_identified": 15,
+      "trades_cleaned": 15,
+      "space_recovered": 24576,
+      "errors": []
+    },
+    "db_maintenance": {
+      "vacuum_successful": true,
+      "reindex_successful": true,
+      "analyze_successful": true,
+      "size_before": 57344,
+      "size_after": 61440,
+      "maintenance_time": 0.0019321441650390625,
+      "errors": []
+    },
+    "schema_validation": {
+      "schema_valid": true,
+      "tables_found": [
+        "trades",
+        "trading_journal",
+        "sqlite_stat1",
+        "manual_symbols",
+        "position_risk_config",
+        "daily_stats",
+        "sqlite_sequence"
+      ],
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_tables": [
+        "sqlite_sequence",
+        "sqlite_stat1"
+      ],
+      "errors": []
+    }
+  }
+}

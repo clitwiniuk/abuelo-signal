@@ -1,0 +1,116 @@
+====================================================================================================
+📊 ANÁLISIS COMPREHENSIVO DE WORKERS - market_data.db
+====================================================================================================
+Generado: 2025-11-02 11:47:37
+Base de datos: ./market_data.db
+
+📈 RESUMEN EJECUTIVO
+--------------------------------------------------
+Total de ejecuciones: 42
+Ejecuciones exitosas: 42
+Ejecuciones fallidas: 0
+
+👥 ANÁLISIS POR WORKER
+--------------------------------------------------
+
+🔹 MOMENTUM_BREAKOUT
+   Fechas analizadas: 7
+   Trades simulados totales: 755
+   Trades reales totales: 20
+   Decisiones tomadas: 2347
+   Discrepancias totales: 836
+   Trades promedio por fecha: 107.9
+   Ratio de selectividad: 0.322
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 GENERIC_01
+   Fechas analizadas: 7
+   Trades simulados totales: 745
+   Trades reales totales: 20
+   Decisiones tomadas: 2488
+   Discrepancias totales: 828
+   Trades promedio por fecha: 106.4
+   Ratio de selectividad: 0.299
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 VOLUME_ABSORPTION
+   Fechas analizadas: 7
+   Trades simulados totales: 743
+   Trades reales totales: 20
+   Decisiones tomadas: 2396
+   Discrepancias totales: 827
+   Trades promedio por fecha: 106.1
+   Ratio de selectividad: 0.310
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 MACDV
+   Fechas analizadas: 7
+   Trades simulados totales: 738
+   Trades reales totales: 20
+   Decisiones tomadas: 2449
+   Discrepancias totales: 822
+   Trades promedio por fecha: 105.4
+   Ratio de selectividad: 0.301
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 DAILY_PLAYS
+   Fechas analizadas: 7
+   Trades simulados totales: 727
+   Trades reales totales: 20
+   Decisiones tomadas: 2533
+   Discrepancias totales: 811
+   Trades promedio por fecha: 103.9
+   Ratio de selectividad: 0.287
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 VWAP_BREAKOUT
+   Fechas analizadas: 7
+   Trades simulados totales: 0
+   Trades reales totales: 0
+   Decisiones tomadas: 0
+   Discrepancias totales: 0
+   Trades promedio por fecha: 0.0
+   Ratio de selectividad: 0.000
+   🛡️ Muy conservador - pocas entradas
+
+🎯 PATRONES IDENTIFICADOS
+--------------------------------------------------
+🐂 Worker más agresivo: momentum_breakout (ratio: 0.322)
+🛡️ Worker más selectivo: vwap_breakout (ratio: 0.000)
+📊 Worker con más actividad: momentum_breakout (755 trades)
+
+💡 RECOMENDACIONES DE MEJORA
+--------------------------------------------------
+
+🔧 DAILY_PLAYS:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 GENERIC_01:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 MACDV:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 MOMENTUM_BREAKOUT:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 VOLUME_ABSORPTION:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 VWAP_BREAKOUT:
+   ❌ Demasiado conservador - Relajar criterios de entrada
+   💡 Recomendación: Revisar umbrales de volumen y momentum
+
+====================================================================================================
+Fin del análisis comprehensivo
+====================================================================================================

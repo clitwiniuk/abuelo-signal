@@ -1,0 +1,18 @@
+2026-01-03 11:05:24 - Worker.smallcaps_short_reversal - INFO - Worker logging initialized - smallcaps_short_reversal -> logs/worker_smallcaps_short_reversal.log
+2026-01-03 11:05:24 - Worker.smallcaps_short_reversal - INFO - 🔧 Worker smallcaps_short_reversal initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-03 11:05:24 - Worker.smallcaps_short_reversal - INFO - 🐻 Small Caps Short Reversal Worker configured:
+   • Price Range: $1.0 - $20.0
+   • Min Volume: 1,000,000
+   • Min Move: 10.0% - 30.0%
+   • RSI Threshold: 70.0
+   • Min R:R: 1.5:1
+   • Risk per trade: 0.25% - 1.0%
+2026-01-03 11:06:10 - Worker.smallcaps_short_reversal - INFO - Worker logging initialized - smallcaps_short_reversal -> logs/worker_smallcaps_short_reversal.log
+2026-01-03 11:06:10 - Worker.smallcaps_short_reversal - INFO - 🔧 Worker smallcaps_short_reversal initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-03 11:06:10 - Worker.smallcaps_short_reversal - INFO - 🐻 Small Caps Short Reversal Worker configured:
+   • Price Range: $1.0 - $20.0
+   • Min Volume: 1,000,000
+   • Min Move: 10.0% - 30.0%
+   • RSI Threshold: 70.0
+   • Min R:R: 1.5:1
+   • Risk per trade: 0.25% - 1.0%

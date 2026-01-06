@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Navbar Privacy Toggle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center px-2 py-2 text-xl font-bold text-blue-600">
+                        <div class="h-8 w-8 bg-blue-600 rounded mr-2"></div>
+                        TradeTally
+                    </div>
+                    
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium text-gray-900">
+                            Dashboard
+                        </a>
+                        <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700">
+                            Trades
+                        </a>
+                        <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700">
+                            Analytics
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Desktop Navigation -->
+                    <div class="hidden sm:flex sm:items-center sm:space-x-4">
+                        <!-- Privacy Mode Toggle (Dashboard only) -->
+                        <div class="flex items-center space-x-2">
+                            <button
+                                onclick="togglePrivacyMode()"
+                                class="flex items-center space-x-1 p-2 text-gray-500 hover:text-gray-700 rounded-md transition-colors"
+                                id="privacyToggleDesktop"
+                                title="Switch privacy mode"
+                            >
+                                <svg id="dollarIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                                <svg id="percentIcon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                                <span class="text-xs font-medium" id="modeLabel">$</span>
+                            </button>
+                        </div>
+
+                        <!-- Dark Mode Toggle -->
+                        <button class="p-2 text-gray-500 hover:text-gray-700 rounded-md">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            </svg>
+                        </button>
+
+                        <div class="flex items-center space-x-3">
+                            <span class="text-sm text-gray-700">trader_123</span>
+                            <button class="text-sm text-gray-500 hover:text-gray-700">
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation -->
+                    <div class="sm:hidden flex items-center space-x-2">
+                        <!-- Privacy Mode Toggle Mobile (Dashboard only) -->
+                        <button
+                            onclick="togglePrivacyMode()"
+                            class="flex items-center space-x-1 p-2 text-gray-500 hover:text-gray-700 rounded-md"
+                            id="privacyToggleMobile"
+                            title="Switch privacy mode"
+                        >
+                            <svg id="dollarIconMobile" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                            <svg id="percentIconMobile" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-xs font-medium" id="modeLabelMobile">$</span>
+                        </button>
+
+                        <!-- Dark Mode Toggle Mobile -->
+                        <button class="p-2 text-gray-500 hover:text-gray-700">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Menu Button -->
+                        <button class="p-2 text-gray-500 hover:text-gray-700">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+                    <p class="mt-1 text-sm text-gray-600">Trading performance analytics and insights</p>
+                </div>
+                
+                <!-- Filters (no privacy toggle here anymore) -->
+                <div class="flex gap-3">
+                    <select class="bg-white border border-gray-300 rounded-md px-3 py-2 text-sm">
+                        <option>All Time</option>
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Metrics Grid -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <!-- Total P&L -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Total P&L</dt>
+                <dd class="mt-1 text-3xl font-semibold text-green-600" id="totalPnl">$2,456.78</dd>
+                <div class="mt-2 text-xs text-gray-500">Avg: <span id="avgPnl">$123.45</span></div>
+            </div>
+
+            <!-- Max Drawdown -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Max Drawdown</dt>
+                <dd class="mt-1 text-3xl font-semibold text-red-600" id="maxDrawdown">$567.89</dd>
+                <div class="mt-2 text-xs text-gray-500">Peak decline</div>
+            </div>
+
+            <!-- Average Win -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Average Win</dt>
+                <dd class="mt-1 text-2xl font-semibold text-green-600" id="avgWin">$234.56</dd>
+            </div>
+
+            <!-- Average Loss -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Average Loss</dt>
+                <dd class="mt-1 text-2xl font-semibold text-red-600" id="avgLoss">$89.12</dd>
+            </div>
+        </div>
+
+        <!-- Additional Metrics -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <!-- Best Trade -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Best Trade</dt>
+                <dd class="mt-1 text-2xl font-semibold text-green-600" id="bestTrade">$1,234.56</dd>
+            </div>
+
+            <!-- Worst Trade -->
+            <div class="bg-white rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                <dt class="text-sm font-medium text-gray-500 truncate">Worst Trade</dt>
+                <dd class="mt-1 text-2xl font-semibold text-red-600" id="worstTrade">$345.67</dd>
+            </div>
+
+            <!-- Win Rate -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Win Rate</dt>
+                <dd class="mt-1 text-2xl font-semibold text-blue-600">72.5%</dd>
+            </div>
+
+            <!-- Profit Factor -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Profit Factor</dt>
+                <dd class="mt-1 text-2xl font-semibold text-green-600">1.85</dd>
+            </div>
+        </div>
+
+        <!-- Design Notes -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">🎨 Nuevo Diseño</h3>
+            <div class="text-sm text-gray-600 space-y-3">
+                <p><strong>✅ Toggle movido al NavBar:</strong> Ahora está discretamente ubicado junto al botón de dark mode.</p>
+                <p><strong>✅ Solo visible en Dashboard:</strong> El toggle solo aparece cuando estás en la página del dashboard.</p>
+                <p><strong>✅ Responsive:</strong> Funciona tanto en desktop como en mobile.</p>
+                <p><strong>✅ Icono intuitivo:</strong> $ para modo dinero, % para modo privacidad.</p>
+                <p><strong>✅ Header limpio:</strong> El header del dashboard ahora solo tiene los filtros esenciales.</p>
+                <div class="mt-4 p-3 bg-green-50 rounded-md">
+                    <p class="text-green-800"><strong>Mucho mejor diseño:</strong> Más limpio y discreto, perfecto para screenshots privados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Test data
+        const testData = {
+            totalPnl: 2456.78,
+            avgPnl: 123.45,
+            maxDrawdown: 567.89,
+            avgWin: 234.56,
+            avgLoss: 89.12,
+            bestTrade: 1234.56,
+            worstTrade: 345.67
+        };
+
+        const initialAccountBalance = 10000;
+        let privacyMode = localStorage.getItem('dashboard-privacy-mode') === 'true';
+
+        // Initialize
+        updateDisplay();
+
+        function formatPrivacyCurrency(amount) {
+            if (!privacyMode) {
+                return amount.toLocaleString('en-US', { 
+                    minimumFractionDigits: 2, 
+                    maximumFractionDigits: 2 
+                });
+            }
+            
+            // Convert to percentage of initial balance
+            const percentage = (amount / initialAccountBalance) * 100;
+            return Math.abs(percentage).toFixed(2);
+        }
+
+        function togglePrivacyMode() {
+            privacyMode = !privacyMode;
+            localStorage.setItem('dashboard-privacy-mode', privacyMode.toString());
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            // Update icons and labels
+            const dollarIcon = document.getElementById('dollarIcon');
+            const percentIcon = document.getElementById('percentIcon');
+            const dollarIconMobile = document.getElementById('dollarIconMobile');
+            const percentIconMobile = document.getElementById('percentIconMobile');
+            const modeLabel = document.getElementById('modeLabel');
+            const modeLabelMobile = document.getElementById('modeLabelMobile');
+
+            if (privacyMode) {
+                dollarIcon.classList.add('hidden');
+                percentIcon.classList.remove('hidden');
+                dollarIconMobile.classList.add('hidden');
+                percentIconMobile.classList.remove('hidden');
+                modeLabel.textContent = '%';
+                modeLabelMobile.textContent = '%';
+            } else {
+                dollarIcon.classList.remove('hidden');
+                percentIcon.classList.add('hidden');
+                dollarIconMobile.classList.remove('hidden');
+                percentIconMobile.classList.add('hidden');
+                modeLabel.textContent = '$';
+                modeLabelMobile.textContent = '$';
+            }
+
+            // Update all metrics
+            Object.keys(testData).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    const value = testData[key];
+                    const formatted = formatPrivacyCurrency(value);
+                    const prefix = privacyMode ? '' : '$';
+                    const suffix = privacyMode ? '%' : '';
+                    element.textContent = `${prefix}${formatted}${suffix}`;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

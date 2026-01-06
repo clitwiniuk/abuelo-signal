@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "connection_loss": false,
+  "failed_orders": true,
+  "worker_errors": true
+}

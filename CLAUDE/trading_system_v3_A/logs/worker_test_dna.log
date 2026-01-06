@@ -1,0 +1,22 @@
+2025-12-28 19:33:18 - Worker.test_dna - INFO - Worker logging initialized - test_dna -> logs/worker_test_dna.log
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🔧 Worker test_dna initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🧬 Catalyst DNA Worker (LONG) configured:
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Price Range: $1.00 - $15.00
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Min Quality Score: 70 (strong catalyst required)
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    VWAP Pullback: 0.5-3.0%
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Volume Surge: >2.0x
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Candle Size: >1.5x ATR
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Anti-Overtrading: Max 10 positions/day
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Stop Manager: WorkerStopConfig(stop_loss_pct=3.0, take_profit_pct=8.0, quick_target_pct=None, trailing_activation=8.0, trailing_distance=3.0, min_profit_for_trailing=None, breakeven_activation_pct=None, breakeven_r_multiplier=None, breakeven_minimum_pct=None, max_position_hours=2.0, end_of_day_hour=15.97)
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🔄 Daily tracking reset for 2025-12-28
+2025-12-28 19:33:18 - Worker.test_dna - INFO - Worker logging initialized - test_dna -> logs/worker_test_dna.log
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🔧 Worker test_dna initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🧬 Catalyst DNA Worker (LONG) configured:
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Price Range: $1.00 - $15.00
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Min Quality Score: 70 (strong catalyst required)
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    VWAP Pullback: 0.5-3.0%
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Volume Surge: >2.0x
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Candle Size: >1.5x ATR
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Anti-Overtrading: Max 10 positions/day
+2025-12-28 19:33:18 - Worker.test_dna - INFO -    Stop Manager: WorkerStopConfig(stop_loss_pct=3.0, take_profit_pct=8.0, quick_target_pct=None, trailing_activation=8.0, trailing_distance=3.0, min_profit_for_trailing=None, breakeven_activation_pct=None, breakeven_r_multiplier=None, breakeven_minimum_pct=None, max_position_hours=2.0, end_of_day_hour=15.97)
+2025-12-28 19:33:18 - Worker.test_dna - INFO - 🔄 Daily tracking reset for 2025-12-28

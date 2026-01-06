@@ -1,0 +1,65 @@
+{
+  "test_date": "2025-11-23T15:59:09.165975",
+  "total_scenarios": 5,
+  "passed": 5,
+  "failed": 0,
+  "skipped": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "scenario_id": "GENERIC_01_EXIT_STOP_LOSS",
+      "expected_action": "EXIT_STOP_LOSS",
+      "entry_price": 10.0,
+      "exit_price": 9.19,
+      "peak_price": 10.0,
+      "expected_pnl": 0,
+      "actual_pnl": -8.1,
+      "result": "PASS",
+      "validation": "Stop loss triggered at -8.1% (target: -8%)"
+    },
+    {
+      "scenario_id": "GENERIC_01_EXIT_BREAK_EVEN",
+      "expected_action": "EXIT_BREAK_EVEN",
+      "entry_price": 10.0,
+      "exit_price": 10.01,
+      "peak_price": 10.62,
+      "expected_pnl": 0,
+      "actual_pnl": 0.1,
+      "result": "PASS",
+      "validation": "BE protected: peaked 6.2%, exited 0.1%"
+    },
+    {
+      "scenario_id": "GENERIC_01_EXIT_TAKE_PROFIT",
+      "expected_action": "EXIT_TAKE_PROFIT",
+      "entry_price": 10.0,
+      "exit_price": 11.51,
+      "peak_price": 10.0,
+      "expected_pnl": 0,
+      "actual_pnl": 15.1,
+      "result": "PASS",
+      "validation": "Take profit hit at 15.1% (target: +15%)"
+    },
+    {
+      "scenario_id": "GENERIC_01_EXIT_TRAILING_STOP",
+      "expected_action": "EXIT_TRAILING_STOP",
+      "entry_price": 10.0,
+      "exit_price": 11.0,
+      "peak_price": 11.46,
+      "expected_pnl": 0,
+      "actual_pnl": 10.0,
+      "result": "PASS",
+      "validation": "Trailing triggered: peak 14.6%, exit 10.0% (expected ~10.0%)"
+    },
+    {
+      "scenario_id": "GENERIC_01_EXIT_TIME_LIMIT",
+      "expected_action": "EXIT_TIME_LIMIT",
+      "entry_price": 10.0,
+      "exit_price": 10.25,
+      "peak_price": 10.0,
+      "expected_pnl": 0,
+      "actual_pnl": 2.5,
+      "result": "PASS",
+      "validation": "Time limit reached: 6.0h >= 6.0h"
+    }
+  ]
+}

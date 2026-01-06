@@ -1,0 +1,115 @@
+{
+  "optimization_summary": [
+    {
+      "ticker": "RR",
+      "best_value": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "best_params": {
+        "rsi_period": 16,
+        "rsi_threshold": 59,
+        "sma_period": 10,
+        "adx_period": 14,
+        "adx_threshold": 16,
+        "quality_score_min": 3,
+        "catalyst_types": [
+          "all"
+        ],
+        "gap_pct_min": 8.380490223223806,
+        "volume_ratio_min": 2.5653299684770596,
+        "use_market_context": true,
+        "market_context_filter": "bullish",
+        "trading_session_filter": "morning",
+        "volume_trend_filter": "increasing",
+        "tp_pct": 6.459136308359422,
+        "sl_pct": -8.29713616546891,
+        "use_trailing": false,
+        "max_holding_period": 15,
+        "position_size_pct": 2.4724710905579457,
+        "use_volatility_filter": true,
+        "atr_period": 14,
+        "atr_threshold": 1.8932406303113123,
+        "use_momentum_filter": false
+      }
+    },
+    {
+      "ticker": "IONZ",
+      "best_value": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "best_params": {
+        "rsi_period": 17,
+        "rsi_threshold": 47,
+        "sma_period": 20,
+        "adx_period": 14,
+        "adx_threshold": 24,
+        "quality_score_min": 5,
+        "catalyst_types": [
+          "technical"
+        ],
+        "gap_pct_min": 9.977544039090164,
+        "volume_ratio_min": 1.7101466182245644,
+        "use_market_context": true,
+        "market_context_filter": "bullish",
+        "trading_session_filter": "morning",
+        "volume_trend_filter": "increasing",
+        "tp_pct": 7.968852377245371,
+        "sl_pct": -8.016553701831652,
+        "use_trailing": true,
+        "trailing_pct": 1.4054179457867755,
+        "max_holding_period": 35,
+        "position_size_pct": 1.4170602132843797,
+        "use_volatility_filter": true,
+        "atr_period": 11,
+        "atr_threshold": 0.6103944800567623,
+        "use_momentum_filter": false
+      }
+    },
+    {
+      "ticker": "BITF",
+      "best_value": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "best_params": {
+        "rsi_period": 11,
+        "rsi_threshold": 55,
+        "sma_period": 20,
+        "adx_period": 14,
+        "adx_threshold": 21,
+        "quality_score_min": 6,
+        "catalyst_types": [
+          "earnings",
+          "news"
+        ],
+        "gap_pct_min": 1.4504110304410007,
+        "volume_ratio_min": 1.632446755574605,
+        "use_market_context": false,
+        "market_context_filter": "bearish",
+        "trading_session_filter": "morning",
+        "volume_trend_filter": "decreasing",
+        "tp_pct": 7.5575643240011825,
+        "sl_pct": -4.068581253007492,
+        "use_trailing": false,
+        "max_holding_period": 50,
+        "position_size_pct": 2.7154084671998735,
+        "use_volatility_filter": true,
+        "atr_period": 11,
+        "atr_threshold": 1.5310214656671604,
+        "use_momentum_filter": false
+      }
+    }
+  ],
+  "total_tickers": 3,
+  "timestamp": "2025-10-21T07:19:47.256613",
+  "parameters": {
+    "min_bars": 1000,
+    "max_tickers": 10,
+    "n_trials_per_ticker": 50
+  }
+}

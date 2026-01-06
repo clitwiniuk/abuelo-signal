@@ -1,0 +1,77 @@
+[
+    {
+        "id": "BITF_2025-11-14_SCANNER_DETECTED",
+        "symbol": "BITF",
+        "worker_name": "orb_breakout",
+        "date": "2025-11-14",
+        "description": "Scanner detected ORB setup - Quality 93.5",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 93.5,
+            "catalyst_strength": 9,
+            "catalyst_type": "NEWS",
+            "gap_percentage": 7.0,
+            "vwap": 2.51
+        }
+    },
+    {
+        "id": "LAES_2025-11-14_SCANNER_DETECTED",
+        "symbol": "LAES",
+        "worker_name": "orb_breakout",
+        "date": "2025-11-14",
+        "description": "Scanner detected ORB setup - Quality 93.5",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 93.5,
+            "catalyst_strength": 8,
+            "catalyst_type": "EARNINGS",
+            "gap_percentage": 6.0,
+            "vwap": 4.49
+        }
+    },
+    {
+        "id": "CYPH_2025-11-14_HIGH_VOLUME",
+        "symbol": "CYPH",
+        "worker_name": "orb_breakout",
+        "date": "2025-11-14",
+        "description": "Highest volume day - 262M shares",
+        "expected_action": "NO_ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 90.0,
+            "catalyst_strength": 9,
+            "catalyst_type": "NEWS",
+            "gap_percentage": 8.0,
+            "vwap": 3.5
+        }
+    },
+    {
+        "id": "ONDS_2025-11-14_STRONG_VOLUME",
+        "symbol": "ONDS",
+        "worker_name": "orb_breakout",
+        "date": "2025-11-14",
+        "description": "Strong volume - 181M shares",
+        "expected_action": "NO_ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 85.0,
+            "catalyst_strength": 8,
+            "catalyst_type": "EARNINGS",
+            "gap_percentage": 6.0,
+            "vwap": 2.8
+        }
+    },
+    {
+        "id": "BYND_2025-11-14_MODERATE_VOLUME",
+        "symbol": "BYND",
+        "worker_name": "orb_breakout",
+        "date": "2025-11-14",
+        "description": "Moderate volume - 127M shares",
+        "expected_action": "NO_ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 75.0,
+            "catalyst_strength": 7,
+            "catalyst_type": "SECTOR_MOVE",
+            "gap_percentage": 4.0,
+            "vwap": 2.2
+        }
+    }
+]

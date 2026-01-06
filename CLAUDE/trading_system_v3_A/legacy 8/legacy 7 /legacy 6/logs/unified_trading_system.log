@@ -1,0 +1,455 @@
+2025-08-23 06:34:55 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 06:34:55 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 06:34:55 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-08-23 06:34:55 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 06:34:55 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:34:55 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 06:34:55 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 06:34:55 - UnifiedTradingSystem - INFO -    Mode: PRODUCTION
+2025-08-23 06:34:55 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 06:34:55 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:34:55 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 06:34:55 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 06:34:56 - IBKRAdapter(4148) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-23 06:34:56 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 06:34:56 - IBKRAdapter(4148) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 4148)
+2025-08-23 06:34:56 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 4148...
+2025-08-23 06:34:56 - ib_insync.client - INFO - Disconnecting
+2025-08-23 06:34:56 - ib_insync.client - ERROR - API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+2025-08-23 06:34:56 - ib_insync.client - ERROR - Make sure API port on TWS/IBG is open
+2025-08-23 06:34:56 - IBKRAdapter(4148) - ERROR - Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 06:34:56 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 06:34:56 - root - ERROR - ❌ Fatal error: Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 06:44:42 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 06:44:42 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 06:44:42 - ServiceLocator - INFO -    Mode: MOCK
+2025-08-23 06:44:42 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 06:44:42 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:44:42 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 06:44:42 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 06:44:42 - UnifiedTradingSystem - INFO -    Mode: MOCK
+2025-08-23 06:44:42 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 06:44:42 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:44:42 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 06:44:42 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 06:44:43 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: MockIBKRAdapter.__init__() got an unexpected keyword argument 'client_id'
+2025-08-23 06:44:43 - root - ERROR - ❌ Fatal error: MockIBKRAdapter.__init__() got an unexpected keyword argument 'client_id'
+2025-08-23 06:47:10 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 06:47:10 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 06:47:10 - ServiceLocator - INFO -    Mode: MOCK
+2025-08-23 06:47:10 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 06:47:10 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:47:10 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 06:47:10 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 06:47:10 - UnifiedTradingSystem - INFO -    Mode: MOCK
+2025-08-23 06:47:10 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 06:47:10 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:47:10 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 06:47:10 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 06:47:10 - MockIBKRAdapter - INFO - 🎭 MOCK IBKR ADAPTER INITIALIZED - Perfect for development!
+2025-08-23 06:47:10 - MockIBKRAdapter - INFO - Mock adapter initialized with data path: data/csv
+2025-08-23 06:47:10 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 06:47:10 - MockIBKRAdapter - INFO - ✅ MOCK: Connected to simulated IBKR
+2025-08-23 06:47:10 - ServiceLocator - INFO - ✅ IBKR connected
+2025-08-23 06:47:10 - ServiceLocator - INFO - ✅ Service registered: ibkr_adapter -> MockIBKRAdapter
+2025-08-23 06:47:10 - ServiceLocator - INFO - ✅ IBKRAdapter created and registered - NO MORE DUPLICATES
+2025-08-23 06:47:10 - ServiceLocator - INFO - 🛡️ Creating SINGLE RiskManager instance
+2025-08-23 06:47:10 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=200.0
+2025-08-23 06:47:10 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: RiskManager.update_broker_positions() missing 1 required positional argument: 'positions'
+2025-08-23 06:47:10 - root - ERROR - ❌ Fatal error: RiskManager.update_broker_positions() missing 1 required positional argument: 'positions'
+2025-08-23 06:51:44 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 06:51:44 - ServiceLocator - INFO -    Mode: MOCK
+2025-08-23 06:51:44 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 06:51:44 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:51:44 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 06:51:44 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 06:51:44 - UnifiedTradingSystem - INFO -    Mode: MOCK
+2025-08-23 06:51:44 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 06:51:44 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:51:44 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 06:51:44 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 06:51:44 - MockIBKRAdapter - INFO - 🎭 MOCK IBKR ADAPTER INITIALIZED - Perfect for development!
+2025-08-23 06:51:44 - MockIBKRAdapter - INFO - Mock adapter initialized with data path: data/csv
+2025-08-23 06:51:44 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 06:51:44 - MockIBKRAdapter - INFO - ✅ MOCK: Connected to simulated IBKR
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ IBKR connected
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ Service registered: ibkr_adapter -> MockIBKRAdapter
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ IBKRAdapter created and registered - NO MORE DUPLICATES
+2025-08-23 06:51:44 - ServiceLocator - INFO - 🛡️ Creating SINGLE RiskManager instance
+2025-08-23 06:51:44 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=200.0
+2025-08-23 06:51:44 - ServiceLocator - INFO - 🔗 RiskManager connected to shared IBKRAdapter
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ Service registered: risk_manager -> RiskManager
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ RiskManager created - UNIFIED STATE
+2025-08-23 06:51:44 - ServiceLocator - INFO - 🏛️ Creating SINGLE SmallcapMayordomo instance
+2025-08-23 06:51:44 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=Not set
+2025-08-23 06:51:44 - SmallcapMayordomo - INFO - 🏛️ SmallcapMayordomo initialized - Daily plays orchestrator ready
+2025-08-23 06:51:44 - core.risk_manager - INFO - 🔗 SmallcapMayordomo: Using shared broker adapter for position sync
+2025-08-23 06:51:44 - core.risk_manager - WARNING - ⚠️ SmallcapMayordomo: Could not sync positions immediately: RiskManager.update_broker_positions() missing 1 required positional argument: 'positions'
+2025-08-23 06:51:44 - core.risk_manager - INFO - 🏛️ SmallcapMayordomo factory: Created new instance
+2025-08-23 06:51:44 - core.risk_manager - INFO -    Portfolio capital: $2,000
+2025-08-23 06:51:44 - core.risk_manager - INFO -    Max daily trades: 30
+2025-08-23 06:51:44 - core.risk_manager - INFO -    Max positions: 15
+2025-08-23 06:51:44 - core.risk_manager - INFO -    Shared broker: YES
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ Service registered: mayordomo -> SmallcapMayordomo
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ SmallcapMayordomo created - SHARED STATE
+2025-08-23 06:51:44 - ServiceLocator - INFO - 📱 Creating SINGLE TelegramClient instance
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ Service registered: telegram_client -> module
+2025-08-23 06:51:44 - ServiceLocator - INFO - ✅ TelegramClient registered - UNIFIED NOTIFICATIONS
+2025-08-23 06:51:44 - ServiceLocator - INFO - ⚡ Creating SINGLE TradingEngine instance
+2025-08-23 06:51:44 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: TradingEngine.__init__() got an unexpected keyword argument 'strategy_name'
+2025-08-23 06:51:44 - root - ERROR - ❌ Fatal error: TradingEngine.__init__() got an unexpected keyword argument 'strategy_name'
+2025-08-23 06:53:25 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 06:53:25 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 06:53:25 - ServiceLocator - INFO -    Mode: MOCK
+2025-08-23 06:53:25 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 06:53:25 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:53:25 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 06:53:25 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 06:53:25 - UnifiedTradingSystem - INFO -    Mode: MOCK
+2025-08-23 06:53:25 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 06:53:25 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 06:53:25 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 06:53:25 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 06:53:25 - MockIBKRAdapter - INFO - 🎭 MOCK IBKR ADAPTER INITIALIZED - Perfect for development!
+2025-08-23 06:53:25 - MockIBKRAdapter - INFO - Mock adapter initialized with data path: data/csv
+2025-08-23 06:53:25 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 06:53:26 - MockIBKRAdapter - INFO - ✅ MOCK: Connected to simulated IBKR
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ IBKR connected
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ Service registered: ibkr_adapter -> MockIBKRAdapter
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ IBKRAdapter created and registered - NO MORE DUPLICATES
+2025-08-23 06:53:26 - ServiceLocator - INFO - 🛡️ Creating SINGLE RiskManager instance
+2025-08-23 06:53:26 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=200.0
+2025-08-23 06:53:26 - ServiceLocator - INFO - 🔗 RiskManager connected to shared IBKRAdapter
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ Service registered: risk_manager -> RiskManager
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ RiskManager created - UNIFIED STATE
+2025-08-23 06:53:26 - ServiceLocator - INFO - 🏛️ Creating SINGLE SmallcapMayordomo instance
+2025-08-23 06:53:26 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=Not set
+2025-08-23 06:53:26 - SmallcapMayordomo - INFO - 🏛️ SmallcapMayordomo initialized - Daily plays orchestrator ready
+2025-08-23 06:53:26 - core.risk_manager - INFO - 🔗 SmallcapMayordomo: Using shared broker adapter for position sync
+2025-08-23 06:53:26 - core.risk_manager - WARNING - ⚠️ SmallcapMayordomo: Could not sync positions immediately: RiskManager.update_broker_positions() missing 1 required positional argument: 'positions'
+2025-08-23 06:53:26 - core.risk_manager - INFO - 🏛️ SmallcapMayordomo factory: Created new instance
+2025-08-23 06:53:26 - core.risk_manager - INFO -    Portfolio capital: $2,000
+2025-08-23 06:53:26 - core.risk_manager - INFO -    Max daily trades: 30
+2025-08-23 06:53:26 - core.risk_manager - INFO -    Max positions: 15
+2025-08-23 06:53:26 - core.risk_manager - INFO -    Shared broker: YES
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ Service registered: mayordomo -> SmallcapMayordomo
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ SmallcapMayordomo created - SHARED STATE
+2025-08-23 06:53:26 - ServiceLocator - INFO - 📱 Creating SINGLE TelegramClient instance
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ Service registered: telegram_client -> module
+2025-08-23 06:53:26 - ServiceLocator - INFO - ✅ TelegramClient registered - UNIFIED NOTIFICATIONS
+2025-08-23 06:53:26 - ServiceLocator - INFO - ⚡ Creating SINGLE TradingEngine instance
+2025-08-23 06:53:26 - pyrate_limiter - INFO - Initializing default bucket(InMemoryBucket) with rates: [limit=10/1000]
+2025-08-23 06:53:26 - GlobalDataManager - INFO - 📊 Global Data Manager initialized - Hybrid approach
+2025-08-23 06:53:26 - StrategyCoordinator - INFO - 🎯 Strategy Coordinator initialized - Hybrid coordination
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered MACDV strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered GAP_GO strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered ORB strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered Volume Momentum strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered Optimized GAP_GO strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered Volume Breakout strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered VWAP Smallcaps strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered Multi-Strategy Engine
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered EOD Momentum strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered EOD Overnight Smallcaps strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered July Strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered PMH Breakout strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered Daily Plays strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered VCP strategy
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered ML Multi-Strategy Engine
+2025-08-23 06:53:26 - strategies - INFO - Auto-registered VWAP Reclaim Strategy
+2025-08-23 06:53:26 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: No module named 'strategies.ml_multi_strategy'
+2025-08-23 06:53:26 - root - ERROR - ❌ Fatal error: No module named 'strategies.ml_multi_strategy'
+2025-08-23 17:19:22 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 17:19:22 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 17:19:22 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-08-23 17:19:22 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 17:19:22 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 17:19:22 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 17:19:22 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 17:19:22 - UnifiedTradingSystem - INFO -    Mode: PRODUCTION
+2025-08-23 17:19:22 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 17:19:22 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 17:19:22 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 17:19:22 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 17:19:22 - IBKRAdapter(4148) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-23 17:19:22 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 17:19:22 - IBKRAdapter(4148) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 4148)
+2025-08-23 17:19:22 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 4148...
+2025-08-23 17:19:22 - ib_insync.client - INFO - Disconnecting
+2025-08-23 17:19:22 - ib_insync.client - ERROR - API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+2025-08-23 17:19:22 - ib_insync.client - ERROR - Make sure API port on TWS/IBG is open
+2025-08-23 17:19:22 - IBKRAdapter(4148) - ERROR - Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 17:19:22 - UnifiedTradingSystem - ERROR - ❌ Error inicializando sistema: Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 17:19:22 - root - ERROR - ❌ Fatal error: Failed to connect to IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-08-23 17:34:04 - root - INFO - Logging initialized - Level: INFO, File: logs/unified_trading_system.log
+2025-08-23 17:34:04 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-08-23 17:34:04 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-08-23 17:34:04 - ServiceLocator - INFO -    Client ID: 4148
+2025-08-23 17:34:04 - ServiceLocator - INFO -    Strategy: ml_multi_strategy
+2025-08-23 17:34:04 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-08-23 17:34:04 - UnifiedTradingSystem - INFO - 🚀 UNIFIED TRADING SYSTEM - Arquitectura Unificada
+2025-08-23 17:34:04 - UnifiedTradingSystem - INFO -    Mode: PRODUCTION
+2025-08-23 17:34:04 - UnifiedTradingSystem - INFO -    Client ID: 4148 (ÚNICO)
+2025-08-23 17:34:04 - UnifiedTradingSystem - INFO -    Strategy: ml_multi_strategy
+2025-08-23 17:34:04 - UnifiedTradingSystem - INFO - 🔧 Inicializando sistema unificado...
+2025-08-23 17:34:04 - ServiceLocator - INFO - 🔌 Creating SINGLE IBKRAdapter instance (client_id=4148)
+2025-08-23 17:34:05 - IBKRAdapter(4148) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-23 17:34:05 - ServiceLocator - INFO - 🔗 Connecting to IBKR...
+2025-08-23 17:34:05 - IBKRAdapter(4148) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 4148)
+2025-08-23 17:34:05 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 4148...
+2025-08-23 17:34:05 - ib_insync.client - INFO - Connected
+2025-08-23 17:34:05 - ib_insync.client - INFO - Logged on to server version 176
+2025-08-23 17:34:05 - ib_insync.client - INFO - API connection ready
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:hfarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:jfarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfuture
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarmnj
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=766911303, symbol='ELAB', exchange='NASDAQ', currency='USD', localSymbol='ELAB', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=460320153, symbol='OPEN', exchange='NASDAQ', currency='USD', localSymbol='OPEN', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-08-23 17:34:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=455415330, symbol='ONDS', exchange='NASDAQ', currency='USD', localSymbol='ONDS', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-08-23 17:34:05 - ib_insync.ib - INFO - Synchronization complete
+2025-08-23 17:34:05 - IBKRAdapter(4148) - INFO - Successfully connected to IBKR
+2025-08-23 17:34:06 - IBKRAdapter(4148) - INFO - Initial data loaded successfully
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ IBKR connected
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ Service registered: ibkr_adapter -> IBKRAdapter
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ IBKRAdapter created and registered - NO MORE DUPLICATES
+2025-08-23 17:34:06 - ServiceLocator - INFO - 🛡️ Creating SINGLE RiskManager instance
+2025-08-23 17:34:06 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=200.0
+2025-08-23 17:34:06 - ServiceLocator - INFO - 🔗 RiskManager connected to shared IBKRAdapter
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ Service registered: risk_manager -> RiskManager
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ RiskManager created - UNIFIED STATE
+2025-08-23 17:34:06 - ServiceLocator - INFO - 🏛️ Creating SINGLE SmallcapMayordomo instance
+2025-08-23 17:34:06 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=30 | max_daily_loss=-100.0 | max_position_value=Not set
+2025-08-23 17:34:06 - SmallcapMayordomo - INFO - 🏛️ SmallcapMayordomo initialized - Daily plays orchestrator ready
+2025-08-23 17:34:06 - core.risk_manager - INFO - 🔗 SmallcapMayordomo: Using shared broker adapter for position sync
+2025-08-23 17:34:06 - core.risk_manager - WARNING - ⚠️ SmallcapMayordomo: Could not sync positions immediately: RiskManager.update_broker_positions() missing 1 required positional argument: 'positions'
+2025-08-23 17:34:06 - core.risk_manager - INFO - 🏛️ SmallcapMayordomo factory: Created new instance
+2025-08-23 17:34:06 - core.risk_manager - INFO -    Portfolio capital: $2,000
+2025-08-23 17:34:06 - core.risk_manager - INFO -    Max daily trades: 30
+2025-08-23 17:34:06 - core.risk_manager - INFO -    Max positions: 15
+2025-08-23 17:34:06 - core.risk_manager - INFO -    Shared broker: YES
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ Service registered: mayordomo -> SmallcapMayordomo
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ SmallcapMayordomo created - SHARED STATE
+2025-08-23 17:34:06 - ServiceLocator - INFO - 📱 Creating SINGLE TelegramClient instance
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ Service registered: telegram_client -> module
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ TelegramClient registered - UNIFIED NOTIFICATIONS
+2025-08-23 17:34:06 - ServiceLocator - INFO - ⚡ Creating SINGLE TradingEngine instance
+2025-08-23 17:34:06 - pyrate_limiter - INFO - Initializing default bucket(InMemoryBucket) with rates: [limit=10/1000]
+2025-08-23 17:34:06 - GlobalDataManager - INFO - 📊 Global Data Manager initialized - Hybrid approach
+2025-08-23 17:34:06 - StrategyCoordinator - INFO - 🎯 Strategy Coordinator initialized - Hybrid coordination
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered MACDV strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered GAP_GO strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered ORB strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Volume Momentum strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Optimized GAP_GO strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Volume Breakout strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered VWAP Smallcaps strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Multi-Strategy Engine
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered EOD Momentum strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered EOD Overnight Smallcaps strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered July Strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered PMH Breakout strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Daily Plays strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered VCP strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered ML Multi-Strategy Engine
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered VWAP Reclaim Strategy
+2025-08-23 17:34:06 - strategies - INFO - Auto-registered Catalyst Momentum Strategy
+2025-08-23 17:34:06 - ServiceLocator - INFO - 🎯 Using configured strategy: ml_multi_strategy
+2025-08-23 17:34:06 - DatabaseManager - INFO - Database tables created successfully
+2025-08-23 17:34:06 - DatabaseManager - INFO - Database initialized: trading_data.db
+2025-08-23 17:34:06 - StrategyTimeOrchestrator - INFO - 🎭 StrategyTimeOrchestrator initialized - Centralized timing intelligence
+2025-08-23 17:34:06 - StrategyTimeOrchestrator - INFO -    📋 Registered 23 strategy compatibility profiles
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🎭 Strategy Time Orchestrator integrated - Centralized timing intelligence
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🤖 ML Multi-Strategy Engine initialized
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO -    Strategies dict: <class 'dict'> - 0 strategies loaded
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO -    Detection attributes: strategies=True, is_dict=True
+2025-08-23 17:34:06 - Pipeline.DataCollection - INFO - 🏭 DataCollectionStage initialized: batch_size=1, cache_ttl=60s
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 🎯 STRATEGY REGISTRY: Using MultiStrategyEngine (coordinates 0 strategies)
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO -    MultiStrategyEngine will handle: []
+2025-08-23 17:34:06 - Pipeline.StrategyAnalysis - INFO - 🎯 STRATEGY REGISTRY: Using MultiStrategyEngine 'ML_MultiStrategy_Engine' with 0 internal strategies
+2025-08-23 17:34:06 - Pipeline.StrategyAnalysis - INFO -    Engine class: MLMultiStrategyEngine
+2025-08-23 17:34:06 - Pipeline.StrategyAnalysis - INFO -    Internal strategies: []
+2025-08-23 17:34:06 - Pipeline.StrategyAnalysis - INFO - 🤖 ML Multi-Strategy Engine detected and active!
+2025-08-23 17:34:06 - Pipeline.StrategyAnalysis - INFO - 🧠 StrategyAnalysisStage initialized: max_concurrent=5
+2025-08-23 17:34:06 - DatabaseManager - INFO - Database tables created successfully
+2025-08-23 17:34:06 - DatabaseManager - INFO - Database initialized: trading_data.db
+2025-08-23 17:34:06 - ExtendedHoursManager - INFO - 🕐 ExtendedHoursManager initialized
+2025-08-23 17:34:06 - Pipeline.TradingExecution - INFO - 📨 Telegram notifications ENABLED
+2025-08-23 17:34:06 - Pipeline.TradingExecution - INFO - 💼 TradingExecutionStage initialized: max_concurrent=3
+2025-08-23 17:34:06 - Pipeline.TradingExecution - INFO - 🕐 Extended hours support: ENABLED
+2025-08-23 17:34:06 - Pipeline.TradingExecution - INFO - 💾 Database integration: ENABLED
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 🚀 Pipeline-based TradingEngine initialized
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 📊 Pipeline stages: ['DataCollection', 'StrategyAnalysis', 'TradingExecution']
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ Service registered: trading_engine -> TradingEngine
+2025-08-23 17:34:06 - ServiceLocator - INFO - ✅ TradingEngine created - NO MORE DOUBLE EXECUTION
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 🔧 Initializing pipeline trading engine...
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 📋 Loaded 11 available strategies
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Smallcap ML initialization: enabled=True, available=True
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Available strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'orb', 'pmh_breakout', 'daily_plays', 'volume_breakout', 'vwap_smallcaps', 'vwap_reclaim', 'eod_momentum', 'vcp']
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Mapped smallcap strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:06 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO - SmallcapContextualBandit initialized
+2025-08-23 17:34:06 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO -    Strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:06 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO -    Feature dimension: 8 (simplified for smallcaps)
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ SmallcapContextualBandit created successfully: <class 'strategies.smallcap_bandit_adapter.SmallcapContextualBandit'>
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🧠 Smallcap ML enabled with strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - ERROR - Failed to initialize SmallcapMayordomo: TradingConfig.__init__() got an unexpected keyword argument 'min_signal_strength'
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - INFO - 🚀 Enhanced MACDV_Smallcaps strategy initialized
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - INFO - 📋 Loaded config from [MACDV_STRATEGY]: 22 parameters
+2025-08-23 17:34:06 - StopLossManager - INFO - 📊 Centralized Stop Loss Manager initialized
+2025-08-23 17:34:06 - Strategy.MACDV_Smallcaps - INFO - 🎯 MACDV Strategy initialized with centralized stop loss management
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: macdv_smallcaps
+2025-08-23 17:34:06 - Strategy.GapGo - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:06 - Strategy.GapGo - INFO - 🚀 Enhanced GapGo strategy initialized
+2025-08-23 17:34:06 - Strategy.GapGo - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:06 - Strategy.GapGo - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:06 - Strategy.GapGo - INFO - 📋 Loaded config from [GAP_GO_STRATEGY]: 26 parameters
+2025-08-23 17:34:06 - Strategy.GapGo - INFO - 🎯 Gap&Go Strategy initialized with centralized stop loss management
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: gap_go
+2025-08-23 17:34:06 - Strategy.ORB - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:06 - Strategy.ORB - INFO - 🚀 Enhanced ORB strategy initialized
+2025-08-23 17:34:06 - Strategy.ORB - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:06 - Strategy.ORB - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:06 - Strategy.ORB - INFO - 📋 Loaded config from [ORB_STRATEGY]: 32 parameters
+2025-08-23 17:34:06 - Strategy.ORB - INFO - 🎯 ORB Strategy initialized with centralized stop loss management
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: orb
+2025-08-23 17:34:06 - Strategy.VolumeBreakout - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:06 - Strategy.VolumeBreakout - INFO - 🚀 Enhanced VolumeBreakout strategy initialized
+2025-08-23 17:34:06 - Strategy.VolumeBreakout - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:06 - Strategy.VolumeBreakout - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:06 - Strategy.VolumeBreakout - INFO - 📋 Loaded config from [VOLUME_BREAKOUT_STRATEGY]: 44 parameters
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: volume_breakout
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Starting position sync - Broker available: True
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Found 0 live positions from broker
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Found 22 unique open trades in database
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 📊 Successfully synced 0 positions with strategy info
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🚀 ML Engine initialized with 11 strategies
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO -    Available: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'orb', 'pmh_breakout', 'daily_plays', 'volume_breakout', 'vwap_smallcaps', 'vwap_reclaim', 'eod_momentum', 'vcp']
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO -    Max strategies per ticker: 2
+2025-08-23 17:34:06 - IBKRAdapter(4148) - WARNING - Already connected to IBKR
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 🔄 Re-syncing positions for MLMultiStrategyEngine after broker connection
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Starting position sync - Broker available: True
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Found 0 live positions from broker
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Found 22 unique open trades in database
+2025-08-23 17:34:06 - Strategy.ML_MultiStrategy_Engine - INFO - 📊 Successfully synced 0 positions with strategy info
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 📊 Loaded 0 existing positions
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - 📊 Transferred 0 positions to execution stage
+2025-08-23 17:34:06 - TradingEnginePipeline - INFO - ✅ Pipeline trading engine initialized successfully
+2025-08-23 17:34:06 - UnifiedTradingSystem - INFO - ✅ TradingEngine inicializado (instancia única)
+2025-08-23 17:34:06 - UnifiedTradingSystem - INFO - 🔍 Inicializando scanner system...
+2025-08-23 17:34:06 - IBKRAdapter(4149) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-23 17:34:06 - scanner.ibkr_native_scanner.IBKRNativeScanner - INFO - IBKR Native Scanner initialized
+2025-08-23 17:34:06 - scanner.smallcap.finbert_analyzer - INFO - FinBERT Analyzer initialized
+2025-08-23 17:34:06 - scanner.smallcap.catalyst_analyzer.CatalystAnalyzer - INFO - ✅ FinBERT analyzer initialized - using advanced sentiment analysis
+2025-08-23 17:34:06 - scanner.smallcap.catalyst_analyzer.CatalystAnalyzer - INFO - CatalystAnalyzer initialized with intraday smallcap configuration
+2025-08-23 17:34:06 - scanner.smallcap.catalyst_analyzer.CatalystAnalyzer - INFO - Max news age limits: {'FDA': 24, 'M&A': 24, 'EARNINGS': 24, 'CONTRACT': 24, 'BREAKTHROUGH': 24, 'OTHER': 24}
+2025-08-23 17:34:06 - scanner.smallcap.multi_source_news.MultiSourceNewsChecker - INFO - NewsAPI key not provided - using free tier limitations
+2025-08-23 17:34:07 - scanner.smallcap.multi_source_news.MultiSourceNewsChecker - INFO - ✅ SEC EDGAR client initialized
+2025-08-23 17:34:07 - scanner.smallcap.multi_source_news.MultiSourceNewsChecker - INFO - MultiSourceNewsChecker initialized with sources: ['finviz', 'yahoo', 'sec']
+2025-08-23 17:34:07 - scanner.smallcap.smallcap_daily_scanner.SmallcapDailyScanner - INFO - SmallcapDailyScanner REFACTORED initialized
+2025-08-23 17:34:07 - scanner.smallcap.smallcap_daily_scanner.SmallcapDailyScanner - INFO - ✅ IBKR Native Scanner integration enabled
+2025-08-23 17:34:07 - scanner.smallcap.smallcap_daily_scanner.SmallcapDailyScanner - INFO - ✅ Multi-source news system enabled
+2025-08-23 17:34:07 - scanner.smallcap.smallcap_daily_scanner.SmallcapDailyScanner - INFO -    Available sources: ['finviz', 'yahoo', 'sec']
+2025-08-23 17:34:07 - UnifiedTradingSystem - INFO - ✅ Scanner inicializado con servicios compartidos
+2025-08-23 17:34:07 - UnifiedTradingSystem - INFO - ✅ Sistema unificado inicializado correctamente
+2025-08-23 17:34:07 - UnifiedTradingSystem - INFO - 🚀 Iniciando sistema unificado...
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 🔧 Initializing pipeline trading engine...
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 📋 Loaded 11 available strategies
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Smallcap ML initialization: enabled=True, available=True
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Available strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'orb', 'pmh_breakout', 'daily_plays', 'volume_breakout', 'vwap_smallcaps', 'vwap_reclaim', 'eod_momentum', 'vcp']
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Mapped smallcap strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:07 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO - SmallcapContextualBandit initialized
+2025-08-23 17:34:07 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO -    Strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:07 - strategies.smallcap_bandit_adapter.SmallcapContextualBandit - INFO -    Feature dimension: 8 (simplified for smallcaps)
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ SmallcapContextualBandit created successfully: <class 'strategies.smallcap_bandit_adapter.SmallcapContextualBandit'>
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🧠 Smallcap ML enabled with strategies: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'volume_breakout', 'daily_plays', 'explosive_volume']
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - INFO - 🚀 Enhanced MACDV_Smallcaps strategy initialized
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - INFO - 📋 Loaded config from [MACDV_STRATEGY]: 22 parameters
+2025-08-23 17:34:07 - Strategy.MACDV_Smallcaps - INFO - 🎯 MACDV Strategy initialized with centralized stop loss management
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: macdv_smallcaps
+2025-08-23 17:34:07 - Strategy.GapGo - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:07 - Strategy.GapGo - INFO - 🚀 Enhanced GapGo strategy initialized
+2025-08-23 17:34:07 - Strategy.GapGo - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:07 - Strategy.GapGo - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:07 - Strategy.GapGo - INFO - 📋 Loaded config from [GAP_GO_STRATEGY]: 26 parameters
+2025-08-23 17:34:07 - Strategy.GapGo - INFO - 🎯 Gap&Go Strategy initialized with centralized stop loss management
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: gap_go
+2025-08-23 17:34:07 - Strategy.ORB - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:07 - Strategy.ORB - INFO - 🚀 Enhanced ORB strategy initialized
+2025-08-23 17:34:07 - Strategy.ORB - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:07 - Strategy.ORB - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:07 - Strategy.ORB - INFO - 📋 Loaded config from [ORB_STRATEGY]: 32 parameters
+2025-08-23 17:34:07 - Strategy.ORB - INFO - 🎯 ORB Strategy initialized with centralized stop loss management
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: orb
+2025-08-23 17:34:07 - Strategy.VolumeBreakout - WARNING - ⚠️ No data provider provided, enhanced data management disabled
+2025-08-23 17:34:07 - Strategy.VolumeBreakout - INFO - 🚀 Enhanced VolumeBreakout strategy initialized
+2025-08-23 17:34:07 - Strategy.VolumeBreakout - INFO -    Min confidence for signals: 0.7
+2025-08-23 17:34:07 - Strategy.VolumeBreakout - INFO -    Min confidence for execution: 0.8
+2025-08-23 17:34:07 - Strategy.VolumeBreakout - INFO - 📋 Loaded config from [VOLUME_BREAKOUT_STRATEGY]: 44 parameters
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - ✅ Pre-loaded strategy: volume_breakout
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Starting position sync - Broker available: True
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Found 0 live positions from broker
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Found 22 unique open trades in database
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 📊 Successfully synced 0 positions with strategy info
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🚀 ML Engine initialized with 11 strategies
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO -    Available: ['catalyst_momentum', 'macdv_smallcaps', 'gap_go', 'orb', 'pmh_breakout', 'daily_plays', 'volume_breakout', 'vwap_smallcaps', 'vwap_reclaim', 'eod_momentum', 'vcp']
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO -    Max strategies per ticker: 2
+2025-08-23 17:34:07 - IBKRAdapter(4148) - WARNING - Already connected to IBKR
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 🔄 Re-syncing positions for MLMultiStrategyEngine after broker connection
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Starting position sync - Broker available: True
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔄 Found 0 live positions from broker
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 🔍 Found 22 unique open trades in database
+2025-08-23 17:34:07 - Strategy.ML_MultiStrategy_Engine - INFO - 📊 Successfully synced 0 positions with strategy info
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 📊 Loaded 0 existing positions
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 📊 Transferred 0 positions to execution stage
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - ✅ Pipeline trading engine initialized successfully
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 🚀 Starting pipeline trading engine with 0 symbols
+2025-08-23 17:34:07 - TradingEnginePipeline - INFO - 🔄 Starting pipeline execution loop
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-08-23 17:37:44 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-08-23 17:37:44 - IBKRAdapter(4148) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-08-23 17:47:19 - UnifiedTradingSystem - INFO - 📡 Señal recibida 2
+2025-08-23 17:47:19 - UnifiedTradingSystem - INFO - 🛑 Deteniendo sistema unificado...
+2025-08-23 17:47:19 - ServiceLocator - INFO - 🧹 Cleaning up unified system...
+2025-08-23 17:47:19 - TradingEnginePipeline - INFO - 🛑 Stopping pipeline trading engine...
+2025-08-23 17:47:19 - IBKRAdapter(4148) - INFO - Disconnecting from IBKR
+2025-08-23 17:47:19 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 16.6 kB received in 342 messages, session time 794 s.
+2025-08-23 17:47:19 - ib_insync.client - INFO - Disconnecting
+2025-08-23 17:47:19 - UnifiedTradingSystem - INFO - ✅ Sistema unificado iniciado
+2025-08-23 17:47:19 - UnifiedTradingSystem - INFO - 🛑 Deteniendo sistema unificado...
+2025-08-23 17:47:19 - ib_insync.client - INFO - Disconnected.
+2025-08-23 17:47:19 - ServiceLocator - INFO - 🧹 Cleaning up unified system...
+2025-08-23 17:47:19 - TradingEnginePipeline - INFO - 🛑 Stopping pipeline trading engine...
+2025-08-23 17:47:19 - TradingEnginePipeline - INFO - ✅ Pipeline trading engine stopped successfully
+2025-08-23 17:47:19 - ServiceLocator - INFO - ✅ TradingEngine stopped
+2025-08-23 17:47:19 - ServiceLocator - INFO - ✅ IBKRAdapter disconnected
+2025-08-23 17:47:19 - ServiceLocator - INFO - ✅ All services cleaned up
+2025-08-23 17:47:19 - UnifiedTradingSystem - INFO - ✅ Sistema unificado detenido
+2025-08-23 17:47:19 - IBKRAdapter(4148) - INFO - Successfully disconnected from IBKR

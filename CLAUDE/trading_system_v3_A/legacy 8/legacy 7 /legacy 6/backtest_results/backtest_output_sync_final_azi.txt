@@ -1,0 +1,127 @@
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'ParabolicStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'DailyPlaysStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+🚀 Starting Proactive Backtest for AZ (17-Sep-2025)...
+✅ Seeded AZ as FAKE_BREAKDOWN candidate (Trigger > 8.50).
+DEBUG: ReplayEngine initialized with market_data_db_path: 'trading_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+2025-12-27 09:59:12,918 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-12-27 09:59:12,918 - replay_testing.core.replay_engine - INFO -    Market data: trading_data.db
+2025-12-27 09:59:12,918 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-12-27 09:59:12 - Worker.short_squeeze - INFO - Worker logging initialized - short_squeeze -> logs/worker_short_squeeze.log
+2025-12-27 09:59:12,920 - Worker.short_squeeze - INFO - Worker logging initialized - short_squeeze -> logs/worker_short_squeeze.log
+2025-12-27 09:59:12,923 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-12-27 09:59:12,923 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-12-27 09:59:12,961 - ODSClassifier - INFO - 🕐 ODSClassifier initialized - Opening Drive Structure analysis
+2025-12-27 09:59:12,961 - ServiceLocator - INFO - ✅ Service registered: ods_classifier -> ODSClassifier
+2025-12-27 09:59:12,961 - ServiceLocator - INFO - ✅ ODSClassifier service created - Opening Drive Structure analysis enabled
+2025-12-27 09:59:12,961 - core.swing_transition_analyzer - INFO - 🌙 SwingTransitionAnalyzer initialized (ultra-conservative mode)
+2025-12-27 09:59:12 - Worker.short_squeeze - INFO - 🔧 Worker short_squeeze initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-27 09:59:12,962 - Worker.short_squeeze - INFO - 🔧 Worker short_squeeze initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-27 09:59:12,963 - DatabaseManager - INFO - Database tables created successfully (day + swing trading)
+2025-12-27 09:59:12,963 - DatabaseManager - INFO - Database initialized: trading_data.db
+2025-12-27 09:59:12,963 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 🐻🔫 Short Squeeze Worker Initialized
+🔄 Running replay for 2025-09-17...
+🔧 DebugReplayEngine.replay_day calling super()...
+🔧 DebugReplayEngine: Loading market data for 2025-09-17 (symbols=['AZ'])...
+2025-12-27 09:59:12,963 - replay_testing.core.replay_engine - INFO - 🔄 Loading data from trade_ohlc_snapshots (Priority Source)...
+2025-12-27 09:59:12,969 - replay_testing.core.replay_engine - INFO - ✅ Loaded snapshots for 1 symbols from trade_ohlc_snapshots
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO -    Parsed 390 bars for AZ from snapshot
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO - ✅ Successfully loaded 1 symbols from snapshots
+✅ DebugReplayEngine: Loaded data for 1 symbols.
+   - AZ: 390 bars
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-09-17
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO -    Workers: SKIP
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-12-27 09:59:13,078 - replay_testing.core.replay_engine - INFO - 🔄 Loading data from trade_ohlc_snapshots (Priority Source)...
+2025-12-27 09:59:13,080 - replay_testing.core.replay_engine - INFO - ✅ Loaded snapshots for 1 symbols from trade_ohlc_snapshots
+2025-12-27 09:59:13,184 - replay_testing.core.replay_engine - INFO -    Parsed 390 bars for AZ from snapshot
+2025-12-27 09:59:13,184 - replay_testing.core.replay_engine - INFO - ✅ Successfully loaded 1 symbols from snapshots
+2025-12-27 09:59:13,184 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-12-27 09:59:13,184 - replay_testing.core.replay_engine - ERROR - Error running scanner adapter: 'MockScannerAdapter' object has no attribute 'scan_history'
+2025-12-27 09:59:13,185 - replay_testing.core.replay_engine - ERROR - Unknown worker: SKIP
+2025-12-27 09:59:13,185 - replay_testing.core.replay_engine - WARNING - ⚠️ Failed to load worker SKIP, skipping
+💉 Injected DebugShortSqueezeWorkerLogic. Workers: ['short_squeeze']
+2025-12-27 09:59:13,185 - core.context_engine.ContextEngine - INFO - 🧠 ContextEngine initialized - SMALL CAP optimized thresholds
+   Resistance detection: 90 days lookback, 1% clustering tolerance, min 2 touches
+2025-12-27 09:59:13,185 - core.trade_arbiter.TradeArbiter - INFO - ⚖️ TradeArbiter initialized - Multi-worker coordination active
+2025-12-27 09:59:13,185 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: AZ @ 2025-09-17 (390 bars)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.46
+2025-12-27 09:59:13,187 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,187 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,187 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - DEBUG - AZ: Bear Trap waiting for trigger > $8.50 (Curr: $8.46)
+   -> Result: False
+2025-12-27 09:59:13,187 - replay_testing.core.replay_engine - DEBUG -    ⚪ AZ: short_squeeze ENTRY REJECTED (strategy criteria not met)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.3875
+2025-12-27 09:59:13,188 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,188 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,188 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - DEBUG - AZ: Bear Trap waiting for trigger > $8.50 (Curr: $8.39)
+   -> Result: False
+2025-12-27 09:59:13,189 - replay_testing.core.replay_engine - DEBUG -    ⚪ AZ: short_squeeze ENTRY REJECTED (strategy criteria not met)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.395
+2025-12-27 09:59:13,190 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,190 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,190 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - DEBUG - AZ: Bear Trap waiting for trigger > $8.50 (Curr: $8.39)
+   -> Result: False
+2025-12-27 09:59:13,190 - replay_testing.core.replay_engine - DEBUG -    ⚪ AZ: short_squeeze ENTRY REJECTED (strategy criteria not met)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.48
+2025-12-27 09:59:13,191 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,191 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,191 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - DEBUG - AZ: Bear Trap waiting for trigger > $8.50 (Curr: $8.48)
+   -> Result: False
+2025-12-27 09:59:13,191 - replay_testing.core.replay_engine - DEBUG -    ⚪ AZ: short_squeeze ENTRY REJECTED (strategy criteria not met)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.5
+2025-12-27 09:59:13,192 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,192 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,192 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - DEBUG - AZ: Bear Trap waiting for trigger > $8.50 (Curr: $8.50)
+   -> Result: False
+2025-12-27 09:59:13,192 - replay_testing.core.replay_engine - DEBUG -    ⚪ AZ: short_squeeze ENTRY REJECTED (strategy criteria not met)
+
+🕵️‍♀️ DEBUG WORKER: Checking AZ @ 8.505
+2025-12-27 09:59:13,193 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 👀 AZ: Found in Proactive Watchlist! (Day 1, Pattern: FAKE_BREAKDOWN)
+2025-12-27 09:59:13,193 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 📊 AZ Levels: Resistance=$8.50, Day1High=$8.80, ReclaimedSupport=$8.30, Structure=UNKNOWN
+2025-12-27 09:59:13,193 - strategies.workers.short_squeeze_worker_logic.ShortSqueezeWorker - INFO - 🚀 AZ: BEAR TRAP SPRINGING! (Price $8.51 > High $8.50 & VWAP)
+   -> Result: True
+2025-12-27 09:59:13,194 - replay_testing.core.replay_engine - DEBUG -    ✅ AZ: short_squeeze ENTRY APPROVED (pattern=100.0%, price=$8.51)
+2025-12-27 09:59:13,195 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AZ @ $8.51 (short_squeeze, qty=100)
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Event complete: 0 decisions, 1 simulated trades, 0 real trades, 2 discrepancies
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Workers evaluated: 
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Workers traded: short_squeeze
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - DEBUG: Active positions before EOD close: 1
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -   - AZ
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - 🔚 CLOSING OPEN POSITIONS AT END OF DAY
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    🔴 EOD CLOSE: AZ @ $8.14 (Entry: $8.51, P&L=-4.3%)
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - 
+✅ All open positions closed at EOD
+
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - ✅ REPLAY COMPLETED in 0.2s
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO - ================================================================================
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Bars processed: 0
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Decisions made: 6
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Entries approved: 1
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Entries rejected: 5
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Exits executed: 0
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Simulated trades: 1
+2025-12-27 09:59:13,273 - replay_testing.core.replay_engine - INFO -    Discrepancies: 2
+
+📊 Backtest Results:
+Decisions Made: 6
+Simulated Trades: 1
+ - Trade: AZ N/A Entry: 8.505 Exit: 8.14 PnL: -4.29%
+Total PnL %: -4.29%

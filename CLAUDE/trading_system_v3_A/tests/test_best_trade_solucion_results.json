@@ -1,0 +1,46 @@
+{
+  "test_timestamp": "2025-11-04T22:28:42.758554",
+  "test_events_count": 24,
+  "rules_tested": 3,
+  "unique_best_trades": 3,
+  "best_trade_values": [
+    620.0,
+    506.0,
+    434.0
+  ],
+  "detailed_results": {
+    "OUTLIER_PENNY_STOCK_EXTREME_TEST": {
+      "best_trade": 620.0,
+      "best_trades_top3": [
+        620.0,
+        615.0,
+        610.0
+      ],
+      "sample_size": 21
+    },
+    "OUTLIER_PENNY_VOLUME_SPIKE_TEST": {
+      "best_trade": 506.0,
+      "best_trades_top3": [
+        506.0,
+        498.0,
+        490.0
+      ],
+      "sample_size": 8
+    },
+    "OUTLIER_ULTRA_PENNY_MOONSHOT_TEST": {
+      "best_trade": 434.0,
+      "best_trades_top3": [
+        434.0,
+        422.0,
+        410.0
+      ],
+      "sample_size": 8
+    }
+  },
+  "top_3_summaries": [
+    "OUTLIER_PENNY_STOCK_EXTREME_TEST: +620.0%/+615.0%/+610.0%",
+    "OUTLIER_PENNY_VOLUME_SPIKE_TEST: +506.0%/+498.0%/+490.0%",
+    "OUTLIER_ULTRA_PENNY_MOONSHOT_TEST: +434.0%/+422.0%/+410.0%"
+  ],
+  "test_status": "PASSED"
+}

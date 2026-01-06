@@ -1,0 +1,39 @@
+🔬 Advanced recovery from: trading_data.db.corrupted_backup
+📄 Page size: 4096
+📊 Total pages: 109,804
+
+🔎 Scanning for trade records...
+  Scanned 10,000 / 109,804 pages... Found 180 patterns
+  Scanned 20,000 / 109,804 pages... Found 180 patterns
+  Scanned 30,000 / 109,804 pages... Found 180 patterns
+  Scanned 40,000 / 109,804 pages... Found 180 patterns
+  Scanned 50,000 / 109,804 pages... Found 191 patterns
+  Scanned 60,000 / 109,804 pages... Found 191 patterns
+  Scanned 70,000 / 109,804 pages... Found 191 patterns
+  Scanned 80,000 / 109,804 pages... Found 191 patterns
+  Scanned 90,000 / 109,804 pages... Found 191 patterns
+  Scanned 100,000 / 109,804 pages... Found 191 patterns
+
+✅ Found 191 potential trade records
+📦 Parsed 187 unique trades
+
+💾 Saving to: trading_data_ADVANCED_RECOVERY.db
+✅ Inserted 187 trades
+
+📊 Recovery Statistics:
+  Total trades: 187
+  Unique symbols: 31
+
+🏆 Top symbols:
+    NG: 133 trades
+    GD: 6 trades
+    GN: 4 trades
+    GE: 4 trades
+    GL: 3 trades
+    GI: 3 trades
+    GC: 3 trades
+    IQ: 2 trades
+    GV: 2 trades
+    GQ: 2 trades
+
+✅ Done! Recovery database: trading_data_ADVANCED_RECOVERY.db

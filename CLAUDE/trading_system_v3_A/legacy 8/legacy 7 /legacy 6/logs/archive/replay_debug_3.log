@@ -1,0 +1,776 @@
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'ParabolicStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'DailyPlaysStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+
+================================================================================
+🔄 WORKER REPLAY TESTING SYSTEM
+================================================================================
+
+DEBUG: ReplayEngine initialized with market_data_db_path: 'backtesting_system/market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO -    Market data: backtesting_system/market_data.db
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-12-15
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO -    Workers: holy_grail
+2025-12-16 08:20:41,019 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-12-16 08:20:41,026 - replay_testing.core.replay_engine - WARNING - Primary market data query failed (table missing?): Execution failed on sql '
+                SELECT
+                    symbol, bar_timestamp, open_price, high_price, low_price, close_price, volume,
+                    vwap
+                FROM intraday_bars
+                WHERE DATE(bar_timestamp) = ?
+             AND symbol IN (?) ORDER BY symbol, bar_timestamp': no such table: intraday_bars
+2025-12-16 08:20:41,026 - replay_testing.core.replay_engine - WARNING - No data in intraday_bars for 2025-12-15, trying trade_intraday_bars...
+2025-12-16 08:20:41,042 - replay_testing.core.replay_engine - INFO - ✅ Loaded 390 bars from trade_intraday_bars (fallback)
+2025-12-16 08:20:41,137 - replay_testing.core.replay_engine - INFO -    Loaded 390 bars for ARTV (from trades, VWAP calculated)
+2025-12-16 08:20:41,137 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - Worker logging initialized - holy_grail -> logs/worker_holy_grail.log
+2025-12-16 08:20:41,140 - Worker.holy_grail - INFO - Worker logging initialized - holy_grail -> logs/worker_holy_grail.log
+2025-12-16 08:20:41,141 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-12-16 08:20:41,141 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-12-16 08:20:41,175 - ODSClassifier - INFO - 🕐 ODSClassifier initialized - Opening Drive Structure analysis
+2025-12-16 08:20:41,175 - ServiceLocator - INFO - ✅ Service registered: ods_classifier -> ODSClassifier
+2025-12-16 08:20:41,175 - ServiceLocator - INFO - ✅ ODSClassifier service created - Opening Drive Structure analysis enabled
+2025-12-16 08:20:41,176 - core.swing_transition_analyzer - INFO - 🌙 SwingTransitionAnalyzer initialized (ultra-conservative mode)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - 🔧 Worker holy_grail initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-16 08:20:41,176 - Worker.holy_grail - INFO - 🔧 Worker holy_grail initialized with separate logging + ODS support + Event Logger + Swing Transition
+2025-12-16 08:20:41,176 - replay_testing.core.replay_engine - INFO - ✅ Loaded REAL worker: holy_grail
+2025-12-16 08:20:41,176 - replay_testing.core.replay_engine - INFO - ✅ Loaded 1 workers: holy_grail
+
+2025-12-16 08:20:41,176 - core.context_engine.ContextEngine - INFO - 🧠 ContextEngine initialized - SMALL CAP optimized thresholds
+   Resistance detection: 90 days lookback, 1% clustering tolerance, min 2 touches
+2025-12-16 08:20:41,176 - core.trade_arbiter.TradeArbiter - INFO - ⚖️ TradeArbiter initialized - Multi-worker coordination active
+2025-12-16 08:20:41,176 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: ARTV @ 2025-12-15 (390 bars)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.0 <= 30)
+2025-12-16 08:20:41,195 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.7 <= 30)
+2025-12-16 08:20:41,196 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,198 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,200 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,201 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,203 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,205 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,206 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,208 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,209 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,211 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,213 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,214 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,216 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,218 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,219 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.73 < 4.73)
+2025-12-16 08:20:41,221 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.73 < 4.73)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.70 < 4.73)
+2025-12-16 08:20:41,223 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.70 < 4.73)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=38.1, Touched EMA20, Triggered > 4.73
+2025-12-16 08:20:41,224 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=38.1, Touched EMA20, Triggered > 4.73
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,226 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,228 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,229 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,231 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,234 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,236 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,238 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,240 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,242 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,243 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,245 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,247 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,249 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,251 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,253 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,255 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,257 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,259 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,261 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.00 < 5.11)
+2025-12-16 08:20:41,264 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.00 < 5.11)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.01 < 5.06)
+2025-12-16 08:20:41,266 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.01 < 5.06)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.07 < 5.10)
+2025-12-16 08:20:41,268 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.07 < 5.10)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.05 < 5.10)
+2025-12-16 08:20:41,270 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.05 < 5.10)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.95 < 5.07)
+2025-12-16 08:20:41,272 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.95 < 5.07)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.98 < 5.06)
+2025-12-16 08:20:41,274 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 4.98 < 5.06)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.14 < 5.25)
+2025-12-16 08:20:41,275 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.14 < 5.25)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.18 < 5.25)
+2025-12-16 08:20:41,278 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.18 < 5.25)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.23 < 5.25)
+2025-12-16 08:20:41,280 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.23 < 5.25)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,282 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,284 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,286 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,288 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,290 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,292 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,294 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,296 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,298 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,299 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,301 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,303 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.35 < 5.45)
+2025-12-16 08:20:41,305 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.35 < 5.45)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.42 < 5.45)
+2025-12-16 08:20:41,307 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.42 < 5.45)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.43 < 5.45)
+2025-12-16 08:20:41,309 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.43 < 5.45)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.6 <= 30)
+2025-12-16 08:20:41,311 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.3 <= 30)
+2025-12-16 08:20:41,313 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41,315 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.1 <= 30)
+2025-12-16 08:20:41,317 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:41,319 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41,321 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.8 <= 30)
+2025-12-16 08:20:41,323 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.7 <= 30)
+2025-12-16 08:20:41,324 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.5 <= 30)
+2025-12-16 08:20:41,326 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41,328 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.4 <= 30)
+2025-12-16 08:20:41,330 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.0 <= 30)
+2025-12-16 08:20:41,332 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.0 <= 30)
+2025-12-16 08:20:41,334 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.1 <= 30)
+2025-12-16 08:20:41,336 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.1 <= 30)
+2025-12-16 08:20:41,338 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41,340 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.5 <= 30)
+2025-12-16 08:20:41,342 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.5 <= 30)
+2025-12-16 08:20:41,344 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.4 <= 30)
+2025-12-16 08:20:41,347 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.7 <= 30)
+2025-12-16 08:20:41,349 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.8 <= 30)
+2025-12-16 08:20:41,351 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.8 <= 30)
+2025-12-16 08:20:41,353 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.3 <= 30)
+2025-12-16 08:20:41,355 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.7 <= 30)
+2025-12-16 08:20:41,357 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.6 <= 30)
+2025-12-16 08:20:41,359 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.6 <= 30)
+2025-12-16 08:20:41,361 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.9 <= 30)
+2025-12-16 08:20:41,363 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.5 <= 30)
+2025-12-16 08:20:41,365 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.3 <= 30)
+2025-12-16 08:20:41,367 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.6 <= 30)
+2025-12-16 08:20:41,369 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.0 <= 30)
+2025-12-16 08:20:41,371 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.7 <= 30)
+2025-12-16 08:20:41,374 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.9 <= 30)
+2025-12-16 08:20:41,376 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.1 <= 30)
+2025-12-16 08:20:41,378 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41,380 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.7 <= 30)
+2025-12-16 08:20:41,382 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.7 <= 30)
+2025-12-16 08:20:41,385 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41,387 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.9 <= 30)
+2025-12-16 08:20:41,389 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.7 <= 30)
+2025-12-16 08:20:41,391 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.7 <= 30)
+2025-12-16 08:20:41,393 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.5 <= 30)
+2025-12-16 08:20:41,395 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41,398 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.5 <= 30)
+2025-12-16 08:20:41,400 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.8 <= 30)
+2025-12-16 08:20:41,402 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41,404 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41,406 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:41,409 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.3 <= 30)
+2025-12-16 08:20:41,411 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.5 <= 30)
+2025-12-16 08:20:41,413 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.6 <= 30)
+2025-12-16 08:20:41,416 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.8 <= 30)
+2025-12-16 08:20:41,418 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41,420 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.3 <= 30)
+2025-12-16 08:20:41,422 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.7 <= 30)
+2025-12-16 08:20:41,425 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.7 <= 30)
+2025-12-16 08:20:41,427 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.2 <= 30)
+2025-12-16 08:20:41,429 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.2 <= 30)
+2025-12-16 08:20:41,431 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.1 <= 30)
+2025-12-16 08:20:41,434 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.6 <= 30)
+2025-12-16 08:20:41,436 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.0 <= 30)
+2025-12-16 08:20:41,438 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.3 <= 30)
+2025-12-16 08:20:41,440 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.8 <= 30)
+2025-12-16 08:20:41,443 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.4 <= 30)
+2025-12-16 08:20:41,445 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.9 <= 30)
+2025-12-16 08:20:41,447 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.7 <= 30)
+2025-12-16 08:20:41,450 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.6 <= 30)
+2025-12-16 08:20:41,452 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:41,454 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.5 <= 30)
+2025-12-16 08:20:41,457 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.0 <= 30)
+2025-12-16 08:20:41,459 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.6 <= 30)
+2025-12-16 08:20:41,461 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.2 <= 30)
+2025-12-16 08:20:41,464 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.6 <= 30)
+2025-12-16 08:20:41,466 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.1 <= 30)
+2025-12-16 08:20:41,468 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41,471 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.0 <= 30)
+2025-12-16 08:20:41,473 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.3 <= 30)
+2025-12-16 08:20:41,475 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.5 <= 30)
+2025-12-16 08:20:41,478 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.4 <= 30)
+2025-12-16 08:20:41,480 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.0 <= 30)
+2025-12-16 08:20:41,482 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.1 <= 30)
+2025-12-16 08:20:41,485 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41,487 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.8 <= 30)
+2025-12-16 08:20:41,490 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.8 <= 30)
+2025-12-16 08:20:41,492 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.0 <= 30)
+2025-12-16 08:20:41,495 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.8 <= 30)
+2025-12-16 08:20:41,497 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.9 <= 30)
+2025-12-16 08:20:41,499 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.1 <= 30)
+2025-12-16 08:20:41,502 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=10.4 <= 30)
+2025-12-16 08:20:41,504 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=10.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=9.7 <= 30)
+2025-12-16 08:20:41,507 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=9.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.9 <= 30)
+2025-12-16 08:20:41,509 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=11.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.5 <= 30)
+2025-12-16 08:20:41,512 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=12.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.1 <= 30)
+2025-12-16 08:20:41,514 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:41,517 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41,519 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41,522 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41,524 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.9 <= 30)
+2025-12-16 08:20:41,527 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41,529 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.8 <= 30)
+2025-12-16 08:20:41,532 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41,534 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.6 <= 30)
+2025-12-16 08:20:41,537 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:41,539 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.8 <= 30)
+2025-12-16 08:20:41,542 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.9 <= 30)
+2025-12-16 08:20:41,545 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.9 <= 30)
+2025-12-16 08:20:41,547 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.4 <= 30)
+2025-12-16 08:20:41,550 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.9 <= 30)
+2025-12-16 08:20:41,552 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.2 <= 30)
+2025-12-16 08:20:41,555 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.6 <= 30)
+2025-12-16 08:20:41,557 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.4 <= 30)
+2025-12-16 08:20:41,560 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.5 <= 30)
+2025-12-16 08:20:41,563 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.0 <= 30)
+2025-12-16 08:20:41,566 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,569 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,571 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,574 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,577 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,580 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,583 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,586 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,588 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,591 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,594 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,597 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,599 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,602 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,605 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,608 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,610 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,613 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,616 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,619 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.74 < 5.90)
+2025-12-16 08:20:41,622 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.74 < 5.90)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.70 < 5.79)
+2025-12-16 08:20:41,625 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.70 < 5.79)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.87 < 5.88)
+2025-12-16 08:20:41,627 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.87 < 5.88)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=43.6, Touched EMA20, Triggered > 5.87
+2025-12-16 08:20:41,630 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=43.6, Touched EMA20, Triggered > 5.87
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.84 < 5.88)
+2025-12-16 08:20:41,633 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 5.84 < 5.88)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,636 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,639 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,642 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,645 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,648 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,651 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,654 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,657 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,660 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.08 < 6.20)
+2025-12-16 08:20:41,663 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.08 < 6.20)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.11 < 6.20)
+2025-12-16 08:20:41,666 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.11 < 6.20)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=45.2, Touched EMA20, Triggered > 6.19
+2025-12-16 08:20:41,669 - Worker.holy_grail - INFO - ✅ ARTV: HOLY GRAIL SETUP APPROVED - ADX=45.2, Touched EMA20, Triggered > 6.19
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,673 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,676 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,679 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,682 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,685 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,688 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,691 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,694 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.20 < 6.42)
+2025-12-16 08:20:41,697 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.20 < 6.42)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.17 < 6.24)
+2025-12-16 08:20:41,700 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.17 < 6.24)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,703 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,707 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,710 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.17 < 6.20)
+2025-12-16 08:20:41,713 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.17 < 6.20)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.5 <= 30)
+2025-12-16 08:20:41,716 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.1 <= 30)
+2025-12-16 08:20:41,719 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.6 <= 30)
+2025-12-16 08:20:41,722 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.2 <= 30)
+2025-12-16 08:20:41,725 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:41,728 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41,731 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.0 <= 30)
+2025-12-16 08:20:41,734 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41,737 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.4 <= 30)
+2025-12-16 08:20:41,740 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.1 <= 30)
+2025-12-16 08:20:41,743 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.9 <= 30)
+2025-12-16 08:20:41,746 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.8 <= 30)
+2025-12-16 08:20:41,749 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.6 <= 30)
+2025-12-16 08:20:41,752 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:41,755 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.2 <= 30)
+2025-12-16 08:20:41,758 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.2 <= 30)
+2025-12-16 08:20:41,762 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.3 <= 30)
+2025-12-16 08:20:41,765 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.6 <= 30)
+2025-12-16 08:20:41,768 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41,771 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.9 <= 30)
+2025-12-16 08:20:41,774 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.7 <= 30)
+2025-12-16 08:20:41,777 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41,780 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.0 <= 30)
+2025-12-16 08:20:41,784 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.8 <= 30)
+2025-12-16 08:20:41,787 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41,790 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.3 <= 30)
+2025-12-16 08:20:41,793 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.1 <= 30)
+2025-12-16 08:20:41,796 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.6 <= 30)
+2025-12-16 08:20:41,800 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.8 <= 30)
+2025-12-16 08:20:41,803 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.9 <= 30)
+2025-12-16 08:20:41,806 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.9 <= 30)
+2025-12-16 08:20:41,809 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.4 <= 30)
+2025-12-16 08:20:41,813 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.6 <= 30)
+2025-12-16 08:20:41,816 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.9 <= 30)
+2025-12-16 08:20:41,820 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.1 <= 30)
+2025-12-16 08:20:41,823 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=23.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.5 <= 30)
+2025-12-16 08:20:41,826 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.7 <= 30)
+2025-12-16 08:20:41,829 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.9 <= 30)
+2025-12-16 08:20:41,833 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.8 <= 30)
+2025-12-16 08:20:41,849 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.8 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.7 <= 30)
+2025-12-16 08:20:41,853 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.9 <= 30)
+2025-12-16 08:20:41,856 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.0 <= 30)
+2025-12-16 08:20:41,859 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.3 <= 30)
+2025-12-16 08:20:41,863 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.6 <= 30)
+2025-12-16 08:20:41,866 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.6 <= 30)
+2025-12-16 08:20:41,869 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.6 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.1 <= 30)
+2025-12-16 08:20:41,873 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.1 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.3 <= 30)
+2025-12-16 08:20:41,876 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.3 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41,880 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.9 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.5 <= 30)
+2025-12-16 08:20:41,883 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.5 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41,886 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41,890 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,894 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,897 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,900 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,904 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,907 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,911 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,914 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,918 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,921 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,925 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,928 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,932 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,935 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,939 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,942 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,946 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41,949 - Worker.holy_grail - INFO - ⚪ ARTV: No EMA20 retracement detected
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.90 < 7.26)
+2025-12-16 08:20:41,953 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.90 < 7.26)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.88 < 7.26)
+2025-12-16 08:20:41,956 - Worker.holy_grail - INFO - ⚪ ARTV: Waiting for trigger (Price 6.88 < 7.26)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,960 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,963 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,967 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,971 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,974 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,978 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,981 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,985 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41,989 - Worker.holy_grail - INFO - ⚪ ARTV: Wrong direction (+DI < -DI)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:41,992 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.7 <= 30)
+2025-12-16 08:20:41,996 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.7 <= 30)
+2025-12-16 08:20:41 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.2 <= 30)
+2025-12-16 08:20:41,999 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.7 <= 30)
+2025-12-16 08:20:42,003 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.7 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.9 <= 30)
+2025-12-16 08:20:42,007 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.9 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.1 <= 30)
+2025-12-16 08:20:42,010 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.1 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:42,014 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.0 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.0 <= 30)
+2025-12-16 08:20:42,018 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.0 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.7 <= 30)
+2025-12-16 08:20:42,022 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.7 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:42,026 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.6 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.4 <= 30)
+2025-12-16 08:20:42,030 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=26.4 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.2 <= 30)
+2025-12-16 08:20:42,034 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.4 <= 30)
+2025-12-16 08:20:42,037 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.4 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.8 <= 30)
+2025-12-16 08:20:42,041 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=28.8 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:42,045 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:42,048 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:42,052 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.4 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.1 <= 30)
+2025-12-16 08:20:42,056 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=29.1 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.9 <= 30)
+2025-12-16 08:20:42,060 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=27.9 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.9 <= 30)
+2025-12-16 08:20:42,063 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=25.9 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.1 <= 30)
+2025-12-16 08:20:42,067 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=24.1 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.7 <= 30)
+2025-12-16 08:20:42,072 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=22.7 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.5 <= 30)
+2025-12-16 08:20:42,075 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=21.5 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.3 <= 30)
+2025-12-16 08:20:42,079 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=20.3 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.1 <= 30)
+2025-12-16 08:20:42,083 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=19.1 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.7 <= 30)
+2025-12-16 08:20:42,087 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.7 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:42,091 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=18.4 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.4 <= 30)
+2025-12-16 08:20:42,095 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=17.4 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.3 <= 30)
+2025-12-16 08:20:42,099 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=16.3 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42,102 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42,107 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42,110 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=15.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.9 <= 30)
+2025-12-16 08:20:42,114 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.9 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:42,118 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=14.2 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:42,122 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:42,126 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.6 <= 30)
+2025-12-16 08:20:42 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:42,130 - Worker.holy_grail - INFO - ⚪ ARTV: Trend too weak (ADX=13.5 <= 30)
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Event complete: 0 decisions, 0 simulated trades, 1 real trades, 2 discrepancies
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Workers evaluated: 
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO - DEBUG: Active positions before EOD close: 0
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO - ✅ REPLAY COMPLETED in 1.1s
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO - ================================================================================
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Bars processed: 0
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Decisions made: 390
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Entries approved: 0
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Entries rejected: 390
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Exits executed: 0
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Simulated trades: 0
+2025-12-16 08:20:42,138 - replay_testing.core.replay_engine - INFO -    Discrepancies: 2
+
+================================================================================
+📊 REPLAY SESSION SUMMARY
+================================================================================
+Date: 2025-12-15
+Worker: holy_grail
+Events: 1 (one per ticker)
+Symbols: ARTV
+
+Global Statistics:
+  Bars processed: 0
+  Decisions made: 390
+  Entries approved: 0
+  Entries rejected: 390
+  Exits executed: 0
+  Simulated trades: 0
+
+Verification:
+  Total discrepancies: 2
+
+📈 Events Summary:
+  ARTV: 0 decisions, 0 simulated trades, 1 real trades ⚠️ (2 issues)
+
+⚠️  Discrepancies found:
+  - TRADE_COUNT_MISMATCH: ARTV: Replay had 0 trades but real system had 1
+  - MISSING_REPLAY_TRADE: ARTV: Real system entered @ 18:00 but replay did not
+
+Elapsed time: 1.1s
+
+✅ Replay testing completed
+

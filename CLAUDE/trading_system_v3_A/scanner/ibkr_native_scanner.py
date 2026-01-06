@@ -63,7 +63,6 @@ class IBKRNativeScanner:
     
     def __init__(self, ibkr_adapter: Optional[IBKRAdapter] = None):
         self.logger = logging.getLogger(f"{__name__}.IBKRNativeScanner")
-        self.logger.info("🔧 IBKRNativeScanner initializing (PATCH APPLIED)...")
 
         # Use provided adapter or create new one
         self.ibkr = ibkr_adapter
@@ -772,7 +771,33 @@ class IBKRNativeScanner:
 
             # Get 1-minute bars for pattern detection
             result.bars_1min = price_data.get('bars_1min', [])
-            
+
+            # CRITICAL FIX: If no bars available, request historical bars from IBKR
+            # This happens when scanner detects a new symbol for the first time
+            if not result.bars_1min or len(result.bars_1min) == 0:
+                try:
+                    # Request today's 1-min bars from IBKR (up to 390 bars = 6.5 hours of trading)
+                    historical_bars = await self.ibkr_adapter.get_bars(
+                        symbol=result.symbol,
+                        timeframe='1 min',
+                        count=390,  # Full trading day
+                        end_date=None  # Current time
+                    )
+
+                    if historical_bars and len(historical_bars) > 0:
+                        result.bars_1min = historical_bars
+                        self.logger.debug(
+                            f"📊 {result.symbol}: Fetched {len(historical_bars)} historical 1-min bars from IBKR"
+                        )
+                    else:
+                        self.logger.warning(
+                            f"⚠️ {result.symbol}: No historical bars available from IBKR"
+                        )
+                except Exception as e:
+                    self.logger.warning(
+                        f"⚠️ {result.symbol}: Failed to fetch historical bars: {e}"
+                    )
+
             # For avg_volume, use reasonable defaults
             if result.volume > 0:
                 result.avg_volume = max(result.volume // 2, 100_000) 
@@ -988,30 +1013,72 @@ class IBKRNativeScanner:
     def _filter_and_rank_results(self, results: List[IBKRScanResult]) -> List[IBKRScanResult]:
         """Filter and rank results by quality for daily plays"""
         filtered = []
-        
+        rejected_count = {'price': 0, 'movement': 0, 'volume': 0}
+
         for result in results:
+            symbol = result.symbol
+
             # NASDAQ Smallcap specific filters
             # Price range for smallcaps: $1-$10 (typical smallcap range)
             if result.current_price < 1.0 or result.current_price > 10.0:
+                rejected_count['price'] += 1
                 continue
-            
-            # Smallcaps can move with smaller gaps - 3% is significant
-            if abs(result.gap_percentage) < 0.03:  # Less than 3% gap
+
+            # CRITICAL FIX: Detect BOTH gap movers AND intraday movers
+            # Gap movers: Opened significantly above/below previous close
+            # Intraday movers: Moving significantly during the session (like PAVS)
+            gap_pct = abs(result.gap_percentage) if result.gap_percentage else 0.0
+
+            # Calculate intraday move from bars (if available)
+            intraday_move_pct = 0.0
+            if hasattr(result, 'bars_1min') and result.bars_1min and len(result.bars_1min) > 0:
+                # Get first bar (open of day) and last bar (current price)
+                first_bar = result.bars_1min[0]
+                open_price = first_bar.open
+                current_price = result.current_price
+
+                if open_price > 0:
+                    intraday_move_pct = abs((current_price - open_price) / open_price)
+
+            # Accept if EITHER:
+            # 1. Gap >= 3% (traditional gap plays), OR
+            # 2. Intraday move >= 10% (intraday runners like PAVS)
+            has_gap = gap_pct >= 0.03
+            has_intraday_move = intraday_move_pct >= 0.10
+
+            if not (has_gap or has_intraday_move):
+                # Log top 5 rejected by movement for debugging
+                if rejected_count['movement'] < 5:
+                    self.logger.info(f"🔍 {symbol}: Movement rejected - Price ${result.current_price:.2f}, Gap {gap_pct*100:.1f}%, Intraday {intraday_move_pct*100:.1f}%")
+                rejected_count['movement'] += 1
                 continue
-            
+
             # Smallcaps typically have lower volume than large caps
-            if hasattr(result, 'volume') and result.volume > 0 and result.volume < 50_000:  # 50K minimum
+            volume = getattr(result, 'volume', 0)
+            if volume > 0 and volume < 50_000:  # 50K minimum
+                # Log top 5 rejected by volume for debugging
+                if rejected_count['volume'] < 5:
+                    self.logger.info(f"🔍 {symbol}: Volume rejected - Vol {volume:,}, Price ${result.current_price:.2f}")
+                rejected_count['volume'] += 1
                 continue
-            
+
+            # Passed all filters - log it
+            self.logger.info(f"✅ {symbol}: PASSED FILTER - Price ${result.current_price:.2f}, Gap {gap_pct*100:.1f}%, Intraday {intraday_move_pct*100:.1f}%, Vol {volume:,}")
+
             # Calculate quality score
             quality_score = self._calculate_quality_score(result)
             result.quality_score = quality_score
-            
+
             filtered.append(result)
-        
+
+        # Log rejection summary
+        total_rejected = sum(rejected_count.values())
+        if total_rejected > 0:
+            self.logger.info(f"📊 Filter summary: {total_rejected} rejected - Price: {rejected_count['price']}, Movement: {rejected_count['movement']}, Volume: {rejected_count['volume']}")
+
         # Sort by quality score
         filtered.sort(key=lambda r: r.quality_score, reverse=True)
-        
+
         return filtered
     
     def _calculate_quality_score(self, result: IBKRScanResult) -> float:

@@ -1,0 +1,57 @@
+====================================================================================================
+📊 ANÁLISIS COMPREHENSIVO DE WORKERS - market_data.db
+====================================================================================================
+Generado: 2025-11-02 11:21:17
+Base de datos: ./market_data.db
+
+📈 RESUMEN EJECUTIVO
+--------------------------------------------------
+Total de ejecuciones: 6
+Ejecuciones exitosas: 6
+Ejecuciones fallidas: 0
+
+👥 ANÁLISIS POR WORKER
+--------------------------------------------------
+
+🔹 MACDV
+   Fechas analizadas: 3
+   Trades simulados totales: 362
+   Trades reales totales: 3
+   Decisiones tomadas: 1245
+   Discrepancias totales: 401
+   Trades promedio por fecha: 120.7
+   Ratio de selectividad: 0.291
+   📈 Muy agresivo - genera muchas entradas
+
+🔹 DAILY_PLAYS
+   Fechas analizadas: 3
+   Trades simulados totales: 361
+   Trades reales totales: 3
+   Decisiones tomadas: 1140
+   Discrepancias totales: 401
+   Trades promedio por fecha: 120.3
+   Ratio de selectividad: 0.317
+   📈 Muy agresivo - genera muchas entradas
+
+🎯 PATRONES IDENTIFICADOS
+--------------------------------------------------
+🐂 Worker más agresivo: daily_plays (ratio: 0.317)
+🛡️ Worker más selectivo: macdv (ratio: 0.291)
+📊 Worker con más actividad: macdv (362 trades)
+
+💡 RECOMENDACIONES DE MEJORA
+--------------------------------------------------
+
+🔧 DAILY_PLAYS:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+🔧 MACDV:
+   ❌ Demasiado agresivo - Aumentar filtros de entrada
+   💡 Recomendación: Implementar validación cruzada de señales
+   ⚠️ Genera muchas entradas falsas - Mejorar calidad de señales
+
+====================================================================================================
+Fin del análisis comprehensivo
+====================================================================================================

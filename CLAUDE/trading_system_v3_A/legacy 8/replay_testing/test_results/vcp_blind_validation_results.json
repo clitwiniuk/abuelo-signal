@@ -1,0 +1,37 @@
+[
+    {
+        "scenario_id": "VCP_BLIND_LOW_VOLUME",
+        "result": "PASS",
+        "reason": "Volume 0.50x < min 0.70x"
+    },
+    {
+        "scenario_id": "VCP_BLIND_FALSE_BREAKOUT",
+        "result": "PASS",
+        "reason": "Volume 0.50x < min 0.70x"
+    },
+    {
+        "scenario_id": "VCP_BLIND_INCOMPLETE_CONTRACTIONS",
+        "result": "PASS",
+        "reason": "Contractions 1 < min 2"
+    },
+    {
+        "scenario_id": "VCP_BLIND_INCREASING_CONTRACTIONS",
+        "result": "PASS",
+        "reason": "Contractions not decreasing (invalid VCP pattern)"
+    },
+    {
+        "scenario_id": "VCP_BLIND_PRICE_TOO_LOW",
+        "result": "PASS",
+        "reason": "Price $0.40 < min $0.50"
+    },
+    {
+        "scenario_id": "VCP_BLIND_PRICE_TOO_HIGH",
+        "result": "PASS",
+        "reason": "Price $30.00 > max $25.00"
+    },
+    {
+        "scenario_id": "VCP_BLIND_LOW_QUALITY",
+        "result": "PASS",
+        "reason": "Quality 25.0 < min 40.0"
+    }
+]

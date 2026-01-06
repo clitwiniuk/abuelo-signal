@@ -1,0 +1,102 @@
+{
+  "test_date": "2025-11-23T08:49:27.608321",
+  "total_scenarios": 10,
+  "valid_tests": 10,
+  "errors": 0,
+  "entries_found": 2,
+  "rejections": 8,
+  "success_rate": 100.0,
+  "entry_rate": 20.0,
+  "results": [
+    {
+      "scenario_id": "BLIND_SEED_2025-10-24",
+      "symbol": "SEED",
+      "date": "2025-10-24",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 390
+    },
+    {
+      "scenario_id": "BLIND_SGBX_2025-10-24",
+      "symbol": "SGBX",
+      "date": "2025-10-24",
+      "result": "ENTRY",
+      "entries": 1,
+      "bars_processed": 0,
+      "decisions": 305
+    },
+    {
+      "scenario_id": "BLIND_ASST_2025-10-29",
+      "symbol": "ASST",
+      "date": "2025-10-29",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 378
+    },
+    {
+      "scenario_id": "BLIND_AKBA_2025-10-31",
+      "symbol": "AKBA",
+      "date": "2025-10-31",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 357
+    },
+    {
+      "scenario_id": "BLIND_ERNA_2025-10-31",
+      "symbol": "ERNA",
+      "date": "2025-10-31",
+      "result": "ENTRY",
+      "entries": 1,
+      "bars_processed": 0,
+      "decisions": 241
+    },
+    {
+      "scenario_id": "BLIND_PLTZ_2025-11-05",
+      "symbol": "PLTZ",
+      "date": "2025-11-05",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 3
+    },
+    {
+      "scenario_id": "BLIND_CMBM_2025-11-06",
+      "symbol": "CMBM",
+      "date": "2025-11-06",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 328
+    },
+    {
+      "scenario_id": "BLIND_STGW_2025-11-07",
+      "symbol": "STGW",
+      "date": "2025-11-07",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 1
+    },
+    {
+      "scenario_id": "BLIND_RUM_2025-11-11",
+      "symbol": "RUM",
+      "date": "2025-11-11",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 377
+    },
+    {
+      "scenario_id": "BLIND_TSLS_2025-10-24",
+      "symbol": "TSLS",
+      "date": "2025-10-24",
+      "result": "NO_ENTRY",
+      "entries": 0,
+      "bars_processed": 0,
+      "decisions": 390
+    }
+  ]
+}

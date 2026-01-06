@@ -1,0 +1,16 @@
+ADVERTENCIA: No se pudo importar la estrategia desde macdv_strategy.py: No module named 'core.dynamic_position_sizing'
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'AscendingTriangleStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'DailyPlaysStrategy', 'ORBStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'SimpleStrategyEngine', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+🚀 Starting Regression Suite: 6 scenarios
+============================================================
+
+▶️ Running Scenario: VCP_EXIT_DOCUMENTATION
+Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 206, in <module>
+    main()
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 188, in main
+    if run_scenario(scenario, market_db_path, args.trading_db):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 21, in run_scenario
+    print(f"   Symbol: {scenario['symbol']}")
+                        ~~~~~~~~^^^^^^^^^^
+KeyError: 'symbol'

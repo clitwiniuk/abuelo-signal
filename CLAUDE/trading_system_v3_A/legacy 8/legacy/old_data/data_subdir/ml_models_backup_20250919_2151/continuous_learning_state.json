@@ -1,0 +1,16 @@
+{
+  "last_retrain_time": "2025-09-07T16:08:37.459405",
+  "feedback_count": 96,
+  "baseline_performance": {},
+  "current_performance": {},
+  "retrain_results": {
+    "gap_go": 0.9411764705882353,
+    "macdv_smallcaps": 1.0,
+    "vwap_smallcaps": 0.975,
+    "catalyst_momentum": 0.98,
+    "orb": 0.9,
+    "explosive_volume": 0.8888888888888888,
+    "eod_momentum": 0.85
+  },
+  "training_completed": true
+}

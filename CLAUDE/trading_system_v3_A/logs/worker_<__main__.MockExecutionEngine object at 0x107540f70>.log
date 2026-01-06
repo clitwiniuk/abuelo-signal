@@ -1,0 +1,4 @@
+2026-01-06 11:31:36 - Worker.<__main__.MockExecutionEngine object at 0x107540f70> - INFO - Worker logging initialized - <__main__.MockExecutionEngine object at 0x107540f70> -> logs/worker_<__main__.MockExecutionEngine object at 0x107540f70>.log
+2026-01-06 11:31:36 - Worker.<__main__.MockExecutionEngine object at 0x107540f70> - INFO - 🔧 Worker <__main__.MockExecutionEngine object at 0x107540f70> initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-06 11:31:36 - Worker.<__main__.MockExecutionEngine object at 0x107540f70> - INFO - 🚀 Initialized SmallcapVwapRunner: Q>=65.0, Stop=5.0%, Trail=3.0%
+2026-01-06 11:31:36 - Worker.<__main__.MockExecutionEngine object at 0x107540f70> - INFO - Loaded 1 bars for ABTC

@@ -1,0 +1,304 @@
+2025-09-26 06:11:17 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:11:17 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:11:17 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:11:17 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:11:17 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:11:17 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:11:17 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:11:20 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:13:11 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:13:11 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:13:11 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:13:11 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:13:11 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:13:11 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:13:11 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:13:14 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:36:53 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:36:53 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:36:53 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:36:54 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:36:54 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:36:54 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:36:54 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:36:57 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:45:24 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:45:24 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:45:24 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:45:25 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:45:25 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:45:25 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:45:25 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:45:28 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:46:37 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:46:37 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:46:37 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:46:38 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:46:38 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:46:38 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:46:38 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:46:41 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:48:28 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:48:28 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:48:28 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:48:28 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:48:28 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:48:28 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:48:28 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:48:31 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:54:21 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:54:21 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:54:21 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:54:22 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:54:22 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:54:22 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:54:22 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:54:25 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:57:22 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:57:22 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:57:22 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:57:23 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:57:23 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:57:23 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:57:23 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:57:26 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 06:59:37 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 06:59:37 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 06:59:37 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 06:59:37 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 06:59:37 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 06:59:37 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 06:59:37 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 06:59:40 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:15:50 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:15:50 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:15:50 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:15:51 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:15:51 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:15:51 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:15:51 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:15:54 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:20:53 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:20:53 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:20:53 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:20:53 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:20:53 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:20:53 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:20:53 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:20:56 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:38:18 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:38:18 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:38:18 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:38:18 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:38:18 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:38:18 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:38:18 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:38:21 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:39:55 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:39:55 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:39:55 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:39:55 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:39:55 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:39:55 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:39:55 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:39:58 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:42:59 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:42:59 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:42:59 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:42:59 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:42:59 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:42:59 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:42:59 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:43:02 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 07:43:44 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 07:43:44 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 07:43:44 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 07:43:45 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 07:43:45 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 07:43:45 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 07:43:45 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 07:43:48 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 16:55:09 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 16:55:09 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 16:55:09 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 16:55:10 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 16:55:10 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 16:55:10 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 16:55:10 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 16:55:18 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 18:00:30 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 18:00:30 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 18:00:30 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 18:00:30 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 18:00:30 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 18:00:30 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 18:00:30 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 18:00:38 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 18:18:48 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 18:18:48 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 18:18:48 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 18:18:49 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 18:18:49 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 18:18:49 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 18:18:49 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 18:18:57 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 18:26:47 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 18:26:47 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 18:26:47 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 18:26:48 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 18:26:48 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 18:26:48 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 18:26:48 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 18:26:56 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 20:05:25 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 20:05:25 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 20:05:25 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 20:05:26 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 20:05:26 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 20:05:26 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 20:05:26 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 20:05:34 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 20:29:26 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 20:29:26 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 20:29:26 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 20:29:27 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 20:29:27 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 20:29:27 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 20:29:27 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 20:29:35 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 20:54:01 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 20:54:01 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 20:54:01 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 20:54:01 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 20:54:01 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 20:54:01 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 20:54:01 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 20:54:09 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 20:59:00 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 20:59:00 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 20:59:00 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 20:59:01 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 20:59:01 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 20:59:01 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 20:59:01 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 20:59:09 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 21:06:04 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 21:06:04 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 21:06:04 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 21:06:04 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 21:06:04 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 21:06:04 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 21:06:04 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 21:06:12 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 21:38:07 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 21:38:07 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 21:38:07 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 21:38:07 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 21:38:07 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 21:38:07 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 21:38:07 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 21:38:15 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 21:54:08 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 21:54:09 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 21:54:09 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 21:54:09 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 21:54:09 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 21:54:09 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 21:54:09 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 21:54:17 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 22:32:33 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 22:32:33 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 22:32:33 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 22:32:33 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 22:32:33 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 22:32:33 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 22:32:33 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 22:32:41 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 22:54:41 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 22:54:41 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 22:54:41 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 22:54:41 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 22:54:41 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 22:54:41 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 22:54:41 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 22:54:49 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 23:09:54 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 23:09:54 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 23:09:54 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 23:09:55 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 23:09:55 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 23:09:55 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 23:09:55 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 23:10:03 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-26 23:30:42 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-26 23:30:42 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-26 23:30:42 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-26 23:30:43 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-26 23:30:43 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-26 23:30:43 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-26 23:30:43 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-26 23:30:51 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-27 06:34:59 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-27 06:34:59 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-27 06:34:59 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-27 06:35:00 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-27 06:35:00 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-27 06:35:00 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-27 06:35:00 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-27 06:35:08 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-27 07:00:57 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-27 07:00:57 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-27 07:00:57 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-27 07:00:58 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-27 07:00:58 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-27 07:00:58 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-27 07:00:58 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-27 07:01:06 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-27 21:58:30 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-27 21:58:30 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-27 21:58:30 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-27 21:58:31 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-27 21:58:31 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-27 21:58:31 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-27 21:58:31 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-27 21:58:39 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-27 22:30:59 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-27 22:30:59 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-27 22:30:59 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-27 22:31:00 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-27 22:31:00 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-27 22:31:00 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-27 22:31:00 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-27 22:31:08 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-28 06:37:46 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-28 06:37:46 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-28 06:37:46 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-28 06:37:46 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-28 06:37:46 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-28 06:37:46 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-28 06:37:46 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-28 06:37:54 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-28 08:29:46 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-28 08:29:46 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-28 08:29:46 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-28 08:29:46 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-28 08:29:46 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-28 08:29:46 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-28 08:29:46 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-28 08:29:54 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-28 08:53:20 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-28 08:53:20 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-28 08:53:20 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-28 08:53:21 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-28 08:53:21 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-28 08:53:21 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-28 08:53:21 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-28 08:53:29 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...
+2025-09-28 10:21:25 - root - INFO - Logging initialized - Level: INFO, File: logs/launcher.log (rotating, max 100MB, 3 backups)
+2025-09-28 10:21:25 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-09-28 10:21:25 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-09-28 10:21:25 - SistemaIIILauncher - INFO - 🚀 Sistema III Launcher initialized
+2025-09-28 10:21:25 - SistemaIIILauncher - INFO - 🚀 Starting Sistema III - Full Automation Mode
+2025-09-28 10:21:25 - SistemaIIILauncher - INFO - 🔍 Starting scanner process...
+2025-09-28 10:21:25 - SistemaIIILauncher - INFO - ✅ Scanner process started
+2025-09-28 10:21:33 - SistemaIIILauncher - INFO - 🎯 Starting coordinator...

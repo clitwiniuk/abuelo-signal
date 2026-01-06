@@ -1,0 +1,1078 @@
+import os
+import time
+import pickle
+import logging
+import random
+from datetime import datetime, timedelta
+from typing import List, Dict, Tuple, Optional, Union
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dotenv import load_dotenv
+
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
+import warnings
+
+# Importar utilidades de Polygon
+from polygon_utils import fetch_ohlcv_polygon, batch_download_polygon, filter_valid_polygon_tickers
+
+# Cargar variables de entorno desde .env
+load_dotenv()
+
+# Configuración de logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('friday_effect.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger('FridayEffect')
+warnings.filterwarnings('ignore')
+
+# Configuración
+CACHE_DIR = 'data_cache'
+MAX_WORKERS = 1  # Usar 1 worker para respetar el límite de Polygon.io
+MAX_RETRIES = 3  # Reducir reintentos para fallar más rápido
+BASE_DELAY = 13.0  # 60s/5 = 12s por petición + 1s de margen
+JITTER = 2.0  # Variabilidad para evitar sincronización
+MAX_REQUESTS_PER_MINUTE = 5  # Límite de la API gratuita
+BATCH_SIZE = 5  # Máximo de tickers por minuto
+BATCH_DELAY = 65  # 60 segundos + margen de seguridad
+
+# Cargar API key de Polygon.io desde variables de entorno
+POLYGON_API_KEY = os.getenv('POLYGON_API_KEY')
+
+if not POLYGON_API_KEY:
+    raise ValueError("No se encontró la API key de Polygon.io. Por favor, asegúrate de tener un archivo .env con POLYGON_API_KEY=tu_api_key")
+
+class DataFetcher:
+    """Maneja la descarga y caché de datos financieros usando Polygon.io"""
+    
+    def __init__(self, cache_dir: str = CACHE_DIR, api_key: str = None):
+        self.cache_dir = cache_dir
+        os.makedirs(self.cache_dir, exist_ok=True)
+        self.last_request_time = 0
+        self.api_key = api_key or POLYGON_API_KEY
+        
+        if not self.api_key:
+            raise ValueError("No se proporcionó una API key de Polygon.io. Asegúrate de configurar POLYGON_API_KEY en tu archivo .env")
+    
+    def _throttle(self):
+        """
+        Control de tasa estricto para respetar el límite de 5 peticiones por minuto.
+        
+        La API gratuita de Polygon solo permite 5 peticiones por minuto.
+        Este método asegura que nunca se exceda este límite.
+        """
+        now = time.time()
+        
+        # Si es la primera petición, inicializar el contador
+        if not hasattr(self, '_request_times'):
+            self._request_times = []
+        
+        # Filtrar peticiones más antiguas a 1 minuto
+        self._request_times = [t for t in self._request_times if now - t < 60]
+        
+        # Si ya hicimos 5 peticiones en el último minuto, esperar
+        if len(self._request_times) >= MAX_REQUESTS_PER_MINUTE:
+            oldest_request = self._request_times[0]
+            time_to_wait = 60 - (now - oldest_request)
+            if time_to_wait > 0:
+                logger.warning(f"Límite de tasa alcanzado. Esperando {time_to_wait:.1f} segundos...")
+                time.sleep(time_to_wait + 1)  # +1 segundo de margen
+                # Actualizar el tiempo después de esperar
+                now = time.time()
+                self._request_times = [t for t in self._request_times if now - t < 60]
+        
+        # Calcular tiempo de espera base entre peticiones
+        base_delay = max(1.0, (60 / MAX_REQUESTS_PER_MINUTE) - 1)  # 11s para 5 peticiones/min
+        wait_time = base_delay * (0.8 + 0.4 * random.random())  # Jitter entre 0.8x y 1.2x
+        
+        # Asegurar tiempo mínimo entre peticiones
+        if hasattr(self, '_last_request_time'):
+            elapsed = now - self._last_request_time
+            if elapsed < wait_time:
+                time.sleep(wait_time - elapsed)
+        
+        # Registrar la petición actual
+        self._last_request_time = time.time()
+        self._request_times.append(self._last_request_time)
+        
+        # Pequeña pausa aleatoria adicional
+        time.sleep(random.uniform(0.2, 0.5))
+    
+    def _get_cache_path(self, ticker: str, start_date: str, end_date: str) -> str:
+        """Genera la ruta del archivo de caché"""
+        safe_ticker = "".join(c if c.isalnum() else "_" for c in ticker)
+        cache_name = f"{safe_ticker}_{start_date}_{end_date}.pkl".replace(" ", "_")
+        return os.path.join(self.cache_dir, cache_name)
+        
+    def _handle_rate_limit(self, attempt: int) -> bool:
+        """
+        Maneja los errores de límite de tasa con retroceso exponencial.
+        
+        Args:
+            attempt: Número de intento actual
+            
+        Returns:
+            bool: True si se debe reintentar, False si se superó el número máximo de reintentos
+        """
+        if attempt >= MAX_RETRIES - 1:
+            logger.error(f"Se superó el número máximo de reintentos ({MAX_RETRIES})")
+            return False
+            
+        # Espera exponencial con jitter: 2^attempt * (0.5 + random() * 0.5) segundos
+        wait_time = (2 ** attempt) * (0.5 + random.random() * 0.5)
+        logger.warning(f"Esperando {wait_time:.2f} segundos antes de reintentar...")
+        time.sleep(wait_time)
+        return True
+    
+    def _calculate_technical_indicators(self, data: pd.DataFrame) -> pd.DataFrame:
+        """Calcula indicadores técnicos para el DataFrame de precios"""
+        try:
+            # Asegurarse de que las columnas estén en minúsculas
+            data.columns = data.columns.str.lower()
+            
+            # Verificar que tenemos las columnas necesarias
+            required_columns = ['open', 'high', 'low', 'close', 'volume']
+            if not all(col in data.columns for col in required_columns):
+                logger.warning(f"Faltan columnas requeridas en los datos: {required_columns}")
+                return data
+            
+            # RSI (Relative Strength Index)
+            delta = data['close'].diff()
+            gain = (delta.where(delta > 0, 0)).rolling(window=14, min_periods=1).mean()
+            loss = (-delta.where(delta < 0, 0)).rolling(window=14, min_periods=1).mean()
+            rs = gain / loss.replace(0, 1e-10)  # Evitar división por cero
+            data['rsi'] = 100 - (100 / (1 + rs))
+            
+            # Medias móviles
+            data['sma_50'] = data['close'].rolling(window=50, min_periods=1).mean()
+            data['sma_200'] = data['close'].rolling(window=200, min_periods=1).mean()
+            
+            # Bandas de Bollinger
+            data['bb_upper'], data['bb_middle'], data['bb_lower'] = self._bollinger_bands(data['close'])
+            
+            # MACD
+            exp1 = data['close'].ewm(span=12, adjust=False, min_periods=1).mean()
+            exp2 = data['close'].ewm(span=26, adjust=False, min_periods=1).mean()
+            data['macd'] = exp1 - exp2
+            data['signal_line'] = data['macd'].ewm(span=9, adjust=False, min_periods=1).mean()
+            
+            # ATR (Average True Range)
+            high_low = data['high'] - data['low']
+            high_close = (data['high'] - data['close'].shift()).abs()
+            low_close = (data['low'] - data['close'].shift()).abs()
+            ranges = pd.concat([high_low, high_close, low_close], axis=1)
+            true_range = ranges.max(axis=1)
+            data['atr'] = true_range.rolling(window=14, min_periods=1).mean()
+            
+            # Volumen promedio
+            data['volume_ma'] = data['volume'].rolling(window=20, min_periods=1).mean()
+            
+            return data
+            
+        except Exception as e:
+            logger.error(f"Error calculando indicadores técnicos: {str(e)}")
+            return data
+    
+    def _bollinger_bands(self, prices: pd.Series, window: int = 20, num_std: int = 2) -> tuple:
+        """Calcula las bandas de Bollinger"""
+        try:
+            rolling_mean = prices.rolling(window=window, min_periods=1).mean()
+            rolling_std = prices.rolling(window=window, min_periods=1).std()
+            upper_band = rolling_mean + (rolling_std * num_std)
+            lower_band = rolling_mean - (rolling_std * num_std)
+            return upper_band, rolling_mean, lower_band
+        except Exception as e:
+            logger.error(f"Error calculando Bandas de Bollinger: {str(e)}")
+            return pd.Series(), pd.Series(), pd.Series()
+    
+    def _handle_rate_limit(self, attempt: int) -> bool:
+        """Manejar el rate limit con backoff exponencial"""
+        if attempt >= MAX_RETRIES:
+            return False
+            
+        # Backoff exponencial con jitter
+        wait_time = min(BASE_DELAY * (2 ** attempt), 60)  # Máximo 1 minuto
+        wait_time = wait_time * (0.8 + 0.4 * random.random())  # Jitter entre 0.8x y 1.2x
+        
+        logger.warning(f"Rate limit alcanzado. Reintentando en {wait_time:.1f} segundos... (Intento {attempt + 1}/{MAX_RETRIES})")
+        time.sleep(wait_time)
+        
+        # Pequeña pausa aleatoria adicional para evitar patrones predecibles
+        time.sleep(random.uniform(0.1, 0.5))
+        return True
+        
+    def get_historical_data(self, ticker: str, start_date: str, end_date: str) -> Optional[pd.DataFrame]:
+        """
+        Obtiene datos históricos de Polygon.io con caché y manejo mejorado de errores.
+        
+        Args:
+            ticker: Símbolo del ticker a consultar
+            start_date: Fecha de inicio en formato 'YYYY-MM-DD'
+            end_date: Fecha de fin en formato 'YYYY-MM-DD'
+            
+        Returns:
+            DataFrame con los datos históricos o None si hay un error
+        """
+        cache_file = self._get_cache_path(ticker, start_date, end_date)
+        
+        # Intentar cargar de caché primero
+        if os.path.exists(cache_file):
+            try:
+                with open(cache_file, 'rb') as f:
+                    logger.info(f"Cargando datos de {ticker} desde caché")
+                    return pickle.load(f)
+            except Exception as e:
+                logger.warning(f"Error cargando caché para {ticker}: {e}")
+        
+        # Si no está en caché, descargar
+        attempt = 0
+        while attempt < MAX_RETRIES:
+            try:
+                # Aplicar control de tasa antes de cada petición
+                self._throttle()
+                
+                logger.info(f"Descargando datos para {ticker} (intento {attempt + 1}/{MAX_RETRIES})")
+                
+                # Calcular días para la descarga
+                days = (pd.to_datetime(end_date) - pd.to_datetime(start_date)).days
+                days = max(1, days)  # Mínimo 1 día
+                
+                # Usar la función mejorada de polygon_utils con parámetros más conservadores
+                df = fetch_ohlcv_polygon(
+                    ticker=ticker,
+                    days=days,
+                    api_key=self.api_key,
+                    max_retries=1,  # Reducir reintentos ya que ya tenemos manejo de reintentos aquí
+                    retry_delay=5,   # Reducir tiempo de espera entre reintentos
+                    api_delay=1.5    # Mantener delay entre peticiones
+                )
+                
+                if df is None or df.empty:
+                    logger.warning(f"Datos vacíos para {ticker}")
+                    return None
+                
+                # Asegurarse de que las columnas tengan los nombres correctos
+                if 'timestamp' in df.columns:
+                    df = df.rename(columns={'timestamp': 'date'})
+                    df.set_index('date', inplace=True)
+                
+                # Filtrar por rango de fechas solicitado
+                df = df.loc[start_date:end_date]
+                
+                if df.empty:
+                    logger.warning(f"No hay datos en el rango de fechas para {ticker}")
+                    return None
+                
+                # Calcular indicadores técnicos
+                df = self._calculate_technical_indicators(df)
+                
+                # Añadir columnas adicionales para el análisis
+                if not df.empty:
+                    df['day_of_week'] = df.index.day_name()
+                    df['month'] = df.index.month
+                    df['year'] = df.index.year
+                    
+                    # Asegurarse de que las columnas de volumen estén en minúsculas
+                    if 'volume' in df.columns:
+                        df['volume_ma_20'] = df['volume'].rolling(window=20, min_periods=1).mean()
+                    
+                    # Añadir medias móviles adicionales
+                    df['sma_5'] = df['close'].rolling(window=5, min_periods=1).mean()
+                    df['sma_20'] = df['close'].rolling(window=20, min_periods=1).mean()
+                
+                # Guardar en caché
+                try:
+                    with open(cache_file, 'wb') as f:
+                        pickle.dump(df, f, protocol=pickle.HIGHEST_PROTOCOL)
+                except Exception as e:
+                    logger.error(f"Error guardando en caché {ticker}: {e}")
+                
+                return df
+                
+            except Exception as e:
+                logger.error(f"Error en intento {attempt + 1} para {ticker}: {str(e)}")
+                
+                # Manejar específicamente el error 429 (demasiadas peticiones)
+                if "429" in str(e):
+                    logger.error("Límite de tasa de la API alcanzado. Esperando 60 segundos...")
+                    time.sleep(60)  # Esperar 60 segundos antes de reintentar
+                
+                if not self._handle_rate_limit(attempt):
+                    return None
+                    
+                attempt += 1
+        
+        logger.error(f"No se pudieron obtener datos para {ticker} después de {MAX_RETRIES} intentos")
+        return None
+        
+    def get_multiple_historical_data(self, tickers: List[str], start_date: str, end_date: str) -> Dict[str, pd.DataFrame]:
+        """
+        Obtiene datos históricos para múltiples tickers respetando el límite de la API.
+        
+        La API gratuita de Polygon solo permite 5 peticiones por minuto.
+        Este método procesa los tickers en lotes de 5 con pausas de 1 minuto entre lotes.
+        
+        Args:
+            tickers: Lista de símbolos de tickers
+            start_date: Fecha de inicio en formato 'YYYY-MM-DD'
+            end_date: Fecha de fin en formato 'YYYY-MM-DD'
+            
+        Returns:
+            Diccionario con los DataFrames de datos históricos por ticker
+        """
+        results = {}
+        total_tickers = len(tickers)
+        processed = 0
+        
+        # Procesar en lotes de 5 tickers (máximo permitido por minuto)
+        for i in range(0, total_tickers, BATCH_SIZE):
+            batch = tickers[i:i + BATCH_SIZE]
+            batch_num = (i // BATCH_SIZE) + 1
+            total_batches = (total_tickers + BATCH_SIZE - 1) // BATCH_SIZE
+            
+            logger.info(f"\n{'='*50}")
+            logger.info(f"Procesando lote {batch_num}/{total_batches} - {len(batch)} tickers")
+            logger.info(f"Tickers: {', '.join(batch)}")
+            
+            # Procesar tickers en serie para asegurar el límite de tasa
+            for ticker in batch:
+                try:
+                    # El throttling se maneja internamente en get_historical_data
+                    data = self.get_historical_data(ticker, start_date, end_date)
+                    
+                    if data is not None and not data.empty:
+                        # Guardar en caché
+                        cache_file = self._get_cache_path(ticker, start_date, end_date)
+                        try:
+                            os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+                            with open(cache_file, 'wb') as f:
+                                pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
+                            results[ticker] = data
+                            logger.info(f"✓ Datos obtenidos para {ticker}: {len(data)} registros")
+                        except Exception as e:
+                            logger.warning(f"⚠️ No se pudo guardar en caché {ticker}: {e}")
+                            results[ticker] = data  # Añadir a resultados aunque falle el caché
+                    else:
+                        logger.warning(f"⚠️ No se obtuvieron datos para {ticker}")
+                except Exception as e:
+                    logger.error(f"❌ Error procesando {ticker}: {str(e)}")
+                
+                processed += 1
+                logger.info(f"Progreso: {processed}/{total_tickers} tickers procesados ({processed/total_tickers*100:.1f}%)")
+            
+            # Pausa entre lotes (excepto después del último lote)
+            if i + BATCH_SIZE < total_tickers:
+                logger.info(f"\nEsperando {BATCH_DELAY} segundos antes del próximo lote...")
+                # Mostrar cuenta regresiva
+                for remaining in range(BATCH_DELAY, 0, -5):
+                    if remaining % 15 == 0 or remaining <= 10:
+                        logger.info(f"Tiempo restante: {remaining} segundos...")
+                    time.sleep(min(5, remaining))
+                logger.info("Continuando con el siguiente lote...")
+        
+        logger.info(f"\n{'='*50}")
+        logger.info(f"Procesamiento completado. Se obtuvieron datos para {len(results)}/{total_tickers} tickers")
+        
+        # Mostrar resumen
+        if results:
+            avg_data_points = sum(len(df) for df in results.values()) / len(results)
+            logger.info(f"Promedio de datos por ticker: {avg_data_points:.1f} registros")
+        
+        return results
+
+class FridayEffectBacktest:
+    def __init__(self, 
+                 start_date: str = "2022-01-01",
+                 end_date: str = "2024-12-31",
+                 initial_capital: float = 100000,
+                 position_size: float = 0.05,  # 5% por posición
+                 max_positions: int = 10,
+                 max_workers: int = MAX_WORKERS):
+        
+        self.start_date = start_date
+        self.end_date = end_date
+        self.initial_capital = initial_capital
+        self.position_size = position_size
+        self.max_positions = max_positions
+        self.max_workers = max_workers
+        
+        # Inicializar el gestor de datos
+        self.data_fetcher = DataFetcher()
+        
+        # Universo de small caps para backtest
+        self.test_universe = [
+            'ROKU', 'PINS', 'DKNG', 'PLTR', 'NET', 'CRWD', 'DOCU',
+            'CVNA', 'DASH', 'RBLX', 'U', 'OPEN', 'HOOD', 'SQ', 'SHOP'
+        ]
+        
+        self.trades = []
+        self.portfolio_values = []
+        self.results = {}
+        self.data_cache = {}
+    
+    def load_all_data(self, tickers: List[str] = None) -> Dict[str, pd.DataFrame]:
+        """
+        Carga datos para múltiples tickers en lotes de 5 por minuto para respetar
+        el límite de la API de Polygon (5 peticiones por minuto).
+        """
+        if tickers is None:
+            tickers = self.test_universe
+            
+        logger.info(f"Cargando datos para {len(tickers)} tickers en lotes de 5 por minuto...")
+        
+        # Procesar en lotes de 5 tickers
+        batch_size = 5
+        total_batches = (len(tickers) + batch_size - 1) // batch_size
+        
+        for batch_num in range(total_batches):
+            start_idx = batch_num * batch_size
+            end_idx = min(start_idx + batch_size, len(tickers))
+            batch = tickers[start_idx:end_idx]
+            
+            logger.info(f"Procesando lote {batch_num + 1}/{total_batches}: {', '.join(batch)}")
+            
+            # Procesar el lote actual en paralelo
+            with ThreadPoolExecutor(max_workers=min(len(batch), self.max_workers)) as executor:
+                future_to_ticker = {
+                    executor.submit(self._load_single_ticker_data, ticker): ticker 
+                    for ticker in batch
+                }
+                
+                for future in as_completed(future_to_ticker):
+                    ticker = future_to_ticker[future]
+                    try:
+                        data = future.result()
+                        if data is not None:
+                            self.data_cache[ticker] = data
+                    except Exception as e:
+                        logger.error(f"Error procesando {ticker}: {e}")
+            
+            # Si no es el último lote, esperar 65 segundos antes del siguiente lote
+            if batch_num < total_batches - 1:
+                logger.info("Esperando 65 segundos antes del siguiente lote para respetar el límite de la API...")
+                time.sleep(65)  # 60 segundos + margen de seguridad
+        
+        logger.info(f"Datos cargados para {len(self.data_cache)}/{len(tickers)} tickers")
+        return self.data_cache
+    
+    def _load_single_ticker_data(self, ticker: str) -> Optional[pd.DataFrame]:
+        """Carga datos para un solo ticker con manejo de errores"""
+        try:
+            data = self.data_fetcher.get_historical_data(
+                ticker, 
+                self.start_date, 
+                self.end_date
+            )
+            
+            if data is None or data.empty:
+                logger.warning(f"No se encontraron datos para {ticker}")
+                return None
+                
+            return data
+            
+        except Exception as e:
+            logger.error(f"Error al cargar datos para {ticker}: {e}")
+            return None
+        except Exception as e:
+            print(f"Error getting data for {symbol}: {e}")
+            return None
+    
+    def calculate_rsi(self, prices: pd.Series, period: int = 14) -> pd.Series:
+        """Calcular RSI"""
+        delta = prices.diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+        rs = gain / loss
+        rsi = 100 - (100 / (1 + rs))
+        return rsi
+    
+    def calculate_atr(self, data: pd.DataFrame, period: int = 14) -> pd.Series:
+        """Calcular Average True Range"""
+        high_low = data['High'] - data['Low']
+        high_close = abs(data['High'] - data['Close'].shift(1))
+        low_close = abs(data['Low'] - data['Close'].shift(1))
+        true_range = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
+        atr = true_range.rolling(window=period).mean()
+        return atr
+    
+    def identify_friday_signals(self, data: pd.DataFrame, symbol: str) -> List[Dict]:
+        """Identificar señales de Friday Effect históricamente"""
+        signals = []
+        
+        # Asegurarse de que tenemos la columna DayOfWeek
+        if 'DayOfWeek' not in data.columns:
+            data['DayOfWeek'] = data.index.day_name()
+        
+        # Iterar solo por viernes
+        fridays = data[data['DayOfWeek'] == 'Friday'].copy()
+        
+        for date, row in fridays.iterrows():
+            try:
+                # Obtener datos hasta esa fecha
+                historical_data = data[data.index <= date].copy()
+                
+                if len(historical_data) < 30:  # Necesitamos suficiente historia
+                    continue
+                
+                current_price = row['Close']
+                current_rsi = row.get('RSI')
+                current_atr = row.get('ATR')
+                current_volume = row.get('Volume')
+                avg_volume = row.get('Volume_MA')
+                
+                # Verificar datos faltantes
+                if any(pd.isna([current_rsi, current_atr, avg_volume, current_volume, current_price])):
+                    continue
+                
+                # Calcular rendimiento semanal (5 días hábiles)
+                five_days_ago = historical_data[historical_data.index < date].tail(5)
+                if len(five_days_ago) < 3:  # Mínimo 3 días para considerar
+                    continue
+                    
+                weekly_return = ((current_price / five_days_ago.iloc[0]['Close']) - 1) * 100
+                
+                # Calcular volumen relativo (último día vs media móvil)
+                relative_volume = current_volume / avg_volume if avg_volume > 0 else 1
+                
+                # Inicializar fuerza de señal y razones
+                signal_strength = 0
+                reasons = []
+                
+                # 1. Proximidad a mínimos de 5 días (más flexible)
+                five_day_low = historical_data['Low'].tail(5).min()
+                if current_price <= five_day_low * 1.02:  # Dentro del 2% del mínimo
+                    signal_strength += 2
+                    reasons.append(f"Near 5-day low (${five_day_low:.2f})")
+            
+                # 2. RSI oversold (más flexible)
+                if current_rsi <= 40:  # RSI por debajo de 40
+                    signal_strength += 1
+                    reasons.append(f"RSI {current_rsi:.1f}")
+                    if current_rsi <= 30:  # RSI muy bajo
+                        signal_strength += 1  # Punto extra para RSI muy bajo
+                
+                # 3. Alto volumen (umbral más bajo)
+                if relative_volume >= 1.1:
+                    signal_strength += 1
+                    reasons.append(f"Volume {relative_volume:.1f}x")
+                
+                # 4. Rendimiento semanal negativo (umbral más bajo)
+                if weekly_return < -1.5:
+                    signal_strength += 1
+                    reasons.append(f"Weekly: {weekly_return:.1f}%")
+                
+                # 5. Volatilidad elevada (umbral más bajo)
+                volatility_pct = (current_atr / current_price) * 100
+                if volatility_pct > 2.5:
+                    signal_strength += 1
+                    reasons.append(f"Vol {volatility_pct:.1f}%")
+            
+                # Generar señal si cumple criterios
+                if signal_strength >= 3:  # Umbral más bajo para más señales
+                    # Ajustar stop loss y objetivos basados en volatilidad
+                    atr_multiplier = 1.8 if volatility_pct > 4 else 1.5
+                    risk_reward = 3.0  # Objetivo de riesgo/beneficio
+                    
+                    stop_loss = current_price - (current_atr * atr_multiplier)
+                    target_1 = current_price + (current_atr * risk_reward)
+                    target_2 = current_price + (current_atr * (risk_reward * 1.5))
+                    
+                    signals.append({
+                        'symbol': symbol,
+                        'date': date,
+                        'entry_price': current_price,
+                        'signal_strength': signal_strength,
+                        'reasons': ", ".join(reasons),
+                        'atr': current_atr,
+                        'rsi': current_rsi,
+                        'weekly_return': weekly_return,
+                        'relative_volume': relative_volume,
+                        'stop_loss': stop_loss,
+                        'target_1': target_1,
+                        'target_2': target_2,
+                        'volatility_pct': volatility_pct
+                    })
+                    
+            except Exception as e:
+                logger.warning(f"Error procesando señal para {symbol} en {date}: {str(e)}")
+                continue
+        
+        return signals
+    
+    def simulate_trade(self, signal: Dict, data: pd.DataFrame) -> Dict:
+        """Simular un trade basado en la señal"""
+        entry_date = signal['date']
+        entry_price = signal['entry_price']
+        stop_loss = signal['stop_loss']
+        target_1 = signal['target_1']
+        target_2 = signal['target_2']
+        
+        # Obtener datos post-entrada (próximos 10 días de trading)
+        future_data = data[data.index > entry_date].head(10)
+        
+        if future_data.empty:
+            return None
+        
+        # Simular evolución del trade
+        position_size_dollars = self.initial_capital * self.position_size
+        shares = position_size_dollars / entry_price
+        
+        for date, row in future_data.iterrows():
+            high = row['High']
+            low = row['Low']
+            close = row['Close']
+            
+            # Verificar stop loss
+            if low <= stop_loss:
+                exit_price = stop_loss
+                exit_date = date
+                exit_reason = "Stop Loss"
+                break
+            
+            # Verificar target 1 (salida parcial - 50%)
+            if high >= target_1:
+                exit_price = target_1
+                exit_date = date
+                exit_reason = "Target 1"
+                break
+            
+            # Verificar target 2
+            if high >= target_2:
+                exit_price = target_2
+                exit_date = date
+                exit_reason = "Target 2"
+                break
+            
+            # Si es martes y tenemos ganancia, salir (lógica del Friday Effect)
+            if date.strftime('%A') == 'Tuesday' and close > entry_price:
+                exit_price = close
+                exit_date = date
+                exit_reason = "Tuesday Exit"
+                break
+        else:
+            # Si no se activó ningún nivel, salir al final del período
+            exit_price = future_data.iloc[-1]['Close']
+            exit_date = future_data.index[-1]
+            exit_reason = "Time Stop"
+        
+        # Calcular resultado
+        pnl = (exit_price - entry_price) * shares
+        pnl_pct = (exit_price - entry_price) / entry_price * 100
+        hold_days = (exit_date - entry_date).days
+        
+        return {
+            'symbol': signal['symbol'],
+            'entry_date': entry_date,
+            'exit_date': exit_date,
+            'entry_price': entry_price,
+            'exit_price': exit_price,
+            'shares': shares,
+            'pnl': pnl,
+            'pnl_pct': pnl_pct,
+            'hold_days': hold_days,
+            'exit_reason': exit_reason,
+            'signal_strength': signal['signal_strength']
+        }
+    
+    def run_backtest(self) -> Dict:
+        """Ejecutar backtest completo"""
+        print("🚀 Starting Friday Effect Backtest...")
+        print(f"Period: {self.start_date} to {self.end_date}")
+        print(f"Universe: {len(self.test_universe)} tickers")
+        print(f"Initial Capital: ${self.initial_capital:,.0f}")
+        print(f"Position Size: {self.position_size*100}%")
+        print("-" * 50)
+        
+        all_trades = []
+        
+        for symbol in self.test_universe:
+            print(f"Processing {symbol}...")
+            
+            # Obtener datos
+            data = self.get_historical_data(symbol)
+            if data is None:
+                continue
+            
+            # Identificar señales
+            signals = self.identify_friday_signals(data, symbol)
+            print(f"  Found {len(signals)} signals")
+            
+            # Simular trades
+            for signal in signals:
+                trade = self.simulate_trade(signal, data)
+                if trade:
+                    all_trades.append(trade)
+        
+        self.trades = all_trades
+        
+        if not all_trades:
+            print("❌ No trades found!")
+            return {}
+        
+        # Calcular métricas
+        trades_df = pd.DataFrame(all_trades)
+        
+        # Métricas básicas
+        total_trades = len(trades_df)
+        winning_trades = len(trades_df[trades_df['pnl_pct'] > 0])
+        losing_trades = len(trades_df[trades_df['pnl_pct'] <= 0])
+        win_rate = winning_trades / total_trades * 100
+        
+        # PnL
+        total_pnl = trades_df['pnl'].sum()
+        avg_winner = trades_df[trades_df['pnl_pct'] > 0]['pnl_pct'].mean()
+        avg_loser = trades_df[trades_df['pnl_pct'] <= 0]['pnl_pct'].mean()
+        
+        # Métricas de riesgo
+        max_drawdown = self.calculate_max_drawdown(trades_df)
+        sharpe_ratio = self.calculate_sharpe_ratio(trades_df)
+        
+        # Holding period
+        avg_hold_days = trades_df['hold_days'].mean()
+        
+        self.results = {
+            'total_trades': total_trades,
+            'winning_trades': winning_trades,
+            'losing_trades': losing_trades,
+            'win_rate': win_rate,
+            'total_pnl': total_pnl,
+            'total_return_pct': (total_pnl / self.initial_capital) * 100,
+            'avg_winner': avg_winner,
+            'avg_loser': avg_loser,
+            'profit_factor': abs(avg_winner / avg_loser) if avg_loser != 0 else 0,
+            'max_drawdown': max_drawdown,
+            'sharpe_ratio': sharpe_ratio,
+            'avg_hold_days': avg_hold_days,
+            'trades_per_year': total_trades / 3 if total_trades > 0 else 0  # Aprox 3 años de data
+        }
+        
+        return self.results
+    
+    def calculate_max_drawdown(self, trades_df: pd.DataFrame) -> float:
+        """Calcular máximo drawdown"""
+        trades_df = trades_df.sort_values('entry_date')
+        cumulative_pnl = trades_df['pnl'].cumsum()
+        running_max = cumulative_pnl.expanding().max()
+        drawdown = (cumulative_pnl - running_max) / self.initial_capital * 100
+        return drawdown.min()
+    
+    def calculate_sharpe_ratio(self, trades_df: pd.DataFrame) -> float:
+        """Calcular Sharpe ratio aproximado"""
+        if len(trades_df) == 0:
+            return 0
+        
+        returns = trades_df['pnl_pct']
+        return (returns.mean() / returns.std()) * np.sqrt(252/7) if returns.std() != 0 else 0  # Weekly frequency
+    
+    def print_results(self):
+        """Imprimir resultados del backtest"""
+        if not self.results:
+            print("❌ No results to display. Run backtest first.")
+            return
+        
+        print("\n" + "="*60)
+        print("FRIDAY EFFECT BACKTEST RESULTS")
+        print("="*60)
+        
+        print(f"\n📊 TRADE STATISTICS:")
+        print(f"Total Trades: {self.results['total_trades']}")
+        print(f"Winning Trades: {self.results['winning_trades']} ({self.results['win_rate']:.1f}%)")
+        print(f"Losing Trades: {self.results['losing_trades']}")
+        print(f"Average Hold Days: {self.results['avg_hold_days']:.1f}")
+        print(f"Trades per Year: {self.results['trades_per_year']:.1f}")
+        
+        print(f"\n💰 PERFORMANCE:")
+        print(f"Total Return: {self.results['total_return_pct']:.2f}%")
+        print(f"Total P&L: ${self.results['total_pnl']:,.0f}")
+        print(f"Average Winner: {self.results['avg_winner']:.2f}%")
+        print(f"Average Loser: {self.results['avg_loser']:.2f}%")
+        print(f"Profit Factor: {self.results['profit_factor']:.2f}")
+        
+        print(f"\n📈 RISK METRICS:")
+        print(f"Max Drawdown: {self.results['max_drawdown']:.2f}%")
+        print(f"Sharpe Ratio: {self.results['sharpe_ratio']:.2f}")
+        
+        # Análisis por razón de salida
+        if self.trades:
+            trades_df = pd.DataFrame(self.trades)
+            exit_reasons = trades_df['exit_reason'].value_counts()
+            print(f"\n🎯 EXIT REASONS:")
+            for reason, count in exit_reasons.items():
+                pct = count / len(trades_df) * 100
+                avg_return = trades_df[trades_df['exit_reason'] == reason]['pnl_pct'].mean()
+                print(f"{reason}: {count} trades ({pct:.1f}%) - Avg Return: {avg_return:.2f}%")
+    
+    def plot_results(self):
+        """Generar gráficos de resultados"""
+        if not self.trades:
+            print("❌ No trades to plot")
+            return
+        
+        trades_df = pd.DataFrame(self.trades)
+        
+        fig, axes = plt.subplots(2, 2, figsize=(15, 10))
+        fig.suptitle('Friday Effect Backtest Analysis', fontsize=16)
+        
+        # 1. Equity curve
+        trades_df_sorted = trades_df.sort_values('entry_date')
+        cumulative_pnl = trades_df_sorted['pnl'].cumsum()
+        equity_curve = self.initial_capital + cumulative_pnl
+        
+        axes[0,0].plot(trades_df_sorted['entry_date'], equity_curve)
+        axes[0,0].set_title('Equity Curve')
+        axes[0,0].set_ylabel('Portfolio Value ($)')
+        axes[0,0].grid(True)
+        
+        # 2. Distribution of returns
+        axes[0,1].hist(trades_df['pnl_pct'], bins=20, alpha=0.7, edgecolor='black')
+        axes[0,1].axvline(0, color='red', linestyle='--', alpha=0.7)
+        axes[0,1].set_title('Return Distribution')
+        axes[0,1].set_xlabel('Return (%)')
+        axes[0,1].set_ylabel('Frequency')
+        
+        # 3. Win rate by month
+        trades_df['month'] = pd.to_datetime(trades_df['entry_date']).dt.month
+        monthly_stats = trades_df.groupby('month').agg({
+            'pnl_pct': ['count', lambda x: (x > 0).mean() * 100]
+        }).round(1)
+        monthly_stats.columns = ['Trades', 'Win_Rate']
+        
+        axes[1,0].bar(monthly_stats.index, monthly_stats['Win_Rate'])
+        axes[1,0].set_title('Win Rate by Month')
+        axes[1,0].set_xlabel('Month')
+        axes[1,0].set_ylabel('Win Rate (%)')
+        axes[1,0].set_ylim(0, 100)
+        
+        # 4. Hold days distribution
+        axes[1,1].hist(trades_df['hold_days'], bins=15, alpha=0.7, edgecolor='black')
+        axes[1,1].set_title('Holding Period Distribution')
+        axes[1,1].set_xlabel('Days Held')
+        axes[1,1].set_ylabel('Frequency')
+        
+        plt.tight_layout()
+        plt.show()
+    
+    def analyze_best_setups(self, top_n: int = 5) -> None:
+        """Analiza los mejores setups de trading"""
+        if not hasattr(self, 'trades') or not self.trades:
+            print("❌ No hay trades para analizar")
+            return
+            
+        try:
+            # Crear DataFrame con los trades
+            trades_df = pd.DataFrame(self.trades)
+            
+            # Filtrar trades ganadores
+            winning_trades = trades_df[trades_df['pnl_pct'] > 0]
+            
+            if len(winning_trades) == 0:
+                print("❌ No hay trades ganadores para analizar")
+                return
+                
+            print(f"\n🏆 TOP {top_n} MEJORES TRADES:")
+            print("-" * 60)
+            
+            best_trades = trades_df.nlargest(top_n, 'pnl_pct')
+            
+            for idx, trade in best_trades.iterrows():
+                trade_info = (
+                    f"{trade['symbol']} | {trade['entry_date'].strftime('%Y-%m-%d')} | "
+                    f"Entry: ${trade['entry_price']:.2f} | "
+                    f"Exit: ${trade['exit_price']:.2f} | "
+                    f"Return: {trade['pnl_pct']*100:.2f}% | "
+                    f"Hold Days: {trade['hold_days']} | "
+                    f"Exit: {trade['exit_reason']} | "
+                    f"Signal Strength: {trade['signal_strength']}"
+                )
+                print(trade_info)
+            
+            print(f"\n💀 TOP {top_n} WORST TRADES:")
+            print("-" * 60)
+            
+            worst_trades = trades_df.nsmallest(top_n, 'pnl_pct')
+            for idx, trade in worst_trades.iterrows():
+                trade_info = (
+                    f"{trade['symbol']} | {trade['entry_date'].strftime('%Y-%m-%d')} | "
+                    f"Return: {trade['pnl_pct']*100:.2f}% | "
+                    f"Hold Days: {trade['hold_days']} | "
+                    f"Exit: {trade['exit_reason']}"
+                )
+                print(trade_info)
+            
+            # Análisis de patrones comunes en trades ganadores
+            print("\n🔍 PATRONES EN TRADES GANADORES:")
+            print("-" * 60)
+            
+            # 1. Día de la semana de entrada
+            winning_trades['entry_day'] = pd.to_datetime(winning_trades['entry_date']).dt.day_name()
+            day_dist = winning_trades['entry_day'].value_counts(normalize=True).sort_values(ascending=False)
+            print("\nDías de entrada más comunes:")
+            print(day_dist.head().to_string())
+            
+            # 2. Rango de RSI en entrada
+            print("\nRango de RSI en entrada:")
+            print(f"Promedio: {winning_trades['entry_rsi'].mean():.1f}")
+            print(f"Mínimo: {winning_trades['entry_rsi'].min():.1f}")
+            print(f"Máximo: {winning_trades['entry_rsi'].max():.1f}")
+            
+            # 3. Hold time promedio
+            avg_hold = winning_trades['hold_days'].mean()
+            print(f"\nHold time promedio: {avg_hold:.1f} días")
+            
+            # 4. Razón de ganancias/pérdidas
+            avg_win = winning_trades['pnl_pct'].mean()
+            losing_trades = trades_df[trades_df['pnl_pct'] < 0]
+            avg_loss = losing_trades['pnl_pct'].mean() if len(losing_trades) > 0 else 0
+            
+            if avg_loss != 0:
+                win_loss_ratio = abs(avg_win / avg_loss)
+                print(f"Razón ganancia/pérdida: {win_loss_ratio:.2f}:1")
+            
+            # 5. Porcentaje de acierto
+            win_rate = (len(winning_trades) / len(trades_df)) * 100
+            print(f"Porcentaje de acierto: {win_rate:.1f}%")
+            
+            # 6. Mejor setup por retorno promedio
+            if 'setup' in winning_trades.columns:
+                print("\nMejores setups por retorno promedio:")
+                setup_returns = winning_trades.groupby('setup')['pnl_pct'].mean().sort_values(ascending=False)
+                print(setup_returns.head().to_string())
+            
+            # 7. Mejores acciones por rendimiento
+            print("\nMejores acciones por rendimiento promedio:")
+            symbol_returns = winning_trades.groupby('symbol')['pnl_pct'].mean().sort_values(ascending=False)
+            print(symbol_returns.head().to_string())
+            
+        except Exception as e:
+            logger.error(f"Error en analyze_best_setups: {str(e)}")
+            logger.exception("Detalles del error:")
+    
+def run_friday_effect_backtest():
+    """Función principal para ejecutar el backtest con las mejoras implementadas"""
+    logger.info("🎯 FRIDAY EFFECT ALGORITHM BACKTEST")
+    logger.info("="*50)
+
+    # Configuración
+    start_date = "2022-01-01"
+    end_date = "2024-12-31"
+    initial_capital = 100000
+    position_size = 0.05  # 5% por posición
+
+    logger.info(f"🚀 Iniciando backtest del Efecto Viernes...")
+    logger.info(f"Período: {start_date} a {end_date}")
+    logger.info(f"Capital inicial: ${initial_capital:,.2f}")
+    logger.info(f"Tamaño de posición: {position_size*100}%")
+    logger.info("-"*50)
+
+    try:
+        # Inicializar backtest
+        backtest = FridayEffectBacktest(
+            start_date=start_date,
+            end_date=end_date,
+            initial_capital=initial_capital,
+            position_size=position_size,
+            max_workers=min(10, os.cpu_count() * 2)
+        )
+
+        # Cargar todos los datos primero (con caché y en paralelo)
+        logger.info("⏳ Cargando datos de mercado...")
+        data_cache = backtest.load_all_data()
+
+        if not data_cache:
+            logger.error("❌ No se pudieron cargar datos para ningún ticker")
+            return None
+
+        logger.info(f"✅ Datos cargados para {len(data_cache)} tickers")
+
+        # Ejecutar backtest en los datos cargados
+        results = {}
+        for ticker, data in tqdm(data_cache.items(), desc="Ejecutando backtests"):
+            try:
+                result = backtest.run_backtest(ticker)
+                if result is not None:
+                    results[ticker] = result
+            except Exception as e:
+                logger.error(f"Error en backtest para {ticker}: {e}")
+
+        if not results:
+            logger.error("❌ No se generaron resultados de backtest")
+            return None
+
+        # Mostrar resumen de resultados
+        logger.info("\n📊 BACKTEST RESULTS")
+        logger.info("="*50)
+
+        # Calcular métricas agregadas
+        total_trades = sum(len(r.get('trades', [])) for r in results.values())
+
+        if total_trades == 0:
+            logger.warning("⚠️ No se encontraron operaciones en el período")
+            return None
+
+        winning_trades = sum(
+            sum(1 for t in r.get('trades', []) if t.get('return', 0) > 0)
+            for r in results.values()
+        )
+
+        all_returns = [
+            t['return'] 
+            for r in results.values() 
+            if 'trades' in r 
+            for t in r['trades'] 
+            if 'return' in t
+        ]
+
+        avg_return = np.mean(all_returns) if all_returns else 0
+
+        logger.info(f"Total Trades: {total_trades}")
+        logger.info(f"Winning Trades: {winning_trades} ({(winning_trades/max(1, total_trades)*100):.1f}%)")
+        logger.info(f"Average Return per Trade: {avg_return*100:.2f}%")
+
+        # Mostrar resultados por ticker
+        logger.info("\n📈 Performance by Ticker:")
+        for ticker, result in results.items():
+            if 'trades' in result and result['trades']:
+                ticker_returns = [t.get('return', 0) for t in result['trades'] if 'return' in t]
+                if ticker_returns:  # Solo mostrar si hay retornos válidos
+                    logger.info(
+                        f"{ticker}: {len(result['trades'])} trades, "
+                        f"Avg Return: {np.mean(ticker_returns)*100:.2f}%"
+                    )
+
+        return results
+    
+    except Exception as e:
+        logger.error(f"❌ Error en el backtest: {str(e)}", exc_info=True)
+        return None
+
+
+# Ejemplo de uso combinado
+if __name__ == "__main__":
+    print("🚀 FRIDAY EFFECT ALGORITHM - COMPLETE SYSTEM")
+    print("="*60)
+    
+    # Opción 1: Escanear señales actuales
+    print("\n1️⃣  SCANNING CURRENT SIGNALS...")
+    from friday_effect_algo import FridayEffectAlgorithm
+    
+    scanner = FridayEffectAlgorithm()
+    current_signals = scanner.scan_universe()
+    
+    if current_signals:
+        print(f"✅ Found {len(current_signals)} current signals")
+    else:
+        print("❌ No current signals found")
+    
+    # Opción 2: Ejecutar backtest histórico
+    print("\n2️⃣  RUNNING HISTORICAL BACKTEST...")
+    backtest_results = run_friday_effect_backtest()
+    
+    print("\n🎯 SYSTEM READY FOR DEPLOYMENT!")
+    print("   - Use scanner weekly on Fridays")
+    print("   - Monitor backtest performance")
+    print("   - Adjust parameters as needed")

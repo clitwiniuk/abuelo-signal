@@ -1,0 +1,66 @@
+[
+    {
+        "id": "VCP_FOXX_2025-11-21_ENTRY",
+        "symbol": "FOXX",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-11-21",
+        "description": "VCP Entry: Real VCP trade with valid pattern",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 70.0,
+            "catalyst_strength": 6,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 2.0,
+            "vwap": 4.00,
+            "volume_ratio": 1.5
+        }
+    },
+    {
+        "id": "VCP_ORGO_2025-11-07_ENTRY",
+        "symbol": "ORGO",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-11-07",
+        "description": "VCP Entry: ORGO forming VCP pattern on Nov 7",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 70.0,
+            "catalyst_strength": 6,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 1.5,
+            "vwap": 2.50,
+            "volume_ratio": 1.3
+        }
+    },
+    {
+        "id": "VCP_FOXX_2025-11-21_REJECT_LOW_VOLUME",
+        "symbol": "FOXX",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-11-21",
+        "description": "VCP Reject: Low volume ratio (0.5x < 0.7x threshold)",
+        "expected_action": "NO_ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 70.0,
+            "catalyst_strength": 6,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 2.0,
+            "vwap": 4.00,
+            "volume_ratio": 0.5
+        }
+    },
+    {
+        "id": "VCP_ORGO_2025-11-07_REJECT_LOW_QUALITY",
+        "symbol": "ORGO",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-11-07",
+        "description": "VCP Reject: Low quality score (35 < 40 threshold)",
+        "expected_action": "NO_ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 35.0,
+            "catalyst_strength": 6,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 1.5,
+            "vwap": 2.50,
+            "volume_ratio": 1.3
+        }
+    }
+]

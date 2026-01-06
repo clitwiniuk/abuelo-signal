@@ -1,0 +1,65 @@
+{
+  "test_date": "2025-11-23T09:35:09.560877",
+  "total_scenarios": 5,
+  "passed": 5,
+  "failed": 0,
+  "skipped": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "scenario_id": "VCP_FOXX_EXIT_STOP_LOSS",
+      "expected_action": "EXIT_STOP_LOSS",
+      "entry_price": 4.0,
+      "exit_price": 3.8,
+      "peak_price": 4.0,
+      "expected_pnl": -5.0,
+      "actual_pnl": -5.0,
+      "result": "PASS",
+      "validation": "Stop loss triggered at -5.0% (target: -5%)"
+    },
+    {
+      "scenario_id": "VCP_FOXX_EXIT_BREAK_EVEN",
+      "expected_action": "EXIT_BREAK_EVEN",
+      "entry_price": 4.0,
+      "exit_price": 4.01,
+      "peak_price": 4.16,
+      "expected_pnl": 0.25,
+      "actual_pnl": 0.25,
+      "result": "PASS",
+      "validation": "BE protected: peaked 4.0%, exited 0.2%"
+    },
+    {
+      "scenario_id": "VCP_ORGO_EXIT_TRAILING_STOP",
+      "expected_action": "EXIT_TRAILING_STOP",
+      "entry_price": 2.5,
+      "exit_price": 2.64,
+      "peak_price": 2.75,
+      "expected_pnl": 5.6,
+      "actual_pnl": 5.6,
+      "result": "PASS",
+      "validation": "Trailing triggered: peak 10.0%, exit 5.6% (expected ~6.0%)"
+    },
+    {
+      "scenario_id": "VCP_ORGO_EXIT_TAKE_PROFIT",
+      "expected_action": "EXIT_TAKE_PROFIT",
+      "entry_price": 2.5,
+      "exit_price": 2.875,
+      "peak_price": 2.5,
+      "expected_pnl": 15.0,
+      "actual_pnl": 15.0,
+      "result": "PASS",
+      "validation": "Take profit hit at 15.0% (target: +15%)"
+    },
+    {
+      "scenario_id": "VCP_FOXX_EXIT_TIME_LIMIT",
+      "expected_action": "EXIT_TIME_LIMIT",
+      "entry_price": 4.0,
+      "exit_price": 4.08,
+      "peak_price": 4.0,
+      "expected_pnl": 2.0,
+      "actual_pnl": 2.0,
+      "result": "PASS",
+      "validation": "Time limit exit at 6.0h with +2.0% PnL"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Core dependencies (required)
+pandas>=1.3.0
+numpy>=1.20.0,<2.0  # Must be <2.0 for compatibility with pandas_market_calendars
+requests>=2.25.0
+configparser
+
+# Optional dependencies
+# For PRODUCTION mode (Interactive Brokers)
+ib_insync>=0.9.86
+
+# For web interface
+streamlit>=1.28.0
+
+# For visualizations and backtesting
+matplotlib>=3.3.0
+plotly>=5.0.0
+
+# For optimization (if using optuna)
+optuna>=3.0.0
+
+# For development
+pytest>=6.0.0
+
+# For memory management (TTL caches)
+cachetools>=5.0.0
+
+# For enhanced news sources (free tier)
+finnhub-python>=2.4.0
+polygon-api-client>=1.13.0
+pandas_market_calendars
+ib_insync

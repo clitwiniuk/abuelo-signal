@@ -1,0 +1,662 @@
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - Worker logging initialized - buy_and_hold -> logs/worker_buy_and_hold.log
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔧 Worker buy_and_hold initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🚀 Buy & Hold - VWAP Momentum (SIMPLIFIED)
+   ✅ 5 Filters Only: Window + Price Range + Quality + VWAP + Slope
+   Trading window: 9.50h - 16.00h ET
+   Price range: $1 - $50
+   Quality threshold: 60
+   VWAP: +0.1% min, slope >0.0000
+   Max trades/symbol: 1
+   Stops: SL=5%, TP=15%, Trailing=8%/3%, Max=24h
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - Loaded 390 bars for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📡 Scanner first detected INBS at 2025-12-31T14:35:14
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔎 Found 10 REAL trades for comparison
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $7.82, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.00h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+7.42%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.00475)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $7.82
+   📈 VWAP: $7.28 (+7.42%)
+   📊 VWAP Slope: 0.00475 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $7.43 (-5%)
+   🎯 Take Profit: $8.99 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$9.80 (25.3%), SL=$7.27 (7.0%), R:R=3.62, EV=14.00%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $7.27 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $9.80 (25.3%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Excellent R:R: 3.62:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 14.00% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.80% (quality=80, patterns=0, ev=14.0%, rr=3.6)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.80% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $7.82 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +12.40%, Current: +7.03%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $54.97
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.46, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.22h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+12.41%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.01940)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.46
+   📈 VWAP: $7.53 (+12.41%)
+   📊 VWAP Slope: 0.01940 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $8.04 (-5%)
+   🎯 Take Profit: $9.73 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$9.80 (15.8%), SL=$7.87 (7.0%), R:R=2.26, EV=7.85%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $7.87 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $9.80 (15.8%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 2.26:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 7.85% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=7.8%, rr=2.3)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.46 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: STOP_LOSS_7.0% (PnL: -7.45%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $-63.01
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $7.82, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.67h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+0.72%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03529 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $7.85, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.68h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+1.08%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04573 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.10, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.70h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+4.24%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03555 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.11, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.72h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+4.30%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02540 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.08, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.73h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+3.96%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01065 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.44, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.75h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.43%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.02175)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.44
+   📈 VWAP: $7.78 (+8.43%)
+   📊 VWAP Slope: 0.02175 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $8.01 (-5%)
+   🎯 Take Profit: $9.70 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$9.80 (16.2%), SL=$7.84 (7.0%), R:R=2.31, EV=8.07%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $7.84 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $9.80 (16.2%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 2.31:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 8.07% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=8.1%, rr=2.3)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.44 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +8.30%, Current: +4.02%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $33.88
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.62, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 10.88h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.90%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.04728)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.62
+   📈 VWAP: $7.92 (+8.90%)
+   📊 VWAP Slope: 0.04728 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $8.19 (-5%)
+   🎯 Take Profit: $9.91 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$10.13 (17.5%), SL=$8.02 (7.0%), R:R=2.50, EV=5.25%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $8.02 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $10.13 (17.5%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 2.50:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 5.25% (Win prob: 50.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=5.3%, rr=2.5)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.62 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: STOP_LOSS_7.0% (PnL: -7.71%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $-66.47
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.09, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.08h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+1.73%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04892 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $7.99, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.10h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+0.41%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03970 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.01, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.12h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+0.74%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02983 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $7.91, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.13h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - Price BELOW VWAP ($7.91 vs $7.95)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.03, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.15h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+0.98%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01621 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.15, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.17h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+2.47%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00738 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.10, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.18h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+1.83%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.00312)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.10
+   📈 VWAP: $7.95 (+1.83%)
+   📊 VWAP Slope: 0.00312 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $7.69 (-5%)
+   🎯 Take Profit: $9.31 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$9.80 (21.0%), SL=$7.53 (7.0%), R:R=3.00, EV=11.19%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $7.53 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $9.80 (21.0%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 3.00:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 11.19% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=11.2%, rr=3.0)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.10 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +16.10%, Current: +11.36%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $92.00
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.80, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 11.90h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.93%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.05827)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.80
+   📈 VWAP: $8.08 (+8.93%)
+   📊 VWAP Slope: 0.05827 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $8.36 (-5%)
+   🎯 Take Profit: $10.12 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$10.34 (17.5%), SL=$8.18 (7.0%), R:R=2.50, EV=5.25%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $8.18 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $10.34 (17.5%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 2.50:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 5.25% (Win prob: 50.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=5.3%, rr=2.5)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.80 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +8.64%, Current: +0.91%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $8.00
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $8.81, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 12.30h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+7.41%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.01729)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $8.81
+   📈 VWAP: $8.20 (+7.41%)
+   📊 VWAP Slope: 0.01729 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $8.37 (-5%)
+   🎯 Take Profit: $10.13 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$10.35 (17.5%), SL=$8.19 (7.0%), R:R=2.50, EV=5.25%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $8.19 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $10.35 (17.5%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Good R:R: 2.50:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 5.25% (Win prob: 50.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.70% (quality=80, patterns=0, ev=5.2%, rr=2.5)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.70% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $8.81 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TAKE_PROFIT_17.5% (PnL: +17.82%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $157.00
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.46, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 12.87h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+24.79%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.04015)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $10.46
+   📈 VWAP: $8.38 (+24.79%)
+   📊 VWAP Slope: 0.04015 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $9.94 (-5%)
+   🎯 Take Profit: $12.03 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$14.70 (40.5%), SL=$9.73 (7.0%), R:R=5.79, EV=23.90%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $9.73 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $14.70 (40.5%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Excellent R:R: 5.79:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 23.90% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.90% (quality=80, patterns=0, ev=23.9%, rr=5.8)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.90% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $10.46 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +13.29%, Current: +9.18%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $96.00
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.96, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.32h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+25.36%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00436 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.10, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.33h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+26.93%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01791 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.14, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.35h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+27.31%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02973 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.05, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.37h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+26.21%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04478 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.26, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.38h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+28.53%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04614 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.49, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.40h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+30.91%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01391 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.29, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.42h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+28.49%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00234 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.29, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.43h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+28.38%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.00613)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $11.29
+   📈 VWAP: $8.79 (+28.38%)
+   📊 VWAP Slope: 0.00613 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $10.72 (-5%)
+   🎯 Take Profit: $12.98 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$14.70 (30.2%), SL=$10.50 (7.0%), R:R=4.32, EV=17.20%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $10.50 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $14.70 (30.2%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Excellent R:R: 4.32:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 17.20% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.80% (quality=80, patterns=0, ev=17.2%, rr=4.3)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.80% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $11.29 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: TRAILING_STOP (Peak: +9.54%, Current: +3.38%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $38.20
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.63, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.93h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+28.69%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02631 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.57, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.95h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+27.98%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03097 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.72, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.97h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+29.58%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03295 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.70, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 13.98h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+29.32%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03486 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.82, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.00h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+30.58%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02825 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.82, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.02h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+30.54%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01129 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.68, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.03h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+28.99%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00554 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.27, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.05h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+24.32%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01397 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.11, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.07h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+22.49%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01815 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.03, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.08h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+21.54%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03004 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.24, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.10h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+23.82%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04041 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.32, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.12h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+24.61%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04461 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.38, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.13h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+25.24%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03445 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.50, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.15h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+26.53%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02206 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.34, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.17h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+24.67%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00017 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $11.40, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 14.18h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+25.36%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.01016)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $11.40
+   📈 VWAP: $9.09 (+25.36%)
+   📊 VWAP Slope: 0.01016 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $10.83 (-5%)
+   🎯 Take Profit: $13.11 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$14.70 (28.9%), SL=$10.60 (7.0%), R:R=4.14, EV=16.37%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $10.60 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $14.70 (28.9%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Excellent R:R: 4.14:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 16.37% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.80% (quality=80, patterns=0, ev=16.4%, rr=4.1)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.80% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $11.40 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: STOP_LOSS_7.0% (PnL: -8.68%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $-99.00
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.46, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.22h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+12.79%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.05819 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.28, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.23h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+10.80%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.05922 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.20, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.25h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+9.87%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.06286 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.11, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.27h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.90%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.06835 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.14, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.28h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+9.22%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.05470 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.31, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.30h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+11.03%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04163 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.29, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.32h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+10.80%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03614 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.05, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.33h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.21%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02923 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.18, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.35h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+9.55%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02050 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.11, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.37h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.78%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00863 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.05, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.38h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+8.18%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.00772 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $9.62, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.40h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+3.53%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.02643 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $9.62, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.42h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+3.52%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.03488 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $9.74, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.43h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+4.80%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04223 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $9.76, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.45h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+5.01%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04554 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $9.99, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.47h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+7.48%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.04164 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.03, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.48h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+7.86%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: REJECTED - VWAP not trending up (slope: -0.01421 < 0.00001)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⚪ INBS: Entry criteria not met (rejected by strategy)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: VWAP Momentum Check - Price: $10.19, Quality: 80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Within trading window (ET: 15.50h) ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📊 INBS: Quality score 80.0 ✅
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Price above VWAP (+9.60%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: VWAP trending UP (slope: 0.00618)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅✅✅ INBS: VWAP MOMENTUM ENTRY ✅✅✅
+   💰 Price: $10.19
+   📈 VWAP: $9.30 (+9.60%)
+   📊 VWAP Slope: 0.00618 (UPTREND)
+   ⭐ Quality: 80.0/100
+   🛡️ Stop Loss: $9.68 (-5%)
+   🎯 Take Profit: $11.72 (+15%)
+   📐 R:R: 1:3 (Standard)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Entry criteria met for buy_and_hold
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🎯 buy_and_hold: Executing entry for INBS
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ INBS: Structural exits - TP=$14.70 (44.3%), SL=$9.48 (7.0%), R:R=6.32, EV=26.32%
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 SL: $9.48 (7.0%) - ATR-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 🎯 TP: $14.70 (44.3%) - Quality-based
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • ✅ Excellent R:R: 6.32:1
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO -    • 💰 EV: 26.32% (Win prob: 65.0%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 Adaptive Risk: 1.90% (quality=80, patterns=0, ev=26.3%, rr=6.3)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 INBS: Adaptive risk sizing = 1.90% of capital | Trade Tier: ✅ C
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📅 INBS: Trading horizon = scalp (0.5h expected, EOD_safe=False)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ✅ buy_and_hold: Position opened - INBS @ $10.19 x 100 shares [scalp, 0.5h]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 📤 INBS: Exit triggered by StopManager: STOP_LOSS_7.0% (PnL: -7.89%)
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 💰 PnL Realized: $-80.40
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - 🔍 INBS: Evaluating opportunity - gap=0.0%, vol=1.0x, catalyst=TEST_CATALYST, Q=80.0
+2026-01-01 22:43:21 - Worker.buy_and_hold - WARNING - ⏰ Entry rejected for INBS: Current time 15.98 outside REGULAR window [9.50 - 15.75]
+2026-01-01 22:43:21 - Worker.buy_and_hold - INFO - ⏰ INBS: Entry rejected - outside allowed entry hours (current: 15.98)

@@ -1,0 +1,85 @@
+2025-06-01 09:30:48,198 - __main__ - INFO - === Iniciando prueba de conexión con IBKR ===
+2025-06-01 09:30:48,199 - __main__ - INFO - Conectando a IBKR en 127.0.0.1:7497...
+2025-06-01 09:30:48,199 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-06-01 09:30:48,211 - ib_insync.client - INFO - Connected
+2025-06-01 09:30:48,289 - ib_insync.client - INFO - Logged on to server version 176
+2025-06-01 09:30:48,307 - ib_insync.client - INFO - API connection ready
+2025-06-01 09:30:48,308 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-06-01 09:30:48,308 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfuture
+2025-06-01 09:30:48,308 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-06-01 09:30:48,308 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-06-01 09:30:48,308 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-06-01 09:30:48,309 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-06-01 09:30:48,309 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-06-01 09:30:48,309 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-06-01 09:30:48,309 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-06-01 09:30:48,314 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=530091843, symbol='TRUG', exchange='NASDAQ', currency='USD', localSymbol='TRUG', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,314 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=663892041, symbol='CREV', exchange='NASDAQ', currency='USD', localSymbol='CREV', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,314 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=721996243, symbol='SHPH', exchange='NASDAQ', currency='USD', localSymbol='SHPH', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=705924556, symbol='THAR', exchange='NASDAQ', currency='USD', localSymbol='THAR', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=696511312, symbol='MRIN', exchange='NASDAQ', currency='USD', localSymbol='MRIN', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=675381376, symbol='PRSO', exchange='NASDAQ', currency='USD', localSymbol='PRSO', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=772144625, symbol='AREB', exchange='NASDAQ', currency='USD', localSymbol='AREB', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=768537893, symbol='NWTG', exchange='NASDAQ', currency='USD', localSymbol='NWTG', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=582720597, symbol='VANI', exchange='NASDAQ', currency='USD', localSymbol='VANI', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=767906090, symbol='IPDN', exchange='NASDAQ', currency='USD', localSymbol='IPDN', tradingClass='SCM'), position=118.0, avgCost=1.7285093)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=696794128, symbol='NCNA', exchange='NASDAQ', currency='USD', localSymbol='NCNA', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,315 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=506436790, symbol='INDP', exchange='NASDAQ', currency='USD', localSymbol='INDP', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,316 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=726936015, symbol='TNON', exchange='NASDAQ', currency='USD', localSymbol='TNON', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=652535674, symbol='RVYL', exchange='NASDAQ', currency='USD', localSymbol='RVYL', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=751717727, symbol='ELBM', exchange='NASDAQ', currency='USD', localSymbol='ELBM', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=757867199, symbol='BLRX', exchange='NASDAQ', currency='USD', localSymbol='BLRX', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=505227406, symbol='IMRX', exchange='NASDAQ', currency='USD', localSymbol='IMRX', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=785073993, symbol='CNEY', exchange='NASDAQ', currency='USD', localSymbol='CNEY', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=728763124, symbol='NVVE', exchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=683189310, symbol='SGLY', exchange='NASDAQ', currency='USD', localSymbol='SGLY', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=780019654, symbol='NAAS', exchange='NASDAQ', currency='USD', localSymbol='NAAS', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=768826982, symbol='WLDS', exchange='NASDAQ', currency='USD', localSymbol='WLDS', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=754086239, symbol='SMX', exchange='NASDAQ', currency='USD', localSymbol='SMX', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,317 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=677571902, symbol='HOVR', exchange='NASDAQ', currency='USD', localSymbol='HOVR', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=787556780, symbol='PLRZ', exchange='NASDAQ', currency='USD', localSymbol='PLRZ', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=704621472, symbol='SCNI', exchange='NASDAQ', currency='USD', localSymbol='SCNI', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=754328486, symbol='HKPD', exchange='NASDAQ', currency='USD', localSymbol='HKPD', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=744660019, symbol='UBXG', exchange='NASDAQ', currency='USD', localSymbol='UBXG', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=542992398, symbol='ANGH', exchange='NASDAQ', currency='USD', localSymbol='ANGH', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=15565484, symbol='RRGB', exchange='NASDAQ', currency='USD', localSymbol='RRGB', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=737201077, symbol='LBGJ', exchange='NASDAQ', currency='USD', localSymbol='LBGJ', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,318 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=698258904, symbol='YYGH', exchange='NASDAQ', currency='USD', localSymbol='YYGH', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=659764500, symbol='AQB', exchange='NASDAQ', currency='USD', localSymbol='AQB', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=697531372, symbol='LNKS', exchange='NASDAQ', currency='USD', localSymbol='LNKS', tradingClass='SCM'), position=304.0, avgCost=0.68493485)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=673642582, symbol='BKYI', exchange='NASDAQ', currency='USD', localSymbol='BKYI', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=740898651, symbol='SISI', exchange='NASDAQ', currency='USD', localSymbol='SISI', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=734181301, symbol='INHD', exchange='NASDAQ', currency='USD', localSymbol='INHD', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=543625224, symbol='VIVK', exchange='NASDAQ', currency='USD', localSymbol='VIVK', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=610715913, symbol='LRE', exchange='NASDAQ', currency='USD', localSymbol='LRE', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=372740695, symbol='CMBM', exchange='NASDAQ', currency='USD', localSymbol='CMBM', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=653069047, symbol='NWGL', exchange='NASDAQ', currency='USD', localSymbol='NWGL', tradingClass='SCM'), position=-100.0, avgCost=1.549799)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=766915749, symbol='MNDR', exchange='NASDAQ', currency='USD', localSymbol='MNDR', tradingClass='SCM'), position=143.0, avgCost=1.40702795)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=699372728, symbol='ZVSA', exchange='NASDAQ', currency='USD', localSymbol='ZVSA', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=757225258, symbol='REVB', exchange='NASDAQ', currency='USD', localSymbol='REVB', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,319 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=696183669, symbol='AGEN', exchange='NASDAQ', currency='USD', localSymbol='AGEN', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,320 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=534611422, symbol='VSA', exchange='NASDAQ', currency='USD', localSymbol='VSA', tradingClass='SCM'), position=-153.0, avgCost=0.76336275)
+2025-06-01 09:30:48,320 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=640118308, symbol='WKEY', exchange='NASDAQ', currency='USD', localSymbol='WKEY', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,321 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=744874067, symbol='SLXN', exchange='NASDAQ', currency='USD', localSymbol='SLXN', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,321 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=681579656, symbol='GNPX', exchange='NASDAQ', currency='USD', localSymbol='GNPX', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2025-06-01 09:30:48,433 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=767906090, symbol='IPDN', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='IPDN', tradingClass='SCM'), position=118.0, marketPrice=1.61, marketValue=189.98, averageCost=1.7285093, unrealizedPNL=-13.98, realizedPNL=0.0, account='DUA998722')
+2025-06-01 09:30:48,434 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=697531372, symbol='LNKS', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='LNKS', tradingClass='SCM'), position=304.0, marketPrice=0.637096, marketValue=193.68, averageCost=0.68493485, unrealizedPNL=-14.54, realizedPNL=0.0, account='DUA998722')
+2025-06-01 09:30:48,434 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=766915749, symbol='MNDR', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='MNDR', tradingClass='SCM'), position=143.0, marketPrice=1.39900005, marketValue=200.06, averageCost=1.40702795, unrealizedPNL=-1.15, realizedPNL=0.0, account='DUA998722')
+2025-06-01 09:30:48,434 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=653069047, symbol='NWGL', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NWGL', tradingClass='SCM'), position=-100.0, marketPrice=1.6, marketValue=-160.0, averageCost=1.549799, unrealizedPNL=-5.02, realizedPNL=0.0, account='DUA998722')
+2025-06-01 09:30:48,434 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=534611422, symbol='VSA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='VSA', tradingClass='SCM'), position=-153.0, marketPrice=0.780942, marketValue=-119.48, averageCost=0.76336275, unrealizedPNL=-2.69, realizedPNL=0.0, account='DUA998722')
+2025-06-01 09:30:48,517 - ib_insync.ib - INFO - Synchronization complete
+2025-06-01 09:30:48,518 - __main__ - INFO - Conexión exitosa con IBKR
+2025-06-01 09:30:48,518 - __main__ - INFO - Obteniendo información de la cuenta...
+2025-06-01 09:30:48,697 - __main__ - INFO - === Información de la cuenta ===
+2025-06-01 09:30:48,697 - __main__ - INFO - AvailableFunds: 1006621.07
+2025-06-01 09:30:48,697 - __main__ - INFO - GrossPositionValue: 760.69
+2025-06-01 09:30:48,697 - __main__ - INFO - NetLiquidation: 1008636.77
+2025-06-01 09:30:48,697 - __main__ - INFO - TotalCashValue: 1007052.65
+2025-06-01 09:30:48,703 - __main__ - INFO - Hora del servidor IBKR: 2025-06-01 07:30:47+00:00
+2025-06-01 09:30:48,703 - __main__ - INFO - Cerrando conexión con IBKR...
+2025-06-01 09:30:48,703 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 702 B sent in 8 messages, 31.4 kB received in 668 messages, session time 504 ms.
+2025-06-01 09:30:48,704 - ib_insync.client - INFO - Disconnecting
+2025-06-01 09:30:48,704 - __main__ - INFO - Conexión cerrada correctamente
+2025-06-01 09:30:48,704 - ib_insync.client - INFO - Disconnected.
+2025-06-01 09:30:48,705 - __main__ - INFO - === Prueba completada con éxito ===
+2025-06-01 09:30:48,705 - __main__ - INFO - === Fin de la prueba ===

@@ -1128,7 +1128,14 @@ class ExecutionEngineAdapter:
                 order_type = OrderType.LIMIT
                 # Use adaptive limit price: ±2% range for better execution
                 adaptive_range_pct = 0.02  # 2% range
-                raw_limit_price = current_price * (1 - adaptive_range_pct)  # -2% for sells
+                # Determine if this will be a SHORT exit (BUY to cover) or LONG exit (SELL)
+                entry_side_temp = position.get('side', 'BUY')
+                if entry_side_temp == 'SELL':
+                    # SHORT exit (BUY to cover): willing to pay UP TO +2% to exit
+                    raw_limit_price = current_price * (1 + adaptive_range_pct)
+                else:
+                    # LONG exit (SELL): willing to accept -2% to exit
+                    raw_limit_price = current_price * (1 - adaptive_range_pct)
 
                 # 🛡️ PROTECTION: Apply IBKR tick size validation
                 limit_price = self._round_to_ibkr_tick_size(raw_limit_price)
@@ -1160,21 +1167,30 @@ class ExecutionEngineAdapter:
             else:
                 tif = "DAY"  # Regular hours: Day order
 
+            # Determine exit side based on entry side (CRITICAL for SHORT positions)
+            # LONG positions (BUY entry) exit with SELL
+            # SHORT positions (SELL entry) exit with BUY (cover)
+            entry_side = position.get('side', 'BUY')
+            exit_side = OrderSide.BUY if entry_side == 'SELL' else OrderSide.SELL
+            exit_side_str = 'BUY' if entry_side == 'SELL' else 'SELL'
+
+            self.logger.info(f"🔄 {symbol}: Exit side determined - Entry: {entry_side}, Exit: {exit_side.name}")
+
             order = Order(
                 order_id=f"{strategy_name}_{symbol}_exit_{int(self.clock.now().timestamp())}",
                 symbol=symbol,
-                side=OrderSide.SELL,
+                side=exit_side,
                 quantity=quantity,
                 order_type=order_type,
                 price=limit_price,
                 tif=tif  # Add Time In Force parameter
             )
 
-            # Calculate exit commission BEFORE execution
+            # Calculate exit commission BEFORE execution (use correct side for commission)
             exit_commission, commission_breakdown = IBKRCommissionCalculator.calculate_commission(
                 quantity=quantity,
                 price=current_price,
-                side='SELL',
+                side=exit_side_str,
                 plan='tiered'
             )
 

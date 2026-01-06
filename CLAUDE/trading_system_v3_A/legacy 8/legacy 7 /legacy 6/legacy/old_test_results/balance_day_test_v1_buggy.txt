@@ -1,0 +1,175 @@
+2025-11-23 10:21:30,783 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-10-29
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO -    Workers: balance_day
+2025-11-23 10:21:30,784 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - INFO -    Loaded 379 bars for SOHO
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 1 symbols
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - INFO -   Symbol SOHO: 379 bars
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - ERROR - Unknown worker: balance_day
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - WARNING - ⚠️ Failed to load worker balance_day, skipping
+2025-11-23 10:21:30,879 - replay_testing.core.replay_engine - ERROR - ❌ No workers loaded successfully
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-11-21
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO -    Workers: balance_day
+2025-11-23 10:21:30,910 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - INFO -    Loaded 390 bars for ESPR
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 1 symbols
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - INFO -   Symbol ESPR: 390 bars
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - ERROR - Unknown worker: balance_day
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - WARNING - ⚠️ Failed to load worker balance_day, skipping
+2025-11-23 10:21:31,000 - replay_testing.core.replay_engine - ERROR - ❌ No workers loaded successfully
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-11-20
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO -    Workers: balance_day
+2025-11-23 10:21:31,033 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 10:21:31,035 - replay_testing.core.replay_engine - WARNING - DataFrame from SQL query is empty
+2025-11-23 10:21:31,035 - replay_testing.core.replay_engine - ERROR - ❌ No market data found for 2025-11-20
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-11-11
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO -    Workers: balance_day
+2025-11-23 10:21:31,066 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 10:21:31,150 - replay_testing.core.replay_engine - INFO -    Loaded 377 bars for RUM
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 1 symbols
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - INFO -   Symbol RUM: 377 bars
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - ERROR - Unknown worker: balance_day
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - WARNING - ⚠️ Failed to load worker balance_day, skipping
+2025-11-23 10:21:31,151 - replay_testing.core.replay_engine - ERROR - ❌ No workers loaded successfully
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-11-12
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO -    Workers: balance_day
+2025-11-23 10:21:31,184 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - INFO -    Loaded 386 bars for NVD
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 1 symbols
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - INFO -   Symbol NVD: 386 bars
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - ERROR - Unknown worker: balance_day
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - WARNING - ⚠️ Failed to load worker balance_day, skipping
+2025-11-23 10:21:31,271 - replay_testing.core.replay_engine - ERROR - ❌ No workers loaded successfully
+ADVERTENCIA: No se pudo importar la estrategia desde macdv_strategy.py: No module named 'core.dynamic_position_sizing'
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'AscendingTriangleStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'DailyPlaysStrategy', 'ORBStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'SimpleStrategyEngine', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+🚀 Starting Regression Suite: 6 scenarios
+============================================================
+▶️ Skipping: BALANCE_DAY_DIAGNOSTIC_DOC (documentation)
+
+▶️ Running Scenario: BALANCE_SOHO_TRUE_BALANCE
+   Symbol: SOHO
+   Date: 2025-10-29
+   Expected: ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+DEBUG: SQL DataFrame shape: (379, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['SOHO']
+DEBUG: Final bars_by_symbol keys: ['SOHO']
+DEBUG: Final bars_by_symbol length: 1
+   📊 Results: 0 entries approved
+   ❌ FAIL: No entry occurred
+
+▶️ Running Scenario: BALANCE_ESPR_WIDE_RANGE_REJECT
+   Symbol: ESPR
+   Date: 2025-11-21
+   Expected: NO_ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+DEBUG: SQL DataFrame shape: (390, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['ESPR']
+DEBUG: Final bars_by_symbol keys: ['ESPR']
+DEBUG: Final bars_by_symbol length: 1
+   📊 Results: 0 entries approved
+   ✅ PASS: No entry occurred as expected
+
+▶️ Running Scenario: BALANCE_NVD_NARROW_NOT_ODS
+   Symbol: NVD
+   Date: 2025-11-20
+   Expected: ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+   📊 Results: 0 entries approved
+   ❌ FAIL: No entry occurred
+
+▶️ Running Scenario: BALANCE_RUM_PRICE_EXTREME
+   Symbol: RUM
+   Date: 2025-11-11
+   Expected: ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+DEBUG: SQL DataFrame shape: (377, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['RUM']
+DEBUG: Final bars_by_symbol keys: ['RUM']
+DEBUG: Final bars_by_symbol length: 1
+   📊 Results: 0 entries approved
+   ❌ FAIL: No entry occurred
+
+▶️ Running Scenario: BALANCE_TRENDING_REJECT
+   Symbol: NVD
+   Date: 2025-11-12
+   Expected: NO_ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+DEBUG: SQL DataFrame shape: (386, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['NVD']
+DEBUG: Final bars_by_symbol keys: ['NVD']
+DEBUG: Final bars_by_symbol length: 1
+   📊 Results: 0 entries approved
+   ✅ PASS: No entry occurred as expected
+
+============================================================
+🏁 Regression Complete
+✅ Passed: 3
+❌ Failed: 3

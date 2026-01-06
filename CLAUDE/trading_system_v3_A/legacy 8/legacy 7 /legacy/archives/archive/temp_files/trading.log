@@ -1,0 +1,62 @@
+2025-08-10 14:52:53,711 - TradingSystem - INFO - 🛡️ Setting up enhanced cleanup system...
+2025-08-10 14:52:53,711 - TradingSystem - INFO - ✅ Enhanced cleanup active (max runtime: 12h)
+2025-08-10 14:52:53,711 - TradingSystem - INFO - Initializing trading system...
+2025-08-10 14:52:54,039 - TradingSystem - INFO - Ejecutando en entorno Streamlit
+2025-08-10 14:52:54,039 - IBKRAdapter(1) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-10 14:52:54,039 - TradingSystem - INFO - 📈 Inicializado en modo PRODUCTION
+2025-08-10 14:52:54,039 - TradingSystem - INFO - Initializing strategy: macdv
+2025-08-10 14:52:54,039 - Strategy.MACDV_Smallcaps - INFO - 🔧 MACDV received parameters: {'max_position_value': 100.0, 'max_portfolio_exposure': 100.0, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'volume_threshold': 1.5, 'stop_loss_pct': 0.03, 'take_profit_pct': 0.06}
+2025-08-10 14:52:54,039 - StopLossManager - INFO - 📊 Centralized Stop Loss Manager initialized
+2025-08-10 14:52:54,040 - Strategy.MACDV_Smallcaps - INFO - 🎯 MACDV Strategy initialized with centralized stop loss management
+2025-08-10 14:52:54,040 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=20 | max_daily_loss=-500.0 | max_position_value=Not set
+2025-08-10 14:52:54,040 - Pipeline.DataCollection - INFO - 🏭 DataCollectionStage initialized: batch_size=1, cache_ttl=60s
+2025-08-10 14:52:54,040 - TradingEnginePipeline - INFO - 🎯 STRATEGY REGISTRY: Using individual strategy: MACDVStrategy
+2025-08-10 14:52:54,040 - Pipeline.StrategyAnalysis - INFO - 🎯 STRATEGY REGISTRY: Using individual strategies: ['MACDV_Smallcaps']
+2025-08-10 14:52:54,040 - Pipeline.StrategyAnalysis - INFO - 🧠 StrategyAnalysisStage initialized: max_concurrent=5
+2025-08-10 14:52:54,043 - DatabaseManager - INFO - Database tables created successfully
+2025-08-10 14:52:54,043 - DatabaseManager - INFO - Database initialized: trading_data.db
+2025-08-10 14:52:54,043 - ExtendedHoursManager - INFO - 🕐 ExtendedHoursManager initialized
+2025-08-10 14:52:54,043 - Pipeline.TradingExecution - INFO - 📨 Telegram notifications ENABLED
+2025-08-10 14:52:54,044 - Pipeline.TradingExecution - INFO - 💼 TradingExecutionStage initialized: max_concurrent=3
+2025-08-10 14:52:54,044 - Pipeline.TradingExecution - INFO - 🕐 Extended hours support: ENABLED
+2025-08-10 14:52:54,044 - Pipeline.TradingExecution - INFO - 💾 Database integration: ENABLED
+2025-08-10 14:52:54,044 - TradingEnginePipeline - INFO - 🚀 Pipeline-based TradingEngine initialized
+2025-08-10 14:52:54,044 - TradingEnginePipeline - INFO - 📊 Pipeline stages: ['DataCollection', 'StrategyAnalysis', 'TradingExecution']
+2025-08-10 14:52:54,044 - TradingSystem - INFO - All components initialized successfully
+2025-08-10 14:52:54,044 - TradingSystem - INFO - 🔄 Sistema ya detenido
+2025-08-10 14:52:54,267 - TradingSystem - INFO - 🚨 EMERGENCY CLEANUP ACTIVATED
+2025-08-10 14:52:54,268 - TradingSystem - INFO - 🛑 Emergency stop of trading engine...
+2025-08-10 14:52:54,268 - TradingEnginePipeline - INFO - 🛑 Stopping pipeline trading engine...
+2025-08-10 14:52:54,268 - TradingEnginePipeline - INFO - ✅ Pipeline trading engine stopped successfully
+2025-08-10 14:52:54,268 - TradingSystem - INFO - ✅ Emergency cleanup completed
+2025-08-10 14:53:55,392 - TradingSystem - INFO - 🛡️ Setting up enhanced cleanup system...
+2025-08-10 14:53:55,392 - TradingSystem - INFO - ✅ Enhanced cleanup active (max runtime: 12h)
+2025-08-10 14:53:55,392 - TradingSystem - INFO - Initializing trading system...
+2025-08-10 14:53:55,553 - TradingSystem - INFO - Ejecutando en entorno Streamlit
+2025-08-10 14:53:55,553 - IBKRAdapter(1) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-08-10 14:53:55,553 - TradingSystem - INFO - 📈 Inicializado en modo PRODUCTION
+2025-08-10 14:53:55,553 - TradingSystem - INFO - Initializing strategy: macdv
+2025-08-10 14:53:55,553 - Strategy.MACDV_Smallcaps - INFO - 🔧 MACDV received parameters: {'max_position_value': 100.0, 'max_portfolio_exposure': 100.0, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'volume_threshold': 1.5, 'stop_loss_pct': 0.03, 'take_profit_pct': 0.06}
+2025-08-10 14:53:55,553 - StopLossManager - INFO - 📊 Centralized Stop Loss Manager initialized
+2025-08-10 14:53:55,554 - Strategy.MACDV_Smallcaps - INFO - 🎯 MACDV Strategy initialized with centralized stop loss management
+2025-08-10 14:53:55,554 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=20 | max_daily_loss=-500.0 | max_position_value=Not set
+2025-08-10 14:53:55,554 - Pipeline.DataCollection - INFO - 🏭 DataCollectionStage initialized: batch_size=1, cache_ttl=60s
+2025-08-10 14:53:55,554 - TradingEnginePipeline - INFO - 🎯 STRATEGY REGISTRY: Using individual strategy: MACDVStrategy
+2025-08-10 14:53:55,554 - Pipeline.StrategyAnalysis - INFO - 🎯 STRATEGY REGISTRY: Using individual strategies: ['MACDV_Smallcaps']
+2025-08-10 14:53:55,554 - Pipeline.StrategyAnalysis - INFO - 🧠 StrategyAnalysisStage initialized: max_concurrent=5
+2025-08-10 14:53:55,557 - DatabaseManager - INFO - Database tables created successfully
+2025-08-10 14:53:55,557 - DatabaseManager - INFO - Database initialized: trading_data.db
+2025-08-10 14:53:55,557 - ExtendedHoursManager - INFO - 🕐 ExtendedHoursManager initialized
+2025-08-10 14:53:55,557 - Pipeline.TradingExecution - INFO - 📨 Telegram notifications ENABLED
+2025-08-10 14:53:55,557 - Pipeline.TradingExecution - INFO - 💼 TradingExecutionStage initialized: max_concurrent=3
+2025-08-10 14:53:55,557 - Pipeline.TradingExecution - INFO - 🕐 Extended hours support: ENABLED
+2025-08-10 14:53:55,557 - Pipeline.TradingExecution - INFO - 💾 Database integration: ENABLED
+2025-08-10 14:53:55,557 - TradingEnginePipeline - INFO - 🚀 Pipeline-based TradingEngine initialized
+2025-08-10 14:53:55,557 - TradingEnginePipeline - INFO - 📊 Pipeline stages: ['DataCollection', 'StrategyAnalysis', 'TradingExecution']
+2025-08-10 14:53:55,557 - TradingSystem - INFO - All components initialized successfully
+2025-08-10 14:53:55,557 - TradingSystem - INFO - 🔄 Sistema ya detenido
+2025-08-10 14:53:55,729 - TradingSystem - INFO - 🚨 EMERGENCY CLEANUP ACTIVATED
+2025-08-10 14:53:55,730 - TradingSystem - INFO - 🛑 Emergency stop of trading engine...
+2025-08-10 14:53:55,730 - TradingEnginePipeline - INFO - 🛑 Stopping pipeline trading engine...
+2025-08-10 14:53:55,730 - TradingEnginePipeline - INFO - ✅ Pipeline trading engine stopped successfully
+2025-08-10 14:53:55,730 - TradingSystem - INFO - ✅ Emergency cleanup completed

@@ -1,0 +1,190 @@
+
+> smallquant-backend@1.0.0 dev
+> nodemon src/server.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+🧹 Server cache cleared on restart
+Using PostgreSQL database: { host: 'localhost', port: '5432', database: 'carlos', user: 'carlos' }
+CUSIP queue processing started
+HybridTradeService initialized with dbPath: /Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/trading_data.db
+BrokerOhlcService initialized with dbPath: /Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/trading_data.db
+Starting TradeTally server...
+Running database migrations...
+[34mStarting database migration...[0m
+
+[34mRunning base schema initialization...[0m
+✓ Connected to PostgreSQL database
+Starting CUSIP queue processing...
+✓ Connected to PostgreSQL database
+No pending CUSIPs to process
+[32m✓ Base schema initialized[0m
+[90m→ Skipping 001_add_owner_role.sql (already applied)[0m
+[90m→ Skipping 002_add_mobile_support_tables.sql (already applied)[0m
+[90m→ Skipping 003_add_instance_configuration.sql (already applied)[0m
+[90m→ Skipping 004_add_executions_field.sql (already applied)[0m
+[90m→ Skipping 005_create_cusip_queue.sql (already applied)[0m
+[90m→ Skipping 006_add_mae_mfe_columns.sql (already applied)[0m
+[90m→ Skipping 007_change_quantity_to_decimal.sql (already applied)[0m
+[90m→ Skipping 008_add_equity_tracking.sql (already applied)[0m
+[90m→ Skipping 009_add_symbol_categories.sql (already applied)[0m
+[90m→ Skipping 010_fix_symbol_categories_types.sql (already applied)[0m
+[90m→ Skipping 011_add_2fa_support.sql (already applied)[0m
+[90m→ Skipping 012_add_missing_export_fields.sql (already applied)[0m
+[90m→ Skipping 013_increase_price_precision.sql (already applied)[0m
+[90m→ Skipping 014_revert_price_precision.sql (already applied)[0m
+[90m→ Skipping 015_fix_zero_quantities.sql (already applied)[0m
+[90m→ Skipping 016_enhance_api_keys_table.sql (already applied)[0m
+[90m→ Skipping 017_add_ai_provider_settings.sql (already applied)[0m
+[90m→ Skipping 018_add_admin_ai_settings.sql (already applied)[0m
+[90m→ Skipping 018_add_historical_capital.sql (already applied)[0m
+[90m→ Skipping 019_fix_trade_dates_timezone.sql (already applied)[0m
+[90m→ Skipping 020_add_stock_splits_tracking.sql (already applied)[0m
+[90m→ Skipping 026_create_gamification_system.sql (already applied)[0m
+[90m→ Skipping 027_insert_default_challenges.sql (already applied)[0m
+[90m→ Skipping 029_add_easy_achievements.sql (already applied)[0m
+[90m→ Skipping 030_fix_user_achievements_constraint.sql (already applied)[0m
+[90m→ Skipping 031_remove_trivial_achievements.sql (already applied)[0m
+[90m→ Skipping 032_add_trading_achievements.sql (already applied)[0m
+[90m→ Skipping 044_update_leaderboards_to_pnl_based.sql (already applied)[0m
+[90m→ Skipping 054_fix_entry_exit_time_nullable.sql (already applied)[0m
+[90m→ Skipping 055_remove_duplicate_trades.sql (already applied)[0m
+[90m→ Skipping 056_add_confidence_to_trades.sql (already applied)[0m
+[33m⚠ Migration 057_add_missing_gamification_tables.sql has been modified after being applied![0m
+[33m  Expected checksum: 351f96c8e7cdf3d77f794806914ef9b9e46642dfeaeaff76591d710488eb9743[0m
+[33m  Current checksum:  6df9fa8a17fa00ae7ecec9cfad5fed3ccbf969bcc06c8b6efab649e1a2a5f4b7[0m
+[90m→ Skipping 057_add_missing_gamification_tables.sql (already applied)[0m
+[90m→ Skipping 057_add_ml_metrics.sql (already applied)[0m
+[90m→ Skipping 058_create_trade_metadata.sql (already applied)[0m
+[90m→ Skipping 059_migrate_existing_trades.sql (already applied)[0m
+[90m→ Skipping 060_recreate_trade_comments.sql (already applied)[0m
+[90m→ Skipping 061_create_news_events_table.sql (already applied)[0m
+[90m→ Skipping 062_create_symbol_categories.sql (already applied)[0m
+[90m→ Skipping 063_add_risk_fields.sql (already applied)[0m
+[90m→ Skipping 064_add_risk_fields_to_metadata.sql (already applied)[0m
+[90m→ Skipping 065_create_test_bench_tables.sql (already applied)[0m
+[90m→ Skipping add_admin_approved_column.sql (already applied)[0m
+[90m→ Skipping add_trading_profile_fields.sql (already applied)[0m
+
+[32m✓ Migration complete. 0 migration(s) applied.[0m
+✅ WebSocket service initialized on /ws/sync
+✓ TradeTally server running on port 8001
+✓ Environment: development
+✓ WebSocket ready on /ws/sync
+[StockSplitService] Starting stock split check...
+[StockSplitService] Next stock split check scheduled for 2025-11-28T01:00:00.000Z
+✓ Stock split monitoring started
+🎯 Starting gamification scheduler...
+🎯 Running gamification scheduled tasks...
+📊 Updating challenge progress...
+✓ Gamification scheduler started
+🏆 Checking achievements for active users...
+[StockSplitService] No symbols need checking
+🎉 Awarded 0 new achievements to 0 active users
+🔌 New WebSocket connection: dwF1tDVzbZzfxxXsAAAB
+📈 Updating trading streaks for all users...
+✅ Updated trading streaks for 1 users
+👥 Assigning users to peer groups...
+👥 Assigned 0 users to peer groups
+🧹 Running maintenance tasks...
+🗑️ Cleaned up 0 old notifications
+✨ Maintenance tasks completed
+✅ Gamification scheduled tasks completed
+✅ Authenticated: repropel (dwF1tDVzbZzfxxXsAAAB)
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 23 trades for repropel
+✅ Bulk synced 100 trades for repropel
+[0mGET /api/v1/server/health [32m200[0m 119.870 ms - 185[0m
+🔌 Disconnected: repropel (dwF1tDVzbZzfxxXsAAAB)
+🔌 New WebSocket connection: SLlQiDzJ2_wLXcjIAAAD
+✅ Authenticated: repropel (SLlQiDzJ2_wLXcjIAAAD)
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 23 trades for repropel
+✓ Connected to PostgreSQL database
+✓ Connected to PostgreSQL database
+✅ Marked trade 112851 as deleted in SQLite (rows: 1)
+Failed to invalidate cache: TypeError: cache.invalidate is not a function
+    at deleteTrade (/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/tradetally/backend/src/controllers/hybridTrade.controller.js:270:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0mDELETE /api/trades/112851 [32m200[0m 60.514 ms - 49[0m
+✅ Marked trade 113080 as deleted in SQLite (rows: 1)
+Failed to invalidate cache: TypeError: cache.invalidate is not a function
+    at deleteTrade (/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/tradetally/backend/src/controllers/hybridTrade.controller.js:270:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0mDELETE /api/trades/113080 [32m200[0m 90.598 ms - 49[0m
+[getUserTrades] Called with query: {
+  symbol: '',
+  startDate: '2025-10-31',
+  endDate: '2025-11-28',
+  strategy: '',
+  limit: '100',
+  offset: '200'
+}
+[getUserTrades] User ID: 7ab22590-ebff-4cc0-b2c3-43170dda53d2
+[getUserTrades] Filters: {
+  symbol: '',
+  dateFrom: '2025-10-31',
+  dateTo: '2025-11-28',
+  strategy: '',
+  status: undefined
+}
+✅ Config found at: /Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/config.ini
+📖 Config loaded successfully
+📊 Risk percentage from config: 4% (fallback_stop_loss_pct: 0.04)
+[0mGET /api/trades/analytics?symbol=&startDate=2025-10-31&endDate=2025-11-28&strategy= [32m200[0m 93.947 ms - 24938[0m
+[getUserTrades] Found 246 trades
+[0mGET /api/trades?symbol=&startDate=2025-10-31&endDate=2025-11-28&strategy=&limit=100&offset=200 [32m200[0m 107.928 ms - 68432[0m
+[0mGET /api/auth/config [32m200[0m 0.694 ms - 85[0m
+Found 37 available sectors
+[0mGET /api/analytics/sectors/available [32m200[0m 6.314 ms - 690[0m
+[0mGET /api/auth/me [32m200[0m 67.602 ms - 978[0m
+✓ Connected to PostgreSQL database
+✓ Connected to PostgreSQL database
+[getUserTrades] Called with query: {
+  symbol: '',
+  startDate: '',
+  endDate: '',
+  strategy: '',
+  limit: '100',
+  offset: '0'
+}
+[getUserTrades] User ID: 7ab22590-ebff-4cc0-b2c3-43170dda53d2
+[getUserTrades] Filters: {
+  symbol: '',
+  dateFrom: '',
+  dateTo: '',
+  strategy: '',
+  status: undefined
+}
+📊 Risk percentage from config: 4% (fallback_stop_loss_pct: 0.04)
+[0mGET /api/trades/analytics?symbol=&startDate=&endDate=&strategy= [32m200[0m 120.686 ms - 32095[0m
+[getUserTrades] Found 821 trades
+[0mGET /api/trades?symbol=&startDate=&endDate=&strategy=&limit=100&offset=0 [32m200[0m 179.427 ms - 157915[0m
+🔌 New WebSocket connection: W51MlwbFE0ktH8ggAAAF
+✅ Authenticated: repropel (W51MlwbFE0ktH8ggAAAF)
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 100 trades for repropel
+✅ Bulk synced 21 trades for repropel
+🔌 Disconnected: repropel (W51MlwbFE0ktH8ggAAAF)

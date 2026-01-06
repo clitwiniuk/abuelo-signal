@@ -1,0 +1,72 @@
+[
+    {
+        "id": "BLIND_INTS_2025-10-31",
+        "symbol": "INTS",
+        "date": "2025-10-31",
+        "description": "Blind Test: +16% move, 109M volume",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 85.0,
+            "catalyst_strength": 7,
+            "catalyst_type": "UNKNOWN",
+            "gap_percentage": 5.0,
+            "vwap": 0.0
+        }
+    },
+    {
+        "id": "BLIND_PLUG_2025-09-17",
+        "symbol": "PLUG",
+        "date": "2025-09-17",
+        "description": "Blind Test: +18% move, 196M volume",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 85.0,
+            "catalyst_strength": 7,
+            "catalyst_type": "UNKNOWN",
+            "gap_percentage": 5.0,
+            "vwap": 0.0
+        }
+    },
+    {
+        "id": "BLIND_LAES_2025-11-19",
+        "symbol": "LAES",
+        "date": "2025-11-19",
+        "description": "Blind Test: +6% move, 16M volume",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 85.0,
+            "catalyst_strength": 7,
+            "catalyst_type": "UNKNOWN",
+            "gap_percentage": 5.0,
+            "vwap": 0.0
+        }
+    },
+    {
+        "id": "BLIND_EPSM_2025-11-19",
+        "symbol": "EPSM",
+        "date": "2025-11-19",
+        "description": "Blind Test: +128% move, 27M volume",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 95.0,
+            "catalyst_strength": 9,
+            "catalyst_type": "NEWS",
+            "gap_percentage": 10.0,
+            "vwap": 0.0
+        }
+    },
+    {
+        "id": "BLIND_RR_2025-09-17",
+        "symbol": "RR",
+        "date": "2025-09-17",
+        "description": "Blind Test: +9% move, 46M volume",
+        "expected_action": "ENTRY",
+        "mock_scanner_data": {
+            "quality_score": 85.0,
+            "catalyst_strength": 7,
+            "catalyst_type": "UNKNOWN",
+            "gap_percentage": 5.0,
+            "vwap": 0.0
+        }
+    }
+]

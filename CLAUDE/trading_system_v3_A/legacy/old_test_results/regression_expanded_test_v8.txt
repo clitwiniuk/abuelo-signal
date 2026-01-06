@@ -1,0 +1,1197 @@
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO -    Market data: regression_market_data.db
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-11-21
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO -    Workers: daily_plays
+2025-11-23 05:41:15,483 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-23 05:41:15,577 - replay_testing.core.replay_engine - INFO -    Loaded 369 bars for FOXX
+2025-11-23 05:41:15,577 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 1 symbols
+2025-11-23 05:41:15,577 - replay_testing.core.replay_engine - INFO -   Symbol FOXX: 369 bars
+2025-11-23 05:41:15,577 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - Worker logging initialized - daily_plays -> logs/worker_daily_plays.log
+2025-11-23 05:41:15,580 - Worker.daily_plays - INFO - Worker logging initialized - daily_plays -> logs/worker_daily_plays.log
+2025-11-23 05:41:15,582 - ServiceLocator - INFO - 🏗️ ServiceLocator initialized - UNIFIED TRADING SYSTEM
+2025-11-23 05:41:15,582 - ServiceLocator - INFO - 📋 Patrón: Singleton + Dependency Injection
+2025-11-23 05:41:15,600 - ODSClassifier - INFO - 🕐 ODSClassifier initialized - Opening Drive Structure analysis
+2025-11-23 05:41:15,600 - ServiceLocator - INFO - ✅ Service registered: ods_classifier -> ODSClassifier
+2025-11-23 05:41:15,600 - ServiceLocator - INFO - ✅ ODSClassifier service created - Opening Drive Structure analysis enabled
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔧 Worker daily_plays initialized with separate logging + ODS support + Event Logger
+2025-11-23 05:41:15,600 - Worker.daily_plays - INFO - 🔧 Worker daily_plays initialized with separate logging + ODS support + Event Logger
+2025-11-23 05:41:15,620 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -    Client ID: 6000
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -    Workers Enabled:
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -      ❌ Disabled Workers:
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - volume_absorption: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - generic_01: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - smallcaps_long: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - outlier_penny_extreme: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -      ✅ Active Workers (Pattern-Independent):
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - macdv: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - daily_plays: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - orb: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - balance_day: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - vwap_breakout: False
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - momentum_breakout: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - vcp: True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -      🎯 Universal Pattern-Driven Workers:
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - ods_universal (intraday): True
+2025-11-23 05:41:15,620 - ServiceLocator - INFO -         - ods_swing_universal (1-7 days): True
+2025-11-23 05:41:15,620 - WorkerStopManager - DEBUG - 🔧 Creating WorkerStopManager for strategy: DAILY_PLAYS_STRATEGY
+2025-11-23 05:41:15,620 - WorkerStopManager - DEBUG - DEBUG: stop_loss_pct=5.0 (type: <class 'float'>), take_profit_pct=20.0 (type: <class 'float'>), trailing_activation=8.0 (type: <class 'float'>), trailing_distance=4.0 (type: <class 'float'>)
+2025-11-23 05:41:15,620 - WorkerStopManager - INFO - ✅ Created WorkerStopManager for DAILY_PLAYS_STRATEGY: SL=5.0%, TP=20.0%, Trailing=8.0%/4.0%, MaxHours=None, EOD=15.966666666666667
+2025-11-23 05:41:15,621 - FOMODetector - INFO - 🎪 FOMODetector initialized
+2025-11-23 05:41:15,621 - FOMODetector - INFO -    Thresholds: FOMO=55.0%, Critical=75.0%
+2025-11-23 05:41:15,621 - FOMODetector - INFO -    Weights: Vol=40.0%, Price=30.0%, Tech=20.0%, Time=10.0%
+2025-11-23 05:41:15,621 - WorkerStopManager - INFO - ✅ FOMO Detector initialized
+2025-11-23 05:41:15,621 - WorkerStopManager - INFO - ✅ WorkerStopManager initialized: SL=5.0%, TP=20.0%, Trailing=8.0%/4.0%
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🎯 Daily Plays Worker configured: catalysts=['FDA', 'M&A', 'EARNINGS', 'BREAKTHROUGH', 'CONTRACT', 'NEWS', 'ANALYST'], vol>=1.2x, price=$0.5-$25.0, Q>=35.0
+2025-11-23 05:41:15,621 - Worker.daily_plays - INFO - 🎯 Daily Plays Worker configured: catalysts=['FDA', 'M&A', 'EARNINGS', 'BREAKTHROUGH', 'CONTRACT', 'NEWS', 'ANALYST'], vol>=1.2x, price=$0.5-$25.0, Q>=35.0
+2025-11-23 05:41:15 - Worker.daily_plays - INFO -    Stop Manager: WorkerStopConfig(stop_loss_pct=5.0, take_profit_pct=20.0, quick_target_pct=None, trailing_activation=8.0, trailing_distance=4.0, breakeven_activation_pct=None, max_position_hours=None, end_of_day_hour=15.966666666666667)
+2025-11-23 05:41:15,622 - Worker.daily_plays - INFO -    Stop Manager: WorkerStopConfig(stop_loss_pct=5.0, take_profit_pct=20.0, quick_target_pct=None, trailing_activation=8.0, trailing_distance=4.0, breakeven_activation_pct=None, max_position_hours=None, end_of_day_hour=15.966666666666667)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO -    Reversal Mode ENABLED: RSI<35.0, 4/6 signals required
+2025-11-23 05:41:15,622 - Worker.daily_plays - INFO -    Reversal Mode ENABLED: RSI<35.0, 4/6 signals required
+2025-11-23 05:41:15,622 - replay_testing.core.replay_engine - INFO - ✅ Loaded REAL worker: daily_plays
+2025-11-23 05:41:15,622 - replay_testing.core.replay_engine - INFO - ✅ Loaded 1 workers: daily_plays
+
+2025-11-23 05:41:15,622 - core.context_engine.ContextEngine - INFO - 🧠 ContextEngine initialized - SMALL CAP optimized thresholds
+2025-11-23 05:41:15,622 - core.trade_arbiter.TradeArbiter - INFO - ⚖️ TradeArbiter initialized - Multi-worker coordination active
+2025-11-23 05:41:15,622 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: FOXX @ 2025-11-21 (369 bars)
+2025-11-23 05:41:15,622 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,622 - ServiceLocator - INFO - 💼 Creating SINGLE UnifiedPositionManager instance
+2025-11-23 05:41:15,626 - ServiceLocator - INFO - ✅ Service registered: unified_position_manager -> UnifiedPositionManager
+2025-11-23 05:41:15,626 - ServiceLocator - INFO - ✅ UnifiedPositionManager created - DUPLICATE PREVENTION ACTIVE
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$2.15
+2025-11-23 05:41:15,626 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$2.15
+2025-11-23 05:41:15,628 - IntradayStructure - INFO - ✅ IntradayStructureClassifier initialized
+2025-11-23 05:41:15,628 - IntradayStructure - DEBUG - ODS Classifier injected into IntradayStructureClassifier
+2025-11-23 05:41:15,628 - ServiceLocator - INFO - ✅ Service registered: intraday_structure_classifier -> IntradayStructureClassifier
+2025-11-23 05:41:15,628 - ServiceLocator - INFO - ✅ IntradayStructureClassifier service created - 6 pattern system enabled
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 9.85 ET
+2025-11-23 05:41:15,629 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 9.85 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,676 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,677 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $2.15
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $2.15
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $2.15 >= VWAP $2.00
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $2.15 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$2.15, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$2.15, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $2.15
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $2.15
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $2.15 >= VWAP $2.00
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $2.15 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$2.15, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,677 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$2.15, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,677 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$2.15)
+2025-11-23 05:41:15,677 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $2.15 (daily_plays, qty=100)
+2025-11-23 05:41:15,677 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,677 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.16, Entry=2.15
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.47%
+2025-11-23 05:41:15,678 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.16, Entry=2.15
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.47%
+2025-11-23 05:41:15,678 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,678 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,678 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,678 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,679 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,679 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,680 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,680 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.15, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,680 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.18, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.40%
+2025-11-23 05:41:15,680 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.18, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.40%
+2025-11-23 05:41:15,680 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.18, Entry=2.15
+2025-11-23 05:41:15,680 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.40%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,681 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,681 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,682 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,682 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,682 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,682 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.19, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.86%
+2025-11-23 05:41:15,682 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,682 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,683 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,683 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,683 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,683 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,683 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,683 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,684 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.20, Entry=2.15
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.33%
+2025-11-23 05:41:15,684 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.30, Entry=2.15
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +6.98%
+2025-11-23 05:41:15,684 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.63, Entry=2.15
+2025-11-23 05:41:15,684 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +22.33%
+2025-11-23 05:41:15,684 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TAKE_PROFIT_20.0%, price=$2.63)
+2025-11-23 05:41:15,685 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $2.63 (TAKE_PROFIT_20.0%, P&L=+22.3%, cooldown=5min)
+2025-11-23 05:41:15,685 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,685 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,685 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,686 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,686 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.07
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.07
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 10.52 ET
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 10.52 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,686 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,686 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.07
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.07
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.07 >= VWAP $2.00
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.07 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.07, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.07, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.07
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.07
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.07 >= VWAP $2.00
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.07 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.07, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,686 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.07, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,686 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.07)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.07 (daily_plays, qty=100)
+2025-11-23 05:41:15,687 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.07, Entry=3.07
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,687 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.07, Entry=3.07
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,687 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.36, Entry=3.07
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.45%
+2025-11-23 05:41:15,687 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.17, Entry=3.07
+2025-11-23 05:41:15,687 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.26%
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TRAILING_STOP, price=$3.17)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.17 (TRAILING_STOP, P&L=+3.3%, cooldown=15min)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,687 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,688 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.09
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.09
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 10.83 ET
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 10.83 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,688 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,688 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.09
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.09
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.09 >= VWAP $2.00
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.09 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.09, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.09, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.09
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.09
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.09 >= VWAP $2.00
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.09 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.09, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,688 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.09, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,688 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.09)
+2025-11-23 05:41:15,689 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.09 (daily_plays, qty=100)
+2025-11-23 05:41:15,689 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.01, Entry=3.09
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -2.59%
+2025-11-23 05:41:15,689 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.96, Entry=3.09
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -4.37%
+2025-11-23 05:41:15,689 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.04, Entry=3.09
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -1.78%
+2025-11-23 05:41:15,689 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=2.96, Entry=3.09
+2025-11-23 05:41:15,689 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -4.21%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.00, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -2.75%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.14, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.62%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.26, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +5.62%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.20, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.56%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.39, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.84%
+2025-11-23 05:41:15,690 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.42, Entry=3.09
+2025-11-23 05:41:15,690 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.68%
+2025-11-23 05:41:15,691 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.50, Entry=3.09
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +13.27%
+2025-11-23 05:41:15,691 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.47, Entry=3.09
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +12.30%
+2025-11-23 05:41:15,691 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.21, Entry=3.09
+2025-11-23 05:41:15,691 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.88%
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TRAILING_STOP, price=$3.21)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.21 (TRAILING_STOP, P&L=+3.9%, cooldown=15min)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,691 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,692 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,692 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,692 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,692 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.64
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.64
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 11.30 ET
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 11.30 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,692 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,692 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.64
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.64
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.64 >= VWAP $2.00
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.64 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.64, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.64, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.64
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.64
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.64 >= VWAP $2.00
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.64 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.64, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,692 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.64, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,692 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.64)
+2025-11-23 05:41:15,693 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.64 (daily_plays, qty=100)
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.78, Entry=3.64
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.85%
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.77, Entry=3.64
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.43%
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.70, Entry=3.64
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.65%
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.74, Entry=3.64
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.75%
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.99, Entry=3.64
+2025-11-23 05:41:15,693 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.51%
+2025-11-23 05:41:15,693 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,694 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.42, Entry=3.64
+2025-11-23 05:41:15,694 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +21.46%
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TAKE_PROFIT_20.0%, price=$4.42)
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $4.42 (TAKE_PROFIT_20.0%, P&L=+21.5%, cooldown=5min)
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,694 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,694 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$4.28
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$4.28
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 11.48 ET
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 11.48 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,694 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,694 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.28
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.28
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.28 >= VWAP $2.00
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.28 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.28, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.28, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.28
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.28
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.28 >= VWAP $2.00
+2025-11-23 05:41:15,694 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.28 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,695 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.28, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,695 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.28, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$4.28)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $4.28 (daily_plays, qty=100)
+2025-11-23 05:41:15,695 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.40, Entry=4.28
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.83%
+2025-11-23 05:41:15,695 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.38, Entry=4.28
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.37%
+2025-11-23 05:41:15,695 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.04, Entry=4.28
+2025-11-23 05:41:15,695 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -5.58%
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (STOP_LOSS_5.0%, price=$4.04)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $4.04 (STOP_LOSS_5.0%, P&L=-5.6%, cooldown=30min)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (29.0min remaining)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (28.0min remaining)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (27.0min remaining)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (26.0min remaining)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (25.0min remaining)
+2025-11-23 05:41:15,695 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (24.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (23.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (22.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (21.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (20.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (19.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (18.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (17.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (16.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (15.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,696 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,696 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.73
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.73
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 12.03 ET
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 12.03 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,696 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,696 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.73
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.73
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.73 >= VWAP $2.00
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.73 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.73, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,696 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.73, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.73
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.73
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.73 >= VWAP $2.00
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.73 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.73, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,697 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.73, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,697 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.73)
+2025-11-23 05:41:15,697 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.73 (daily_plays, qty=100)
+2025-11-23 05:41:15,697 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.86, Entry=3.73
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.49%
+2025-11-23 05:41:15,697 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.92, Entry=3.73
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +5.23%
+2025-11-23 05:41:15,697 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.52, Entry=3.73
+2025-11-23 05:41:15,697 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -5.57%
+2025-11-23 05:41:15,697 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (STOP_LOSS_5.0%, price=$3.52)
+2025-11-23 05:41:15,697 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.52 (STOP_LOSS_5.0%, P&L=-5.6%, cooldown=30min)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (29.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (28.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (27.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (26.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (25.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (24.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (23.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (22.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (21.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (20.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (19.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (18.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (17.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (16.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (15.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,698 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,698 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.29
+2025-11-23 05:41:15,698 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.29
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 12.58 ET
+2025-11-23 05:41:15,698 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 12.58 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,698 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,698 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.29
+2025-11-23 05:41:15,698 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.29
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,698 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.29 >= VWAP $2.00
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.29 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.29, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.29, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.29
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.29
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.29 >= VWAP $2.00
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.29 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.29, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,699 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.29, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,699 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.29)
+2025-11-23 05:41:15,699 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.29 (daily_plays, qty=100)
+2025-11-23 05:41:15,699 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,699 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.26, Entry=3.29
+2025-11-23 05:41:15,699 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -0.91%
+2025-11-23 05:41:15,699 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,699 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.32, Entry=3.29
+2025-11-23 05:41:15,699 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.91%
+2025-11-23 05:41:15,699 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.26, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -0.91%
+2025-11-23 05:41:15,700 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.32, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.91%
+2025-11-23 05:41:15,700 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.61, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.72%
+2025-11-23 05:41:15,700 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.63, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.33%
+2025-11-23 05:41:15,700 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.60, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.42%
+2025-11-23 05:41:15,700 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.70, Entry=3.29
+2025-11-23 05:41:15,700 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +12.46%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.64, Entry=3.29
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.63%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.62, Entry=3.29
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.18%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.67, Entry=3.29
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.70%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.66, Entry=3.29
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.24%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.61, Entry=3.29
+2025-11-23 05:41:15,701 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.72%
+2025-11-23 05:41:15,701 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.57, Entry=3.29
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.51%
+2025-11-23 05:41:15,702 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.66, Entry=3.29
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.24%
+2025-11-23 05:41:15,702 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.65, Entry=3.29
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.94%
+2025-11-23 05:41:15,702 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.55, Entry=3.29
+2025-11-23 05:41:15,702 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +7.91%
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TRAILING_STOP, price=$3.55)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.55 (TRAILING_STOP, P&L=+7.9%, cooldown=15min)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,702 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,703 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.96
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 13.12 ET
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 13.12 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,703 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,703 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,703 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,703 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.96)
+2025-11-23 05:41:15,704 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.96 (daily_plays, qty=100)
+2025-11-23 05:41:15,704 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.01, Entry=3.96
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.26%
+2025-11-23 05:41:15,704 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.03, Entry=3.96
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +1.77%
+2025-11-23 05:41:15,704 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.99, Entry=3.96
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.76%
+2025-11-23 05:41:15,704 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.00, Entry=3.96
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.97%
+2025-11-23 05:41:15,704 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.96, Entry=3.96
+2025-11-23 05:41:15,704 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -0.13%
+2025-11-23 05:41:15,705 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.96, Entry=3.96
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.00%
+2025-11-23 05:41:15,705 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.99, Entry=3.96
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.76%
+2025-11-23 05:41:15,705 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.08, Entry=3.96
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.03%
+2025-11-23 05:41:15,705 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.76, Entry=3.96
+2025-11-23 05:41:15,705 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -5.05%
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (STOP_LOSS_5.0%, price=$3.76)
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.76 (STOP_LOSS_5.0%, P&L=-5.1%, cooldown=30min)
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (29.0min remaining)
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (28.0min remaining)
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (27.0min remaining)
+2025-11-23 05:41:15,705 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (26.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (25.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (24.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (23.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (22.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (21.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (20.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (19.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (18.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (17.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (16.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (15.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,706 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,706 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.34
+2025-11-23 05:41:15,706 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.34
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 13.77 ET
+2025-11-23 05:41:15,706 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 13.77 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,706 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,706 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.34
+2025-11-23 05:41:15,706 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.34
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.34 >= VWAP $2.00
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.34 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.34, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.34, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.34
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.34
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.34 >= VWAP $2.00
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.34 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.34, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,707 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.34, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,707 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.34)
+2025-11-23 05:41:15,707 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.34 (daily_plays, qty=100)
+2025-11-23 05:41:15,707 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,707 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.43, Entry=3.34
+2025-11-23 05:41:15,707 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.56%
+2025-11-23 05:41:15,707 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,707 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.50, Entry=3.34
+2025-11-23 05:41:15,707 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +4.94%
+2025-11-23 05:41:15,708 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.43, Entry=3.34
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.69%
+2025-11-23 05:41:15,708 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.43, Entry=3.34
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.69%
+2025-11-23 05:41:15,708 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.46, Entry=3.34
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.61%
+2025-11-23 05:41:15,708 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.57, Entry=3.34
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +6.89%
+2025-11-23 05:41:15,708 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.59, Entry=3.34
+2025-11-23 05:41:15,708 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +7.49%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.65, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.28%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.58, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +7.34%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.54, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +5.99%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.65, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.28%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.63, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.68%
+2025-11-23 05:41:15,709 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.63, Entry=3.34
+2025-11-23 05:41:15,709 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.68%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.64, Entry=3.34
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.98%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.57, Entry=3.34
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +6.89%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.58, Entry=3.34
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +7.19%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.71, Entry=3.34
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.08%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.75, Entry=3.34
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +12.28%
+2025-11-23 05:41:15,710 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,710 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.72, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.38%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.70, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.78%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.72, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.38%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.73, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +11.67%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.71, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.93%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.74, Entry=3.34
+2025-11-23 05:41:15,711 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +12.12%
+2025-11-23 05:41:15,711 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.79, Entry=3.34
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +13.47%
+2025-11-23 05:41:15,712 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.69, Entry=3.34
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.44%
+2025-11-23 05:41:15,712 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.68, Entry=3.34
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +10.18%
+2025-11-23 05:41:15,712 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.58, Entry=3.34
+2025-11-23 05:41:15,712 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +7.19%
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TRAILING_STOP, price=$3.58)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.58 (TRAILING_STOP, P&L=+7.2%, cooldown=15min)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,712 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,713 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,713 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,713 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.77
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.77
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 14.48 ET
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 14.48 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,713 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,713 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.77
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.77
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.77 >= VWAP $2.00
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.77 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.77, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.77, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.77
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.77
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.77 >= VWAP $2.00
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.77 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.77, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,713 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.77, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,713 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.77)
+2025-11-23 05:41:15,713 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.77 (daily_plays, qty=100)
+2025-11-23 05:41:15,713 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.87, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +2.65%
+2025-11-23 05:41:15,714 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.92, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +3.93%
+2025-11-23 05:41:15,714 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.03, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +6.89%
+2025-11-23 05:41:15,714 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.92, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +4.04%
+2025-11-23 05:41:15,714 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.95, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +4.77%
+2025-11-23 05:41:15,714 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.08, Entry=3.77
+2025-11-23 05:41:15,714 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.22%
+2025-11-23 05:41:15,715 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.12, Entry=3.77
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.15%
+2025-11-23 05:41:15,715 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.09, Entry=3.77
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +8.49%
+2025-11-23 05:41:15,715 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.12, Entry=3.77
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +9.15%
+2025-11-23 05:41:15,715 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.96, Entry=3.77
+2025-11-23 05:41:15,715 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +5.04%
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (TRAILING_STOP, price=$3.96)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.96 (TRAILING_STOP, P&L=+5.0%, cooldown=15min)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,715 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,716 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,716 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,716 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,716 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,716 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$4.12
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$4.12
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 14.90 ET
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 14.90 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,716 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,716 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.12
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.12
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.12 >= VWAP $2.00
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.12 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.12, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.12, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.12
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $4.12
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.12 >= VWAP $2.00
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $4.12 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.12, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,716 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$4.12, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,716 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$4.12)
+2025-11-23 05:41:15,717 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $4.12 (daily_plays, qty=100)
+2025-11-23 05:41:15,717 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.12, Entry=4.12
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: +0.11%
+2025-11-23 05:41:15,717 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=4.10, Entry=4.12
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -0.50%
+2025-11-23 05:41:15,717 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.97, Entry=4.12
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -3.73%
+2025-11-23 05:41:15,717 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.95, Entry=4.12
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -4.14%
+2025-11-23 05:41:15,717 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.90, Entry=4.12
+2025-11-23 05:41:15,717 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -5.23%
+2025-11-23 05:41:15,717 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (STOP_LOSS_5.0%, price=$3.90)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.90 (STOP_LOSS_5.0%, P&L=-5.2%, cooldown=30min)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (29.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (28.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (27.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (26.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (25.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (24.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (23.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (22.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (21.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (20.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (19.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (18.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (17.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (16.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (15.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,718 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (1.0min remaining)
+2025-11-23 05:41:15,718 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.96
+2025-11-23 05:41:15,718 - Worker.daily_plays - INFO - 🔍 DEBUG FOXX: Starting evaluation - bars=0, price=$3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 15.48 ET
+2025-11-23 05:41:15,718 - Worker.daily_plays - INFO - ✅ FOXX: Trading hours validation passed - 15.48 ET
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15,718 - Worker.daily_plays - WARNING - ⚠️ FOXX: Insufficient daily bars (0) for daily analysis
+2025-11-23 05:41:15 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15,719 - Worker.daily_plays - WARNING - ⚠️ FOXX: No bars or price=0, skipping VWAP validation
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 DEBUG FOXX: Pattern completion = 85.0% (support: $0.00)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - ✅ FOXX: CATALYST MODE ENTRY APPROVED - Pattern 85% complete (entering BEFORE full breakout)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 1 passed (25%) - Catalyst: FDA, Price: $3.96
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 2 passed (50%) - Quality: 85.0>=35.0, Strength: 8>=5
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 3 passed (75%) - Price $3.96 >= VWAP $2.00
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: ✅ Stage 4 passed (85%) - CONTROLLED REACTION: gap 8.0% <= 10% (not parabolic)
+2025-11-23 05:41:15 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,719 - Worker.daily_plays - INFO - 📊 FOXX: Daily Plays pattern = 85.0% (catalyst=FDA, gap=8.0%, price=$3.96, VWAP=$2.00, support=$0.00)
+2025-11-23 05:41:15,719 - replay_testing.core.replay_engine - DEBUG -    ✅ FOXX: daily_plays ENTRY APPROVED (pattern=85.0%, price=$3.96)
+2025-11-23 05:41:15,719 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: FOXX @ $3.96 (daily_plays, qty=100)
+2025-11-23 05:41:15,719 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,719 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.94, Entry=3.96
+2025-11-23 05:41:15,719 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -0.47%
+2025-11-23 05:41:15,719 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-11-23 05:41:15,720 - WorkerStopManager - DEBUG - 🔍 Checking exit for FOXX: Price=3.53, Entry=3.96
+2025-11-23 05:41:15,720 - WorkerStopManager - DEBUG - 📊 PnL for FOXX: -10.75%
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    🔴 FOXX: daily_plays EXIT TRIGGERED (STOP_LOSS_5.0%, price=$3.53)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: FOXX @ $3.53 (STOP_LOSS_5.0%, P&L=-10.7%, cooldown=30min)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (29.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (28.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (27.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (26.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (25.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (24.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (23.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (22.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (21.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (20.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (19.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (18.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (17.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (16.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (15.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (14.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (13.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (12.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (11.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (10.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (9.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (8.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (7.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (6.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (5.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (4.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (3.0min remaining)
+2025-11-23 05:41:15,720 - replay_testing.core.replay_engine - DEBUG -    FOXX: In cooldown (2.0min remaining)
+2025-11-23 05:41:15,727 - replay_testing.core.replay_engine - DEBUG -    Loaded 4 real trades for FOXX @ 2025-11-21 (workers: daily_plays, vcp_smallcap)
+2025-11-23 05:41:15,739 - replay_testing.core.replay_engine - ERROR - Error comparing event FOXX: Cannot subtract tz-naive and tz-aware datetime-like objects.
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - ERROR - Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/core/replay_engine.py", line 1332, in _compare_event_with_real
+    time_diff = abs(sim_entry_time - real_entry_time)
+                    ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+  File "timestamps.pyx", line 514, in pandas._libs.tslibs.timestamps._Timestamp.__sub__
+TypeError: Cannot subtract tz-naive and tz-aware datetime-like objects.
+
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Event complete: 24 decisions, 12 simulated trades, 4 real trades, 0 discrepancies
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO - ✅ REPLAY COMPLETED in 0.3s
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO - ================================================================================
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Bars processed: 369
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Decisions made: 24
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Entries approved: 12
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Entries rejected: 0
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Exits executed: 12
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Simulated trades: 12
+2025-11-23 05:41:15,741 - replay_testing.core.replay_engine - INFO -    Discrepancies: 0
+ADVERTENCIA: No se pudo importar la estrategia desde macdv_strategy.py: No module named 'core.dynamic_position_sizing'
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'AscendingTriangleStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'DailyPlaysStrategy', 'ORBStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'SimpleStrategyEngine', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+🚀 Starting Regression Suite: 14 scenarios
+============================================================
+
+▶️ Running Scenario: FOXX_2025-11-21_SUCCESS
+   Symbol: FOXX
+   Date: 2025-11-21
+   Expected: ENTRY
+   🔨 Preparing DB...
+   🔄 Running Replay...
+DEBUG: ReplayEngine initialized with market_data_db_path: 'regression_market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+DEBUG: SQL DataFrame shape: (369, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['FOXX']
+DEBUG: Final bars_by_symbol keys: ['FOXX']
+DEBUG: Final bars_by_symbol length: 1
+Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 187, in <module>
+    main()
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 169, in main
+    if run_scenario(scenario, market_db_path, args.trading_db):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/replay_testing/run_regression.py", line 94, in run_scenario
+    if session.exits_triggered:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ReplaySession' object has no attribute 'exits_triggered'

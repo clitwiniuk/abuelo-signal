@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-08-19T23:23:37.232653",
+  "summary": {
+    "total_tests": 6,
+    "successful_tests": 4,
+    "failed_tests": 2,
+    "success_rate": 66.66666666666666
+  },
+  "results": [
+    {
+      "test": "bull_market_conditions",
+      "success": true,
+      "market_condition": "bull_market",
+      "total_plays": 50,
+      "successful_plays": 50,
+      "approval_rate": 100.0,
+      "processing_time": 0.0064640045166015625,
+      "expected_high_approval": true
+    },
+    {
+      "test": "bear_market_conditions",
+      "success": false,
+      "market_condition": "bear_market",
+      "total_plays": 50,
+      "successful_plays": 50,
+      "approval_rate": 100.0,
+      "processing_time": 0.0018160343170166016,
+      "expected_low_approval": false
+    },
+    {
+      "test": "high_volatility_day",
+      "success": true,
+      "market_condition": "high_volatility",
+      "total_plays": 60,
+      "successful_plays": 60,
+      "approval_rate": 100.0,
+      "processing_time": 0.005366086959838867,
+      "volatility_handled": true
+    },
+    {
+      "test": "low_volume_environment",
+      "success": false,
+      "market_condition": "low_volume",
+      "total_plays": 40,
+      "successful_plays": 40,
+      "approval_rate": 100.0,
+      "processing_time": 0.002672910690307617,
+      "selective_in_low_volume": false
+    },
+    {
+      "test": "earnings_season_simulation",
+      "success": true,
+      "market_condition": "earnings_season",
+      "total_plays": 80,
+      "successful_plays": 80,
+      "approval_rate": 100.0,
+      "processing_time": 0.06393980979919434,
+      "batches_processed": 4,
+      "earnings_season_handled": true
+    },
+    {
+      "test": "market_open_rush",
+      "success": true,
+      "market_condition": "market_open",
+      "total_plays": 100,
+      "successful_plays": 100,
+      "approval_rate": 100.0,
+      "processing_time": 0.012478828430175781,
+      "plays_per_second": 8013.572793274742,
+      "rush_handled_efficiently": true
+    }
+  ]
+}

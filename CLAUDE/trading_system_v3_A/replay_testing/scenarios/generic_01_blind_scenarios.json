@@ -1,0 +1,128 @@
+[
+    {
+        "id": "GENERIC_01_BLIND_VOL_EXACTLY_2X",
+        "symbol": "TEST1",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Volume exactly at 2.0x limit",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of volume >= 2.0x",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 2.0,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 1.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Volume at 2.0x should be rejected (>= 2.0 violates < 2.0)"
+    },
+    {
+        "id": "GENERIC_01_BLIND_ZERO_MOMENTUM",
+        "symbol": "TEST2",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Zero daily return (0%)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of zero momentum",
+        "mock_scanner_data": {
+            "quality_score": 70.0,
+            "current_price": 8.00,
+            "volume_ratio": 1.5,
+            "gap_percentage": 0.3,
+            "daily_return_pct": 0.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Zero daily return violates > 0% requirement"
+    },
+    {
+        "id": "GENERIC_01_BLIND_GAP_EXACTLY_8PCT",
+        "symbol": "TEST3",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Gap exactly at 8% limit",
+        "expected_action": "ENTRY",
+        "test_objective": "Verify acceptance at gap limit",
+        "mock_scanner_data": {
+            "quality_score": 60.0,
+            "current_price": 12.00,
+            "volume_ratio": 1.8,
+            "gap_percentage": 8.0,
+            "daily_return_pct": 0.5,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Gap at 8% should pass (<= 8%)"
+    },
+    {
+        "id": "GENERIC_01_BLIND_PRICE_EXACTLY_2_DOLLARS",
+        "symbol": "TEST4",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Price exactly at $2.00 minimum",
+        "expected_action": "ENTRY",
+        "test_objective": "Verify acceptance at price minimum",
+        "mock_scanner_data": {
+            "quality_score": 55.0,
+            "current_price": 2.00,
+            "volume_ratio": 1.6,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 1.5,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Price at $2.00 should pass (>= 2.00)"
+    },
+    {
+        "id": "GENERIC_01_BLIND_PRICE_EXACTLY_50_DOLLARS",
+        "symbol": "TEST5",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Price exactly at $50.00 maximum",
+        "expected_action": "ENTRY",
+        "test_objective": "Verify acceptance at price maximum",
+        "mock_scanner_data": {
+            "quality_score": 75.0,
+            "current_price": 50.00,
+            "volume_ratio": 1.4,
+            "gap_percentage": 1.0,
+            "daily_return_pct": 0.8,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Price at $50.00 should pass (<= 50.00)"
+    },
+    {
+        "id": "GENERIC_01_BLIND_QUALITY_EXACTLY_40",
+        "symbol": "TEST6",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Quality exactly at 40 minimum",
+        "expected_action": "ENTRY",
+        "test_objective": "Verify acceptance at quality minimum",
+        "mock_scanner_data": {
+            "quality_score": 40.0,
+            "current_price": 8.00,
+            "volume_ratio": 1.7,
+            "gap_percentage": 0.8,
+            "daily_return_pct": 1.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Quality at 40 should pass (>= 40)"
+    },
+    {
+        "id": "GENERIC_01_BLIND_EXTREME_LOW_PRICE",
+        "symbol": "TEST7",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "BLIND TEST: Extreme low price ($0.50)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of very low price",
+        "mock_scanner_data": {
+            "quality_score": 60.0,
+            "current_price": 0.50,
+            "volume_ratio": 1.5,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 2.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "notes": "Price $0.50 < $2.00 minimum"
+    }
+]

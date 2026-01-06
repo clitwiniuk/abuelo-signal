@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Module Architecture</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+
+        .diagram-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .badge-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .badge-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trader Module Architecture</h1>
+    <p>Visual documentation of the `trading_system_v3` Trader module.</p>
+
+    <div class="diagram-container">
+        <h2>1. High Level Modular Architecture <span class="badge badge-primary">Preferred</span></h2>
+        <p class="description">Overview of the main components (Trader Process, Core Logic, Execution Layer) and their
+            relationships.</p>
+        <div class="mermaid">
+            graph TD
+            subgraph "Trader Process"
+            IT[IndependentTrader] --> SL[ServiceLocator]
+            IT --> STB[ScannerTraderBridge]
+            IT --> WBSE[WorkerBasedStrategyEngine]
+            IT --> EOD[EODOHLCDownloader]
+            IT --> SNAP[ActiveTradesSnapshotScheduler]
+
+            subgraph "Core Logic"
+            WBSE --> CE[ContextEngine]
+            WBSE --> TA[TradeArbiter]
+            WBSE --> WORKERS[Strategy Workers]
+
+            subgraph "Workers Cluster"
+            W1[DailyPlaysWorker]
+            W2[ORBWorker]
+            W3[VWAPWorker]
+            W4[LivermoreWorker]
+            W5[...Other Workers...]
+            end
+
+            WORKERS --> W1
+            WORKERS --> W2
+            WORKERS --> W3
+            WORKERS --> W4
+            WORKERS --> W5
+            end
+
+            subgraph "Execution Layer"
+            WORKERS --> EEA[ExecutionEngineAdapter]
+            EEA --> RM[RiskManager]
+            EEA --> IBKR[IBKRAdapter]
+            EEA --> DB[DatabaseManager]
+            end
+
+            subgraph "External/Shared"
+            Redis[Redis Pub/Sub] --> STB
+            Telegram[TelegramClient]
+            IBKR_API[IBKR TWS/Gateway]
+            end
+
+            IT --> Telegram
+            EEA --> Telegram
+            IBKR --> IBKR_API
+            end
+
+            classDef main fill:#f9f,stroke:#333,stroke-width:2px;
+            classDef core fill:#bbf,stroke:#333,stroke-width:2px;
+            classDef exec fill:#bfb,stroke:#333,stroke-width:2px;
+            classDef ext fill:#ddd,stroke:#333,stroke-width:1px;
+
+            class IT,WBSE,EEA main;
+            class W1,W2,W3,W4,W5,CE,TA,WORKERS core;
+            class RM,IBKR,DB exec;
+            class Redis,Telegram,IBKR_API ext;
+        </div>
+    </div>
+
+    <div class="diagram-container">
+        <h2>2. Detailed Modular Architecture <span class="badge badge-secondary">Reference</span></h2>
+        <p class="description">Comprehensive view of all active Workers, Context Engine, and Execution Layer internals.
+        </p>
+        <div class="mermaid">
+            graph TD
+            classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+            classDef worker fill:#fff9c4,stroke:#fbc02d,stroke-width:1px;
+            classDef service fill:#e0f2f1,stroke:#00695c,stroke-width:1px;
+            classDef external fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+
+            subgraph "Independent Trader Process"
+            IT[IndependentTrader]:::main
+            SL[ServiceLocator]:::service
+            STB[ScannerTraderBridge]:::service
+            NF[NotificationFilter]:::service
+
+            IT --> SL
+            IT --> STB
+            IT --> NF
+
+            subgraph "Background Tasks"
+            EOD[EODOHLCDownloader]:::service
+            SNAP[ActiveTradesSnapshotScheduler]:::service
+            end
+            IT --> EOD
+            IT --> SNAP
+
+            subgraph "Strategy Engine (The Brain)"
+            WBSE[WorkerBasedStrategyEngine]:::main
+            CE[ContextEngine]:::service
+            TA[TradeArbiter]:::service
+
+            IT --> WBSE
+            WBSE -->|1. Analyze Context| CE
+            WBSE -->|2. Register/Lock| TA
+
+            subgraph "Active Strategy Workers"
+            direction TB
+            W_DP[DailyPlays v2.0]:::worker
+            W_DPM[DailyPlays MidCap]:::worker
+            W_ORB[ORB Breakout]:::worker
+            W_VWAP[VWAP Breakout]:::worker
+            W_LIV[Livermore Intraday]:::worker
+            W_VCP[VCP Small/Strict]:::worker
+            W_VA[Volume Absorption]:::worker
+            W_BTD[Buy The Dip]:::worker
+            W_BAH[Buy & Hold]:::worker
+            W_PARA[Parabolic L/S]:::worker
+            W_GAP[Gap Fade]:::worker
+            W_ODS[ODS Swing]:::worker
+            W_HG[Holy Grail]:::worker
+            W_CAT[Catalyst DNA]:::worker
+            W_SQ[Short Squeeze]:::worker
+            end
+
+            WBSE -->|3. Dispatch Opportunity| W_DP
+            WBSE --> W_DPM
+            WBSE --> W_ORB
+            WBSE --> W_VWAP
+            WBSE --> W_LIV
+            WBSE --> W_VCP
+            WBSE --> W_VA
+            WBSE --> W_BTD
+            WBSE --> W_BAH
+            WBSE --> W_PARA
+            WBSE --> W_GAP
+            WBSE --> W_ODS
+            WBSE --> W_HG
+            WBSE --> W_CAT
+            WBSE --> W_SQ
+            end
+
+            subgraph "Execution Layer (The Hands)"
+            EEA[ExecutionEngineAdapter]:::main
+            RM[RiskManager]:::service
+            DB[DatabaseManager]:::service
+
+            subgraph "IBKR Adapter"
+            IBKR[IBKRAdapter]:::service
+            BPM[BatchPriceManager]:::service
+            IBKR --> BPM
+            end
+
+            W_DP & W_DPM & W_ORB & W_VWAP & W_LIV & W_VCP & W_VA & W_BTD & W_BAH & W_PARA & W_GAP & W_ODS & W_HG & W_CAT
+            & W_SQ -->|4. enter_position| EEA
+
+            EEA -->|5. Validate Pricing| BPM
+            EEA -->|6. Validate Risk| RM
+            EEA -->|7. Place Order| IBKR
+            EEA -->|8. Record Trade| DB
+            EEA -->|Locking| EEA
+            end
+            end
+
+            subgraph "External Systems"
+            Redis[Redis Pub/Sub]:::external
+            Telegram[Telegram Bot]:::external
+            TWS[IBKR TWS/Gateway]:::external
+            end
+
+            STB <--> Redis
+                IT --> Telegram
+                EEA --> Telegram
+                IBKR <--> TWS
+        </div>
+    </div>
+
+    <div class="diagram-container">
+        <h2>3. Data Flow & Execution Sequence</h2>
+        <p class="description">Detailed flow from opportunity reception to trade execution.</p>
+        <div class="mermaid">
+            sequenceDiagram
+            participant Scanner
+            participant Redis
+            participant Trader as IndependentTrader
+            participant Engine as WorkerBasedStrategyEngine
+            participant Context as ContextEngine
+            participant Worker as StrategyWorker
+            participant Adapter as ExecutionEngineAdapter
+            participant Risk as RiskManager
+            participant IBKR as IBKRAdapter
+
+            Scanner->>Redis: Publish Opportunity
+            Redis->>Trader: Receive message
+            Trader->>Engine: process_opportunity(opp)
+
+            activate Engine
+            Engine->>Context: detect_context(ticker_data)
+            Context-->>Engine: Context (e.g. BULLISH_TREND)
+
+            Engine->>Engine: Filter Workers (Capability Check)
+
+            par Parallel Execution
+            Engine->>Worker: process_opportunity(opp)
+            and
+            Engine->>Worker: ...other workers...
+            end
+
+            activate Worker
+            Worker->>Worker: Analyze Pattern (80% complete?)
+
+            alt Pattern Valid
+            Worker->>Adapter: enter_position(symbol, strategy, data)
+            activate Adapter
+
+            Adapter->>Adapter: Lock Symbol (Mutex)
+            Adapter->>Adapter: Check Pending Competition
+
+            Adapter->>IBKR: batch_price_manager.get_current_price()
+            IBKR-->>Adapter: Fresh Price
+
+            Adapter->>Risk: validate_order(order)
+            Risk-->>Adapter: Approved
+
+            Adapter->>IBKR: place_order(order)
+            IBKR-->>Adapter: OrderID
+
+            Adapter->>Adapter: Save Trade (PENDING)
+
+            loop Wait for Execution
+            Adapter->>IBKR: get_positions() (Poll)
+            end
+
+            Adapter-->>Worker: Position Details
+            deactivate Adapter
+
+            Worker-->>Engine: Success (Entered)
+            else Pattern Invalid
+            Worker-->>Engine: Rejected
+            end
+            deactivate Worker
+
+            Engine->>Trader: Processing Complete
+            deactivate Engine
+        </div>
+    </div>
+
+</body>
+
+</html>

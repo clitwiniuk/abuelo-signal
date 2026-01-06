@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "total_duration_seconds": 30.680243968963623,
+  "total_operations": 246,
+  "total_errors": 24,
+  "average_ops_per_second": 235.97647446469918,
+  "overall_success_rate": 0.9024390243902439,
+  "individual_tests": [
+    {
+      "test_name": "concurrent_scanning",
+      "operations_completed": 50,
+      "ops_per_second": 113.27776265356478,
+      "success_rate": 1.0,
+      "memory_usage_mb": 129.75267285348676,
+      "error_count": 15
+    },
+    {
+      "test_name": "concurrent_ml_analysis",
+      "operations_completed": 30,
+      "ops_per_second": 235.29577201413693,
+      "success_rate": 1.0,
+      "memory_usage_mb": 155.68891768655436,
+      "error_count": 0
+    },
+    {
+      "test_name": "concurrent_position_management",
+      "operations_completed": 40,
+      "ops_per_second": 591.1383591955238,
+      "success_rate": 1.0,
+      "memory_usage_mb": 188.99211517700292,
+      "error_count": 0
+    },
+    {
+      "test_name": "sustained_load",
+      "operations_completed": 126,
+      "ops_per_second": 4.194003995571332,
+      "success_rate": 0.9285714285714286,
+      "memory_usage_mb": 158.88386349095464,
+      "error_count": 9
+    }
+  ],
+  "performance_metrics": {
+    "peak_memory_usage": 188.99211517700292,
+    "peak_ops_per_second": 591.1383591955238,
+    "stability_score": 0.9024390243902439
+  }
+}

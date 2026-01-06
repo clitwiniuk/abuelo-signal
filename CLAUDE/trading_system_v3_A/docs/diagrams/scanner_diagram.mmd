@@ -1,0 +1,68 @@
+sequenceDiagram
+    participant Orch as Orchestrator/Trader
+    participant SDS as SmallcapDailyScanner
+    participant EB as EarlyBirdQualifier
+    participant INS as IBKRNativeScanner
+    participant IB as IBKR API
+    participant News as News/Catalyst System
+    participant Filter as Multi-Track Analyzer
+
+    Note over Orch, IB: Start of Scan Loop
+
+    Orch->>SDS: scan_daily_plays()
+    
+    %% Phase 1: Early Bird (Pre-market)
+    rect rgb(240, 248, 255)
+    Note right of SDS: Phase 1: Pre-Market Check
+    SDS->>EB: check_and_send_early_bird()
+    alt Market Opening (9:30 AM)
+        EB-->>SDS: Return Qualified Pre-market Plays
+        SDS-->>Orch: Return Early Bird Plays (Immediate)
+    end
+    end
+
+    %% Phase 2: IBKR Scanning
+    rect rgb(255, 250, 240)
+    Note right of SDS: Phase 2: Candidate Sourcing
+    SDS->>INS: scan_daily_plays(max_results=50)
+    INS->>IB: reqScannerSubscription (Seq)
+    IB-->>INS: Raw Candidates
+    INS->>IB: Fetch Price/Vol/Bars (Batched)
+    INS-->>SDS: List[IBKRScanResult]
+    end
+
+    %% Phase 3: Watchlist & Cooldown
+    SDS->>SDS: Update Sticky Watchlist & Incubator
+    SDS->>SDS: Check Temporal Cooldowns
+    Note right of SDS: Filter out recently processed tickers
+
+    %% Phase 4: Multi-Track Analysis (Parallel)
+    rect rgb(240, 255, 240)
+    Note right of SDS: Phase 4: Parallel Analysis
+    
+    par Parallel Data Fetch
+        SDS->>News: Fetch News (Batch)
+        SDS->>IB: Fetch 1-min Bars (Batch)
+    end
+
+    loop For Each Candidate Ticker
+        SDS->>Filter: Analyze Strategies
+        
+        Filter->>Filter: Check Catalyst (FinBERT)
+        Filter->>Filter: Check Gap Breakout
+        Filter->>Filter: Check Volume Surge
+        Filter->>Filter: Check Short Squeeze
+        Filter->>Filter: Check Intraday Mover
+        
+        opt If Promising but not Ready
+            Filter->>SDS: Add to Incubator (Sticky Watchlist)
+        end
+    end
+    end
+
+    %% Phase 5: Result Generation
+    SDS->>SDS: Create SmallcapPlay Objects
+    SDS->>SDS: Sort by Quality Score
+    SDS->>SDS: Update Session Stats
+
+    SDS-->>Orch: List[SmallcapPlay]

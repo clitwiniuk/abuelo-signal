@@ -1,0 +1,2645 @@
+{
+  "2024-12-08": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.87,
+        "support": 42.39,
+        "atr": 1.3999999999999997,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 3.6375960234975135,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 45.86,
+        "support": 42.52,
+        "atr": 1.5828571428571432,
+        "quality_score": 12,
+        "distance_to_breakout_pct": 3.7791355510296483,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 12,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-29": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 42.31,
+        "support": 38.61,
+        "atr": 1.5514285714285718,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.9785202863961902,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 48.28,
+        "support": 44.05,
+        "atr": 1.8100000000000012,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 0.37422037422037363,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-30": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 38.68,
+        "atr": 1.5321428571428573,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 1.0063187456119818,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.7485714285714293,
+        "quality_score": 34,
+        "distance_to_breakout_pct": 2.044989775051125,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 34,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-31": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.09,
+        "atr": 1.4985714285714284,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 2.8843861740166714,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.7485714285714293,
+        "quality_score": 36,
+        "distance_to_breakout_pct": 3.3554266777133335,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 36,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-01": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.09,
+        "atr": 1.4985714285714284,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 2.8843861740166714,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.7485714285714293,
+        "quality_score": 36,
+        "distance_to_breakout_pct": 3.3554266777133335,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 36,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-02": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.09,
+        "atr": 1.4985714285714284,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 2.8843861740166714,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.7485714285714293,
+        "quality_score": 36,
+        "distance_to_breakout_pct": 3.3554266777133335,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 36,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-03": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.62,
+        "atr": 1.5149999999999995,
+        "quality_score": 32,
+        "distance_to_breakout_pct": 4.276395264556646,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 32,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.8292857142857148,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 3.6775399958445787,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-04": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.561428571428571,
+        "quality_score": 30,
+        "distance_to_breakout_pct": 3.3772455089820275,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 30,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.752857142857143,
+        "quality_score": 32,
+        "distance_to_breakout_pct": 2.0867430441898445,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 32,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-05": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.4292857142857136,
+        "quality_score": 34,
+        "distance_to_breakout_pct": 2.17803030303029,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 34,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.9,
+        "support": 44.05,
+        "atr": 1.6707142857142858,
+        "quality_score": 32,
+        "distance_to_breakout_pct": 2.90781604454526,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 32,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-06": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.3949999999999996,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 1.6965127238454263,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.11,
+        "support": 44.81,
+        "atr": 1.7107142857142859,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 3.1282156822391354,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-07": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.3857142857142857,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.0813623462629978,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.11,
+        "support": 44.81,
+        "atr": 1.6978571428571425,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 1.828896565738668,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-08": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.3857142857142857,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.0813623462629978,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.11,
+        "support": 44.81,
+        "atr": 1.6978571428571425,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 1.828896565738668,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-09": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.3857142857142857,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.0813623462629978,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.11,
+        "support": 44.81,
+        "atr": 1.6978571428571425,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 1.828896565738668,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-10": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.16,
+        "support": 39.76,
+        "atr": 1.287857142857143,
+        "quality_score": 27,
+        "distance_to_breakout_pct": 0.7469654528477898,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 27,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-11": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.15,
+        "support": 39.76,
+        "atr": 1.3235714285714286,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 1.634438305709026,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.48,
+        "support": 46.02,
+        "atr": 1.7614285714285711,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 1.5898571141074644,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-12": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.5,
+        "support": 39.76,
+        "atr": 1.4314285714285713,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 0.13204225352113177,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-02": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 38.03,
+        "atr": 1.48,
+        "quality_score": 34,
+        "distance_to_breakout_pct": 5.493707647628274,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 34,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-03": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4907142857142854,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 6.916850625459897,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-04": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4907142857142854,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 6.916850625459897,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-05": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4907142857142854,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 6.916850625459897,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-06": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4907142857142854,
+        "quality_score": 33,
+        "distance_to_breakout_pct": 6.916850625459897,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 33,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-07": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4385714285714282,
+        "quality_score": 38,
+        "distance_to_breakout_pct": 7.417447018235597,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 38,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 48.91,
+        "support": 42.88,
+        "atr": 1.375,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 0.12282497441145376,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-08": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4857142857142855,
+        "quality_score": 36,
+        "distance_to_breakout_pct": 2.9522909777987714,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 36,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.57,
+        "support": 43.21,
+        "atr": 1.355,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 1.7655512215150881,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-09": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 43.59,
+        "support": 39.96,
+        "atr": 1.4600000000000004,
+        "quality_score": 40,
+        "distance_to_breakout_pct": 1.8457943925233793,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 40,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.57,
+        "support": 43.21,
+        "atr": 1.3771428571428572,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 3.270833333333334,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-10": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.67,
+        "support": 39.96,
+        "atr": 1.4942857142857149,
+        "quality_score": 37,
+        "distance_to_breakout_pct": 0.2243661655822334,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 37,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.63,
+        "support": 43.21,
+        "atr": 1.4464285714285718,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 2.4778030146603403,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-11": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.5350000000000006,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 4.3508608655188565,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 51.7,
+        "support": 46.22,
+        "atr": 2.550714285714286,
+        "quality_score": 54,
+        "distance_to_breakout_pct": 4.995938261575956,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 54,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.63,
+        "support": 44.26,
+        "atr": 1.4364285714285718,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 3.417378620545948,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-12": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.5350000000000006,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 4.3508608655188565,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 51.7,
+        "support": 46.22,
+        "atr": 2.550714285714286,
+        "quality_score": 54,
+        "distance_to_breakout_pct": 4.995938261575956,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 54,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.63,
+        "support": 44.26,
+        "atr": 1.4364285714285718,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 3.417378620545948,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-13": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.5350000000000006,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 4.3508608655188565,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 51.7,
+        "support": 46.22,
+        "atr": 2.550714285714286,
+        "quality_score": 54,
+        "distance_to_breakout_pct": 4.995938261575956,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 54,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.63,
+        "support": 44.26,
+        "atr": 1.4364285714285718,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 3.417378620545948,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-14": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.519285714285715,
+        "quality_score": 32,
+        "distance_to_breakout_pct": 2.4206439826444446,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 32,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 51.7,
+        "support": 46.22,
+        "atr": 2.3600000000000003,
+        "quality_score": 57,
+        "distance_to_breakout_pct": 3.961391514176565,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 57,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-15": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.4942857142857149,
+        "quality_score": 37,
+        "distance_to_breakout_pct": 2.3972602739726128,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 37,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.63,
+        "support": 44.26,
+        "atr": 1.3771428571428577,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 1.9724676392027958,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-16": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 39.96,
+        "atr": 1.5692857142857146,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 3.4363468634686396,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-17": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 40.2,
+        "atr": 1.580714285714286,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 2.0710059171597717,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.7,
+        "support": 46.08,
+        "atr": 1.3921428571428582,
+        "quality_score": 20,
+        "distance_to_breakout_pct": 2.749638205499288,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 20,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-18": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 40.2,
+        "atr": 1.518571428571429,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.584629460201287,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.7,
+        "support": 46.5,
+        "atr": 1.426428571428573,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 1.201384646711471,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-19": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 40.2,
+        "atr": 1.518571428571429,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.584629460201287,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.7,
+        "support": 46.5,
+        "atr": 1.426428571428573,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 1.201384646711471,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-20": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 44.85,
+        "support": 40.2,
+        "atr": 1.518571428571429,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 2.584629460201287,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.7,
+        "support": 46.5,
+        "atr": 1.426428571428573,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 1.201384646711471,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-21": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.0,
+        "support": 40.75,
+        "atr": 1.562857142857143,
+        "quality_score": 32,
+        "distance_to_breakout_pct": 1.1918147065437399,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 32,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 49.94,
+        "support": 47.17,
+        "atr": 1.447857142857144,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 1.8560065266163506,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-22": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.15,
+        "atr": 1.512857142857143,
+        "quality_score": 26,
+        "distance_to_breakout_pct": 1.346499102333919,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 26,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 54.2,
+        "support": 48.37,
+        "atr": 2.185,
+        "quality_score": 71,
+        "distance_to_breakout_pct": 8.704372242278387,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 71,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.09,
+        "support": 47.17,
+        "atr": 1.4342857142857157,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 0.2602081665332317,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-23": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.48,
+        "atr": 1.4214285714285713,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.758589915216413,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.24,
+        "support": 47.17,
+        "atr": 1.4114285714285733,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.9037959429604395,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-24": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.56,
+        "atr": 1.4507142857142854,
+        "quality_score": 19,
+        "distance_to_breakout_pct": 2.5431425976385045,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 19,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.33,
+        "support": 47.17,
+        "atr": 1.3878571428571445,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 0.9831460674157201,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-25": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.56,
+        "atr": 1.4435714285714287,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 0.6687472135532706,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-26": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.56,
+        "atr": 1.4435714285714287,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 0.6687472135532706,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-27": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.56,
+        "atr": 1.4435714285714287,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 0.6687472135532706,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-28": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.78,
+        "atr": 1.365,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 1.9873532068653916,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-29": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.16,
+        "support": 42.78,
+        "atr": 1.394285714285714,
+        "quality_score": 18,
+        "distance_to_breakout_pct": 3.577981651376136,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 18,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-30": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 45.79,
+        "support": 43.11,
+        "atr": 1.4049999999999991,
+        "quality_score": 30,
+        "distance_to_breakout_pct": 0.08743169398906918,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 30,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-07-31": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 46.64,
+        "support": 43.11,
+        "atr": 1.4135714285714276,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 3.552397868561282,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-04": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 46.64,
+        "support": 43.12,
+        "atr": 1.4478571428571425,
+        "quality_score": 29,
+        "distance_to_breakout_pct": 3.52941176470589,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 29,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-05": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 46.64,
+        "support": 43.12,
+        "atr": 1.3885714285714283,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 3.7828215398308918,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-06": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 46.64,
+        "support": 43.12,
+        "atr": 1.3771428571428568,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.8218694885361577,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-07": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 43.12,
+        "atr": 1.5971428571428565,
+        "quality_score": 17,
+        "distance_to_breakout_pct": 4.867256637168132,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 17,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-15": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.730714285714285,
+        "quality_score": 8,
+        "distance_to_breakout_pct": 5.473965287049402,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 8,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-16": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.730714285714285,
+        "quality_score": 8,
+        "distance_to_breakout_pct": 5.473965287049402,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 8,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-17": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.730714285714285,
+        "quality_score": 8,
+        "distance_to_breakout_pct": 5.473965287049402,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 8,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-18": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.7757142857142851,
+        "quality_score": 10,
+        "distance_to_breakout_pct": 3.719912472647693,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 10,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-19": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.7407142857142854,
+        "quality_score": 9,
+        "distance_to_breakout_pct": 5.286539315859608,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 9,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-20": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.4,
+        "support": 42.38,
+        "atr": 1.6714285714285713,
+        "quality_score": 13,
+        "distance_to_breakout_pct": 3.833515881708653,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 13,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-21": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 46.82,
+        "support": 42.38,
+        "atr": 1.6264285714285711,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 1.5838576697765172,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-22": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.38,
+        "support": 42.38,
+        "atr": 1.6435714285714285,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 0.423908435777878,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-23": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.38,
+        "support": 42.38,
+        "atr": 1.6435714285714285,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 0.423908435777878,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-24": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.38,
+        "support": 42.38,
+        "atr": 1.6435714285714285,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 0.423908435777878,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-25": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.38,
+        "support": 42.44,
+        "atr": 1.615,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 1.0019185674696354,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-26": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 47.81,
+        "support": 42.67,
+        "atr": 1.6042857142857143,
+        "quality_score": 30,
+        "distance_to_breakout_pct": 0.20959966464053956,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 30,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-27": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.33,
+        "support": 42.67,
+        "atr": 1.3814285714285717,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 1.1087866108786637,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-28": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.25,
+        "atr": 1.273571428571429,
+        "quality_score": 27,
+        "distance_to_breakout_pct": 0.9122952519179035,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 27,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-29": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.99,
+        "atr": 1.2864285714285717,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 1.438099208003345,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-30": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.99,
+        "atr": 1.2864285714285717,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 1.438099208003345,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-08-31": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.99,
+        "atr": 1.2864285714285717,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 1.438099208003345,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-01": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.99,
+        "atr": 1.2864285714285717,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 1.438099208003345,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-02": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 43.99,
+        "atr": 1.3635714285714289,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 1.5863076601962118,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-03": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 44.55,
+        "atr": 1.3635714285714289,
+        "quality_score": 27,
+        "distance_to_breakout_pct": 2.076342281879199,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 27,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-04": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.67,
+        "support": 45.02,
+        "atr": 1.4200000000000002,
+        "quality_score": 30,
+        "distance_to_breakout_pct": 2.6793248945147745,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 30,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-05": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.78,
+        "support": 45.27,
+        "atr": 1.4350000000000003,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 4.768041237113399,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-06": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.78,
+        "support": 45.27,
+        "atr": 1.4350000000000003,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 4.768041237113399,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-07": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.78,
+        "support": 45.27,
+        "atr": 1.4350000000000003,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 4.768041237113399,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-08": [
+    {
+      "symbol": "DKNG",
+      "breakout_data": {
+        "resistance": 48.78,
+        "support": 45.27,
+        "atr": 1.3885714285714283,
+        "quality_score": 30,
+        "distance_to_breakout_pct": 5.310880829015545,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 30,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-07": [
+    {
+      "symbol": "HOOD",
+      "breakout_data": {
+        "resistance": 51.3,
+        "support": 44.96,
+        "atr": 3.075714285714286,
+        "quality_score": 78,
+        "distance_to_breakout_pct": 2.6205241048209547,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 78,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-03": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.87,
+        "support": 39.05,
+        "atr": 2.9521428571428565,
+        "quality_score": 50,
+        "distance_to_breakout_pct": 3.889789303079416,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 50,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-04": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.5349999999999993,
+        "quality_score": 45,
+        "distance_to_breakout_pct": 1.336958984817576,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 45,
+      "volume_ratio": 1.5
+    },
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 45.09,
+        "atr": 1.2121428571428576,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 3.2467532467532463,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-06": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.369285714285713,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 7.629362214199764,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-07": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.369285714285713,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 7.629362214199764,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-08": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.369285714285713,
+        "quality_score": 35,
+        "distance_to_breakout_pct": 7.629362214199764,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 35,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-09": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.337142857142856,
+        "quality_score": 39,
+        "distance_to_breakout_pct": 3.710575139146571,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 39,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-10": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.2535714285714272,
+        "quality_score": 27,
+        "distance_to_breakout_pct": 4.21813097180145,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 27,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-11": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 44.72,
+        "support": 39.05,
+        "atr": 2.158571428571427,
+        "quality_score": 15,
+        "distance_to_breakout_pct": 3.494561444110155,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 15,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-18": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 45.67,
+        "support": 40.34,
+        "atr": 2.16142857142857,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 2.698448392174506,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-19": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 45.67,
+        "support": 40.34,
+        "atr": 2.16142857142857,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 2.698448392174506,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-20": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 46.18,
+        "support": 40.74,
+        "atr": 2.1571428571428557,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 1.897616946160634,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-21": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 46.18,
+        "support": 40.74,
+        "atr": 2.1571428571428557,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 1.897616946160634,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-22": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 46.18,
+        "support": 40.74,
+        "atr": 2.1571428571428557,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 1.897616946160634,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-24": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 46.18,
+        "support": 40.74,
+        "atr": 2.3221428571428553,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 7.796451914098963,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-25": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 2.0392857142857137,
+        "quality_score": 12,
+        "distance_to_breakout_pct": 4.952422145328718,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 12,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-26": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 2.0828571428571427,
+        "quality_score": 12,
+        "distance_to_breakout_pct": 5.914447839371455,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 12,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-27": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 2.0828571428571427,
+        "quality_score": 12,
+        "distance_to_breakout_pct": 5.914447839371455,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 12,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-28": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 2.0828571428571427,
+        "quality_score": 12,
+        "distance_to_breakout_pct": 5.914447839371455,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 12,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-29": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 1.9828571428571427,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 4.680759275237277,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-09-30": [
+    {
+      "symbol": "SMCI",
+      "breakout_data": {
+        "resistance": 48.53,
+        "support": 43.69,
+        "atr": 1.9371428571428575,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 1.2307050479766446,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2024-12-24": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 43.86,
+        "support": 40.88,
+        "atr": 1.3949999999999985,
+        "quality_score": 18,
+        "distance_to_breakout_pct": 0.11412919424788211,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 18,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2024-12-25": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 43.86,
+        "support": 40.88,
+        "atr": 1.3949999999999985,
+        "quality_score": 18,
+        "distance_to_breakout_pct": 0.11412919424788211,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 18,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2024-12-26": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.06,
+        "support": 40.88,
+        "atr": 1.3128571428571416,
+        "quality_score": 17,
+        "distance_to_breakout_pct": 0.7776761207685348,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 17,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-03": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.97,
+        "support": 41.11,
+        "atr": 1.398571428571427,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 0.08902737591809291,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-04": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.97,
+        "support": 41.11,
+        "atr": 1.398571428571427,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 0.08902737591809291,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-05": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.97,
+        "support": 41.11,
+        "atr": 1.398571428571427,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 0.08902737591809291,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-06": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 45.49,
+        "support": 41.11,
+        "atr": 1.438571428571427,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 3.198729582577141,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-14": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 46.82,
+        "support": 41.37,
+        "atr": 1.7135714285714283,
+        "quality_score": 24,
+        "distance_to_breakout_pct": 0.7965554359526317,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 24,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-16": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.18,
+        "support": 41.47,
+        "atr": 1.782857142857143,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 1.2881064834693032,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-17": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 42.29,
+        "atr": 1.8292857142857142,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.223661485319519,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-18": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 42.29,
+        "atr": 1.8292857142857142,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.223661485319519,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-19": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 42.29,
+        "atr": 1.8292857142857142,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.223661485319519,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-20": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 42.29,
+        "atr": 1.8292857142857142,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.223661485319519,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-21": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 42.29,
+        "atr": 1.773571428571429,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 1.981477493000219,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-23": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 43.07,
+        "atr": 1.8250000000000008,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 4.180418041804177,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-24": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 43.07,
+        "atr": 1.7728571428571445,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.9571646010002164,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-25": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 43.07,
+        "atr": 1.7728571428571445,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.9571646010002164,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-26": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 43.07,
+        "atr": 1.7728571428571445,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 2.9571646010002164,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-27": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 43.29,
+        "atr": 1.7757142857142871,
+        "quality_score": 17,
+        "distance_to_breakout_pct": 3.723986856516983,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 17,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-01-28": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.35,
+        "support": 44.05,
+        "atr": 1.78357142857143,
+        "quality_score": 21,
+        "distance_to_breakout_pct": 1.283422459893051,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 21,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-02-13": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 50.91,
+        "support": 46.07,
+        "atr": 1.7971428571428558,
+        "quality_score": 31,
+        "distance_to_breakout_pct": 1.840368073614712,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 31,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-20": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.25,
+        "support": 42.38,
+        "atr": 2.056428571428573,
+        "quality_score": 10,
+        "distance_to_breakout_pct": 0.297176820208025,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 10,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-21": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 42.38,
+        "atr": 2.007142857142859,
+        "quality_score": 11,
+        "distance_to_breakout_pct": 1.684075890002145,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 11,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-22": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.12,
+        "atr": 1.6614285714285728,
+        "quality_score": 13,
+        "distance_to_breakout_pct": 1.424622581331069,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 13,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-23": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.2,
+        "atr": 1.565714285714287,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 1.5109597786763158,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-24": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.2,
+        "atr": 1.565714285714287,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 1.5109597786763158,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-25": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.2,
+        "atr": 1.565714285714287,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 1.5109597786763158,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-26": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.2,
+        "atr": 1.565714285714287,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 1.5109597786763158,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-27": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.41,
+        "atr": 1.5114285714285722,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 1.3815090329436892,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-28": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.41,
+        "atr": 1.4607142857142865,
+        "quality_score": 28,
+        "distance_to_breakout_pct": 1.4461931093151843,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 28,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-29": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 43.62,
+        "atr": 1.3350000000000009,
+        "quality_score": 22,
+        "distance_to_breakout_pct": 4.2395104895105,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 22,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-30": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 44.13,
+        "atr": 1.2864285714285717,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 4.444931026932343,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-05-31": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 44.13,
+        "atr": 1.2864285714285717,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 4.444931026932343,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-01": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 44.13,
+        "atr": 1.2864285714285717,
+        "quality_score": 25,
+        "distance_to_breakout_pct": 4.444931026932343,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 25,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-06-02": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 47.7,
+        "support": 44.66,
+        "atr": 1.2535714285714294,
+        "quality_score": 15,
+        "distance_to_breakout_pct": 2.7131782945736544,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 15,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-25": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.65,
+        "support": 39.28,
+        "atr": 1.7842857142857156,
+        "quality_score": 7,
+        "distance_to_breakout_pct": 1.090305759658689,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 7,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-26": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.73,
+        "support": 39.44,
+        "atr": 1.7314285714285726,
+        "quality_score": 7,
+        "distance_to_breakout_pct": 1.2559241706160995,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 7,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-27": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.73,
+        "support": 39.44,
+        "atr": 1.7314285714285726,
+        "quality_score": 7,
+        "distance_to_breakout_pct": 1.2559241706160995,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 7,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-28": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.73,
+        "support": 39.54,
+        "atr": 1.6357142857142866,
+        "quality_score": 9,
+        "distance_to_breakout_pct": 1.7138776481790023,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 9,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-29": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.73,
+        "support": 39.54,
+        "atr": 1.6357142857142866,
+        "quality_score": 9,
+        "distance_to_breakout_pct": 1.7138776481790023,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 9,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-11-30": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.73,
+        "support": 39.54,
+        "atr": 1.6357142857142866,
+        "quality_score": 9,
+        "distance_to_breakout_pct": 1.7138776481790023,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 9,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-01": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.86,
+        "support": 39.64,
+        "atr": 1.485714285714287,
+        "quality_score": 11,
+        "distance_to_breakout_pct": 0.16358962374386604,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 11,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-02": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.86,
+        "support": 39.64,
+        "atr": 1.3978571428571438,
+        "quality_score": 4,
+        "distance_to_breakout_pct": 3.2025042138213298,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 4,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-03": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 42.93,
+        "support": 39.64,
+        "atr": 1.4171428571428584,
+        "quality_score": 11,
+        "distance_to_breakout_pct": 0.7273580478648576,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 11,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-04": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 43.35,
+        "support": 39.64,
+        "atr": 1.3785714285714294,
+        "quality_score": 14,
+        "distance_to_breakout_pct": 0.5100857871551098,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 14,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-05": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.27,
+        "support": 39.64,
+        "atr": 1.3057142857142867,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.20371208691716483,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-06": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.27,
+        "support": 39.64,
+        "atr": 1.3057142857142867,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.20371208691716483,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-07": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.27,
+        "support": 39.64,
+        "atr": 1.3057142857142867,
+        "quality_score": 23,
+        "distance_to_breakout_pct": 0.20371208691716483,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 23,
+      "volume_ratio": 1.5
+    }
+  ],
+  "2025-12-08": [
+    {
+      "symbol": "CART",
+      "breakout_data": {
+        "resistance": 44.86,
+        "support": 40.27,
+        "atr": 1.2628571428571438,
+        "quality_score": 18,
+        "distance_to_breakout_pct": 0.8089887640449425,
+        "volume_ratio": 1.5
+      },
+      "quality_score": 18,
+      "volume_ratio": 1.5
+    }
+  ]
+}

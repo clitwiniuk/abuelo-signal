@@ -1,0 +1,549 @@
+2025-11-02 12:35:08,696 - replay_testing.core.replay_engine - INFO - 🔄 ReplayEngine initialized
+2025-11-02 12:35:08,696 - replay_testing.core.replay_engine - INFO -    Market data: market_data.db
+2025-11-02 12:35:08,696 - replay_testing.core.replay_engine - INFO -    Trading data: trading_data.db
+2025-11-02 12:35:08,699 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-02 12:35:08,699 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-10-28
+2025-11-02 12:35:08,699 - replay_testing.core.replay_engine - INFO -    Workers: daily_plays
+2025-11-02 12:35:08,699 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-02 12:35:08,963 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for ASST
+2025-11-02 12:35:08,978 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for EDSA
+2025-11-02 12:35:08,993 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for JBLU
+2025-11-02 12:35:09,008 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for LAES
+2025-11-02 12:35:09,024 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for LUNG
+2025-11-02 12:35:09,039 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for LX
+2025-11-02 12:35:09,055 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for NVD
+2025-11-02 12:35:09,070 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for POLA
+2025-11-02 12:35:09,085 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for SSKN
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for TSDD
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 10 symbols
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol ASST: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol EDSA: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol JBLU: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol LAES: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol LUNG: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol LX: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol NVD: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol POLA: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol SSKN: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO -   Symbol TSDD: 78 bars
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO - ✅ Loaded worker: daily_plays
+2025-11-02 12:35:09,100 - replay_testing.core.replay_engine - INFO - ✅ Loaded 1 workers: daily_plays
+
+2025-11-02 12:35:09,100 - core.context_engine.ContextEngine - INFO - 🧠 ContextEngine initialized - SMALL CAP optimized thresholds
+2025-11-02 12:35:09,100 - core.trade_arbiter.TradeArbiter - INFO - ⚖️ TradeArbiter initialized - Multi-worker coordination active
+2025-11-02 12:35:09,101 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: ASST @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,102 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.40 (daily_plays, qty=100)
+2025-11-02 12:35:09,102 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.37 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,103 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.38 (daily_plays, qty=100)
+2025-11-02 12:35:09,103 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.36 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,103 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.39 (daily_plays, qty=100)
+2025-11-02 12:35:09,106 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.45 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,106 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.45 (daily_plays, qty=100)
+2025-11-02 12:35:09,107 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.44 (EOD_EXIT, P&L=-0.4%, cooldown=0min)
+2025-11-02 12:35:09,107 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.40 (daily_plays, qty=100)
+2025-11-02 12:35:09,108 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.47 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,108 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.50 (daily_plays, qty=100)
+2025-11-02 12:35:09,110 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.57 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,110 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.59 (daily_plays, qty=100)
+2025-11-02 12:35:09,110 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.55 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,111 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.57 (daily_plays, qty=100)
+2025-11-02 12:35:09,113 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.54 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,113 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.51 (daily_plays, qty=100)
+2025-11-02 12:35:09,113 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.48 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,238 - replay_testing.core.replay_engine - INFO -    Event complete: 25 decisions, 9 simulated trades, 25 real trades, 24 discrepancies
+2025-11-02 12:35:09,238 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,238 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,238 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: EDSA @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,239 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.19 (daily_plays, qty=100)
+2025-11-02 12:35:09,241 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.30 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,242 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.36 (daily_plays, qty=100)
+2025-11-02 12:35:09,243 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.31 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,243 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.23 (daily_plays, qty=100)
+2025-11-02 12:35:09,244 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.34 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,245 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.39 (daily_plays, qty=100)
+2025-11-02 12:35:09,245 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.34 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,245 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.37 (daily_plays, qty=100)
+2025-11-02 12:35:09,246 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.32 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,247 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: EDSA @ $2.32 (daily_plays, qty=100)
+2025-11-02 12:35:09,249 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: EDSA @ $2.28 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,257 - replay_testing.core.replay_engine - INFO -    Event complete: 32 decisions, 6 simulated trades, 1 real trades, 8 discrepancies
+2025-11-02 12:35:09,257 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,257 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,257 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: JBLU @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,257 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: JBLU @ $4.54 (daily_plays, qty=100)
+2025-11-02 12:35:09,267 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: JBLU @ $4.50 (EOD_EXIT, P&L=-1.0%, cooldown=0min)
+2025-11-02 12:35:09,268 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: JBLU @ $4.44 (daily_plays, qty=100)
+2025-11-02 12:35:09,277 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: JBLU @ $4.35 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,285 - replay_testing.core.replay_engine - INFO -    Event complete: 4 decisions, 2 simulated trades, 3 real trades, 6 discrepancies
+2025-11-02 12:35:09,285 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,285 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,285 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: LAES @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,285 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $6.47 (daily_plays, qty=100)
+2025-11-02 12:35:09,288 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $6.80 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,289 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $6.85 (daily_plays, qty=100)
+2025-11-02 12:35:09,289 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $6.76 (EOD_EXIT, P&L=-1.3%, cooldown=0min)
+2025-11-02 12:35:09,289 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $6.62 (daily_plays, qty=100)
+2025-11-02 12:35:09,291 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $6.95 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,291 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $6.97 (daily_plays, qty=100)
+2025-11-02 12:35:09,293 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $7.32 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,293 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $7.19 (daily_plays, qty=100)
+2025-11-02 12:35:09,295 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $7.55 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,295 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $7.44 (daily_plays, qty=100)
+2025-11-02 12:35:09,296 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $7.30 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,296 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LAES @ $7.26 (daily_plays, qty=100)
+2025-11-02 12:35:09,296 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LAES @ $7.11 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,304 - replay_testing.core.replay_engine - INFO -    Event complete: 17 decisions, 7 simulated trades, 1 real trades, 9 discrepancies
+2025-11-02 12:35:09,304 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,304 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,304 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: LUNG @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,304 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $1.86 (daily_plays, qty=100)
+2025-11-02 12:35:09,305 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $1.96 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,306 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $1.93 (daily_plays, qty=100)
+2025-11-02 12:35:09,306 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $1.89 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,306 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $1.93 (daily_plays, qty=100)
+2025-11-02 12:35:09,307 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.02 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,307 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.02 (daily_plays, qty=100)
+2025-11-02 12:35:09,307 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $1.98 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,308 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.11 (daily_plays, qty=100)
+2025-11-02 12:35:09,308 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.22 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,309 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.20 (daily_plays, qty=100)
+2025-11-02 12:35:09,309 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.15 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,309 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $1.98 (daily_plays, qty=100)
+2025-11-02 12:35:09,310 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $1.94 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,310 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.12 (daily_plays, qty=100)
+2025-11-02 12:35:09,311 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.23 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,311 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.27 (daily_plays, qty=100)
+2025-11-02 12:35:09,311 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.22 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,312 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.32 (daily_plays, qty=100)
+2025-11-02 12:35:09,312 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.43 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,313 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.61 (daily_plays, qty=100)
+2025-11-02 12:35:09,313 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.56 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,313 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.44 (daily_plays, qty=100)
+2025-11-02 12:35:09,313 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.56 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,314 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.54 (daily_plays, qty=100)
+2025-11-02 12:35:09,314 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.66 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,314 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.72 (daily_plays, qty=100)
+2025-11-02 12:35:09,315 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.67 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,315 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LUNG @ $2.60 (daily_plays, qty=100)
+2025-11-02 12:35:09,315 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LUNG @ $2.55 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,341 - replay_testing.core.replay_engine - INFO -    Event complete: 54 decisions, 15 simulated trades, 3 real trades, 19 discrepancies
+2025-11-02 12:35:09,341 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,341 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,341 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: LX @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,341 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.75 (daily_plays, qty=100)
+2025-11-02 12:35:09,344 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.69 (EOD_EXIT, P&L=-1.3%, cooldown=0min)
+2025-11-02 12:35:09,345 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.59 (daily_plays, qty=100)
+2025-11-02 12:35:09,346 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.82 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,347 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.84 (daily_plays, qty=100)
+2025-11-02 12:35:09,347 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.74 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,348 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.84 (daily_plays, qty=100)
+2025-11-02 12:35:09,349 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.74 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,349 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.77 (daily_plays, qty=100)
+2025-11-02 12:35:09,351 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.68 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,351 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: LX @ $4.67 (daily_plays, qty=100)
+2025-11-02 12:35:09,352 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: LX @ $4.57 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,359 - replay_testing.core.replay_engine - INFO -    Event complete: 16 decisions, 6 simulated trades, 1 real trades, 8 discrepancies
+2025-11-02 12:35:09,359 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,359 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,359 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: NVD @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,360 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: NVD @ $7.93 (daily_plays, qty=100)
+2025-11-02 12:35:09,366 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: NVD @ $7.90 (EOD_EXIT, P&L=-0.3%, cooldown=0min)
+2025-11-02 12:35:09,366 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: NVD @ $7.78 (daily_plays, qty=100)
+2025-11-02 12:35:09,371 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: NVD @ $7.63 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,376 - replay_testing.core.replay_engine - INFO -    Event complete: 6 decisions, 2 simulated trades, 1 real trades, 4 discrepancies
+2025-11-02 12:35:09,376 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,376 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,376 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: POLA @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,377 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: POLA @ $4.04 (daily_plays, qty=100)
+2025-11-02 12:35:09,380 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: POLA @ $4.24 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,380 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: POLA @ $4.22 (daily_plays, qty=100)
+2025-11-02 12:35:09,381 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: POLA @ $4.20 (EOD_EXIT, P&L=-0.3%, cooldown=0min)
+2025-11-02 12:35:09,381 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: POLA @ $4.12 (daily_plays, qty=100)
+2025-11-02 12:35:09,383 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: POLA @ $4.33 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,383 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: POLA @ $4.38 (daily_plays, qty=100)
+2025-11-02 12:35:09,383 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: POLA @ $4.29 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,383 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: POLA @ $4.29 (daily_plays, qty=100)
+2025-11-02 12:35:09,387 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: POLA @ $4.20 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,394 - replay_testing.core.replay_engine - INFO -    Event complete: 11 decisions, 5 simulated trades, 1 real trades, 7 discrepancies
+2025-11-02 12:35:09,394 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,395 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,395 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: SSKN @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,395 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.62 (daily_plays, qty=100)
+2025-11-02 12:35:09,397 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.70 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,397 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.67 (daily_plays, qty=100)
+2025-11-02 12:35:09,398 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.76 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,399 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.79 (daily_plays, qty=100)
+2025-11-02 12:35:09,399 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.76 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,399 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.71 (daily_plays, qty=100)
+2025-11-02 12:35:09,400 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.68 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,400 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.67 (daily_plays, qty=100)
+2025-11-02 12:35:09,401 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.75 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,401 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.78 (daily_plays, qty=100)
+2025-11-02 12:35:09,403 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.86 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,403 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.90 (daily_plays, qty=100)
+2025-11-02 12:35:09,403 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: SSKN @ $1.86 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,403 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: SSKN @ $1.86 (daily_plays, qty=100)
+2025-11-02 12:35:09,416 - replay_testing.core.replay_engine - INFO -    Event complete: 19 decisions, 8 simulated trades, 2 real trades, 11 discrepancies
+2025-11-02 12:35:09,416 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,416 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,416 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: TSDD @ 2025-10-28 (78 bars)
+2025-11-02 12:35:09,416 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: TSDD @ $9.04 (daily_plays, qty=100)
+2025-11-02 12:35:09,420 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: TSDD @ $9.09 (EOD_EXIT, P&L=+0.6%, cooldown=0min)
+2025-11-02 12:35:09,421 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: TSDD @ $9.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,426 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: TSDD @ $8.88 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Event complete: 10 decisions, 2 simulated trades, 1 real trades, 4 discrepancies
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - ✅ REPLAY COMPLETED in 0.7s
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - ================================================================================
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Bars processed: 780
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Decisions made: 194
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Entries approved: 62
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Entries rejected: 0
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Exits executed: 61
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Simulated trades: 62
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Discrepancies: 100
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - 🔄 REPLAY SESSION: 2025-10-29
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO -    Workers: daily_plays
+2025-11-02 12:35:09,432 - replay_testing.core.replay_engine - INFO - ================================================================================
+
+2025-11-02 12:35:09,473 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for AKBA
+2025-11-02 12:35:09,488 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for ASST
+2025-11-02 12:35:09,503 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for BYND
+2025-11-02 12:35:09,520 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for CMBM
+2025-11-02 12:35:09,535 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for DVLT
+2025-11-02 12:35:09,551 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for ERNA
+2025-11-02 12:35:09,566 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for IONZ
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -    Loaded 78 bars for PPBT
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO - SUCCESS: Processed 8 symbols
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol AKBA: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol ASST: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol BYND: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol CMBM: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol DVLT: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol ERNA: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol IONZ: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -   Symbol PPBT: 78 bars
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO - 📊 Loaded data for 0 symbols
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO - ✅ Loaded worker: daily_plays
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO - ✅ Loaded 1 workers: daily_plays
+
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: AKBA @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,582 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.21 (daily_plays, qty=100)
+2025-11-02 12:35:09,584 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.17 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,584 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.11 (daily_plays, qty=100)
+2025-11-02 12:35:09,585 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.21 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,586 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.24 (daily_plays, qty=100)
+2025-11-02 12:35:09,586 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.19 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,586 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.21 (daily_plays, qty=100)
+2025-11-02 12:35:09,587 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.33 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,587 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.28 (daily_plays, qty=100)
+2025-11-02 12:35:09,588 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.26 (EOD_EXIT, P&L=-1.0%, cooldown=0min)
+2025-11-02 12:35:09,588 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.19 (daily_plays, qty=100)
+2025-11-02 12:35:09,588 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.15 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,588 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.13 (daily_plays, qty=100)
+2025-11-02 12:35:09,589 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.09 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,589 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.08 (daily_plays, qty=100)
+2025-11-02 12:35:09,591 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.19 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,591 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: AKBA @ $2.21 (daily_plays, qty=100)
+2025-11-02 12:35:09,594 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: AKBA @ $2.17 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,603 - replay_testing.core.replay_engine - INFO -    Event complete: 26 decisions, 9 simulated trades, 1 real trades, 11 discrepancies
+2025-11-02 12:35:09,604 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,604 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,604 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: ASST @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,604 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.44 (daily_plays, qty=100)
+2025-11-02 12:35:09,605 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.41 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,605 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.37 (daily_plays, qty=100)
+2025-11-02 12:35:09,607 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.44 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,607 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.42 (daily_plays, qty=100)
+2025-11-02 12:35:09,608 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.43 (EOD_EXIT, P&L=+0.7%, cooldown=0min)
+2025-11-02 12:35:09,609 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.33 (daily_plays, qty=100)
+2025-11-02 12:35:09,610 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.30 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,610 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.29 (daily_plays, qty=100)
+2025-11-02 12:35:09,611 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.26 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,611 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.26 (daily_plays, qty=100)
+2025-11-02 12:35:09,611 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.32 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,611 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ASST @ $1.33 (daily_plays, qty=100)
+2025-11-02 12:35:09,615 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ASST @ $1.30 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,622 - replay_testing.core.replay_engine - INFO -    Event complete: 25 decisions, 7 simulated trades, 1 real trades, 9 discrepancies
+2025-11-02 12:35:09,622 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,622 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,622 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: BYND @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,623 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $2.08 (daily_plays, qty=100)
+2025-11-02 12:35:09,624 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $2.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,624 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $2.01 (daily_plays, qty=100)
+2025-11-02 12:35:09,624 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.97 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,625 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $2.02 (daily_plays, qty=100)
+2025-11-02 12:35:09,627 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $2.04 (EOD_EXIT, P&L=+0.8%, cooldown=0min)
+2025-11-02 12:35:09,627 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $2.03 (daily_plays, qty=100)
+2025-11-02 12:35:09,627 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.99 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,628 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $1.96 (daily_plays, qty=100)
+2025-11-02 12:35:09,628 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.92 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,629 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $1.86 (daily_plays, qty=100)
+2025-11-02 12:35:09,631 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.96 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,631 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $1.98 (daily_plays, qty=100)
+2025-11-02 12:35:09,632 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.94 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,632 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: BYND @ $1.95 (daily_plays, qty=100)
+2025-11-02 12:35:09,634 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: BYND @ $1.91 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,642 - replay_testing.core.replay_engine - INFO -    Event complete: 25 decisions, 8 simulated trades, 1 real trades, 10 discrepancies
+2025-11-02 12:35:09,642 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,642 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,642 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: CMBM @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,642 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.55 (daily_plays, qty=100)
+2025-11-02 12:35:09,643 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.68 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,643 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.77 (daily_plays, qty=100)
+2025-11-02 12:35:09,643 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.72 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,644 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.22 (daily_plays, qty=100)
+2025-11-02 12:35:09,644 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.17 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,644 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.82 (daily_plays, qty=100)
+2025-11-02 12:35:09,644 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $1.92 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,645 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.99 (daily_plays, qty=100)
+2025-11-02 12:35:09,645 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.09 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,645 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.21 (daily_plays, qty=100)
+2025-11-02 12:35:09,645 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.32 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,646 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.69 (daily_plays, qty=100)
+2025-11-02 12:35:09,646 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.64 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,646 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.56 (daily_plays, qty=100)
+2025-11-02 12:35:09,646 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.68 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,647 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $3.11 (daily_plays, qty=100)
+2025-11-02 12:35:09,647 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $3.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,647 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.79 (daily_plays, qty=100)
+2025-11-02 12:35:09,647 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.73 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,647 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.43 (daily_plays, qty=100)
+2025-11-02 12:35:09,648 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.39 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,648 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.78 (daily_plays, qty=100)
+2025-11-02 12:35:09,648 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $1.87 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,648 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.78 (daily_plays, qty=100)
+2025-11-02 12:35:09,649 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $1.74 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,649 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.57 (daily_plays, qty=100)
+2025-11-02 12:35:09,649 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $1.65 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,650 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $1.59 (daily_plays, qty=100)
+2025-11-02 12:35:09,650 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $1.67 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,651 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.46 (daily_plays, qty=100)
+2025-11-02 12:35:09,651 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.58 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,651 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.87 (daily_plays, qty=100)
+2025-11-02 12:35:09,651 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.82 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,652 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.78 (daily_plays, qty=100)
+2025-11-02 12:35:09,652 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.73 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,652 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.64 (daily_plays, qty=100)
+2025-11-02 12:35:09,652 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.58 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,653 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.32 (daily_plays, qty=100)
+2025-11-02 12:35:09,653 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.44 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,653 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.54 (daily_plays, qty=100)
+2025-11-02 12:35:09,653 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.67 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,654 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.53 (daily_plays, qty=100)
+2025-11-02 12:35:09,654 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.48 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,654 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.53 (daily_plays, qty=100)
+2025-11-02 12:35:09,654 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.48 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,654 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.44 (daily_plays, qty=100)
+2025-11-02 12:35:09,655 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: CMBM @ $2.56 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,655 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: CMBM @ $2.95 (daily_plays, qty=100)
+2025-11-02 12:35:09,670 - replay_testing.core.replay_engine - INFO -    Event complete: 70 decisions, 25 simulated trades, 1 real trades, 27 discrepancies
+2025-11-02 12:35:09,670 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,670 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,670 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: DVLT @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,670 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $3.09 (daily_plays, qty=100)
+2025-11-02 12:35:09,671 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $3.03 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,671 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.96 (daily_plays, qty=100)
+2025-11-02 12:35:09,672 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.90 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,672 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.90 (daily_plays, qty=100)
+2025-11-02 12:35:09,673 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $3.05 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,673 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $3.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,675 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $3.01 (EOD_EXIT, P&L=-1.7%, cooldown=0min)
+2025-11-02 12:35:09,675 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.87 (daily_plays, qty=100)
+2025-11-02 12:35:09,676 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.81 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,676 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.83 (daily_plays, qty=100)
+2025-11-02 12:35:09,676 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.77 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,676 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.70 (daily_plays, qty=100)
+2025-11-02 12:35:09,678 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.83 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,678 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.87 (daily_plays, qty=100)
+2025-11-02 12:35:09,680 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.81 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,680 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: DVLT @ $2.85 (daily_plays, qty=100)
+2025-11-02 12:35:09,681 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: DVLT @ $2.79 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,690 - replay_testing.core.replay_engine - INFO -    Event complete: 24 decisions, 9 simulated trades, 1 real trades, 11 discrepancies
+2025-11-02 12:35:09,690 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,690 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,690 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: ERNA @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,691 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.32 (daily_plays, qty=100)
+2025-11-02 12:35:09,691 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.44 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,691 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.36 (daily_plays, qty=100)
+2025-11-02 12:35:09,691 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.32 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,692 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.02 (daily_plays, qty=100)
+2025-11-02 12:35:09,692 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $1.98 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,692 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $1.94 (daily_plays, qty=100)
+2025-11-02 12:35:09,693 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.04 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,693 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.14 (daily_plays, qty=100)
+2025-11-02 12:35:09,694 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.25 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,694 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.39 (daily_plays, qty=100)
+2025-11-02 12:35:09,694 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.34 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,695 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.38 (daily_plays, qty=100)
+2025-11-02 12:35:09,695 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.50 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,695 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.61 (daily_plays, qty=100)
+2025-11-02 12:35:09,695 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.56 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,696 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.39 (daily_plays, qty=100)
+2025-11-02 12:35:09,696 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.35 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,696 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.12 (daily_plays, qty=100)
+2025-11-02 12:35:09,696 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.08 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,697 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $1.92 (daily_plays, qty=100)
+2025-11-02 12:35:09,697 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $1.88 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,698 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $1.56 (daily_plays, qty=100)
+2025-11-02 12:35:09,698 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $1.64 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,698 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $1.93 (daily_plays, qty=100)
+2025-11-02 12:35:09,699 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.03 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.20 (daily_plays, qty=100)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.15 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.10 (daily_plays, qty=100)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.06 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $1.94 (daily_plays, qty=100)
+2025-11-02 12:35:09,700 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.04 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,701 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.14 (daily_plays, qty=100)
+2025-11-02 12:35:09,701 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.10 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,701 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.05 (daily_plays, qty=100)
+2025-11-02 12:35:09,701 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.01 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,702 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.00 (daily_plays, qty=100)
+2025-11-02 12:35:09,702 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.10 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,702 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: ERNA @ $2.05 (daily_plays, qty=100)
+2025-11-02 12:35:09,702 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: ERNA @ $2.01 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,722 - replay_testing.core.replay_engine - INFO -    Event complete: 63 decisions, 20 simulated trades, 2 real trades, 23 discrepancies
+2025-11-02 12:35:09,722 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,722 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,722 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: IONZ @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,722 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $4.02 (daily_plays, qty=100)
+2025-11-02 12:35:09,723 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.94 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,723 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.85 (daily_plays, qty=100)
+2025-11-02 12:35:09,726 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $4.05 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,726 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.99 (daily_plays, qty=100)
+2025-11-02 12:35:09,726 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.96 (EOD_EXIT, P&L=-0.7%, cooldown=0min)
+2025-11-02 12:35:09,726 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.94 (daily_plays, qty=100)
+2025-11-02 12:35:09,727 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.86 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,727 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.81 (daily_plays, qty=100)
+2025-11-02 12:35:09,728 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.73 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,728 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.62 (daily_plays, qty=100)
+2025-11-02 12:35:09,730 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.81 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,730 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.83 (daily_plays, qty=100)
+2025-11-02 12:35:09,731 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.76 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,731 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: IONZ @ $3.75 (daily_plays, qty=100)
+2025-11-02 12:35:09,733 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: IONZ @ $3.68 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,741 - replay_testing.core.replay_engine - INFO -    Event complete: 20 decisions, 8 simulated trades, 1 real trades, 10 discrepancies
+2025-11-02 12:35:09,741 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,741 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,741 - replay_testing.core.replay_engine - INFO - 
+📈 Replaying EVENT: PPBT @ 2025-10-29 (78 bars)
+2025-11-02 12:35:09,741 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.16 (daily_plays, qty=100)
+2025-11-02 12:35:09,742 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.14 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,742 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.15 (daily_plays, qty=100)
+2025-11-02 12:35:09,742 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.13 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,742 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,743 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,743 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.01 (daily_plays, qty=100)
+2025-11-02 12:35:09,744 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.06 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,744 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,744 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.11 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,744 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.15 (daily_plays, qty=100)
+2025-11-02 12:35:09,745 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.13 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,745 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.16 (daily_plays, qty=100)
+2025-11-02 12:35:09,745 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.21 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,745 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.26 (daily_plays, qty=100)
+2025-11-02 12:35:09,746 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.24 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,746 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.16 (daily_plays, qty=100)
+2025-11-02 12:35:09,746 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.13 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,747 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.04 (daily_plays, qty=100)
+2025-11-02 12:35:09,747 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.02 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,747 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.00 (daily_plays, qty=100)
+2025-11-02 12:35:09,747 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $0.98 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,749 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.01 (daily_plays, qty=100)
+2025-11-02 12:35:09,749 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.06 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,750 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.11 (daily_plays, qty=100)
+2025-11-02 12:35:09,750 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.09 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,750 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,750 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,751 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,751 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,751 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,752 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.04 (STOP_LOSS, P&L=-2.0%, cooldown=30min)
+2025-11-02 12:35:09,752 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.05 (daily_plays, qty=100)
+2025-11-02 12:35:09,752 - replay_testing.core.replay_engine - INFO -    🔴 SIMULATED EXIT: PPBT @ $1.10 (TAKE_PROFIT, P&L=+5.0%, cooldown=5min)
+2025-11-02 12:35:09,752 - replay_testing.core.replay_engine - INFO -    🟢 SIMULATED ENTRY: PPBT @ $1.06 (daily_plays, qty=100)
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Event complete: 61 decisions, 18 simulated trades, 1 real trades, 19 discrepancies
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Workers evaluated: daily_plays
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Workers traded: daily_plays
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO - 
+================================================================================
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO - ✅ REPLAY COMPLETED in 0.3s
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO - ================================================================================
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Bars processed: 624
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Decisions made: 314
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Entries approved: 104
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Entries rejected: 0
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Exits executed: 102
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Simulated trades: 104
+2025-11-02 12:35:09,766 - replay_testing.core.replay_engine - INFO -    Discrepancies: 120
+🔎 Estrategias cargadas dinámicamente: ['EODOvernightSmallcapsStrategy', 'FirstDayBounceStrategy', 'VCPStrategy', 'SimpleVolumeExplosionStrategy', 'VolumeMomentumStrategy', 'VolumeExplosionPullbackStrategy', 'PremarketHighBreakoutStrategy', 'DynamicStrategyEngine', 'ImprovedSimpleExplosionStrategy', 'GapCrapReversalStrategy', 'ExplosiveVolumeStrategy', 'VWAPReclaimStrategy', 'RealisticStrategyEngine', 'VWAPSmallcapsStrategy', 'AscendingTriangleStrategy', 'FallingWedgeStrategy', 'OptimizedGapGoStrategy', 'BullFlagStrategy', 'CatalystMomentumStrategy', 'MACDVStrategy', 'DailyPlaysStrategy', 'ORBStrategy', 'GapGoStrategy', 'RedToGreenStrategy', 'JulyStrategy', 'HybridExplosionStrategy', 'VolumeBreakoutStrategy', 'SimpleStrategyEngine', 'UltraSimpleExplosionStrategy', 'EndOfDayMomentumStrategy']
+DEBUG: ReplayEngine initialized with market_data_db_path: 'market_data.db'
+DEBUG: ReplayEngine initialized with trading_data_db_path: 'trading_data.db'
+DEBUG: Current working directory: '/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3'
+DEBUG: Checking if market data file exists: True
+DEBUG: Checking if trading data file exists: True
+
+================================================================================
+🎯 WORKER AGGRESSIVENESS ANALYSIS - daily_plays
+================================================================================
+
+Period: 2025-10-28 to 2025-10-29
+
+📅 Analyzing 2025-10-28...
+DEBUG: SQL DataFrame shape: (780, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['ASST', 'EDSA', 'JBLU', 'LAES', 'LUNG', 'LX', 'NVD', 'POLA', 'SSKN', 'TSDD']
+DEBUG: Final bars_by_symbol keys: ['ASST', 'EDSA', 'JBLU', 'LAES', 'LUNG', 'LX', 'NVD', 'POLA', 'SSKN', 'TSDD']
+DEBUG: Final bars_by_symbol length: 10
+
+📅 Analyzing 2025-10-29...
+DEBUG: SQL DataFrame shape: (624, 8)
+DEBUG: SQL DataFrame columns: ['symbol', 'bar_timestamp', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'vwap']
+DEBUG: SQL Unique symbols: ['AKBA', 'ASST', 'BYND', 'CMBM', 'DVLT', 'ERNA', 'IONZ', 'PPBT']
+DEBUG: Final bars_by_symbol keys: ['AKBA', 'ASST', 'BYND', 'CMBM', 'DVLT', 'ERNA', 'IONZ', 'PPBT']
+DEBUG: Final bars_by_symbol length: 8
+
+📊 ANALYSIS RESULTS
+================================================================================
+Total Decisions: 508
+Entries Approved: 166
+Entries Rejected: 0
+Selectivity Ratio: 32.7%
+
+⚠️ WARNING: Selectivity ratio TOO HIGH (>10%)
+   Expected: <5% (1 in 20 decisions)
+   Actual: 32.7% (1 in 3 decisions)
+
+🚫 TOP REJECTION REASONS:
+   1. Worker strategy rejected entry: 179 (0.0%)
+
+================================================================================
+✅ Analysis Complete
+================================================================================
+

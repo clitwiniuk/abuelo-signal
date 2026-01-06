@@ -1,0 +1,73 @@
+======================================================================
+BACKTESTING SYSTEM REPORT
+======================================================================
+
+PORTFOLIO SUMMARY:
+  Initial Capital:   $100,000
+  Final Value:       $91,775
+  Total Return:      $-8,225.43
+  Return %:          -8.23%
+  Max Drawdown:      12.44%
+  Sharpe Ratio:      0.000
+  Total Trades:      1
+  Win Rate:          100.0%
+
+STRATEGY PERFORMANCE:
+
+  ✅ DailyPlaysStrategy:
+     Trades:         1 (1W / 0L)
+     Win Rate:       100.0%
+     Total PnL:      $830.40
+     Avg PnL:        $830.40
+     Largest Win:    $830.40
+     Largest Loss:   $0.00
+
+  ✅ MacdvStrategy:
+     Trades:         1 (1W / 0L)
+     Win Rate:       100.0%
+     Total PnL:      $455.28
+     Avg PnL:        $455.28
+     Largest Win:    $455.28
+     Largest Loss:   $0.00
+
+  ✅ MomentumBreakoutStrategy:
+     Trades:         1 (1W / 0L)
+     Win Rate:       100.0%
+     Total PnL:      $415.20
+     Avg PnL:        $415.20
+     Largest Win:    $415.20
+     Largest Loss:   $0.00
+
+  ✅ VWAPBreakoutStrategy:
+     Trades:         1 (1W / 0L)
+     Win Rate:       100.0%
+     Total PnL:      $364.18
+     Avg PnL:        $364.18
+     Largest Win:    $364.18
+     Largest Loss:   $0.00
+
+  ❌ VolumePriceStrategy:
+     Trades:         38 (11W / 27L)
+     Win Rate:       28.9%
+     Total PnL:      $-1,732.00
+     Avg PnL:        $-45.58
+     Largest Win:    $3,083.25
+     Largest Loss:   $-474.06
+
+  ❌ MACrossoverStrategy:
+     Trades:         60 (9W / 51L)
+     Win Rate:       15.0%
+     Total PnL:      $-3,564.95
+     Avg PnL:        $-59.42
+     Largest Win:    $2,931.74
+     Largest Loss:   $-471.13
+
+  ❌ RSIOverSoldStrategy:
+     Trades:         39 (11W / 28L)
+     Win Rate:       28.2%
+     Total PnL:      $-5,056.48
+     Avg PnL:        $-129.65
+     Largest Win:    $671.68
+     Largest Loss:   $-1,082.16
+
+======================================================================

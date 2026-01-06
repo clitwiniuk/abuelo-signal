@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Privacy Mode Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center px-2 py-2 text-xl font-bold text-blue-600">
+                        <div class="h-8 w-8 bg-blue-600 rounded mr-2"></div>
+                        TradeTally
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Privacy Mode Toggle (discreto en navbar) -->
+                    <div class="flex items-center space-x-2">
+                        <button
+                            onclick="togglePrivacyMode()"
+                            class="flex items-center space-x-1 p-2 text-gray-500 hover:text-gray-700 rounded-md transition-colors"
+                            id="privacyToggle"
+                            title="Switch privacy mode"
+                        >
+                            <svg id="dollarIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                            <svg id="percentIcon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-xs font-medium" id="modeLabel">$</span>
+                        </button>
+                    </div>
+                    <span class="text-sm text-gray-700">trader_123</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+            <p class="mt-1 text-sm text-gray-600">Trading performance analytics and insights</p>
+        </div>
+
+        <!-- Main Metrics Grid -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Total P&L</dt>
+                <dd class="mt-1 text-3xl font-semibold text-green-600" id="totalPnl">$2,456.78</dd>
+                <div class="mt-2 text-xs text-gray-500">Avg: <span id="avgPnl">$123.45</span></div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Max Drawdown</dt>
+                <dd class="mt-1 text-3xl font-semibold text-red-600" id="maxDrawdown">$567.89</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Average Win</dt>
+                <dd class="mt-1 text-2xl font-semibold text-green-600" id="avgWin">$234.56</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Average Loss</dt>
+                <dd class="mt-1 text-2xl font-semibold text-red-600" id="avgLoss">$89.12</dd>
+            </div>
+        </div>
+
+        <!-- Best/Worst Trades -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2 mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Best Trade</dt>
+                <dd class="mt-1 text-2xl font-semibold text-green-600" id="bestTrade">$1,234.56</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">Worst Trade</dt>
+                <dd class="mt-1 text-2xl font-semibold text-red-600" id="worstTrade">$345.67</dd>
+            </div>
+        </div>
+
+        <!-- Additional Metrics that were missing -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500">Total Commissions</dt>
+                <dd class="mt-1 text-lg font-semibold text-gray-900" id="totalCommissions">$22.33</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500">Average Position Cost</dt>
+                <dd class="mt-1 text-lg font-semibold text-gray-900" id="avgPositionCost">$1,567.89</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500">Current Portfolio Value</dt>
+                <dd class="mt-1 text-lg font-semibold text-green-600" id="currentValue">$12,345.67</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <dt class="text-sm font-medium text-gray-500">Daily P&L Change</dt>
+                <dd class="mt-1 text-lg font-semibold text-green-600" id="dailyChange">+$156.78</dd>
+            </div>
+        </div>
+
+        <!-- Open Positions Table (Sample) -->
+        <div class="bg-white rounded-lg shadow mb-8">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h3 class="text-lg font-medium text-gray-900">Open Positions Sample</h3>
+            </div>
+            <div class="px-6 py-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            <th class="py-2">Symbol</th>
+                            <th class="py-2 text-right">Quantity</th>
+                            <th class="py-2 text-right">Avg Price</th>
+                            <th class="py-2 text-right">Total Cost</th>
+                            <th class="py-2 text-right">Current Price</th>
+                            <th class="py-2 text-right">Current Value</th>
+                            <th class="py-2 text-right">Unrealized P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-2 font-medium text-gray-900">AAPL</td>
+                            <td class="py-2 text-right">100</td>
+                            <td class="py-2 text-right font-medium" id="aaplAvgPrice">$150.25</td>
+                            <td class="py-2 text-right font-medium" id="aaplTotalCost">$15,025.00</td>
+                            <td class="py-2 text-right font-medium" id="aaplCurrentPrice">$152.80</td>
+                            <td class="py-2 text-right font-medium" id="aaplCurrentValue">$15,280.00</td>
+                            <td class="py-2 text-right font-medium text-green-600" id="aaplUnrealizedPnL">+$255.00</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-medium text-gray-900">TSLA</td>
+                            <td class="py-2 text-right">50</td>
+                            <td class="py-2 text-right font-medium" id="tslaAvgPrice">$220.50</td>
+                            <td class="py-2 text-right font-medium" id="tslaTotalCost">$11,025.00</td>
+                            <td class="py-2 text-right font-medium" id="tslaCurrentPrice">$218.75</td>
+                            <td class="py-2 text-right font-medium" id="tslaCurrentValue">$10,937.50</td>
+                            <td class="py-2 text-right font-medium text-red-600" id="tslaUnrealizedPnL">-$87.50</td>
+                        </tr>
+                        <tr class="border-t-2 border-gray-300 font-bold">
+                            <td colspan="3" class="py-2 text-right">Total:</td>
+                            <td class="py-2 text-right" id="totalCost">$26,050.00</td>
+                            <td></td>
+                            <td class="py-2 text-right" id="totalCurrentValue">$26,217.50</td>
+                            <td class="py-2 text-right text-green-600" id="totalUnrealizedPnL">+$167.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Test Instructions -->
+        <div class="bg-blue-50 rounded-lg shadow p-6">
+            <h3 class="text-lg font-medium text-blue-900 mb-4">🧪 Test Completo de Privacy Mode</h3>
+            <div class="text-sm text-blue-800 space-y-3">
+                <p><strong>✅ Toggle Discreto:</strong> Ahora está en el NavBar, mucho más elegante.</p>
+                <p><strong>✅ Valores Actualizados:</strong> TODOS los valores monetarios ahora cambian al modo %.</p>
+                <p><strong>✅ Includes:</strong></p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>Main metrics (P&L, Drawdown, Avg Win/Loss, Best/Worst trades)</li>
+                    <li>Total Commissions (el que te faltaba)</li>
+                    <li>Open positions table (precios, costos, valores actuales, P&L no realizado)</li>
+                    <li>Totales de tablas</li>
+                    <li>Performance by symbol</li>
+                    <li>Charts P&L</li>
+                </ul>
+                <div class="mt-4 p-3 bg-blue-100 rounded-md">
+                    <p class="text-blue-900"><strong>Perfecto para screenshots:</strong> Ahora puedes compartir TODA la información en % sin revelar cantidades reales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Test data más completo
+        const testData = {
+            totalPnl: 2456.78,
+            avgPnl: 123.45,
+            maxDrawdown: 567.89,
+            avgWin: 234.56,
+            avgLoss: 89.12,
+            bestTrade: 1234.56,
+            worstTrade: 345.67,
+            totalCommissions: 22.33,
+            avgPositionCost: 1567.89,
+            currentValue: 12345.67,
+            dailyChange: 156.78,
+            // Open positions data
+            aaplAvgPrice: 150.25,
+            aaplTotalCost: 15025.00,
+            aaplCurrentPrice: 152.80,
+            aaplCurrentValue: 15280.00,
+            aaplUnrealizedPnL: 255.00,
+            tslaAvgPrice: 220.50,
+            tslaTotalCost: 11025.00,
+            tslaCurrentPrice: 218.75,
+            tslaCurrentValue: 10937.50,
+            tslaUnrealizedPnL: -87.50,
+            totalCost: 26050.00,
+            totalCurrentValue: 26217.50,
+            totalUnrealizedPnL: 167.50
+        };
+
+        const initialAccountBalance = 10000;
+        let privacyMode = localStorage.getItem('dashboard-privacy-mode') === 'true';
+
+        // Initialize
+        updateDisplay();
+
+        function formatPrivacyCurrency(amount) {
+            if (!privacyMode) {
+                return Math.abs(amount).toLocaleString('en-US', { 
+                    minimumFractionDigits: 2, 
+                    maximumFractionDigits: 2 
+                });
+            }
+            
+            // Convert to percentage of initial balance
+            const percentage = (amount / initialAccountBalance) * 100;
+            return Math.abs(percentage).toFixed(2);
+        }
+
+        function togglePrivacyMode() {
+            privacyMode = !privacyMode;
+            localStorage.setItem('dashboard-privacy-mode', privacyMode.toString());
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            // Update icons and labels
+            const dollarIcon = document.getElementById('dollarIcon');
+            const percentIcon = document.getElementById('percentIcon');
+            const modeLabel = document.getElementById('modeLabel');
+
+            if (privacyMode) {
+                dollarIcon.classList.add('hidden');
+                percentIcon.classList.remove('hidden');
+                modeLabel.textContent = '%';
+            } else {
+                dollarIcon.classList.remove('hidden');
+                percentIcon.classList.add('hidden');
+                modeLabel.textContent = '$';
+            }
+
+            // Update all metrics
+            Object.keys(testData).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    const value = testData[key];
+                    const formatted = formatPrivacyCurrency(value);
+                    let displayValue;
+                    
+                    // Handle special cases with signs
+                    if (key === 'dailyChange' || key.includes('unrealized') || key.includes('Unrealized')) {
+                        const sign = value >= 0 ? '+' : '';
+                        const prefix = privacyMode ? sign : sign + '$';
+                        const suffix = privacyMode ? '%' : '';
+                        displayValue = `${prefix}${formatted}${suffix}`;
+                    } else {
+                        const prefix = privacyMode ? '' : '$';
+                        const suffix = privacyMode ? '%' : '';
+                        displayValue = `${prefix}${formatted}${suffix}`;
+                    }
+                    
+                    element.textContent = displayValue;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

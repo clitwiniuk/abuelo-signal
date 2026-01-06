@@ -1,0 +1,39 @@
+2025-06-15 07:29:05,230 - INFO - ⬇️  Descargando datos para AEVA (2023-10-01 a 2025-06-15)...
+2025-06-15 07:29:08,304 - DEBUG - [AEVA] Datos válidos. Rango: 2024-01-02 a 2025-06-13. Días: 364. Columnas: ['Open', 'High', 'Low', 'Close', 'Volume']
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] Muestra de datos (primeros 5 registros):
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] 2024-01-02: O=3.85, H=3.88, L=3.58, C=3.65, V=161,981
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] 2024-01-03: O=3.90, H=5.30, L=3.90, C=5.05, V=2,016,161
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] 2024-01-04: O=5.05, H=5.05, L=4.60, C=5.00, V=605,845
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] 2024-01-05: O=5.00, H=6.00, L=4.80, C=5.60, V=605,293
+2025-06-15 07:29:08,305 - DEBUG - [AEVA] 2024-01-08: O=5.90, H=6.40, L=5.50, C=5.85, V=666,060
+2025-06-15 07:29:08,306 - DEBUG - [AEVA] Resumen: 364 registros, de 2024-01-02 a 2025-06-13
+2025-06-15 07:29:08,306 - DEBUG - [AEVA] Iniciando backtest desde 2025-04-08
+2025-06-15 07:29:08,322 - DEBUG - DEBUG [2023-10-27] Precio: $2.57, SAR: $3.50, Volumen: 138,044.6
+2025-06-15 07:29:08,322 - DEBUG - DEBUG [2023-11-27] Precio: $2.50, SAR: $3.23, Volumen: 113,752.8
+2025-06-15 07:29:08,323 - DEBUG - DEBUG [2023-12-26] Precio: $4.49, SAR: $3.39, Volumen: 322,262.0
+2025-06-15 07:29:08,323 - DEBUG - DEBUG [2024-01-25] Precio: $4.46, SAR: $6.17, Volumen: 196,275.0
+2025-06-15 07:29:08,323 - DEBUG - DEBUG [2024-02-23] Precio: $4.77, SAR: $4.22, Volumen: 167,325.8
+2025-06-15 07:29:08,324 - DEBUG - DEBUG [2024-03-22] Precio: $4.09, SAR: $6.57, Volumen: 713,789.0
+2025-06-15 07:29:08,324 - DEBUG - DEBUG [2024-04-22] Precio: $2.99, SAR: $4.06, Volumen: 256,643.0
+2025-06-15 07:29:08,324 - DEBUG - DEBUG [2024-05-20] Precio: $3.47, SAR: $3.23, Volumen: 287,037.0
+2025-06-15 07:29:08,325 - DEBUG - DEBUG [2024-06-18] Precio: $2.77, SAR: $2.96, Volumen: 216,068.0
+2025-06-15 07:29:08,325 - DEBUG - DEBUG [2024-07-18] Precio: $3.31, SAR: $2.78, Volumen: 256,199.0
+2025-06-15 07:29:08,325 - DEBUG - DEBUG [2024-08-15] Precio: $2.70, SAR: $3.34, Volumen: 207,251.0
+2025-06-15 07:29:08,326 - DEBUG - DEBUG [2024-09-13] Precio: $2.86, SAR: $3.05, Volumen: 129,988.0
+2025-06-15 07:29:08,326 - DEBUG - DEBUG [2024-10-11] Precio: $3.47, SAR: $3.28, Volumen: 162,042.0
+2025-06-15 07:29:08,326 - DEBUG - DEBUG [2024-11-08] Precio: $4.32, SAR: $3.62, Volumen: 448,331.0
+2025-06-15 07:29:08,327 - DEBUG - DEBUG [2024-12-09] Precio: $4.78, SAR: $3.92, Volumen: 916,795.0
+2025-06-15 07:29:08,328 - DEBUG - DEBUG [2025-01-08] Precio: $4.53, SAR: $4.34, Volumen: 789,167.0
+2025-06-15 07:29:08,329 - DEBUG - DEBUG [2025-02-07] Precio: $4.17, SAR: $4.45, Volumen: 241,618.0
+2025-06-15 07:29:08,329 - DEBUG - DEBUG [2025-03-10] Precio: $2.68, SAR: $3.52, Volumen: 391,981.0
+2025-06-15 07:29:08,329 - DEBUG - DEBUG [2025-04-07] Precio: $6.34, SAR: $7.53, Volumen: 1,166,652.0
+2025-06-15 07:29:08,330 - INFO - [2025-04-10] SEÑAL DE COMPRA - Precio: $7.51, SAR: $5.80
+2025-06-15 07:29:08,330 - INFO - Trade abierto: {'entry_time': Timestamp('2025-04-10 04:00:00'), 'entry_price': 7.51, 'size': 1, 'exit_time': None, 'exit_price': None, 'pnl': 0, 'pnl_pct': 0, 'duration': 0}
+2025-06-15 07:29:08,330 - INFO - [2025-04-21] SEÑAL DE VENTA - Precio: $6.29, SAR: $8.12
+2025-06-15 07:29:08,330 - INFO - Trade cerrado: {'entry_time': Timestamp('2025-04-10 04:00:00'), 'entry_price': 7.51, 'size': 1, 'exit_time': Timestamp('2025-04-21 04:00:00'), 'exit_price': 6.295, 'pnl': -1.2149999999999999, 'pnl_pct': -16.17842876165113, 'duration': 11}
+2025-06-15 07:29:08,330 - DEBUG - DEBUG [2025-05-06] Precio: $9.21, SAR: $6.14, Volumen: 3,967,181.0
+2025-06-15 07:29:08,331 - DEBUG - DEBUG [2025-06-04] Precio: $20.53, SAR: $16.60, Volumen: 1,802,245.0
+2025-06-15 07:29:08,487 - INFO - [AEVA] Backtest completado con 1 trades. Retorno: -16.35%
+2025-06-15 07:29:08,513 - DEBUG - [SAVE] Trades guardados en backtest_results/AEVA_20250615_072908/trades.csv
+2025-06-15 07:29:08,515 - DEBUG - [SAVE] Curva de equity guardada en backtest_results/AEVA_20250615_072908/equity_curve.csv
+2025-06-15 07:29:08,517 - INFO - [SAVE] Resultados guardados en backtest_results/AEVA_20250615_072908

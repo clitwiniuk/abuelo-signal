@@ -1,0 +1,57 @@
+[
+    {
+        "scenario_id": "BALANCE_EXIT_STOP_LOSS",
+        "expected_action": "EXIT_STOP_LOSS",
+        "entry_price": 10.0,
+        "exit_price": 9.79,
+        "peak_price": 10.0,
+        "expected_pnl": 0,
+        "actual_pnl": -2.1,
+        "result": "PASS",
+        "validation": "Stop loss triggered at -2.1% (target: -2%)"
+    },
+    {
+        "scenario_id": "BALANCE_EXIT_BREAK_EVEN",
+        "expected_action": "EXIT_BREAK_EVEN",
+        "entry_price": 10.0,
+        "exit_price": 10.01,
+        "peak_price": 10.26,
+        "expected_pnl": 0,
+        "actual_pnl": 0.1,
+        "result": "PASS",
+        "validation": "BE protected: peaked 2.6%, exited 0.1%"
+    },
+    {
+        "scenario_id": "BALANCE_EXIT_TAKE_PROFIT",
+        "expected_action": "EXIT_TAKE_PROFIT",
+        "entry_price": 10.0,
+        "exit_price": 10.41,
+        "peak_price": 10.0,
+        "expected_pnl": 0,
+        "actual_pnl": 4.1,
+        "result": "PASS",
+        "validation": "Take profit hit at 4.1% (target: +4%)"
+    },
+    {
+        "scenario_id": "BALANCE_EXIT_TIME_LIMIT",
+        "expected_action": "EXIT_TIME_LIMIT",
+        "entry_price": 10.0,
+        "exit_price": 10.05,
+        "peak_price": 10.0,
+        "expected_pnl": 0,
+        "actual_pnl": 0.5,
+        "result": "PASS",
+        "validation": "Time limit reached: 1.0h >= 1.0h"
+    },
+    {
+        "scenario_id": "BALANCE_EXIT_TRAILING_STOP",
+        "expected_action": "EXIT_TRAILING_STOP",
+        "entry_price": 10.0,
+        "exit_price": 10.19,
+        "peak_price": 10.35,
+        "expected_pnl": 0,
+        "actual_pnl": 1.9,
+        "result": "PASS",
+        "validation": "Trailing triggered: peak 3.5%, exit 1.9% (expected ~2.0%)"
+    }
+]

@@ -1,0 +1,1652 @@
+2025-09-28 19:06:07 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:06:07 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-28 19:06:07 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-28 19:06:07 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-28 19:06:07 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-28 19:06:07 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-28 19:06:07 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:33:48 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:33:48 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-28 19:33:48 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-28 19:33:48 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-28 19:33:48 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-28 19:33:48 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-28 19:33:48 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:33:48 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:33:48 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:33:48 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-28 19:33:48 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-28 19:33:48 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-28 19:33:48 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-28 19:33:48 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-28 19:33:48 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-28 19:33:48 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-28 19:33:48 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-28 19:33:48 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 19:33:48 - ExecutionTracker - INFO - Adding enhanced execution tracking columns to database...
+2025-09-28 19:33:48 - ExecutionTracker - ERROR - Error ensuring enhanced schema: no such table: trades
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 105)
+2025-09-28 19:33:48 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 105...
+2025-09-28 19:33:48 - ib_insync.client - INFO - Connected
+2025-09-28 19:33:48 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-28 19:33:48 - ib_insync.client - INFO - API connection ready
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-28 19:33:48 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-28 19:33:48 - ib_insync.ib - INFO - Synchronization complete
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO - Successfully connected to IBKR
+2025-09-28 19:33:48 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-28 19:33:48 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-28 19:33:48 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-28 19:33:48 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-28 19:33:48 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-28 19:33:48 - IBKRAdapter(105) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-28 19:33:49 - IBKRAdapter(105) - INFO - Initial data loaded successfully
+2025-09-28 19:33:49 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 105)
+2025-09-28 19:33:49 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:33:49 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-28 19:33:49 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-28 19:33:49 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 19:41:49 - Sistema4Main - INFO - 📡 Signal 15 received - shutting down Sistema_4
+2025-09-28 19:41:55 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:42:48 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:42:48 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:25 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:45:25 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-28 19:45:25 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-28 19:45:25 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-28 19:45:25 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-28 19:45:25 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-28 19:45:25 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:45:25 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:45:25 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:45:25 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-28 19:45:25 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-28 19:45:25 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-28 19:45:25 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-28 19:45:25 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-28 19:45:25 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-28 19:45:25 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-28 19:45:25 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-28 19:45:25 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 19:45:25 - ExecutionTracker - INFO - Adding enhanced execution tracking columns to database...
+2025-09-28 19:45:25 - ExecutionTracker - ERROR - Error ensuring enhanced schema: no such table: trades
+2025-09-28 19:45:25 - IBKRAdapter(105) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-28 19:45:25 - IBKRAdapter(105) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 105)
+2025-09-28 19:45:25 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 105...
+2025-09-28 19:45:25 - ib_insync.client - INFO - Connected
+2025-09-28 19:45:25 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-28 19:45:25 - ib_insync.wrapper - ERROR - Error 326, reqId -1: No es posible conectar ya que id. del cliente se est\u00e1 utilizando. Probar de nuevo con un id. de cliente \u00fanico.
+2025-09-28 19:45:25 - IBKRAdapter(105) - ERROR - IBKR Error 326: No es posible conectar ya que id. del cliente se est\u00e1 utilizando. Probar de nuevo con un id. de cliente \u00fanico.
+2025-09-28 19:45:25 - ib_insync.client - ERROR - Peer closed connection. clientId 105 already in use?
+2025-09-28 19:45:44 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:44 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:44 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:44 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:44 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:45 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:45 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:45 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:45:45 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 19:46:09 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:46:09 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-28 19:46:09 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-28 19:46:09 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-28 19:46:09 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-28 19:46:09 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-28 19:46:09 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:46:09 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:46:09 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:46:09 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-28 19:46:09 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-28 19:46:09 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-28 19:46:09 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-28 19:46:09 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-28 19:46:09 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-28 19:46:09 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-28 19:46:09 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-28 19:46:09 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 19:46:09 - ExecutionTracker - INFO - Adding enhanced execution tracking columns to database...
+2025-09-28 19:46:09 - ExecutionTracker - ERROR - Error ensuring enhanced schema: no such table: trades
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 106)
+2025-09-28 19:46:09 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 106...
+2025-09-28 19:46:09 - ib_insync.client - INFO - Connected
+2025-09-28 19:46:09 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-28 19:46:09 - ib_insync.client - INFO - API connection ready
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-28 19:46:09 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-28 19:46:09 - ib_insync.ib - INFO - Synchronization complete
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO - Successfully connected to IBKR
+2025-09-28 19:46:09 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-28 19:46:09 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-28 19:46:09 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-28 19:46:09 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-28 19:46:09 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-28 19:46:09 - IBKRAdapter(106) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-28 19:46:10 - IBKRAdapter(106) - INFO - Initial data loaded successfully
+2025-09-28 19:46:10 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 106)
+2025-09-28 19:46:10 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:46:10 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-28 19:46:10 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-28 19:46:10 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-28 19:46:13 - Sistema4Main - INFO - ✅ Scanner started (PID: 62894)
+2025-09-28 19:46:15 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-28 19:46:18 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-28 19:46:21 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-28 19:46:24 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-28 19:46:25 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-28 19:46:25 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-28 19:46:25 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-28 19:46:25 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-28 19:46:25 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-28 19:46:25 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-28 19:46:25 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-28 19:46:25 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+⚙️ Execution: {'active_positions': 0, 'pending_orders': 0, 'total_executed_today': 0, 'risk_metrics': {'portfolio_value': 10000.0, 'total_exposure': 0, 'exposure_percent': 0.0, 'active_positions': 0, 'daily_trades_used': 0, 'daily_trades_remaining': 10, 'daily_loss_amount': 0.0, 'daily_loss_remaining': 300.0, 'max_position_value': 500.0, 'max_risk_per_trade': 100.0}, 'ibkr_connected': True}
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-28 19:46:25 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 19:50:24 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:50:24 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-28 19:50:24 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-28 19:50:24 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-28 19:50:24 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-28 19:50:24 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-28 19:50:24 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:50:24 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:50:24 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:50:24 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-28 19:50:24 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-28 19:50:24 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-28 19:50:24 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-28 19:50:24 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-28 19:50:24 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-28 19:50:24 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-28 19:50:24 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-28 19:50:24 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 19:50:24 - ExecutionTracker - INFO - Adding enhanced execution tracking columns to database...
+2025-09-28 19:50:24 - ExecutionTracker - ERROR - Error ensuring enhanced schema: no such table: trades
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 106)
+2025-09-28 19:50:24 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 106...
+2025-09-28 19:50:24 - ib_insync.client - INFO - Connected
+2025-09-28 19:50:24 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-28 19:50:24 - ib_insync.client - INFO - API connection ready
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-28 19:50:24 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-28 19:50:24 - ib_insync.ib - INFO - Synchronization complete
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO - Successfully connected to IBKR
+2025-09-28 19:50:24 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-28 19:50:24 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-28 19:50:24 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-28 19:50:24 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-28 19:50:24 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-28 19:50:24 - IBKRAdapter(106) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-28 19:50:25 - IBKRAdapter(106) - INFO - Initial data loaded successfully
+2025-09-28 19:50:25 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 106)
+2025-09-28 19:50:25 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:50:25 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-28 19:50:25 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-28 19:50:25 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-28 19:50:28 - Sistema4Main - INFO - ✅ Scanner started (PID: 67109)
+2025-09-28 19:50:30 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-28 19:50:33 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-28 19:50:36 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-28 19:50:39 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-28 19:50:40 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-28 19:50:40 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-28 19:50:40 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-28 19:50:40 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-28 19:50:40 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-28 19:50:40 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-28 19:50:40 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-28 19:50:40 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+⚙️ Execution: {'active_positions': 0, 'pending_orders': 0, 'total_executed_today': 0, 'risk_metrics': {'portfolio_value': 10000.0, 'total_exposure': 0, 'exposure_percent': 0.0, 'active_positions': 0, 'daily_trades_used': 0, 'daily_trades_remaining': 10, 'daily_loss_amount': 0.0, 'daily_loss_remaining': 300.0, 'max_position_value': 500.0, 'max_risk_per_trade': 100.0}, 'ibkr_connected': True}
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-28 19:50:40 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 19:55:40 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:00:40 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:05:40 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:10:48 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:15:57 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:21:06 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:26:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:31:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:36:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:41:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:46:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:51:10 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-28 20:51:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 20:56:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:01:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:06:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:11:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:16:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:21:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:26:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:31:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:36:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:41:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-28 21:41:27 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-28 21:41:32 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 119 B sent in 8 messages, 19.0 kB received in 532 messages, session time 6.67 ks.
+2025-09-28 21:41:32 - ib_insync.client - INFO - Disconnecting
+2025-09-29 06:08:54 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 06:08:54 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 06:08:54 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 06:08:54 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 06:08:54 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 06:08:54 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 06:08:54 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-29 06:08:54 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-29 06:08:54 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-29 06:08:54 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 06:08:54 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 06:08:54 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 06:08:54 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 06:08:54 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 06:08:54 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 06:08:54 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 06:08:54 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 06:08:54 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:08:54 - ExecutionTracker - INFO - Adding enhanced execution tracking columns to database...
+2025-09-29 06:08:54 - ExecutionTracker - ERROR - Error ensuring enhanced schema: no such table: trades
+2025-09-29 06:08:54 - IBKRAdapter(106) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 06:08:54 - IBKRAdapter(106) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 106)
+2025-09-29 06:08:54 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 106...
+2025-09-29 06:08:54 - ib_insync.client - INFO - Connected
+2025-09-29 06:08:54 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 06:08:54 - ib_insync.client - INFO - API connection ready
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:hfarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarmnj
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfuture
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:jfarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 06:08:54 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 06:08:55 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO - Successfully connected to IBKR
+2025-09-29 06:08:55 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 06:08:55 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 06:08:55 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 06:08:55 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 06:08:55 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 06:08:55 - IBKRAdapter(106) - INFO - Initial data loaded successfully
+2025-09-29 06:08:55 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 106)
+2025-09-29 06:08:55 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 06:08:55 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 06:08:55 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 06:08:55 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 06:08:58 - Sistema4Main - INFO - ✅ Scanner started (PID: 71027)
+2025-09-29 06:09:00 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 06:09:03 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 06:09:06 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 06:09:09 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 06:09:10 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 06:09:10 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 06:09:10 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 06:09:10 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 06:09:10 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 06:09:10 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 06:09:10 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 06:09:10 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 06:09:10 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 06:09:10 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 06:09:10 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+⚙️ Execution: {'active_positions': 0, 'pending_orders': 0, 'total_executed_today': 0, 'risk_metrics': {'portfolio_value': 10000.0, 'total_exposure': 0, 'exposure_percent': 0.0, 'active_positions': 0, 'daily_trades_used': 0, 'daily_trades_remaining': 10, 'daily_loss_amount': 0.0, 'daily_loss_remaining': 300.0, 'max_position_value': 500.0, 'max_risk_per_trade': 100.0}, 'ibkr_connected': True}
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 06:09:10 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 06:12:59 - ib_insync.wrapper - INFO - Warning 2103, reqId -1: Se ha perdido la conexi\u00f3n al centro de datos:usfarm
+2025-09-29 06:12:59 - IBKRAdapter(106) - ERROR - IBKR Error 2103: Se ha perdido la conexi\u00f3n al centro de datos:usfarm
+2025-09-29 06:13:01 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 06:14:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:17:27 - ib_insync.wrapper - INFO - Warning 2103, reqId -1: Se ha perdido la conexi\u00f3n al centro de datos:usfarm.nj
+2025-09-29 06:17:27 - IBKRAdapter(106) - ERROR - IBKR Error 2103: Se ha perdido la conexi\u00f3n al centro de datos:usfarm.nj
+2025-09-29 06:17:28 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 06:18:00 - ib_insync.wrapper - INFO - Warning 2103, reqId -1: Se ha perdido la conexi\u00f3n al centro de datos:usfarm.nj
+2025-09-29 06:18:00 - IBKRAdapter(106) - ERROR - IBKR Error 2103: Se ha perdido la conexi\u00f3n al centro de datos:usfarm.nj
+2025-09-29 06:18:00 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 06:19:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:24:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:25:48 - ib_insync.wrapper - INFO - Warning 2157, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" se ha interrumpido:secdefeu
+2025-09-29 06:25:48 - IBKRAdapter(106) - ERROR - IBKR Error 2157: La conexi\u00f3n de la granja de datos "sec-def" se ha interrumpido:secdefeu
+2025-09-29 06:25:48 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 06:27:06 - ib_insync.wrapper - ERROR - Error 1100, reqId -1: Conectividad entre IB y TWS ha sido perdida
+2025-09-29 06:27:06 - IBKRAdapter(106) - ERROR - IBKR Error 1100: Conectividad entre IB y TWS ha sido perdida
+2025-09-29 06:27:11 - ib_insync.wrapper - ERROR - Error 1100, reqId -1: Conectividad entre IB y TWS ha sido perdida
+2025-09-29 06:27:11 - IBKRAdapter(106) - ERROR - IBKR Error 1100: Conectividad entre IB y TWS ha sido perdida
+2025-09-29 06:27:13 - ib_insync.wrapper - ERROR - Error 1102, reqId -1: Conectividad entre IB y TWS ha sido restaurada - datos mantenidos: Todos los centros de datos est\u00e1n conectados: hfarm; eufarmnj; cashfarm; usfuture; jfarm; usfarm.nj; eufarm; usfarm; euhmds; fundfarm; ushmds; secdefeu.
+2025-09-29 06:27:13 - IBKRAdapter(106) - ERROR - IBKR Error 1102: Conectividad entre IB y TWS ha sido restaurada - datos mantenidos: Todos los centros de datos est\u00e1n conectados: hfarm; eufarmnj; cashfarm; usfuture; jfarm; usfarm.nj; eufarm; usfarm; euhmds; fundfarm; ushmds; secdefeu.
+2025-09-29 06:29:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:34:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:39:10 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:44:11 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:49:11 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:54:11 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:59:11 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 06:59:20 - ib_insync.client - ERROR - Peer closed connection.
+2025-09-29 07:04:19 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:09:31 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 07:09:31 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:14:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:19:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:24:45 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:29:55 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:35:05 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:40:08 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:45:08 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:50:08 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 07:55:08 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:00:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:05:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:10:13 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 08:10:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:15:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:20:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:25:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:30:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:35:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:40:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:45:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:50:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 08:55:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:00:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:05:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:10:12 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 09:10:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:15:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:20:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:25:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:30:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:35:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:40:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:45:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:50:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 09:55:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:00:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:05:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:10:12 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 10:10:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:15:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:20:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:25:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:30:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:35:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:40:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:45:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:50:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 10:55:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:00:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:05:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:10:12 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 11:10:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:15:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:20:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:25:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:30:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:35:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:40:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:45:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:50:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 11:55:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:00:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:05:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:10:12 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 12:10:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:15:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:20:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:25:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:30:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:35:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:40:13 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:45:20 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:50:30 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 12:55:39 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:00:45 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:05:47 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:10:50 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 13:10:50 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:15:52 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:20:55 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:25:55 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:30:55 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:35:55 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0}
+2025-09-29 13:37:05 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 13:39:20 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 13:39:20 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 13:39:20 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 13:39:20 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 13:39:20 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 13:39:20 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 13:39:20 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 13:39:20 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 13:39:20 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 13:39:20 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 13:39:20 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 13:39:20 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 13:39:20 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 13:39:20 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 13:39:20 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 13:39:20 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 13:39:20 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 13:39:20 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 106)
+2025-09-29 13:39:20 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 106...
+2025-09-29 13:39:20 - ib_insync.client - INFO - Connected
+2025-09-29 13:39:20 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 13:39:20 - ib_insync.client - INFO - API connection ready
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:hfarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarmnj
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfuture
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usopt.nj
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:jfarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 13:39:20 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 13:39:20 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO - Successfully connected to IBKR
+2025-09-29 13:39:20 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 13:39:20 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 13:39:20 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 13:39:20 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 13:39:20 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 13:39:20 - IBKRAdapter(106) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 13:39:21 - IBKRAdapter(106) - INFO - Initial data loaded successfully
+2025-09-29 13:39:21 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 106)
+2025-09-29 13:39:21 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 13:39:21 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 13:39:21 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 13:39:21 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 13:39:24 - Sistema4Main - INFO - ✅ Scanner started (PID: 56015)
+2025-09-29 13:39:24 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usopt.nj
+2025-09-29 13:39:24 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usopt.nj
+2025-09-29 13:39:24 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usopt.nj
+2025-09-29 13:39:24 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usopt.nj
+2025-09-29 13:39:26 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 13:39:29 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 13:39:32 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 13:39:35 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 13:39:36 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 13:39:36 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 13:39:36 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 13:39:36 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 13:39:36 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 13:39:36 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 13:39:36 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 13:39:36 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 13:39:36 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 13:39:36 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 13:39:36 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: True
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 13:39:36 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 13:44:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 13:49:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 13:54:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 13:59:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:04:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:09:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:14:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:18:37 - TelegramClient - INFO - Received Sistema_4 command: /menu
+2025-09-29 14:19:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:24:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.hfarm
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.eufarmnj
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.usfuture
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-09-29 14:29:26 - ib_insync.wrapper - INFO - Warning 2108, reqId -1: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-09-29 14:29:26 - IBKRAdapter(106) - ERROR - IBKR Error 2108: La conexi\u00f3n al centro de datos est\u00e1 inactiva pero deber\u00eda estar disponible bajo demanda.jfarm
+2025-09-29 14:29:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:34:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:39:36 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 14:39:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:44:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:49:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:54:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 14:59:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:04:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:09:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:14:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:19:36 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:20:32 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 15:20:39 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 119 B sent in 8 messages, 121 kB received in 2583 messages, session time 6.08 ks.
+2025-09-29 15:20:39 - ib_insync.client - INFO - Disconnecting
+2025-09-29 15:20:53 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 15:20:53 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 15:20:53 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 15:20:53 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 15:20:53 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 15:20:53 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 15:20:53 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 15:20:53 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 15:20:53 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 15:20:53 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 15:20:53 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 15:20:53 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 15:20:53 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 15:20:53 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 15:20:53 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 15:20:53 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 15:20:53 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 15:20:53 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 106)
+2025-09-29 15:20:53 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 106...
+2025-09-29 15:20:53 - ib_insync.client - INFO - Connected
+2025-09-29 15:20:53 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 15:20:53 - ib_insync.client - INFO - API connection ready
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 15:20:53 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 15:20:53 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO - Successfully connected to IBKR
+2025-09-29 15:20:53 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 15:20:53 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 15:20:53 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 15:20:53 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 15:20:53 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 15:20:53 - IBKRAdapter(106) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 15:20:54 - IBKRAdapter(106) - INFO - Initial data loaded successfully
+2025-09-29 15:20:54 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 106)
+2025-09-29 15:20:54 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 15:20:54 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 15:20:54 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 15:20:54 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 15:20:57 - Sistema4Main - INFO - ✅ Scanner started (PID: 22064)
+2025-09-29 15:20:59 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 15:21:02 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 15:21:05 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 15:21:08 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 15:21:09 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 15:21:09 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 15:21:09 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 15:21:09 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 15:21:09 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 15:21:09 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 15:21:09 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 15:21:09 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 15:21:09 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 15:21:09 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 15:21:09 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: True
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 15:21:09 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 15:26:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:26:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:26:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:31:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:31:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:31:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:36:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:36:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:36:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:41:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:41:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:41:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:46:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:46:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:46:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:51:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:51:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:51:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 15:56:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 15:56:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 15:56:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:01:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:01:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:01:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:06:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:06:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:06:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:11:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:11:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:11:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:16:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:16:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:16:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:21:09 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 16:21:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:21:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:21:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:26:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:26:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:26:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:31:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:31:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:31:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:36:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:36:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:36:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:41:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:41:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:41:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:46:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:46:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:46:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:51:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:51:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:51:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 16:56:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 16:56:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 16:56:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:01:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:01:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:01:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:06:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:06:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:06:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:11:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:11:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:11:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:16:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:16:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:16:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:21:09 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 17:21:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:21:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:21:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:26:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:26:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:26:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:31:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:31:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:31:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:36:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:36:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:36:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:41:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:41:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:41:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:46:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:46:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:46:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:51:09 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:51:09 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:51:09 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 17:56:17 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 17:56:17 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 17:56:17 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:01:29 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:01:29 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:01:29 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:06:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:06:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:06:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:11:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:11:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:11:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:16:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:16:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:16:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:21:38 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 18:21:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:21:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:21:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:26:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:26:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:26:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:31:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:31:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:31:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:36:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:36:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:36:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:41:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:41:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:41:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:46:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:46:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:46:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:51:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:51:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:51:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 18:56:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 18:56:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 18:56:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:01:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:01:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:01:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:06:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:06:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:06:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:07:49 - TelegramClient - ERROR - Error in command listener: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-09-29 19:11:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:11:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:11:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:16:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:16:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:16:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:21:38 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 19:21:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:21:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:21:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:26:38 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 19:26:38 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 19:26:38 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:30:45 - Sistema4Main - INFO - 📡 Signal 15 received - shutting down Sistema_4
+2025-09-29 19:30:54 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 119 B sent in 8 messages, 273 kB received in 5920 messages, session time 15.0 ks.
+2025-09-29 19:30:54 - ib_insync.client - INFO - Disconnecting
+2025-09-29 19:31:47 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:31:47 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 19:31:47 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 19:31:47 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 19:31:47 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 19:31:47 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 19:31:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:31:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:31:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:31:47 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 19:31:47 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 19:31:47 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 19:31:47 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 19:31:47 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 19:31:47 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 19:31:47 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 19:31:47 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 19:31:47 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 6020)
+2025-09-29 19:31:47 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 19:31:47 - ib_insync.client - INFO - Connected
+2025-09-29 19:31:47 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 19:31:47 - ib_insync.client - INFO - API connection ready
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 19:31:47 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 19:31:47 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO - Successfully connected to IBKR
+2025-09-29 19:31:47 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 19:31:47 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 19:31:47 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 19:31:47 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 19:31:47 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 19:31:47 - IBKRAdapter(6020) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 19:31:48 - IBKRAdapter(6020) - INFO - Initial data loaded successfully
+2025-09-29 19:31:48 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 19:31:48 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:31:48 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 19:31:48 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 19:31:48 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 19:31:51 - Sistema4Main - ERROR - ❌ Scanner process failed to start
+2025-09-29 19:31:51 - Sistema4Main - ERROR - ❌ Failed to start scanner
+2025-09-29 19:31:51 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 15.0 kB received in 311 messages, session time 4.92 s.
+2025-09-29 19:31:51 - ib_insync.client - INFO - Disconnecting
+2025-09-29 19:33:43 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:33:43 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 19:33:43 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 19:33:43 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 19:33:43 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 19:33:43 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 19:33:43 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:33:43 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:33:43 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:33:43 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 19:33:43 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 19:33:43 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 19:33:43 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 19:33:43 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 19:33:43 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 19:33:43 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 19:33:43 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 19:33:43 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 6020)
+2025-09-29 19:33:43 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 19:33:43 - ib_insync.client - INFO - Connected
+2025-09-29 19:33:43 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 19:33:43 - ib_insync.client - INFO - API connection ready
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 19:33:43 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 19:33:43 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO - Successfully connected to IBKR
+2025-09-29 19:33:43 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 19:33:43 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 19:33:43 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 19:33:43 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 19:33:43 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 19:33:43 - IBKRAdapter(6020) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 19:33:44 - IBKRAdapter(6020) - INFO - Initial data loaded successfully
+2025-09-29 19:33:44 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 19:33:44 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:33:44 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 19:33:44 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 19:33:44 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 19:33:47 - Sistema4Main - INFO - ✅ Scanner started (PID: 88698)
+2025-09-29 19:33:49 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 19:33:52 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 19:33:55 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 19:33:58 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 19:33:59 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 19:33:59 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 19:33:59 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 19:33:59 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 19:33:59 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 19:33:59 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 19:33:59 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 19:33:59 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 19:33:59 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 19:33:59 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 19:33:59 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: True
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 19:33:59 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:36:45 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:36:45 - ServiceLocator - INFO - ✅ Unified config loaded from config.ini
+2025-09-29 19:36:45 - ServiceLocator - INFO -    Mode: PRODUCTION
+2025-09-29 19:36:45 - ServiceLocator - INFO -    Client ID: 6000
+2025-09-29 19:36:45 - ServiceLocator - INFO -    Strategy: realistic_strategy_engine
+2025-09-29 19:36:45 - ServiceLocator - INFO -    Smallcap Mode: True
+2025-09-29 19:36:45 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:36:45 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:36:45 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:36:45 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 19:36:45 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 19:36:45 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 19:36:45 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 19:36:45 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 19:36:45 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 19:36:45 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 19:36:45 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 19:36:45 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:36:45 - IBKRAdapter(6020) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2025-09-29 19:36:45 - IBKRAdapter(6020) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 6020)
+2025-09-29 19:36:45 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 19:36:45 - ib_insync.client - INFO - Connected
+2025-09-29 19:36:46 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 19:36:46 - ib_insync.client - INFO - API connection ready
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 19:36:46 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 19:36:46 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 19:36:46 - IBKRAdapter(6020) - INFO - Successfully connected to IBKR
+2025-09-29 19:36:46 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2025-09-29 19:36:46 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2025-09-29 19:36:46 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2025-09-29 19:36:46 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2025-09-29 19:36:46 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2025-09-29 19:36:46 - IBKRAdapter(6020) - INFO - ⚡ Phase 1 optimizations initialized:
+2025-09-29 19:36:46 - IBKRAdapter(6020) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2025-09-29 19:36:46 - IBKRAdapter(6020) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2025-09-29 19:36:46 - IBKRAdapter(6020) - INFO -    🎯 Using simple static volume requirements - NO ML
+2025-09-29 19:36:47 - IBKRAdapter(6020) - INFO - Initial data loaded successfully
+2025-09-29 19:36:47 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 19:36:47 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:36:47 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 19:36:47 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 19:36:47 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 19:36:50 - Sistema4Main - INFO - ✅ Scanner started (PID: 92706)
+2025-09-29 19:36:52 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 19:36:55 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 19:36:58 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 19:37:01 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 19:37:02 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 19:37:02 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 19:37:02 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 19:37:02 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 19:37:02 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 19:37:02 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 19:37:02 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 19:37:02 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 19:37:02 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 19:37:02 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 19:37:02 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: True
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 19:37:02 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:42:02 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:47:02 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:52:02 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 19:57:02 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:02:02 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:03:13 - Sistema4Main - INFO - 📡 Signal 15 received - shutting down Sistema_4
+2025-09-29 20:03:13 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 44.0 kB received in 911 messages, session time 1.59 ks.
+2025-09-29 20:03:13 - ib_insync.client - INFO - Disconnecting
+2025-09-29 20:04:47 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:04:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:04:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:04:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:04:47 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:04:47 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:04:47 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:04:47 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:04:47 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:04:47 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:04:47 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:04:47 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:04:47 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:04:47 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:04:47 - ib_insync.client - INFO - Connected
+2025-09-29 20:04:47 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:04:47 - ib_insync.client - INFO - API connection ready
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 20:04:47 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 20:04:48 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 20:04:48 - adapters.ibkr_adapter_clean.6020 - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:04:48 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:04:48 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:04:48 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 20:04:48 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 20:04:48 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 20:04:51 - Sistema4Main - INFO - ✅ Scanner started (PID: 22421)
+2025-09-29 20:04:53 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 20:04:56 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 20:07:15 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:07:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:07:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:07:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:07:15 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:07:15 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:07:15 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:07:15 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:07:15 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:07:15 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:07:15 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:07:15 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:07:15 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:07:15 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:07:15 - ib_insync.client - INFO - Connected
+2025-09-29 20:07:16 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 20:07:16 - ib_insync.client - INFO - API connection ready
+2025-09-29 20:07:16 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 20:07:16 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 20:07:16 - adapters.ibkr_adapter_clean.6020 - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:07:16 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:07:16 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:07:16 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 20:07:16 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 20:07:16 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 20:07:19 - Sistema4Main - INFO - ✅ Scanner started (PID: 24505)
+2025-09-29 20:07:21 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 20:07:24 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 20:07:27 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 20:07:30 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 20:07:31 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 20:07:31 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 20:07:31 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 20:07:31 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 20:07:31 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 20:07:31 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 20:07:31 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 20:07:31 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 20:07:31 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 20:07:31 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 20:07:32 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 20:07:32 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Stopped
+
+2025-09-29 20:07:32 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:12:32 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 20:12:32 - Sistema4Main - WARNING - ⚠️ Scanner process died
+2025-09-29 20:12:32 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:15:46 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 20:15:52 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 24.3 kB received in 503 messages, session time 517 s.
+2025-09-29 20:15:52 - ib_insync.client - INFO - Disconnecting
+2025-09-29 20:16:31 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:16:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:16:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:16:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:16:31 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:16:31 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:16:31 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:16:31 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:16:31 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:16:31 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:16:31 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:16:31 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:16:31 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:16:31 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:16:31 - ib_insync.client - INFO - Connected
+2025-09-29 20:16:31 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:16:31 - ib_insync.client - INFO - API connection ready
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 20:16:31 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 20:16:31 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 20:16:31 - adapters.ibkr_adapter_clean.6020 - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:16:31 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:16:32 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:16:32 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 20:16:32 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 20:16:32 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 20:16:35 - Sistema4Main - INFO - ✅ Scanner started (PID: 33047)
+2025-09-29 20:16:37 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 20:16:40 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 20:16:43 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 20:16:46 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 20:16:47 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 20:16:47 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 20:16:47 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 20:16:47 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 20:16:47 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 20:16:47 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 20:16:47 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 20:16:47 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 20:16:47 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 20:16:47 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 20:16:47 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 20:16:47 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 20:16:47 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:21:47 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 20:21:47 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:26:47 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 20:26:47 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:31:47 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 20:31:47 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:34:01 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 20:34:08 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 28.8 kB received in 611 messages, session time 1.06 ks.
+2025-09-29 20:34:08 - ib_insync.client - INFO - Disconnecting
+2025-09-29 20:37:17 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:37:17 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:37:17 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:37:17 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:37:17 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:37:17 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:37:17 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:37:17 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:37:17 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:37:17 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:37:17 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:37:17 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:37:17 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:37:17 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:37:17 - ib_insync.client - INFO - Connected
+2025-09-29 20:37:17 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:37:17 - ib_insync.client - INFO - API connection ready
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 20:37:17 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 20:37:17 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 20:37:17 - adapters.ibkr_adapter_clean.6020 - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:37:17 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:37:17 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:37:17 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 20:37:17 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 20:37:17 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 20:37:20 - Sistema4Main - ERROR - ❌ Scanner process failed to start
+2025-09-29 20:37:20 - Sistema4Main - ERROR - ❌ Failed to start scanner
+2025-09-29 20:37:20 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 15.0 kB received in 311 messages, session time 3.47 s.
+2025-09-29 20:37:20 - ib_insync.client - INFO - Disconnecting
+2025-09-29 20:54:37 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:54:37 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:54:37 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:54:37 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:54:37 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:54:37 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:54:37 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:54:37 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:54:37 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:54:37 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:54:37 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:54:37 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:54:37 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:54:37 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:54:37 - ib_insync.client - INFO - Connected
+2025-09-29 20:54:37 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:54:37 - ib_insync.client - INFO - API connection ready
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 20:54:37 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 20:54:38 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 20:54:38 - adapters.ibkr_adapter_clean.6020 - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:54:38 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6020)
+2025-09-29 20:54:38 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:54:38 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 20:54:38 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 20:54:38 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 20:54:41 - Sistema4Main - INFO - ✅ Scanner started (PID: 68533)
+2025-09-29 20:54:43 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 20:54:46 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 20:54:49 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 20:54:52 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 20:54:53 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 20:54:53 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 20:54:53 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 20:54:53 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 20:54:53 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 20:54:53 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 20:54:53 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 20:54:53 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 20:54:53 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 20:54:53 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 20:54:53 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 20:54:53 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 20:54:53 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:59:34 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:59:34 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:59:34 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:59:34 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:59:34 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 20:59:34 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 20:59:34 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 20:59:34 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 20:59:34 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 20:59:34 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 20:59:34 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 20:59:34 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 20:59:34 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 20:59:34 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6020...
+2025-09-29 20:59:34 - ib_insync.client - INFO - Connected
+2025-09-29 20:59:34 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 20:59:34 - ib_insync.wrapper - ERROR - Error 326, reqId -1: No es posible conectar ya que id. del cliente se est\u00e1 utilizando. Probar de nuevo con un id. de cliente \u00fanico.
+2025-09-29 20:59:35 - ib_insync.client - ERROR - Peer closed connection. clientId 6020 already in use?
+2025-09-29 20:59:44 - ib_insync.client - INFO - Disconnecting
+2025-09-29 20:59:44 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-09-29 20:59:44 - adapters.ibkr_adapter_clean.6020 - ERROR - ❌ IBKR connection failed: 
+2025-09-29 20:59:44 - execution.execution_engine.ExecutionEngine - ERROR - ❌ Failed to connect to IBKR
+2025-09-29 20:59:44 - Sistema4Main - ERROR - ❌ Failed to start execution engine
+2025-09-29 20:59:53 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 21:02:30 - Sistema4Main - INFO - 📡 Signal 15 received - shutting down Sistema_4
+2025-09-29 21:02:33 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 126 B sent in 8 messages, 24.9 kB received in 515 messages, session time 476 s.
+2025-09-29 21:02:33 - ib_insync.client - INFO - Disconnecting
+2025-09-29 21:04:56 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:04:56 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:04:56 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:04:56 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:04:56 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 21:04:56 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 21:04:56 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 21:04:56 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 21:04:56 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 21:04:56 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 21:04:56 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 21:04:56 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 21:04:56 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 21:04:56 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6025...
+2025-09-29 21:04:56 - ib_insync.client - INFO - Connected
+2025-09-29 21:04:56 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 21:04:56 - ib_insync.client - INFO - API connection ready
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 21:04:56 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 21:04:56 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 21:04:56 - adapters.ibkr_adapter_clean.6025 - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:04:56 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:04:56 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:04:56 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 21:04:56 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 21:04:56 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 21:04:59 - Sistema4Main - INFO - ✅ Scanner started (PID: 80521)
+2025-09-29 21:05:01 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 21:05:04 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 21:05:07 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 21:05:10 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 21:05:11 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 21:05:11 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 21:05:11 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 21:05:11 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 21:05:11 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 21:05:11 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 21:05:11 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 21:05:11 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 21:05:11 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 21:05:11 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 21:05:12 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 21:05:12 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 21:05:12 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:10:07 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 21:10:12 - Sistema4Main - WARNING - ⚠️ Dead workers detected: ['bull_flag']
+2025-09-29 21:10:12 - Sistema4Main - INFO - 📊 System stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 21:10:12 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 21.1 kB received in 456 messages, session time 316 s.
+2025-09-29 21:10:12 - ib_insync.client - INFO - Disconnecting
+2025-09-29 21:10:15 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:10:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:10:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:10:15 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:10:15 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 21:10:15 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 21:10:15 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 21:10:15 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 21:10:15 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 21:10:15 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 21:10:15 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 21:10:15 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 21:10:15 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 21:10:15 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6025...
+2025-09-29 21:10:15 - ib_insync.client - INFO - Connected
+2025-09-29 21:10:15 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 21:10:15 - ib_insync.client - INFO - API connection ready
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 21:10:15 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 21:10:15 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 21:10:15 - adapters.ibkr_adapter_clean.6025 - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:10:15 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:10:15 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:10:15 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 21:10:15 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 21:10:15 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 21:10:18 - Sistema4Main - INFO - ✅ Scanner started (PID: 84897)
+2025-09-29 21:10:20 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 21:10:23 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 21:10:26 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 21:10:29 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 21:10:30 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 21:10:30 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 21:10:30 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 21:10:30 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 21:10:30 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 21:10:30 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 21:10:30 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 21:10:30 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 21:10:30 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 21:10:30 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 21:10:30 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 21:10:30 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Stopped
+
+2025-09-29 21:10:30 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:14:59 - Sistema4Main - INFO - 📡 Signal 2 received - shutting down Sistema_4
+2025-09-29 21:15:00 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 21.0 kB received in 454 messages, session time 286 s.
+2025-09-29 21:15:00 - ib_insync.client - INFO - Disconnecting
+2025-09-29 21:17:31 - root - INFO - Logging initialized - Level: INFO, File: logs/sistema4_main.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:17:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:17:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:17:31 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:17:31 - execution.risk_manager.RiskManager - INFO - 🛡️ Risk Manager initialized
+2025-09-29 21:17:31 - execution.risk_manager.RiskManager - INFO -    💰 Portfolio: $10,000.0
+2025-09-29 21:17:31 - execution.risk_manager.RiskManager - INFO -    📊 Max risk per trade: 1.0%
+2025-09-29 21:17:31 - execution.risk_manager.RiskManager - INFO -    🔄 Max daily trades: 10
+2025-09-29 21:17:31 - execution.execution_engine.ExecutionEngine - INFO - ⚙️ Execution Engine initialized
+2025-09-29 21:17:31 - Sistema4Main - INFO - 🚀 Sistema_4 Coordinator initialized
+2025-09-29 21:17:31 - Sistema4Main - INFO - 🎯 Starting Sistema_4 Distributed Trading System...
+2025-09-29 21:17:31 - shared.database.Sistema4Database - INFO - 🧹 Cleanup: 0 expired reservations, 0 old opportunities
+2025-09-29 21:17:31 - Sistema4Main - INFO - 📊 Database stats: {'active_positions': 0, 'active_reservations': 0, 'unprocessed_opportunities': 0, 'open_trades': 0, 'completed_trades': 0}
+2025-09-29 21:17:31 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 6025...
+2025-09-29 21:17:31 - ib_insync.client - INFO - Connected
+2025-09-29 21:17:31 - ib_insync.client - INFO - Logged on to server version 176
+2025-09-29 21:17:31 - ib_insync.client - INFO - API connection ready
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:cashfarm
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm.nj
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:eufarm
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: La conexi\u00f3n al centro de datos funciona correctamente:usfarm
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:euhmds
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:fundfarm
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: La conexi\u00f3n al centro de datos HMDS funciona correctamente:ushmds
+2025-09-29 21:17:31 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: La conexi\u00f3n de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-09-29 21:17:32 - ib_insync.ib - INFO - Synchronization complete
+2025-09-29 21:17:32 - adapters.ibkr_adapter_clean.6025 - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:17:32 - execution.execution_engine.ExecutionEngine - INFO - ✅ IBKR connected (client_id: 6025)
+2025-09-29 21:17:32 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:17:32 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: trade_requests
+2025-09-29 21:17:32 - execution.execution_engine.ExecutionEngine - INFO - 🚀 Execution Engine started - listening for trade requests...
+2025-09-29 21:17:32 - Sistema4Main - INFO - ✅ Execution Engine started
+2025-09-29 21:17:35 - Sistema4Main - INFO - ✅ Scanner started (PID: 98796)
+2025-09-29 21:17:37 - Sistema4Main - INFO - ✅ gap_go worker started
+2025-09-29 21:17:40 - Sistema4Main - INFO - ✅ daily_plays worker started
+2025-09-29 21:17:43 - Sistema4Main - INFO - ✅ macdv worker started
+2025-09-29 21:17:46 - Sistema4Main - INFO - ✅ bull_flag worker started
+2025-09-29 21:17:47 - Sistema4Main - INFO - ✅ Execution Engine listener started as background task
+2025-09-29 21:17:47 - Sistema4Main - INFO - ✅ Background tasks started
+2025-09-29 21:17:47 - Sistema4Main - INFO - 🎉 Sistema_4 started successfully!
+2025-09-29 21:17:47 - Sistema4Main - INFO -    📊 Scanner: Running
+2025-09-29 21:17:47 - Sistema4Main - INFO -    👥 Workers: 4 active
+2025-09-29 21:17:47 - Sistema4Main - INFO -    ⚙️ Execution Engine: Running
+2025-09-29 21:17:47 - Sistema4Main - INFO -    💾 Database: Ready
+2025-09-29 21:17:47 - TelegramClient - INFO - Telegram command listener started for Sistema_4
+2025-09-29 21:17:47 - TelegramClient - INFO - Started Sistema_4 Telegram command listener thread
+2025-09-29 21:17:47 - Sistema4Main - INFO - ✅ Telegram notifications started
+2025-09-29 21:17:47 - execution.execution_engine.ExecutionEngine - ERROR - Error getting execution stats: 'bool' object is not callable
+2025-09-29 21:17:47 - Sistema4Main - INFO - 
+🎯 SISTEMA_4 STATUS
+==================
+📊 Database Stats:
+   • Active Positions: 0
+   • Active Reservations: 0
+   • Unprocessed Opportunities: 0
+   • Open Trades: 0
+   • Completed Trades: 0
+
+⚙️ Execution Engine:
+   • IBKR Connected: False
+   • Pending Orders: 0
+
+📈 Trade Performance (30d):
+   • Total Trades: 0
+   • Win Rate: 0.0%
+   • Total P&L: $0.00
+   • Avg Trade: $0.00
+   • Best Trade: $0.00
+   • Worst Trade: $0.00
+
+👥 Workers: 4 active
+📡 Scanner: Running
+
+2025-09-29 21:17:47 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...

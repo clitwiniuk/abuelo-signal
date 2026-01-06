@@ -1,0 +1,16 @@
+2025-07-18 20:22:55,016 - TradingSystem - INFO - Initializing trading system...
+2025-07-18 20:22:55,499 - TradingSystem - INFO - Ejecutando en entorno Streamlit
+2025-07-18 20:22:55,499 - ThreadSafeIBKRAdapter(9998) - INFO - 🚀 THREAD-SAFE IBKR ADAPTER INITIALIZED - This should fix event loop errors!
+2025-07-18 20:22:55,500 - ThreadSafeIBKRAdapter(9998) - INFO - IBKR worker thread started
+2025-07-18 20:22:55,500 - ThreadSafeIBKRAdapter(9998) - INFO - Started dedicated IBKR thread
+2025-07-18 20:22:55,500 - TradingSystem - INFO - Initializing strategy: macdv
+2025-07-18 20:22:55,500 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=20 | max_daily_loss=-500.0 | max_position_value=Not set
+2025-07-18 20:22:55,500 - TradingSystem - INFO - All components initialized successfully
+2025-07-18 20:34:30,253 - TradingSystem - INFO - Initializing trading system...
+2025-07-18 20:34:30,475 - TradingSystem - INFO - Ejecutando en entorno Streamlit
+2025-07-18 20:34:30,475 - ThreadSafeIBKRAdapter(9998) - INFO - 🚀 THREAD-SAFE IBKR ADAPTER INITIALIZED - This should fix event loop errors!
+2025-07-18 20:34:30,475 - ThreadSafeIBKRAdapter(9998) - INFO - IBKR worker thread started
+2025-07-18 20:34:30,475 - ThreadSafeIBKRAdapter(9998) - INFO - Started dedicated IBKR thread
+2025-07-18 20:34:30,475 - TradingSystem - INFO - Initializing strategy: macdv
+2025-07-18 20:34:30,475 - RiskManager - INFO - RiskManager initialized | simulation_mode=False | debug_mode=False | max_daily_trades=20 | max_daily_loss=-500.0 | max_position_value=Not set
+2025-07-18 20:34:30,475 - TradingSystem - INFO - All components initialized successfully

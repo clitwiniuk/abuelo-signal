@@ -1,0 +1,22 @@
+2025-06-18 14:47:51,738 INFO algoplatform.broker_connector: BrokerConnector inicializado para IBKR en 127.0.0.1:7497 (client_id=1)
+2025-06-18 14:47:51,739 INFO algoplatform.broker_connector: [connect] Intentando conectar a IBKR en 127.0.0.1:7497 (client_id=1)
+2025-06-18 14:47:51,739 INFO algoplatform.broker_connector: [connect] Llamando a self.ib.connect()...
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+Make sure API port on TWS/IBG is open
+2025-06-18 14:47:51,741 ERROR algoplatform.broker_connector: [connect] Excepción al conectar a IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-06-18 14:47:51,756 INFO algoplatform.broker_connector: BrokerConnector inicializado para IBKR en 127.0.0.1:7497 (client_id=1)
+2025-06-18 14:47:51,756 INFO algoplatform.broker_connector: [connect] Intentando conectar a IBKR en 127.0.0.1:7497 (client_id=1)
+2025-06-18 14:47:51,756 INFO algoplatform.broker_connector: [connect] Llamando a self.ib.connect()...
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+Make sure API port on TWS/IBG is open
+2025-06-18 14:47:51,758 ERROR algoplatform.broker_connector: [connect] Excepción al conectar a IBKR: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+2025-06-18 14:47:51,758 - INFO - Arrancando en modo PRODUCTION
+INFO:     Started server process [519]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-06-18 14:47:52,749 - INFO - [DEBUG] Tickers activos para suscripción: []
+2025-06-18 14:47:52,750 INFO algoplatform.broker_connector: Iniciando bucle de eventos IBKR...
+2025-06-18 14:47:52,750 - INFO - Iniciando bucle de eventos IBKR...
+2025-06-18 22:17:46,790 - INFO - Recibida señal de apagado. Cancelando suscripciones y desconectando broker...
+2025-06-18 22:17:46,854 - INFO - Broker desconectado correctamente.

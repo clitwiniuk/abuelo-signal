@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/algoplatform/core/backend_api.py", line 7, in <module>
+    from algoplatform.core.broker_connector import BrokerConnector, DummyBrokerConnector
+ModuleNotFoundError: No module named 'algoplatform'

@@ -1,0 +1,124 @@
+[
+    {
+        "id": "VCP_BLIND_LOW_VOLUME",
+        "symbol": "PACB",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Insufficient Volume (0.5x)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of volume < 0.7x",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 0.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5
+        },
+        "notes": "Should reject due to volume_ratio < 0.7"
+    },
+    {
+        "id": "VCP_BLIND_FALSE_BREAKOUT",
+        "symbol": "NTLA",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: False Breakout (Immediate Reversal)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of false breakout patterns",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 0.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5,
+            "breakout_confirmed": false
+        },
+        "notes": "Should reject due to insufficient volume on breakout attempt"
+    },
+    {
+        "id": "VCP_BLIND_INCOMPLETE_CONTRACTIONS",
+        "symbol": "BYND",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Only 1 Contraction (Needs 2+)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of incomplete VCP patterns",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5,
+            "num_contractions": 1
+        },
+        "notes": "Should reject due to insufficient contractions (<2)"
+    },
+    {
+        "id": "VCP_BLIND_INCREASING_CONTRACTIONS",
+        "symbol": "DVLT",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Expanding Contractions (Invalid VCP)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection when contractions increase in size",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5,
+            "contractions_decreasing": false
+        },
+        "notes": "Should reject due to expanding (not contracting) ranges"
+    },
+    {
+        "id": "VCP_BLIND_PRICE_TOO_LOW",
+        "symbol": "TLRY",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Price Too Low ($0.40)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of price < $0.50",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 0.40,
+            "volume_ratio": 1.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5
+        },
+        "notes": "Should reject due to price < $0.50"
+    },
+    {
+        "id": "VCP_BLIND_PRICE_TOO_HIGH",
+        "symbol": "NVTS",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Price Too High ($30.00)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of price > $25.00",
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 30.00,
+            "volume_ratio": 1.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5
+        },
+        "notes": "Should reject due to price > $25.00"
+    },
+    {
+        "id": "VCP_BLIND_LOW_QUALITY",
+        "symbol": "REKR",
+        "worker_name": "vcp_smallcap",
+        "date": "2025-03-14",
+        "description": "BLIND TEST: Low Quality Score (25)",
+        "expected_action": "NO_ENTRY",
+        "test_objective": "Verify rejection of quality < 40",
+        "mock_scanner_data": {
+            "quality_score": 25.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.5,
+            "catalyst_type": "TECHNICAL",
+            "gap_percentage": 0.5
+        },
+        "notes": "Should reject due to quality_score < 40"
+    }
+]

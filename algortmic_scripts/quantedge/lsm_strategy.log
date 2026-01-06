@@ -1,0 +1,532 @@
+2025-05-01 19:26:05,979 - INFO - sent startApi
+2025-05-01 19:26:05,979 - INFO - REQUEST startApi {}
+2025-05-01 19:26:05,979 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009999\x00\x00'
+2025-05-01 19:26:05,979 - INFO - ANSWER connectAck {}
+2025-05-01 19:26:05,981 - INFO - ANSWER openOrderEnd {}
+2025-05-01 19:26:05,981 - INFO - Conectado a IBKR. Next Order ID: 1
+2025-05-01 19:26:05,982 - INFO - REQUEST reqAccountUpdates {'subscribe': True, 'acctCode': ''}
+2025-05-01 19:26:05,982 - INFO - SENDING reqAccountUpdates b'\x00\x00\x00\x076\x002\x001\x00\x00'
+2025-05-01 19:26:05,982 - INFO - Actualizando universo...
+2025-05-01 19:26:05,982 - INFO - REQUEST reqScannerSubscription {'reqId': 1, 'subscription': 4767214640: Instrument: STK, LocationCode: STK.US.NASDAQ, ScanCode: HOT_BY_VOLUME, 'scannerSubscriptionOptions': [], 'scannerSubscriptionFilterOptions': []}
+2025-05-01 19:26:05,982 - INFO - SENDING reqScannerSubscription b'\x00\x00\x00M22\x001\x00-1\x00STK\x00STK.US.NASDAQ\x00HOT_BY_VOLUME\x0010\x00500\x00\x002000000000.0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x000\x00\x00\x00\x00\x00\x00'
+2025-05-01 19:26:05,982 - INFO - ANSWER managedAccounts {'accountsList': 'DUA998722'}
+2025-05-01 19:26:05,982 - ERROR - IBKR Error 2158: La conexión de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-05-01 19:26:05,989 - INFO - ANSWER updateAccountValue {'key': 'AccountCode', 'val': 'DUA998722', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,989 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,989 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,989 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccountReady', 'val': 'true', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccountType', 'val': 'INDIVIDUAL', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,990 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Billable', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Billable-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'BuyingPower', 'val': '6736170.08', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1008976.1028', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-P', 'val': '5', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-S', 'val': '1', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,991 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'Cushion', 'val': '0.999931', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue', 'val': '1010494.78', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,992 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,993 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,993 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,993 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '0.8842032', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,993 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,994 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,994 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,994 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,995 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,996 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,996 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,996 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,996 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,996 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'Guarantee', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'Guarantee-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'Leverage-P', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:05,997 - INFO - ANSWER updateAccountValue {'key': 'Leverage-S', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity', 'val': '1010425.51', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,004 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,005 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,006 - INFO - ANSWER updateAccountValue {'key': 'LookAheadNextChange', 'val': '0', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,006 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq', 'val': '69.26', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,008 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,008 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,008 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,008 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,008 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,010 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NLVAndMarginInReview', 'val': 'false', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation', 'val': '1010494.78', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1010494.7828', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,011 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1012803.80', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,012 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,012 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationUncertainty', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,012 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,013 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,014 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,015 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,022 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,023 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-P', 'val': 'Crypto at Paxos', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-S', 'val': 'CFD', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,024 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1008976.1028', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue', 'val': '1008976.10', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,025 - INFO - ANSWER updateAccountValue {'key': 'TradingType-S', 'val': 'STKNOPT', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:26:06,026 - INFO - ANSWER updateAccountTime {'timeStamp': '19:23'}
+2025-05-01 19:26:06,026 - INFO - ANSWER accountDownloadEnd {'accountName': 'DUA998722'}
+2025-05-01 19:26:06,153 - ERROR - IBKR Error 162: Mensaje de error de los servicios de datos de mercado históricos:Error: El escáner del mercado no está configurado para una de las ubicaciones seleccionadas.
+2025-05-01 19:26:09,259 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue', 'val': '1010494.42', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,261 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation', 'val': '1010494.42', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,264 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue', 'val': '1008975.74', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,265 - INFO - ANSWER updateAccountValue {'key': 'BuyingPower', 'val': '6736167.56', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,267 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,268 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,268 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,268 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,268 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,269 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,269 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq', 'val': '69.28', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity', 'val': '1010425.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountTime {'timeStamp': '19:26'}
+2025-05-01 19:26:09,270 - INFO - ANSWER updateAccountTime {'timeStamp': '19:26'}
+2025-05-01 19:26:09,284 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1008975.7362', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,284 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1008975.7362', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,284 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1010494.4162', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:26:09,284 - INFO - ANSWER updateAccountTime {'timeStamp': '19:26'}
+2025-05-01 19:26:09,284 - INFO - ANSWER updateAccountTime {'timeStamp': '19:26'}
+2025-05-01 19:29:09,275 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue', 'val': '1010494.07', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation', 'val': '1010494.07', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue', 'val': '1008975.39', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'BuyingPower', 'val': '6736165.16', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,277 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,278 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,279 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,279 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,279 - INFO - ANSWER updateAccountTime {'timeStamp': '19:29'}
+2025-05-01 19:29:09,279 - INFO - ANSWER updateAccountTime {'timeStamp': '19:29'}
+2025-05-01 19:29:09,321 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1008975.3866', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,322 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1008975.3866', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,322 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1010494.0666', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:29:09,323 - INFO - ANSWER updateAccountTime {'timeStamp': '19:29'}
+2025-05-01 19:29:09,324 - INFO - ANSWER updateAccountTime {'timeStamp': '19:29'}
+2025-05-01 19:29:57,423 - WARNING - Deteniendo estrategia...
+2025-05-01 19:29:57,425 - INFO - disconnecting
+2025-05-01 19:29:57,425 - INFO - ANSWER connectionClosed {}
+2025-05-01 19:30:04,964 - INFO - sent startApi
+2025-05-01 19:30:04,964 - INFO - REQUEST startApi {}
+2025-05-01 19:30:04,965 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009999\x00\x00'
+2025-05-01 19:30:04,965 - INFO - ANSWER connectAck {}
+2025-05-01 19:30:04,966 - INFO - ANSWER openOrderEnd {}
+2025-05-01 19:30:04,967 - INFO - Conectado a IBKR. Next Order ID: 1
+2025-05-01 19:30:04,967 - INFO - REQUEST reqAccountUpdates {'subscribe': True, 'acctCode': ''}
+2025-05-01 19:30:04,968 - INFO - SENDING reqAccountUpdates b'\x00\x00\x00\x076\x002\x001\x00\x00'
+2025-05-01 19:30:04,968 - INFO - Actualizando universo...
+2025-05-01 19:30:04,968 - INFO - REQUEST reqScannerSubscription {'reqId': 1, 'subscription': 5827226672: Instrument: STK, LocationCode: STK.US.NASDAQ, ScanCode: HOT_BY_VOLUME, 'scannerSubscriptionOptions': [], 'scannerSubscriptionFilterOptions': []}
+2025-05-01 19:30:04,968 - INFO - SENDING reqScannerSubscription b'\x00\x00\x00M22\x001\x00-1\x00STK\x00STK.US.NASDAQ\x00HOT_BY_VOLUME\x0010\x00500\x00\x002000000000.0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x000\x00\x00\x00\x00\x00\x00'
+2025-05-01 19:30:04,968 - INFO - ANSWER managedAccounts {'accountsList': 'DUA998722'}
+2025-05-01 19:30:04,968 - ERROR - IBKR Error 2158: La conexión de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-05-01 19:30:04,981 - INFO - ANSWER updateAccountValue {'key': 'AccountCode', 'val': 'DUA998722', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccountReady', 'val': 'true', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccountType', 'val': 'INDIVIDUAL', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,982 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'Billable', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,983 - INFO - ANSWER updateAccountValue {'key': 'Billable-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,984 - INFO - ANSWER updateAccountValue {'key': 'BuyingPower', 'val': '6736165.16', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,984 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1008975.3866', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,984 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,984 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,984 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-P', 'val': '5', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-S', 'val': '1', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,985 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,987 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,987 - INFO - ANSWER updateAccountValue {'key': 'Cushion', 'val': '0.999931', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,987 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue', 'val': '1010494.07', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,988 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,988 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,988 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,988 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '0.8842032', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,993 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'Guarantee', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'Guarantee-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'Leverage-P', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'Leverage-S', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity', 'val': '1010424.77', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,994 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'LookAheadNextChange', 'val': '0', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq', 'val': '69.29', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NLVAndMarginInReview', 'val': 'false', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation', 'val': '1010494.07', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1010494.0666', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1012803.80', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,995 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationUncertainty', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,996 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,997 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-P', 'val': 'Crypto at Paxos', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-S', 'val': 'CFD', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,998 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1008975.3866', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:04,999 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue', 'val': '1008975.39', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'TradingType-S', 'val': 'STKNOPT', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,000 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,001 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:30:05,001 - INFO - ANSWER updateAccountTime {'timeStamp': '19:29'}
+2025-05-01 19:30:05,001 - INFO - ANSWER accountDownloadEnd {'accountName': 'DUA998722'}
+2025-05-01 19:30:05,192 - ERROR - IBKR Error 162: Mensaje de error de los servicios de datos de mercado históricos:Error: El escáner del mercado no está configurado para una de las ubicaciones seleccionadas.
+2025-05-01 19:30:38,720 - WARNING - Deteniendo estrategia...
+2025-05-01 19:30:38,726 - INFO - disconnecting
+2025-05-01 19:30:38,729 - INFO - ANSWER connectionClosed {}
+2025-05-01 19:35:21,789 - INFO - sent startApi
+2025-05-01 19:35:21,789 - INFO - REQUEST startApi {}
+2025-05-01 19:35:21,790 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009999\x00\x00'
+2025-05-01 19:35:21,790 - INFO - ANSWER connectAck {}
+2025-05-01 19:35:21,791 - INFO - ANSWER openOrderEnd {}
+2025-05-01 19:35:21,791 - INFO - Conectado a IBKR. Next Order ID: 1
+2025-05-01 19:35:21,791 - INFO - REQUEST reqAccountUpdates {'subscribe': True, 'acctCode': ''}
+2025-05-01 19:35:21,791 - INFO - SENDING reqAccountUpdates b'\x00\x00\x00\x076\x002\x001\x00\x00'
+2025-05-01 19:35:21,791 - INFO - Actualizando universo...
+2025-05-01 19:35:21,791 - INFO - REQUEST reqScannerSubscription {'reqId': 1, 'subscription': 5223202736: Instrument: STK, LocationCode: STK.US.NASDAQ, ScanCode: HOT_BY_VOLUME, 'scannerSubscriptionOptions': [], 'scannerSubscriptionFilterOptions': []}
+2025-05-01 19:35:21,792 - INFO - SENDING reqScannerSubscription b'\x00\x00\x00M22\x001\x00-1\x00STK\x00STK.US.NASDAQ\x00HOT_BY_VOLUME\x0010\x00500\x00\x002000000000.0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x000\x00\x00\x00\x00\x00\x00'
+2025-05-01 19:35:21,792 - INFO - ANSWER managedAccounts {'accountsList': 'DUA998722'}
+2025-05-01 19:35:21,792 - ERROR - IBKR Error 2158: La conexión de la granja de datos "sec-def" funciona correctamente:secdefeu
+2025-05-01 19:35:21,804 - INFO - ANSWER updateAccountValue {'key': 'AccountCode', 'val': 'DUA998722', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,804 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,804 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccountOrGroup', 'val': 'DUA998722', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccountReady', 'val': 'true', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccountType', 'val': 'INDIVIDUAL', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '1518.68', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedCash-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AccruedDividend-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'AvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'Billable', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'Billable-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'BuyingPower', 'val': '6736160.89', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1008974.7649', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-P', 'val': '5', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'ColumnPrio-S', 'val': '1', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,805 - INFO - ANSWER updateAccountValue {'key': 'CorporateBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,806 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,806 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,806 - INFO - ANSWER updateAccountValue {'key': 'Cryptocurrency', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,806 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,806 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,807 - INFO - ANSWER updateAccountValue {'key': 'Currency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,807 - INFO - ANSWER updateAccountValue {'key': 'Cushion', 'val': '0.999931', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,807 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue', 'val': '1010493.44', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,807 - INFO - ANSWER updateAccountValue {'key': 'EquityWithLoanValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,807 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,809 - INFO - ANSWER updateAccountValue {'key': 'ExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,809 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,810 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '1.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,810 - INFO - ANSWER updateAccountValue {'key': 'ExchangeRate', 'val': '0.8842032', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,810 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,810 - INFO - ANSWER updateAccountValue {'key': 'FullAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FullMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FutureOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FuturesPNL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'FxCashBalance', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'GrossPositionValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'Guarantee', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,812 - INFO - ANSWER updateAccountValue {'key': 'Guarantee-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IncentiveCoupons-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IndianStockHaircut-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'InitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'IssuerOptionValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'Leverage-P', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'Leverage-S', 'val': '0.00', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadAvailableFunds-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity', 'val': '1010424.13', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadExcessLiquidity-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadInitMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadMaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'LookAheadNextChange', 'val': '0', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq', 'val': '69.31', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MaintMarginReq-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MoneyMarketFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'MutualFundValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NLVAndMarginInReview', 'val': 'false', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetDividend', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation', 'val': '1010493.44', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidation-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1010493.4449', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '1012803.80', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,813 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationByCurrency', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'NetLiquidationUncertainty', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'OptionMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PASharesValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PhysicalCertificateValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationExcess-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'PostExpirationMargin-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'BASE', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'EUR', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealCurrency', 'val': 'USD', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'RealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-P', 'val': 'Crypto at Paxos', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'SegmentTitle-S', 'val': 'CFD', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'StockMarketValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBillValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TBondValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1008974.7649', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '1011285.12', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalCashBalance', 'val': '-2606.28', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue', 'val': '1008974.76', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalCashValue-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TotalDebitCardPendingCharges-P', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,814 - INFO - ANSWER updateAccountValue {'key': 'TradingType-S', 'val': 'STKNOPT', 'currency': '', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'UnrealizedPnL', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'BASE', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'EUR', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountValue {'key': 'WarrantValue', 'val': '0.00', 'currency': 'USD', 'accountName': 'DUA998722'}
+2025-05-01 19:35:21,815 - INFO - ANSWER updateAccountTime {'timeStamp': '19:35'}
+2025-05-01 19:35:21,815 - INFO - ANSWER accountDownloadEnd {'accountName': 'DUA998722'}
+2025-05-01 19:35:21,984 - ERROR - IBKR Error 162: Mensaje de error de los servicios de datos de mercado históricos:Error: El escáner del mercado no está configurado para una de las ubicaciones seleccionadas.
+2025-05-01 19:35:37,699 - WARNING - Deteniendo estrategia...
+2025-05-01 19:35:37,700 - INFO - disconnecting
+2025-05-01 19:35:37,701 - INFO - ANSWER connectionClosed {}

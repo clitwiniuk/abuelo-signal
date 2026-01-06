@@ -1,0 +1,159 @@
+[
+    {
+        "id": "GENERIC_01_EXIT_STOP_LOSS",
+        "symbol": "SGTX",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "Stop Loss Exit Test (8%)",
+        "expected_action": "EXIT_STOP_LOSS",
+        "test_objective": "Verify Stop Loss triggers at -8%",
+        "entry_price": 10.00,
+        "exit_price": 9.19,
+        "mock_scanner_data": {
+            "quality_score": 65.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.5,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 1.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "mock_position": {
+            "entry_price": 10.00,
+            "quantity": 100,
+            "entry_time": "2024-09-18T10:00:00-04:00",
+            "stop_loss": 9.20,
+            "take_profit": 11.50
+        },
+        "current_market_data": {
+            "price": 9.19,
+            "timestamp": "2024-09-18T11:30:00-04:00"
+        }
+    },
+    {
+        "id": "GENERIC_01_EXIT_BREAK_EVEN",
+        "symbol": "BMRA",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "Break-Even Exit Test (6% peak → ~0%)",
+        "expected_action": "EXIT_BREAK_EVEN",
+        "test_objective": "Verify Break-Even protection after 6% peak",
+        "entry_price": 10.00,
+        "exit_price": 10.01,
+        "peak_price": 10.62,
+        "mock_scanner_data": {
+            "quality_score": 70.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.2,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 1.5,
+            "catalyst_type": "TECHNICAL"
+        },
+        "mock_position": {
+            "entry_price": 10.00,
+            "quantity": 100,
+            "entry_time": "2024-09-18T10:00:00-04:00",
+            "stop_loss": 10.01,
+            "take_profit": 11.50,
+            "highest_price": 10.62
+        },
+        "current_market_data": {
+            "price": 10.01,
+            "timestamp": "2024-09-18T11:45:00-04:00"
+        }
+    },
+    {
+        "id": "GENERIC_01_EXIT_TAKE_PROFIT",
+        "symbol": "CYTH",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "Take Profit Exit Test (15%)",
+        "expected_action": "EXIT_TAKE_PROFIT",
+        "test_objective": "Verify Take Profit triggers at +15%",
+        "entry_price": 10.00,
+        "exit_price": 11.51,
+        "mock_scanner_data": {
+            "quality_score": 60.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.8,
+            "gap_percentage": 0.3,
+            "daily_return_pct": 0.5,
+            "catalyst_type": "TECHNICAL"
+        },
+        "mock_position": {
+            "entry_price": 10.00,
+            "quantity": 100,
+            "entry_time": "2024-09-18T10:00:00-04:00",
+            "stop_loss": 9.20,
+            "take_profit": 11.50
+        },
+        "current_market_data": {
+            "price": 11.51,
+            "timestamp": "2024-09-18T12:30:00-04:00"
+        }
+    },
+    {
+        "id": "GENERIC_01_EXIT_TRAILING_STOP",
+        "symbol": "PTON",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "Trailing Stop Exit Test (Act 10%, Dist 4%)",
+        "expected_action": "EXIT_TRAILING_STOP",
+        "test_objective": "Verify Trailing Stop triggers after activation and pullback",
+        "entry_price": 10.00,
+        "exit_price": 11.00,
+        "peak_price": 11.46,
+        "mock_scanner_data": {
+            "quality_score": 75.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.4,
+            "gap_percentage": 0.8,
+            "daily_return_pct": 1.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "mock_position": {
+            "entry_price": 10.00,
+            "quantity": 100,
+            "entry_time": "2024-09-18T10:00:00-04:00",
+            "stop_loss": 9.20,
+            "take_profit": 11.50,
+            "highest_price": 11.46,
+            "trailing_active": true,
+            "trailing_stop_price": 11.00
+        },
+        "current_market_data": {
+            "price": 11.00,
+            "timestamp": "2024-09-18T13:00:00-04:00"
+        }
+    },
+    {
+        "id": "GENERIC_01_EXIT_TIME_LIMIT",
+        "symbol": "XELA",
+        "worker_name": "generic_01",
+        "date": "2024-09-18",
+        "description": "Time Limit Exit Test (6 hours)",
+        "expected_action": "EXIT_TIME_LIMIT",
+        "test_objective": "Verify Time Limit triggers after 6 hours",
+        "entry_price": 10.00,
+        "exit_price": 10.25,
+        "mock_scanner_data": {
+            "quality_score": 55.0,
+            "current_price": 10.00,
+            "volume_ratio": 1.6,
+            "gap_percentage": 0.5,
+            "daily_return_pct": 2.0,
+            "catalyst_type": "TECHNICAL"
+        },
+        "mock_position": {
+            "entry_price": 10.00,
+            "quantity": 100,
+            "entry_time": "2024-09-18T10:00:00-04:00",
+            "stop_loss": 9.20,
+            "take_profit": 11.50,
+            "expected_hold_hours": 6.0
+        },
+        "current_market_data": {
+            "price": 10.25,
+            "timestamp": "2024-09-18T16:01:00-04:00"
+        }
+    }
+]

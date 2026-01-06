@@ -1,0 +1,33 @@
+# backtesting/__init__.py
+"""
+Backtesting module for trading system.
+Provides comprehensive backtesting capabilities that use the same strategies
+and components as the live trading system.
+"""
+
+from .backtest_engine import (
+    BacktestEngine,
+    BacktestConfig,
+    BacktestResults,
+    BacktestBroker,
+    BacktestTrade
+)
+
+from .data_loader import BacktestDataLoader
+
+from .analysis import BacktestAnalyzer
+
+from .optimizer import ParameterOptimizer
+
+__all__ = [
+    'BacktestEngine',
+    'BacktestConfig', 
+    'BacktestResults',
+    'BacktestBroker',
+    'BacktestTrade',
+    'BacktestDataLoader',
+    'BacktestAnalyzer',
+    'ParameterOptimizer'
+]
+
+__version__ = "1.0.0"

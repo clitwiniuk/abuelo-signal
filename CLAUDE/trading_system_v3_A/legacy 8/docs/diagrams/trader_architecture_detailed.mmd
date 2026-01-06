@@ -1,0 +1,99 @@
+graph TD
+    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef worker fill:#fff9c4,stroke:#fbc02d,stroke-width:1px;
+    classDef service fill:#e0f2f1,stroke:#00695c,stroke-width:1px;
+    classDef external fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+
+    subgraph "Independent Trader Process"
+        IT[IndependentTrader]:::main
+        SL[ServiceLocator]:::service
+        STB[ScannerTraderBridge]:::service
+        NF[NotificationFilter]:::service
+        
+        IT --> SL
+        IT --> STB
+        IT --> NF
+        
+        subgraph "Background Tasks"
+            EOD[EODOHLCDownloader]:::service
+            SNAP[ActiveTradesSnapshotScheduler]:::service
+        end
+        IT --> EOD
+        IT --> SNAP
+
+        subgraph "Strategy Engine (The Brain)"
+            WBSE[WorkerBasedStrategyEngine]:::main
+            CE[ContextEngine]:::service
+            TA[TradeArbiter]:::service
+            
+            IT --> WBSE
+            WBSE -->|1. Analyze Context| CE
+            WBSE -->|2. Register/Lock| TA
+            
+            subgraph "Active Strategy Workers"
+                direction TB
+                W_DP[DailyPlays v2.0]:::worker
+                W_DPM[DailyPlays MidCap]:::worker
+                W_ORB[ORB Breakout]:::worker
+                W_VWAP[VWAP Breakout]:::worker
+                W_LIV[Livermore Intraday]:::worker
+                W_VCP[VCP Small/Strict]:::worker
+                W_VA[Volume Absorption]:::worker
+                W_BTD[Buy The Dip]:::worker
+                W_BAH[Buy & Hold]:::worker
+                W_PARA[Parabolic L/S]:::worker
+                W_GAP[Gap Fade]:::worker
+                W_ODS[ODS Swing]:::worker
+                W_HG[Holy Grail]:::worker
+                W_CAT[Catalyst DNA]:::worker
+                W_SQ[Short Squeeze]:::worker
+            end
+            
+            WBSE -->|3. Dispatch Opportunity| W_DP
+            WBSE --> W_DPM
+            WBSE --> W_ORB
+            WBSE --> W_VWAP
+            WBSE --> W_LIV
+            WBSE --> W_VCP
+            WBSE --> W_VA
+            WBSE --> W_BTD
+            WBSE --> W_BAH
+            WBSE --> W_PARA
+            WBSE --> W_GAP
+            WBSE --> W_ODS
+            WBSE --> W_HG
+            WBSE --> W_CAT
+            WBSE --> W_SQ
+        end
+
+        subgraph "Execution Layer (The Hands)"
+            EEA[ExecutionEngineAdapter]:::main
+            RM[RiskManager]:::service
+            DB[DatabaseManager]:::service
+            
+            subgraph "IBKR Adapter"
+                IBKR[IBKRAdapter]:::service
+                BPM[BatchPriceManager]:::service
+                IBKR --> BPM
+            end
+            
+            W_DP & W_DPM & W_ORB & W_VWAP & W_LIV & W_VCP & W_VA & W_BTD & W_BAH & W_PARA & W_GAP & W_ODS & W_HG & W_CAT & W_SQ -->|4. enter_position| EEA
+            
+            EEA -->|5. Validate Pricing| BPM
+            EEA -->|6. Validate Risk| RM
+            EEA -->|7. Place Order| IBKR
+            EEA -->|8. Record Trade| DB
+            EEA -->|Locking| EEA
+        end
+    end
+
+    subgraph "External Systems"
+        Redis[Redis Pub/Sub]:::external
+        Telegram[Telegram Bot]:::external
+        TWS[IBKR TWS/Gateway]:::external
+    end
+
+    STB <--> Redis
+    IT --> Telegram
+    EEA --> Telegram
+    IBKR <--> TWS

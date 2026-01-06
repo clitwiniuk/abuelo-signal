@@ -1,0 +1,142 @@
+2025-09-28 19:46:19 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:46:19 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:46:19 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-28 19:46:19 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-28 19:46:19 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-28 19:46:19 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:46:19 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-28 19:46:19 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-28 19:46:19 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 19:50:34 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:50:34 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:50:34 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-28 19:50:34 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-28 19:50:34 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-28 19:50:34 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:50:34 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-28 19:50:34 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-28 19:50:34 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 21:41:27 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 06:09:04 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 06:09:04 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-29 06:09:04 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 06:09:04 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 06:09:04 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 06:09:04 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 06:09:04 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 06:09:04 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 06:09:04 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 13:37:05 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 13:39:30 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 13:39:30 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 13:39:30 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 13:39:30 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 13:39:30 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 13:39:30 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 13:39:30 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 13:39:30 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 13:39:30 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 15:20:32 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 15:21:03 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 15:21:03 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 15:21:03 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 15:21:03 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 15:21:03 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 15:21:03 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 15:21:03 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 15:21:03 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 15:21:03 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:26:25 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:33:53 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:33:53 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:33:53 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 19:33:53 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 19:33:53 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 19:33:53 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:33:53 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 19:33:53 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 19:33:53 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:36:56 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:36:56 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:36:56 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 19:36:56 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 19:36:56 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 19:36:56 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:36:56 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 19:36:56 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 19:36:56 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:03:55 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 20:07:25 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:07:25 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:07:25 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 20:07:25 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 20:07:25 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 20:07:25 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:07:25 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:07:25 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 20:07:25 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:15:46 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 20:16:41 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:16:41 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:16:41 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 20:16:41 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 20:16:41 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 20:16:41 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:16:41 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:16:41 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 20:16:41 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:34:01 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 20:54:47 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:54:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:54:47 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 20:54:47 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 20:54:47 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 20:54:47 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:54:47 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:54:47 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 20:54:47 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:02:30 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:02:30 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:02:30 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:05:05 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:05:05 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:05:05 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 21:05:05 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 21:05:05 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 21:05:06 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:05:06 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:05:06 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 21:05:06 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:10:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 21:10:24 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:10:24 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:10:24 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 21:10:24 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 21:10:24 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 21:10:24 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:10:24 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:10:24 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 21:10:24 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:14:59 - __main__.macdv_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 21:15:04 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.macdv_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:17:41 - root - INFO - Logging initialized - Level: INFO, File: logs/macdv_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:17:41 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:17:41 - __main__.macdv_worker_1 - INFO - 📊 MACDV Worker initialized: macdv_worker_1
+2025-09-29 21:17:41 - __main__.macdv_worker_1 - INFO -    📈 Volume Ratio: 2.0x | MACD Threshold: 0.02
+2025-09-29 21:17:41 - __main__.macdv_worker_1 - INFO -    🔄 Confirmation: 3 periods
+2025-09-29 21:17:41 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:17:41 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:17:41 - __main__.macdv_worker_1 - INFO - 🚀 MACDV Worker started - listening for opportunities...
+2025-09-29 21:17:41 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...

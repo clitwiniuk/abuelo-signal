@@ -1,0 +1,70 @@
+2026-01-05 22:56:39 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - Worker logging initialized - <core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> -> logs/worker_<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50>.log
+2026-01-05 22:56:39 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔧 Worker <core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-05 22:56:39 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🚀 Initialized SmallcapVwapRunner: Q>=65.0, Stop=2.0%, Trail=3.0%
+2026-01-05 22:56:39 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🚀 Worker <core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> starting monitoring loop
+2026-01-05 23:01:48 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 ALT: Evaluating opportunity - gap=16.0%, vol=2.0x, catalyst=TECHNICAL, Q=88.7
+2026-01-05 23:01:48 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for ALT: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:48 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ ALT: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:49 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 MNTS: Evaluating opportunity - gap=52.3%, vol=2.0x, catalyst=OTHER, Q=88.0
+2026-01-05 23:01:49 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for MNTS: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:49 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ MNTS: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 SMXT: Evaluating opportunity - gap=17.0%, vol=2.0x, catalyst=CONTRACT, Q=81.3
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for SMXT: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ SMXT: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 ABAT: Evaluating opportunity - gap=24.9%, vol=1.3x, catalyst=TECHNICAL, Q=80.7
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for ABAT: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:50 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ ABAT: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:51 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 JCSE: Evaluating opportunity - gap=72.9%, vol=2.0x, catalyst=OTHER, Q=80.0
+2026-01-05 23:01:51 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for JCSE: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:51 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ JCSE: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 VRME: Evaluating opportunity - gap=55.6%, vol=2.0x, catalyst=M&A, Q=80.0
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for VRME: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ VRME: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 DVLT: Evaluating opportunity - gap=34.7%, vol=2.0x, catalyst=AI_TECH, Q=80.0
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for DVLT: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:52 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ DVLT: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:53 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 UFG: Evaluating opportunity - gap=79.4%, vol=2.0x, catalyst=OTHER, Q=80.0
+2026-01-05 23:01:53 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for UFG: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:53 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ UFG: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:54 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 RDHL: Evaluating opportunity - gap=32.0%, vol=2.0x, catalyst=FDA, Q=80.0
+2026-01-05 23:01:54 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for RDHL: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:54 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ RDHL: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:55 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 CRML: Evaluating opportunity - gap=17.0%, vol=1.5x, catalyst=TECHNICAL, Q=77.3
+2026-01-05 23:01:55 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for CRML: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:55 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ CRML: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:01:56 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 AREC: Evaluating opportunity - gap=20.2%, vol=0.9x, catalyst=OTHER, Q=76.6
+2026-01-05 23:01:56 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for AREC: Current time 17.02 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:01:56 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ AREC: Entry rejected - outside allowed entry hours (current: 17.02)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 ALT: Evaluating opportunity - gap=16.0%, vol=2.0x, catalyst=TECHNICAL, Q=88.7
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for ALT: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ ALT: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 MNTS: Evaluating opportunity - gap=52.3%, vol=2.0x, catalyst=OTHER, Q=88.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for MNTS: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ MNTS: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 SMXT: Evaluating opportunity - gap=17.0%, vol=2.0x, catalyst=CONTRACT, Q=81.3
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for SMXT: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ SMXT: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 ABAT: Evaluating opportunity - gap=24.9%, vol=1.3x, catalyst=TECHNICAL, Q=80.7
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for ABAT: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ ABAT: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 JCSE: Evaluating opportunity - gap=72.9%, vol=2.0x, catalyst=OTHER, Q=80.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for JCSE: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ JCSE: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 VRME: Evaluating opportunity - gap=55.6%, vol=2.0x, catalyst=M&A, Q=80.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for VRME: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ VRME: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 DVLT: Evaluating opportunity - gap=34.7%, vol=2.0x, catalyst=AI_TECH, Q=80.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for DVLT: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ DVLT: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 UFG: Evaluating opportunity - gap=79.4%, vol=2.0x, catalyst=OTHER, Q=80.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for UFG: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ UFG: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 RDHL: Evaluating opportunity - gap=32.0%, vol=2.0x, catalyst=FDA, Q=80.0
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for RDHL: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ RDHL: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 CRML: Evaluating opportunity - gap=17.0%, vol=1.5x, catalyst=TECHNICAL, Q=77.3
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for CRML: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ CRML: Entry rejected - outside allowed entry hours (current: 17.05)
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - 🔍 AREC: Evaluating opportunity - gap=20.2%, vol=0.9x, catalyst=OTHER, Q=76.6
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - WARNING - ⏰ Entry rejected for AREC: Current time 17.05 outside REGULAR window [9.50 - 15.75]
+2026-01-05 23:03:22 - Worker.<core.execution_engine_adapter.ExecutionEngineAdapter object at 0x15af0cf50> - INFO - ⏰ AREC: Entry rejected - outside allowed entry hours (current: 17.05)

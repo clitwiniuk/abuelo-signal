@@ -1,0 +1,215 @@
+{
+  "timestamp": "2025-08-12T14:58:50.488051",
+  "execution_mode": "SUITE COMPLETA",
+  "execution_time_minutes": 1.5594572305679322,
+  "summary": {
+    "total_tests": 10,
+    "successful_tests": 10,
+    "failed_tests": 0,
+    "critical_tests_total": 3,
+    "critical_tests_passed": 3,
+    "overall_success_rate": 1.0
+  },
+  "final_evaluation": {
+    "status_message": "🏆 ¡TODOS LOS TESTS PASARON EXITOSAMENTE!",
+    "description": "✅ Sistema completamente validado y listo para producción",
+    "recommendation": "🚀 Proceder con confianza - todos los aspectos validados",
+    "exit_code": 0
+  },
+  "detailed_results": [
+    {
+      "category": "basic",
+      "category_name": "Tests Básicos",
+      "priority": "CRITICAL",
+      "test_name": "Validación Básica de Trades",
+      "script": "basic/test_trades_history.py",
+      "critical": true,
+      "success": true,
+      "execution_time": 0.6981909275054932,
+      "output": "🧪 Test de Verificación del Historial de Trades\n==================================================\n🔍 Test 1: Verificación de conexión a la base de datos\n✅ Base de datos conectada correctamente\n✅ Tabla 'trades' existe\n📋 Estructura de la tabla trades (17 columnas):\n   - id (INTEGER)\n   - trade_id (TEXT)\n   - symbol (TEXT)\n   - strategy (TEXT)\n   - side (TEXT)\n   - quantity (INTEGER)\n   - entry_price (REAL)\n   - exit_price (REAL)\n   - entry_time (TIMESTAMP)\n   - exit_time (TIMESTAMP)\n   - duration_minutes (INTEGER)\n   - pnl (REAL)\n   - commission (REAL)\n   - status (TEXT)\n   - notes (TEXT)\n   - created_at (TIMESTAMP)\n   - updated_at (TIMESTAMP)\n\n🔍 Test 2: Verificación de datos de trades existentes\n📊 Total de trades en la base de datos: 100\n📈 Trades abiertos: 0\n📉 Trades cerrados: 100\n\n📋 Últimos 5 trades registrados:\n   🔴 LRGC003 | BUY | orb | 2025-08-12 19:05\n   🔴 LRGC005 | BUY | orb | 2025-08-12 18:48\n   🔴 SMLC001 | BUY | macdv_smallcaps | 2025-08-12 18:38\n   🔴 LRGC012 | BUY | orb | 2025-08-12 18:34\n   🔴 LRGC003 | BUY | orb | 2025-08-12 18:34\n\n🎯 Estrategias encontradas: ['orb', 'macdv_smallcaps', 'gap_go', 'volume_breakout']\n\n🔍 Test 3: Simulación de guardado de trade\n📝 Intentando guardar trade de prueba: TEST_20250812_145717\n✅ Trade de prueba guardado correctamente\n✅ Trade de prueba verificado en la base de datos\n🧹 Trade de prueba eliminado\n\n🔍 Test 4: Verificación de visualización en Streamlit\n📊 Simulando obtención de trades para Streamlit...\n✅ Trades obtenidos sin filtros: 50\n✅ Trades para estrategia 'orb': 10\n✅ Trades para estrategia 'macdv_smallcaps': 10\n✅ Trades para estrategia 'gap_go': 10\n✅ Trades para estrategia 'volume_breakout': 10\n✅ Trades para símbolo 'LRGC003': 10\n✅ Trades para símbolo 'LRGC005': 10\n✅ Trades para símbolo 'SMLC001': 10\n✅ Filtros de trades funcionando correctamente\n\n🔍 Test 5: Verificación de estadísticas diarias\n📊 Estadísticas de hoy:\n   - Total trades: 4076\n   - Win rate: 50.5%\n   - PnL total: $22033.50\n   - Trades ganadores: 2057\n   - Trades perdedores: 1390\n\n🎯 Performance por estrategia (últimos 7 días):\n   - orb: 1024 trades, 51.6% win rate, $8719.67 PnL\n   - volume_breakout: 1003 trades, 48.6% win rate, $6416.02 PnL\n   - macdv_smallcaps: 1017 trades, 53.1% win rate, $4371.97 PnL\n   - gap_go: 1032 trades, 48.5% win rate, $2525.84 PnL\n✅ Estadísticas calculadas correctamente\n\n==================================================\n📋 RESUMEN DE RESULTADOS:\n==================================================\n1. Conexión a base de datos: ✅ PASS\n2. Datos de trades existentes: ✅ PASS\n3. Simulación de guardado: ✅ PASS\n4. Visualización en Streamlit: ✅ PASS\n5. Estadísticas diarias: ✅ PASS\n\n🎯 RESULTADO FINAL: 5/5 tests pasaron\n🎉 ¡Todos los tests pasaron! El sistema de guardado de trades funciona correctamente.\n\n💡 RECOMENDACIONES:\n",
+      "error": "",
+      "metrics": {
+        "total_trades_processed": 4076,
+        "success_rate": 1.0,
+        "tests_passed": 5,
+        "tests_total": 5
+      },
+      "return_code": 0
+    },
+    {
+      "category": "advanced",
+      "category_name": "Tests Avanzados",
+      "priority": "HIGH",
+      "test_name": "Tests Avanzados y Rendimiento",
+      "script": "advanced/test_trades_advanced.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 0.8019728660583496,
+      "output": "🧪 SUITE DE TESTS AVANZADOS PARA SISTEMA DE TRADES\n============================================================\n\n1️⃣  TESTS DE RENDIMIENTO\n----------------------------------------\n🚀 Test de rendimiento: Insertando 100 trades...\n   ✅ Insertados 100/100 trades\n   ⏱️  Tiempo total: 0.07s\n   📊 Velocidad: 1477.9 trades/segundo\n   🕐 Tiempo promedio por insert: 0.67ms\n🔍 Test de rendimiento de consultas...\n   ✅ Consulta todos los trades: 15.6ms (4090 registros)\n   ✅ Consulta por símbolo: 1.2ms (58 registros)\n   ✅ Estadísticas diarias: 16.0ms\n   ✅ Performance por estrategia: 4.9ms (4 estrategias)\n\n2️⃣  TESTS DE CONCURRENCIA\n----------------------------------------\n🔀 Test de concurrencia: 3 threads, 10 trades cada uno...\n   ✅ Thread 0: 10 trades en 0.14s\n   ✅ Thread 1: 10 trades en 0.13s\n   ✅ Thread 2: 10 trades en 0.12s\n   📊 Resumen: 30 trades insertados en 0.14s\n   🎯 Threads exitosos: 3/3\n\n3️⃣  TESTS DE INTEGRIDAD\n----------------------------------------\n🔒 Test de integridad de datos...\n   ✅ Trade ID único: PASS\n   ✅ Consistencia PnL: PASS\n   ✅ Consistencia fechas: PASS\n   ⚠️  Precio negativo aceptado (debería rechazarse)\n\n4️⃣  TESTS DE CONSULTAS AVANZADAS\n----------------------------------------\n🔍 Test de consultas y filtros avanzados...\n   ✅ Filtro por fechas: 1000 trades en 6.5ms\n   ✅ Filtro múltiple: 58 trades en 1.1ms\n   ✅ Performance 7d: 4 estrategias en 2.8ms\n   ✅ Performance 30d: 4 estrategias en 4.4ms\n   ✅ Performance 90d: 4 estrategias en 2.8ms\n   ✅ Top símbolos por volumen: 10 resultados en 5.2ms\n   ✅ Análisis por día semana: 7 días en 2.7ms\n\n============================================================\n📊 RESUMEN FINAL DE TESTS AVANZADOS\n============================================================\n🎯 RESULTADO GENERAL: 5/5 categorías pasaron\n\nInserción Masiva: ✅ PASS\n   📈 Velocidad: 1477.9 trades/segundo\nRendimiento de Consultas: ✅ PASS\nConcurrencia: ✅ PASS\n   🔀 Trades concurrentes: 30\nIntegridad de Datos: ✅ PASS\nConsultas Avanzadas: ✅ PASS\n\n💡 RECOMENDACIONES:\n🎉 ¡Excelente! El sistema pasa todos los tests avanzados.\n✅ El sistema está listo para producción con alto volumen de trades.\n🚀 Excelente rendimiento: 1477.9 trades/segundo\n",
+      "error": "",
+      "metrics": {
+        "total_trades_processed": 30,
+        "trades_per_second": 1477.9
+      },
+      "return_code": 0
+    },
+    {
+      "category": "advanced",
+      "category_name": "Tests Avanzados",
+      "priority": "HIGH",
+      "test_name": "Tests de Migración y Mantenimiento",
+      "script": "advanced/test_trades_migration.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 0.46953797340393066,
+      "output": "🔄 TESTS DE MIGRACIÓN Y MANTENIMIENTO DE DATOS\n=======================================================\n\n1️⃣  TEST DE MIGRACIÓN DE ESTRATEGIAS\n----------------------------------------\n🔄 Test de migración de estrategias...\n   📋 Creados 0 trades de prueba\n   🔍 Estrategias antes: []\n   ✅ Migrados 21 trades\n   🔍 Estrategias después: []\n   ✅ No quedan estrategias 'unknown'\n\n2️⃣  TEST DE BACKUP Y RESTORE\n----------------------------------------\n💾 Test de backup y restore...\n   ✅ Backup creado: test_backup_20250812_145718.db (1454080 bytes)\n   📝 Trade agregado (total: 1000 → 1000)\n   ✅ Restore exitoso (recuperados 1000 trades)\n   ✅ Integridad de datos verificada\n\n3️⃣  TEST DE LIMPIEZA DE DATOS\n----------------------------------------\n🧹 Test de limpieza de datos...\n   📊 Identificados 15 trades antiguos para limpieza\n   ✅ Eliminados 15 trades antiguos\n   💽 Espacio recuperado: 73728 bytes\n\n4️⃣  TEST DE MANTENIMIENTO DE DB\n----------------------------------------\n🔧 Test de mantenimiento de base de datos...\n   🗜️  Ejecutando VACUUM...\n   📇 Ejecutando REINDEX...\n   📊 Ejecutando ANALYZE...\n   ✅ Mantenimiento completado en 0.01s\n   💽 Tamaño: 1380352 → 1380352 bytes\n\n5️⃣  TEST DE VALIDACIÓN DE SCHEMA\n----------------------------------------\n📋 Test de validación del schema...\n   📋 Tablas encontradas: 7\n   ℹ️  Tablas adicionales: ['sqlite_sequence', 'sqlite_stat1']\n   ✅ trades: todas las columnas presentes\n   ✅ daily_stats: todas las columnas presentes\n   ✅ trading_journal: todas las columnas presentes\n   ✅ manual_symbols: todas las columnas presentes\n   ✅ position_risk_config: todas las columnas presentes\n   ✅ Schema de base de datos válido\n\n=======================================================\n📊 RESUMEN DE TESTS DE MIGRACIÓN\n=======================================================\nMigración de Estrategias: ✅ PASS\n   📊 Trades migrados: 21\nBackup y Restore: ✅ PASS\n   💾 Tamaño backup: 1454080 bytes\nLimpieza de Datos: ✅ PASS\n   🧹 Trades limpiados: 15\nMantenimiento de DB: ✅ PASS\n   ⏱️  Tiempo mantenimiento: 0.01s\nValidación de Schema: ✅ PASS\n\n🎯 RESULTADO FINAL: 5/5 categorías pasaron\n\n💡 RECOMENDACIONES:\n🎉 ¡Excelente! Todos los tests de migración pasaron.\n✅ El sistema está preparado para operaciones de mantenimiento.\n\n📄 Reporte detallado guardado en: migration_test_report_20250812_145718.json\n",
+      "error": "",
+      "metrics": {
+        "success_rate": 1.0,
+        "tests_passed": 5,
+        "tests_total": 5
+      },
+      "return_code": 0
+    },
+    {
+      "category": "performance",
+      "category_name": "Tests de Performance",
+      "priority": "MEDIUM",
+      "test_name": "Tests de Stress y Límites",
+      "script": "performance/test_stress_limits.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 61.87473392486572,
+      "output": "💥 TESTS DE STRESS Y LÍMITES DEL SISTEMA\n==================================================\n\n1️⃣  TEST DE INSERCIÓN MASIVA BAJO STRESS\n---------------------------------------------\n💥 Test de stress: Insertando 5,000 trades...\n   📊 Procesados 1,000/5,000 trades (1106/s)\n   📊 Procesados 2,000/5,000 trades (1117/s)\n   📊 Procesados 3,000/5,000 trades (1259/s)\n   📊 Procesados 4,000/5,000 trades (1346/s)\n   📊 Procesados 5,000/5,000 trades (1364/s)\n   ✅ Completado: 5,000 trades en 3.7s\n   📈 Velocidad: 1364 trades/segundo\n   💾 Memoria pico: 0.2 MB\n   🖥️  CPU pico: 0.0%\n\n2️⃣  TEST DE CARGA EXTREMA CONCURRENTE\n---------------------------------------------\n🔥 Test de carga extrema: 10 threads, 50 trades cada uno...\n   📊 Completados 5/10 threads\n   📊 Completados 10/10 threads\n   ✅ Threads exitosos: 10/10\n   📊 Trades insertados: 500\n   ⏱️  Tiempo total: 0.42s\n   📈 Velocidad promedio: 1188 trades/s\n   💾 Memoria pico: 43.8 MB\n   🖥️  CPU pico: 0.0%\n\n3️⃣  TEST DE DETECCIÓN DE MEMORY LEAKS\n---------------------------------------------\n🔍 Test de memory leaks: 50 iteraciones...\n   📊 Memoria inicial: 74.1 MB\n   📊 Iteración 0: 81.7 MB\n   📊 Iteración 10: 87.4 MB\n   📊 Iteración 20: 85.8 MB\n   📊 Iteración 30: 70.9 MB\n   📊 Iteración 40: 94.9 MB\n   ✅ No se detectó memory leak: +-0.4 MB\n   📊 Memoria final: 73.8 MB\n   📈 Memoria pico: 94.9 MB\n\n4️⃣  TEST DE LÍMITES DE TAMAÑO DE DB\n---------------------------------------------\n💽 Test de límites de tamaño de base de datos...\n   📊 Tamaño inicial: 3.0 MB\n   📊 Agregados 5,000 trades, tamaño: 8.6 MB\n   📊 Agregados 10,000 trades, tamaño: 15.8 MB\n   📊 Agregados 15,000 trades, tamaño: 23.0 MB\n   📊 Agregados 20,000 trades, tamaño: 30.2 MB\n   📊 Agregados 25,000 trades, tamaño: 37.4 MB\n   📊 Agregados 30,000 trades, tamaño: 44.6 MB\n   📊 Agregados 35,000 trades, tamaño: 51.8 MB\n   📊 Agregados 40,000 trades, tamaño: 59.0 MB\n   📊 Agregados 45,000 trades, tamaño: 66.2 MB\n   📊 Agregados 50,000 trades, tamaño: 73.4 MB\n   📊 Agregados 55,000 trades, tamaño: 80.6 MB\n   📊 Agregados 60,000 trades, tamaño: 87.7 MB\n   📊 Agregados 65,000 trades, tamaño: 95.0 MB\n   📊 Agregados 70,000 trades, tamaño: 102.1 MB\n   ✅ Agregados 71,000 trades\n   💽 Crecimiento: +100.6 MB\n   📊 Performance consulta: 7.7ms → 33.9ms\n   📈 Degradación: +342.0%\n   🗜️  VACUUM recuperó: 1.1 MB\n\n==================================================\n📊 RESUMEN DE TESTS DE STRESS\n==================================================\nInserción Masiva Bajo Stress: ✅ PASS (1364 trades/s, 100.0% éxito)\nCarga Extrema Concurrente: ✅ PASS (500 trades, 100% threads OK)\nDetección de Memory Leaks: ✅ PASS (+-0.4 MB crecimiento)\nLímites de Tamaño de DB: ✅ PASS (71,000 trades, +100.6 MB)\n\n🎯 RESULTADO FINAL: 4/4 tests de stress pasaron\n\n💡 RECOMENDACIONES DE STRESS:\n🏆 ¡Sistema extremadamente robusto!\n✅ Maneja cargas pesadas sin problemas\n🚀 Listo para alto volumen de producción\n",
+      "error": "",
+      "metrics": {
+        "total_trades_processed": 500,
+        "trades_per_second": 1364.0,
+        "peak_memory_mb": 0.4,
+        "success_rate": 1.0,
+        "tests_passed": 4,
+        "tests_total": 4
+      },
+      "return_code": 0
+    },
+    {
+      "category": "security",
+      "category_name": "Tests de Seguridad",
+      "priority": "CRITICAL",
+      "test_name": "Tests de Seguridad y Robustez",
+      "script": "security/test_security_robustness.py",
+      "critical": true,
+      "success": true,
+      "execution_time": 1.126946210861206,
+      "output": "🔐 TESTS DE SEGURIDAD Y ROBUSTEZ DEL SISTEMA\n==================================================\n\n1️⃣  PROTECCIÓN CONTRA INYECCIÓN SQL\n---------------------------------------------\n🔐 Test de protección contra inyección SQL...\n   ✅ Blocked injection in symbol: '; DROP TABLE trades; --...\n   ✅ Blocked injection in strategy: '; DROP TABLE trades; --...\n   ✅ Blocked injection in notes: '; DROP TABLE trades; --...\n   ✅ Blocked injection in trade_id: '; DROP TABLE trades; --...\n   ✅ Blocked injection in symbol: ' OR '1'='1...\n   ✅ Blocked injection in strategy: ' OR '1'='1...\n   ✅ Blocked injection in notes: ' OR '1'='1...\n   ✅ Blocked injection in trade_id: ' OR '1'='1...\n   ✅ Blocked injection in symbol: '; DELETE FROM trades WHERE 1=...\n   ✅ Blocked injection in strategy: '; DELETE FROM trades WHERE 1=...\n   ✅ Blocked injection in notes: '; DELETE FROM trades WHERE 1=...\n   ✅ Blocked injection in trade_id: '; DELETE FROM trades WHERE 1=...\n   ✅ Blocked injection in symbol: ' UNION SELECT * FROM sqlite_m...\n   ✅ Blocked injection in strategy: ' UNION SELECT * FROM sqlite_m...\n   ✅ Blocked injection in notes: ' UNION SELECT * FROM sqlite_m...\n   ✅ Blocked injection in trade_id: ' UNION SELECT * FROM sqlite_m...\n   ✅ Blocked injection in symbol: '; INSERT INTO trades VALUES (...\n   ✅ Blocked injection in strategy: '; INSERT INTO trades VALUES (...\n   ✅ Blocked injection in notes: '; INSERT INTO trades VALUES (...\n   ✅ Blocked injection in trade_id: '; INSERT INTO trades VALUES (...\n   ✅ Blocked injection in symbol: ' OR 1=1 LIMIT 1 OFFSET 1 --...\n   ✅ Blocked injection in strategy: ' OR 1=1 LIMIT 1 OFFSET 1 --...\n   ✅ Blocked injection in notes: ' OR 1=1 LIMIT 1 OFFSET 1 --...\n   ✅ Blocked injection in trade_id: ' OR 1=1 LIMIT 1 OFFSET 1 --...\n   ✅ Blocked injection in symbol: '; UPDATE trades SET pnl = 999...\n   ✅ Blocked injection in strategy: '; UPDATE trades SET pnl = 999...\n   ✅ Blocked injection in notes: '; UPDATE trades SET pnl = 999...\n   ✅ Blocked injection in trade_id: '; UPDATE trades SET pnl = 999...\n   ✅ Blocked injection in symbol: \"; DROP TABLE IF EXISTS trades...\n   ✅ Blocked injection in strategy: \"; DROP TABLE IF EXISTS trades...\n   ✅ Blocked injection in notes: \"; DROP TABLE IF EXISTS trades...\n   ✅ Blocked injection in trade_id: \"; DROP TABLE IF EXISTS trades...\n   ✅ Blocked injection in symbol: ') OR ('x'='x...\n   ✅ Blocked injection in strategy: ') OR ('x'='x...\n   ✅ Blocked injection in notes: ') OR ('x'='x...\n   ✅ Blocked injection in trade_id: ') OR ('x'='x...\n   ✅ Blocked injection in symbol: '; ATTACH DATABASE ':memory:' ...\n   ✅ Blocked injection in strategy: '; ATTACH DATABASE ':memory:' ...\n   ✅ Blocked injection in notes: '; ATTACH DATABASE ':memory:' ...\n   ✅ Blocked injection in trade_id: '; ATTACH DATABASE ':memory:' ...\n   🎯 Resultado: Todos los 40 intentos de inyección fueron bloqueados\n\n2️⃣  MANEJO DE DATOS MALFORMADOS\n---------------------------------------------\n🔧 Test de manejo de datos malformados...\n   🧪 Testing malformed data set 1...\n      ✅ Sistema mantuvo estabilidad\n      🛡️  Datos rechazados apropiadamente\n   🧪 Testing malformed data set 2...\n      ✅ Sistema mantuvo estabilidad\n      🛡️  Datos rechazados apropiadamente\n   🧪 Testing malformed data set 3...\n      ✅ Sistema mantuvo estabilidad\n      ℹ️  Datos aceptados (posiblemente con sanitización)\n   🧪 Testing malformed data set 4...\n      ✅ Sistema mantuvo estabilidad\n      ℹ️  Datos aceptados (posiblemente con sanitización)\n   🧪 Testing malformed data set 5...\n      ✅ Sistema mantuvo estabilidad\n      🛡️  Datos rechazados apropiadamente\n   🎯 Resultado: Sistema maneja robustamente todos los datos malformados\n\n3️⃣  RESISTENCIA A ATAQUES CONCURRENTES\n---------------------------------------------\n🔀 Test de ataques de acceso concurrente...\n   🚀 Lanzando 20 threads agresivos...\n      📊 Thread 0 completado\n      📊 Thread 5 completado\n      📊 Thread 10 completado\n      📊 Thread 15 completado\n   ⚠️  Inconsistencia de datos: esperado 200, encontrado 0\n   ⚠️  Sistema vulnerable a ataques concurrentes\n      📊 Operaciones exitosas: 200\n      📊 Operaciones fallidas: 0\n      🔒 Deadlocks: 0\n\n4️⃣  SEGURIDAD DEL SISTEMA DE ARCHIVOS\n---------------------------------------------\n📁 Test de seguridad del sistema de archivos...\n   ✅ Bloqueado path traversal: ../../../etc/passwd\n   ✅ Bloqueado path traversal: ..\\..\\..\\windows\\system32\\config\\sam\n   ✅ Bloqueado path traversal: /etc/shadow\n   ✅ Bloqueado path traversal: ../../../../root/.ssh/id_rsa\n   ⚠️  Path traversal exitoso: ../trading_data.db\n   ✅ Bloqueado path traversal: ../../config.ini\n   ⚠️  Path traversal exitoso: ../logs/trading_system.log\n   ✅ Permisos de BD apropiados: 644\n   ✅ Seguridad de backup verificada\n   ⚠️  Vulnerabilidades en sistema de archivos detectadas\n\n5️⃣  DIVULGACIÓN DE INFORMACIÓN EN ERRORES\n---------------------------------------------\n🔍 Test de divulgación de información en errores...\n   🧪 Testing: Invalid table access\n   🧪 Testing: Type error scenario\n   🧪 Testing: Database corruption scenario\n      ⚠️  Información sensible expuesta: ['database', 'connection']\n   ⚠️  1 casos de divulgación detectados\n\n==================================================\n📊 RESUMEN DE TESTS DE SEGURIDAD\n==================================================\nProtección SQL Injection: ✅ PASS (40/40 bloqueados)\nManejo Datos Malformados: ✅ PASS (5/5 manejados)\nResistencia Ataques Concurrentes: ❌ FAIL (200/200 ops, 0 deadlocks)\nSeguridad Sistema Archivos: ❌ FAIL (5/7 traversals bloqueados)\nDivulgación Info en Errores: ❌ FAIL (1/3 info leaks)\n\n🎯 RESULTADO FINAL: 2/5 tests de seguridad pasaron\n\n🛡️  EVALUACIÓN DE SEGURIDAD:\n🚨 CRÍTICO - Sistema altamente vulnerable\n❌ Múltiples fallas de seguridad detectadas\n🛑 NO usar en producción hasta corregir\n\n🚨 FALLAS CRÍTICAS DETECTADAS:\n   ❗ Información sensible expuesta\n\n💡 RECOMENDACIONES ESPECÍFICAS:\n📁 Endurecer permisos de archivos y validar paths\n🤫 Implementar manejo de errores que no exponga información sensible\n",
+      "error": "Error saving trade: NOT NULL constraint failed: trades.trade_id\nError saving trade: Error binding parameter 2 - probably unsupported type.\nError saving trade: 'side'\nError saving trade: 'symbol'\n",
+      "metrics": {
+        "success_rate": 0.4,
+        "tests_passed": 2,
+        "tests_total": 5
+      },
+      "return_code": 0
+    },
+    {
+      "category": "integration",
+      "category_name": "Tests de Integración",
+      "priority": "HIGH",
+      "test_name": "Tests de Integración Streamlit",
+      "script": "integration/test_streamlit_integration.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 0.4728817939758301,
+      "output": "🖥️  TESTS DE INTEGRACIÓN CON STREAMLIT\n=============================================\n\n1️⃣  COMPATIBILIDAD CON VISUALIZACIÓN DE DATOS\n---------------------------------------------\n🖥️  Test de compatibilidad con visualización Streamlit...\n   📊 Testing DataFrame conversion...\n      ✅ DataFrame conversion successful (1000 rows)\n      ✅ All columns compatible with Streamlit display\n   🔄 Testing JSON serialization...\n      ✅ Daily stats JSON serialization OK\n      ✅ Strategy performance JSON serialization OK\n   🔍 Testing Streamlit filters...\n      🔍 Testing symbol filters...\n         ✅ Symbol filter working: LRGC003\n      🎯 Testing strategy filters...\n         ✅ Strategy filter working: orb\n      📅 Testing date filters...\n         ✅ Date filter working: 100 trades\n   📈 Testing performance with large datasets...\n         ✅ Large dataset query performance: 0.01s\n   🎯 Streamlit compatibility: PASS (4/4 tests)\n\n2️⃣  COMPATIBILIDAD CON SESSION STATE\n---------------------------------------------\n💾 Test de compatibilidad con session state...\n   🔄 Testing complex data serialization...\n      ✅ Complex session data serialization OK\n   📊 Testing trades data for session state...\n      ✅ Trades session data efficient: 46.2 KB\n   🔄 Testing incremental session state updates...\n      ✅ Incremental session state update OK\n   🎯 Session state compatibility: PASS\n\n3️⃣  MANEJO DE ERRORES EN STREAMLIT\n---------------------------------------------\n⚠️  Test de manejo de errores en Streamlit...\n   🧪 Testing: Database connection lost\n      ✅ Graceful degradation achieved\n      ✅ User-friendly error message\n   🧪 Testing: Empty trades data\n      ✅ Graceful degradation achieved\n      ✅ User-friendly error message\n   🧪 Testing: Corrupted trade data\n      ✅ Graceful degradation achieved\n      ✅ User-friendly error message\n   🧪 Testing: Large dataset timeout\n      ✅ Graceful degradation achieved\n      ✅ User-friendly error message\n   🎯 Error handling: PASS\n\n=============================================\n📊 RESUMEN DE INTEGRACIÓN STREAMLIT\n=============================================\nCompatibilidad Visualización: ✅ PASS (DF:2/2, JSON:2/2, 1 issues)\nCompatibilidad Session State: ✅ PASS (3/3 tests, 0 issues)\nManejo de Errores: ✅ PASS (4/4 graceful, 0 crashes)\n\n🎯 RESULTADO FINAL: 3/3 tests de integración pasaron\n\n🖥️  EVALUACIÓN DE INTEGRACIÓN STREAMLIT:\n🏆 EXCELENTE - Integración perfecta con Streamlit\n✅ Todos los componentes funcionan correctamente\n🚀 Interfaz lista para uso en producción\n\n💡 RECOMENDACIONES ESPECÍFICAS:\n🔧 Corregir problemas de formato de datos para display\n\n📊 MÉTRICAS DE PERFORMANCE:\n   DataFrame conversion: 0.007s\n   Large query time: 0.014s\n",
+      "error": "",
+      "metrics": {
+        "success_rate": 1.0,
+        "tests_passed": 3,
+        "tests_total": 3
+      },
+      "return_code": 0
+    },
+    {
+      "category": "simulation",
+      "category_name": "Tests de Simulación",
+      "priority": "MEDIUM",
+      "test_name": "Tests de Simulación Trading",
+      "script": "simulation/test_trading_simulation.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 2.058915853500366,
+      "output": "📈 TESTS DE SIMULACIÓN DE TRADING REAL\n=============================================\n\n1️⃣  SIMULACIÓN DE DÍA COMPLETO - MERCADO NORMAL\n---------------------------------------------\n📅 Simulando día completo de trading (sideways)...\n   🕐 Hora 1: Generando 8 trades...\n   🕐 Hora 2: Generando 8 trades...\n   🕐 Hora 3: Generando 13 trades...\n   🕐 Hora 4: Generando 9 trades...\n   🕐 Hora 5: Generando 8 trades...\n   🕐 Hora 6: Generando 15 trades...\n   🕐 Hora 7: Generando 10 trades...\n   🕐 Hora 8: Generando 8 trades...\n   ✅ Día simulado: 79 trades abiertos\n   📊 Trades cerrados: 79\n   💰 PnL total: $-7.66\n   📈 Win rate: 53.2%\n   📉 Max drawdown: $74.04\n\n2️⃣  SIMULACIÓN DE DÍA COMPLETO - MERCADO ALCISTA\n---------------------------------------------\n📅 Simulando día completo de trading (bull)...\n   🕐 Hora 1: Generando 15 trades...\n   🕐 Hora 2: Generando 9 trades...\n   🕐 Hora 3: Generando 12 trades...\n   🕐 Hora 4: Generando 10 trades...\n   🕐 Hora 5: Generando 15 trades...\n   🕐 Hora 6: Generando 9 trades...\n   🕐 Hora 7: Generando 12 trades...\n   🕐 Hora 8: Generando 10 trades...\n   ✅ Día simulado: 92 trades abiertos\n   📊 Trades cerrados: 92\n   💰 PnL total: $4802.58\n   📈 Win rate: 80.4%\n   📉 Max drawdown: $6.27\n\n3️⃣  ESCENARIOS DE STRESS DEL MERCADO\n---------------------------------------------\n🌪️  Test de escenarios de stress del mercado...\n   🎭 Escenario: Mercado Bajista Severo\n      📊 Trades: 41\n      💰 PnL: $-1366.67\n      📈 Win Rate: 12.2%\n   🎭 Escenario: Alta Volatilidad Extrema\n      📊 Trades: 95\n      💰 PnL: $482.54\n      📈 Win Rate: 62.1%\n   🎭 Escenario: Mercado Sin Movimiento\n      📊 Trades: 15\n      💰 PnL: $13.84\n      📈 Win Rate: 53.3%\n\n4️⃣  VALIDACIÓN DE ESTRATEGIAS BAJO CONDICIONES\n---------------------------------------------\n🧪 Test de validación de estrategias bajo condiciones...\n   📊 Validando macdv_smallcaps en bull...\n   📊 Validando macdv_smallcaps en bear...\n   📊 Validando macdv_smallcaps en sideways...\n   📊 Validando macdv_smallcaps en volatile...\n   📊 Validando macdv_smallcaps en calm...\n   📊 Validando gap_go en bull...\n   📊 Validando gap_go en bear...\n   📊 Validando gap_go en sideways...\n   📊 Validando gap_go en volatile...\n   📊 Validando gap_go en calm...\n   📊 Validando orb en bull...\n   📊 Validando orb en bear...\n   📊 Validando orb en sideways...\n   📊 Validando orb en volatile...\n   📊 Validando orb en calm...\n   📊 Validando volume_breakout en bull...\n   📊 Validando volume_breakout en bear...\n   📊 Validando volume_breakout en sideways...\n   📊 Validando volume_breakout en volatile...\n   📊 Validando volume_breakout en calm...\n   ✅ Estrategias validadas: 4\n   ⚠️  Validaciones fallidas: 1\n\n=============================================\n📊 RESUMEN DE SIMULACIÓN DE TRADING\n=============================================\nDía Normal de Trading: ✅ PASS (79 trades, $-8 PnL, 53.2% WR)\nDía de Mercado Alcista: ✅ PASS (92 trades, $4803 PnL, 80.4% WR)\nEscenarios de Stress: ✅ PASS (3 escenarios, 151 trades)\nValidación de Estrategias: ✅ PASS (4 estrategias, 1 fallos)\n\n🎯 RESULTADO FINAL: 4/4 tests de simulación pasaron\n\n💡 RECOMENDACIONES DE SIMULACIÓN:\n🏆 ¡Sistema de trading completamente validado!\n✅ Comportamiento realista bajo todas las condiciones\n🎯 Estrategias funcionan según expectativas\n🚀 Listo para trading en vivo\n⚙️  Algunas estrategias no funcionan según parámetros esperados\n",
+      "error": "",
+      "metrics": {
+        "success_rate": 1.0,
+        "tests_passed": 4,
+        "tests_total": 4
+      },
+      "return_code": 0
+    },
+    {
+      "category": "recovery",
+      "category_name": "Tests de Recuperación",
+      "priority": "HIGH",
+      "test_name": "Tests de Recuperación del Sistema",
+      "script": "recovery/test_system_recovery.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 1.7543878555297852,
+      "output": "🔧 TESTS DE RECUPERACIÓN Y CONTINUIDAD DEL SISTEMA\n=======================================================\n\n1️⃣  RECUPERACIÓN ANTE CORRUPCIÓN DE BASE DE DATOS\n--------------------------------------------------\n💾 Test de recuperación ante corrupción de DB...\n   📊 Datos de prueba insertados: 20 trades\n   💥 Simulando corrupción de base de datos...\n   ✅ Corrupción simulada exitosamente\n   🔧 Iniciando proceso de recuperación...\n   ✅ Recuperación exitosa en 0.00s\n   📊 Datos recuperados: 0/20\n   ⚠️  Pérdida significativa de datos: 100.0%\n\n2️⃣  CONTINUIDAD TRAS REINICIO DEL SISTEMA\n--------------------------------------------------\n🔄 Test de continuidad tras reinicio del sistema...\n   💾 Estado pre-reinicio guardado\n   📊 Trades persistentes creados: 5\n   🔄 Simulando reinicio del sistema...\n   ✅ Estado post-reinicio recuperado\n   ✅ Continuidad de sesión mantenida\n   ✅ Trades persistentes verificados: 5/5\n\n3️⃣  RECUPERACIÓN ANTE AGOTAMIENTO DE RECURSOS\n--------------------------------------------------\n⚡ Test de recuperación ante agotamiento de recursos...\n   💾 Simulando agotamiento de memoria...\n   ✅ Presión de memoria alta simulada\n   🔧 Iniciando recuperación de recursos...\n   ✅ Recursos liberados\n   ✅ Funcionalidad restaurada\n   ✅ Recuperación rápida: 0.07s\n\n4️⃣  RECUPERACIÓN ANTE FALLOS CONCURRENTES\n--------------------------------------------------\n🔀 Test de recuperación ante fallos concurrentes...\n   ✅ Escenario _simulate_memory_pressure_failure: Recuperación exitosa\n   ✅ Escenario _simulate_connection_pool_exhaustion: Recuperación exitosa\n   ✅ Escenario _simulate_database_lock_failure: Recuperación exitosa\n   ✅ Escenario _simulate_transaction_timeout_failure: Recuperación exitosa\n   ✅ Coordinación exitosa: 4/4 recuperaciones\n   ✅ Consistencia final verificada\n\n=======================================================\n📊 RESUMEN DE TESTS DE RECUPERACIÓN\n=======================================================\nRecuperación Corrupción BD: ❌ FAIL (0.0s recovery, 100.0% loss)\nContinuidad tras Reinicio: ✅ PASS (1.0s restart, continuity: True)\nRecuperación Agotamiento Recursos: ✅ PASS (0.1s recovery, cleanup: True)\nRecuperación Fallos Concurrentes: ✅ PASS (4/4 recoveries)\n\n🎯 RESULTADO FINAL: 3/4 tests de recuperación pasaron\n\n🔧 EVALUACIÓN DE RECUPERACIÓN Y CONTINUIDAD:\n💪 BUENO - Sistema resiliente con recuperación efectiva\n⚠️  Algunas mejoras en recuperación recomendadas\n🔧 Revisión de procesos de recuperación\n\n🚨 TESTS DE RECUPERACIÓN FALLIDOS:\n   ❗ Recuperación Corrupción BD\n\n💡 RECOMENDACIONES DE RECUPERACIÓN:\n💾 Implementar sistema robusto de backup y recuperación de BD\n",
+      "error": "Error getting trades: Execution failed on sql 'SELECT * FROM trades WHERE 1=1 ORDER BY entry_time DESC LIMIT ?': database disk image is malformed\n",
+      "metrics": {
+        "total_trades_processed": 20,
+        "success_rate": 0.75,
+        "tests_passed": 3,
+        "tests_total": 4
+      },
+      "return_code": 0
+    },
+    {
+      "category": "configuration",
+      "category_name": "Tests de Configuración",
+      "priority": "CRITICAL",
+      "test_name": "Validación de Configuración",
+      "script": "configuration/test_configuration_validation.py",
+      "critical": true,
+      "success": true,
+      "execution_time": 0.5094640254974365,
+      "output": "🔧 TESTS DE VALIDACIÓN DE CONFIGURACIÓN\n=============================================\n\n1️⃣  VALIDACIÓN DE CONFIGURACIÓN DE BASE DE DATOS\n---------------------------------------------\n🔧 Test de validación de configuración de BD...\n   ✅ Testing valid config: default_sqlite\n      ✅ Config validation passed\n   ✅ Testing valid config: memory_db\n      ✅ Config validation passed\n   🧪 Testing invalid config: invalid_path\n      ✅ Invalid config properly rejected\n   🧪 Testing invalid config: invalid_timeout\n      ✅ Invalid config properly rejected\n   🧪 Testing invalid config: missing_required\n      ✅ Invalid config properly rejected\n   🎯 Config validation: PASS\n\n2️⃣  VALIDACIÓN DE PARÁMETROS DE TRADING\n---------------------------------------------\n📊 Test de validación de parámetros de trading...\n   ✅ Testing valid params: conservative_trading\n      ✅ Parameters validated successfully\n   ✅ Testing valid params: aggressive_trading\n      ✅ Parameters validated successfully\n   🧪 Testing invalid params: negative_positions\n      ✅ Invalid parameters properly rejected\n   🧪 Testing invalid params: impossible_percentages\n      ✅ Invalid parameters properly rejected\n   🧪 Testing invalid params: contradictory_values\n      ✅ Invalid parameters properly rejected\n   🎯 Parameter validation: PASS\n\n3️⃣  VALIDACIÓN DE CONFIGURACIÓN DE ESTRATEGIAS\n---------------------------------------------\n🎯 Test de validación de configuración de estrategias...\n   ✅ Testing valid strategy: macdv_smallcaps\n      ✅ Strategy config validated\n   ✅ Testing valid strategy: gap_go\n      ✅ Strategy config validated\n   🧪 Testing invalid strategy: invalid_timeframe\n      ✅ Invalid strategy properly rejected\n   🧪 Testing invalid strategy: negative_values\n      ✅ Invalid strategy properly rejected\n   🎯 Strategy config validation: PASS\n\n4️⃣  VALIDACIÓN DE VARIABLES DE ENTORNO\n---------------------------------------------\n🌍 Test de validación de variables de entorno...\n   🧪 Testing env var: TRADING_MODE\n      ⚠️  Missing required env var: TRADING_MODE\n      ✅ Set test value: development\n   🧪 Testing env var: LOG_LEVEL\n      ⚠️  Missing required env var: LOG_LEVEL\n      ✅ Set test value: DEBUG\n   🧪 Testing env var: DATABASE_PATH\n      ⚠️  Missing required env var: DATABASE_PATH\n      ✅ Set test path value\n   🧪 Testing env var: MAX_POSITIONS\n      ⚠️  Missing required env var: MAX_POSITIONS\n      ✅ Set test integer value: 5\n   🧪 Testing env var: ENABLE_TRADING\n      ⚠️  Missing required env var: ENABLE_TRADING\n      ✅ Set test value: true\n   ⚠️  Environment variables: FAIL\n\n=============================================\n📊 RESUMEN DE VALIDACIÓN DE CONFIGURACIÓN\n=============================================\nConfiguración Base de Datos: ✅ PASS (2 configs válidas)\nParámetros de Trading: ✅ PASS (2 válidos, 3 inválidos)\nConfiguración de Estrategias: ✅ PASS (2/4 estrategias)\nVariables de Entorno: ❌ FAIL (5 válidas, 5 faltantes)\n\n🎯 RESULTADO FINAL: 3/4 tests de configuración pasaron\n\n🔧 EVALUACIÓN DE CONFIGURACIÓN:\n👍 BUENO - Configuración mayormente correcta\n⚠️  Algunas configuraciones necesitan ajustes menores\n🔧 Revisar settings antes de producción\n\n💡 RECOMENDACIONES DE CONFIGURACIÓN:\n🌍 Configurar variables de entorno faltantes: TRADING_MODE, LOG_LEVEL, DATABASE_PATH, MAX_POSITIONS, ENABLE_TRADING\n",
+      "error": "",
+      "metrics": {
+        "success_rate": 0.75,
+        "tests_passed": 3,
+        "tests_total": 4
+      },
+      "return_code": 0
+    },
+    {
+      "category": "network",
+      "category_name": "Tests de Red",
+      "priority": "MEDIUM",
+      "test_name": "Tests de Resiliencia de Red",
+      "script": "network/test_network_resilience.py",
+      "critical": false,
+      "success": true,
+      "execution_time": 23.789912700653076,
+      "output": "🌐 TESTS DE RESILIENCIA DE RED Y CONECTIVIDAD\n==================================================\n\n1️⃣  RESILIENCIA DE CONEXIÓN A BASE DE DATOS\n---------------------------------------------\n🔌 Test de resiliencia de conexión a BD...\n   🧪 Testing: Desconexión temporal de BD\n      ⏱️  Simulando falla por 2 segundos...\n      ✅ Recovery successful in 2.34s\n      ✅ Data integrity maintained (20 trades)\n   🧪 Testing: Conectividad intermitente\n      ⏱️  Simulando falla por 1 segundos...\n      ✅ Recovery successful in 1.33s\n      ✅ Data integrity maintained (20 trades)\n   🧪 Testing: Conexión lenta simulada\n      ⏱️  Simulando falla por 3 segundos...\n      ✅ Recovery successful in 3.34s\n      ✅ Data integrity maintained (20 trades)\n   🎯 Connection resilience: PASS\n\n2️⃣  MANEJO DE TIMEOUTS DE SERVICIOS EXTERNOS\n---------------------------------------------\n⏱️  Test de manejo de timeouts de servicios externos...\n   🧪 Testing: Timeout de datos de mercado\n      ✅ Timeout properly detected\n      ✅ System remained responsive\n      ✅ Fallback mechanism activated\n   🧪 Testing: Timeout de API del broker\n      ✅ Timeout properly detected\n      ✅ System remained responsive\n      ✅ Fallback mechanism activated\n   🧪 Testing: Timeout de feed de precios\n      ✅ Timeout properly detected\n      ✅ System remained responsive\n      ✅ Fallback mechanism activated\n   🎯 Timeout handling: PASS\n\n3️⃣  ADAPTACIÓN A ALTA LATENCIA DE RED\n---------------------------------------------\n🐌 Test de adaptación a alta latencia de red...\n   🧪 Testing: Latencia baja (50ms)\n      📊 5/5 operations successful\n      ⏱️  Average time: 0.055s\n      ⚠️  Times suspiciously fast (possible error)\n   🧪 Testing: Latencia media (200ms)\n      📊 5/5 operations successful\n      ⏱️  Average time: 0.206s\n      ⚠️  Times suspiciously fast (possible error)\n   🧪 Testing: Latencia alta (500ms)\n      📊 5/5 operations successful\n      ⏱️  Average time: 0.505s\n      ⚠️  Times suspiciously fast (possible error)\n   🧪 Testing: Latencia muy alta (1s)\n      📊 5/5 operations successful\n      ⏱️  Average time: 1.010s\n      ⚠️  Times suspiciously fast (possible error)\n   ⚠️  Latency adaptation: FAIL\n\n4️⃣  AGOTAMIENTO DE POOL DE CONEXIONES\n---------------------------------------------\n🏊 Test de agotamiento de pool de conexiones...\n   🚀 Launching 20 concurrent connections...\n   📊 Completed 60 connection attempts\n   ✅ Successful: 60\n   ✅ Connection pool handled concurrent load\n   ✅ System recovered after connection stress\n   🎯 Connection pool resilience: PASS\n\n==================================================\n📊 RESUMEN DE TESTS DE RESILIENCIA DE RED\n==================================================\nResiliencia Conexión BD: ✅ PASS (3/3 recovered, 2.3s avg)\nManejo Timeouts Servicios: ✅ PASS (3 graceful, 0 hangs, 3 fallbacks)\nAdaptación Latencia Red: ❌ FAIL (0/4 adapted, 0.444s avg)\nAgotamiento Pool Conexiones: ✅ PASS (60/60 conns, 60 ops)\n\n🎯 RESULTADO FINAL: 3/4 tests de resiliencia de red pasaron\n\n🌐 EVALUACIÓN DE RESILIENCIA DE RED:\n💪 BUENO - Sistema resiliente con algunas vulnerabilidades\n⚠️  Mejoras menores en resiliencia recomendadas\n🔧 Fortalecer algunos aspectos de conectividad\n\n💡 RECOMENDACIONES DE RESILIENCIA DE RED:\n🐌 Optimizar para mejor rendimiento bajo alta latencia\n",
+      "error": "",
+      "metrics": {
+        "success_rate": 0.75,
+        "tests_passed": 3,
+        "tests_total": 4
+      },
+      "return_code": 0
+    }
+  ],
+  "execution_args": {
+    "category": null,
+    "quick": false,
+    "performance": false,
+    "security": false,
+    "timeout": 600,
+    "report_only": false,
+    "quiet": false,
+    "no_cleanup": false
+  }
+}

@@ -1,0 +1,151 @@
+2025-09-28 19:46:13 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:46:13 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:46:13 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-28 19:46:13 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-28 19:46:13 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-28 19:46:13 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:46:13 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-28 19:46:13 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-28 19:46:13 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 19:50:28 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-28 19:50:28 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-28 19:50:28 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-28 19:50:28 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-28 19:50:28 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-28 19:50:28 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-28 19:50:28 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-28 19:50:28 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-28 19:50:28 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-28 21:41:27 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 06:08:58 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 06:08:58 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully
+2025-09-29 06:08:58 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 06:08:58 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 06:08:58 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 06:08:58 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 06:08:58 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 06:08:58 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 06:08:58 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 13:37:05 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 13:39:24 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 13:39:24 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 13:39:24 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 13:39:24 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 13:39:24 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 13:39:24 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 13:39:24 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 13:39:24 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 13:39:24 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 15:20:32 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 15:20:57 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 15:20:57 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 15:20:57 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 15:20:57 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 15:20:57 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 15:20:57 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 15:20:57 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 15:20:57 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 15:20:57 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:26:25 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:26:25 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 19:33:47 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:33:47 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:33:47 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 19:33:47 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 19:33:47 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 19:33:47 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:33:47 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 19:33:47 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 19:33:47 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 19:36:50 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 19:36:50 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 19:36:50 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 19:36:50 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 19:36:50 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 19:36:50 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 19:36:50 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 19:36:50 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 19:36:50 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:03:55 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 20:04:51 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:04:51 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:04:51 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 20:04:51 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 20:04:51 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 20:04:51 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:04:51 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:04:51 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 20:04:51 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:07:19 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:07:19 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:07:19 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 20:07:19 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 20:07:19 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 20:07:19 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:07:19 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:07:19 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 20:07:19 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:15:46 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 20:16:35 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:16:35 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:16:35 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 20:16:35 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 20:16:35 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 20:16:35 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:16:35 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:16:35 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 20:16:35 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 20:34:01 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 20:54:41 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 20:54:41 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 20:54:41 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 20:54:41 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 20:54:41 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 20:54:41 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 20:54:41 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 20:54:41 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 20:54:41 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:02:30 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:02:30 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:02:30 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:04:59 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:04:59 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:04:59 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 21:04:59 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 21:04:59 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 21:04:59 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:04:59 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:04:59 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 21:04:59 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:10:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 21:10:18 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:10:18 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:10:18 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 21:10:18 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 21:10:18 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 21:10:18 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:10:18 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:10:18 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 21:10:18 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...
+2025-09-29 21:14:59 - __main__.gap_go_worker_1 - INFO - 📡 Signal 2 received - shutting down worker
+2025-09-29 21:15:04 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:04 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:15:07 - __main__.gap_go_worker_1 - INFO - 📡 Signal 15 received - shutting down worker
+2025-09-29 21:17:35 - root - INFO - Logging initialized - Level: INFO, File: logs/gap_go_worker.log (rotating, max 100MB, 3 backups)
+2025-09-29 21:17:35 - shared.database.Sistema4Database - INFO - ✅ Database initialized successfully with trades tracking
+2025-09-29 21:17:35 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker initialized: gap_go_worker_1
+2025-09-29 21:17:35 - __main__.gap_go_worker_1 - INFO -    📊 Min Gap: 2.0% | Max Gap: 15.0%
+2025-09-29 21:17:35 - __main__.gap_go_worker_1 - INFO -    📈 Min Volume: 500,000 | Max Volume: 10,000,000
+2025-09-29 21:17:35 - shared.message_bus.MessageBus - INFO - ✅ Connected to Redis: localhost:6379
+2025-09-29 21:17:35 - shared.message_bus.MessageBus - INFO - 📻 Subscribed to channel: scanner_opportunities
+2025-09-29 21:17:35 - __main__.gap_go_worker_1 - INFO - 🚀 GAP_GO Worker started - listening for opportunities...
+2025-09-29 21:17:35 - shared.message_bus.MessageBus - INFO - 👂 Starting message listener...

@@ -1,0 +1,5 @@
+2025-08-26 06:35:48 - root - INFO - Logging initialized - Level: INFO, File: logs/trader.log
+2025-08-26 06:35:48 - ServiceLocator - INFO - ✅ Service registered: unified_trading_system -> IndependentTrader
+2025-08-26 06:35:48 - Trader - INFO - ⚡ Independent Trader Process initialized
+2025-08-26 06:35:48 - ServiceLocator - WARNING - ⚠️ Service 'unified_trading_system' already registered - replacing
+2025-08-26 06:35:48 - ServiceLocator - INFO - ✅ Service registered: unified_trading_system -> IndependentTrader

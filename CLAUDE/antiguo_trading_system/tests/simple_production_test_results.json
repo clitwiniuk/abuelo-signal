@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-08-19T22:33:51.442758",
+  "results": {
+    "scanner_execution_flow": {
+      "success": true,
+      "plays_detected": 3,
+      "mayordomo_evaluations": 1,
+      "trading_engine_additions": 3,
+      "telegram_alerts": 3,
+      "trade_executions": [
+        {
+          "symbol": "ABCD",
+          "action": "OPEN_POSITION",
+          "quality_score": 8.5,
+          "gap_percentage": 0.15
+        },
+        {
+          "symbol": "EFGH",
+          "action": "OPEN_POSITION",
+          "quality_score": 7.8,
+          "gap_percentage": 0.18
+        },
+        {
+          "symbol": "POOR",
+          "action": "OPEN_POSITION",
+          "quality_score": 4.2,
+          "gap_percentage": 0.03
+        }
+      ],
+      "processing_time_seconds": 0.001302,
+      "execution_rate": 1.0
+    },
+    "high_quality_execution": {
+      "success": true,
+      "play_symbol": "EXCEPTIONAL",
+      "play_quality": 9.5,
+      "execution_attempted": true,
+      "telegram_alert_sent": true,
+      "test_mode_override": true
+    },
+    "risk_management": {
+      "success": true,
+      "total_plays": 5,
+      "executions": 3,
+      "rejections": 2,
+      "risk_management_working": true
+    }
+  },
+  "summary": {
+    "total_tests": 3,
+    "successful_tests": 3,
+    "success_rate": 1.0
+  }
+}

@@ -1,0 +1,58 @@
+# Configuración para Earnings Surprise Strategy
+# Agregar estas secciones a tu config.ini existente
+
+[STRATEGY_EARNINGS]
+# Parámetros principales de la estrategia
+min_surprise_pct = 5.0              # Mínimo % de surprise para considerar la señal
+max_days_since_earnings = 5         # Máximo días desde earnings para operar
+min_volume_spike = 2.0              # Mínimo multiplicador de volumen vs promedio
+momentum_window = 3                 # Ventana para calcular momentum
+rsi_period = 14                     # Período para RSI
+max_rsi_overbought = 75            # RSI máximo para entrar largo
+min_rsi_oversold = 25              # RSI mínimo para entrar corto
+
+# Filtros de small caps
+small_cap_max_mcap = 2000000000    # Máximo market cap para considerar small cap ($2B)
+
+# Configuración de posición
+max_position_size = 0.05           # Máximo 5% del portfolio por posición
+risk_per_trade = 0.02              # Máximo 2% de riesgo por trade
+
+[APIs]
+# APIs gratuitas para datos de earnings
+# Regístrate en estas APIs (todas tienen tiers gratuitos):
+
+# Financial Modeling Prep (250 calls gratis/día)
+# Registrarse en: https://financialmodelingprep.com/developer/docs
+fmp_key = TU_API_KEY_AQUI
+
+# Alpha Vantage (500 calls gratis/día)  
+# Registrarse en: https://www.alphavantage.co/support/#api-key
+alpha_vantage_key = TU_API_KEY_AQUI
+
+# Polygon.io (5 calls/minuto gratis)
+# Registrarse en: https://polygon.io/
+polygon_key = TU_API_KEY_AQUI
+
+[FILTERS]
+# Filtros adicionales para earnings strategy
+max_spread_percentage = 1.5        # Máximo spread bid-ask (%)
+min_atr_percentage = 1.0           # Mínima volatilidad (ATR como % del precio)
+max_data_age_seconds = 3600        # Máxima antigüedad de datos (1 hora)
+
+# Filtros específicos para small caps
+min_daily_volume = 100000          # Mínimo volumen diario promedio
+min_price = 5.0                    # Precio mínimo por acción
+max_price = 100.0                  # Precio máximo por acción
+
+[RISK_MANAGEMENT]
+# Gestión de riesgo específica para earnings
+max_earnings_positions = 3         # Máximo posiciones simultáneas en earnings
+max_daily_earnings_trades = 2      # Máximo trades de earnings por día
+position_sizing_method = "volatility"  # Método de sizing: "fixed", "volatility", "kelly"
+
+# Stop loss y take profit
+default_stop_loss = 0.04           # 4% stop loss
+default_take_profit = 0.08         # 8% take profit
+trailing_stop_threshold = 0.06     # Activar trailing stop en 6% ganancia
+trailing_stop_pct = 0.02           # Trailing stop de 2%
