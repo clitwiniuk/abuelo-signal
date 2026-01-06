@@ -166,18 +166,24 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
         
         current_stop = worker_pos_data['dynamic_stop_price']
 
-        # 2. Chequear Hard Stop / Trailing Stop Hit
+        # 2. Chequear Take Profit (NUEVO - antes faltaba)
+        # Recuperar el take profit desde la posición
+        take_profit_price = position.get('take_profit_price', 0)
+        if take_profit_price > 0 and current_price >= take_profit_price:
+            return True, f"Take Profit hit: {current_price:.2f} >= {take_profit_price:.2f}"
+
+        # 3. Chequear Hard Stop / Trailing Stop Hit
         if current_price <= current_stop:
             return True, f"Stop hit: {current_price:.2f} <= {current_stop:.2f}"
 
-        # 3. VWAP Break (DISABLED - causaba salidas prematuras)
+        # 4. VWAP Break (DISABLED - causaba salidas prematuras)
         # Ya no usamos VWAP break como exit, solo el stop loss fijo
         # vwap = get_val(current_bar, 'vwap', 0) if current_bar else 0
         # if vwap > 0 and current_price < vwap:
         #     return True, f"VWAP break: {current_price:.2f} < {vwap:.2f}"
 
         vwap = get_val(current_bar, 'vwap', 0) if current_bar else 0
-        return False, f"Hold (Price={current_price:.2f}, Stop={current_stop:.2f}, VWAP={vwap:.2f})"
+        return False, f"Hold (Price={current_price:.2f}, Stop={current_stop:.2f}, TP={take_profit_price:.2f}, VWAP={vwap:.2f})"
 
     async def update_position(
         self,
