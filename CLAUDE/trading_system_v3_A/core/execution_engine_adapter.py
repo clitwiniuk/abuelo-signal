@@ -14,6 +14,8 @@ from core.database_manager import DatabaseManager
 from core.commission_calculator import IBKRCommissionCalculator
 from core.extended_hours_manager import ExtendedHoursManager, MarketSession
 from core.trade_ohlc_recorder import get_trade_ohlc_recorder
+from core.time_provider import TimeProvider, SystemTimeProvider
+from core.entry_competition import EntryCompetition
 from notifications import telegram_client
 
 
@@ -34,13 +36,14 @@ class ExecutionEngineAdapter:
     - Rastrea posiciones abiertas por workers
     """
 
-    def __init__(self, broker: Any = None, risk_manager: Any = None, trading_engine: Any = None, config: Dict[str, Any] = None):
+    def __init__(self, broker: Any = None, risk_manager: Any = None, trading_engine: Any = None, config: Dict[str, Any] = None, clock: TimeProvider = None):
         """
         Args:
             broker: IBKRAdapter instance (preferred)
             risk_manager: RiskManager instance (preferred)
             trading_engine: Legacy TradingEngine (deprecated, for backward compatibility)
             config: Configuration dictionary with extended hours settings
+            clock: TimeProvider instance (optional, defaults to SystemTimeProvider)
         """
         # Support both new (broker+risk_manager) and legacy (trading_engine) initialization
         if trading_engine is not None:
@@ -62,9 +65,14 @@ class ExecutionEngineAdapter:
         self.logger = logging.getLogger("ExecutionEngineAdapter")
         self.db_manager = DatabaseManager()
 
-        # Extended hours manager for session detection
-        self.extended_hours_manager = ExtendedHoursManager()
-
+        # Time Provider
+        self.clock = clock or SystemTimeProvider()
+        
+        # Initialize helper classes
+        self.extended_hours_manager = ExtendedHoursManager(clock=self.clock)
+        self.competition = EntryCompetition(clock=self.clock)
+        
+        # Initialize state
         # Telegram notifications
         self._telegram_enabled = telegram_client.is_enabled()
         self._send_telegram = telegram_client.send_message if self._telegram_enabled else lambda *args, **kwargs: None
@@ -89,7 +97,7 @@ class ExecutionEngineAdapter:
 
         # Pending entries for conflict resolution (when multiple workers want same symbol)
         # {symbol: [(strategy, opportunity_data, pattern_completion, timestamp), ...]}
-        self._pending_entries: Dict[str, list] = {}
+        self._pending_entries: Dict[str, list] = {} # This is now managed by EntryCompetition
 
         # 🔒 ORDER DEDUPLICATION: Prevent duplicate orders for the same symbol
         # {symbol: {'order_id': str, 'timestamp': datetime, 'quantity': int, 'status': str}}
@@ -156,48 +164,18 @@ class ExecutionEngineAdapter:
             # Get pattern completion score from opportunity_data
             pattern_completion = opportunity_data.get('pattern_completion', 0.0)
 
-            # Register interest in this symbol
-            if symbol not in self._pending_entries:
-                self._pending_entries[symbol] = []
-
-            entry_request = {
-                'strategy': strategy,
-                'opportunity_data': opportunity_data,
-                'pattern_completion': pattern_completion,
-                'timestamp': datetime.now()
-            }
-            self._pending_entries[symbol].append(entry_request)
-
-            # Wait a short time (50ms) for other workers to register interest
-            await asyncio.sleep(0.05)
-
-            # Check if multiple workers want this symbol
-            pending = self._pending_entries[symbol]
-            if len(pending) > 1:
-                # Multiple workers competing - choose best pattern completion
-                best_entry = max(pending, key=lambda x: x['pattern_completion'])
-
-                if best_entry['strategy'] != strategy:
-                    # Another worker has better pattern completion
-                    self.logger.warning(
-                        f"⚠️ {strategy}: Skipping {symbol} - "
-                        f"{best_entry['strategy']} has better setup "
-                        f"(pattern: {best_entry['pattern_completion']:.1f}% vs {pattern_completion:.1f}%)"
-                    )
-                    # Remove our entry from pending
-                    self._pending_entries[symbol] = [e for e in pending if e['strategy'] != strategy]
-                    return None
-                else:
-                    # We won the competition
-                    losing_strategies = [e['strategy'] for e in pending if e['strategy'] != strategy]
-                    losers_str = ', '.join([f"{e['strategy']}:{e['pattern_completion']:.1f}%" for e in pending if e['strategy'] != strategy])
-                    self.logger.info(
-                        f"🏆 {strategy}: Won entry competition for {symbol} "
-                        f"(pattern: {pattern_completion:.1f}% vs {losers_str})"
-                    )
-
-            # Clear pending entries for this symbol
-            self._pending_entries[symbol] = []
+            # DETERMINISTIC COMPETITION: Register entry and wait for winner selection
+            # This replaces the old asyncio.sleep(0.05) race condition
+            competition_result = await self.competition.register_entry(
+                symbol=symbol,
+                strategy=strategy,
+                opportunity=opportunity_data,
+                pattern_completion=pattern_completion
+            )
+            
+            if competition_result != 'WINNER':
+                self.logger.info(f"Entry competition lost for {symbol} ({strategy})")
+                return None
 
             try:
                 # 🎯 CRITICAL FIX: Get REAL current price from broker, not from opportunity
@@ -481,7 +459,7 @@ class ExecutionEngineAdapter:
                     tif = "DAY"  # Regular hours: Day order
 
                 order = Order(
-                    order_id=f"{strategy}_{symbol}_{int(datetime.now().timestamp())}",
+                    order_id=f"{strategy}_{symbol}_{int(self.clock.now().timestamp())}",
                     symbol=symbol,
                     side=OrderSide.BUY,
                     quantity=quantity,
@@ -494,7 +472,7 @@ class ExecutionEngineAdapter:
                 # 🛡️ PROTECTION 2: Check for duplicate orders (prevent ECX-style double execution)
                 if symbol in self._pending_orders:
                     pending = self._pending_orders[symbol]
-                    time_since_last = (datetime.now() - pending['timestamp']).total_seconds()
+                    time_since_last = (self.clock.now() - pending['timestamp']).total_seconds()
 
                     if time_since_last < self._order_cooldown_seconds:
                         self.logger.warning(
@@ -540,7 +518,7 @@ class ExecutionEngineAdapter:
                 # Register order as pending BEFORE sending to IBKR
                 self._pending_orders[symbol] = {
                     'order_id': None,  # Will be updated after place_order
-                    'timestamp': datetime.now(),
+                    'timestamp': self.clock.now(),
                     'quantity': quantity,
                     'status': 'PENDING'
                 }
@@ -574,7 +552,7 @@ class ExecutionEngineAdapter:
                     'side': 'BUY',
                     'quantity': quantity,
                     'entry_price': current_price,  # Expected price
-                    'entry_time': datetime.now(),
+                    'entry_time': self.clock.now(),
                     'status': 'PENDING',  # Will change to OPEN after confirmation
                     'commission': entry_commission,
                     'broker_order_id_entry': str(order_id),
@@ -758,7 +736,7 @@ class ExecutionEngineAdapter:
                     'quantity': quantity,
                     'entry_price': actual_fill_price,  # ✅ REAL PRICE FROM IBKR
                     'entry_slippage_pct': entry_slippage_pct,
-                    'entry_time': datetime.now(),
+                    'entry_time': self.clock.now(),
                     'status': 'OPEN',
                     'commission': entry_commission,
                     'broker_order_id_entry': str(order_id),
@@ -912,6 +890,12 @@ class ExecutionEngineAdapter:
 
                 # Save/Update the trade in database
                 self.db_manager.save_trade(trade_data)
+                
+                # TRANSACTIONAL FILL MATCHING: Check if we have pending fills for this symbol
+                # This handles race condition where fill arrived before trade was committed
+                if hasattr(self, 'execution_tracker'):
+                    self.execution_tracker.process_pending_fills(symbol)
+                    
                 self.logger.info(f"✅ {strategy}: Trade {trade_id} UPDATED with actual fill price ${actual_fill_price:.2f} (slippage: {entry_slippage_pct:+.2f}%, status=OPEN)")
 
                 # ========================================================================
@@ -956,7 +940,7 @@ class ExecutionEngineAdapter:
                     trade_data['entry_price'] = current_price
                     trade_data['expected_entry_price'] = current_price
                     trade_data['entry_slippage_pct'] = 0.0
-                    trade_data['entry_time'] = datetime.now()
+                    trade_data['entry_time'] = self.clock.now()
                     trade_data['commission'] = entry_commission
                     trade_data['broker_order_id_entry'] = str(order_id)
                     self.db_manager.save_trade(trade_data)
@@ -971,7 +955,7 @@ class ExecutionEngineAdapter:
                     'quantity': quantity,
                     'order_id': order_id,
                     'trade_id': trade_id,
-                    'entry_time': datetime.now(),
+                    'entry_time': self.clock.now(),
                     'entry_commission': entry_commission,
                     'opportunity_data': opportunity_data
                 }
@@ -1160,7 +1144,7 @@ class ExecutionEngineAdapter:
                 tif = "DAY"  # Regular hours: Day order
 
             order = Order(
-                order_id=f"{strategy_name}_{symbol}_exit_{int(datetime.now().timestamp())}",
+                order_id=f"{strategy_name}_{symbol}_exit_{int(self.clock.now().timestamp())}",
                 symbol=symbol,
                 side=OrderSide.SELL,
                 quantity=quantity,
@@ -1334,7 +1318,7 @@ class ExecutionEngineAdapter:
                 'entry_price': entry_price,
                 'entry_time': entry_time,
                 'exit_price': actual_exit_price,  # ✅ REAL EXIT PRICE
-                'exit_time': datetime.now(),
+                'exit_time': self.clock.now(),
                 'status': 'CLOSED',
                 'pnl': round(net_pnl, 2),
                 'commission': round(total_commission, 2),
@@ -1713,7 +1697,7 @@ class ExecutionEngineAdapter:
                         from datetime import datetime
                         import uuid
 
-                        trade_id = f"MANUAL_{symbol}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                        trade_id = f"MANUAL_{symbol}_{self.clock.now().strftime('%Y%m%d_%H%M%S')}"
 
                         # Determine strategy based on position characteristics
                         # Default to 'daily_plays' for intraday positions
@@ -1726,7 +1710,7 @@ class ExecutionEngineAdapter:
                             'side': 'BUY',  # Assume long position
                             'quantity': int(broker_position.quantity),
                             'entry_price': float(broker_position.avg_price),
-                            'entry_time': datetime.now(),  # Approximate (we don't know real entry time)
+                            'entry_time': self.clock.now(),  # Approximate (we don't know real entry time)
                             'status': 'OPEN',
                             'notes': f'AUTO_REGISTERED: Manual position detected in broker (avg cost ${broker_position.avg_price:.2f})',
                             'actual_entry_price': float(broker_position.avg_price),
@@ -1743,7 +1727,7 @@ class ExecutionEngineAdapter:
                             'entry_price': float(broker_position.avg_price),
                             'quantity': int(broker_position.quantity),
                             'trade_id': trade_id,
-                            'entry_time': datetime.now(),
+                            'entry_time': self.clock.now(),
                             'opportunity_data': {}
                         }
 
