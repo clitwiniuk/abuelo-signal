@@ -84,6 +84,10 @@ class BuyAndHoldWorkerLogic(BaseWorkerLogic):
             config=config
         )
 
+        # === SHORT DIRECTION ===
+        # CRITICAL: Override base class default (LONG) to SHORT
+        self.scaling_side = 'SHORT'
+
         # === TRADING WINDOW (ET timezone) ===
         # Start time: 9:30 AM ET (15:30 España)
         self.trading_start_hour = getattr(config, 'trading_start_hour', 9.5)
