@@ -139,38 +139,48 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
         current_price: float = 0.0
     ) -> Tuple[bool, str]:
         """
-        Exit logic mejorada: Hard Stop, Trailing Stop, VWAP Break, y EOD
+        Exit logic: Uses WorkerStopManager for EOD + Take Profit + Stop Loss,
+        plus custom VWAP trailing stop logic
         """
-        # Helper to get attributes safe
-        def get_val(obj, key, default=0):
-            if isinstance(obj, dict): return obj.get(key, default)
-            return getattr(obj, key, default)
+        # Get entry price
+        entry_price = position.get('entry_price', 0)
+        if entry_price == 0:
+            self.logger.warning(f"⚠️ {symbol}: No entry price in position data")
+            return False, "No entry price"
 
-        # Determine Price
-        if current_bar:
-            current_price = get_val(current_bar, 'close', current_price)
-        
+        # Use current_price from parameter (passed by BaseWorkerLogic)
         if current_price == 0:
-             return False, "No Price Data"
+            return False, "No Price Data"
 
-        # 0. EOD Check (Safety Exit before market close)
-        # 15.9 = 15:54 ET. Force exit to avoid overnight hold.
-        # Need current_time. If current_bar is None, we can't check time accurately unless passed 
-        # or we use system time (which fails in replay). 
-        # But we will rely on valid current_bar being passed or fallback to skip.
-        if current_bar:
-             current_time = self._get_current_time_decimal(current_bar.__dict__ if hasattr(current_bar, '__dict__') else current_bar)
-             if current_time >= 15.9:
-                 return True, "EOD Exit (15:54 ET)"
-        
-        
+        # Prepare position metadata for WorkerStopManager
+        # This includes EOD_safe flag for swing trading decisions
+        position_metadata = {
+            'EOD_safe': position.get('EOD_safe', False),
+            'trading_horizon': position.get('trading_horizon', 'intraday'),
+            'expected_hold_hours': position.get('expected_hold_hours', 0),
+            'opportunity_data': position.get('opportunity_data', {}),
+            'side': position.get('side', 'LONG'),
+            'strategy': self.worker_name
+        }
+
+        # PRIORITY 1: Check WorkerStopManager for EOD, Take Profit, basic Stop Loss
+        # This handles: EOD exit, Merit-based swing promotion, Time-based exits
+        should_exit_mgr, reason_mgr = self.stop_manager.check_exit(
+            symbol=symbol,
+            current_price=current_price,
+            entry_price=entry_price,
+            market_data=None,  # No FOMO detection for VWAP runner
+            position_metadata=position_metadata
+        )
+
+        if should_exit_mgr:
+            return True, reason_mgr
+
+        # PRIORITY 2: Custom VWAP Trailing Stop Logic
         # Recuperar estado de la posición (High Water Mark)
-        # active_positions se gestiona en BaseWorkerLogic, pero aquí recibimos 'position' 
-        # que suele ser el dict interno. Necesitamos acceder al estado persistente del worker.
-        
         worker_pos_data = self.active_positions.get(symbol, {})
 
-        # 1. Recuperar o inicializar Stop Price actual
+        # Recuperar o inicializar Stop Price actual
         # CRITICAL: Try to restore from opportunity_data first (persisted state)
         if 'dynamic_stop_price' not in worker_pos_data:
             # Try to restore from database
@@ -190,10 +200,8 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
                 )
             else:
                 # Fallback: Calculate initial stop (new position or old trade without persisted state)
-                entry_price = worker_pos_data.get('entry_price', getattr(worker_pos_data.get('position'), 'entry_price', current_price))
-                vwap_entry = get_val(current_bar, 'vwap', entry_price) if current_bar else entry_price
-
-                worker_pos_data['dynamic_stop_price'] = self._calculate_initial_stop(entry_price, vwap_entry)
+                entry_price_calc = worker_pos_data.get('entry_price', entry_price)
+                worker_pos_data['dynamic_stop_price'] = self._calculate_initial_stop(entry_price_calc, entry_price_calc)
 
                 self.logger.debug(
                     f"🆕 {symbol}: Initialized new stop at ${worker_pos_data['dynamic_stop_price']:.2f}"
@@ -201,24 +209,12 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
 
         current_stop = worker_pos_data['dynamic_stop_price']
 
-        # 2. Chequear Take Profit (NUEVO - antes faltaba)
-        # Recuperar el take profit desde la posición
-        take_profit_price = position.get('take_profit_price', 0)
-        if take_profit_price > 0 and current_price >= take_profit_price:
-            return True, f"Take Profit hit: {current_price:.2f} >= {take_profit_price:.2f}"
-
-        # 3. Chequear Hard Stop / Trailing Stop Hit
+        # Check custom VWAP trailing stop
         if current_price <= current_stop:
-            return True, f"Stop hit: {current_price:.2f} <= {current_stop:.2f}"
+            return True, f"VWAP Trailing Stop: {current_price:.2f} <= {current_stop:.2f}"
 
-        # 4. VWAP Break (DISABLED - causaba salidas prematuras)
-        # Ya no usamos VWAP break como exit, solo el stop loss fijo
-        # vwap = get_val(current_bar, 'vwap', 0) if current_bar else 0
-        # if vwap > 0 and current_price < vwap:
-        #     return True, f"VWAP break: {current_price:.2f} < {vwap:.2f}"
-
-        vwap = get_val(current_bar, 'vwap', 0) if current_bar else 0
-        return False, f"Hold (Price={current_price:.2f}, Stop={current_stop:.2f}, TP={take_profit_price:.2f}, VWAP={vwap:.2f})"
+        # No exit - hold position
+        return False, f"Hold (Price=${current_price:.2f}, Stop=${current_stop:.2f})"
 
     async def update_position(
         self,
