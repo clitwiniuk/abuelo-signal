@@ -4908,3 +4908,253 @@
 2026-01-06 21:57:23 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.7%, vol=2.0x, catalyst=TECHNICAL, Q=65.3
 2026-01-06 21:57:23 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 15.95 outside EXTENDED (Premarket) window [4.00 - 15.75]
 2026-01-06 21:57:23 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 15.95)
+2026-01-06 21:58:09 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 21:58:09 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 15.97 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:58:09 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 15.97)
+2026-01-06 21:58:09 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=25.5%, vol=0.7x, catalyst=TECHNICAL, Q=75.4
+2026-01-06 21:58:09 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 15.97 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:58:09 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.97)
+2026-01-06 21:58:12 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 21:58:12 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 15.97 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:58:12 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 15.97)
+2026-01-06 21:58:12 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=25.5%, vol=0.7x, catalyst=TECHNICAL, Q=75.4
+2026-01-06 21:58:12 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 15.97 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 21:58:12 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 15.97)
+2026-01-06 21:58:24 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-06 21:58:24 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-06 21:58:24 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-06 21:58:24 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-06 22:03:32 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=27.1%, vol=0.7x, catalyst=TECHNICAL, Q=75.3
+2026-01-06 22:03:32 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.05 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:03:32 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.05)
+2026-01-06 22:03:33 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.7%, vol=2.0x, catalyst=TECHNICAL, Q=65.3
+2026-01-06 22:03:33 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 16.05 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:03:33 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 16.05)
+2026-01-06 22:04:25 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=35.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:04:25 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.07 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:04:25 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.07)
+2026-01-06 22:04:26 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.5
+2026-01-06 22:04:26 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.07 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:04:26 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.07)
+2026-01-06 22:04:27 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.4%, vol=2.0x, catalyst=TECHNICAL, Q=64.8
+2026-01-06 22:04:27 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 16.07 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:04:27 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 16.07)
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=35.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:07:04 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.12 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.12)
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.5
+2026-01-06 22:07:04 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.12 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.12)
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.4%, vol=2.0x, catalyst=TECHNICAL, Q=64.8
+2026-01-06 22:07:04 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 16.12 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:07:04 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 16.12)
+2026-01-06 22:08:22 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:08:22 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.13 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:08:22 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.13)
+2026-01-06 22:08:23 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:08:23 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.13 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:08:23 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.13)
+2026-01-06 22:08:23 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=25.5%, vol=0.7x, catalyst=TECHNICAL, Q=75.4
+2026-01-06 22:08:23 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.13 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:08:23 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.13)
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=35.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:09:50 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.15 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.15)
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.5
+2026-01-06 22:09:50 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.15 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.15)
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.4%, vol=2.0x, catalyst=TECHNICAL, Q=64.8
+2026-01-06 22:09:50 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 16.15 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:09:50 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 16.15)
+2026-01-06 22:11:46 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=25.5%, vol=0.7x, catalyst=TECHNICAL, Q=75.4
+2026-01-06 22:11:46 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.18 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:11:46 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.18)
+2026-01-06 22:11:49 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=39.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:11:49 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.18 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:11:49 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.18)
+2026-01-06 22:11:49 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=25.5%, vol=0.7x, catalyst=TECHNICAL, Q=75.4
+2026-01-06 22:11:49 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.18 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:11:49 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.18)
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - 🔍 MRNO: Evaluating opportunity - gap=35.5%, vol=2.0x, catalyst=TECHNICAL, Q=80.0
+2026-01-06 22:12:18 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for MRNO: Current time 16.20 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - ⏰ MRNO: Entry rejected - outside allowed entry hours (current: 16.20)
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - 🔍 SOPA: Evaluating opportunity - gap=26.7%, vol=0.7x, catalyst=TECHNICAL, Q=75.5
+2026-01-06 22:12:18 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for SOPA: Current time 16.20 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - ⏰ SOPA: Entry rejected - outside allowed entry hours (current: 16.20)
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - 🔍 TSDD: Evaluating opportunity - gap=8.4%, vol=2.0x, catalyst=TECHNICAL, Q=64.8
+2026-01-06 22:12:18 - Worker.vcp_strict_short - WARNING - ⏰ Entry rejected for TSDD: Current time 16.20 outside EXTENDED (Premarket) window [4.00 - 15.75]
+2026-01-06 22:12:18 - Worker.vcp_strict_short - INFO - ⏰ TSDD: Entry rejected - outside allowed entry hours (current: 16.20)
+2026-01-06 22:13:27 - Worker.vcp_strict_short - INFO - 🛑 Worker vcp_strict_short cancelled
+2026-01-07 19:15:10 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 19:15:10 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 19:15:10 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 19:15:10 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 19:20:33 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=29.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.3
+2026-01-07 19:20:34 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:20:34 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:20:48 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=29.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.3
+2026-01-07 19:20:49 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:20:49 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:24:47 - Worker.vcp_strict_short - INFO - 🛑 Worker vcp_strict_short cancelled
+2026-01-07 19:25:05 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 19:25:05 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 19:25:05 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 19:25:05 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 19:31:16 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 19:31:16 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 19:31:16 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 19:31:16 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 19:32:40 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=25.5%, vol=1.1x, catalyst=TECHNICAL, Q=79.4
+2026-01-07 19:32:40 - Worker.vcp_strict_short - INFO - ⚪ NMRA: VWAP slope -0.10% > max -0.10% (too bullish)
+2026-01-07 19:32:40 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:36:07 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:36:07 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:36:07 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:36:17 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:36:17 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:36:17 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:37:48 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:37:48 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:37:48 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:37:57 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:37:57 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:37:57 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:38:36 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:38:36 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:38:36 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:40:15 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:40:15 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:40:15 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:40:52 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:40:52 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:40:52 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:42:32 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:42:33 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:42:33 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:43:11 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:43:12 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:43:12 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:44:48 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:44:48 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:44:48 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:46:13 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:46:13 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:46:13 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:48:11 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:48:11 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:48:11 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:50:00 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=26.1%, vol=1.1x, catalyst=TECHNICAL, Q=79.5
+2026-01-07 19:50:00 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:50:00 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:51:54 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=23.6%, vol=1.2x, catalyst=TECHNICAL, Q=79.7
+2026-01-07 19:51:54 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:51:54 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:52:23 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 19:52:23 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:52:23 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:54:19 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 19:54:19 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:54:19 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:54:37 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 19:54:37 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:54:37 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:56:38 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 19:56:39 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:56:39 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 19:58:21 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 19:58:21 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 19:58:21 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:00:21 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:00:21 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:00:21 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:00:37 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:00:37 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:00:37 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:05:14 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:05:14 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:05:14 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:05:18 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:05:18 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:05:18 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:07:36 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:07:36 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:07:36 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:07:40 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:07:41 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:07:41 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:07:52 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:07:52 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:07:52 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:07:58 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:07:59 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:07:59 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:12:00 - Worker.vcp_strict_short - INFO - 🔍 NMRA: Evaluating opportunity - gap=20.1%, vol=1.2x, catalyst=TECHNICAL, Q=79.9
+2026-01-07 20:12:00 - Worker.vcp_strict_short - INFO - ⚠️ NMRA: ODS REDUCTION - Balance Day (chop zone)
+2026-01-07 20:12:00 - Worker.vcp_strict_short - INFO - ⚪ NMRA: Entry criteria not met (rejected by strategy)
+2026-01-07 20:19:02 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 20:19:02 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 20:19:02 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 20:19:02 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 20:19:55 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 20:19:55 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 20:19:55 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 20:19:55 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 20:47:16 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 20:47:16 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 20:47:23 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 20:47:24 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 20:49:59 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 20:50:00 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 20:53:55 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 20:53:55 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 20:54:02 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 20:54:02 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 20:54:04 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 20:54:04 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 20:54:32 - Worker.vcp_strict_short - INFO - Worker logging initialized - vcp_strict_short -> logs/worker_vcp_strict_short.log
+2026-01-07 20:54:32 - Worker.vcp_strict_short - INFO - 🔧 Worker vcp_strict_short initialized with separate logging + ODS support + Event Logger + Swing Transition
+2026-01-07 20:54:32 - Worker.vcp_strict_short - INFO - 🎯 VCP STRICT SHORT Worker configured: expansions>=2, slope<=-0.10%
+2026-01-07 20:54:32 - Worker.vcp_strict_short - INFO - 🚀 Worker vcp_strict_short starting monitoring loop
+2026-01-07 20:56:40 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 20:56:40 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 20:56:43 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 20:56:43 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 20:59:22 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 20:59:23 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 20:59:29 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 20:59:29 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:01:10 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 21:01:10 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:01:12 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=26.3%, vol=0.5x, catalyst=TECHNICAL, Q=65.2
+2026-01-07 21:01:12 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 21:01:56 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 21:01:57 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:04:26 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=23.3%, vol=1.0x, catalyst=TECHNICAL, Q=69.5
+2026-01-07 21:04:26 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 21:04:30 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 21:04:30 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:04:32 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=23.3%, vol=1.0x, catalyst=TECHNICAL, Q=69.5
+2026-01-07 21:04:32 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 21:06:26 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 21:06:26 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:08:09 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=27.5%, vol=0.7x, catalyst=TECHNICAL, Q=55.0
+2026-01-07 21:08:09 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:08:12 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=23.3%, vol=1.0x, catalyst=TECHNICAL, Q=69.5
+2026-01-07 21:08:12 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 21:10:36 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=70.0%, vol=1.0x, catalyst=TECHNICAL, Q=78.5
+2026-01-07 21:10:36 - Worker.vcp_strict_short - INFO - ⚪ ERAS: VWAP slope +22.29% > max -0.10% (too bullish)
+2026-01-07 21:10:36 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:10:42 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 21:10:42 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:10:48 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=70.0%, vol=1.0x, catalyst=TECHNICAL, Q=78.5
+2026-01-07 21:10:48 - Worker.vcp_strict_short - INFO - ⚪ ERAS: VWAP slope +22.29% > max -0.10% (too bullish)
+2026-01-07 21:10:48 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:10:50 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=23.3%, vol=1.0x, catalyst=TECHNICAL, Q=69.5
+2026-01-07 21:10:51 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)
+2026-01-07 21:13:07 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=32.2%, vol=0.7x, catalyst=TECHNICAL, Q=75.0
+2026-01-07 21:13:08 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:16:03 - Worker.vcp_strict_short - INFO - 🔍 ERAS: Evaluating opportunity - gap=70.0%, vol=1.0x, catalyst=TECHNICAL, Q=78.5
+2026-01-07 21:16:04 - Worker.vcp_strict_short - INFO - ⚪ ERAS: VWAP slope +22.29% > max -0.10% (too bullish)
+2026-01-07 21:16:04 - Worker.vcp_strict_short - INFO - ⚪ ERAS: Entry criteria not met (rejected by strategy)
+2026-01-07 21:16:10 - Worker.vcp_strict_short - INFO - 🔍 OLPX: Evaluating opportunity - gap=23.3%, vol=1.0x, catalyst=TECHNICAL, Q=69.5
+2026-01-07 21:16:10 - Worker.vcp_strict_short - INFO - ⚪ OLPX: Entry criteria not met (rejected by strategy)

@@ -4676,3 +4676,1220 @@
 2025-12-28 08:30:55 - EODOHLCDownloader - INFO - ✅ Successful: 11/11
 2025-12-28 08:30:55 - EODOHLCDownloader - INFO - ❌ Failed: 0/11
 2025-12-28 08:30:55 - EODOHLCDownloader - INFO - ============================================================
+2026-01-06 22:30:12 - root - INFO - ----------------------------------------------------------
+2026-01-06 22:30:12 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-06 22:30:12 - root - INFO - ----------------------------------------------------------
+2026-01-06 22:30:12 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - ============================================================
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-06
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - ⏰ Current Time: 22:30:12
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-05
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-05
+2026-01-06 22:30:12 - EODOHLCDownloader - INFO - ============================================================
+2026-01-06 22:30:12 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-06 22:30:12 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-06 22:30:12 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-06 22:30:12 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-06 22:30:12 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-06 22:30:12 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-06 22:30:12 - ib_insync.client - INFO - Connected
+2026-01-06 22:30:13 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-06 22:30:13 - ib_insync.client - INFO - API connection ready
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=673368857, symbol='SIDU', exchange='NASDAQ', currency='USD', localSymbol='SIDU', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=14765981, symbol='JBLU', exchange='NASDAQ', currency='USD', localSymbol='JBLU', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=415881332, symbol='ZNTL', exchange='NASDAQ', currency='USD', localSymbol='ZNTL', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=837874661, symbol='AZI', exchange='NASDAQ', currency='USD', localSymbol='AZI', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=700289515, symbol='SOPA', exchange='NASDAQ', currency='USD', localSymbol='SOPA', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=664690505, symbol='OPTX', exchange='NASDAQ', currency='USD', localSymbol='OPTX', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=826880323, symbol='IMSR', exchange='NASDAQ', currency='USD', localSymbol='IMSR', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=667415396, symbol='IBIO', exchange='NASDAQ', currency='USD', localSymbol='IBIO', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=692396129, symbol='MRNO', exchange='NASDAQ', currency='USD', localSymbol='MRNO', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:13 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=837874837, symbol='BNAI', exchange='NASDAQ', currency='USD', localSymbol='BNAI', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=837874661, symbol='AZI', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='AZI', tradingClass='NMS'), position=0.0, marketPrice=3.72000005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=23.19, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=837874837, symbol='BNAI', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='BNAI', tradingClass='SCM'), position=0.0, marketPrice=4.63999985, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-6.34, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=667415396, symbol='IBIO', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='IBIO', tradingClass='SCM'), position=0.0, marketPrice=2.0999999, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-22.14, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=826880323, symbol='IMSR', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='IMSR', tradingClass='NMS'), position=0.0, marketPrice=9.3699999, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=7.43, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=14765981, symbol='JBLU', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='JBLU', tradingClass='NMS'), position=0.0, marketPrice=5.0760002, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-2.73, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=692396129, symbol='MRNO', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='MRNO', tradingClass='NMS'), position=0.0, marketPrice=1.08000005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-24.91, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=664690505, symbol='OPTX', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='OPTX', tradingClass='SCM'), position=0.0, marketPrice=3.24, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-28.12, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=673368857, symbol='SIDU', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='SIDU', tradingClass='SCM'), position=0.0, marketPrice=5.0, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-0.48, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=700289515, symbol='SOPA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='SOPA', tradingClass='SCM'), position=0.0, marketPrice=3.18000005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-17.37, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=415881332, symbol='ZNTL', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ZNTL', tradingClass='NMS'), position=0.0, marketPrice=1.79999995, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-1.06, account='DUA998722')
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000dc8f.69ba8452.01.01', time=datetime.datetime(2026, 1, 6, 16, 17, 31, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IBKRATS', side='BOT', shares=40.0, price=4.91, permId=1577922722, clientId=6000, orderId=197178, liquidation=0, cumQty=40.0, avgPrice=4.91, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695d57c7.01.01', time=datetime.datetime(2026, 1, 6, 16, 17, 39, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=60.0, price=3.29, permId=1577922724, clientId=6000, orderId=197181, liquidation=0, cumQty=60.0, avgPrice=3.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695d57d3.01.01', time=datetime.datetime(2026, 1, 6, 16, 17, 45, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=37.0, price=4.55, permId=1577922726, clientId=6000, orderId=197187, liquidation=0, cumQty=37.0, avgPrice=4.55, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695d5bfc.01.01', time=datetime.datetime(2026, 1, 6, 16, 24, 44, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=37.0, price=4.57, permId=1577922732, clientId=6000, orderId=197241, liquidation=0, cumQty=37.0, avgPrice=4.57, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695d9ea8.01.01', time=datetime.datetime(2026, 1, 6, 16, 35, 4, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=49.0, price=3.36, permId=1577922738, clientId=6000, orderId=197313, liquidation=0, cumQty=49.0, avgPrice=3.36, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695d9ead.01.01', time=datetime.datetime(2026, 1, 6, 16, 35, 5, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=49.0, price=3.32, permId=1577922739, clientId=6000, orderId=197314, liquidation=0, cumQty=49.0, avgPrice=3.32, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dab28.01.01', time=datetime.datetime(2026, 1, 6, 16, 50, 27, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=50.0, price=3.4, permId=1577922747, clientId=6000, orderId=197396, liquidation=0, cumQty=50.0, avgPrice=3.4, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dab2b.01.01', time=datetime.datetime(2026, 1, 6, 16, 50, 28, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=50.0, price=3.36, permId=1577922749, clientId=6000, orderId=197397, liquidation=0, cumQty=50.0, avgPrice=3.36, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695d6f57.01.01', time=datetime.datetime(2026, 1, 6, 16, 55, 15, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=44.0, price=4.52, permId=1577922750, clientId=6000, orderId=197417, liquidation=0, cumQty=44.0, avgPrice=4.52, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695db1aa.01.01', time=datetime.datetime(2026, 1, 6, 17, 5, 35, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=49.0, price=3.41, permId=1577922752, clientId=6000, orderId=197485, liquidation=0, cumQty=49.0, avgPrice=3.41, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695db275.01.01', time=datetime.datetime(2026, 1, 6, 17, 7, 44, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=49.0, price=3.38, permId=1577922755, clientId=6000, orderId=197491, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dbb48.01.01', time=datetime.datetime(2026, 1, 6, 17, 16, 13, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=22.0, price=8.75, permId=1577922827, clientId=6000, orderId=197532, liquidation=0, cumQty=22.0, avgPrice=8.75, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695db645.01.01', time=datetime.datetime(2026, 1, 6, 17, 16, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=50.0, price=3.4, permId=1577922828, clientId=6000, orderId=197537, liquidation=0, cumQty=50.0, avgPrice=3.4, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695db76b.01.01', time=datetime.datetime(2026, 1, 6, 17, 18, 49, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=40.0, price=4.61, permId=1577922831, clientId=6000, orderId=197572, liquidation=0, cumQty=40.0, avgPrice=4.61, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dbf89.01.01', time=datetime.datetime(2026, 1, 6, 17, 30, 34, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=54.0, price=3.13, permId=1577922849, clientId=6000, orderId=197654, liquidation=0, cumQty=54.0, avgPrice=3.13, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dc0b1.01.01', time=datetime.datetime(2026, 1, 6, 17, 31, 53, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=54.0, price=3.09, permId=1577922852, clientId=6000, orderId=197668, liquidation=0, cumQty=54.0, avgPrice=3.09, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dce77.01.01', time=datetime.datetime(2026, 1, 6, 17, 47, 2, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=54.0, price=3.16, permId=1577922856, clientId=6000, orderId=197748, liquidation=0, cumQty=54.0, avgPrice=3.16, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dca94.01.01', time=datetime.datetime(2026, 1, 6, 17, 50, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=100.0, price=1.29, permId=1577922859, clientId=6000, orderId=197763, liquidation=0, cumQty=100.0, avgPrice=1.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dca95.01.01', time=datetime.datetime(2026, 1, 6, 17, 50, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NYSE', side='BOT', shares=31.0, price=1.29, permId=1577922859, clientId=6000, orderId=197763, liquidation=0, cumQty=131.0, avgPrice=1.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dcb24.01.01', time=datetime.datetime(2026, 1, 6, 17, 51, 33, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='PEARL', side='SLD', shares=131.0, price=1.21, permId=1577922863, clientId=6000, orderId=197783, liquidation=0, cumQty=131.0, avgPrice=1.21, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dd621.01.01', time=datetime.datetime(2026, 1, 6, 17, 59, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=54.0, price=3.11, permId=1577922928, clientId=6000, orderId=197826, liquidation=0, cumQty=54.0, avgPrice=3.11, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dd08f.01.01', time=datetime.datetime(2026, 1, 6, 18, 1, 39, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NYSE', side='BOT', shares=36.0, price=5.14, permId=1577922931, clientId=6000, orderId=197841, liquidation=0, cumQty=36.0, avgPrice=5.14, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695ddd0f.01.01', time=datetime.datetime(2026, 1, 6, 18, 16, 18, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=56.0, price=3.04, permId=1577922944, clientId=6000, orderId=197929, liquidation=0, cumQty=56.0, avgPrice=3.04, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695ddaa8.01.01', time=datetime.datetime(2026, 1, 6, 18, 24, 45, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='MEMX', side='BOT', shares=144.0, price=1.19, permId=1577922957, clientId=6000, orderId=197994, liquidation=0, cumQty=144.0, avgPrice=1.19, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695ddbfc.01.01', time=datetime.datetime(2026, 1, 6, 18, 26, 40, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=144.0, price=1.11, permId=1577922958, clientId=6000, orderId=198003, liquidation=0, cumQty=144.0, avgPrice=1.11, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695de208.01.01', time=datetime.datetime(2026, 1, 6, 18, 31, 29, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=56.0, price=2.96, permId=1577922961, clientId=6000, orderId=198045, liquidation=0, cumQty=56.0, avgPrice=2.96, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695de447.01.01', time=datetime.datetime(2026, 1, 6, 18, 39, 46, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=50.0, price=3.31, permId=1577922963, clientId=6000, orderId=198082, liquidation=0, cumQty=50.0, avgPrice=3.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695de68b.01.01', time=datetime.datetime(2026, 1, 6, 18, 46, 31, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=57.0, price=3.01, permId=1577922965, clientId=6000, orderId=198130, liquidation=0, cumQty=57.0, avgPrice=3.01, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dee1b.01.01', time=datetime.datetime(2026, 1, 6, 19, 16, 41, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=57.0, price=3.04, permId=1577922968, clientId=0, orderId=0, liquidation=0, cumQty=57.0, avgPrice=3.04, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000dc8f.69baa27a.01.01', time=datetime.datetime(2026, 1, 6, 19, 17, 13, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IBKRATS', side='SLD', shares=22.0, price=8.95, permId=1577922973, clientId=0, orderId=0, liquidation=0, cumQty=22.0, avgPrice=8.95, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df022.01.01', time=datetime.datetime(2026, 1, 6, 19, 17, 32, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NYSE', side='SLD', shares=36.0, price=5.12, permId=1577922978, clientId=0, orderId=0, liquidation=0, cumQty=36.0, avgPrice=5.12, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695dc47a.01.01', time=datetime.datetime(2026, 1, 6, 19, 18, 19, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=44.0, price=4.51, permId=1577922987, clientId=0, orderId=0, liquidation=0, cumQty=44.0, avgPrice=4.51, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000dc8f.69baa3ca.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 38, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IBKRATS', side='BOT', shares=42.0, price=4.66, permId=1577923184, clientId=6000, orderId=198173, liquidation=0, cumQty=42.0, avgPrice=4.66, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df3c5.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 42, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IEX', side='BOT', shares=22.0, price=9.05, permId=1577923185, clientId=6000, orderId=198177, liquidation=0, cumQty=22.0, avgPrice=9.05, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695dca3f.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 45, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=43.0, price=4.61, permId=1577923186, clientId=6000, orderId=198181, liquidation=0, cumQty=43.0, avgPrice=4.61, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df3c8.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 46, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=175.0, price=1.08, permId=1577923187, clientId=6000, orderId=198184, liquidation=0, cumQty=175.0, avgPrice=1.08, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b47.695cb705.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 49, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BYX', side='BOT', shares=96.0, price=1.78, permId=1577923188, clientId=6000, orderId=198187, liquidation=0, cumQty=96.0, avgPrice=1.78, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695df22a.01.01', time=datetime.datetime(2026, 1, 6, 19, 28, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=46.0, price=3.23, permId=1577923189, clientId=6000, orderId=198190, liquidation=0, cumQty=46.0, avgPrice=3.23, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df3d4.01.01', time=datetime.datetime(2026, 1, 6, 19, 29, 3, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=95.0, price=2.1, permId=1577923190, clientId=6000, orderId=198203, liquidation=0, cumQty=95.0, avgPrice=2.1, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df6b3.01.01', time=datetime.datetime(2026, 1, 6, 19, 37, 43, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IEX', side='SLD', shares=95.0, price=2.09, permId=1577923192, clientId=0, orderId=0, liquidation=0, cumQty=95.0, avgPrice=2.09, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695df4e4.01.01', time=datetime.datetime(2026, 1, 6, 19, 38, 30, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=46.0, price=3.24, permId=1577923197, clientId=0, orderId=0, liquidation=0, cumQty=46.0, avgPrice=3.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df702.01.01', time=datetime.datetime(2026, 1, 6, 19, 38, 49, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='PEARL', side='SLD', shares=175.0, price=1.07, permId=1577923202, clientId=0, orderId=0, liquidation=0, cumQty=175.0, avgPrice=1.07, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695dcee0.01.01', time=datetime.datetime(2026, 1, 6, 19, 38, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=43.0, price=4.54, permId=1577923207, clientId=6000, orderId=198225, liquidation=0, cumQty=43.0, avgPrice=4.54, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df898.01.01', time=datetime.datetime(2026, 1, 6, 19, 44, 39, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=95.0, price=2.08, permId=1577923337, clientId=6000, orderId=198276, liquidation=0, cumQty=95.0, avgPrice=2.08, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695dd1af.01.01', time=datetime.datetime(2026, 1, 6, 19, 44, 46, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=44.0, price=4.51, permId=1577923338, clientId=6000, orderId=198279, liquidation=0, cumQty=44.0, avgPrice=4.51, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695df8a0.01.01', time=datetime.datetime(2026, 1, 6, 19, 44, 48, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='PEARL', side='BOT', shares=174.0, price=1.1, permId=1577923339, clientId=6000, orderId=198282, liquidation=0, cumQty=174.0, avgPrice=1.1, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695df79a.01.01', time=datetime.datetime(2026, 1, 6, 19, 44, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=46.0, price=3.3, permId=1577923340, clientId=6000, orderId=198286, liquidation=0, cumQty=46.0, avgPrice=3.3, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695df7b7.01.01', time=datetime.datetime(2026, 1, 6, 19, 45, 9, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=56.0, price=3.02, permId=1577923341, clientId=6000, orderId=198304, liquidation=0, cumQty=56.0, avgPrice=3.02, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dfcdd.01.01', time=datetime.datetime(2026, 1, 6, 19, 58, 1, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=95.0, price=2.06, permId=1577923343, clientId=6000, orderId=198353, liquidation=0, cumQty=95.0, avgPrice=2.06, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695dfcdf.01.01', time=datetime.datetime(2026, 1, 6, 19, 58, 2, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='PEARL', side='SLD', shares=174.0, price=1.14, permId=1577923345, clientId=6000, orderId=198354, liquidation=0, cumQty=174.0, avgPrice=1.14, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695dfbd5.01.01', time=datetime.datetime(2026, 1, 6, 19, 58, 4, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=46.0, price=3.22, permId=1577923347, clientId=6000, orderId=198355, liquidation=0, cumQty=46.0, avgPrice=3.22, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e005c.01.01', time=datetime.datetime(2026, 1, 6, 20, 7, 48, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=56.0, price=3.1, permId=1577923354, clientId=0, orderId=0, liquidation=0, cumQty=56.0, avgPrice=3.1, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e069a.01.01', time=datetime.datetime(2026, 1, 6, 20, 13, 10, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=97.0, price=2.07, permId=1577923363, clientId=6000, orderId=198414, liquidation=0, cumQty=97.0, avgPrice=2.07, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e02dd.01.01', time=datetime.datetime(2026, 1, 6, 20, 13, 20, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='BOT', shares=45.0, price=3.23, permId=1577923367, clientId=6000, orderId=198422, liquidation=0, cumQty=45.0, avgPrice=3.23, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e06ad.01.01', time=datetime.datetime(2026, 1, 6, 20, 13, 22, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=97.0, price=2.06, permId=1577923366, clientId=6000, orderId=198415, liquidation=0, cumQty=97.0, avgPrice=2.06, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e02e5.01.01', time=datetime.datetime(2026, 1, 6, 20, 13, 24, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=45.0, price=3.21, permId=1577923368, clientId=6000, orderId=198427, liquidation=0, cumQty=45.0, avgPrice=3.21, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e0d7a.01.01', time=datetime.datetime(2026, 1, 6, 20, 21, 54, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IEX', side='SLD', shares=97.0, price=2.05, permId=1577923538, clientId=6000, orderId=198498, liquidation=0, cumQty=97.0, avgPrice=2.05, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e0e34.01.01', time=datetime.datetime(2026, 1, 6, 20, 22, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BATS', side='SLD', shares=97.0, price=2.05, permId=1577923539, clientId=6000, orderId=198499, liquidation=0, cumQty=97.0, avgPrice=2.05, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e07f1.01.01', time=datetime.datetime(2026, 1, 6, 20, 22, 30, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=54.0, price=3.14, permId=1577923540, clientId=6000, orderId=198507, liquidation=0, cumQty=54.0, avgPrice=3.14, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e0f73.01.01', time=datetime.datetime(2026, 1, 6, 20, 39, 38, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=54.0, price=3.1, permId=1577923545, clientId=6000, orderId=198604, liquidation=0, cumQty=54.0, avgPrice=3.1, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e19a0.01.01', time=datetime.datetime(2026, 1, 6, 20, 40, 43, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=95.0, price=2.09, permId=1577923546, clientId=6000, orderId=198618, liquidation=0, cumQty=95.0, avgPrice=2.09, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e1d7b.01.01', time=datetime.datetime(2026, 1, 6, 20, 45, 50, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=289.0, price=2.09, permId=1577923541, clientId=0, orderId=0, liquidation=0, cumQty=289.0, avgPrice=2.09, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=1)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695e053f.01.01', time=datetime.datetime(2026, 1, 6, 21, 22, 5, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=60.0, price=3.71, permId=1577923553, clientId=0, orderId=0, liquidation=0, cumQty=60.0, avgPrice=3.71, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b47.695cc324.01.01', time=datetime.datetime(2026, 1, 6, 21, 22, 18, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=96.0, price=1.79, permId=1577924240, clientId=0, orderId=0, liquidation=0, cumQty=96.0, avgPrice=1.79, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695e2f2d.01.01', time=datetime.datetime(2026, 1, 6, 21, 22, 28, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BATS', side='SLD', shares=22.0, price=9.37, permId=1577924245, clientId=0, orderId=0, liquidation=0, cumQty=22.0, avgPrice=9.37, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695e219f.01.01', time=datetime.datetime(2026, 1, 6, 21, 22, 38, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=42.0, price=5.03, permId=1577924249, clientId=0, orderId=0, liquidation=0, cumQty=42.0, avgPrice=5.03, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695e0585.01.01', time=datetime.datetime(2026, 1, 6, 21, 22, 50, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='SLD', shares=44.0, price=4.61, permId=1577924254, clientId=0, orderId=0, liquidation=0, cumQty=44.0, avgPrice=4.61, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000dc8f.69ba8452.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695d57c7.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695d57d3.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695d5bfc.01.01', commission=1.007215, currency='USD', realizedPNL=-1.267215, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695d9ea8.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695d9ead.01.01', commission=1.009555, currency='USD', realizedPNL=-3.969555, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dab28.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dab2b.01.01', commission=1.00975, currency='USD', realizedPNL=-4.00975, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695d6f57.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695db1aa.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695db275.01.01', commission=1.009555, currency='USD', realizedPNL=-3.479555, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dbb48.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695db645.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695db76b.01.01', commission=1.0078, currency='USD', realizedPNL=-14.0078, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dbf89.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dc0b1.01.01', commission=1.01053, currency='USD', realizedPNL=-4.17053, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dce77.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dca94.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dca95.01.01', commission=0.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dcb24.01.01', commission=1.025545, currency='USD', realizedPNL=-12.505545, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dd621.01.01', commission=1.01053, currency='USD', realizedPNL=-4.71053, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dd08f.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695ddd0f.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695ddaa8.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695ddbfc.01.01', commission=1.02808, currency='USD', realizedPNL=-13.54808, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695de208.01.01', commission=1.01092, currency='USD', realizedPNL=-6.49092, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695de447.01.01', commission=1.00975, currency='USD', realizedPNL=-6.50975, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695de68b.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dee1b.01.01', commission=1.011115, currency='USD', realizedPNL=-0.301115, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000dc8f.69baa27a.01.01', commission=1.00429, currency='USD', realizedPNL=2.39571, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df022.01.01', commission=1.00702, currency='USD', realizedPNL=-2.72702, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695dc47a.01.01', commission=1.00858, currency='USD', realizedPNL=-2.44858, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000dc8f.69baa3ca.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df3c5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695dca3f.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df3c8.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b47.695cb705.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695df22a.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df3d4.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df6b3.01.01', commission=1.018525, currency='USD', realizedPNL=-2.968525, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695df4e4.01.01', commission=1.00897, currency='USD', realizedPNL=-1.54897, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df702.01.01', commission=1.034125, currency='USD', realizedPNL=-3.784125, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695dcee0.01.01', commission=1.008385, currency='USD', realizedPNL=-5.018385, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df898.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695dd1af.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695df8a0.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695df79a.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695df7b7.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dfcdd.01.01', commission=1.018525, currency='USD', realizedPNL=-3.918525, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695dfcdf.01.01', commission=1.03393, currency='USD', realizedPNL=4.92607, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695dfbd5.01.01', commission=1.00897, currency='USD', realizedPNL=-5.68897, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e005c.01.01', commission=1.01092, currency='USD', realizedPNL=2.46908, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e069a.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e02dd.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e06ad.01.01', commission=1.018915, currency='USD', realizedPNL=-2.988915, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e02e5.01.01', commission=1.008775, currency='USD', realizedPNL=-2.908775, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e0d7a.01.01', commission=1.018915, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e0e34.01.01', commission=1.018915, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e07f1.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e0f73.01.01', commission=1.01053, currency='USD', realizedPNL=-4.17053, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e19a0.01.01', commission=1.018525, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e1d7b.01.01', commission=1.445, currency='USD', realizedPNL=-12.261355, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695e053f.01.01', commission=1.0117, currency='USD', realizedPNL=23.1883, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b47.695cc324.01.01', commission=1.01872, currency='USD', realizedPNL=-1.05872, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695e2f2d.01.01', commission=1.00429, currency='USD', realizedPNL=5.03571, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695e219f.01.01', commission=1.00819, currency='USD', realizedPNL=13.53181, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695e0585.01.01', commission=1.00858, currency='USD', realizedPNL=2.39142, yield_=0.0, yieldRedemptionDate=0)
+2026-01-06 22:30:14 - ib_insync.ib - INFO - Synchronization complete
+2026-01-06 22:30:14 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-06 22:30:14 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-06 22:30:14 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-06 22:30:14 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-06 22:30:14 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-06 22:30:14 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-06 22:30:14 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-06 22:30:14 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-06 22:30:14 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-06 22:30:14 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-06 22:30:15 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-06 22:30:15 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-06 22:30:15 - EODOHLCDownloader - INFO - 📊 Found 47 symbols traded today (2026-01-05)
+2026-01-06 22:30:15 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (198231...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:16 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:17 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (197860...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:18 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:19 - EODOHLCDownloader - INFO - ⏭️  Data for ALT (197153...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:20 - EODOHLCDownloader - INFO - ⏭️  Data for ASTI (197686...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:22 - EODOHLCDownloader - INFO - ⏭️  Data for ASTI (198309...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:23 - EODOHLCDownloader - INFO - ⏭️  Data for BITF (197625...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:24 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198670...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:25 - EODOHLCDownloader - INFO - ⏭️  Data for BVC (198793...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:26 - EODOHLCDownloader - INFO - ⏭️  Data for CRML (198693...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:27 - EODOHLCDownloader - INFO - ⏭️  Data for DVLT (197158...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:29 - EODOHLCDownloader - INFO - ⏭️  Data for DVLT (197674...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:30 - EODOHLCDownloader - INFO - ⏭️  Data for DVLT (197674_s...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:31 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (197903...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:32 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (197588...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:33 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (197800...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:34 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (198762...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:35 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (198948...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:37 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (199194...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:38 - EODOHLCDownloader - INFO - ⏭️  Data for JCSE (199390...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:39 - EODOHLCDownloader - INFO - ⏭️  Data for MNTS (197573...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:41 - EODOHLCDownloader - INFO - ⏭️  Data for NVTS (198680...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:42 - EODOHLCDownloader - INFO - ⏭️  Data for ORBS (198765...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:43 - EODOHLCDownloader - INFO - ⏭️  Data for PRZO (198761...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:44 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (198750...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:45 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (198521...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:46 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:47 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (197668...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:48 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (198721...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:49 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (198721_s...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:50 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:51 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197180...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:52 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197486...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:54 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197882...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:55 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (198504...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:56 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:57 - EODOHLCDownloader - INFO - ⏭️  Data for SMXT (199051...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:58 - EODOHLCDownloader - INFO - ⏭️  Data for UFG (198473...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:30:59 - EODOHLCDownloader - INFO - ⏭️  Data for UFG (198495...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:00 - EODOHLCDownloader - INFO - ⏭️  Data for UFG (199121...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:01 - EODOHLCDownloader - INFO - ⏭️  Data for UFG (199242...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:02 - EODOHLCDownloader - INFO - ⏭️  Data for VRME (197330...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:03 - EODOHLCDownloader - INFO - ⏭️  Data for VRME (197382...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:04 - EODOHLCDownloader - INFO - ⏭️  Data for VRME (197478...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:05 - EODOHLCDownloader - INFO - ⏭️  Data for VRME (197726...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:06 - EODOHLCDownloader - INFO - ⏭️  Data for VRME (198105...) is fresh (updated < 4h). Skipping download.
+2026-01-06 22:31:08 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-06 22:31:08 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-06 22:31:08 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-06 22:31:08 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-06 22:31:08 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 63.5 kB received in 548 messages, session time 55.3 s.
+2026-01-06 22:31:08 - ib_insync.client - INFO - Disconnecting
+2026-01-06 22:31:08 - ib_insync.client - INFO - Disconnected.
+2026-01-06 22:31:08 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - ============================================================
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-05
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - ✅ Successful: 47/47
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - ❌ Failed: 0/47
+2026-01-06 22:31:08 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:15:11 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:15:11 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 19:15:11 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:15:11 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - ⏰ Current Time: 19:15:11
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:15:11 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:15:11 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 19:15:11 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 19:15:11 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 19:15:11 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 19:15:11 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 19:15:11 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 19:15:11 - ib_insync.client - INFO - Connected
+2026-01-07 19:15:11 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 19:15:11 - ib_insync.client - INFO - API connection ready
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 19:15:11 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 19:15:12 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 19:15:12 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 19:15:12 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 19:15:12 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 19:15:12 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 19:15:12 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 19:15:12 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 19:15:12 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 19:15:12 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 19:15:12 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for ABAT (Phase: specific_date)...
+2026-01-07 19:15:13 - IBKRAdapter(8001) - INFO - ✅ Contract created for ABAT in 0.24s
+2026-01-07 19:15:13 - ib_insync.wrapper - INFO - Warning 2174, reqId 4: Warning: You submitted request with date-time attributes without explicit time zone. Please switch to use yyyymmdd-hh:mm:ss in UTC or use instrument time zone, like US/Eastern. Implied time zone functionality will be removed in the next API release, contract: Stock(symbol='ABAT', exchange='SMART', currency='USD')
+2026-01-07 19:15:13 - IBKRAdapter(8001) - ERROR - IBKR Error 2174: Warning: You submitted request with date-time attributes without explicit time zone. Please switch to use yyyymmdd-hh:mm:ss in UTC or use instrument time zone, like US/Eastern. Implied time zone functionality will be removed in the next API release
+2026-01-07 19:15:13 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for ABAT in 0.48s
+2026-01-07 19:15:13 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for ABAT (conversion: 0.00s, total: 0.72s)
+2026-01-07 19:15:13 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for ABAT (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:13 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for ABAT (trade 199333...) - Phase: specific_date
+2026-01-07 19:15:14 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for ABTC (Phase: specific_date)...
+2026-01-07 19:15:14 - IBKRAdapter(8001) - INFO - ✅ Contract created for ABTC in 0.07s
+2026-01-07 19:15:15 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for ABTC in 0.44s
+2026-01-07 19:15:15 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for ABTC (conversion: 0.00s, total: 0.51s)
+2026-01-07 19:15:15 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for ABTC (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:15 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for ABTC (trade 199264...) - Phase: specific_date
+2026-01-07 19:15:16 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for AZI (Phase: specific_date)...
+2026-01-07 19:15:16 - IBKRAdapter(8001) - INFO - ✅ Contract created for AZI in 0.06s
+2026-01-07 19:15:17 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for AZI in 0.68s
+2026-01-07 19:15:17 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for AZI (conversion: 0.01s, total: 0.75s)
+2026-01-07 19:15:17 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for AZI (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:17 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for AZI (trade 197181...) - Phase: specific_date
+2026-01-07 19:15:18 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for BNAI (Phase: specific_date)...
+2026-01-07 19:15:18 - IBKRAdapter(8001) - INFO - ✅ Contract created for BNAI in 0.11s
+2026-01-07 19:15:18 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for BNAI in 0.39s
+2026-01-07 19:15:18 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for BNAI (conversion: 0.00s, total: 0.50s)
+2026-01-07 19:15:18 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for BNAI (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:18 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for BNAI (trade 197187...) - Phase: specific_date
+2026-01-07 19:15:19 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for BNAI (Phase: specific_date)...
+2026-01-07 19:15:20 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for BNAI in 0.31s
+2026-01-07 19:15:20 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for BNAI (conversion: 0.00s, total: 0.31s)
+2026-01-07 19:15:20 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for BNAI (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:20 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for BNAI (trade 197417...) - Phase: specific_date
+2026-01-07 19:15:21 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for BNAI (Phase: specific_date)...
+2026-01-07 19:15:21 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for BNAI in 0.40s
+2026-01-07 19:15:21 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for BNAI (conversion: 0.01s, total: 0.41s)
+2026-01-07 19:15:21 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for BNAI (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:21 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for BNAI (trade 198181...) - Phase: specific_date
+2026-01-07 19:15:22 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for BNAI (Phase: specific_date)...
+2026-01-07 19:15:23 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for BNAI in 0.36s
+2026-01-07 19:15:23 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for BNAI (conversion: 0.00s, total: 0.37s)
+2026-01-07 19:15:23 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for BNAI (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:23 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for BNAI (trade 198279...) - Phase: specific_date
+2026-01-07 19:15:24 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IBIO (Phase: specific_date)...
+2026-01-07 19:15:24 - IBKRAdapter(8001) - INFO - ✅ Contract created for IBIO in 0.22s
+2026-01-07 19:15:25 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IBIO in 0.71s
+2026-01-07 19:15:25 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IBIO (conversion: 0.01s, total: 0.94s)
+2026-01-07 19:15:25 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IBIO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:25 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IBIO (trade 198203...) - Phase: specific_date
+2026-01-07 19:15:26 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IBIO (Phase: specific_date)...
+2026-01-07 19:15:27 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IBIO in 0.96s
+2026-01-07 19:15:27 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IBIO (conversion: 0.01s, total: 0.98s)
+2026-01-07 19:15:27 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IBIO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:28 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IBIO (trade 198276...) - Phase: specific_date
+2026-01-07 19:15:29 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IBIO (Phase: specific_date)...
+2026-01-07 19:15:29 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IBIO in 0.34s
+2026-01-07 19:15:29 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IBIO (conversion: 0.01s, total: 0.34s)
+2026-01-07 19:15:29 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IBIO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:29 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IBIO (trade 198414...) - Phase: specific_date
+2026-01-07 19:15:30 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IBIO (Phase: specific_date)...
+2026-01-07 19:15:31 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IBIO in 0.38s
+2026-01-07 19:15:31 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IBIO (conversion: 0.01s, total: 0.39s)
+2026-01-07 19:15:31 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IBIO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:31 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IBIO (trade 198498...) - Phase: specific_date
+2026-01-07 19:15:32 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IBIO (Phase: specific_date)...
+2026-01-07 19:15:32 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IBIO in 0.36s
+2026-01-07 19:15:32 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IBIO (conversion: 0.01s, total: 0.37s)
+2026-01-07 19:15:32 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IBIO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:33 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IBIO (trade 198618...) - Phase: specific_date
+2026-01-07 19:15:34 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IMSR (Phase: specific_date)...
+2026-01-07 19:15:34 - IBKRAdapter(8001) - INFO - ✅ Contract created for IMSR in 0.08s
+2026-01-07 19:15:35 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IMSR in 0.64s
+2026-01-07 19:15:35 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IMSR (conversion: 0.03s, total: 0.76s)
+2026-01-07 19:15:35 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IMSR (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:35 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IMSR (trade 197532...) - Phase: specific_date
+2026-01-07 19:15:36 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for IMSR (Phase: specific_date)...
+2026-01-07 19:15:37 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for IMSR in 0.85s
+2026-01-07 19:15:37 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for IMSR (conversion: 0.01s, total: 0.86s)
+2026-01-07 19:15:37 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for IMSR (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:37 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for IMSR (trade 198177...) - Phase: specific_date
+2026-01-07 19:15:39 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for JBLU (Phase: specific_date)...
+2026-01-07 19:15:39 - IBKRAdapter(8001) - INFO - ✅ Contract created for JBLU in 0.68s
+2026-01-07 19:15:40 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for JBLU in 0.89s
+2026-01-07 19:15:40 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for JBLU (conversion: 0.00s, total: 1.59s)
+2026-01-07 19:15:40 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for JBLU (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:40 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for JBLU (trade 197841...) - Phase: specific_date
+2026-01-07 19:15:41 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for MRNO (Phase: specific_date)...
+2026-01-07 19:15:42 - IBKRAdapter(8001) - INFO - ✅ Contract created for MRNO in 0.36s
+2026-01-07 19:15:44 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for MRNO in 1.96s
+2026-01-07 19:15:44 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for MRNO (conversion: 0.01s, total: 2.34s)
+2026-01-07 19:15:44 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for MRNO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:44 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for MRNO (trade 197763...) - Phase: specific_date
+2026-01-07 19:15:45 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for MRNO (Phase: specific_date)...
+2026-01-07 19:15:46 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for MRNO in 1.28s
+2026-01-07 19:15:46 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for MRNO (conversion: 0.01s, total: 1.29s)
+2026-01-07 19:15:46 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for MRNO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:46 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for MRNO (trade 197994...) - Phase: specific_date
+2026-01-07 19:15:47 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for MRNO (Phase: specific_date)...
+2026-01-07 19:15:48 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for MRNO in 0.70s
+2026-01-07 19:15:48 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for MRNO (conversion: 0.00s, total: 0.71s)
+2026-01-07 19:15:48 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for MRNO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:48 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for MRNO (trade 198184...) - Phase: specific_date
+2026-01-07 19:15:49 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for MRNO (Phase: specific_date)...
+2026-01-07 19:15:52 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for MRNO in 2.83s
+2026-01-07 19:15:52 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for MRNO (conversion: 0.01s, total: 2.88s)
+2026-01-07 19:15:52 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for MRNO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:53 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for MRNO (trade 198282...) - Phase: specific_date
+2026-01-07 19:15:55 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for MRNO (Phase: specific_date)...
+2026-01-07 19:15:57 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for MRNO in 2.88s
+2026-01-07 19:15:57 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for MRNO (conversion: 0.02s, total: 2.92s)
+2026-01-07 19:15:57 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for MRNO (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:15:59 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for MRNO (trade 198562...) - Phase: specific_date
+2026-01-07 19:16:00 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:00 - IBKRAdapter(8001) - INFO - ✅ Contract created for OPTX in 0.34s
+2026-01-07 19:16:03 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 2.10s
+2026-01-07 19:16:03 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.01s, total: 2.46s)
+2026-01-07 19:16:03 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:03 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 197313...) - Phase: specific_date
+2026-01-07 19:16:04 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:07 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 3.00s
+2026-01-07 19:16:07 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.01s, total: 3.04s)
+2026-01-07 19:16:07 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:08 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 197396...) - Phase: specific_date
+2026-01-07 19:16:09 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:10 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 1.21s
+2026-01-07 19:16:10 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.00s, total: 1.22s)
+2026-01-07 19:16:10 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:11 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 197485...) - Phase: specific_date
+2026-01-07 19:16:12 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:13 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 1.95s
+2026-01-07 19:16:14 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.02s, total: 2.01s)
+2026-01-07 19:16:14 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:15 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 197537...) - Phase: specific_date
+2026-01-07 19:16:16 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:18 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 1.25s
+2026-01-07 19:16:18 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.02s, total: 1.33s)
+2026-01-07 19:16:18 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:18 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 198190...) - Phase: specific_date
+2026-01-07 19:16:19 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:20 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 1.01s
+2026-01-07 19:16:20 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.00s, total: 1.04s)
+2026-01-07 19:16:20 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:21 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 198286...) - Phase: specific_date
+2026-01-07 19:16:22 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:23 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 1.15s
+2026-01-07 19:16:23 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.01s, total: 1.16s)
+2026-01-07 19:16:23 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:23 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 198422...) - Phase: specific_date
+2026-01-07 19:16:24 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for OPTX (Phase: specific_date)...
+2026-01-07 19:16:25 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for OPTX in 0.72s
+2026-01-07 19:16:25 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for OPTX (conversion: 0.02s, total: 0.74s)
+2026-01-07 19:16:25 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for OPTX (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:25 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for OPTX (trade 198468...) - Phase: specific_date
+2026-01-07 19:16:26 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for RCAT (Phase: specific_date)...
+2026-01-07 19:16:26 - IBKRAdapter(8001) - INFO - ✅ Contract created for RCAT in 0.10s
+2026-01-07 19:16:27 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for RCAT in 1.03s
+2026-01-07 19:16:27 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for RCAT (conversion: 0.01s, total: 1.14s)
+2026-01-07 19:16:27 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for RCAT (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:27 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for RCAT (trade 199347...) - Phase: specific_date
+2026-01-07 19:16:28 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for RDHL (Phase: specific_date)...
+2026-01-07 19:16:29 - IBKRAdapter(8001) - INFO - ✅ Contract created for RDHL in 1.13s
+2026-01-07 19:16:30 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for RDHL in 0.69s
+2026-01-07 19:16:30 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for RDHL (conversion: 0.00s, total: 1.83s)
+2026-01-07 19:16:30 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for RDHL (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:30 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for RDHL (trade 199251...) - Phase: specific_date
+2026-01-07 19:16:31 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SIDU (Phase: specific_date)...
+2026-01-07 19:16:31 - IBKRAdapter(8001) - INFO - ✅ Contract created for SIDU in 0.21s
+2026-01-07 19:16:32 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SIDU in 0.58s
+2026-01-07 19:16:32 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SIDU (conversion: 0.00s, total: 0.79s)
+2026-01-07 19:16:32 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SIDU (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:32 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SIDU (trade 197178...) - Phase: specific_date
+2026-01-07 19:16:33 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SIDU (Phase: specific_date)...
+2026-01-07 19:16:34 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SIDU in 0.31s
+2026-01-07 19:16:34 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SIDU (conversion: 0.00s, total: 0.32s)
+2026-01-07 19:16:34 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SIDU (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:34 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SIDU (trade 198173...) - Phase: specific_date
+2026-01-07 19:16:35 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SLS (Phase: specific_date)...
+2026-01-07 19:16:35 - IBKRAdapter(8001) - INFO - ✅ Contract created for SLS in 0.28s
+2026-01-07 19:16:35 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SLS in 0.44s
+2026-01-07 19:16:35 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SLS (conversion: 0.00s, total: 0.72s)
+2026-01-07 19:16:35 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SLS (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:35 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SLS (trade 199259...) - Phase: specific_date
+2026-01-07 19:16:36 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:37 - IBKRAdapter(8001) - INFO - ✅ Contract created for SOPA in 0.12s
+2026-01-07 19:16:37 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.48s
+2026-01-07 19:16:37 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.00s, total: 0.61s)
+2026-01-07 19:16:37 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:37 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 197654...) - Phase: specific_date
+2026-01-07 19:16:38 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:39 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.56s
+2026-01-07 19:16:39 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.00s, total: 0.56s)
+2026-01-07 19:16:39 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:39 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 197748...) - Phase: specific_date
+2026-01-07 19:16:40 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:40 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.30s
+2026-01-07 19:16:40 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.01s, total: 0.31s)
+2026-01-07 19:16:40 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:40 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 197929...) - Phase: specific_date
+2026-01-07 19:16:41 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:42 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.74s
+2026-01-07 19:16:42 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.00s, total: 0.74s)
+2026-01-07 19:16:42 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:42 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 198130...) - Phase: specific_date
+2026-01-07 19:16:43 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:44 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.49s
+2026-01-07 19:16:44 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.00s, total: 0.49s)
+2026-01-07 19:16:44 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:44 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 198304...) - Phase: specific_date
+2026-01-07 19:16:45 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for SOPA (Phase: specific_date)...
+2026-01-07 19:16:46 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for SOPA in 0.77s
+2026-01-07 19:16:46 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for SOPA (conversion: 0.00s, total: 0.77s)
+2026-01-07 19:16:46 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for SOPA (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:46 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for SOPA (trade 198507...) - Phase: specific_date
+2026-01-07 19:16:47 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for TSDD (Phase: specific_date)...
+2026-01-07 19:16:47 - IBKRAdapter(8001) - INFO - ✅ Contract created for TSDD in 0.10s
+2026-01-07 19:16:47 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for TSDD in 0.58s
+2026-01-07 19:16:47 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for TSDD (conversion: 0.00s, total: 0.69s)
+2026-01-07 19:16:47 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for TSDD (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:47 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for TSDD (trade 198408...) - Phase: specific_date
+2026-01-07 19:16:48 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for TSDD (Phase: specific_date)...
+2026-01-07 19:16:49 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for TSDD in 0.46s
+2026-01-07 19:16:49 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for TSDD (conversion: 0.00s, total: 0.46s)
+2026-01-07 19:16:49 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for TSDD (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:49 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for TSDD (trade 197778...) - Phase: specific_date
+2026-01-07 19:16:50 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for TSDD (Phase: specific_date)...
+2026-01-07 19:16:50 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for TSDD in 0.31s
+2026-01-07 19:16:50 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for TSDD (conversion: 0.00s, total: 0.31s)
+2026-01-07 19:16:50 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for TSDD (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:50 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for TSDD (trade 198566...) - Phase: specific_date
+2026-01-07 19:16:51 - EODOHLCDownloader - INFO - 📥 Downloading extended OHLC data for ZNTL (Phase: specific_date)...
+2026-01-07 19:16:51 - IBKRAdapter(8001) - INFO - ✅ Contract created for ZNTL in 0.05s
+2026-01-07 19:16:52 - IBKRAdapter(8001) - INFO - 📈 IBKR responded for ZNTL in 0.33s
+2026-01-07 19:16:52 - IBKRAdapter(8001) - INFO - ✅ Successfully got 1560 bars for ZNTL (conversion: 0.00s, total: 0.38s)
+2026-01-07 19:16:52 - EODOHLCDownloader - INFO - ✅ Downloaded 1560 bars for ZNTL (extended hours) ending 2026-01-06 23:59:59
+2026-01-07 19:16:52 - EODOHLCDownloader - INFO - ✅ Saved 1560 extended bars for ZNTL (trade 198187...) - Phase: specific_date
+2026-01-07 19:16:53 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-07 19:16:53 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-07 19:16:53 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-07 19:16:53 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='ABAT', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='ABTC', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='AZI', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='BNAI', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='IBIO', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='IMSR', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='JBLU', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='MRNO', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='OPTX', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='RCAT', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='RDHL', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='SIDU', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='SLS', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='SOPA', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='TSDD', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - ERROR - cancelMktData: No reqId found for contract Stock(symbol='ZNTL', exchange='SMART', currency='USD')
+2026-01-07 19:16:53 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 4.52 kB sent in 67 messages, 4.53 MB received in 453 messages, session time 102 s.
+2026-01-07 19:16:53 - ib_insync.client - INFO - Disconnecting
+2026-01-07 19:16:53 - ib_insync.client - INFO - Disconnected.
+2026-01-07 19:16:53 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - ✅ Successful: 43/43
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - ❌ Failed: 0/43
+2026-01-07 19:16:53 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:25:06 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:25:06 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 19:25:06 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:25:06 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - ⏰ Current Time: 19:25:06
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:25:06 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:25:06 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 19:25:06 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 19:25:06 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 19:25:06 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 19:25:06 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 19:25:06 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 19:25:06 - ib_insync.client - INFO - Connected
+2026-01-07 19:25:06 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 19:25:07 - ib_insync.client - INFO - API connection ready
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=73.0, avgCost=2.3236986301369864)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=723432892, symbol='RZLV', exchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, avgCost=3.400408163265306)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=74.0, avgCost=2.2835135135135136)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=74.0, marketPrice=2.2561002, marketValue=166.95, averageCost=2.2835135, unrealizedPNL=-2.03, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=73.0, marketPrice=2.29400015, marketValue=167.46, averageCost=2.32369865, unrealizedPNL=-2.17, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.36000015, marketValue=164.64, averageCost=3.40040815, unrealizedPNL=-1.98, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4139.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 17, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=49.0, price=3.38, permId=1827761437, clientId=6002, orderId=38, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6b24.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=73.0, price=2.31, permId=1827761439, clientId=6002, orderId=64, liquidation=0, cumQty=73.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ebfd5.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=74.0, price=2.27, permId=1827761441, clientId=6002, orderId=67, liquidation=0, cumQty=74.0, avgPrice=2.27, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4139.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6b24.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:25:07 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ebfd5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:25:07 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 19:25:07 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 19:25:07 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 19:25:07 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 19:25:07 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 19:25:07 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 19:25:07 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 19:25:07 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 19:25:07 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 19:25:07 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 19:25:07 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 19:25:08 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 19:25:08 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 19:25:08 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 19:25:08 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:09 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:10 - EODOHLCDownloader - INFO - ⏭️  Data for AZI (197181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:11 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:12 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197417...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:13 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:14 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198279...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:15 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198203...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:16 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198276...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:17 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198414...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:18 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198498...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:19 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198618...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:20 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (197532...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:21 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (198177...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:22 - EODOHLCDownloader - INFO - ⏭️  Data for JBLU (197841...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:23 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197763...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:24 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197994...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:25 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198184...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:26 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:26 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:26 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:26 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198282...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:27 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.286, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 19:25:27 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=74.0, marketPrice=2.25, marketValue=166.5, averageCost=2.2835135, unrealizedPNL=-2.48, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:25:27 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198562...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:28 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197313...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:29 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197396...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:30 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197485...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:31 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197537...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:32 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198190...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:33 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198286...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:34 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198422...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:35 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198468...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:36 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:37 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:38 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197178...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:39 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (198173...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:40 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:41 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:41 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:41 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:25:41 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197654...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:42 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.26600005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 19:25:42 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, marketPrice=2.24344635, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.23, account='DUA998722')
+2026-01-07 19:25:42 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197748...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:43 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197929...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:44 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198130...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:45 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198304...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:46 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198507...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:47 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198408...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:48 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (197778...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:49 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198566...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:50 - EODOHLCDownloader - INFO - ⏭️  Data for ZNTL (198187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:25:51 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-07 19:25:51 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-07 19:25:51 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-07 19:25:51 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-07 19:25:51 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 28.6 kB received in 577 messages, session time 45.0 s.
+2026-01-07 19:25:51 - ib_insync.client - INFO - Disconnecting
+2026-01-07 19:25:51 - ib_insync.client - INFO - Disconnected.
+2026-01-07 19:25:51 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - ✅ Successful: 43/43
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - ❌ Failed: 0/43
+2026-01-07 19:25:51 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:31:18 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:31:18 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 19:31:18 - root - INFO - ----------------------------------------------------------
+2026-01-07 19:31:18 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - ⏰ Current Time: 19:31:18
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:31:18 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 19:31:18 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 19:31:18 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 19:31:18 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 19:31:18 - ib_insync.client - INFO - Connected
+2026-01-07 19:31:18 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 19:31:18 - ib_insync.client - INFO - API connection ready
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=723432892, symbol='RZLV', exchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, avgCost=3.40040815)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, marketPrice=2.25399995, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.23, account='DUA998722')
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.26600005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.37400005, marketValue=165.33, averageCost=3.40040815, unrealizedPNL=-1.29, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4139.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 17, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=49.0, price=3.38, permId=1827761437, clientId=6002, orderId=38, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6b24.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=73.0, price=2.31, permId=1827761439, clientId=6002, orderId=64, liquidation=0, cumQty=73.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ebfd5.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=74.0, price=2.27, permId=1827761441, clientId=6002, orderId=67, liquidation=0, cumQty=74.0, avgPrice=2.27, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6eee.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=73.0, price=2.28, permId=1827761464, clientId=6002, orderId=80, liquidation=0, cumQty=73.0, avgPrice=2.28, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec0c4.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 41, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.24, permId=1827761465, clientId=6002, orderId=81, liquidation=0, cumQty=74.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4139.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6b24.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ebfd5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6eee.01.01', commission=1.014235, currency='USD', realizedPNL=-4.204235, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:31:18 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec0c4.01.01', commission=1.01443, currency='USD', realizedPNL=-4.23443, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 19:31:18 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 19:31:18 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 19:31:18 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 19:31:18 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 19:31:18 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 19:31:18 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 19:31:18 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 19:31:19 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 19:31:19 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 19:31:19 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 19:31:19 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:20 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:21 - EODOHLCDownloader - INFO - ⏭️  Data for AZI (197181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:22 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:23 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197417...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:24 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:25 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198279...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:26 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198203...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:27 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198276...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:28 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198414...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:29 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198498...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:30 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198618...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:31 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (197532...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:32 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (198177...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:33 - EODOHLCDownloader - INFO - ⏭️  Data for JBLU (197841...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:34 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197763...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:35 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197994...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:36 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198184...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:38 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198282...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:39 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198562...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:40 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197313...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:41 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197396...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:42 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197485...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:42 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.2939999, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 19:31:42 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.36599995, marketValue=164.93, averageCost=3.40040815, unrealizedPNL=-1.69, realizedPNL=0.0, account='DUA998722')
+2026-01-07 19:31:43 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197537...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:44 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198190...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:45 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198286...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:46 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198422...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:47 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198468...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:48 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:49 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:50 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197178...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:51 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (198173...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:52 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:53 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197654...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:54 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197748...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:55 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197929...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:56 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198130...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:57 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198304...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:58 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198507...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:31:59 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198408...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:32:00 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (197778...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:32:01 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198566...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:32:02 - EODOHLCDownloader - INFO - ⏭️  Data for ZNTL (198187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 19:32:03 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-07 19:32:03 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-07 19:32:03 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-07 19:32:03 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-07 19:32:03 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 23.5 kB received in 449 messages, session time 45.3 s.
+2026-01-07 19:32:03 - ib_insync.client - INFO - Disconnecting
+2026-01-07 19:32:03 - ib_insync.client - INFO - Disconnected.
+2026-01-07 19:32:03 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - ✅ Successful: 43/43
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - ❌ Failed: 0/43
+2026-01-07 19:32:03 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:19:05 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:19:05 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 20:19:05 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:19:05 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - ⏰ Current Time: 20:19:05
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 20:19:05 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:19:05 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 20:19:05 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 20:19:05 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 20:19:05 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 20:19:05 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 20:19:05 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 20:19:05 - ib_insync.client - INFO - Connected
+2026-01-07 20:19:05 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 20:19:05 - ib_insync.client - INFO - API connection ready
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=838288758, symbol='NVVE', exchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, avgCost=3.49754385)
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=723432892, symbol='RZLV', exchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, avgCost=3.40040815)
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=716121772, symbol='LUCY', exchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=449548910, symbol='RZLT', exchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=-66.0, avgCost=2.2246535)
+2026-01-07 20:19:05 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=-74.0, avgCost=2.2762915)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=-74.0, marketPrice=2.3139088, marketValue=-171.23, averageCost=2.2762915, unrealizedPNL=-2.78, realizedPNL=-4.23, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=716121772, symbol='LUCY', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, marketPrice=1.806, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.34, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.2060001, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=838288758, symbol='NVVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, marketPrice=3.6500001, marketValue=208.05, averageCost=3.49754385, unrealizedPNL=8.69, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=449548910, symbol='RZLT', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=-66.0, marketPrice=2.21603725, marketValue=-146.26, averageCost=2.2246535, unrealizedPNL=0.57, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.33599995, marketValue=163.46, averageCost=3.40040815, unrealizedPNL=-3.16, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4139.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 17, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=49.0, price=3.38, permId=1827761437, clientId=6002, orderId=38, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6b24.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=73.0, price=2.31, permId=1827761439, clientId=6002, orderId=64, liquidation=0, cumQty=73.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ebfd5.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=74.0, price=2.27, permId=1827761441, clientId=6002, orderId=67, liquidation=0, cumQty=74.0, avgPrice=2.27, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6eee.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=73.0, price=2.28, permId=1827761464, clientId=6002, orderId=80, liquidation=0, cumQty=73.0, avgPrice=2.28, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec0c4.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 41, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.24, permId=1827761465, clientId=6002, orderId=81, liquidation=0, cumQty=74.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec3ae.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 9, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.29, permId=1827761511, clientId=6002, orderId=126, liquidation=0, cumQty=74.0, avgPrice=2.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f74a5.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BYX', side='SLD', shares=115.0, price=1.73, permId=1827761513, clientId=6002, orderId=135, liquidation=0, cumQty=115.0, avgPrice=1.73, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f752e.01.01', time=datetime.datetime(2026, 1, 7, 18, 37, 56, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=57.0, price=3.48, permId=1827761514, clientId=6002, orderId=154, liquidation=0, cumQty=57.0, avgPrice=3.48, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4daf.01.01', time=datetime.datetime(2026, 1, 7, 18, 54, 20, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='SLD', shares=66.0, price=2.24, permId=1827761521, clientId=6002, orderId=257, liquidation=0, cumQty=66.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f8659.01.01', time=datetime.datetime(2026, 1, 7, 19, 11, 48, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=115.0, price=1.86, permId=1827761522, clientId=6002, orderId=347, liquidation=0, cumQty=115.0, avgPrice=1.86, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f875b.01.01', time=datetime.datetime(2026, 1, 7, 19, 13, 34, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='MEMX', side='BOT', shares=230.0, price=1.8, permId=1827761520, clientId=0, orderId=0, liquidation=0, cumQty=230.0, avgPrice=1.8, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4139.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6b24.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ebfd5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6eee.01.01', commission=1.014235, currency='USD', realizedPNL=-4.204235, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec0c4.01.01', commission=1.01443, currency='USD', realizedPNL=-4.23443, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec3ae.01.01', commission=1.01443, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f74a5.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f752e.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4daf.01.01', commission=1.01287, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f8659.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f875b.01.01', commission=1.15, currency='USD', realizedPNL=-4.34485, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:06 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 20:19:06 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 20:19:06 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 20:19:06 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 20:19:06 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 20:19:06 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 20:19:06 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 20:19:06 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 20:19:06 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 20:19:06 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:07 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:08 - EODOHLCDownloader - INFO - ⏭️  Data for AZI (197181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:09 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:10 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197417...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:11 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:12 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198279...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:13 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198203...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:14 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198276...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:15 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198414...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:16 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198498...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:17 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198618...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:18 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (197532...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:19 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (198177...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:20 - EODOHLCDownloader - INFO - ⏭️  Data for JBLU (197841...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:21 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197763...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:22 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197994...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:23 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198184...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:24 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198282...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:25 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198562...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:26 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197313...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:28 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197396...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:29 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197485...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:30 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197537...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:31 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198190...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:32 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198286...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:33 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198422...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:34 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198468...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:35 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:35 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=-74.0, marketPrice=2.2821338, marketValue=-168.88, averageCost=2.2762915, unrealizedPNL=-0.43, realizedPNL=-4.23, account='DUA998722')
+2026-01-07 20:19:35 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=716121772, symbol='LUCY', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, marketPrice=1.76600005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.34, account='DUA998722')
+2026-01-07 20:19:35 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.35399985, marketValue=164.35, averageCost=3.40040815, unrealizedPNL=-2.27, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:35 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=838288758, symbol='NVVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, marketPrice=3.9938638, marketValue=227.65, averageCost=3.49754385, unrealizedPNL=28.29, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:36 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:37 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197178...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:38 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (198173...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:39 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:40 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197654...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:41 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197748...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:42 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197929...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:43 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198130...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:44 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198304...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:45 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198507...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:45 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 28.5 kB received in 483 messages, session time 40.0 s.
+2026-01-07 20:19:45 - ib_insync.client - INFO - Disconnecting
+2026-01-07 20:19:56 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:19:56 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 20:19:56 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:19:56 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - ⏰ Current Time: 20:19:56
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 20:19:56 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:19:56 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 20:19:56 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 20:19:56 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 20:19:56 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 20:19:56 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 20:19:56 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 20:19:56 - ib_insync.client - INFO - Connected
+2026-01-07 20:19:56 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 20:19:56 - ib_insync.client - INFO - API connection ready
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=838288758, symbol='NVVE', exchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, avgCost=3.49754385)
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=723432892, symbol='RZLV', exchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, avgCost=3.40040815)
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=716121772, symbol='LUCY', exchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=449548910, symbol='RZLT', exchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=-66.0, avgCost=2.2246535)
+2026-01-07 20:19:56 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=-74.0, avgCost=2.2762915)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=-74.0, marketPrice=2.2821338, marketValue=-168.88, averageCost=2.2762915, unrealizedPNL=-0.43, realizedPNL=-4.23, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=716121772, symbol='LUCY', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, marketPrice=1.76600005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.34, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.2060001, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=838288758, symbol='NVVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, marketPrice=3.9938638, marketValue=227.65, averageCost=3.49754385, unrealizedPNL=28.29, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=449548910, symbol='RZLT', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=-66.0, marketPrice=2.21603725, marketValue=-146.26, averageCost=2.2246535, unrealizedPNL=0.57, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.35399985, marketValue=164.35, averageCost=3.40040815, unrealizedPNL=-2.27, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4139.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 17, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=49.0, price=3.38, permId=1827761437, clientId=6002, orderId=38, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6b24.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=73.0, price=2.31, permId=1827761439, clientId=6002, orderId=64, liquidation=0, cumQty=73.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ebfd5.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=74.0, price=2.27, permId=1827761441, clientId=6002, orderId=67, liquidation=0, cumQty=74.0, avgPrice=2.27, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6eee.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=73.0, price=2.28, permId=1827761464, clientId=6002, orderId=80, liquidation=0, cumQty=73.0, avgPrice=2.28, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec0c4.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 41, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.24, permId=1827761465, clientId=6002, orderId=81, liquidation=0, cumQty=74.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec3ae.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 9, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.29, permId=1827761511, clientId=6002, orderId=126, liquidation=0, cumQty=74.0, avgPrice=2.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f74a5.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BYX', side='SLD', shares=115.0, price=1.73, permId=1827761513, clientId=6002, orderId=135, liquidation=0, cumQty=115.0, avgPrice=1.73, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f752e.01.01', time=datetime.datetime(2026, 1, 7, 18, 37, 56, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=57.0, price=3.48, permId=1827761514, clientId=6002, orderId=154, liquidation=0, cumQty=57.0, avgPrice=3.48, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4daf.01.01', time=datetime.datetime(2026, 1, 7, 18, 54, 20, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='SLD', shares=66.0, price=2.24, permId=1827761521, clientId=6002, orderId=257, liquidation=0, cumQty=66.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f8659.01.01', time=datetime.datetime(2026, 1, 7, 19, 11, 48, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=115.0, price=1.86, permId=1827761522, clientId=6002, orderId=347, liquidation=0, cumQty=115.0, avgPrice=1.86, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f875b.01.01', time=datetime.datetime(2026, 1, 7, 19, 13, 34, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='MEMX', side='BOT', shares=230.0, price=1.8, permId=1827761520, clientId=0, orderId=0, liquidation=0, cumQty=230.0, avgPrice=1.8, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4139.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6b24.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ebfd5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6eee.01.01', commission=1.014235, currency='USD', realizedPNL=-4.204235, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec0c4.01.01', commission=1.01443, currency='USD', realizedPNL=-4.23443, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec3ae.01.01', commission=1.01443, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f74a5.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f752e.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4daf.01.01', commission=1.01287, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f8659.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f875b.01.01', commission=1.15, currency='USD', realizedPNL=-4.34485, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:19:57 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 20:19:57 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 20:19:57 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 20:19:57 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 20:19:57 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 20:19:57 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 20:19:57 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 20:19:57 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 20:19:57 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 20:19:57 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:58 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:19:59 - EODOHLCDownloader - INFO - ⏭️  Data for AZI (197181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:00 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:01 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197417...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:02 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:03 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198279...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:04 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198203...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:05 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198276...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:06 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198414...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:07 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198498...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:08 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198618...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:09 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (197532...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:10 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (198177...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:11 - EODOHLCDownloader - INFO - ⏭️  Data for JBLU (197841...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:13 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197763...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:14 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197994...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:15 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198184...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:16 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198282...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:17 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198562...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:18 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197313...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:19 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197396...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:20 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197485...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:21 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197537...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:22 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198190...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:23 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198286...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:24 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198422...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:25 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198468...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:26 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:27 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:28 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197178...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:29 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (198173...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:30 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:31 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197654...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:32 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197748...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:33 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197929...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:34 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198130...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:35 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198304...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:36 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198507...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:37 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198408...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:38 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (197778...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:39 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198566...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:40 - EODOHLCDownloader - INFO - ⏭️  Data for ZNTL (198187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:20:41 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-07 20:20:41 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-07 20:20:41 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-07 20:20:41 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-07 20:20:41 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 23.0 kB received in 363 messages, session time 44.4 s.
+2026-01-07 20:20:41 - ib_insync.client - INFO - Disconnecting
+2026-01-07 20:20:41 - ib_insync.client - INFO - Disconnected.
+2026-01-07 20:20:41 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - ✅ Successful: 43/43
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - ❌ Failed: 0/43
+2026-01-07 20:20:41 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:54:33 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:54:33 - root - INFO - #############      INICIO OPERATIVA      #################
+2026-01-07 20:54:33 - root - INFO - ----------------------------------------------------------
+2026-01-07 20:54:33 - root - INFO - Logging initialized - Level: INFO, File: logs/ohlc_downloader.log (rotating, max 100MB, 3 backups)
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - 🌅 END-OF-DAY OHLC DOWNLOAD (EXTENDED HOURS) STARTED
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - 📅 Current Date: 2026-01-07
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - ⏰ Current Time: 20:54:33
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - 🎯 SPECIFIC DATE MODE: Processing data for 2026-01-06
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 20:54:33 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:54:33 - IBKRAdapter(8001) - INFO - 🕘 Regular trading hours only - excluding premarket/afterhours
+2026-01-07 20:54:33 - IBKRAdapter(8001) - WARNING - ⚠️ No paper_trading_mode config found - defaulting to PAPER TRADING for safety
+2026-01-07 20:54:33 - IBKRAdapter(8001) - WARNING - 📝 PAPER TRADING MODE ENABLED - Orders will NOT be sent to broker
+2026-01-07 20:54:33 - IBKRAdapter(8001) - INFO - 📊 Initializing paper order ID counter from database: 1000012 (last ID was 1000011)
+2026-01-07 20:54:33 - IBKRAdapter(8001) - INFO - Connecting to IBKR at 127.0.0.1:7497 (client_id: 8001)
+2026-01-07 20:54:33 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 8001...
+2026-01-07 20:54:33 - ib_insync.client - INFO - Connected
+2026-01-07 20:54:33 - ib_insync.client - INFO - Logged on to server version 176
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:eufarm
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2026-01-07 20:54:33 - ib_insync.client - INFO - API connection ready
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefeu
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=654514947, symbol='NMRA', exchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=838288758, symbol='NVVE', exchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, avgCost=3.49754385)
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=723432892, symbol='RZLV', exchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, avgCost=3.40040815)
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=716121772, symbol='LUCY', exchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=449548910, symbol='RZLT', exchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=0.0, avgCost=0.0)
+2026-01-07 20:54:33 - ib_insync.wrapper - INFO - position: Position(account='DUA998722', contract=Stock(conId=712984808, symbol='ABVE', exchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, avgCost=0.0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=712984808, symbol='ABVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='ABVE', tradingClass='NMS'), position=0.0, marketPrice=2.31616805, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-7.73, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=716121772, symbol='LUCY', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='LUCY', tradingClass='SCM'), position=0.0, marketPrice=1.724, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.34, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=654514947, symbol='NMRA', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NMRA', tradingClass='NMS'), position=0.0, marketPrice=2.25600005, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-4.2, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=838288758, symbol='NVVE', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='NVVE', tradingClass='SCM'), position=57.0, marketPrice=3.97600005, marketValue=226.63, averageCost=3.49754385, unrealizedPNL=27.27, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=449548910, symbol='RZLT', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLT', tradingClass='SCM'), position=0.0, marketPrice=2.3139999, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-1.35, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - updatePortfolio: PortfolioItem(contract=Stock(conId=723432892, symbol='RZLV', right='0', primaryExchange='NASDAQ', currency='USD', localSymbol='RZLV', tradingClass='NMS'), position=49.0, marketPrice=3.41600015, marketValue=167.38, averageCost=3.40040815, unrealizedPNL=0.76, realizedPNL=0.0, account='DUA998722')
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4139.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 17, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='BOT', shares=49.0, price=3.38, permId=1827761437, clientId=6002, orderId=38, liquidation=0, cumQty=49.0, avgPrice=3.38, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6b24.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 51, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=73.0, price=2.31, permId=1827761439, clientId=6002, orderId=64, liquidation=0, cumQty=73.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ebfd5.01.01', time=datetime.datetime(2026, 1, 7, 18, 20, 59, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='ARCA', side='BOT', shares=74.0, price=2.27, permId=1827761441, clientId=6002, orderId=67, liquidation=0, cumQty=74.0, avgPrice=2.27, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f6eee.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 26, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='T24X', side='SLD', shares=73.0, price=2.28, permId=1827761464, clientId=6002, orderId=80, liquidation=0, cumQty=73.0, avgPrice=2.28, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec0c4.01.01', time=datetime.datetime(2026, 1, 7, 18, 25, 41, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.24, permId=1827761465, clientId=6002, orderId=81, liquidation=0, cumQty=74.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ec3ae.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 9, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=74.0, price=2.29, permId=1827761511, clientId=6002, orderId=126, liquidation=0, cumQty=74.0, avgPrice=2.29, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f74a5.01.01', time=datetime.datetime(2026, 1, 7, 18, 36, 16, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='BYX', side='SLD', shares=115.0, price=1.73, permId=1827761513, clientId=6002, orderId=135, liquidation=0, cumQty=115.0, avgPrice=1.73, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f752e.01.01', time=datetime.datetime(2026, 1, 7, 18, 37, 56, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=57.0, price=3.48, permId=1827761514, clientId=6002, orderId=154, liquidation=0, cumQty=57.0, avgPrice=3.48, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f4daf.01.01', time=datetime.datetime(2026, 1, 7, 18, 54, 20, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='DRCTEDGE', side='SLD', shares=66.0, price=2.24, permId=1827761521, clientId=6002, orderId=257, liquidation=0, cumQty=66.0, avgPrice=2.24, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f8659.01.01', time=datetime.datetime(2026, 1, 7, 19, 11, 48, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='SLD', shares=115.0, price=1.86, permId=1827761522, clientId=6002, orderId=347, liquidation=0, cumQty=115.0, avgPrice=1.86, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b45.695f875b.01.01', time=datetime.datetime(2026, 1, 7, 19, 13, 34, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='MEMX', side='BOT', shares=230.0, price=1.8, permId=1827761520, clientId=0, orderId=0, liquidation=0, cumQty=230.0, avgPrice=1.8, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='00025b49.695f5783.01.01', time=datetime.datetime(2026, 1, 7, 19, 24, 2, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='IEX', side='BOT', shares=66.0, price=2.23, permId=1827761595, clientId=0, orderId=0, liquidation=0, cumQty=66.0, avgPrice=2.23, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - execDetails Execution(execId='0000e0d5.695ed397.01.01', time=datetime.datetime(2026, 1, 7, 19, 24, 12, tzinfo=datetime.timezone.utc), acctNumber='DUA998722', exchange='NASDAQ', side='BOT', shares=74.0, price=2.31, permId=1827761600, clientId=0, orderId=0, liquidation=0, cumQty=74.0, avgPrice=2.31, orderRef='', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4139.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6b24.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ebfd5.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f6eee.01.01', commission=1.014235, currency='USD', realizedPNL=-4.204235, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec0c4.01.01', commission=1.01443, currency='USD', realizedPNL=-4.23443, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ec3ae.01.01', commission=1.01443, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f74a5.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f752e.01.01', commission=1.0, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f4daf.01.01', commission=1.01287, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f8659.01.01', commission=1.022425, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b45.695f875b.01.01', commission=1.15, currency='USD', realizedPNL=-4.34485, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='00025b49.695f5783.01.01', commission=1.0, currency='USD', realizedPNL=-1.35287, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.wrapper - INFO - commissionReport: CommissionReport(execId='0000e0d5.695ed397.01.01', commission=1.0, currency='USD', realizedPNL=-3.49443, yield_=0.0, yieldRedemptionDate=0)
+2026-01-07 20:54:34 - ib_insync.ib - INFO - Synchronization complete
+2026-01-07 20:54:34 - IBKRAdapter(8001) - INFO - Successfully connected to IBKR
+2026-01-07 20:54:34 - core.batch_price_manager - INFO - 🚀 BatchPriceManager initialized
+2026-01-07 20:54:34 - core.batch_price_manager - INFO -    ⚡ Ready for persistent price subscriptions
+2026-01-07 20:54:34 - core.smart_position_cache - INFO - 🧠 SmartPositionCache initialized
+2026-01-07 20:54:34 - core.smart_position_cache - INFO -    ⏰ Cache TTL: 5 minutes
+2026-01-07 20:54:34 - core.smart_position_cache - INFO -    🎯 Expected 80% reduction in position API calls
+2026-01-07 20:54:34 - IBKRAdapter(8001) - INFO - ⚡ Phase 1 optimizations initialized:
+2026-01-07 20:54:34 - IBKRAdapter(8001) - INFO -    📡 Batch Price Manager (99.95% API reduction)
+2026-01-07 20:54:34 - IBKRAdapter(8001) - INFO -    🧠 Smart Position Cache (80% API reduction)
+2026-01-07 20:54:34 - IBKRAdapter(8001) - INFO -    🎯 Using simple static volume requirements - NO ML
+2026-01-07 20:54:35 - IBKRAdapter(8001) - INFO - Initial data loaded successfully
+2026-01-07 20:54:35 - EODOHLCDownloader - INFO - ✅ IBKR connected for EOD download
+2026-01-07 20:54:35 - EODOHLCDownloader - INFO - 📊 Found 43 symbols traded today (2026-01-06)
+2026-01-07 20:54:35 - EODOHLCDownloader - INFO - ⏭️  Data for ABAT (199333...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:36 - EODOHLCDownloader - INFO - ⏭️  Data for ABTC (199264...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:37 - EODOHLCDownloader - INFO - ⏭️  Data for AZI (197181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:38 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:39 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (197417...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:40 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198181...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:41 - EODOHLCDownloader - INFO - ⏭️  Data for BNAI (198279...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:42 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198203...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:43 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198276...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:44 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198414...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:45 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198498...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:46 - EODOHLCDownloader - INFO - ⏭️  Data for IBIO (198618...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:47 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (197532...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:48 - EODOHLCDownloader - INFO - ⏭️  Data for IMSR (198177...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:49 - EODOHLCDownloader - INFO - ⏭️  Data for JBLU (197841...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:50 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197763...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:51 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (197994...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:52 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198184...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:53 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198282...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:54 - EODOHLCDownloader - INFO - ⏭️  Data for MRNO (198562...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:55 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197313...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:56 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197396...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:57 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197485...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:58 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (197537...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:54:59 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198190...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:00 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198286...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:01 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198422...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:02 - EODOHLCDownloader - INFO - ⏭️  Data for OPTX (198468...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:03 - EODOHLCDownloader - INFO - ⏭️  Data for RCAT (199347...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:04 - EODOHLCDownloader - INFO - ⏭️  Data for RDHL (199251...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:05 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (197178...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:06 - EODOHLCDownloader - INFO - ⏭️  Data for SIDU (198173...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:07 - EODOHLCDownloader - INFO - ⏭️  Data for SLS (199259...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:08 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197654...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:09 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197748...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:10 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (197929...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:11 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198130...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:12 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198304...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:13 - EODOHLCDownloader - INFO - ⏭️  Data for SOPA (198507...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:14 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198408...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:15 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (197778...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:16 - EODOHLCDownloader - INFO - ⏭️  Data for TSDD (198566...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:17 - EODOHLCDownloader - INFO - ⏭️  Data for ZNTL (198187...) is fresh (updated < 4h). Skipping download.
+2026-01-07 20:55:18 - IBKRAdapter(8001) - INFO - Disconnecting from IBKR
+2026-01-07 20:55:18 - core.batch_price_manager - INFO - 🧹 Cleaning up batch price subscriptions...
+2026-01-07 20:55:18 - core.batch_price_manager - INFO - ✅ Batch price cleanup completed: 0 subscriptions cancelled
+2026-01-07 20:55:18 - core.smart_position_cache - INFO - 🧹 Position cache cleared
+2026-01-07 20:55:18 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 120 B sent in 8 messages, 24.2 kB received in 369 messages, session time 44.6 s.
+2026-01-07 20:55:18 - ib_insync.client - INFO - Disconnecting
+2026-01-07 20:55:18 - ib_insync.client - INFO - Disconnected.
+2026-01-07 20:55:18 - IBKRAdapter(8001) - INFO - Successfully disconnected from IBKR
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - ✅ IBKR disconnected
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - ============================================================
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - 📊 DOWNLOAD SUMMARY (EXTENDED HOURS)
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - 🎯 Phase: SPECIFIC_DATE
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - 📅 Target Date: 2026-01-06
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - ✅ Successful: 43/43
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - ❌ Failed: 0/43
+2026-01-07 20:55:18 - EODOHLCDownloader - INFO - ============================================================

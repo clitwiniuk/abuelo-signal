@@ -170,7 +170,16 @@ class BaseWorkerLogic(ABC):
         self.active_positions[symbol] = position_metadata
 
         if position_data.get('entry_time'):
-            self.stop_manager.register_position(symbol, position_data['entry_time'])
+            # CRITICAL: Restore trailing stop state from opportunity_data
+            opp_data = position_data.get('opportunity_data', {})
+            restored_highest_pnl = opp_data.get('highest_pnl_tracked', 0.0)
+
+            # Register position with restored trailing state
+            self.stop_manager.register_position(
+                symbol,
+                position_data['entry_time'],
+                restored_highest_pnl=restored_highest_pnl
+            )
 
             # ROBUSTNESS: Ensure exit parameters exist in opportunity_data
             # If restored from DB but fields are missing (old trades), inject defaults from config
@@ -224,8 +233,8 @@ class BaseWorkerLogic(ABC):
             'opportunity_data': {}
         }
 
-        # Register with stop manager
-        self.stop_manager.register_position(symbol, datetime.now())
+        # Register with stop manager (no trailing state from broker restore)
+        self.stop_manager.register_position(symbol, datetime.now(), restored_highest_pnl=0.0)
 
         self.logger.warning(
             f"⚠️ Restored from broker (approximate entry time): {symbol} @ "
@@ -1967,6 +1976,9 @@ class BaseWorkerLogic(ABC):
                     # Log estado periódico (cada minuto)
                     self._log_position_status(symbol, data, current_price)
 
+                    # CRITICAL: Persist trailing stop state after each check
+                    await self._persist_trailing_state(symbol)
+
             except Exception as e:
                 self.logger.error(f"❌ Error monitoring {symbol}: {e}")
 
@@ -2016,6 +2028,52 @@ class BaseWorkerLogic(ABC):
         except Exception as e:
             self.logger.error(f"❌ Error getting price for {symbol}: {e}")
             return 0.0
+
+    async def _persist_trailing_state(self, symbol: str):
+        """
+        Persiste el estado del trailing stop al opportunity_data
+        Se llama después de cada check de salida para preservar highest_pnl
+
+        CRITICAL: Esto previene pérdida de trailing stop state en restart
+        """
+        try:
+            # Get current trailing state from stop_manager
+            highest_pnl = self.stop_manager.get_trailing_state(symbol)
+
+            # Only persist if there's actual trailing state (> 0)
+            if highest_pnl <= 0:
+                return
+
+            # Get position from active_positions
+            position_data = self.active_positions.get(symbol)
+            if not position_data:
+                return
+
+            # Update opportunity_data
+            if 'opportunity_data' not in position_data:
+                position_data['opportunity_data'] = {}
+
+            # Check if value has changed to avoid unnecessary DB writes
+            current_saved = position_data['opportunity_data'].get('highest_pnl_tracked', 0.0)
+            if abs(highest_pnl - current_saved) < 0.01:  # Skip if change < 0.01%
+                return
+
+            # Update in memory
+            position_data['opportunity_data']['highest_pnl_tracked'] = highest_pnl
+
+            # Persist to database via ExecutionEngine
+            await self.execution_engine.update_position_metadata(
+                symbol=symbol,
+                strategy=self.worker_name,
+                opportunity_data=position_data['opportunity_data']
+            )
+
+            self.logger.debug(
+                f"💾 {symbol}: Persisted trailing state (highest_pnl: {highest_pnl:+.2f}%)"
+            )
+
+        except Exception as e:
+            self.logger.error(f"❌ Error persisting trailing state for {symbol}: {e}")
 
     async def _execute_exit(self, symbol: str, reason: str, current_price: float):
         """

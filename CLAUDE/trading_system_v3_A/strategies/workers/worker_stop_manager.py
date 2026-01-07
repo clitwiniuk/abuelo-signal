@@ -124,17 +124,34 @@ class WorkerStopManager:
             f"Trailing={config.trailing_activation}%/{config.trailing_distance}%"
         )
 
-    def register_position(self, symbol: str, entry_time: Optional[datetime] = None) -> None:
+    def register_position(self, symbol: str, entry_time: Optional[datetime] = None, restored_highest_pnl: float = 0.0) -> None:
         """
         Register a new position for tracking
 
         Args:
             symbol: Symbol to track
             entry_time: Entry timestamp (defaults to now)
+            restored_highest_pnl: Restored highest PnL from database (for trailing stop persistence)
         """
-        self.highest_pnl[symbol] = 0.0
+        self.highest_pnl[symbol] = restored_highest_pnl
         self.entry_times[symbol] = entry_time or datetime.now()
-        self.logger.debug(f"📝 Registered position: {symbol}")
+
+        if restored_highest_pnl > 0:
+            self.logger.info(f"📝 Registered position: {symbol} (Restored trailing state: {restored_highest_pnl:+.2f}%)")
+        else:
+            self.logger.debug(f"📝 Registered position: {symbol}")
+
+    def get_trailing_state(self, symbol: str) -> float:
+        """
+        Get current trailing stop state for persistence
+
+        Args:
+            symbol: Symbol to get state for
+
+        Returns:
+            Current highest_pnl value (0.0 if not tracked)
+        """
+        return self.highest_pnl.get(symbol, 0.0)
 
     def unregister_position(self, symbol: str) -> None:
         """

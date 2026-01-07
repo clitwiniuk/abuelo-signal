@@ -1082,6 +1082,62 @@ class ExecutionEngineAdapter:
                 self.logger.error(traceback.format_exc())
                 return None
 
+    async def update_position_metadata(
+        self,
+        symbol: str,
+        strategy: str,
+        opportunity_data: dict
+    ) -> bool:
+        """
+        Actualiza el opportunity_data de una posición activa
+
+        CRITICAL: Usado para persistir trailing stop state durante la operativa
+
+        Args:
+            symbol: Símbolo de la posición
+            strategy: Estrategia (worker) que maneja la posición
+            opportunity_data: Diccionario con metadata actualizada
+
+        Returns:
+            True si exitoso, False si falla
+        """
+        try:
+            # Verify position exists
+            if symbol not in self.worker_positions:
+                self.logger.warning(f"⚠️ Cannot update metadata for {symbol}: position not found")
+                return False
+
+            # Verify strategy matches
+            current_strategy = self.worker_positions[symbol].get('strategy')
+            if current_strategy != strategy:
+                self.logger.warning(
+                    f"⚠️ Cannot update metadata for {symbol}: strategy mismatch "
+                    f"(current: {current_strategy}, requested: {strategy})"
+                )
+                return False
+
+            # Update in-memory
+            self.worker_positions[symbol]['opportunity_data'] = opportunity_data
+
+            # Persist to database
+            with sqlite3.connect(self.db_manager.db_path) as conn:
+                conn.execute("""
+                    UPDATE worker_positions
+                    SET opportunity_data = ?
+                    WHERE symbol = ? AND strategy = ? AND status = 'OPEN'
+                """, (
+                    json.dumps(opportunity_data),
+                    symbol,
+                    strategy
+                ))
+                conn.commit()
+
+            return True
+
+        except Exception as e:
+            self.logger.error(f"❌ Error updating metadata for {symbol}: {e}")
+            return False
+
     async def exit_position(
         self,
         symbol: str,
