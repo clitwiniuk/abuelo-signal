@@ -109,14 +109,14 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
                 return
 
             self.logger.info(f"🧐 Monitoring {len(candidates)} proactive candidates: {[c['symbol'] for c in candidates]}")
-            
+
             # 2. Extract symbols
             symbols = [c['symbol'] for c in candidates]
-            
-            # 3. Batch Fetch Snapshots (Price, Volume, VWAP?)
+
+            # 3. Batch Fetch Snapshots (Price, Volume, VWAP?) + Bars for VWAP analysis
             # IBKRAdapter via ExecutionEngine
             snapshots = await self._fetch_candidate_snapshots(symbols)
-            
+
             if not snapshots:
                 self.logger.debug("No market data snapshots available.")
                 return
@@ -125,41 +125,59 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
             for candidate in candidates:
                 symbol = candidate['symbol']
                 snapshot = snapshots.get(symbol)
-                
+
                 if not snapshot:
                     continue
-                    
+
+                # CRITICAL FIX: Fetch intraday bars for VWAP analysis
+                # This was the missing piece that prevented LVRO from being evaluated correctly
+                bars_history = await self._fetch_intraday_bars(symbol)
+
+                if not bars_history:
+                    self.logger.warning(f"⚠️ {symbol}: No bars available for VWAP analysis, skipping evaluation")
+                    continue
+
+                # Get candidate pattern info for logging
+                pattern_type = candidate.get('pattern_type', 'UNKNOWN')
+                days_since = candidate.get('days_since_detection', 0)
+                current_price = snapshot.get('price', 0)
+
+                self.logger.info(
+                    f"✅ {symbol}: Proactive evaluation ready "
+                    f"(Day {days_since}, Pattern: {pattern_type}, Price: ${current_price:.2f}, Bars: {len(bars_history)})"
+                )
+
                 # Construct an internal "Opportunity" object
                 # This mimics what the scanner would send, but self-generated.
                 opportunity = {
                     'symbol': symbol,
-                    'current_price': snapshot.get('price', 0),
-                    'volume_ratio': snapshot.get('volume_ratio', 1.0), # Need to calculated or approx
+                    'current_price': current_price,
+                    'volume_ratio': snapshot.get('volume_ratio', 1.0), # Will be recalculated from bars
                     'timestamp': datetime.now(),
                     'source': 'PROACTIVE_MONITOR', # Flag to know it's internal
-                    # Enrich with candidate info directly to save a DB call in should_enter if we optimized, 
+                    'bars_history': bars_history,  # ✅ FIX: Add bars for VWAP/volume analysis
+                    # Enrich with candidate info directly to save a DB call in should_enter if we optimized,
                     # but should_enter retrieves it anyway.
                 }
 
                 # 5. Check Entry (Reuse logic)
-                # We reuse should_enter. 
-                # Note: should_enter calls gets_bars_from_opportunity. 
-                # If we want to be efficient, we might want to pass pre-fetched bars if we have them.
-                # For now, let standard flow work (it will fetch bars if needed).
-                
+                # Now should_enter will have bars_history and can properly evaluate VWAP
+
                 # Filter trivial price/volume before full check to save resources?
                 # Base filters in should_enter do this.
-                
+
                 # Execute Logic
-                # We need to lock or ensure we don't double submit? 
+                # We need to lock or ensure we don't double submit?
                 # Base execution engine handles order management / duplicate positions.
-                
+
                 should_trade = await self.should_enter(opportunity)
-                
+
                 if should_trade:
                     self.logger.info(f"🚀 PROACTIVE TRIGGER: {symbol} triggered entry logic from internal monitor!")
                     # Execute Entry
                     await self._execute_entry(opportunity)
+                else:
+                    self.logger.debug(f"⏸️ {symbol}: Proactive evaluation completed - entry conditions not met")
 
         except Exception as e:
             self.logger.error(f"Error in _monitor_watchlist: {e}")
@@ -214,21 +232,21 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
     async def _fetch_single_snapshot_safe(self, symbol: str) -> Optional[Dict[str, Any]]:
         """Helper to fetch single snapshot without crashing"""
         try:
-            # We need Price and Volume. 
-            # get_smart_price gives price. 
+            # We need Price and Volume.
+            # get_smart_price gives price.
             # We also need relatively volume info if possible.
-            
+
             ticker = await self.execution_engine.broker.get_ticker(symbol)
             if not ticker:
                  return None
-                 
+
             # Extract basic data
             price = ticker.marketPrice() or ticker.last or ticker.close
-            
+
             # Approximating volume ratio is hard without historical data.
             # But the worker checks this again in should_enter using bars.
             # So here we just need "Current Price" to check against Levels (Resistance/Trap).
-            
+
             # Construct partial snapshot
             return {
                 'symbol': symbol,
@@ -238,6 +256,51 @@ class ShortSqueezeWorkerLogic(BaseWorkerLogic):
             }
         except Exception:
             return None
+
+    async def _fetch_intraday_bars(self, symbol: str) -> list:
+        """
+        Fetch intraday bars for VWAP and volume analysis.
+
+        This is the CRITICAL FIX for proactive monitoring.
+        Without bars, should_enter() cannot calculate VWAP and will reject the opportunity.
+
+        Args:
+            symbol: Stock symbol to fetch bars for
+
+        Returns:
+            List of bar dicts compatible with scanner format, or empty list if unavailable
+        """
+        try:
+            # Fetch 1-minute bars for today (up to 390 bars = full trading day)
+            # Using IBKR adapter's get_bars method
+            bars_data = await self.execution_engine.broker.get_bars(
+                symbol=symbol,
+                timeframe='1 min',
+                count=390  # Full trading day
+            )
+
+            if not bars_data or len(bars_data) == 0:
+                self.logger.debug(f"📊 {symbol}: No intraday bars available from IBKR")
+                return []
+
+            # Convert MarketData objects to dict format expected by get_bars_from_opportunity
+            bars_history = []
+            for bar in bars_data:
+                bars_history.append({
+                    'timestamp': bar.timestamp if hasattr(bar, 'timestamp') else datetime.now(),
+                    'open': bar.open,
+                    'high': bar.high,
+                    'low': bar.low,
+                    'close': bar.close,
+                    'volume': bar.volume if hasattr(bar, 'volume') else 0
+                })
+
+            self.logger.debug(f"📊 {symbol}: Fetched {len(bars_history)} intraday bars for analysis")
+            return bars_history
+
+        except Exception as e:
+            self.logger.warning(f"📊 {symbol}: Error fetching intraday bars: {e}")
+            return []
 
 
     async def should_enter(self, opportunity: Dict[str, Any]) -> bool:
