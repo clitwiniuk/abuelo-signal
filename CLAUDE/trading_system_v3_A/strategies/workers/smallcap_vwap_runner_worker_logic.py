@@ -169,16 +169,36 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
         # que suele ser el dict interno. Necesitamos acceder al estado persistente del worker.
         
         worker_pos_data = self.active_positions.get(symbol, {})
-        
+
         # 1. Recuperar o inicializar Stop Price actual
-        # Si no tiene stop dinámico trackeado, calcular el inicial
+        # CRITICAL: Try to restore from opportunity_data first (persisted state)
         if 'dynamic_stop_price' not in worker_pos_data:
-             # Fallback si acabamos de restaurar o empezar
-             entry_price = worker_pos_data.get('entry_price', getattr(worker_pos_data.get('position'), 'entry_price', current_price))
-             vwap_entry = get_val(current_bar, 'vwap', entry_price) if current_bar else entry_price
-             
-             worker_pos_data['dynamic_stop_price'] = self._calculate_initial_stop(entry_price, vwap_entry)
-        
+            # Try to restore from database
+            opp_data = worker_pos_data.get('opportunity_data', {})
+            restored_stop = opp_data.get('vwap_dynamic_stop_price')
+            restored_hwm = opp_data.get('vwap_high_water_mark')
+
+            if restored_stop and restored_stop > 0:
+                # Successfully restored from database
+                worker_pos_data['dynamic_stop_price'] = restored_stop
+                if restored_hwm and restored_hwm > 0:
+                    worker_pos_data['high_water_mark'] = restored_hwm
+
+                self.logger.info(
+                    f"🔄 {symbol}: Restored VWAP trailing state from DB "
+                    f"(Stop: ${restored_stop:.2f}, HWM: ${restored_hwm:.2f})"
+                )
+            else:
+                # Fallback: Calculate initial stop (new position or old trade without persisted state)
+                entry_price = worker_pos_data.get('entry_price', getattr(worker_pos_data.get('position'), 'entry_price', current_price))
+                vwap_entry = get_val(current_bar, 'vwap', entry_price) if current_bar else entry_price
+
+                worker_pos_data['dynamic_stop_price'] = self._calculate_initial_stop(entry_price, vwap_entry)
+
+                self.logger.debug(
+                    f"🆕 {symbol}: Initialized new stop at ${worker_pos_data['dynamic_stop_price']:.2f}"
+                )
+
         current_stop = worker_pos_data['dynamic_stop_price']
 
         # 2. Chequear Take Profit (NUEVO - antes faltaba)
@@ -224,22 +244,64 @@ class SmallcapVwapRunnerWorker(BaseWorkerLogic):
              worker_pos_data['high_water_mark'] = current_price
         
         # Actualizar High Water Mark
+        hwm_changed = False
+        stop_changed = False
+
         if current_price > worker_pos_data['high_water_mark']:
             worker_pos_data['high_water_mark'] = current_price
-            
+            hwm_changed = True
+
         # Calcular nuevo stop potencial basado en el nuevo High
         # Trailing Stop = High * (1 - trailing_pct)
         new_potential_stop = worker_pos_data['high_water_mark'] * (1 - self.trailing_stop_pct)
-        
+
         # Recuperar stop actual
         current_stop = worker_pos_data.get('dynamic_stop_price', 0)
-        
+
         # Solo subir el stop (nunca bajarlo)
         if new_potential_stop > current_stop:
             worker_pos_data['dynamic_stop_price'] = new_potential_stop
+            stop_changed = True
             # Loguear solo cambios significativos para no saturar
-            if new_potential_stop > current_stop * 1.005: 
+            if new_potential_stop > current_stop * 1.005:
                 self.logger.debug(f"↗️ {symbol}: Trailing Stop raised to {new_potential_stop:.2f} (High: {worker_pos_data['high_water_mark']:.2f})")
+
+        # CRITICAL: Persist trailing state if changed
+        if hwm_changed or stop_changed:
+            await self._persist_vwap_trailing_state(symbol, worker_pos_data)
+
+    async def _persist_vwap_trailing_state(self, symbol: str, worker_pos_data: Dict[str, Any]):
+        """
+        Persiste el estado del trailing stop VWAP al opportunity_data
+
+        CRITICAL: Previene pérdida de dynamic_stop_price y high_water_mark en restart
+        """
+        try:
+            # Get current state
+            high_water_mark = worker_pos_data.get('high_water_mark', 0.0)
+            dynamic_stop_price = worker_pos_data.get('dynamic_stop_price', 0.0)
+
+            # Update opportunity_data in memory
+            if 'opportunity_data' not in worker_pos_data:
+                worker_pos_data['opportunity_data'] = {}
+
+            worker_pos_data['opportunity_data']['vwap_high_water_mark'] = high_water_mark
+            worker_pos_data['opportunity_data']['vwap_dynamic_stop_price'] = dynamic_stop_price
+
+            # Persist to database via ExecutionEngine
+            await self.execution_engine.update_position_metadata(
+                symbol=symbol,
+                strategy=self.worker_name,
+                opportunity_data=worker_pos_data['opportunity_data']
+            )
+
+            self.logger.debug(
+                f"💾 {symbol}: Persisted VWAP trailing state "
+                f"(HWM: ${high_water_mark:.2f}, Stop: ${dynamic_stop_price:.2f})"
+            )
+
+        except Exception as e:
+            self.logger.error(f"❌ Error persisting VWAP trailing state for {symbol}: {e}")
 
     def _calculate_initial_stop(self, entry_price: float, vwap: float) -> float:
         """
