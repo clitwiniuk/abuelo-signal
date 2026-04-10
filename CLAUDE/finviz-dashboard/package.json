@@ -7,7 +7,7 @@
   "scripts": {
     "dev":          "vite",
     "build":        "vite build",
-    "electron-dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron-dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && NODE_ENV=development electron .\"",
     "dist":         "vite build && electron-builder --mac"
   },
   "dependencies": {
