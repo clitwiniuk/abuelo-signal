@@ -394,7 +394,9 @@ function HypeChart({ curvesData, hiddenTickers = [] }) {
   const onWheel = (e) => {
     e.preventDefault();
     const rect = svgRef.current.getBoundingClientRect();
-    const factor = e.deltaY > 0 ? 1.18 : 0.85;
+    // On macOS, shift+scroll converts deltaY→deltaX; use whichever is non-zero
+    const delta = e.deltaY !== 0 ? e.deltaY : e.deltaX;
+    const factor = delta > 0 ? 1.18 : 0.85;
     if (e.shiftKey) {
       // Zoom Y centrado en cursor
       const ratioY = 1 - (e.clientY - rect.top - PAD.t * rect.height / chartH) / (IH * rect.height / chartH);
@@ -439,7 +441,9 @@ function HypeChart({ curvesData, hiddenTickers = [] }) {
   const step = xRange > 300 ? 60 : xRange > 120 ? 30 : xRange > 60 ? 15 : 5;
   const timeLabels = [];
   for (let m = Math.ceil(xMin / step) * step; m <= xMax; m += step) {
-    const total = m + 570, h = Math.floor(total / 60), mn = ((total % 60) + 60) % 60;
+    const totalMin = m + 570;  // minutos desde medianoche (570 = 09:30)
+    const absMin = ((totalMin % 1440) + 1440) % 1440;  // normalizar a 0-1439
+    const h = Math.floor(absMin / 60), mn = absMin % 60;
     timeLabels.push({ m, label: `${String(h).padStart(2,"0")}:${String(mn).padStart(2,"0")}` });
   }
 
