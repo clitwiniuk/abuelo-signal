@@ -650,12 +650,13 @@ def get_hype_curves(limit: int = 20):
         for _, row in sub.iterrows():
             try:
                 ts = row["timestamp"]
-                t = datetime.fromisoformat(ts.replace("Z", "+00:00"))
-                t_et = t.astimezone(ET_TIMEZONE)
-                time_min = t_et.hour * 60 + t_et.minute - market_open_min
+                # bar_time from IBKR is already stored as naive ET string —
+                # avoid astimezone() which would misinterpret it as local tz
+                t = datetime.fromisoformat(ts[:19])
+                time_min = t.hour * 60 + t.minute - market_open_min
                 points.append({
                     "time_min":  time_min,
-                    "time_str":  t_et.strftime("%H:%M"),
+                    "time_str":  t.strftime("%H:%M"),
                     "hype_cum":  safe_float(row["hype_cum"], decimals=3),
                     "delta_5m":  safe_float(row["delta_5m"], decimals=3),
                     "rel_vol":   safe_float(row["rel_volume"], decimals=2),
