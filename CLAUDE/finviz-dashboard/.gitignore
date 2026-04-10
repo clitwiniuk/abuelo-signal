@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-react/
+.DS_Store
+*.dmg
+*.blockmap
+python/finviz_snapshots.db
