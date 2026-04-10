@@ -654,6 +654,9 @@ def get_hype_curves(limit: int = 20):
                 # avoid astimezone() which would misinterpret it as local tz
                 t = datetime.fromisoformat(ts[:19])
                 time_min = t.hour * 60 + t.minute - market_open_min
+                # Skip premarket bars before 9:00 ET (time_min < -30)
+                if time_min < -30:
+                    continue
                 points.append({
                     "time_min":  time_min,
                     "time_str":  t.strftime("%H:%M"),
