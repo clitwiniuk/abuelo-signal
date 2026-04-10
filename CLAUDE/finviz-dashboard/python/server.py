@@ -1,14 +1,18 @@
 """
 =============================================================
-  FINVIZ SNAPSHOT - Backend Python
-  Scraping de la tabla principal de finviz.com homepage
+  FINVIZ SNAPSHOT + HYPE ENGINE - Backend Python
+  Scraping finviz.com cada 5 minutos + análisis hype intradía
   API local en http://localhost:5050
 =============================================================
   Dependencias:
     pip install fastapi uvicorn pytz pandas requests beautifulsoup4
+  Opcional (barras IBKR):
+    pip install ib_insync
 =============================================================
 """
 
+import json
+import math
 import sqlite3
 import logging
 import threading
@@ -26,21 +30,39 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
+from ibkr_service import IBKRDataService
+
+def df_records(df):
+    """Convierte DataFrame a lista de dicts reemplazando NaN/Inf por None."""
+    return json.loads(df.to_json(orient="records"))
+
+def safe_float(val, default=0.0, decimals=None):
+    """Convierte val a float seguro (None si NaN/Inf), con redondeo opcional."""
+    try:
+        v = float(val)
+        if math.isnan(v) or math.isinf(v):
+            return None
+        return round(v, decimals) if decimals is not None else v
+    except (TypeError, ValueError):
+        return default
+from hype_engine import compute_hype
+
 # ------------------------------------------------------------------
 # CONFIGURACIÓN
 # ------------------------------------------------------------------
 
 _APP_DATA_DIR = Path.home() / "Library" / "Application Support" / "finviz-dashboard"
 _APP_DATA_DIR.mkdir(parents=True, exist_ok=True)
-DB_PATH       = str(_APP_DATA_DIR / "finviz_snapshots.db")
-INTERVAL_SEC = 15 * 60
+DB_PATH      = str(_APP_DATA_DIR / "finviz_snapshots.db")
+INTERVAL_SEC = 5 * 60   # 5 minutos
 ET_TIMEZONE  = pytz.timezone("America/New_York")
 MARKET_OPEN  = (9, 30)
 MARKET_CLOSE = (16, 0)
 
 FINVIZ_URL = "https://finviz.com/"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 }
 
 KNOWN_CATEGORIES = {
@@ -62,6 +84,18 @@ scheduler_status = {
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
+def _on_ibkr_bars_saved():
+    """Callback: se llama cada vez que IBKR termina de guardar bars (cada ~60s)."""
+    try:
+        compute_hype(DB_PATH)
+        scheduler_status["last_hype_refresh"] = datetime.now(ET_TIMEZONE).isoformat()
+        add_log(f"⚡ Hype actualizado (IBKR bars)")
+        log.info("Hype recalculado tras fetch IBKR")
+    except Exception as e:
+        log.warning(f"Hype recompute error: {e}")
+
+ibkr_svc = IBKRDataService(DB_PATH, on_bars_saved=_on_ibkr_bars_saved, on_status_change=lambda msg: add_log(msg))
+
 # ------------------------------------------------------------------
 # FASTAPI APP
 # ------------------------------------------------------------------
@@ -69,6 +103,21 @@ log = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     create_db()
+    # Pre-cargar tickers del día desde la DB (funciona aunque el mercado esté cerrado)
+    try:
+        day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+        conn = sqlite3.connect(DB_PATH)
+        rows = conn.execute(
+            "SELECT DISTINCT ticker FROM snapshots WHERE timestamp LIKE ?", (f"{day}%",)
+        ).fetchall()
+        conn.close()
+        if rows:
+            tickers = [r[0] for r in rows]
+            ibkr_svc.add_tickers(tickers)
+            add_log(f"Tickers cargados desde DB: {len(tickers)}")
+    except Exception as e:
+        add_log(f"WARN: no se pudieron cargar tickers: {e}")
+    ibkr_svc.start()
     add_log("Servidor iniciado")
     yield
 
@@ -86,6 +135,7 @@ app.add_middleware(
 
 def create_db():
     conn = sqlite3.connect(DB_PATH)
+
     conn.execute("""
         CREATE TABLE IF NOT EXISTS snapshots (
             id         INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -97,6 +147,68 @@ def create_db():
             volume     TEXT
         )
     """)
+
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS market_bars (
+            id       INTEGER PRIMARY KEY AUTOINCREMENT,
+            bar_time TEXT NOT NULL,
+            ticker   TEXT NOT NULL,
+            open     REAL,
+            high     REAL,
+            low      REAL,
+            close    REAL,
+            volume   INTEGER,
+            vwap     REAL
+        )
+    """)
+    conn.execute("""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_bars_ticker_time
+        ON market_bars(ticker, bar_time)
+    """)
+
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS hype_metrics (
+            id              INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp       TEXT NOT NULL,
+            ticker          TEXT NOT NULL,
+            volume_1m       INTEGER,
+            rel_volume      REAL,
+            hype_cum        REAL,
+            delta_5m        REAL,
+            delta_15m       REAL,
+            delta_1h        REAL,
+            close_price     REAL,
+            price_change_1m REAL,
+            signal          TEXT,
+            finviz_category TEXT,
+            source          TEXT DEFAULT 'finviz'
+        )
+    """)
+    # Migración: asegurar que el índice (ticker, timestamp) es UNIQUE
+    # Si existe como no-único, lo borramos para recrearlo como único
+    try:
+        existing = conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='index' AND name='idx_hype_ticker_ts'"
+        ).fetchone()
+        if existing:
+            # Verificar si ya es único
+            is_unique = conn.execute(
+                "SELECT \"unique\" FROM pragma_index_list('hype_metrics') WHERE name='idx_hype_ticker_ts'"
+            ).fetchone()
+            if is_unique and not is_unique[0]:
+                conn.execute("DROP INDEX idx_hype_ticker_ts")
+    except Exception:
+        pass
+
+    conn.execute("""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_hype_ticker_ts
+        ON hype_metrics(ticker, timestamp)
+    """)
+    conn.execute("""
+        CREATE INDEX IF NOT EXISTS idx_hype_ts
+        ON hype_metrics(timestamp)
+    """)
+
     conn.commit()
     conn.close()
 
@@ -200,7 +312,7 @@ def save_rows(rows: list, timestamp: str) -> int:
     return len(rows)
 
 # ------------------------------------------------------------------
-# SNAPSHOT
+# SNAPSHOT + HYPE
 # ------------------------------------------------------------------
 
 def run_snapshot(force: bool = False):
@@ -209,22 +321,46 @@ def run_snapshot(force: bool = False):
 
     if not market and not force:
         add_log("Mercado cerrado — snapshot omitido")
+        # Aun así, mantener IBKR actualizado con tickers del día (aftermarket)
+        try:
+            day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+            conn = sqlite3.connect(DB_PATH)
+            rows_db = conn.execute(
+                "SELECT DISTINCT ticker FROM snapshots WHERE timestamp LIKE ?", (f"{day}%",)
+            ).fetchall()
+            conn.close()
+            if rows_db:
+                ibkr_svc.add_tickers([r[0] for r in rows_db])
+        except Exception:
+            pass
         return
 
     timestamp = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%dT%H:%M:%S%z")
-    add_log(f"{'⚡ Manual' if force and not market else '▶ Auto'} — {timestamp}")
+    add_log(f"{'Manual' if force and not market else 'Auto'} — {timestamp}")
 
     rows = fetch_homepage()
     if not rows:
-        add_log("✗ Sin datos")
+        add_log("Sin datos de Finviz")
         return
 
     for cat, n in sorted(Counter(r["category"] for r in rows).items()):
-        add_log(f"  ✓ {cat}: {n}")
+        add_log(f"  {cat}: {n}")
 
     total = save_rows(rows, timestamp)
     scheduler_status["last_snapshot"] = timestamp
-    add_log(f"✅ {total} registros guardados")
+    add_log(f"Snapshot: {total} registros guardados")
+
+    # Pasar tickers nuevos al servicio IBKR
+    tickers = list({r["ticker"] for r in rows})
+    ibkr_svc.add_tickers(tickers)
+
+    # Calcular métricas hype
+    try:
+        compute_hype(DB_PATH)
+        scheduler_status["last_hype_refresh"] = datetime.now(ET_TIMEZONE).isoformat()
+        add_log(f"Hype calculado para {len(tickers)} tickers")
+    except Exception as e:
+        add_log(f"ERROR hype: {e}")
 
 # ------------------------------------------------------------------
 # SCHEDULER
@@ -239,7 +375,7 @@ def scheduler_loop():
             time.sleep(0.5)
 
 # ------------------------------------------------------------------
-# ENDPOINTS — LIVE
+# ENDPOINTS — LIVE (existentes)
 # ------------------------------------------------------------------
 
 @app.get("/status")
@@ -266,6 +402,22 @@ def manual_snapshot():
     threading.Thread(target=lambda: run_snapshot(force=True), daemon=True).start()
     return {"ok": True}
 
+@app.post("/hype/reset")
+def reset_hype():
+    """Borra solo hype_metrics de hoy (mantiene market_bars) y recomputa desde cero."""
+    day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+    conn = sqlite3.connect(DB_PATH)
+    deleted = conn.execute("DELETE FROM hype_metrics WHERE timestamp LIKE ?", (f"{day}%",)).rowcount
+    conn.commit()
+    conn.close()
+    add_log(f"Hype reset: {deleted} filas borradas, recomputando...")
+    try:
+        compute_hype(DB_PATH)
+        add_log("✅ Hype recomputado desde cero")
+    except Exception as e:
+        add_log(f"ERROR recompute: {e}")
+    return {"ok": True, "day": day}
+
 @app.get("/data/latest")
 def get_latest_all():
     conn = sqlite3.connect(DB_PATH)
@@ -280,7 +432,7 @@ def get_latest_all():
         conn, params=(ts,)
     )
     conn.close()
-    return df.to_dict(orient="records")
+    return df_records(df)
 
 @app.get("/data/{category}/latest")
 def get_latest_category(category: str):
@@ -298,10 +450,10 @@ def get_latest_category(category: str):
         conn, params=(category, ts)
     )
     conn.close()
-    return df.to_dict(orient="records")
+    return df_records(df)
 
 # ------------------------------------------------------------------
-# ENDPOINTS — HISTORY
+# ENDPOINTS — HISTORY (existentes)
 # ------------------------------------------------------------------
 
 @app.get("/history/days")
@@ -331,7 +483,7 @@ def get_snapshot_at(timestamp: str):
         conn, params=(timestamp,)
     )
     conn.close()
-    return df.to_dict(orient="records")
+    return df_records(df)
 
 @app.get("/history/day_summary/{day}")
 def get_day_summary(day: str):
@@ -367,10 +519,6 @@ def get_day_summary(day: str):
     summary.sort(key=lambda x: x["max_change_num"], reverse=True)
     return summary
 
-# ------------------------------------------------------------------
-# ENDPOINTS — OPPORTUNITIES
-# ------------------------------------------------------------------
-
 @app.get("/opportunities/{day}")
 def get_opportunities(day: str, min_appearances: int = 2):
     conn = sqlite3.connect(DB_PATH)
@@ -385,7 +533,6 @@ def get_opportunities(day: str, min_appearances: int = 2):
     df["change_num"] = df["change_pct"].apply(parse_change)
     df["volume_num"] = df["volume"].apply(parse_volume)
 
-    # 1. PERSISTENT GAINERS
     gainers_df = df[df["category"] == "Top Gainers"]
     persistent = []
     for ticker, group in gainers_df.groupby("ticker"):
@@ -403,7 +550,6 @@ def get_opportunities(day: str, min_appearances: int = 2):
             })
     persistent.sort(key=lambda x: (x["appearances"], x["max_change_num"]), reverse=True)
 
-    # 2. VOLUME CLIMBERS
     climbers = []
     for ticker, group in df.groupby("ticker"):
         by_ts = group.groupby("timestamp")["volume_num"].max().reset_index().sort_values("timestamp")
@@ -414,23 +560,147 @@ def get_opportunities(day: str, min_appearances: int = 2):
         if growth_pct > 0:
             last_row = group.iloc[-1]
             climbers.append({
-                "ticker":             ticker,
-                "volume_start":       group[group["timestamp"] == by_ts.iloc[0]["timestamp"]].iloc[0]["volume"],
-                "volume_end":         group[group["timestamp"] == by_ts.iloc[-1]["timestamp"]].iloc[0]["volume"],
-                "volume_growth_pct":  round(growth_pct, 1),
-                "last_price":         last_row["price"],
-                "last_change":        last_row["change_pct"],
-                "appearances":        len(by_ts),
-                "categories":         group["category"].unique().tolist(),
-                "first_seen":         group["timestamp"].min(),
-                "last_seen":          group["timestamp"].max(),
+                "ticker":            ticker,
+                "volume_start":      group[group["timestamp"] == by_ts.iloc[0]["timestamp"]].iloc[0]["volume"],
+                "volume_end":        group[group["timestamp"] == by_ts.iloc[-1]["timestamp"]].iloc[0]["volume"],
+                "volume_growth_pct": round(growth_pct, 1),
+                "last_price":        last_row["price"],
+                "last_change":       last_row["change_pct"],
+                "appearances":       len(by_ts),
+                "categories":        group["category"].unique().tolist(),
+                "first_seen":        group["timestamp"].min(),
+                "last_seen":         group["timestamp"].max(),
             })
     climbers.sort(key=lambda x: x["volume_growth_pct"], reverse=True)
 
-    return {
-        "persistent_gainers": persistent,
-        "volume_climbers":    climbers[:20],
-    }
+    return {"persistent_gainers": persistent, "volume_climbers": climbers[:20]}
+
+# ------------------------------------------------------------------
+# ENDPOINTS — HYPE (nuevos)
+# ------------------------------------------------------------------
+
+@app.get("/ibkr/status")
+def get_ibkr_status():
+    return ibkr_svc.get_status()
+
+@app.get("/hype/ranking")
+def get_hype_ranking():
+    """Ranking actual de tickers por delta_5m (última métrica de cada ticker hoy)."""
+    day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql(
+        """SELECT h.ticker, h.rel_volume, h.hype_cum,
+                  h.delta_5m, h.delta_15m, h.delta_1h,
+                  h.close_price, h.price_change_1m,
+                  h.signal, h.finviz_category, h.source, h.timestamp
+           FROM hype_metrics h
+           INNER JOIN (
+               SELECT ticker, MAX(timestamp) AS max_ts
+               FROM hype_metrics WHERE timestamp LIKE ?
+               GROUP BY ticker
+           ) latest ON h.ticker = latest.ticker AND h.timestamp = latest.max_ts
+           ORDER BY h.delta_5m IS NULL, h.delta_5m DESC""",
+        conn, params=(f"{day}%",)
+    )
+    conn.close()
+    return df_records(df)
+
+@app.get("/hype/curves")
+def get_hype_curves(limit: int = 20):
+    """
+    Devuelve series temporales de hype_cum para TODOS los tickers del día,
+    ordenados por pico máximo de hype_cum (los más activos primero).
+    El campo 'tickers' tiene todos; el cliente decide cuáles mostrar.
+    """
+    day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+    conn = sqlite3.connect(DB_PATH)
+
+    # Todos los tickers con actividad hoy, ordenados por peak_hype
+    ranked = pd.read_sql(
+        """SELECT ticker, MAX(hype_cum) AS peak_hype
+           FROM hype_metrics
+           WHERE timestamp LIKE ?
+           GROUP BY ticker
+           ORDER BY peak_hype DESC""",
+        conn, params=(f"{day}%",)
+    )
+
+    if ranked.empty:
+        conn.close()
+        return {"day": day, "tickers": [], "top_limit": limit}
+
+    all_tickers = ranked["ticker"].tolist()
+    placeholders = ",".join("?" * len(all_tickers))
+
+    df = pd.read_sql(
+        f"""SELECT ticker, timestamp, hype_cum, delta_5m, rel_volume, close_price, signal
+            FROM hype_metrics
+            WHERE timestamp LIKE ? AND ticker IN ({placeholders})
+            ORDER BY ticker, timestamp""",
+        conn, params=[f"{day}%"] + all_tickers
+    )
+    conn.close()
+
+    result = []
+    market_open_min = 9 * 60 + 30
+
+    for ticker in all_tickers:
+        sub = df[df["ticker"] == ticker]
+        points = []
+        for _, row in sub.iterrows():
+            try:
+                ts = row["timestamp"]
+                t = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                t_et = t.astimezone(ET_TIMEZONE)
+                time_min = t_et.hour * 60 + t_et.minute - market_open_min
+                points.append({
+                    "time_min":  time_min,
+                    "time_str":  t_et.strftime("%H:%M"),
+                    "hype_cum":  safe_float(row["hype_cum"], decimals=3),
+                    "delta_5m":  safe_float(row["delta_5m"], decimals=3),
+                    "rel_vol":   safe_float(row["rel_volume"], decimals=2),
+                    "close":     safe_float(row["close_price"], decimals=2),
+                    "signal":    row["signal"] if row["signal"] and str(row["signal"]) != "nan" else None,
+                })
+            except Exception:
+                continue
+        if points:
+            result.append({"ticker": ticker, "points": points})
+
+    return {"day": day, "tickers": result, "top_limit": limit}
+
+@app.get("/hype/signals")
+def get_hype_signals(limit: int = 50):
+    """Señales detectadas hoy (spike, trending, early_momentum)."""
+    day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql(
+        """SELECT ticker, timestamp, signal, rel_volume, delta_5m,
+                  close_price, price_change_1m, finviz_category
+           FROM hype_metrics
+           WHERE timestamp LIKE ? AND signal IS NOT NULL
+           ORDER BY timestamp DESC
+           LIMIT ?""",
+        conn, params=(f"{day}%", limit)
+    )
+    conn.close()
+    return df_records(df)
+
+@app.get("/hype/history/{ticker}")
+def get_ticker_hype_history(ticker: str, days: int = 5):
+    """Histórico de métricas hype para un ticker específico (últimos N días)."""
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql(
+        """SELECT timestamp, rel_volume, hype_cum, delta_5m, delta_15m, delta_1h,
+                  close_price, price_change_1m, signal, source
+           FROM hype_metrics
+           WHERE ticker=?
+           ORDER BY timestamp DESC
+           LIMIT ?""",
+        conn, params=(ticker.upper(), days * 100)
+    )
+    conn.close()
+    return df_records(df)
 
 # ------------------------------------------------------------------
 # ENTRY POINT
