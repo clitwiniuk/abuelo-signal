@@ -212,6 +212,12 @@ function HistoryView() {
         {days.length===0 && <div className="hsidebar-empty">Sin historial aún</div>}
       </div>
       <div className="history-main">
+        <div style={{display:"flex", justifyContent:"flex-end", padding:"4px 8px"}}>
+          <a href={`${API}/history/export_csv`} download
+             className="pin-btn" style={{fontSize:11, padding:"3px 10px", textDecoration:"none"}}>
+            ↓ Exportar todo CSV
+          </a>
+        </div>
         {selectedDay && (<>
           <div className="subtabs">
             <button className={`subtab ${subView==="snapshot"?"subtab-active":""}`} onClick={() => setSubView("snapshot")}>◷ SNAPSHOT POR HORA</button>

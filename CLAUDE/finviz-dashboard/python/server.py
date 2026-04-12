@@ -519,6 +519,27 @@ def get_day_summary(day: str):
     summary.sort(key=lambda x: x["max_change_num"], reverse=True)
     return summary
 
+@app.get("/history/export_csv")
+def export_all_snapshots_csv():
+    """Export all snapshots from all days as a CSV file download."""
+    import io
+    from fastapi.responses import StreamingResponse
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql(
+        "SELECT timestamp, category, ticker, price, change_pct, volume FROM snapshots ORDER BY timestamp, category, ticker",
+        conn
+    )
+    conn.close()
+    buf = io.StringIO()
+    df.to_csv(buf, index=False)
+    buf.seek(0)
+    filename = f"finviz_snapshots_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    return StreamingResponse(
+        iter([buf.getvalue()]),
+        media_type="text/csv",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
+
 @app.get("/opportunities/{day}")
 def get_opportunities(day: str, min_appearances: int = 2):
     conn = sqlite3.connect(DB_PATH)
