@@ -708,6 +708,42 @@ def get_hype_curves(limit: int = 20):
 
     return {"day": day, "tickers": result, "top_limit": limit}
 
+@app.get("/hype/candidates")
+def get_hype_candidates():
+    """Tickers A+ con señal 'confirmed' hoy, ordenados por mom_score desc.
+
+    Filtro: signal='confirmed' (vel>0, persistence>=8, chg 20-40%)
+    Edge histórico: 100% WR, median +8.8% al cierre.
+
+    Respuesta: lista de objetos con campos semánticos listos para consumir.
+    """
+    day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql(
+        """SELECT h.ticker,
+                  h.hype_cum   AS mom_score,
+                  h.rel_volume AS persistence,
+                  h.delta_5m   AS velocity,
+                  h.delta_15m  AS chg_initial,
+                  h.delta_1h   AS chg_now,
+                  h.close_price AS price,
+                  h.timestamp
+           FROM hype_metrics h
+           INNER JOIN (
+               SELECT ticker, MAX(timestamp) AS max_ts
+               FROM hype_metrics WHERE timestamp LIKE ? AND signal = 'confirmed'
+               GROUP BY ticker
+           ) latest ON h.ticker = latest.ticker AND h.timestamp = latest.max_ts
+           ORDER BY h.hype_cum DESC""",
+        conn, params=(f"{day}%",)
+    )
+    conn.close()
+    return {
+        "day": day,
+        "count": len(df),
+        "candidates": df_records(df),
+    }
+
 @app.get("/hype/signals")
 def get_hype_signals(limit: int = 50):
     """Señales de momentum detectadas hoy (confirmed, accelerating, topping, new)."""
