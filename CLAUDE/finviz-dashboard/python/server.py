@@ -606,13 +606,27 @@ def get_ibkr_status():
 
 @app.get("/hype/ranking")
 def get_hype_ranking():
-    """Ranking actual de tickers por delta_5m (última métrica de cada ticker hoy)."""
+    """Ranking de tickers por mom_score (última métrica de cada ticker hoy).
+
+    Campos devueltos (nombres semánticos):
+      mom_score    — composite score: chg_initial × sign(vel) × log(1+persistence)
+      persistence  — N snapshots en Top Gainers hoy
+      velocity     — aceleración del change% (%/min), >0 = subiendo
+      chg_initial  — change% en primera aparición
+      chg_now      — change% en último snapshot
+      signal       — confirmed | accelerating | topping | new | null
+    """
     day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
     conn = sqlite3.connect(DB_PATH)
     df = pd.read_sql(
-        """SELECT h.ticker, h.rel_volume, h.hype_cum,
-                  h.delta_5m, h.delta_15m, h.delta_1h,
-                  h.close_price, h.price_change_1m,
+        """SELECT h.ticker,
+                  h.hype_cum      AS mom_score,
+                  h.rel_volume    AS persistence,
+                  h.delta_5m      AS velocity,
+                  h.delta_15m     AS chg_initial,
+                  h.delta_1h      AS chg_now,
+                  h.close_price,
+                  h.price_change_1m,
                   h.signal, h.finviz_category, h.source, h.timestamp
            FROM hype_metrics h
            INNER JOIN (
@@ -620,7 +634,7 @@ def get_hype_ranking():
                FROM hype_metrics WHERE timestamp LIKE ?
                GROUP BY ticker
            ) latest ON h.ticker = latest.ticker AND h.timestamp = latest.max_ts
-           ORDER BY h.delta_5m IS NULL, h.delta_5m DESC""",
+           ORDER BY h.hype_cum IS NULL, h.hype_cum DESC""",
         conn, params=(f"{day}%",)
     )
     conn.close()
@@ -636,7 +650,7 @@ def get_hype_curves(limit: int = 20):
     day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
     conn = sqlite3.connect(DB_PATH)
 
-    # Todos los tickers con actividad hoy, ordenados por peak_hype
+    # Todos los tickers con actividad hoy, ordenados por peak mom_score
     ranked = pd.read_sql(
         """SELECT ticker, MAX(hype_cum) AS peak_hype
            FROM hype_metrics
@@ -696,11 +710,15 @@ def get_hype_curves(limit: int = 20):
 
 @app.get("/hype/signals")
 def get_hype_signals(limit: int = 50):
-    """Señales detectadas hoy (spike, trending, early_momentum)."""
+    """Señales de momentum detectadas hoy (confirmed, accelerating, topping, new)."""
     day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
     conn = sqlite3.connect(DB_PATH)
     df = pd.read_sql(
-        """SELECT ticker, timestamp, signal, rel_volume, delta_5m,
+        """SELECT ticker, timestamp, signal,
+                  hype_cum   AS mom_score,
+                  rel_volume AS persistence,
+                  delta_5m   AS velocity,
+                  delta_15m  AS chg_initial,
                   close_price, price_change_1m, finviz_category
            FROM hype_metrics
            WHERE timestamp LIKE ? AND signal IS NOT NULL
@@ -713,10 +731,15 @@ def get_hype_signals(limit: int = 50):
 
 @app.get("/hype/history/{ticker}")
 def get_ticker_hype_history(ticker: str, days: int = 5):
-    """Histórico de métricas hype para un ticker específico (últimos N días)."""
+    """Histórico de momentum para un ticker específico (últimos N días)."""
     conn = sqlite3.connect(DB_PATH)
     df = pd.read_sql(
-        """SELECT timestamp, rel_volume, hype_cum, delta_5m, delta_15m, delta_1h,
+        """SELECT timestamp,
+                  hype_cum   AS mom_score,
+                  rel_volume AS persistence,
+                  delta_5m   AS velocity,
+                  delta_15m  AS chg_initial,
+                  delta_1h   AS chg_now,
                   close_price, price_change_1m, signal, source
            FROM hype_metrics
            WHERE ticker=?

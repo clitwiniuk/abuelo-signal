@@ -1,26 +1,48 @@
 """
 =============================================================
-  Hype Engine
-  Computes intraday hype/momentum metrics per ticker.
+  Momentum Engine  (replaces volume-based hype engine)
 
-  Two data sources (auto-detected, best available):
-    1. market_bars  — 1-min OHLCV from IBKR (precise)
-    2. snapshots    — 5-min cumulative volume from Finviz (fallback)
+  Metrics computed per ticker-day from Finviz snapshots:
+
+    velocity     — slope of change_pct over time (%/min)
+                   positive = momentum accelerating
+                   negative = momentum dying
+    persistence  — N snapshots seen in Top Gainers today
+    mom_score    — composite: chg_initial × sign(vel) × log(1+persistence)
+                   comparable across price ranges (all % based)
+
+  Signal classification:
+    "confirmed"     — vel>0, persistence>=8, chg 20-40%  → proven edge
+    "accelerating"  — vel>0, chg 20-40%, persistence<8   → watch
+    "topping"       — velocity turning negative            → avoid/exit
+    "new"           — first/second appearance, no vel yet  → wait
+
+  DB column mapping (backward-compat with frontend):
+    hype_cum        ← mom_score
+    rel_volume      ← persistence (N snapshots)
+    delta_5m        ← velocity (%/min)
+    delta_15m       ← chg_initial (% at first appearance)
+    delta_1h        ← chg_now (% at latest snapshot)
+    volume_1m       ← dollar_volume at entry (price × vol)
+    price_change_1m ← price change last snapshot → previous
 =============================================================
 """
-import sqlite3
 import logging
+import math
+import sqlite3
 from datetime import datetime
 
+import numpy as np
 import pandas as pd
 import pytz
 
 log = logging.getLogger(__name__)
 ET = pytz.timezone("America/New_York")
 
-SPIKE_THRESHOLD   = 2.5   # rel_volume > X  → "spike"
-TRENDING_DELTA    = 3.0   # delta_5m   > X  → "trending"
-EARLY_MOM_DELTA   = 1.5   # delta_5m   > X  → "early_momentum"
+# Signal thresholds (from empirical analysis on 14 days data)
+CHG_LO, CHG_HI   = 20.0, 40.0   # proven edge bucket
+VEL_ACC           = 0.0           # velocity > 0 = accelerating
+PERSIST_CONFIRMED = 8             # ≥8 snapshots ≈ ≥2h in list → 100% WR
 
 
 # ------------------------------------------------------------------
@@ -28,7 +50,7 @@ EARLY_MOM_DELTA   = 1.5   # delta_5m   > X  → "early_momentum"
 # ------------------------------------------------------------------
 
 def compute_hype(db_path: str, day: str | None = None):
-    """Compute and persist hype metrics for today's tickers."""
+    """Compute and persist momentum metrics for today's tickers."""
     now_et = datetime.now(ET)
     if day is None:
         day = now_et.strftime("%Y-%m-%d")
@@ -36,145 +58,84 @@ def compute_hype(db_path: str, day: str | None = None):
 
     conn = sqlite3.connect(db_path)
     try:
-        ibkr_tickers = _get_ibkr_tickers(conn, day)
-        finviz_tickers = _get_finviz_tickers(conn, day)
-
+        tickers = _get_finviz_tickers(conn, day)
         computed = 0
-        for ticker in ibkr_tickers:
-            if _compute_from_bars(conn, ticker, day, timestamp):
+        for ticker in tickers:
+            if _compute_momentum(conn, ticker, day, timestamp):
                 computed += 1
-
-        for ticker in finviz_tickers - ibkr_tickers:
-            if _compute_from_snapshots(conn, ticker, day, timestamp):
-                computed += 1
-
         conn.commit()
         if computed:
-            log.info(f"Hype computed: {computed} tickers ({len(ibkr_tickers)} IBKR, "
-                     f"{len(finviz_tickers - ibkr_tickers)} Finviz fallback)")
+            log.info(f"Momentum computed: {computed} tickers for {day}")
     finally:
         conn.close()
 
 
 # ------------------------------------------------------------------
-# IBKR BARS PATH (1-min precision)
+# CORE COMPUTATION
 # ------------------------------------------------------------------
 
-def _get_ibkr_tickers(conn, day: str) -> set[str]:
-    rows = conn.execute(
-        "SELECT DISTINCT ticker FROM market_bars WHERE bar_time LIKE ?",
-        (f"{day}%",)
-    ).fetchall()
-    return {r[0] for r in rows}
-
-
-def _compute_from_bars(conn, ticker: str, day: str, timestamp: str) -> bool:
-    df = pd.read_sql(
-        "SELECT bar_time, open, high, low, close, volume FROM market_bars "
-        "WHERE ticker=? AND bar_time LIKE ? ORDER BY bar_time",
-        conn, params=(ticker, f"{day}%")
-    )
-    if df.empty or len(df) < 2:
-        return False
-
-    avg_vol = df["volume"].replace(0, pd.NA).mean()
-    if not avg_vol or avg_vol == 0:
-        return False
-
-    df["rel_vol"] = df["volume"] / avg_vol
-    df["hype_cum"] = df["rel_vol"].cumsum()
-
-    finviz_cat = _last_finviz_cat(conn, ticker, day)
-
-    # Guardar UNA FILA POR BAR — así el gráfico tiene resolución de 1 minuto
-    for pos in range(1, len(df)):
-        row  = df.iloc[pos]
-        prev = df.iloc[pos - 1]
-        sub  = df.iloc[:pos + 1]
-
-        rel_vol   = float(row["rel_vol"])
-        hype_cum  = float(row["hype_cum"])
-        close     = float(row["close"])
-        price_chg = close - float(prev["close"])
-
-        delta_5m  = _delta(sub, 5)
-        delta_15m = _delta(sub, 15)
-        delta_1h  = _delta(sub, 60)
-        signal    = _signal(rel_vol, delta_5m)
-
-        bar_ts = str(row["bar_time"])
-
-        conn.execute(
-            """INSERT OR REPLACE INTO hype_metrics
-                   (timestamp, ticker, volume_1m, rel_volume, hype_cum,
-                    delta_5m, delta_15m, delta_1h, close_price, price_change_1m,
-                    signal, finviz_category, source)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-            (bar_ts, ticker, int(row["volume"]), rel_vol, hype_cum,
-             delta_5m, delta_15m, delta_1h, close, price_chg,
-             signal, finviz_cat, "ibkr"),
-        )
-    return True
-
-
-# ------------------------------------------------------------------
-# FINVIZ FALLBACK PATH (5-min snapshots)
-# ------------------------------------------------------------------
-
-def _get_finviz_tickers(conn, day: str) -> set[str]:
-    rows = conn.execute(
-        "SELECT DISTINCT ticker FROM snapshots WHERE timestamp LIKE ?",
-        (f"{day}%",)
-    ).fetchall()
-    return {r[0] for r in rows}
-
-
-def _compute_from_snapshots(conn, ticker: str, day: str, timestamp: str) -> bool:
+def _compute_momentum(conn, ticker: str, day: str, timestamp: str) -> bool:
     df = pd.read_sql(
         "SELECT timestamp, price, change_pct, volume FROM snapshots "
-        "WHERE ticker=? AND timestamp LIKE ? ORDER BY timestamp",
+        "WHERE ticker=? AND timestamp LIKE ? AND category='Top Gainers' ORDER BY timestamp",
         conn, params=(ticker, f"{day}%")
     )
-    if df.empty or len(df) < 2:
+    if df.empty or len(df) < 1:
         return False
 
-    df["vol_num"] = df["volume"].apply(_parse_volume)
-    # Incremental volume per snapshot window (difference of cumulative totals)
-    df["vol_delta"] = df["vol_num"].diff().fillna(df["vol_num"])
-    df["vol_delta"] = df["vol_delta"].clip(lower=0)
+    df["price_f"]  = df["price"].apply(_parse_price)
+    df["chg_f"]    = df["change_pct"].apply(_parse_chg)
+    df["ts"]       = pd.to_datetime(df["timestamp"], utc=True)
+    df["vol_num"]  = df["volume"].apply(_parse_volume)
 
-    avg_delta = df["vol_delta"].replace(0, pd.NA).mean()
-    if not avg_delta or avg_delta == 0:
+    df = df[df["chg_f"].notna() & (df["chg_f"] > 0)].reset_index(drop=True)
+    if df.empty:
         return False
 
-    df["rel_vol"] = df["vol_delta"] / avg_delta
-    df["hype_cum"] = df["rel_vol"].cumsum()
+    first = df.iloc[0]
+    last  = df.iloc[-1]
 
-    last = df.iloc[-1]
-    prev = df.iloc[-2]
+    chg_initial   = float(first["chg_f"])
+    chg_now       = float(last["chg_f"])
+    price_entry   = float(first["price_f"]) if pd.notna(first["price_f"]) else 0.0
+    price_now     = float(last["price_f"])  if pd.notna(last["price_f"])  else 0.0
+    persistence   = len(df)
+    dollar_vol    = price_entry * float(first["vol_num"]) if pd.notna(first["vol_num"]) else 0.0
 
-    hype_cum  = float(last["hype_cum"])
-    rel_vol   = float(last["rel_vol"])
-    price_chg = _parse_price(last["price"]) - _parse_price(prev["price"])
-    close     = _parse_price(last["price"])
+    price_change  = price_now - float(df.iloc[-2]["price_f"]) if len(df) >= 2 and pd.notna(df.iloc[-2]["price_f"]) else 0.0
 
-    # Each snapshot = ~5 min → delta_5m = last bar, delta_15m = last 3, delta_1h = last 12
-    delta_5m  = _delta(df, 1)
-    delta_15m = _delta(df, 3)
-    delta_1h  = _delta(df, 12)
-    signal    = _signal(rel_vol, delta_5m)
+    # Velocity: linear regression of chg_f over elapsed minutes
+    velocity = _compute_velocity(df)
+
+    # Momentum score: directional, normalized, persistence-weighted
+    mom_score = chg_initial * math.copysign(1, velocity) * math.log1p(persistence) if velocity != 0 else 0.0
+
+    signal = _classify_signal(chg_initial, velocity, persistence)
 
     finviz_cat = _last_finviz_cat(conn, ticker, day)
 
     conn.execute(
-        """INSERT INTO hype_metrics
-               (timestamp, ticker, volume_1m, rel_volume, hype_cum,
-                delta_5m, delta_15m, delta_1h, close_price, price_change_1m,
+        """INSERT OR REPLACE INTO hype_metrics
+               (timestamp, ticker,
+                volume_1m, rel_volume, hype_cum,
+                delta_5m, delta_15m, delta_1h,
+                close_price, price_change_1m,
                 signal, finviz_category, source)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-        (timestamp, ticker, int(last["vol_num"]), rel_vol, hype_cum,
-         delta_5m, delta_15m, delta_1h, close, price_chg,
-         signal, finviz_cat, "finviz"),
+           VALUES (?,?, ?,?,?, ?,?,?, ?,?, ?,?,?)""",
+        (
+            timestamp, ticker,
+            int(dollar_vol),        # volume_1m  ← dollar_volume at entry
+            float(persistence),     # rel_volume ← persistence (N snapshots)
+            float(mom_score),       # hype_cum   ← mom_score
+            float(velocity),        # delta_5m   ← velocity (%/min)
+            float(chg_initial),     # delta_15m  ← chg_initial
+            float(chg_now),         # delta_1h   ← chg_now
+            float(price_now),       # close_price
+            float(price_change),    # price_change_1m
+            signal,
+            finviz_cat,
+            "finviz",
+        ),
     )
     return True
 
@@ -183,20 +144,42 @@ def _compute_from_snapshots(conn, ticker: str, day: str, timestamp: str) -> bool
 # HELPERS
 # ------------------------------------------------------------------
 
-def _delta(df: pd.DataFrame, n: int) -> float | None:
-    if len(df) <= n:
-        return None
-    return float(df.iloc[-1]["hype_cum"] - df.iloc[-(n + 1)]["hype_cum"])
+def _compute_velocity(df: pd.DataFrame) -> float:
+    """Slope of change_pct vs elapsed minutes (%/min). Returns 0 if insufficient data."""
+    if len(df) < 2:
+        return 0.0
+    t0 = df["ts"].iloc[0]
+    elapsed = [(t - t0).total_seconds() / 60.0 for t in df["ts"]]
+    chg = df["chg_f"].values
+    mask = ~np.isnan(chg)
+    if mask.sum() < 2:
+        return 0.0
+    try:
+        slope = float(np.polyfit(np.array(elapsed)[mask], chg[mask], 1)[0])
+        return slope
+    except Exception:
+        return 0.0
 
 
-def _signal(rel_vol: float, delta_5m: float | None) -> str | None:
-    if rel_vol >= SPIKE_THRESHOLD:
-        return "spike"
-    if delta_5m is not None and delta_5m >= TRENDING_DELTA:
-        return "trending"
-    if delta_5m is not None and delta_5m >= EARLY_MOM_DELTA:
-        return "early_momentum"
+def _classify_signal(chg_initial: float, velocity: float, persistence: int) -> str | None:
+    in_bucket = CHG_LO <= chg_initial < CHG_HI
+    if velocity < -0.01:
+        return "topping"
+    if persistence < 2:
+        return "new"
+    if in_bucket and velocity > VEL_ACC and persistence >= PERSIST_CONFIRMED:
+        return "confirmed"   # 100% WR historically
+    if in_bucket and velocity > VEL_ACC:
+        return "accelerating"
     return None
+
+
+def _get_finviz_tickers(conn, day: str) -> set[str]:
+    rows = conn.execute(
+        "SELECT DISTINCT ticker FROM snapshots WHERE timestamp LIKE ? AND category='Top Gainers'",
+        (f"{day}%",)
+    ).fetchall()
+    return {r[0] for r in rows}
 
 
 def _last_finviz_cat(conn, ticker: str, day: str) -> str | None:
@@ -212,12 +195,9 @@ def _parse_volume(v) -> float:
         return 0.0
     s = str(v).upper().replace(",", "")
     try:
-        if s.endswith("B"):
-            return float(s[:-1]) * 1_000_000_000
-        if s.endswith("M"):
-            return float(s[:-1]) * 1_000_000
-        if s.endswith("K"):
-            return float(s[:-1]) * 1_000
+        if s.endswith("B"): return float(s[:-1]) * 1_000_000_000
+        if s.endswith("M"): return float(s[:-1]) * 1_000_000
+        if s.endswith("K"): return float(s[:-1]) * 1_000
         return float(s)
     except Exception:
         return 0.0
@@ -228,3 +208,10 @@ def _parse_price(v) -> float:
         return float(str(v).replace("$", "").replace(",", ""))
     except Exception:
         return 0.0
+
+
+def _parse_chg(v) -> float | None:
+    try:
+        return float(str(v).replace("%", "").strip())
+    except Exception:
+        return None
