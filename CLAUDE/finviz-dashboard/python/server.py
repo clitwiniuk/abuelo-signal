@@ -46,6 +46,7 @@ def safe_float(val, default=0.0, decimals=None):
     except (TypeError, ValueError):
         return default
 from hype_engine import compute_hype
+from inplay_engine import compute_inplay_scores
 
 # ------------------------------------------------------------------
 # CONFIGURACIÓN
@@ -56,8 +57,9 @@ _APP_DATA_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH      = str(_APP_DATA_DIR / "finviz_snapshots.db")
 INTERVAL_SEC = 5 * 60   # 5 minutos
 ET_TIMEZONE  = pytz.timezone("America/New_York")
-MARKET_OPEN  = (9, 30)
-MARKET_CLOSE = (16, 0)
+MARKET_OPEN        = (9, 30)
+SNAPSHOT_START     = (9, 45)   # grace period: first 15 min show prior-day data
+MARKET_CLOSE       = (16, 0)
 
 FINVIZ_URL = "https://finviz.com/"
 HEADERS = {
@@ -228,7 +230,9 @@ def is_market_open() -> bool:
     if now_et.weekday() >= 5:
         return False
     mins = now_et.hour * 60 + now_et.minute
-    return (MARKET_OPEN[0]*60 + MARKET_OPEN[1]) <= mins < (MARKET_CLOSE[0]*60 + MARKET_CLOSE[1])
+    # Snapshots start at SNAPSHOT_START (09:45 ET) to avoid capturing
+    # prior-day data still showing on Finviz in the first 15 min of session
+    return (SNAPSHOT_START[0]*60 + SNAPSHOT_START[1]) <= mins < (MARKET_CLOSE[0]*60 + MARKET_CLOSE[1])
 
 def parse_change(v):
     try: return float(str(v).replace("%","").replace("+",""))
@@ -361,6 +365,15 @@ def run_snapshot(force: bool = False):
         add_log(f"Hype calculado para {len(tickers)} tickers")
     except Exception as e:
         add_log(f"ERROR hype: {e}")
+
+    # Calcular inplay scores
+    try:
+        inplay = compute_inplay_scores(DB_PATH)
+        top_grades = [r for r in inplay if r["inplay_grade"] in ("A+", "A")]
+        add_log(f"Inplay: {len(top_grades)} tickers A+/A de {len(inplay)} — " +
+                ", ".join(f"{r['ticker']}({r['inplay_grade']})" for r in top_grades[:5]))
+    except Exception as e:
+        add_log(f"ERROR inplay: {e}")
 
 # ------------------------------------------------------------------
 # SCHEDULER
@@ -710,10 +723,12 @@ def get_hype_curves(limit: int = 20):
 
 @app.get("/hype/candidates")
 def get_hype_candidates():
-    """Tickers A+ con señal 'confirmed' hoy, ordenados por mom_score desc.
+    """Tickers con señal de alta calidad hoy, ordenados por mom_score desc.
 
-    Filtro: signal='confirmed' (vel>0, persistence>=8, chg 20-40%)
-    Edge histórico: 100% WR, median +8.8% al cierre.
+    Señales incluidas (prioridad descendente):
+      sustained_continuation — ≥60 min + TG ayer → máxima prioridad
+      explosive              — chg≥60% + ≥120 min → WR~21%, PnL medio +315%
+      confirmed              — vel>0, persistence≥8, chg 20-40%
 
     Respuesta: lista de objetos con campos semánticos listos para consumir.
     """
@@ -727,14 +742,23 @@ def get_hype_candidates():
                   h.delta_15m  AS chg_initial,
                   h.delta_1h   AS chg_now,
                   h.close_price AS price,
+                  h.signal,
                   h.timestamp
            FROM hype_metrics h
            INNER JOIN (
                SELECT ticker, MAX(timestamp) AS max_ts
-               FROM hype_metrics WHERE timestamp LIKE ? AND signal = 'confirmed'
+               FROM hype_metrics WHERE timestamp LIKE ?
+                 AND signal IN ('sustained_continuation', 'explosive', 'confirmed')
                GROUP BY ticker
            ) latest ON h.ticker = latest.ticker AND h.timestamp = latest.max_ts
-           ORDER BY h.hype_cum DESC""",
+           ORDER BY
+             CASE h.signal
+               WHEN 'sustained_continuation' THEN 1
+               WHEN 'explosive'              THEN 2
+               WHEN 'confirmed'              THEN 3
+               ELSE 4
+             END,
+             h.hype_cum DESC""",
         conn, params=(f"{day}%",)
     )
     conn.close()
@@ -785,6 +809,43 @@ def get_ticker_hype_history(ticker: str, days: int = 5):
     )
     conn.close()
     return df_records(df)
+
+# ------------------------------------------------------------------
+# ENDPOINTS — INPLAY (nuevos)
+# ------------------------------------------------------------------
+
+@app.get("/inplay/ranking")
+def get_inplay_ranking():
+    """Real-time inplay quality ranking for today's Top Gainers.
+
+    Uses 1-min bars from IBKR (market_bars) to compute:
+    - score_pre: VWAP pullback score (negative = ordered pullback = good)
+    - rejection: distance from HOD (0=at HOD, 1=at LOD)
+    - pct_above_vwap: position vs VWAP
+    - detection_vs_close: extension from prev close
+    - inplay_score: composite 0-4
+    - inplay_grade: A+/A/B/C/D
+
+    Research basis (98 ticker-dates, inplay_feature_study.py):
+      score_pre < -3 + rejection < 0.3 → 50% precision, 2.2x lift OOS
+    """
+    try:
+        rankings = compute_inplay_scores(DB_PATH)
+        day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
+        grade_counts = {}
+        for r in rankings:
+            g = r["inplay_grade"]
+            grade_counts[g] = grade_counts.get(g, 0) + 1
+        return {
+            "day":          day,
+            "count":        len(rankings),
+            "grade_counts": grade_counts,
+            "rankings":     rankings,
+        }
+    except Exception as e:
+        log.error(f"inplay/ranking error: {e}")
+        return {"day": None, "count": 0, "grade_counts": {}, "rankings": [], "error": str(e)}
+
 
 # ------------------------------------------------------------------
 # ENTRY POINT
