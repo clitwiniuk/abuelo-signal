@@ -37,13 +37,13 @@ STOPWORDS = _STOP_EN | _STOP_ES
 
 
 @st.cache_data(ttl=300, show_spinner=False)
-def _fetch_profile(username: str):
+def _fetch_profile(username: str, pages: int = 1):
     raw_user = asyncio.get_event_loop().run_until_complete(twitter_client.get_user_by_screen_name(username))
     if raw_user is None:
         return None, []
     user = map_user(raw_user)
     raw_tweets = asyncio.get_event_loop().run_until_complete(
-        twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", count=100)
+        twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", pages=pages)
     )
     tweets = map_tweets(raw_tweets)
     return user, tweets
@@ -91,8 +91,18 @@ def render() -> None:
         st.error("Introduce un nombre de usuario válido.")
         return
 
+    pages_key = f"profile_pages_{clean}"
+    if pages_key not in st.session_state:
+        st.session_state[pages_key] = 1
+
+    col_load, col_btn = st.columns([4, 1])
+    with col_btn:
+        if st.button("Cargar más tweets", use_container_width=True, key="profile_load_more"):
+            st.session_state[pages_key] += 1
+            st.cache_data.clear()
+
     with st.spinner(f"Cargando perfil de @{clean}..."):
-        user, tweets = _fetch_profile(clean)
+        user, tweets = _fetch_profile(clean, pages=st.session_state[pages_key])
 
     if user is None:
         st.error(f"No se encontró el usuario @{clean}.")

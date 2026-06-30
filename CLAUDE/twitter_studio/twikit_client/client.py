@@ -169,8 +169,14 @@ class TwitterClient:
         self,
         user_id: str,
         tweet_type: str = "Tweets",
-        count: int = 100,
+        count: int = 20,
+        pages: int = 1,
     ) -> list[twikit.Tweet]:
+        """Fetch user tweets with optional multi-page pagination.
+
+        X returns ~20 tweets per page regardless of `count`.
+        Use `pages` to fetch multiple pages automatically.
+        """
         self._require_auth()
         try:
             results = await self._client.get_user_tweets(
@@ -178,7 +184,13 @@ class TwitterClient:
                 tweet_type=tweet_type,
                 count=count,
             )
-            return list(results)
+            all_tweets = list(results)
+            for _ in range(pages - 1):
+                if not hasattr(results, "next") or results.next is None:
+                    break
+                results = await results.next()
+                all_tweets.extend(list(results))
+            return all_tweets
         except Exception as exc:
             logger.error(f"get_user_tweets error: {exc}")
             return []

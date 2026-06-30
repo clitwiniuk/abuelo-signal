@@ -19,13 +19,13 @@ from utils.tweet_card import tweet_feed
 
 
 @st.cache_data(ttl=300, show_spinner=False)
-def _fetch_recent_tweets() -> list:
+def _fetch_tweets(pages: int) -> list:
     try:
         me = twitter_client.me
         if me is None:
             return []
         raw = asyncio.get_event_loop().run_until_complete(
-            twitter_client.get_user_tweets(str(me.id), tweet_type="Tweets", count=50)
+            twitter_client.get_user_tweets(str(me.id), tweet_type="Tweets", pages=pages)
         )
         return map_tweets(raw)
     except Exception:
@@ -65,10 +65,22 @@ def render() -> None:
 
     st.write("")
 
-    # ---- Recent tweets ----------------------------------------------------
-    st.markdown("#### Actividad reciente")
-    with st.spinner("Cargando tweets recientes..."):
-        tweets = _fetch_recent_tweets()
+    # ---- Pagination control -----------------------------------------------
+    if "dashboard_pages" not in st.session_state:
+        st.session_state.dashboard_pages = 1
+
+    col_title, col_more = st.columns([4, 1])
+    with col_title:
+        st.markdown("#### Actividad reciente")
+    with col_more:
+        if st.button("Cargar más", use_container_width=True):
+            st.session_state.dashboard_pages += 1
+            st.cache_data.clear()
+
+    pages = st.session_state.dashboard_pages
+
+    with st.spinner("Cargando tweets..."):
+        tweets = _fetch_tweets(pages)
 
     if not tweets:
         st.info("No se encontraron tweets recientes.")
@@ -97,5 +109,5 @@ def render() -> None:
         st.plotly_chart(sentiment_pie(df), use_container_width=True)
 
     st.write("")
-    st.markdown("#### Últimos tweets")
-    tweet_feed(tweets, max_items=20)
+    st.markdown(f"#### Tweets ({len(tweets)})")
+    tweet_feed(tweets)
