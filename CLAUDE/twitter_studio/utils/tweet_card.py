@@ -12,7 +12,7 @@ from models.tweet import TweetModel
 _SENTIMENT_COLOR = {"positive": "#3fb950", "negative": "#f85149", "neutral": "#8b949e"}
 
 
-def tweet_card(t: TweetModel) -> None:
+def tweet_card(t: TweetModel, marked: bool = False) -> None:
     """Render a tweet as a self-contained visual card."""
     date_str = t.created_at.strftime("%d %b %Y · %H:%M") if t.created_at else ""
     sentiment_color = _SENTIMENT_COLOR.get(t.sentiment or "neutral", "#8b949e")
@@ -38,8 +38,13 @@ def tweet_card(t: TweetModel) -> None:
 
     views_html = f'<span>👁 {t.view_count:,}</span>' if t.view_count else ""
 
+    # Dim card if marked as read
+    opacity = "0.45" if marked else "1"
+    border_color = "#21262d" if marked else "#30363d"
+
     card = (
-        '<div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px 16px;margin-bottom:10px;font-family:sans-serif;">'
+        f'<div style="background:#161b22;border:1px solid {border_color};border-radius:10px;'
+        f'padding:14px 16px;margin-bottom:4px;font-family:sans-serif;opacity:{opacity};">'
             '<div style="display:flex;align-items:center;margin-bottom:10px;">'
                 f'{avatar_html}'
                 '<div style="flex:1;">'
@@ -60,13 +65,45 @@ def tweet_card(t: TweetModel) -> None:
         '</div>'
     )
 
-    # Estimate height: base + extra lines for long text
     lines = max(1, len(t.text) // 60)
     height = 160 + lines * 22
     components.html(card, height=height, scrolling=False)
 
 
-def tweet_feed(tweets: list[TweetModel], max_items: int = 50) -> None:
-    """Render a list of tweets as a feed of cards."""
+def tweet_feed(
+    tweets: list[TweetModel],
+    max_items: int = 200,
+    markable: bool = False,
+    marked_ids: set[str] | None = None,
+) -> None:
+    """Render a list of tweets as a feed of cards.
+
+    If markable=True, a checkbox appears above each card to toggle read/used state.
+    marked_ids should be the current set of marked tweet IDs.
+    """
+    from services import marked_tweets_service as mts
+
+    if marked_ids is None and markable:
+        marked_ids = mts.load_all()
+
     for t in tweets[:max_items]:
-        tweet_card(t)
+        if markable:
+            tid = str(t.id)
+            is_marked = tid in (marked_ids or set())
+            col_check, col_card = st.columns([1, 20])
+            with col_check:
+                st.markdown("<div style='padding-top:14px;'>", unsafe_allow_html=True)
+                checked = st.checkbox(
+                    "visto",
+                    value=is_marked,
+                    key=f"mark_{tid}",
+                    label_visibility="collapsed",
+                )
+                st.markdown("</div>", unsafe_allow_html=True)
+                if checked != is_marked:
+                    mts.toggle(tid)
+                    st.rerun()
+            with col_card:
+                tweet_card(t, marked=is_marked)
+        else:
+            tweet_card(t)

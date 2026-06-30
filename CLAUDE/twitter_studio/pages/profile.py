@@ -113,14 +113,15 @@ def render() -> None:
         _render_watchlist_panel()
 
     with col_main:
-        # Resolve target: from watchlist click or manual input
-        default_target = st.session_state.pop("profile_target", "")
+        # Resolve target: watchlist click → manual input → previously loaded
+        if "profile_target" in st.session_state:
+            st.session_state["profile_active"] = st.session_state.pop("profile_target")
 
         c1, c2 = st.columns([4, 1])
         with c1:
             username_input = st.text_input(
                 "Usuario",
-                value=default_target,
+                value=st.session_state.get("profile_active", ""),
                 placeholder="@elonmusk",
                 label_visibility="collapsed",
                 key="profile_input",
@@ -128,7 +129,12 @@ def render() -> None:
         with c2:
             analyze_clicked = st.button("Analizar", use_container_width=True)
 
-        if not analyze_clicked and not default_target:
+        if analyze_clicked and username_input.strip():
+            st.session_state["profile_active"] = username_input.strip()
+
+        clean = st.session_state.get("profile_active", "").lstrip("@").strip()
+
+        if not clean:
             st.write("")
             st.markdown(
                 "<div style='text-align:center; color:#8b949e; padding:48px 0;'>"
@@ -138,11 +144,6 @@ def render() -> None:
                 "</div>",
                 unsafe_allow_html=True,
             )
-            return
-
-        clean = (username_input or default_target).lstrip("@").strip()
-        if not clean:
-            st.error("Introduce un nombre de usuario válido.")
             return
 
         pages_key = f"profile_pages_{clean}"
@@ -216,13 +217,15 @@ def render() -> None:
         tab_act, tab_eng, tab_words = st.tabs(["Actividad", "Engagement", "Palabras"])
 
         with tab_act:
+            from services import marked_tweets_service as mts
             col_title, col_more = st.columns([4, 1])
             col_title.markdown(f"#### {len(tweets)} tweets cargados")
             if col_more.button("Cargar más", use_container_width=True, key="profile_load_more"):
                 st.session_state[pages_key] += 1
                 st.cache_data.clear()
                 st.rerun()
-            tweet_feed(tweets)
+            marked_ids = mts.load_all()
+            tweet_feed(tweets, markable=True, marked_ids=marked_ids)
 
         with tab_eng:
             st.write("")
