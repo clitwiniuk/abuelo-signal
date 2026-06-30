@@ -250,8 +250,9 @@ def render_sidebar() -> str:
         st.markdown("<div class='nav-section-label'>Explorar</div>", unsafe_allow_html=True)
 
         explorar_pages = {
-            "search":  "🔍  Buscar",
-            "profile": "👤  Analizar perfil",
+            "dashboard": "🏠  Mi cuenta",
+            "search":    "🔍  Buscar",
+            "profile":   "👤  Analizar perfil",
         }
         for key, label in explorar_pages.items():
             active = st.session_state.page == key
@@ -295,7 +296,9 @@ def render_sidebar() -> str:
 # Page router
 # ---------------------------------------------------------------------------
 def route(page: str) -> None:
-    if page == "search":
+    if page == "dashboard":
+        from pages.dashboard import render
+    elif page == "search":
         from pages.search import render
     elif page == "profile":
         from pages.profile import render
