@@ -61,7 +61,35 @@ st.markdown(
     .metric-value { font-size: 2rem; font-weight: 700; color: var(--accent); }
     .metric-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
     a { color: var(--accent); }
-    hr { border-color: var(--border); }
+    hr { display: none !important; }
+
+    /* st.metric nativo */
+    [data-testid="stMetric"] {
+        background: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 8px;
+        padding: 12px 16px;
+    }
+    [data-testid="stMetricLabel"] { color: #8b949e; font-size: 0.75rem; }
+    [data-testid="stMetricValue"] { color: #c9d1d9; font-size: 1.4rem; font-weight: 700; }
+
+    /* Radio como chips */
+    div[data-testid="stHorizontalBlock"] .stRadio > div { flex-direction: row; gap: 8px; }
+    .stRadio label {
+        background: #161b22; border: 1px solid #30363d;
+        border-radius: 20px; padding: 4px 14px;
+        font-size: 0.85rem; cursor: pointer;
+    }
+    .stRadio label:has(input:checked) {
+        background: #1f3a5f; border-color: #58a6ff; color: #58a6ff;
+    }
+
+    /* Search input más grande */
+    .search-hero input { font-size: 1.1rem !important; padding: 12px 16px !important; }
+
+    /* Tabs más limpios */
+    .stTabs [data-baseweb="tab"] { font-size: 0.85rem; padding: 8px 16px; }
+    .stTabs [aria-selected="true"] { color: #58a6ff; border-bottom-color: #58a6ff; }
 
     /* Sidebar nav buttons — look like menu items, not buttons */
     section[data-testid="stSidebar"] .stButton > button {
@@ -127,7 +155,7 @@ if "authenticated" not in st.session_state:
 if "current_user" not in st.session_state:
     st.session_state.current_user = None
 if "page" not in st.session_state:
-    st.session_state.page = "dashboard"
+    st.session_state.page = "search"
 
 # ---------------------------------------------------------------------------
 # Auto-login: cookies first, then .env credentials
@@ -208,46 +236,52 @@ def render_sidebar() -> str:
                 if user.avatar_url:
                     st.image(user.avatar_url, width=48)
             with cols[1]:
+                followers = getattr(user, "followers_count", 0)
+                tweets = getattr(user, "tweet_count", 0)
                 st.markdown(
                     f"<div class='sidebar-user'>"
                     f"<div class='name'>{user.name}</div>"
                     f"<div class='handle'>@{user.username}</div>"
-                    f"<div class='stats'>{user.followers_count:,} seguidores</div>"
+                    f"<div class='stats'>{followers:,} seguidores · {tweets:,} tweets</div>"
                     f"</div>",
                     unsafe_allow_html=True,
                 )
 
-        st.markdown("<div class='nav-section-label'>Análisis</div>", unsafe_allow_html=True)
+        st.markdown("<div class='nav-section-label'>Explorar</div>", unsafe_allow_html=True)
 
-        main_pages = {
-            "dashboard": "📊  Dashboard",
-            "search":    "🔍  Búsqueda",
-            "profile":   "👤  Perfil de usuario",
-            "monitor":   "📡  Monitor de palabras",
-            "research":  "🔬  Research de listas",
+        explorar_pages = {
+            "search":  "🔍  Buscar",
+            "profile": "👤  Analizar perfil",
         }
-        for key, label in main_pages.items():
+        for key, label in explorar_pages.items():
             active = st.session_state.page == key
             if st.button(label, key=f"nav_{key}", use_container_width=True,
                          type="primary" if active else "secondary"):
                 st.session_state.page = key
                 st.rerun()
 
-        st.markdown("<div class='nav-section-label'>Sistema</div>", unsafe_allow_html=True)
+        st.markdown("<div class='nav-section-label'>Seguimiento</div>", unsafe_allow_html=True)
 
-        sys_pages = {
-            "logs":   "📋  Logs",
-            "system": "⚙️  Estado",
-            "about":  "ℹ️  Acerca de",
+        seguimiento_pages = {
+            "monitor":  "📡  Monitor",
+            "research": "🔬  Research",
         }
-        for key, label in sys_pages.items():
+        for key, label in seguimiento_pages.items():
             active = st.session_state.page == key
             if st.button(label, key=f"nav_{key}", use_container_width=True,
                          type="primary" if active else "secondary"):
                 st.session_state.page = key
                 st.rerun()
 
-        st.markdown("---")
+        st.write("")
+        st.markdown("<hr style='border-color:#30363d; display:block !important;'>", unsafe_allow_html=True)
+
+        active_sys = st.session_state.page == "system"
+        if st.button("⚙️  Sistema", key="nav_system", use_container_width=True,
+                     type="primary" if active_sys else "secondary"):
+            st.session_state.page = "system"
+            st.rerun()
+
         if st.button("🚪  Cerrar sesión", use_container_width=True):
             auth_service.logout()
             st.session_state.authenticated = False
@@ -261,9 +295,7 @@ def render_sidebar() -> str:
 # Page router
 # ---------------------------------------------------------------------------
 def route(page: str) -> None:
-    if page == "dashboard":
-        from pages.dashboard import render
-    elif page == "search":
+    if page == "search":
         from pages.search import render
     elif page == "profile":
         from pages.profile import render
@@ -271,14 +303,10 @@ def route(page: str) -> None:
         from pages.monitor import render
     elif page == "research":
         from pages.research import render
-    elif page == "logs":
-        from pages.logs import render
     elif page == "system":
         from pages.system import render
-    elif page == "about":
-        from pages.about import render
     else:
-        from pages.dashboard import render
+        from pages.search import render
     render()
 
 
