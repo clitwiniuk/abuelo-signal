@@ -1,0 +1,34 @@
+{
+    "listas": [
+        {
+            "id": "",
+            "nombre": "Traders a seguir",
+            "activa": true
+        }
+    ],
+    "palabras_valor": [
+        "setup", "strategy", "rules", "criteria", "process", "playbook", "backtest",
+        "framework", "checklist", "risk management", "stop loss", "invalidation",
+        "r:r", "sized down", "max loss", "mistake", "overtrading", "fomo", "discipline",
+        "vwap", "float", "low float", "dilution", "offering", "shortsqueeze",
+        "short interest", "frontside", "backside", "catalyst", "premarket volume",
+        "relative volume", "rvol", "first red day",
+        "estrategia", "reglas", "sistema", "criterios", "proceso", "bitácora",
+        "patrón", "confirmación", "gestión de riesgo", "invalidez", "ratio riesgo",
+        "pérdida máxima", "error", "psicología", "disciplina", "gestión monetaria",
+        "volumen relativo", "dilución", "flotante", "acción del precio", "catalizador",
+        "premercado", "captura de cortos", "hilo", "análisis", "lección", "revisión",
+        "caso de estudio", "explicación"
+    ],
+    "palabras_ruido": [
+        "discord", "telegram", "whatsapp", "join my", "sign up", "signals", "alerts",
+        "crypto", "forex", "link in bio", "guaranteed profit", "course", "promo",
+        "curso", "señales", "alertas", "grupo", "sígueme en", "gana dinero"
+    ],
+    "anti_ban": {
+        "pausa_min_entre_tweets": 2,
+        "pausa_max_entre_tweets": 5,
+        "pausa_min_entre_ciclos": 60,
+        "pausa_max_entre_ciclos": 180
+    }
+}
