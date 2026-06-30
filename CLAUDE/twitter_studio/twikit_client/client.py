@@ -195,6 +195,19 @@ class TwitterClient:
             logger.error(f"get_user_tweets error: {exc}")
             return []
 
+    async def search_user_lists(self, username: str) -> list[twikit.List]:
+        """Return public lists created by a given @username."""
+        self._require_auth()
+        try:
+            results = await self._client.search_list(username.lstrip("@"), count=20)
+            # Filter to lists owned by that user
+            clean = username.lstrip("@").lower()
+            return [l for l in results if getattr(l, "member_count", None) is not None
+                    and l.name and l.owner and l.owner.screen_name.lower() == clean]
+        except Exception as exc:
+            logger.error(f"search_user_lists error: {exc}")
+            return []
+
     async def get_timeline(self, count: int = 20) -> list[twikit.Tweet]:
         self._require_auth()
         try:

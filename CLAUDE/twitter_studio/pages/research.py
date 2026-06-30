@@ -112,7 +112,51 @@ def render() -> None:
     # -----------------------------------------------------------------------
     with tab_config:
         st.markdown("### Listas de X")
-        st.caption("Añade el ID numérico de la lista. Lo encuentras en la URL: x.com/i/lists/**123456789**")
+
+        # -- Search by username --------------------------------------------
+        st.caption("Busca las listas públicas de un usuario para añadirlas directamente.")
+        ua_col, btn_col = st.columns([4, 1])
+        search_user = ua_col.text_input(
+            "Buscar listas de usuario",
+            placeholder="@akrabolsa",
+            label_visibility="collapsed",
+            key="list_search_user",
+        )
+        if btn_col.button("Buscar listas", use_container_width=True):
+            if search_user.strip():
+                with st.spinner(f"Buscando listas de {search_user}..."):
+                    found = asyncio.get_event_loop().run_until_complete(
+                        twitter_client.search_user_lists(search_user.strip())
+                    )
+                st.session_state["found_lists"] = found
+            else:
+                st.warning("Introduce un @usuario.")
+
+        found_lists = st.session_state.get("found_lists", [])
+        if found_lists:
+            st.markdown(f"**{len(found_lists)} lista(s) encontrada(s):**")
+            for fl in found_lists:
+                fc1, fc2 = st.columns([5, 1])
+                fc1.markdown(
+                    f"**{fl.name}** · {getattr(fl, 'member_count', '?')} miembros"
+                    f"<span style='color:#8b949e;font-size:0.8rem;'> — ID: {fl.id}</span>",
+                    unsafe_allow_html=True,
+                )
+                if fc2.button("➕ Añadir", key=f"fadd_{fl.id}"):
+                    existing_ids = [l.get("id") for l in cfg.listas]
+                    if str(fl.id) not in existing_ids:
+                        cfg.listas.append({"id": str(fl.id), "nombre": fl.name, "activa": True})
+                        guardar_config(cfg)
+                        st.session_state.pop("found_lists", None)
+                        st.success(f"Lista «{fl.name}» añadida.")
+                        st.rerun()
+                    else:
+                        st.info("Ya está en tu lista.")
+        elif st.session_state.get("found_lists") is not None and not found_lists:
+            st.info("No se encontraron listas públicas para ese usuario.")
+
+        st.markdown("---")
+        st.markdown("#### Mis listas configuradas")
 
         for i, lista in enumerate(cfg.listas):
             c1, c2, c3, c4 = st.columns([3, 3, 1, 1])
@@ -124,7 +168,7 @@ def render() -> None:
                 guardar_config(cfg)
                 st.rerun()
 
-        if st.button("➕ Añadir lista"):
+        if st.button("➕ Añadir manualmente"):
             cfg.listas.append({"id": "", "nombre": "Nueva lista", "activa": True})
             guardar_config(cfg)
             st.rerun()
