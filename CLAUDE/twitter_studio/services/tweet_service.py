@@ -47,9 +47,27 @@ def map_tweet(raw: twikit.Tweet) -> TweetModel:
         media = getattr(raw, "media", None) or []
         has_media = bool(media)
         media_type: Optional[str] = None
+        media_images: list[str] = []
+        media_video_url: Optional[str] = None
         if has_media:
-            m = media[0]
-            media_type = getattr(m, "type", None)
+            for m in media:
+                mtype = getattr(m, "type", None)
+                if media_type is None:
+                    media_type = mtype
+                if mtype == "photo":
+                    url = getattr(m, "media_url", None)
+                    if url:
+                        media_images.append(url)
+                elif mtype in ("video", "animated_gif"):
+                    streams = getattr(m, "streams", None) or []
+                    # Pick highest bitrate non-m3u8 stream
+                    mp4_streams = [
+                        s for s in streams
+                        if getattr(s, "content_type", "").startswith("video")
+                    ]
+                    if mp4_streams:
+                        best = max(mp4_streams, key=lambda s: getattr(s, "bitrate", 0) or 0)
+                        media_video_url = getattr(best, "url", None)
 
         sentiment, score = _analyse_sentiment(text)
 
@@ -75,6 +93,8 @@ def map_tweet(raw: twikit.Tweet) -> TweetModel:
             urls=urls,
             has_media=has_media,
             media_type=media_type,
+            media_images=media_images,
+            media_video_url=media_video_url,
             is_retweet=bool(getattr(raw, "retweeted_tweet", None)),
             is_reply=bool(getattr(raw, "in_reply_to", None)),
             tweet_url=f"https://x.com/{username}/status/{tweet_id}" if username else None,

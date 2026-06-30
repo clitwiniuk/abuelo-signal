@@ -24,7 +24,9 @@ class TweetModel(BaseModel):
     mentions: list[str] = []
     urls: list[str] = []
     has_media: bool = False
-    media_type: Optional[str] = None   # photo | video | gif
+    media_type: Optional[str] = None        # photo | video | gif
+    media_images: list[str] = []            # direct JPG/PNG URLs (photos)
+    media_video_url: Optional[str] = None   # best-quality MP4 URL (video/gif)
     is_retweet: bool = False
     is_reply: bool = False
     tweet_url: Optional[str] = None

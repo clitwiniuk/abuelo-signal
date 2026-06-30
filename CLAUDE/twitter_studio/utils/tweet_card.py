@@ -69,6 +69,29 @@ def tweet_card(t: TweetModel, marked: bool = False) -> None:
     height = 160 + lines * 22
     components.html(card, height=height, scrolling=False)
 
+    # ---- Media below the card --------------------------------------------
+    if t.media_images:
+        cols = st.columns(min(len(t.media_images), 3))
+        for col, img_url in zip(cols, t.media_images):
+            col.image(img_url, use_container_width=True)
+
+    if t.media_video_url:
+        import requests
+        vc1, vc2 = st.columns([3, 1])
+        vc1.video(t.media_video_url)
+        try:
+            video_bytes = requests.get(t.media_video_url, timeout=15).content
+            vc2.download_button(
+                "⬇️ Descargar vídeo",
+                data=video_bytes,
+                file_name=f"tweet_{t.id}.mp4",
+                mime="video/mp4",
+                use_container_width=True,
+                key=f"dl_video_{t.id}",
+            )
+        except Exception:
+            pass
+
 
 def tweet_feed(
     tweets: list[TweetModel],
