@@ -7,7 +7,7 @@ import asyncio
 import streamlit as st
 
 from services.tweet_service import map_tweets
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.charts import (
     engagement_over_time,
     hourly_distribution,
@@ -24,7 +24,7 @@ def _fetch_tweets(pages: int) -> list:
         me = twitter_client.me
         if me is None:
             return []
-        raw = asyncio.get_event_loop().run_until_complete(
+        raw = run(
             twitter_client.get_user_tweets(str(me.id), tweet_type="Tweets", pages=pages)
         )
         return map_tweets(raw)

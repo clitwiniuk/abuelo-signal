@@ -11,7 +11,7 @@ import streamlit as st
 
 from database.schema import DBKeyword, DBTweet, SessionLocal
 from services.tweet_service import map_tweets
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.charts import engagement_over_time, top_hashtags_bar, tweet_volume_histogram
 from utils.export_helper import export_filename, to_csv_bytes, to_excel_bytes, tweets_to_dataframe
 
@@ -170,7 +170,7 @@ def render() -> None:
     if st.button("▶️  Escanear", use_container_width=True):
         kid, kw_text = selected_kw
         progress = st.progress(0, text=f"Buscando tweets para «{kw_text}»...")
-        raw = asyncio.get_event_loop().run_until_complete(
+        raw = run(
             twitter_client.search_tweets_paginated(
                 query=kw_text,
                 product="Latest",

@@ -7,11 +7,24 @@ import json
 from pathlib import Path
 from typing import Optional
 
+import nest_asyncio
 import twikit
 from twikit import Client
 
 from config.settings import settings, COOKIES_FILE
 from utils.logger import logger
+
+# Single event loop for the whole process. twikit creates asyncio primitives
+# (Event, Lock) bound to the loop active at Client() init time. Reusing this
+# loop everywhere prevents "bound to a different event loop" errors.
+_LOOP = asyncio.new_event_loop()
+nest_asyncio.apply(_LOOP)
+asyncio.set_event_loop(_LOOP)
+
+
+def run(coro):
+    """Run a coroutine on the dedicated event loop."""
+    return _LOOP.run_until_complete(coro)
 
 
 class TwitterClient:

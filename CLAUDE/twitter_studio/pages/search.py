@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 
 from services.tweet_service import map_tweets
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.charts import engagement_over_time, sentiment_pie, top_hashtags_bar
 from utils.export_helper import export_filename, to_csv_bytes, to_excel_bytes, tweets_to_dataframe
 from utils.tweet_card import tweet_feed
@@ -107,7 +107,7 @@ def _render_text_search() -> None:
 
     progress = st.progress(0, text="Buscando tweets...")
     with st.spinner(""):
-        raw = asyncio.get_event_loop().run_until_complete(
+        raw = run(
             twitter_client.search_tweets_paginated(
                 query=query,
                 product=order,
@@ -193,7 +193,7 @@ def _render_user_search() -> None:
 
     with st.spinner(f"Cargando tweets de @{clean}..."):
         try:
-            raw_user = asyncio.get_event_loop().run_until_complete(twitter_client.get_user_by_screen_name(clean))
+            raw_user = run(twitter_client.get_user_by_screen_name(clean))
         except Exception as e:
             st.error(f"Error buscando usuario: {e}")
             return
@@ -204,7 +204,7 @@ def _render_user_search() -> None:
 
     with st.spinner("Descargando tweets..."):
         try:
-            raw = asyncio.get_event_loop().run_until_complete(
+            raw = run(
                 twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", count=100)
             )
         except Exception as e:

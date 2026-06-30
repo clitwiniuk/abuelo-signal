@@ -15,7 +15,7 @@ from services.research_service import (
     ejecutar_research,
     guardar_config,
 )
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.logger import logger
 
 _CONFIG_PATH = Path(__file__).parent.parent / "config" / "research_config.json"
@@ -89,7 +89,7 @@ def render() -> None:
                 else:
                     with st.spinner(f"Analizando lista «{lista_sel['nombre']}»... (puede tardar por las pausas anti-ban)"):
                         try:
-                            resultados: list[TweetResearch] = asyncio.get_event_loop().run_until_complete(
+                            resultados: list[TweetResearch] = run(
                                 ejecutar_research(
                                     twitter_client._client,
                                     lista_sel["id"],
@@ -125,7 +125,7 @@ def render() -> None:
         if btn_col.button("Buscar listas", use_container_width=True):
             if search_user.strip():
                 with st.spinner(f"Buscando listas de {search_user}..."):
-                    found = asyncio.get_event_loop().run_until_complete(
+                    found = run(
                         twitter_client.search_user_lists(search_user.strip())
                     )
                 st.session_state["found_lists"] = found

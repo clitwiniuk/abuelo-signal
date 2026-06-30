@@ -2,14 +2,13 @@
 
 from __future__ import annotations
 
-import asyncio
 from datetime import datetime
 from typing import Optional
 
 from database.schema import DBSession, SessionLocal
 from models.user import UserModel
 from services.tweet_service import map_user
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.logger import logger
 
 
@@ -21,7 +20,7 @@ class AuthService:
     # ------------------------------------------------------------------
     def try_cookie_login(self, language: str = "en-US") -> bool:
         """Attempt to restore session from cookies (sync wrapper for Streamlit)."""
-        result = asyncio.run(twitter_client.login_with_cookies(language=language))
+        result = run(twitter_client.login_with_cookies(language=language))
         if result:
             self._record_session(twitter_client.me.screen_name if twitter_client.me else "unknown")
         return result
@@ -34,7 +33,7 @@ class AuthService:
         language: str = "en-US",
     ) -> bool:
         """Login with credentials (sync wrapper for Streamlit)."""
-        result = asyncio.run(
+        result = run(
             twitter_client.login(
                 username=username,
                 email=email,

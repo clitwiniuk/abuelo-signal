@@ -11,7 +11,7 @@ import streamlit as st
 
 from services.tweet_service import map_tweets, map_user
 from services import watchlist_service as wl
-from twikit_client.client import twitter_client
+from twikit_client.client import twitter_client, run
 from utils.charts import (
     engagement_over_time,
     hourly_distribution,
@@ -39,11 +39,11 @@ STOPWORDS = _STOP_EN | _STOP_ES
 
 @st.cache_data(ttl=300, show_spinner=False)
 def _fetch_profile(username: str, pages: int = 1):
-    raw_user = asyncio.get_event_loop().run_until_complete(twitter_client.get_user_by_screen_name(username))
+    raw_user = run(twitter_client.get_user_by_screen_name(username))
     if raw_user is None:
         return None, []
     user = map_user(raw_user)
-    raw_tweets = asyncio.get_event_loop().run_until_complete(
+    raw_tweets = run(
         twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", pages=pages)
     )
     tweets = map_tweets(raw_tweets)
