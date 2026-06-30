@@ -107,7 +107,7 @@ def _render_text_search() -> None:
 
     progress = st.progress(0, text="Buscando tweets...")
     with st.spinner(""):
-        raw = asyncio.run(
+        raw = asyncio.get_event_loop().run_until_complete(
             twitter_client.search_tweets_paginated(
                 query=query,
                 product=order,
@@ -193,7 +193,7 @@ def _render_user_search() -> None:
 
     with st.spinner(f"Cargando tweets de @{clean}..."):
         try:
-            raw_user = asyncio.run(twitter_client.get_user_by_screen_name(clean))
+            raw_user = asyncio.get_event_loop().run_until_complete(twitter_client.get_user_by_screen_name(clean))
         except Exception as e:
             st.error(f"Error buscando usuario: {e}")
             return
@@ -204,7 +204,7 @@ def _render_user_search() -> None:
 
     with st.spinner("Descargando tweets..."):
         try:
-            raw = asyncio.run(
+            raw = asyncio.get_event_loop().run_until_complete(
                 twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", count=100)
             )
         except Exception as e:

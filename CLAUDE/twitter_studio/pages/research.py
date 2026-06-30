@@ -89,7 +89,7 @@ def render() -> None:
                 else:
                     with st.spinner(f"Analizando lista «{lista_sel['nombre']}»... (puede tardar por las pausas anti-ban)"):
                         try:
-                            resultados: list[TweetResearch] = asyncio.run(
+                            resultados: list[TweetResearch] = asyncio.get_event_loop().run_until_complete(
                                 ejecutar_research(
                                     twitter_client._client,
                                     lista_sel["id"],

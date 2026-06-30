@@ -170,7 +170,7 @@ def render() -> None:
     if st.button("▶️  Escanear", use_container_width=True):
         kid, kw_text = selected_kw
         progress = st.progress(0, text=f"Buscando tweets para «{kw_text}»...")
-        raw = asyncio.run(
+        raw = asyncio.get_event_loop().run_until_complete(
             twitter_client.search_tweets_paginated(
                 query=kw_text,
                 product="Latest",

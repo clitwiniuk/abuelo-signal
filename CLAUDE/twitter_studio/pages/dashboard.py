@@ -24,7 +24,7 @@ def _fetch_recent_tweets() -> list:
         me = twitter_client.me
         if me is None:
             return []
-        raw = asyncio.run(
+        raw = asyncio.get_event_loop().run_until_complete(
             twitter_client.get_user_tweets(str(me.id), tweet_type="Tweets", count=50)
         )
         return map_tweets(raw)

@@ -38,11 +38,11 @@ STOPWORDS = _STOP_EN | _STOP_ES
 
 @st.cache_data(ttl=300, show_spinner=False)
 def _fetch_profile(username: str):
-    raw_user = asyncio.run(twitter_client.get_user_by_screen_name(username))
+    raw_user = asyncio.get_event_loop().run_until_complete(twitter_client.get_user_by_screen_name(username))
     if raw_user is None:
         return None, []
     user = map_user(raw_user)
-    raw_tweets = asyncio.run(
+    raw_tweets = asyncio.get_event_loop().run_until_complete(
         twitter_client.get_user_tweets(str(raw_user.id), tweet_type="Tweets", count=100)
     )
     tweets = map_tweets(raw_tweets)
