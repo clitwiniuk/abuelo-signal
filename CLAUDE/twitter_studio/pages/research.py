@@ -150,11 +150,11 @@ def render() -> None:
 
         st.markdown("### Pausas anti-ban")
         c1, c2 = st.columns(2)
-        p_min_tw = c1.number_input("Pausa mín. entre tweets (s)", 1.0, 30.0, cfg.pausa_min_tweets, 0.5)
-        p_max_tw = c2.number_input("Pausa máx. entre tweets (s)", 1.0, 60.0, cfg.pausa_max_tweets, 0.5)
+        p_min_tw = c1.number_input("Pausa mín. entre tweets (s)", 1.0, 30.0, float(cfg.pausa_min_tweets), 0.5)
+        p_max_tw = c2.number_input("Pausa máx. entre tweets (s)", 1.0, 60.0, float(cfg.pausa_max_tweets), 0.5)
         c3, c4 = st.columns(2)
-        p_min_cy = c3.number_input("Pausa mín. entre ciclos (s)", 10.0, 600.0, cfg.pausa_min_ciclos, 10.0)
-        p_max_cy = c4.number_input("Pausa máx. entre ciclos (s)", 10.0, 3600.0, cfg.pausa_max_ciclos, 10.0)
+        p_min_cy = c3.number_input("Pausa mín. entre ciclos (s)", 10.0, 600.0, float(cfg.pausa_min_ciclos), 10.0)
+        p_max_cy = c4.number_input("Pausa máx. entre ciclos (s)", 10.0, 3600.0, float(cfg.pausa_max_ciclos), 10.0)
 
         if st.button("💾 Guardar configuración", use_container_width=True, type="primary"):
             cfg.palabras_valor = [p.strip().lower() for p in valor_text.splitlines() if p.strip()]
