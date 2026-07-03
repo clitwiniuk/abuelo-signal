@@ -1,0 +1,21 @@
+# Databases — never commit (live trading data, backups)
+*.db
+*.db.backup*
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# Backups and archives
+backups/
+*.tar.gz
+*.zip
+
+# Huge generated research outputs
+rules_insample.csv
+
+# macOS
+.DS_Store
