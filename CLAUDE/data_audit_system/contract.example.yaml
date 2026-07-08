@@ -1,0 +1,32 @@
+# Overrides del contrato de datos. Solo hace falta declarar las claves que
+# se quieran cambiar; el resto se toma de DEFAULT_CONTRACT (contract.py).
+
+# Volumen mínimo diario por ticker para considerarlo operable.
+min_daily_volume: 10000
+
+# Mínimo de velas 1-min por ticker-día (sesión extendida 04:00-20:00 ET).
+min_bars_day: 150
+
+# Velas 1-min consecutivas sin cambio de precio antes de marcar halt/congelado.
+max_flat_candles: 30
+
+# Gap overnight que dispara revisión (solo CRITICAL si el volumen no confirma).
+max_overnight_gap_pct: 50.0
+
+# Salto intradía en una vela que dispara revisión si no hay volumen acorde.
+max_single_bar_jump_pct: 10.0
+
+# Mínimo de tickers con datos para que el día cuente como representativo.
+min_tickers_per_day: 15
+
+# Deriva máxima del universo del scanner (Jaccard) sin cambio de parámetros.
+scanner_max_universe_shift: 0.30
+
+# Score mínimo (0-100) para que un ticker-día / día sea APTO.
+min_score_valid: 70
+
+# Penalizaciones del score por severidad.
+score_weights:
+  CRITICAL: 25
+  WARNING: 10
+  INFO: 2
