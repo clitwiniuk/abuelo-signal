@@ -57,6 +57,35 @@ class DBTweet(Base):
     keyword_id = Column(Integer)  # FK to keywords (nullable — manual searches)
 
 
+class DBStocktwitsPost(Base):
+    __tablename__ = "stocktwits_posts"
+    # Composite PK: the same message id can surface under several tickers
+    # when it carries multiple cashtags (e.g. "$TSLA $NVDA ..."), and each
+    # ticker's stream download should keep its own row for it.
+    id = Column(String, primary_key=True)
+    ticker = Column(String, primary_key=True, index=True)
+    body = Column(Text, nullable=False)
+    body_es = Column(Text)   # lazily translated + cached on first view in "Explorar"
+    author_id = Column(String, index=True)
+    author_username = Column(String, index=True)
+    author_name = Column(String)
+    author_followers = Column(Integer)
+    created_at = Column(DateTime, index=True)
+    like_count = Column(Integer, default=0)
+    reply_count = Column(Integer, default=0)
+    sentiment = Column(String)    # Bullish | Bearish | NULL
+    cashtags = Column(Text)       # comma-separated
+    mentions = Column(Text)       # comma-separated
+    has_media = Column(Boolean, default=False)
+    media_url = Column(String)
+    link_title = Column(String)
+    link_url = Column(String)
+    link_image_url = Column(String)
+    is_reply = Column(Boolean, default=False)
+    post_url = Column(String)
+    fetched_at = Column(DateTime, default=datetime.utcnow)
+
+
 class DBKeyword(Base):
     __tablename__ = "keywords"
     id = Column(Integer, primary_key=True, autoincrement=True)

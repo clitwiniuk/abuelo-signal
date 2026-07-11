@@ -7,12 +7,18 @@ from datetime import datetime
 
 import pandas as pd
 
+from models.stocktwits_post import StocktwitsPostModel
 from models.tweet import TweetModel
 from utils.logger import logger
 
 
 def tweets_to_dataframe(tweets: list[TweetModel]) -> pd.DataFrame:
     rows = [t.to_export_dict() for t in tweets]
+    return pd.DataFrame(rows)
+
+
+def stocktwits_posts_to_dataframe(posts: list[StocktwitsPostModel]) -> pd.DataFrame:
+    rows = [p.to_export_dict() for p in posts]
     return pd.DataFrame(rows)
 
 

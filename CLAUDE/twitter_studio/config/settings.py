@@ -15,6 +15,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 
 COOKIES_DIR = ROOT_DIR / "cookies"
 COOKIES_FILE = COOKIES_DIR / "account.json"
+STOCKTWITS_COOKIES_FILE = COOKIES_DIR / "stocktwits.json"
 
 LOGS_DIR = ROOT_DIR / "logs"
 EXPORTS_DIR = ROOT_DIR / "exports"

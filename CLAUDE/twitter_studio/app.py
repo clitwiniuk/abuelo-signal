@@ -266,6 +266,7 @@ def render_sidebar() -> str:
         seguimiento_pages = {
             "monitor":  "📡  Monitor",
             "research": "🔬  Research",
+            "stocktwits": "📈  Stocktwits",
         }
         for key, label in seguimiento_pages.items():
             active = st.session_state.page == key
@@ -306,6 +307,8 @@ def route(page: str) -> None:
         from pages.monitor import render
     elif page == "research":
         from pages.research import render
+    elif page == "stocktwits":
+        from pages.stocktwits import render
     elif page == "system":
         from pages.system import render
     else:
