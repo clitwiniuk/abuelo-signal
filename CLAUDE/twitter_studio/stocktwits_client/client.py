@@ -285,6 +285,7 @@ class StocktwitsClient:
         page: Page = await self._context.new_page()
         collected: list[dict] = []
         seen_ids: set[str] = set()
+        seen_cursor_max: set = set()
         queue: asyncio.Queue = asyncio.Queue()
 
         async def _on_response(response: Response) -> None:
@@ -301,8 +302,22 @@ class StocktwitsClient:
         url = f"https://stocktwits.com/symbol/{ticker.upper()}"
         await page.goto(url, wait_until="domcontentloaded", timeout=30_000)
 
-        def _consume(payload: dict) -> tuple[bool, bool]:
-            """Add new in-range messages from payload to `collected`. Returns (should_stop, has_more)."""
+        def _consume(payload: dict) -> tuple[bool, bool, bool]:
+            """Add new in-range messages from payload to `collected`.
+            Returns (should_stop, has_more, was_reset)."""
+            cursor = payload.get("cursor") or {}
+            cur_max = cursor.get("max")
+            if cur_max is not None:
+                if cur_max in seen_cursor_max:
+                    # The site's own live-refresh occasionally reloads the feed
+                    # component mid-scroll, resetting it back to a page we've
+                    # already processed (cursor.max repeats). Signal it so the
+                    # caller can back off and retry a few times instead of
+                    # either grinding forever or giving up on the first hit —
+                    # it sometimes clears after a short pause.
+                    return False, True, True
+                seen_cursor_max.add(cur_max)
+
             batch: list[dict] = []
             stop = False
             for m in payload.get("messages", []):
@@ -323,8 +338,7 @@ class StocktwitsClient:
             collected.extend(batch)
             if batch and on_batch:
                 on_batch(batch)
-            cursor = payload.get("cursor") or {}
-            return stop, bool(cursor.get("more"))
+            return stop, bool(cursor.get("more")), False
 
         try:
             try:
@@ -332,9 +346,11 @@ class StocktwitsClient:
             except asyncio.TimeoutError:
                 logger.error(f"No initial stream payload for {ticker} — page may still be behind Cloudflare")
                 return collected
-            stop, has_more = _consume(first_payload)
+            stop, has_more, _ = _consume(first_payload)
 
             scrolls = 0
+            consecutive_resets = 0
+            max_consecutive_resets = 6
             while not stop and has_more and len(collected) < max_messages and scrolls < max_scrolls:
                 if should_stop and should_stop():
                     logger.info(f"Stopped by request for {ticker} after {scrolls} scrolls")
@@ -357,7 +373,21 @@ class StocktwitsClient:
                 except asyncio.TimeoutError:
                     logger.info(f"No further pages for {ticker} after {scrolls} scrolls — assuming end of stream")
                     break
-                stop, has_more = _consume(payload)
+                stop, has_more, was_reset = _consume(payload)
+                if was_reset:
+                    consecutive_resets += 1
+                    if consecutive_resets >= max_consecutive_resets:
+                        logger.warning(
+                            f"Feed reset {consecutive_resets}x in a row for {ticker} — the site keeps "
+                            f"reloading the feed mid-scroll (common on high-traffic tickers), giving up. "
+                            f"{len(collected)} messages collected so far."
+                        )
+                        break
+                    # Back off longer than the site's own refresh interval
+                    # (~4s observed) before retrying — sometimes it clears up.
+                    await asyncio.sleep(scroll_wait_s + 4.0)
+                    continue
+                consecutive_resets = 0
                 await asyncio.sleep(scroll_wait_s)
 
             return collected[:max_messages]

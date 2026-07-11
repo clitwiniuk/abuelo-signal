@@ -189,6 +189,12 @@ def render() -> None:
             "Requiere un navegador visible en esta máquina para superar el challenge "
             "de Cloudflare (no funciona en modo headless todavía)."
         )
+        st.caption(
+            "⚠️ En tickers muy activos, Stocktwits reinicia el scroll tras un puñado de páginas "
+            "(límite del propio sitio, no de esta herramienta) — cada descarga trae solo lo más "
+            "reciente. Usa **Modo sync** repetidamente (p.ej. una vez al día) para ir acumulando "
+            "histórico con el tiempo en vez de pedirlo todo de golpe."
+        )
 
         thread: threading.Thread | None = st.session_state.get("st_dl_thread")
         is_running = thread is not None and thread.is_alive()
