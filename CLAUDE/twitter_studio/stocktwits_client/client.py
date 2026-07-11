@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import re
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -28,13 +29,11 @@ STREAM_API_PATTERN = "**/api/2/streams/symbol/*.json"
 # (needed for the Cloudflare bot-challenge to resolve).
 _BLOCKED_DOMAINS = (
     # Session-replay/recording beacon — floods dozens of requests per second
-    # (0-9.stg.html-load.com) and was the single biggest source of latency
-    # observed: pages that should arrive in ~10s were taking 30-50s while
-    # this was unblocked.
-    "html-load.com",
-    # Same pattern, even worse: 1000+ requests observed in a single ~3min
-    # session across numbered subdomains (0-9.duhquietly.com).
-    "duhquietly.com",
+    # from numbered subdomains. Kept as a fallback: see _BLOCKED_URL_PATTERNS
+    # below, this vendor rotates its root domain (html-load.com ->
+    # duhquietly.com -> content-loader.com, observed across this same
+    # session) specifically to dodge exact-domain blocklists like this one.
+    "html-load.com", "duhquietly.com", "content-loader.com",
     # Video ad network — live.primis.tech/video.primis.tech/rtb.primis.tech.
     "primis.tech",
     "doubleclick.net", "googlesyndication.com", "google-analytics.com",
@@ -55,6 +54,18 @@ _BLOCKED_DOMAINS = (
     # Deliberately NOT blocking onetrust.com/cookielaw.org: the page can wait
     # on the consent SDK before rendering the feed, so blocking it risks a
     # blank/stuck page instead of a faster one.
+)
+
+# Fingerprint of the rotating-domain session-replay vendor (html-load.com /
+# duhquietly.com / content-loader.com are all the same integration, same URL
+# shape, different root domain per session). Path structure is stable even
+# when the domain isn't, so match on that instead of maintaining a whack-a-mole
+# domain list every time it renames itself.
+_BLOCKED_URL_PATTERNS = (
+    re.compile(r"/loader\.min\.js"),
+    re.compile(r"/script/stocktwits\.com\.js"),
+    re.compile(r"^https?://\d+\.stg\."),          # N.stg.<whatever-today's-domain-is>
+    re.compile(r"/session/.*stocktwits\.com/"),   # session beacon embedding our own hostname
 )
 
 # Dedicated event loop, same pattern as twikit_client — Playwright's async
@@ -101,7 +112,11 @@ class StocktwitsClient:
     @staticmethod
     async def _route_handler(route) -> None:
         url = route.request.url
-        if any(domain in url for domain in _BLOCKED_DOMAINS):
+        blocked = (
+            any(domain in url for domain in _BLOCKED_DOMAINS)
+            or any(pattern.search(url) for pattern in _BLOCKED_URL_PATTERNS)
+        )
+        if blocked:
             await route.abort()
         else:
             await route.continue_()
