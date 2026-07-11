@@ -257,14 +257,20 @@ class StocktwitsClient:
         message into view) go through. So we drive the UI instead of calling
         the API directly.
 
-        Two things had to be true for pagination past the first 2 pages to
-        work at all: (1) an authenticated session (anonymous sessions hit a
-        hard 2-page/44-message cap — a soft "sign up to see more" wall), and
-        (2) `page.mouse.wheel` on the body doesn't reliably trigger the
-        site's infinite-scroll fetch — scrolling the last message link
-        element into view (`scroll_into_view_if_needed`) does. Ad/tracker
-        network noise also made each page take up to ~30s to arrive, hence
-        the generous `page_timeout_s`.
+        Three things had to be true for pagination to actually walk backward
+        through the whole history: (1) an authenticated session (anonymous
+        sessions hit a hard 2-page/44-message cap — a soft "sign up to see
+        more" wall); (2) `page.mouse.wheel` on the body doesn't reliably
+        trigger the site's infinite-scroll fetch; and (3) neither does
+        `scroll_into_view_if_needed()` on the last message link — it's a
+        documented Playwright no-op once that element is already visible,
+        which silently stalls pagination after page 1 on a short feed (the
+        site just keeps re-firing its own ~4s live-update poll of the same
+        top page instead). `page.evaluate("window.scrollTo(0,
+        document.body.scrollHeight)")` is what actually advances the cursor.
+        Blocking ad/tracker/session-replay traffic (see _BLOCKED_DOMAINS /
+        _BLOCKED_URL_PATTERNS) cut per-page latency from up to ~45s down to
+        a few seconds, hence the still-generous `page_timeout_s` margin.
 
         stop_before_id: stop once a message id <= this appears (already covered by a prior run).
         stop_before_date: ISO date string (lower bound) — stop once messages older than this appear.
@@ -333,12 +339,18 @@ class StocktwitsClient:
                 if should_stop and should_stop():
                     logger.info(f"Stopped by request for {ticker} after {scrolls} scrolls")
                     break
-                links = await page.query_selector_all('a[href*="/message/"]')
-                if links:
-                    try:
-                        await links[-1].scroll_into_view_if_needed(timeout=5_000)
-                    except Exception:
-                        pass
+                # scroll_into_view_if_needed() on the last message link is a
+                # documented Playwright no-op once that element is already
+                # visible — which it is after the very first page on a short
+                # feed. That silently stopped real pagination: the site kept
+                # re-firing its own ~4s live-update poll of page 1 (same
+                # cursor.max every time) instead of ever loading page 2+.
+                # Forcing an actual scroll to the live bottom of the document
+                # is what the site's infinite-scroll listener actually needs.
+                try:
+                    await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                except Exception:
+                    pass
                 scrolls += 1
                 try:
                     payload = await asyncio.wait_for(queue.get(), timeout=page_timeout_s)
