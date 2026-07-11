@@ -32,6 +32,11 @@ _BLOCKED_DOMAINS = (
     # observed: pages that should arrive in ~10s were taking 30-50s while
     # this was unblocked.
     "html-load.com",
+    # Same pattern, even worse: 1000+ requests observed in a single ~3min
+    # session across numbered subdomains (0-9.duhquietly.com).
+    "duhquietly.com",
+    # Video ad network — live.primis.tech/video.primis.tech/rtb.primis.tech.
+    "primis.tech",
     "doubleclick.net", "googlesyndication.com", "google-analytics.com",
     "googletagmanager.com", "googletagservices.com", "smartadserver.com",
     "mixpanel.com", "hotjar.com", "taboola.com", "outbrain.com",
@@ -44,6 +49,9 @@ _BLOCKED_DOMAINS = (
     "everesttech.net", "adform.net", "adroll.com", "bing.com/action",
     "facebook.net", "facebook.com/tr", "snapchat.com", "tiktok.com/i18n",
     "yandex.ru/metrika",
+    # Smaller header-bidding/identity-sync networks observed on stocktwits.com.
+    "ascendeummedia.com", "kargo.com", "gumgum.com", "adsrvr.org",
+    "onetag-sys.com", "intentiq.com", "hypelab.com",
     # Deliberately NOT blocking onetrust.com/cookielaw.org: the page can wait
     # on the consent SDK before rendering the feed, so blocking it risks a
     # blank/stuck page instead of a faster one.
