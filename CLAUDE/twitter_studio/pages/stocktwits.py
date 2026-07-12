@@ -367,28 +367,32 @@ def render() -> None:
             st.info("No hay mensajes guardados con esos filtros. Descarga un ticker en la pestaña anterior.")
         else:
             st.markdown(f"**Mostrando {len(posts)} de {total} mensaje(s)**")
+
+            c_export, c_all = st.columns(2)
             csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(
                 query_posts(ticker=f_ticker or None, from_date=from_date, to_date=to_date,
                             sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
                             limit=total or 1)
             )))
-            st.download_button(
+            c_export.download_button(
                 "⬇️  Exportar CSV (todo el rango filtrado)",
                 data=csv_bytes,
                 file_name=export_filename(f"stocktwits_{f_ticker or 'all'}", "csv"),
                 mime="text/csv",
+                use_container_width=True,
             )
+            if len(posts) < total:
+                if c_all.button(f"⬇️  Cargar todo ({total})", use_container_width=True, key="browse_load_all"):
+                    st.session_state["browse_page_size"] = total
+                    st.rerun()
+
             st.markdown("---")
             for p in posts:
                 _post_card(p, translate=translate)
 
             if len(posts) < total:
-                c_more, c_all = st.columns(2)
-                if c_more.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
+                if st.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
                     st.session_state["browse_page_size"] = page_size + 50
-                    st.rerun()
-                if c_all.button(f"⬇️  Cargar todo ({total})", use_container_width=True, key="browse_load_all"):
-                    st.session_state["browse_page_size"] = total
                     st.rerun()
                 _auto_click_when_visible("⬇️  Cargar más", nonce=page_size)
 
