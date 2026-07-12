@@ -350,7 +350,12 @@ class StocktwitsClient:
                 if stop_before_date is not None and created < stop_before_date:
                     stop = True
                     break
-                if to_date is not None and created > to_date:
+                # Compare only the date portion against to_date (a bare
+                # "YYYY-MM-DD"): comparing the full ISO datetime string
+                # against it lexicographically would mark every message on
+                # to_date itself as "too new" and skip the whole day, since
+                # e.g. "2026-07-03T15:00:00Z" > "2026-07-03" as strings.
+                if to_date is not None and created[:10] > to_date:
                     continue  # newer than the requested window — skip, keep paginating
                 batch.append(m)
             collected.extend(batch)

@@ -272,6 +272,13 @@ def render() -> None:
         f_ticker = c1.text_input("Ticker", key="browse_ticker", placeholder="TSLA").strip().upper()
         f_sentiment = c2.selectbox("Sentimiento", ["Todos", "Bullish", "Bearish"])
         f_keyword = c3.text_input("Buscar palabra clave", key="browse_keyword")
+
+        d1, d2, d3 = st.columns(3)
+        f_from = d1.date_input("Desde (opcional)", value=None, key="browse_from")
+        f_to = d2.date_input("Hasta (opcional)", value=None, key="browse_to")
+        f_limit = d3.number_input("Máx. mensajes a mostrar", min_value=20, max_value=5000, value=200, step=50,
+                                   help="Un día con mucho volumen puede llenar todo el límite y tapar días "
+                                        "más antiguos — usa Desde/Hasta para acotar, o sube este límite.")
         translate = st.checkbox(
             "🌐 Traducir al español", value=True,
             help="Se traduce y guarda la primera vez que se ve cada mensaje; las siguientes veces es instantáneo.",
@@ -287,9 +294,14 @@ def render() -> None:
 
         posts = query_posts(
             ticker=f_ticker or None,
+            from_date=f_from.isoformat() if f_from else None,
+            # End-of-day, not midnight — otherwise a bare "YYYY-MM-DD" upper
+            # bound excludes every message on that day (string comparison
+            # against a DateTime column: "...T15:00:00" > "...T00:00:00").
+            to_date=f"{f_to.isoformat()}T23:59:59" if f_to else None,
             sentiment=None if f_sentiment == "Todos" else f_sentiment,
             keyword=f_keyword or None,
-            limit=200,
+            limit=int(f_limit),
         )
 
         if not posts:
