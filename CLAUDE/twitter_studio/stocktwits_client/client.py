@@ -288,6 +288,24 @@ class StocktwitsClient:
         seen_cursor_max: set = set()
         queue: asyncio.Queue = asyncio.Queue()
 
+        # Root cause of the "feed reset" (cursor.max repeating): the SPA runs
+        # its own live-update poll (setInterval/setTimeout-driven) that
+        # periodically refetches the *top* of the stream with no `max` param,
+        # independent of our scroll. That response overwrites the app's
+        # internal "next cursor" state, so our next scroll then restarts from
+        # page 1 instead of continuing backward. Neutralizing the timer APIs
+        # before any page script runs stops that poll from ever being
+        # scheduled — verified live: 0 resets across 2600+ messages / ~9
+        # months of history for a high-traffic ticker (previously capped at
+        # ~150 messages). Must use add_init_script (runs before the page's
+        # own JS) — patching after navigation is too late, the interval is
+        # already scheduled by then.
+        await page.add_init_script(
+            "window.setInterval = function(){ return 0; };"
+            "window.setTimeout = function(){ return 0; };"
+            "window.requestAnimationFrame = function(){ return 0; };"
+        )
+
         async def _on_response(response: Response) -> None:
             path = response.url.split("?", 1)[0]
             if "/api/2/streams/symbol/" in path and path.endswith(".json") and response.status == 200:
