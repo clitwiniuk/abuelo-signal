@@ -86,6 +86,7 @@ def save_posts(posts: list[StocktwitsPostModel]) -> int:
                 author_name=p.author_name,
                 author_followers=p.author_followers,
                 created_at=p.created_at,
+                market_session=p.market_session,
                 like_count=p.like_count,
                 reply_count=p.reply_count,
                 sentiment=p.sentiment,
@@ -172,7 +173,8 @@ def delete_ticker(ticker: str) -> int:
         db.close()
 
 
-def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentiment=None, keyword=None, username=None):
+def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentiment=None,
+                           keyword=None, username=None, session=None):
     q = db.query(DBStocktwitsPost)
     if ticker:
         q = q.filter(DBStocktwitsPost.ticker == ticker.upper())
@@ -186,6 +188,8 @@ def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentime
         q = q.filter(DBStocktwitsPost.body.ilike(f"%{keyword}%"))
     if username:
         q = q.filter(DBStocktwitsPost.author_username.ilike(f"%{username}%"))
+    if session:
+        q = q.filter(DBStocktwitsPost.market_session == session)
     return q
 
 
@@ -196,11 +200,12 @@ def query_posts(
     sentiment: Optional[str] = None,
     keyword: Optional[str] = None,
     username: Optional[str] = None,
+    session: Optional[str] = None,
     limit: int = 500,
 ) -> list[DBStocktwitsPost]:
     db = SessionLocal()
     try:
-        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username)
+        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username, session)
         return q.order_by(DBStocktwitsPost.created_at.desc()).limit(limit).all()
     finally:
         db.close()
@@ -213,10 +218,11 @@ def count_posts(
     sentiment: Optional[str] = None,
     keyword: Optional[str] = None,
     username: Optional[str] = None,
+    session: Optional[str] = None,
 ) -> int:
     db = SessionLocal()
     try:
-        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username).count()
+        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username, session).count()
     finally:
         db.close()
 

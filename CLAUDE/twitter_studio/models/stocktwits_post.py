@@ -42,6 +42,12 @@ class StocktwitsPostModel(BaseModel):
         except ValueError:
             return None
 
+    @property
+    def market_session(self) -> str:
+        """PM | RTH | AH | Closed, derived from created_at (US Eastern time)."""
+        from utils.market_session import market_session as _market_session
+        return _market_session(self.created_at)
+
     def to_export_dict(self) -> dict:
         return {
             "id": self.id,
@@ -56,4 +62,5 @@ class StocktwitsPostModel(BaseModel):
             "menciones": ", ".join(self.mentions),
             "sentimiento": self.sentiment or "",
             "enlace": self.post_url or "",
+            "sesion": self.market_session,
         }

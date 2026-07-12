@@ -71,6 +71,7 @@ class DBStocktwitsPost(Base):
     author_name = Column(String)
     author_followers = Column(Integer)
     created_at = Column(DateTime, index=True)
+    market_session = Column(String, index=True)  # PM | RTH | AH | Closed (US Eastern, derived from created_at)
     like_count = Column(Integer, default=0)
     reply_count = Column(Integer, default=0)
     sentiment = Column(String)    # Bullish | Bearish | NULL

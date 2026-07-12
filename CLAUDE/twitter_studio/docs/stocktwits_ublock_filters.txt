@@ -1,0 +1,27 @@
+! Custom uBlock Origin filters for faster manual browsing of stocktwits.com
+! Install: uBlock Origin -> Dashboard -> Filter lists -> "Import" tab -> paste this,
+! or Dashboard -> "My filters" -> paste and Apply.
+||html-load.com^
+||duhquietly.com^
+||content-loader.com^
+||primis.tech^
+||smartadserver.com^
+||wisepops.com^
+||wisepops.net^
+||mparticle.com^
+||ascendeummedia.com^
+||kargo.com^
+||gumgum.com^
+||adsrvr.org^
+||onetag-sys.com^
+||intentiq.com^
+||hypelab.com^
+||adsgravity.io^
+||adx.ws^
+||rubiconproject.com^
+||sharethrough.com^
+||confiant-integrations.net^
+! Generic rotating-domain session-replay fingerprint (matches even if they rename again)
+/loader.min.js
+/script/stocktwits.com.js
+/^https?:\/\/\d+\.stg\./

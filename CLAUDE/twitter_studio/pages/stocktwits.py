@@ -24,12 +24,26 @@ from utils.logger import logger
 # Helpers
 # ---------------------------------------------------------------------------
 
+_SESSION_STYLE = {
+    "PM": ("#f0b429", "#3a2e0d"),      # amber
+    "RTH": ("#3fb950", "#0d2b12"),     # green
+    "AH": ("#58a6ff", "#0d1f33"),      # blue
+    "Closed": ("#8b949e", "#1c1f24"),  # grey
+}
+
+
 def _post_card(p: DBStocktwitsPost, translate: bool = False) -> None:
     fecha_str = p.created_at.strftime("%d %b %Y · %H:%M") if p.created_at else ""
     sentiment_color = {"Bullish": "#3fb950", "Bearish": "#f85149"}.get(p.sentiment, "#8b949e")
     sentiment_html = (
         f"<span style='color:{sentiment_color};font-weight:600;font-size:0.78rem;'>{p.sentiment}</span>"
         if p.sentiment else ""
+    )
+    fg, bg = _SESSION_STYLE.get(p.market_session, _SESSION_STYLE["Closed"])
+    session_html = (
+        f"<span style='color:{fg};background:{bg};border-radius:4px;padding:1px 6px;"
+        f"font-size:0.72rem;font-weight:600;margin-left:6px;'>{p.market_session}</span>"
+        if p.market_session else ""
     )
     link_html = (
         f'<a href="{p.post_url}" target="_blank" style="color:#58a6ff;font-size:0.78rem;text-decoration:none;">'
@@ -77,6 +91,7 @@ def _post_card(p: DBStocktwitsPost, translate: bool = False) -> None:
         f'<div>'
         f'<span style="font-weight:700;color:#c9d1d9;">@{p.author_username}</span>'
         f'<span style="color:#8b949e;font-size:0.82rem;margin-left:6px;">{fecha_str}</span>'
+        f'{session_html}'
         f'{sentiment_html}'
         f'</div>'
         f'{link_html}'
@@ -150,6 +165,7 @@ def _posts_to_export_dicts(posts: list[DBStocktwitsPost]) -> list[dict]:
         "replies": p.reply_count,
         "cashtags": p.cashtags or "",
         "sentimiento": p.sentiment or "",
+        "sesion": p.market_session or "",
         "enlace": p.post_url or "",
     } for p in posts]
 
@@ -321,9 +337,14 @@ def render() -> None:
         f_keyword = c3.text_input("Buscar palabra clave", key="browse_keyword")
         f_username = c4.text_input("Usuario", key="browse_username", placeholder="StocktwitsNews").strip().lstrip("@")
 
-        d1, d2 = st.columns(2)
+        d1, d2, d3 = st.columns([2, 2, 2])
         f_from = d1.date_input("Desde (opcional)", value=None, key="browse_from")
         f_to = d2.date_input("Hasta (opcional)", value=None, key="browse_to")
+        f_session = d3.selectbox(
+            "Sesión", ["Todas", "PM", "RTH", "AH", "Closed"], key="browse_session",
+            help="PM = premarket, RTH = horario regular, AH = after-hours, Closed = fuera de horario "
+                 "(hora de Nueva York).",
+        )
         translate = st.checkbox(
             "🌐 Traducir al español", value=True,
             help="Se traduce y guarda la primera vez que se ve cada mensaje; las siguientes veces es instantáneo.",
@@ -343,12 +364,13 @@ def render() -> None:
         # DateTime column: "...T15:00:00" > "...T00:00:00").
         to_date = f"{f_to.isoformat()}T23:59:59" if f_to else None
         sentiment = None if f_sentiment == "Todos" else f_sentiment
+        session = None if f_session == "Todas" else f_session
 
         # Lazy-load pagination: start small and grow on "Cargar más" instead
         # of a fixed cap that a single high-volume day could fill entirely.
         # Reset the page size whenever the filters themselves change, so a
         # new search doesn't inherit a huge limit from a previous one.
-        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword, f_username)
+        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword, f_username, session)
         if st.session_state.get("browse_filters_key") != filters_key:
             st.session_state["browse_filters_key"] = filters_key
             st.session_state["browse_page_size"] = 50
@@ -356,11 +378,12 @@ def render() -> None:
         page_size = st.session_state["browse_page_size"]
         posts = query_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None, limit=page_size,
+            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
+            session=session, limit=page_size,
         )
         total = count_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
+            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None, session=session,
         )
 
         if not posts:
@@ -372,7 +395,7 @@ def render() -> None:
             csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(
                 query_posts(ticker=f_ticker or None, from_date=from_date, to_date=to_date,
                             sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
-                            limit=total or 1)
+                            session=session, limit=total or 1)
             )))
             c_export.download_button(
                 "⬇️  Exportar CSV (todo el rango filtrado)",
