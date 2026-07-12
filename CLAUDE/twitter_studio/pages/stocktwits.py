@@ -381,8 +381,12 @@ def render() -> None:
                 _post_card(p, translate=translate)
 
             if len(posts) < total:
-                if st.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
+                c_more, c_all = st.columns(2)
+                if c_more.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
                     st.session_state["browse_page_size"] = page_size + 50
+                    st.rerun()
+                if c_all.button(f"⬇️  Cargar todo ({total})", use_container_width=True, key="browse_load_all"):
+                    st.session_state["browse_page_size"] = total
                     st.rerun()
                 _auto_click_when_visible("⬇️  Cargar más", nonce=page_size)
 
