@@ -11,7 +11,8 @@ import streamlit as st
 
 from database.schema import DBStocktwitsPost
 from services.stocktwits_service import (
-    delete_ticker, download_ticker, get_checkpoint, get_translation, list_tickers, query_posts, ticker_stats,
+    count_posts, delete_ticker, download_ticker, get_checkpoint, get_translation,
+    list_tickers, query_posts, ticker_stats,
 )
 from stocktwits_client.client import StocktwitsClient
 from utils.export_helper import to_csv_bytes, export_filename
@@ -273,12 +274,9 @@ def render() -> None:
         f_sentiment = c2.selectbox("Sentimiento", ["Todos", "Bullish", "Bearish"])
         f_keyword = c3.text_input("Buscar palabra clave", key="browse_keyword")
 
-        d1, d2, d3 = st.columns(3)
+        d1, d2 = st.columns(2)
         f_from = d1.date_input("Desde (opcional)", value=None, key="browse_from")
         f_to = d2.date_input("Hasta (opcional)", value=None, key="browse_to")
-        f_limit = d3.number_input("Máx. mensajes a mostrar", min_value=20, max_value=5000, value=200, step=50,
-                                   help="Un día con mucho volumen puede llenar todo el límite y tapar días "
-                                        "más antiguos — usa Desde/Hasta para acotar, o sube este límite.")
         translate = st.checkbox(
             "🌐 Traducir al español", value=True,
             help="Se traduce y guarda la primera vez que se ve cada mensaje; las siguientes veces es instantáneo.",
@@ -292,25 +290,42 @@ def render() -> None:
             s3.metric("Bearish", stats["bearish"])
             s4.metric("Sin etiqueta", stats["no_sentiment"])
 
+        from_date = f_from.isoformat() if f_from else None
+        # End-of-day, not midnight — otherwise a bare "YYYY-MM-DD" upper bound
+        # excludes every message on that day (string comparison against a
+        # DateTime column: "...T15:00:00" > "...T00:00:00").
+        to_date = f"{f_to.isoformat()}T23:59:59" if f_to else None
+        sentiment = None if f_sentiment == "Todos" else f_sentiment
+
+        # Lazy-load pagination: start small and grow on "Cargar más" instead
+        # of a fixed cap that a single high-volume day could fill entirely.
+        # Reset the page size whenever the filters themselves change, so a
+        # new search doesn't inherit a huge limit from a previous one.
+        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword)
+        if st.session_state.get("browse_filters_key") != filters_key:
+            st.session_state["browse_filters_key"] = filters_key
+            st.session_state["browse_page_size"] = 50
+
+        page_size = st.session_state["browse_page_size"]
         posts = query_posts(
-            ticker=f_ticker or None,
-            from_date=f_from.isoformat() if f_from else None,
-            # End-of-day, not midnight — otherwise a bare "YYYY-MM-DD" upper
-            # bound excludes every message on that day (string comparison
-            # against a DateTime column: "...T15:00:00" > "...T00:00:00").
-            to_date=f"{f_to.isoformat()}T23:59:59" if f_to else None,
-            sentiment=None if f_sentiment == "Todos" else f_sentiment,
-            keyword=f_keyword or None,
-            limit=int(f_limit),
+            ticker=f_ticker or None, from_date=from_date, to_date=to_date,
+            sentiment=sentiment, keyword=f_keyword or None, limit=page_size,
+        )
+        total = count_posts(
+            ticker=f_ticker or None, from_date=from_date, to_date=to_date,
+            sentiment=sentiment, keyword=f_keyword or None,
         )
 
         if not posts:
             st.info("No hay mensajes guardados con esos filtros. Descarga un ticker en la pestaña anterior.")
         else:
-            st.markdown(f"**{len(posts)} mensaje(s)**")
-            csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(posts)))
+            st.markdown(f"**Mostrando {len(posts)} de {total} mensaje(s)**")
+            csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(
+                query_posts(ticker=f_ticker or None, from_date=from_date, to_date=to_date,
+                            sentiment=sentiment, keyword=f_keyword or None, limit=total or 1)
+            )))
             st.download_button(
-                "⬇️  Exportar CSV",
+                "⬇️  Exportar CSV (todo el rango filtrado)",
                 data=csv_bytes,
                 file_name=export_filename(f"stocktwits_{f_ticker or 'all'}", "csv"),
                 mime="text/csv",
@@ -318,6 +333,11 @@ def render() -> None:
             st.markdown("---")
             for p in posts:
                 _post_card(p, translate=translate)
+
+            if len(posts) < total:
+                if st.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
+                    st.session_state["browse_page_size"] = page_size + 50
+                    st.rerun()
 
     # -----------------------------------------------------------------------
     with tab_manage:
