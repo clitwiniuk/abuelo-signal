@@ -315,10 +315,11 @@ def render() -> None:
 
     # -----------------------------------------------------------------------
     with tab_browse:
-        c1, c2, c3 = st.columns([2, 2, 2])
+        c1, c2, c3, c4 = st.columns([2, 2, 2, 2])
         f_ticker = c1.text_input("Ticker", key="browse_ticker", placeholder="TSLA").strip().upper()
         f_sentiment = c2.selectbox("Sentimiento", ["Todos", "Bullish", "Bearish"])
         f_keyword = c3.text_input("Buscar palabra clave", key="browse_keyword")
+        f_username = c4.text_input("Usuario", key="browse_username", placeholder="StocktwitsNews").strip().lstrip("@")
 
         d1, d2 = st.columns(2)
         f_from = d1.date_input("Desde (opcional)", value=None, key="browse_from")
@@ -347,7 +348,7 @@ def render() -> None:
         # of a fixed cap that a single high-volume day could fill entirely.
         # Reset the page size whenever the filters themselves change, so a
         # new search doesn't inherit a huge limit from a previous one.
-        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword)
+        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword, f_username)
         if st.session_state.get("browse_filters_key") != filters_key:
             st.session_state["browse_filters_key"] = filters_key
             st.session_state["browse_page_size"] = 50
@@ -355,11 +356,11 @@ def render() -> None:
         page_size = st.session_state["browse_page_size"]
         posts = query_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-            sentiment=sentiment, keyword=f_keyword or None, limit=page_size,
+            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None, limit=page_size,
         )
         total = count_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-            sentiment=sentiment, keyword=f_keyword or None,
+            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
         )
 
         if not posts:
@@ -368,7 +369,8 @@ def render() -> None:
             st.markdown(f"**Mostrando {len(posts)} de {total} mensaje(s)**")
             csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(
                 query_posts(ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-                            sentiment=sentiment, keyword=f_keyword or None, limit=total or 1)
+                            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
+                            limit=total or 1)
             )))
             st.download_button(
                 "⬇️  Exportar CSV (todo el rango filtrado)",

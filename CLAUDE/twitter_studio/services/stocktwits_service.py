@@ -172,7 +172,7 @@ def delete_ticker(ticker: str) -> int:
         db.close()
 
 
-def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentiment=None, keyword=None):
+def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentiment=None, keyword=None, username=None):
     q = db.query(DBStocktwitsPost)
     if ticker:
         q = q.filter(DBStocktwitsPost.ticker == ticker.upper())
@@ -184,6 +184,8 @@ def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentime
         q = q.filter(DBStocktwitsPost.sentiment == sentiment)
     if keyword:
         q = q.filter(DBStocktwitsPost.body.ilike(f"%{keyword}%"))
+    if username:
+        q = q.filter(DBStocktwitsPost.author_username.ilike(f"%{username}%"))
     return q
 
 
@@ -193,11 +195,12 @@ def query_posts(
     to_date=None,
     sentiment: Optional[str] = None,
     keyword: Optional[str] = None,
+    username: Optional[str] = None,
     limit: int = 500,
 ) -> list[DBStocktwitsPost]:
     db = SessionLocal()
     try:
-        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword)
+        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username)
         return q.order_by(DBStocktwitsPost.created_at.desc()).limit(limit).all()
     finally:
         db.close()
@@ -209,10 +212,11 @@ def count_posts(
     to_date=None,
     sentiment: Optional[str] = None,
     keyword: Optional[str] = None,
+    username: Optional[str] = None,
 ) -> int:
     db = SessionLocal()
     try:
-        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword).count()
+        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username).count()
     finally:
         db.close()
 
