@@ -8,6 +8,7 @@ import threading
 
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 from database.schema import DBStocktwitsPost
 from services.stocktwits_service import (
@@ -91,6 +92,51 @@ def _post_card(p: DBStocktwitsPost, translate: bool = False) -> None:
         f'</div>'
     )
     st.markdown(card_html, unsafe_allow_html=True)
+
+
+def _auto_click_when_visible(button_label: str, nonce: object) -> None:
+    """Fake infinite scroll: auto-clicks a Streamlit button once it scrolls
+    near the viewport, instead of making the user click "Cargar más"
+    themselves. Streamlit has no native scroll-triggered rerun, so this
+    reaches into the parent document (same-origin, the component iframe can
+    see it) and drives the real button — the button stays as a visible
+    fallback in case JS is blocked or the click race is missed.
+
+    `nonce` must change across reruns (e.g. the current page size) so the
+    browser treats each render as new content and re-executes the script —
+    identical HTML/JS is not guaranteed to re-run otherwise.
+    """
+    components.html(
+        f"""
+        <script>
+        // nonce={nonce}
+        (function() {{
+            const label = {button_label!r};
+            function findButton() {{
+                const buttons = window.parent.document.querySelectorAll('button');
+                for (const b of buttons) {{
+                    if (b.innerText && b.innerText.trim() === label.trim()) return b;
+                }}
+                return null;
+            }}
+            let clicked = false;
+            const btn = findButton();
+            if (btn && window.parent.IntersectionObserver) {{
+                const observer = new window.parent.IntersectionObserver((entries) => {{
+                    entries.forEach((entry) => {{
+                        if (entry.isIntersecting && !clicked) {{
+                            clicked = true;
+                            btn.click();
+                        }}
+                    }});
+                }}, {{ root: null, rootMargin: '600px', threshold: 0 }});
+                observer.observe(btn);
+            }}
+        }})();
+        </script>
+        """,
+        height=0,
+    )
 
 
 def _posts_to_export_dicts(posts: list[DBStocktwitsPost]) -> list[dict]:
@@ -338,6 +384,7 @@ def render() -> None:
                 if st.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):
                     st.session_state["browse_page_size"] = page_size + 50
                     st.rerun()
+                _auto_click_when_visible("⬇️  Cargar más", nonce=page_size)
 
     # -----------------------------------------------------------------------
     with tab_manage:
