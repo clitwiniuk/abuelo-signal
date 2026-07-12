@@ -190,10 +190,8 @@ def render() -> None:
             "de Cloudflare (no funciona en modo headless todavía)."
         )
         st.caption(
-            "⚠️ En tickers muy activos, Stocktwits reinicia el scroll tras un puñado de páginas "
-            "(límite del propio sitio, no de esta herramienta) — cada descarga trae solo lo más "
-            "reciente. Usa **Modo sync** repetidamente (p.ej. una vez al día) para ir acumulando "
-            "histórico con el tiempo en vez de pedirlo todo de golpe."
+            "Para descargas grandes en tickers muy activos, súbete al Límite de seguridad y ten "
+            "paciencia — cada página tarda unos segundos, pero ya no hay tope artificial de mensajes."
         )
 
         thread: threading.Thread | None = st.session_state.get("st_dl_thread")
