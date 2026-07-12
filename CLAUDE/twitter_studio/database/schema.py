@@ -84,6 +84,7 @@ class DBStocktwitsPost(Base):
     link_image_url = Column(String)
     is_reply = Column(Boolean, default=False)
     post_url = Column(String)
+    is_relevant = Column(Boolean, default=False, index=True)  # user-starred in "Explorar"
     fetched_at = Column(DateTime, default=datetime.utcnow)
 
 

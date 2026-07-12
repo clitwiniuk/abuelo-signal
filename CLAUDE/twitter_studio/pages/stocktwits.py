@@ -13,7 +13,7 @@ import streamlit.components.v1 as components
 from database.schema import DBStocktwitsPost
 from services.stocktwits_service import (
     count_posts, delete_ticker, download_ticker, get_checkpoint, get_translation,
-    list_tickers, query_posts, ticker_stats,
+    list_tickers, query_posts, ticker_stats, toggle_relevant,
 )
 from stocktwits_client.client import StocktwitsClient
 from utils.export_helper import to_csv_bytes, export_filename
@@ -345,9 +345,15 @@ def render() -> None:
             help="PM = premarket, RTH = horario regular, AH = after-hours, Closed = fuera de horario "
                  "(hora de Nueva York).",
         )
-        translate = st.checkbox(
+        t1, t2 = st.columns(2)
+        translate = t1.checkbox(
             "🌐 Traducir al español", value=True,
             help="Se traduce y guarda la primera vez que se ve cada mensaje; las siguientes veces es instantáneo.",
+        )
+        relevant_only = t2.checkbox(
+            "⭐ Solo relevantes", value=False,
+            help="Marca mensajes con la estrella mientras repasas, luego activa esto para verlos solos, "
+                 "sin tener que pasar por los que no importan.",
         )
 
         if f_ticker:
@@ -370,7 +376,7 @@ def render() -> None:
         # of a fixed cap that a single high-volume day could fill entirely.
         # Reset the page size whenever the filters themselves change, so a
         # new search doesn't inherit a huge limit from a previous one.
-        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword, f_username, session)
+        filters_key = (f_ticker, from_date, to_date, sentiment, f_keyword, f_username, session, relevant_only)
         if st.session_state.get("browse_filters_key") != filters_key:
             st.session_state["browse_filters_key"] = filters_key
             st.session_state["browse_page_size"] = 50
@@ -379,11 +385,12 @@ def render() -> None:
         posts = query_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
             sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
-            session=session, limit=page_size,
+            session=session, relevant_only=relevant_only, limit=page_size,
         )
         total = count_posts(
             ticker=f_ticker or None, from_date=from_date, to_date=to_date,
-            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None, session=session,
+            sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
+            session=session, relevant_only=relevant_only,
         )
 
         if not posts:
@@ -395,7 +402,7 @@ def render() -> None:
             csv_bytes = to_csv_bytes(pd.DataFrame(_posts_to_export_dicts(
                 query_posts(ticker=f_ticker or None, from_date=from_date, to_date=to_date,
                             sentiment=sentiment, keyword=f_keyword or None, username=f_username or None,
-                            session=session, limit=total or 1)
+                            session=session, relevant_only=relevant_only, limit=total or 1)
             )))
             c_export.download_button(
                 "⬇️  Exportar CSV (todo el rango filtrado)",
@@ -411,7 +418,12 @@ def render() -> None:
 
             st.markdown("---")
             for p in posts:
-                _post_card(p, translate=translate)
+                c_star, c_card = st.columns([0.06, 0.94])
+                if c_star.button("⭐" if p.is_relevant else "☆", key=f"star_{p.ticker}_{p.id}"):
+                    toggle_relevant(p.id, p.ticker)
+                    st.rerun()
+                with c_card:
+                    _post_card(p, translate=translate)
 
             if len(posts) < total:
                 if st.button("⬇️  Cargar más", use_container_width=True, key="browse_load_more"):

@@ -174,7 +174,7 @@ def delete_ticker(ticker: str) -> int:
 
 
 def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentiment=None,
-                           keyword=None, username=None, session=None):
+                           keyword=None, username=None, session=None, relevant_only=False):
     q = db.query(DBStocktwitsPost)
     if ticker:
         q = q.filter(DBStocktwitsPost.ticker == ticker.upper())
@@ -190,6 +190,8 @@ def _filtered_posts_query(db, ticker=None, from_date=None, to_date=None, sentime
         q = q.filter(DBStocktwitsPost.author_username.ilike(f"%{username}%"))
     if session:
         q = q.filter(DBStocktwitsPost.market_session == session)
+    if relevant_only:
+        q = q.filter(DBStocktwitsPost.is_relevant.is_(True))
     return q
 
 
@@ -201,11 +203,13 @@ def query_posts(
     keyword: Optional[str] = None,
     username: Optional[str] = None,
     session: Optional[str] = None,
+    relevant_only: bool = False,
     limit: int = 500,
 ) -> list[DBStocktwitsPost]:
     db = SessionLocal()
     try:
-        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username, session)
+        q = _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username,
+                                   session, relevant_only)
         return q.order_by(DBStocktwitsPost.created_at.desc()).limit(limit).all()
     finally:
         db.close()
@@ -219,10 +223,28 @@ def count_posts(
     keyword: Optional[str] = None,
     username: Optional[str] = None,
     session: Optional[str] = None,
+    relevant_only: bool = False,
 ) -> int:
     db = SessionLocal()
     try:
-        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username, session).count()
+        return _filtered_posts_query(db, ticker, from_date, to_date, sentiment, keyword, username,
+                                      session, relevant_only).count()
+    finally:
+        db.close()
+
+
+def toggle_relevant(post_id: str, ticker: str) -> bool:
+    """Flip the is_relevant star for a post. Returns the new state."""
+    db = SessionLocal()
+    try:
+        row = db.query(DBStocktwitsPost).filter(
+            DBStocktwitsPost.id == post_id, DBStocktwitsPost.ticker == ticker.upper()
+        ).first()
+        if row is None:
+            return False
+        row.is_relevant = not bool(row.is_relevant)
+        db.commit()
+        return row.is_relevant
     finally:
         db.close()
 
