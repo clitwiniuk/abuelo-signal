@@ -13,6 +13,7 @@
 
 import json
 import math
+import re
 import sqlite3
 import logging
 import threading
@@ -292,7 +293,8 @@ def fetch_homepage() -> list:
         return []
 
     for tr in target_table.find_all("tr"):
-        cells = [td.get_text(strip=True) for td in tr.find_all("td")]
+        tds = tr.find_all("td")
+        cells = [td.get_text(strip=True) for td in tds]
         if len(cells) < 6:
             continue
         if cells[5].lower() not in KNOWN_CATEGORIES:
@@ -301,8 +303,20 @@ def fetch_homepage() -> list:
             float(cells[1].replace(",", ""))
         except ValueError:
             continue
+        # 2026-07-15: Finviz añadió un nodo de texto extra en la celda del
+        # ticker (inicial del logo) y get_text() lo concatenaba al símbolo
+        # ("VEEE" -> "VVEEE"), corrompiendo snapshots/burst_universe/pbt1.
+        # El href del enlace quote.ashx es inmune al markup de la celda.
+        ticker = cells[0]
+        a = tds[0].find("a", href=True)
+        if a:
+            m = re.search(r"quote\.ashx\?t=([A-Za-z0-9.\-]+)", a["href"])
+            if m:
+                ticker = m.group(1).upper()
+            elif a.get_text(strip=True):
+                ticker = a.get_text(strip=True)
         results.append({
-            "ticker":     cells[0],
+            "ticker":     ticker,
             "price":      cells[1],
             "change_pct": cells[2],
             "volume":     cells[3],
