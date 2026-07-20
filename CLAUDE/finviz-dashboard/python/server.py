@@ -13,6 +13,7 @@
 
 import json
 import math
+import os
 import re
 import sqlite3
 import logging
@@ -53,7 +54,13 @@ from inplay_engine import compute_inplay_scores
 # CONFIGURACIÓN
 # ------------------------------------------------------------------
 
-_APP_DATA_DIR = Path.home() / "Library" / "Application Support" / "finviz-dashboard"
+_DATA_DIR_ENV = os.environ.get("FINVIZ_DASHBOARD_DATA_DIR")
+if _DATA_DIR_ENV:
+    _APP_DATA_DIR = Path(_DATA_DIR_ENV)
+elif Path.home().joinpath("Library").is_dir():
+    _APP_DATA_DIR = Path.home() / "Library" / "Application Support" / "finviz-dashboard"
+else:
+    _APP_DATA_DIR = Path.home() / ".local" / "share" / "finviz-dashboard"
 _APP_DATA_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH      = str(_APP_DATA_DIR / "finviz_snapshots.db")
 INTERVAL_SEC = 5 * 60   # 5 minutos
@@ -133,6 +140,11 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         add_log(f"WARN: no se pudieron cargar tickers: {e}")
     ibkr_svc.start()
+    # Headless deploys (VPS) have no Electron UI to click "Start" -- the
+    # scheduler that actually captures Finviz snapshots was never being
+    # triggered, so market_open stayed False and last_snapshot stayed null
+    # all day despite the process looking "active" (found 2026-07-20).
+    start_scheduler()
     add_log("Servidor iniciado")
     yield
 

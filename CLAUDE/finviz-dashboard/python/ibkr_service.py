@@ -6,6 +6,7 @@
 =============================================================
 """
 import asyncio
+import os
 import sqlite3
 import threading
 import logging
@@ -16,7 +17,7 @@ import pytz
 log = logging.getLogger(__name__)
 ET = pytz.timezone("America/New_York")
 
-TWS_PORT   = 7497   # TWS paper/live gateway port
+TWS_PORT   = int(os.environ.get("IBKR_API_PORT", 7497))   # TWS paper/live gateway port
 CLIENT_ID  = 5055   # Must not conflict with trading system (5001, 5099)
 MAX_TICKERS = 40
 
