@@ -1,6 +1,0 @@
-rule_condition,symbol,tp_pct,sl_pct,total_return,sharpe_ratio,max_drawdown,win_rate,score,total_trades
-rsi_2 >= 0,TNFA,5.0,-2.0,0.0,,0.0,0,0.0,0
-rsi_5 >= 0,TNFA,5.0,-2.0,0.0,,0.0,0,0.0,0
-rsi_5 >= 1,TNFA,5.0,-2.0,0.0,,0.0,0,0.0,0
-rsi_2 >= 0,HUDI,5.0,-2.0,0.0,,0.0,0,0.0,0
-rsi_5 >= 0,HUDI,5.0,-2.0,0.0,,0.0,0,0.0,0

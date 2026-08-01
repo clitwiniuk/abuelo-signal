@@ -1,0 +1,57 @@
+from,to,count
+Downgrades,New High,1
+Insider Buying,Insider Selling,1
+Insider Selling,Downgrades,1
+Insider Selling,Insider Buying,3
+Insider Selling,New High,2
+Most Active,New Low,62
+Most Active,Overbought,12
+Most Active,Top Gainers,386
+Most Active,Top Losers,63
+Most Active,Unusual Volume,266
+New High,Insider Selling,3
+New High,Overbought,97
+New High,Top Gainers,108
+New High,Top Losers,5
+New High,Unusual Volume,3
+New High,Upgrades,48
+New Low,Downgrades,1
+New Low,Insider Selling,1
+New Low,Most Active,66
+New Low,Oversold,3
+New Low,Top Gainers,10
+New Low,Top Losers,393
+New Low,Unusual Volume,33
+Overbought,Insider Selling,1
+Overbought,Most Active,12
+Overbought,New High,91
+Overbought,Top Gainers,77
+Overbought,Top Losers,6
+Overbought,Unusual Volume,4
+Oversold,Most Active,1
+Oversold,New Low,2
+Oversold,Top Gainers,2
+Oversold,Top Losers,1
+Top Gainers,Most Active,391
+Top Gainers,New High,116
+Top Gainers,New Low,2
+Top Gainers,Overbought,81
+Top Gainers,Top Losers,31
+Top Gainers,Unusual Volume,567
+Top Gainers,Upgrades,18
+Top Losers,Insider Buying,1
+Top Losers,Most Active,58
+Top Losers,New Low,403
+Top Losers,Overbought,4
+Top Losers,Oversold,2
+Top Losers,Top Gainers,17
+Top Losers,Unusual Volume,30
+Unusual Volume,Most Active,270
+Unusual Volume,New High,3
+Unusual Volume,New Low,36
+Unusual Volume,Overbought,3
+Unusual Volume,Top Gainers,574
+Unusual Volume,Top Losers,35
+Upgrades,Insider Selling,1
+Upgrades,New High,51
+Upgrades,Top Gainers,19

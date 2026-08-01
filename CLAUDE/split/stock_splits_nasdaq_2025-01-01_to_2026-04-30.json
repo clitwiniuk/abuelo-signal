@@ -1,0 +1,2900 @@
+[
+  {
+    "Date": "2025-05-30",
+    "Symbol": "EJH",
+    "Company Name": "E-home Household Service Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-06-02",
+    "Symbol": "LYEL",
+    "Company Name": "Lyell Immunopharma Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-06-02",
+    "Symbol": "ARBB",
+    "Company Name": "Arb Iot Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-02",
+    "Symbol": "BNBX",
+    "Company Name": "Bnb Plus Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-02",
+    "Symbol": "EKSO",
+    "Company Name": "Ekso Bionics Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-03",
+    "Symbol": "AGMH",
+    "Company Name": "Agm Group Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-06-06",
+    "Symbol": "INAB",
+    "Company Name": "In8bio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-06-09",
+    "Symbol": "AEMD",
+    "Company Name": "Aethlon Medical Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-06-09",
+    "Symbol": "BOLT",
+    "Company Name": "Bolt Biotherapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-06-09",
+    "Symbol": "DUO",
+    "Company Name": "Fangdd Network Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-06-09",
+    "Symbol": "NKTR",
+    "Company Name": "Nektar Therapeutics",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-09",
+    "Symbol": "PXLW",
+    "Company Name": "Pixelworks Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-06-10",
+    "Symbol": "BBLG",
+    "Company Name": "Bone Biologics Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2025-06-10",
+    "Symbol": "CLRO",
+    "Company Name": "Clearone Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-10",
+    "Symbol": "ORLY",
+    "Company Name": "O Reilly Automotive Inc",
+    "Type": "Forward",
+    "Split Ratio": "15 for 1"
+  },
+  {
+    "Date": "2025-06-11",
+    "Symbol": "SVRE",
+    "Company Name": "Saverone 2014 Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-06-12",
+    "Symbol": "ERNA",
+    "Company Name": "Ernexa Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-06-12",
+    "Symbol": "EMPD",
+    "Company Name": "Empery Digital Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-06-13",
+    "Symbol": "ARTL",
+    "Company Name": "Artelo Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2025-06-13",
+    "Symbol": "CHNR",
+    "Company Name": "China Natural Resources Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-06-13",
+    "Symbol": "ONCO",
+    "Company Name": "Onconetix Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 85.03"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "RGC",
+    "Company Name": "Regencell Bioscience Holdings Ltd.",
+    "Type": "Forward",
+    "Split Ratio": "38 for 1"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "SHPH",
+    "Company Name": "Shuttle Pharmaceuticals Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "NEXR",
+    "Company Name": "Nexera Technologies Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 17"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "SMX",
+    "Company Name": "Smx (security Matters) Public Ltd Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4.1"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "JZ",
+    "Company Name": "Jianzhi Education Technology Group Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "GCTK",
+    "Company Name": "Glucotrack Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 59.99"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "CBIO",
+    "Company Name": "Crescent Biopharma Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-06-16",
+    "Symbol": "NCI",
+    "Company Name": "Neo-concept International Group Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-06-17",
+    "Symbol": "KYNB",
+    "Company Name": "Kyntra Bio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-06-17",
+    "Symbol": "SNSE",
+    "Company Name": "Sensei Biotherapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-06-18",
+    "Symbol": "IBKR",
+    "Company Name": "Interactive Brokers Group Inc",
+    "Type": "Forward",
+    "Split Ratio": "4 for 1"
+  },
+  {
+    "Date": "2025-06-20",
+    "Symbol": "BNRG",
+    "Company Name": "Brenmiller Energy Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-06-20",
+    "Symbol": "UNCY",
+    "Company Name": "Unicycive Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-06-20",
+    "Symbol": "XXII",
+    "Company Name": "22nd Century Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 23"
+  },
+  {
+    "Date": "2025-06-23",
+    "Symbol": "PEGA",
+    "Company Name": "Pegasystems Inc",
+    "Type": "Forward",
+    "Split Ratio": "2 for 1"
+  },
+  {
+    "Date": "2025-06-23",
+    "Symbol": "SLE",
+    "Company Name": "Super League Enterprise Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2025-06-23",
+    "Symbol": "TRUG",
+    "Company Name": "Trugolf Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-06-24",
+    "Symbol": "CLRB",
+    "Company Name": "Cellectar Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-06-24",
+    "Symbol": "JDZG",
+    "Company Name": "Jiade Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-06-26",
+    "Symbol": "SBLX",
+    "Company Name": "Stablex Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-06-26",
+    "Symbol": "SLMT",
+    "Company Name": "Brera Holdings PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-06-27",
+    "Symbol": "GNLN",
+    "Company Name": "Greenlane Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 751.88"
+  },
+  {
+    "Date": "2025-06-27",
+    "Symbol": "INDP",
+    "Company Name": "Indaptus Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 28"
+  },
+  {
+    "Date": "2025-06-27",
+    "Symbol": "TRNR",
+    "Company Name": "Interactive Strength Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-06-30",
+    "Symbol": "AIMD",
+    "Company Name": "Ainos Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-07-01",
+    "Symbol": "HSDT",
+    "Company Name": "Solana Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-07-03",
+    "Symbol": "SPRC",
+    "Company Name": "Scisparc Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 21"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "NUWE",
+    "Company Name": "Nuwellis Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 42"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "LVLU",
+    "Company Name": "Lulu's Fashion Lounge Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "REVB",
+    "Company Name": "Revelation Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "FLYE",
+    "Company Name": "Fly-e Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "BIVI",
+    "Company Name": "Biovie Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "LRHC",
+    "Company Name": "La Rosa Holdings Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 80"
+  },
+  {
+    "Date": "2025-07-07",
+    "Symbol": "BGMS",
+    "Company Name": "Bio Green Med Solution Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-07-08",
+    "Symbol": "BNZI",
+    "Company Name": "Banzai International Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-10",
+    "Symbol": "MFI",
+    "Company Name": "Mf International Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-07-14",
+    "Symbol": "XAIR",
+    "Company Name": "Beyond Air Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-07-14",
+    "Symbol": "HTOO",
+    "Company Name": "Fusion Fuel Green PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 35"
+  },
+  {
+    "Date": "2025-07-14",
+    "Symbol": "NXTC",
+    "Company Name": "Nextcure Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-07-14",
+    "Symbol": "PASG",
+    "Company Name": "Passage Bio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-07-18",
+    "Symbol": "CREG",
+    "Company Name": "Smart Powerr Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-18",
+    "Symbol": "MLGO",
+    "Company Name": "Microalgo Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-07-21",
+    "Symbol": "GVH",
+    "Company Name": "Globavend Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2025-07-21",
+    "Symbol": "IVF",
+    "Company Name": "Invo Fertility Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-07-21",
+    "Symbol": "TWG",
+    "Company Name": "Top Wealth Group Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 90.01"
+  },
+  {
+    "Date": "2025-07-22",
+    "Symbol": "CNSP",
+    "Company Name": "Cns Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-07-22",
+    "Symbol": "PC",
+    "Company Name": "Premium Catering (holdings) Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 9"
+  },
+  {
+    "Date": "2025-07-25",
+    "Symbol": "VRCA",
+    "Company Name": "Verrica Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-25",
+    "Symbol": "IMNN",
+    "Company Name": "Imunon Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-07-28",
+    "Symbol": "AVX",
+    "Company Name": "Avax One Technology Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 9"
+  },
+  {
+    "Date": "2025-07-28",
+    "Symbol": "IMA",
+    "Company Name": "Imagenebio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-07-28",
+    "Symbol": "VELO",
+    "Company Name": "Velo3d Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-07-29",
+    "Symbol": "AIHS",
+    "Company Name": "Senmiao Technology Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-29",
+    "Symbol": "SLXN",
+    "Company Name": "Silexion Therapeutics Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-07-30",
+    "Symbol": "NAAS",
+    "Company Name": "Naas Technology Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2025-07-31",
+    "Symbol": "VSTD",
+    "Company Name": "Vestand Inc",
+    "Type": "Forward",
+    "Split Ratio": "4 for 1"
+  },
+  {
+    "Date": "2025-07-31",
+    "Symbol": "BDRX",
+    "Company Name": "Biodexa Pharmaceuticals PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-07-31",
+    "Symbol": "FGI",
+    "Company Name": "Fgi Industries Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-08-01",
+    "Symbol": "HCTI",
+    "Company Name": "Healthcare Triangle Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 248.76"
+  },
+  {
+    "Date": "2025-08-01",
+    "Symbol": "DRMA",
+    "Company Name": "Dermata Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-04",
+    "Symbol": "ANGH",
+    "Company Name": "Anghami Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-04",
+    "Symbol": "AQMS",
+    "Company Name": "Aqua Metals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-04",
+    "Symbol": "NIVF",
+    "Company Name": "Newgenivf Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-08-04",
+    "Symbol": "ZSTK",
+    "Company Name": "Zerostack Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 39"
+  },
+  {
+    "Date": "2025-08-05",
+    "Symbol": "ACXP",
+    "Company Name": "Acurx Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-08-05",
+    "Symbol": "MKZR",
+    "Company Name": "Mackenzie Realty Capital Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-05",
+    "Symbol": "OST",
+    "Company Name": "Ostin Technology Group Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-08-06",
+    "Symbol": "SEAT",
+    "Company Name": "Vivid Seats Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-08-07",
+    "Symbol": "SMX",
+    "Company Name": "Smx (security Matters) Public Ltd Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2025-08-07",
+    "Symbol": "SPRB",
+    "Company Name": "Spruce Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 75.02"
+  },
+  {
+    "Date": "2025-08-08",
+    "Symbol": "ZBAI",
+    "Company Name": "Atif Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 18"
+  },
+  {
+    "Date": "2025-08-08",
+    "Symbol": "DEVS",
+    "Company Name": "Devvstream Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-08",
+    "Symbol": "EVTV",
+    "Company Name": "Envirotech Vehicles Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-08",
+    "Symbol": "HTCO",
+    "Company Name": "High-trend International Group",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-08-11",
+    "Symbol": "NCNA",
+    "Company Name": "Nucana PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2025-08-11",
+    "Symbol": "VERU",
+    "Company Name": "Veru Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-11",
+    "Symbol": "WATT",
+    "Company Name": "Energous Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-08-12",
+    "Symbol": "FEED",
+    "Company Name": "Envue Medical Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-15",
+    "Symbol": "HIND",
+    "Company Name": "Vyome Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2025-08-18",
+    "Symbol": "CHSN",
+    "Company Name": "Chanson International Holding",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 80"
+  },
+  {
+    "Date": "2025-08-18",
+    "Symbol": "DCOY",
+    "Company Name": "Decoy Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-08-18",
+    "Symbol": "GRDX",
+    "Company Name": "Gridai Technologies Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-08-19",
+    "Symbol": "LNZA",
+    "Company Name": "Lanzatech Global Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-08-20",
+    "Symbol": "GIBO",
+    "Company Name": "Gibo Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2025-08-22",
+    "Symbol": "ZNB",
+    "Company Name": "Zeta Network Group",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-08-22",
+    "Symbol": "OESX",
+    "Company Name": "Orion Energy Systems Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-25",
+    "Symbol": "FRSX",
+    "Company Name": "Foresight Autonomous Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2025-08-25",
+    "Symbol": "SVRN",
+    "Company Name": "Oceanpal Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-08-25",
+    "Symbol": "BCTX",
+    "Company Name": "Briacell Therapeutics Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-25",
+    "Symbol": "GWAV",
+    "Company Name": "Greenwave Technology Solutions Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 110.01"
+  },
+  {
+    "Date": "2025-08-25",
+    "Symbol": "SUGP",
+    "Company Name": "Su Group Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-26",
+    "Symbol": "AKAN",
+    "Company Name": "Akanda Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3.13"
+  },
+  {
+    "Date": "2025-08-26",
+    "Symbol": "CMMB",
+    "Company Name": "Chemomab Therapeutics Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2025-08-28",
+    "Symbol": "DRIO",
+    "Company Name": "Dariohealth Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-08-28",
+    "Symbol": "GDHG",
+    "Company Name": "Golden Heaven Group Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-08-29",
+    "Symbol": "SEGG",
+    "Company Name": "Sports Entertainment Gaming Global Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-08-29",
+    "Symbol": "TC",
+    "Company Name": "Token Cat Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-09-02",
+    "Symbol": "QCLS",
+    "Company Name": "Q/c Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-09-02",
+    "Symbol": "LCID",
+    "Company Name": "Lucid Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-02",
+    "Symbol": "ELAB",
+    "Company Name": "Pmgc Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3.5"
+  },
+  {
+    "Date": "2025-09-03",
+    "Symbol": "ABTC",
+    "Company Name": "American Bitcoin Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-09-05",
+    "Symbol": "KITT",
+    "Company Name": "Nauticus Robotics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 9"
+  },
+  {
+    "Date": "2025-09-08",
+    "Symbol": "GLXG",
+    "Company Name": "Galaxy Payroll Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-08",
+    "Symbol": "OLOX",
+    "Company Name": "Olenox Industries Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 64.02"
+  },
+  {
+    "Date": "2025-09-08",
+    "Symbol": "OXLC",
+    "Company Name": "Oxford Lane Capital Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-09-08",
+    "Symbol": "SDST",
+    "Company Name": "Stardust Power Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-08",
+    "Symbol": "WAI",
+    "Company Name": "Top Kingwin Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-09-09",
+    "Symbol": "DGNX",
+    "Company Name": "Diginex Ltd.",
+    "Type": "Forward",
+    "Split Ratio": "8 for 1"
+  },
+  {
+    "Date": "2025-09-09",
+    "Symbol": "GP",
+    "Company Name": "Greenpower Motor Co Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-10",
+    "Symbol": "STKH",
+    "Company Name": "Steakholder Foods Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-09-15",
+    "Symbol": "BDSX",
+    "Company Name": "Biodesix Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-09-15",
+    "Symbol": "SDOT",
+    "Company Name": "Sadot Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-16",
+    "Symbol": "NXTT",
+    "Company Name": "Next Technology Holding Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2025-09-16",
+    "Symbol": "VCIG",
+    "Company Name": "Vci Global Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-09-18",
+    "Symbol": "LONA",
+    "Company Name": "Leonabio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-19",
+    "Symbol": "BIAF",
+    "Company Name": "Bioaffinity Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-09-19",
+    "Symbol": "VOR",
+    "Company Name": "Vor Biopharma Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-09-22",
+    "Symbol": "NXTS",
+    "Company Name": "Nexentis Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 35"
+  },
+  {
+    "Date": "2025-09-23",
+    "Symbol": "GMEX",
+    "Company Name": "Gmex Robotics Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-09-23",
+    "Symbol": "NRIM",
+    "Company Name": "Northrim Bancorp Inc",
+    "Type": "Forward",
+    "Split Ratio": "4 for 1"
+  },
+  {
+    "Date": "2025-09-25",
+    "Symbol": "MNDR",
+    "Company Name": "Mobile-health Network Solutions",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-09-26",
+    "Symbol": "LVO",
+    "Company Name": "Liveone Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-26",
+    "Symbol": "IBG",
+    "Company Name": "Innovation Beverage Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-09-29",
+    "Symbol": "CETX",
+    "Company Name": "Cemtrex Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-09-29",
+    "Symbol": "LESL",
+    "Company Name": "Leslie's Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-09-29",
+    "Symbol": "ORKT",
+    "Company Name": "Orangekloud Technology Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2025-09-30",
+    "Symbol": "AGPU",
+    "Company Name": "Axe Compute Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-09-30",
+    "Symbol": "LNAI",
+    "Company Name": "Lunai Bioworks Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-09-30",
+    "Symbol": "RAYA",
+    "Company Name": "Erayak Power Solution Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 219.78"
+  },
+  {
+    "Date": "2025-09-30",
+    "Symbol": "YAAS",
+    "Company Name": "Youxin Technology Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 80"
+  },
+  {
+    "Date": "2025-10-01",
+    "Symbol": "YHGJ",
+    "Company Name": "Yunhong Green Cti Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-03",
+    "Symbol": "AREB",
+    "Company Name": "American Rebel Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-10-06",
+    "Symbol": "NVNI",
+    "Company Name": "Nvni Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-06",
+    "Symbol": "PMAX",
+    "Company Name": "Powell Max Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-10-06",
+    "Symbol": "CETY",
+    "Company Name": "Clean Energy Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-10-06",
+    "Symbol": "GGR",
+    "Company Name": "Gogoro Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-10-07",
+    "Symbol": "CHAI",
+    "Company Name": "Core Ai Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2025-10-10",
+    "Symbol": "CLIK",
+    "Company Name": "Click Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-10-10",
+    "Symbol": "MOVE",
+    "Company Name": "Movano Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-13",
+    "Symbol": "CDT",
+    "Company Name": "Cdt Equity Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-10-13",
+    "Symbol": "JYD",
+    "Company Name": "Jayud Global Logistics Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-10-13",
+    "Symbol": "LGCL",
+    "Company Name": "Lucas Gc Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2025-10-13",
+    "Symbol": "LPSN",
+    "Company Name": "Liveperson Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-10-13",
+    "Symbol": "PSIG",
+    "Company Name": "Ps International Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-10-20",
+    "Symbol": "AEMD",
+    "Company Name": "Aethlon Medical Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-20",
+    "Symbol": "FRMM",
+    "Company Name": "Forum Markets Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-20",
+    "Symbol": "SENS",
+    "Company Name": "Senseonics Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-10-21",
+    "Symbol": "WOK",
+    "Company Name": "Work Medical Technology Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-10-21",
+    "Symbol": "GNPX",
+    "Company Name": "Genprex Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-10-23",
+    "Symbol": "SMX",
+    "Company Name": "Smx (security Matters) Public Ltd Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10.9"
+  },
+  {
+    "Date": "2025-10-24",
+    "Symbol": "QTI",
+    "Company Name": "Qt Imaging Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-10-27",
+    "Symbol": "CYCU",
+    "Company Name": "Cycurion Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-10-27",
+    "Symbol": "GURE",
+    "Company Name": "Gulf Resources Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-10-27",
+    "Symbol": "IPW",
+    "Company Name": "Ipower Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-10-27",
+    "Symbol": "SONM",
+    "Company Name": "Dna X Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 18"
+  },
+  {
+    "Date": "2025-10-27",
+    "Symbol": "YYAI",
+    "Company Name": "Airwa Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-10-28",
+    "Symbol": "ENVB",
+    "Company Name": "Enveric Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-10-29",
+    "Symbol": "LINK",
+    "Company Name": "Interlink Electronics Inc",
+    "Type": "Forward",
+    "Split Ratio": "1.5 for 1"
+  },
+  {
+    "Date": "2025-10-29",
+    "Symbol": "NVA",
+    "Company Name": "Nova Minerals Ltd.",
+    "Type": "Forward",
+    "Split Ratio": "5 for 1"
+  },
+  {
+    "Date": "2025-10-31",
+    "Symbol": "NCEL",
+    "Company Name": "Newcelx Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-11-03",
+    "Symbol": "RETO",
+    "Company Name": "Reto Eco-solutions Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-11-03",
+    "Symbol": "ADTX",
+    "Company Name": "Aditxt Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 112.99"
+  },
+  {
+    "Date": "2025-11-03",
+    "Symbol": "DCX",
+    "Company Name": "Digital Currency X Technology Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-11-04",
+    "Symbol": "FLYE",
+    "Company Name": "Fly-e Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-11-05",
+    "Symbol": "IPST",
+    "Company Name": "Ip Strategy Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-11-07",
+    "Symbol": "RAY",
+    "Company Name": "Raytech Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-11-10",
+    "Symbol": "IOTR",
+    "Company Name": "Iothree Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-11-14",
+    "Symbol": "NCEW",
+    "Company Name": "New Century Logistics (bvi) Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-11-14",
+    "Symbol": "YDKG",
+    "Company Name": "Yueda Digital Holding",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-11-17",
+    "Symbol": "NFLX",
+    "Company Name": "Netflix Inc",
+    "Type": "Forward",
+    "Split Ratio": "10 for 1"
+  },
+  {
+    "Date": "2025-11-18",
+    "Symbol": "SMX",
+    "Company Name": "Smx (security Matters) Public Ltd Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-11-21",
+    "Symbol": "MIGI",
+    "Company Name": "Mawson Infrastructure Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-11-21",
+    "Symbol": "WTO",
+    "Company Name": "Utime Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-11-21",
+    "Symbol": "EZGO",
+    "Company Name": "Ezgo Technologies Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-11-21",
+    "Symbol": "JXG",
+    "Company Name": "Jx Luxventure Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-11-25",
+    "Symbol": "RJET",
+    "Company Name": "Republic Airways Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-11-26",
+    "Symbol": "LGHL",
+    "Company Name": "Lion Group Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 13"
+  },
+  {
+    "Date": "2025-11-28",
+    "Symbol": "IVF",
+    "Company Name": "Invo Fertility Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-11-28",
+    "Symbol": "PLRZ",
+    "Company Name": "Polyrizon Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2025-11-28",
+    "Symbol": "PMN",
+    "Company Name": "Promis Neurosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-12-01",
+    "Symbol": "KXIN",
+    "Company Name": "Kaixin Holdings",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-12-01",
+    "Symbol": "LARK",
+    "Company Name": "Landmark Bancorp Inc",
+    "Type": "Forward",
+    "Split Ratio": "1.05 for 1"
+  },
+  {
+    "Date": "2025-12-01",
+    "Symbol": "MBRX",
+    "Company Name": "Moleculin Biotech Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-12-01",
+    "Symbol": "NIVF",
+    "Company Name": "Newgenivf Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-12-02",
+    "Symbol": "CBSH",
+    "Company Name": "Commerce Bancshares Inc",
+    "Type": "Forward",
+    "Split Ratio": "1.05 for 1"
+  },
+  {
+    "Date": "2025-12-02",
+    "Symbol": "RUBI",
+    "Company Name": "Rubico Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-12-02",
+    "Symbol": "SPHL",
+    "Company Name": "Springview Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-12-02",
+    "Symbol": "XHLD",
+    "Company Name": "Ten Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-12-02",
+    "Symbol": "TLRY",
+    "Company Name": "Tilray Brands Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-03",
+    "Symbol": "STRO",
+    "Company Name": "Sutro Biopharma Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-05",
+    "Symbol": "MTVA",
+    "Company Name": "Metavia Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 11"
+  },
+  {
+    "Date": "2025-12-05",
+    "Symbol": "TGL",
+    "Company Name": "Treasure Global Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-12-08",
+    "Symbol": "WKHS",
+    "Company Name": "Workhorse Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2025-12-09",
+    "Symbol": "PSNY",
+    "Company Name": "Polestar Automotive Holding Uk PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2025-12-10",
+    "Symbol": "SVRE",
+    "Company Name": "Saverone 2014 Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2025-12-11",
+    "Symbol": "BNKK",
+    "Company Name": "Bonk Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 35"
+  },
+  {
+    "Date": "2025-12-11",
+    "Symbol": "JZXN",
+    "Company Name": "Jiuzi Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2025-12-12",
+    "Symbol": "ARBK",
+    "Company Name": "Argo Blockchain PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 215.98"
+  },
+  {
+    "Date": "2025-12-12",
+    "Symbol": "AZI",
+    "Company Name": "Autozi Internet Technology (global) Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-12-12",
+    "Symbol": "BNAI",
+    "Company Name": "Brand Engagement Network Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-15",
+    "Symbol": "XBP",
+    "Company Name": "Xbp Global Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-15",
+    "Symbol": "NVVE",
+    "Company Name": "Nuvve Holding Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2025-12-15",
+    "Symbol": "CMND",
+    "Company Name": "Clearmind Medicine Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2025-12-15",
+    "Symbol": "BENF",
+    "Company Name": "Beneficient",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2025-12-15",
+    "Symbol": "FRGT",
+    "Company Name": "Freight Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-12-16",
+    "Symbol": "INBS",
+    "Company Name": "Intelligent Bio Solutions Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-17",
+    "Symbol": "PCSA",
+    "Company Name": "Processa Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-12-18",
+    "Symbol": "DFLI",
+    "Company Name": "Dragonfly Energy Holdings Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-18",
+    "Symbol": "MNTS",
+    "Company Name": "Momentus Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 17.85"
+  },
+  {
+    "Date": "2025-12-18",
+    "Symbol": "PAVS",
+    "Company Name": "Paranovus Entertainment Technology Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-12-22",
+    "Symbol": "INHD",
+    "Company Name": "Inno Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 24"
+  },
+  {
+    "Date": "2025-12-22",
+    "Symbol": "VSA",
+    "Company Name": "Visionsys Ai Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-12-23",
+    "Symbol": "TNMG",
+    "Company Name": "Tnl Mediagene",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2025-12-23",
+    "Symbol": "BOXL",
+    "Company Name": "Boxlight Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2025-12-23",
+    "Symbol": "CHR",
+    "Company Name": "Cheer Holding Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2025-12-24",
+    "Symbol": "RBNE",
+    "Company Name": "Robin Energy Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2025-12-26",
+    "Symbol": "ASRT",
+    "Company Name": "Assertio Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2025-12-26",
+    "Symbol": "ELPW",
+    "Company Name": "Elong Power Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-12-26",
+    "Symbol": "SCWO",
+    "Company Name": "374water Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-29",
+    "Symbol": "WOK",
+    "Company Name": "Work Medical Technology Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2025-12-30",
+    "Symbol": "ACET",
+    "Company Name": "Adicet Bio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2025-12-30",
+    "Symbol": "APVO",
+    "Company Name": "Aptevo Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 18"
+  },
+  {
+    "Date": "2025-12-30",
+    "Symbol": "BIYA",
+    "Company Name": "Baiya International Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2025-12-30",
+    "Symbol": "ILAG",
+    "Company Name": "Intelligent Living Application Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2025-12-30",
+    "Symbol": "ORIS",
+    "Company Name": "Oriental Rise Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-01-02",
+    "Symbol": "RVYL",
+    "Company Name": "Ryvyl Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 35"
+  },
+  {
+    "Date": "2026-01-02",
+    "Symbol": "PAVM",
+    "Company Name": "Pavmed Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-01-02",
+    "Symbol": "CODX",
+    "Company Name": "Co-diagnostics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-01-05",
+    "Symbol": "BVC",
+    "Company Name": "Bitventures Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-05",
+    "Symbol": "ICU",
+    "Company Name": "Seastar Medical Holding Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-05",
+    "Symbol": "MLEC",
+    "Company Name": "Moolec Science SA",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-01-06",
+    "Symbol": "ELAB",
+    "Company Name": "Pmgc Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-01-08",
+    "Symbol": "GMEX",
+    "Company Name": "Gmex Robotics Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-01-08",
+    "Symbol": "ICON",
+    "Company Name": "Icon Energy Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-01-08",
+    "Symbol": "KUST",
+    "Company Name": "Kustom Entertainment Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-01-12",
+    "Symbol": "AKAN",
+    "Company Name": "Akanda Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-01-12",
+    "Symbol": "DRCT",
+    "Company Name": "Direct Digital Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 55.01"
+  },
+  {
+    "Date": "2026-01-12",
+    "Symbol": "GOVX",
+    "Company Name": "Geovax Labs Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-01-12",
+    "Symbol": "VSME",
+    "Company Name": "Vs Media Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-01-14",
+    "Symbol": "VMAR",
+    "Company Name": "Vision Marine Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2026-01-16",
+    "Symbol": "HUBC",
+    "Company Name": "Hub Cyber Security Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-01-16",
+    "Symbol": "ASBP",
+    "Company Name": "Aspire Biopharma Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2026-01-16",
+    "Symbol": "OCG",
+    "Company Name": "Oriental Culture Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 219.78"
+  },
+  {
+    "Date": "2026-01-20",
+    "Symbol": "SXTP",
+    "Company Name": "60 Degrees Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-01-20",
+    "Symbol": "BTOG",
+    "Company Name": "Bit Origin Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 59.99"
+  },
+  {
+    "Date": "2026-01-20",
+    "Symbol": "FTFT",
+    "Company Name": "Future Fintech Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-01-20",
+    "Symbol": "NVNO",
+    "Company Name": "Envveno Medical Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 35"
+  },
+  {
+    "Date": "2026-01-22",
+    "Symbol": "DCX",
+    "Company Name": "Digital Currency X Technology Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-01-23",
+    "Symbol": "CCTG",
+    "Company Name": "Ccsc Technology International Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-23",
+    "Symbol": "SLE",
+    "Company Name": "Super League Enterprise Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-01-23",
+    "Symbol": "UONE",
+    "Company Name": "Urban One Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-23",
+    "Symbol": "UONEK",
+    "Company Name": "Urban One Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "XXII",
+    "Company Name": "22nd Century Group Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "PCLA",
+    "Company Name": "Picocela Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "NIVF",
+    "Company Name": "Newgenivf Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "MTEN",
+    "Company Name": "Mingteng International Corp Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "LRHC",
+    "Company Name": "La Rosa Holdings Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "GRI",
+    "Company Name": "Gri Bio Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 28"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "BNRG",
+    "Company Name": "Brenmiller Energy Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "MKDW",
+    "Company Name": "Mkdwell Tech Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-01-26",
+    "Symbol": "CISS",
+    "Company Name": "C3is Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-01-28",
+    "Symbol": "REVB",
+    "Company Name": "Revelation Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-01-29",
+    "Symbol": "BJDX",
+    "Company Name": "Bluejay Diagnostics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-01-30",
+    "Symbol": "IBG",
+    "Company Name": "Innovation Beverage Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-02-02",
+    "Symbol": "PBM",
+    "Company Name": "Psyence Biomedical Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6.25"
+  },
+  {
+    "Date": "2026-02-02",
+    "Symbol": "AREB",
+    "Company Name": "American Rebel Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-02",
+    "Symbol": "ATOS",
+    "Company Name": "Atossa Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-02-03",
+    "Symbol": "SXTC",
+    "Company Name": "China Sxt Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 149.93"
+  },
+  {
+    "Date": "2026-02-03",
+    "Symbol": "EDBL",
+    "Company Name": "Edible Garden Ag Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-02-04",
+    "Symbol": "RVSN",
+    "Company Name": "Rail Vision Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-02-06",
+    "Symbol": "ADIL",
+    "Company Name": "Adial Pharmaceuticals Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-02-06",
+    "Symbol": "ASST",
+    "Company Name": "Strive Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-06",
+    "Symbol": "PRFX",
+    "Company Name": "Prf Technologies Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-02-06",
+    "Symbol": "RLYB",
+    "Company Name": "Rallybio Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-02-09",
+    "Symbol": "EDHL",
+    "Company Name": "Everbright Digital Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2026-02-09",
+    "Symbol": "FCUV",
+    "Company Name": "Focus Universal Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-02-09",
+    "Symbol": "PFSA",
+    "Company Name": "Profusa Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 75.02"
+  },
+  {
+    "Date": "2026-02-09",
+    "Symbol": "UGRO",
+    "Company Name": "Urban-gro Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-02-10",
+    "Symbol": "HCTI",
+    "Company Name": "Healthcare Triangle Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 59.99"
+  },
+  {
+    "Date": "2026-02-10",
+    "Symbol": "ATPC",
+    "Company Name": "Agape Atp Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-02-10",
+    "Symbol": "FGL",
+    "Company Name": "Founder Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2026-02-10",
+    "Symbol": "ANY",
+    "Company Name": "Sphere 3d Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-02-12",
+    "Symbol": "RUBI",
+    "Company Name": "Rubico Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7.8"
+  },
+  {
+    "Date": "2026-02-13",
+    "Symbol": "CRE",
+    "Company Name": "Cre8 Enterprise Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-02-13",
+    "Symbol": "FGNX",
+    "Company Name": "Fg Nexus Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-02-17",
+    "Symbol": "WTO",
+    "Company Name": "Utime Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-02-17",
+    "Symbol": "EEIQ",
+    "Company Name": "Epicquest Education Group International Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2026-02-17",
+    "Symbol": "INTJ",
+    "Company Name": "Intelligent Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-17",
+    "Symbol": "NEXR",
+    "Company Name": "Nexera Technologies Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 14"
+  },
+  {
+    "Date": "2026-02-17",
+    "Symbol": "SMX",
+    "Company Name": "Smx (security Matters) Public Ltd Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4.88"
+  },
+  {
+    "Date": "2026-02-18",
+    "Symbol": "NDLS",
+    "Company Name": "Noodles & Co.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-02-19",
+    "Symbol": "INTS",
+    "Company Name": "Intensity Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-02-19",
+    "Symbol": "ZDAI",
+    "Company Name": "Directbooking Technology Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2026-02-19",
+    "Symbol": "AURE",
+    "Company Name": "Aurelion Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-02-20",
+    "Symbol": "ADVB",
+    "Company Name": "Advanced Biomed Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-20",
+    "Symbol": "BYAH",
+    "Company Name": "Park Ha Biological Technology Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-02-23",
+    "Symbol": "BTM",
+    "Company Name": "Bitcoin Depot Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2026-02-23",
+    "Symbol": "DSY",
+    "Company Name": "Big Tree Cloud Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-24",
+    "Symbol": "LFWD",
+    "Company Name": "Lifeward Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-02-24",
+    "Symbol": "RPGL",
+    "Company Name": "Republic Power Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-02-24",
+    "Symbol": "TRNR",
+    "Company Name": "Interactive Strength Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-02-25",
+    "Symbol": "SVRE",
+    "Company Name": "Saverone 2014 Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-02-26",
+    "Symbol": "FRSX",
+    "Company Name": "Foresight Autonomous Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-02-27",
+    "Symbol": "VCIG",
+    "Company Name": "Vci Global Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 59.99"
+  },
+  {
+    "Date": "2026-02-27",
+    "Symbol": "PTLE",
+    "Company Name": "Ptl Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 80"
+  },
+  {
+    "Date": "2026-02-27",
+    "Symbol": "IXHL",
+    "Company Name": "Incannex Healthcare Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-02-27",
+    "Symbol": "SFHG",
+    "Company Name": "Samfine Creation Holdings Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-03-02",
+    "Symbol": "PPBT",
+    "Company Name": "Purple Biotech Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-03-02",
+    "Symbol": "ZCMD",
+    "Company Name": "Zhongchao Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-03-03",
+    "Symbol": "MRDN",
+    "Company Name": "Meridian Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-03-04",
+    "Symbol": "BWAY",
+    "Company Name": "Brainsway Ltd.",
+    "Type": "Forward",
+    "Split Ratio": "2 for 1"
+  },
+  {
+    "Date": "2026-03-04",
+    "Symbol": "SPRC",
+    "Company Name": "Scisparc Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 9"
+  },
+  {
+    "Date": "2026-03-05",
+    "Symbol": "AEHL",
+    "Company Name": "Antelope Enterprise Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2026-03-06",
+    "Symbol": "GSIW",
+    "Company Name": "Garden Stage Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2026-03-06",
+    "Symbol": "TVGN",
+    "Company Name": "Tevogen Bio Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-03-06",
+    "Symbol": "WCT",
+    "Company Name": "Wellchange Holdings Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-03-09",
+    "Symbol": "RVPH",
+    "Company Name": "Reviva Pharmaceuticals Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-09",
+    "Symbol": "ADTX",
+    "Company Name": "Aditxt Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-03-09",
+    "Symbol": "DCOY",
+    "Company Name": "Decoy Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-03-10",
+    "Symbol": "ARTL",
+    "Company Name": "Artelo Biosciences Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-03-10",
+    "Symbol": "ELAB",
+    "Company Name": "Pmgc Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 6"
+  },
+  {
+    "Date": "2026-03-10",
+    "Symbol": "KIDZ",
+    "Company Name": "Classover Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-03-11",
+    "Symbol": "WLDS",
+    "Company Name": "Wearable Devices Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-03-12",
+    "Symbol": "ELPW",
+    "Company Name": "Elong Power Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 80"
+  },
+  {
+    "Date": "2026-03-12",
+    "Symbol": "ZNB",
+    "Company Name": "Zeta Network Group",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2026-03-13",
+    "Symbol": "KXIN",
+    "Company Name": "Kaixin Holdings",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-03-13",
+    "Symbol": "STFS",
+    "Company Name": "Star Fashion Culture Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "ZJYL",
+    "Company Name": "Jin Medical International Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "XLO",
+    "Company Name": "Xilio Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 14"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "SKYQ",
+    "Company Name": "Sky Quarry Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "HBIO",
+    "Company Name": "Harvard Bioscience Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "MASK",
+    "Company Name": "3 E Network Technology Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "DXST",
+    "Company Name": "Decent Holding Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "CLIR",
+    "Company Name": "Clearsign Technologies Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-03-16",
+    "Symbol": "NIVF",
+    "Company Name": "Newgenivf Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-03-20",
+    "Symbol": "CIIT",
+    "Company Name": "Tianci International Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2026-03-20",
+    "Symbol": "ORGN",
+    "Company Name": "Origin Materials Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "YYGH",
+    "Company Name": "Yy Group Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "SNEX",
+    "Company Name": "Stonex Group Inc",
+    "Type": "Forward",
+    "Split Ratio": "1.5 for 1"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "FCHL",
+    "Company Name": "Fitness Champs Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "JDZG",
+    "Company Name": "Jiade Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "CLMB",
+    "Company Name": "Climb Global Solutions Inc",
+    "Type": "Forward",
+    "Split Ratio": "4 for 1"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "AZI",
+    "Company Name": "Autozi Internet Technology (global) Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "AREB",
+    "Company Name": "American Rebel Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2026-03-23",
+    "Symbol": "EUDA",
+    "Company Name": "Euda Health Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-25",
+    "Symbol": "JFB",
+    "Company Name": "Jfb Construction Holdings",
+    "Type": "Forward",
+    "Split Ratio": "2 for 1"
+  },
+  {
+    "Date": "2026-03-25",
+    "Symbol": "ONCO",
+    "Company Name": "Onconetix Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-03-25",
+    "Symbol": "XTLB",
+    "Company Name": "Xtl Biopharmaceuticals Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 4"
+  },
+  {
+    "Date": "2026-03-26",
+    "Symbol": "RENX",
+    "Company Name": "Renx Enterprises Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-27",
+    "Symbol": "ADV",
+    "Company Name": "Advantage Solutions Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-27",
+    "Symbol": "CDT",
+    "Company Name": "Cdt Equity Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-27",
+    "Symbol": "IVF",
+    "Company Name": "Invo Fertility Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-03-27",
+    "Symbol": "LBGJ",
+    "Company Name": "Li Bang International Corp Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2026-03-27",
+    "Symbol": "TRUG",
+    "Company Name": "Trugolf Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-03-30",
+    "Symbol": "SVRN",
+    "Company Name": "Oceanpal Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-30",
+    "Symbol": "FBLG",
+    "Company Name": "Fibrobiologics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-03-30",
+    "Symbol": "EJH",
+    "Company Name": "E-home Household Service Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-03-30",
+    "Symbol": "ATXG",
+    "Company Name": "Addentax Group Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-03-31",
+    "Symbol": "AKTX",
+    "Company Name": "Akari Therapeutics PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2026-03-31",
+    "Symbol": "MODD",
+    "Company Name": "Modular Medical Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-03-31",
+    "Symbol": "PAVS",
+    "Company Name": "Paranovus Entertainment Technology Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 12"
+  },
+  {
+    "Date": "2026-04-01",
+    "Symbol": "AUUD",
+    "Company Name": "Auddia Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7.7"
+  },
+  {
+    "Date": "2026-04-01",
+    "Symbol": "UCAR",
+    "Company Name": "U Power Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-02",
+    "Symbol": "NCT",
+    "Company Name": "Intercont (cayman) Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-04-02",
+    "Symbol": "PSTV",
+    "Company Name": "Plus Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 25"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "XRTX",
+    "Company Name": "Xortx Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "WNW",
+    "Company Name": "Meiwu Technology Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 100"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "SKK",
+    "Company Name": "Skk Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "POWL",
+    "Company Name": "Powell Industries Inc",
+    "Type": "Forward",
+    "Split Ratio": "3 for 1"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "LNKS",
+    "Company Name": "Linkers Industries Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 250"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "INLF",
+    "Company Name": "Inlif Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 16"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "BDRX",
+    "Company Name": "Biodexa Pharmaceuticals PLC",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "HKIT",
+    "Company Name": "Hitek Global Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "GNLN",
+    "Company Name": "Greenlane Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 8"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "BKNG",
+    "Company Name": "Booking Holdings Inc",
+    "Type": "Forward",
+    "Split Ratio": "25 for 1"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "BCAB",
+    "Company Name": "Bioatla Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 50"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "AIIO",
+    "Company Name": "Roboai Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-04-06",
+    "Symbol": "HTCR",
+    "Company Name": "Heartcore Enterprises Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-04-07",
+    "Symbol": "CHR",
+    "Company Name": "Cheer Holding Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 3"
+  },
+  {
+    "Date": "2026-04-07",
+    "Symbol": "MOBX",
+    "Company Name": "Mobix Labs Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-08",
+    "Symbol": "JTAI",
+    "Company Name": "Jetai Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 200"
+  },
+  {
+    "Date": "2026-04-08",
+    "Symbol": "NXTS",
+    "Company Name": "Nexentis Technologies Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 7"
+  },
+  {
+    "Date": "2026-04-08",
+    "Symbol": "RDGT",
+    "Company Name": "Ridgetech Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 149.93"
+  },
+  {
+    "Date": "2026-04-09",
+    "Symbol": "RUBI",
+    "Company Name": "Rubico Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-10",
+    "Symbol": "WORX",
+    "Company Name": "Scworx Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 15"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "CENN",
+    "Company Name": "Cenntro Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 59.99"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "HCAI",
+    "Company Name": "Huachen Ai Parking Management Technology Holding Co Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 30"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "JEM",
+    "Company Name": "707 Cayman Holdings Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "MSAI",
+    "Company Name": "Multisensor Ai Holdings Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 40"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "NXPL",
+    "Company Name": "Nextplat Corp",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "PN",
+    "Company Name": "Skycorp Solar Group Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 20"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "QNCX",
+    "Company Name": "Quince Therapeutics Inc",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 10"
+  },
+  {
+    "Date": "2026-04-13",
+    "Symbol": "WFF",
+    "Company Name": "Wf Holding Ltd.",
+    "Type": "Reverse",
+    "Split Ratio": "1 for 5"
+  }
+]

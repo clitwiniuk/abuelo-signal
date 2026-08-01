@@ -1,3 +1,0 @@
-DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): download2.interactivebrokers.com:443
-DEBUG - urllib3.connectionpool - https://download2.interactivebrokers.com:443 "GET /portal/clientportal.gw.zip HTTP/1.1" 200 10542956
-DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): localhost:5000

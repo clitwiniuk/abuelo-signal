@@ -1,0 +1,2079 @@
+================================================================================
+📊 REPORTE DE STOCK SPLITS
+================================================================================
+📅 Período: 2025-01-01 → 2026-04-30
+🏢 Exchange: NASDAQ
+📈 Total splits: 414
+🕒 Generado: 2026-04-13 06:56:52
+================================================================================
+
+500. EJH
+   • Empresa: N/A
+   • Fecha: 2025-05-30
+   • Tipo: Reverse
+
+495. LYEL
+   • Empresa: N/A
+   • Fecha: 2025-06-02
+   • Tipo: Reverse
+
+499. ARBB
+   • Empresa: N/A
+   • Fecha: 2025-06-02
+   • Tipo: Reverse
+
+497. BNBX
+   • Empresa: N/A
+   • Fecha: 2025-06-02
+   • Tipo: Reverse
+
+496. EKSO
+   • Empresa: N/A
+   • Fecha: 2025-06-02
+   • Tipo: Reverse
+
+494. AGMH
+   • Empresa: N/A
+   • Fecha: 2025-06-03
+   • Tipo: Reverse
+
+492. INAB
+   • Empresa: N/A
+   • Fecha: 2025-06-06
+   • Tipo: Reverse
+
+491. AEMD
+   • Empresa: N/A
+   • Fecha: 2025-06-09
+   • Tipo: Reverse
+
+489. BOLT
+   • Empresa: N/A
+   • Fecha: 2025-06-09
+   • Tipo: Reverse
+
+488. DUO
+   • Empresa: N/A
+   • Fecha: 2025-06-09
+   • Tipo: Reverse
+
+487. NKTR
+   • Empresa: N/A
+   • Fecha: 2025-06-09
+   • Tipo: Reverse
+
+486. PXLW
+   • Empresa: N/A
+   • Fecha: 2025-06-09
+   • Tipo: Reverse
+
+485. BBLG
+   • Empresa: N/A
+   • Fecha: 2025-06-10
+   • Tipo: Reverse
+
+484. CLRO
+   • Empresa: N/A
+   • Fecha: 2025-06-10
+   • Tipo: Reverse
+
+482. ORLY
+   • Empresa: N/A
+   • Fecha: 2025-06-10
+   • Tipo: Forward
+
+481. SVRE
+   • Empresa: N/A
+   • Fecha: 2025-06-11
+   • Tipo: Reverse
+
+478. ERNA
+   • Empresa: N/A
+   • Fecha: 2025-06-12
+   • Tipo: Reverse
+
+479. EMPD
+   • Empresa: N/A
+   • Fecha: 2025-06-12
+   • Tipo: Reverse
+
+475. ARTL
+   • Empresa: N/A
+   • Fecha: 2025-06-13
+   • Tipo: Reverse
+
+473. CHNR
+   • Empresa: N/A
+   • Fecha: 2025-06-13
+   • Tipo: Reverse
+
+472. ONCO
+   • Empresa: N/A
+   • Fecha: 2025-06-13
+   • Tipo: Reverse
+
+466. RGC
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Forward
+
+465. SHPH
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+467. NEXR
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+464. SMX
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+469. JZ
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+470. GCTK
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+471. CBIO
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+468. NCI
+   • Empresa: N/A
+   • Fecha: 2025-06-16
+   • Tipo: Reverse
+
+463. KYNB
+   • Empresa: N/A
+   • Fecha: 2025-06-17
+   • Tipo: Reverse
+
+461. SNSE
+   • Empresa: N/A
+   • Fecha: 2025-06-17
+   • Tipo: Reverse
+
+460. IBKR
+   • Empresa: N/A
+   • Fecha: 2025-06-18
+   • Tipo: Forward
+
+459. BNRG
+   • Empresa: N/A
+   • Fecha: 2025-06-20
+   • Tipo: Reverse
+
+458. UNCY
+   • Empresa: N/A
+   • Fecha: 2025-06-20
+   • Tipo: Reverse
+
+457. XXII
+   • Empresa: N/A
+   • Fecha: 2025-06-20
+   • Tipo: Reverse
+
+454. PEGA
+   • Empresa: N/A
+   • Fecha: 2025-06-23
+   • Tipo: Forward
+
+453. SLE
+   • Empresa: N/A
+   • Fecha: 2025-06-23
+   • Tipo: Reverse
+
+451. TRUG
+   • Empresa: N/A
+   • Fecha: 2025-06-23
+   • Tipo: Reverse
+
+450. CLRB
+   • Empresa: N/A
+   • Fecha: 2025-06-24
+   • Tipo: Reverse
+
+449. JDZG
+   • Empresa: N/A
+   • Fecha: 2025-06-24
+   • Tipo: Reverse
+
+448. SBLX
+   • Empresa: N/A
+   • Fecha: 2025-06-26
+   • Tipo: Reverse
+
+447. SLMT
+   • Empresa: N/A
+   • Fecha: 2025-06-26
+   • Tipo: Reverse
+
+446. GNLN
+   • Empresa: N/A
+   • Fecha: 2025-06-27
+   • Tipo: Reverse
+
+445. INDP
+   • Empresa: N/A
+   • Fecha: 2025-06-27
+   • Tipo: Reverse
+
+444. TRNR
+   • Empresa: N/A
+   • Fecha: 2025-06-27
+   • Tipo: Reverse
+
+443. AIMD
+   • Empresa: N/A
+   • Fecha: 2025-06-30
+   • Tipo: Reverse
+
+441. HSDT
+   • Empresa: N/A
+   • Fecha: 2025-07-01
+   • Tipo: Reverse
+
+439. SPRC
+   • Empresa: N/A
+   • Fecha: 2025-07-03
+   • Tipo: Reverse
+
+432. NUWE
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+433. LVLU
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+431. REVB
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+435. FLYE
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+436. BIVI
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+434. LRHC
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+437. BGMS
+   • Empresa: N/A
+   • Fecha: 2025-07-07
+   • Tipo: Reverse
+
+430. BNZI
+   • Empresa: N/A
+   • Fecha: 2025-07-08
+   • Tipo: Reverse
+
+428. MFI
+   • Empresa: N/A
+   • Fecha: 2025-07-10
+   • Tipo: Reverse
+
+422. XAIR
+   • Empresa: N/A
+   • Fecha: 2025-07-14
+   • Tipo: Reverse
+
+425. HTOO
+   • Empresa: N/A
+   • Fecha: 2025-07-14
+   • Tipo: Reverse
+
+424. NXTC
+   • Empresa: N/A
+   • Fecha: 2025-07-14
+   • Tipo: Reverse
+
+423. PASG
+   • Empresa: N/A
+   • Fecha: 2025-07-14
+   • Tipo: Reverse
+
+420. CREG
+   • Empresa: N/A
+   • Fecha: 2025-07-18
+   • Tipo: Reverse
+
+419. MLGO
+   • Empresa: N/A
+   • Fecha: 2025-07-18
+   • Tipo: Reverse
+
+418. GVH
+   • Empresa: N/A
+   • Fecha: 2025-07-21
+   • Tipo: Reverse
+
+417. IVF
+   • Empresa: N/A
+   • Fecha: 2025-07-21
+   • Tipo: Reverse
+
+416. TWG
+   • Empresa: N/A
+   • Fecha: 2025-07-21
+   • Tipo: Reverse
+
+415. CNSP
+   • Empresa: N/A
+   • Fecha: 2025-07-22
+   • Tipo: Reverse
+
+413. PC
+   • Empresa: N/A
+   • Fecha: 2025-07-22
+   • Tipo: Reverse
+
+411. VRCA
+   • Empresa: N/A
+   • Fecha: 2025-07-25
+   • Tipo: Reverse
+
+412. IMNN
+   • Empresa: N/A
+   • Fecha: 2025-07-25
+   • Tipo: Reverse
+
+410. AVX
+   • Empresa: N/A
+   • Fecha: 2025-07-28
+   • Tipo: Reverse
+
+407. IMA
+   • Empresa: N/A
+   • Fecha: 2025-07-28
+   • Tipo: Reverse
+
+405. VELO
+   • Empresa: N/A
+   • Fecha: 2025-07-28
+   • Tipo: Reverse
+
+404. AIHS
+   • Empresa: N/A
+   • Fecha: 2025-07-29
+   • Tipo: Reverse
+
+403. SLXN
+   • Empresa: N/A
+   • Fecha: 2025-07-29
+   • Tipo: Reverse
+
+402. NAAS
+   • Empresa: N/A
+   • Fecha: 2025-07-30
+   • Tipo: Reverse
+
+399. VSTD
+   • Empresa: N/A
+   • Fecha: 2025-07-31
+   • Tipo: Forward
+
+401. BDRX
+   • Empresa: N/A
+   • Fecha: 2025-07-31
+   • Tipo: Reverse
+
+400. FGI
+   • Empresa: N/A
+   • Fecha: 2025-07-31
+   • Tipo: Reverse
+
+397. HCTI
+   • Empresa: N/A
+   • Fecha: 2025-08-01
+   • Tipo: Reverse
+
+398. DRMA
+   • Empresa: N/A
+   • Fecha: 2025-08-01
+   • Tipo: Reverse
+
+396. ANGH
+   • Empresa: N/A
+   • Fecha: 2025-08-04
+   • Tipo: Reverse
+
+395. AQMS
+   • Empresa: N/A
+   • Fecha: 2025-08-04
+   • Tipo: Reverse
+
+393. NIVF
+   • Empresa: N/A
+   • Fecha: 2025-08-04
+   • Tipo: Reverse
+
+392. ZSTK
+   • Empresa: N/A
+   • Fecha: 2025-08-04
+   • Tipo: Reverse
+
+391. ACXP
+   • Empresa: N/A
+   • Fecha: 2025-08-05
+   • Tipo: Reverse
+
+389. MKZR
+   • Empresa: N/A
+   • Fecha: 2025-08-05
+   • Tipo: Reverse
+
+388. OST
+   • Empresa: N/A
+   • Fecha: 2025-08-05
+   • Tipo: Reverse
+
+387. SEAT
+   • Empresa: N/A
+   • Fecha: 2025-08-06
+   • Tipo: Reverse
+
+386. SMX
+   • Empresa: N/A
+   • Fecha: 2025-08-07
+   • Tipo: Reverse
+
+385. SPRB
+   • Empresa: N/A
+   • Fecha: 2025-08-07
+   • Tipo: Reverse
+
+381. ZBAI
+   • Empresa: N/A
+   • Fecha: 2025-08-08
+   • Tipo: Reverse
+
+384. DEVS
+   • Empresa: N/A
+   • Fecha: 2025-08-08
+   • Tipo: Reverse
+
+383. EVTV
+   • Empresa: N/A
+   • Fecha: 2025-08-08
+   • Tipo: Reverse
+
+382. HTCO
+   • Empresa: N/A
+   • Fecha: 2025-08-08
+   • Tipo: Reverse
+
+380. NCNA
+   • Empresa: N/A
+   • Fecha: 2025-08-11
+   • Tipo: Reverse
+
+378. VERU
+   • Empresa: N/A
+   • Fecha: 2025-08-11
+   • Tipo: Reverse
+
+377. WATT
+   • Empresa: N/A
+   • Fecha: 2025-08-11
+   • Tipo: Reverse
+
+376. FEED
+   • Empresa: N/A
+   • Fecha: 2025-08-12
+   • Tipo: Reverse
+
+374. HIND
+   • Empresa: N/A
+   • Fecha: 2025-08-15
+   • Tipo: Reverse
+
+372. CHSN
+   • Empresa: N/A
+   • Fecha: 2025-08-18
+   • Tipo: Reverse
+
+371. DCOY
+   • Empresa: N/A
+   • Fecha: 2025-08-18
+   • Tipo: Reverse
+
+370. GRDX
+   • Empresa: N/A
+   • Fecha: 2025-08-18
+   • Tipo: Reverse
+
+369. LNZA
+   • Empresa: N/A
+   • Fecha: 2025-08-19
+   • Tipo: Reverse
+
+368. GIBO
+   • Empresa: N/A
+   • Fecha: 2025-08-20
+   • Tipo: Reverse
+
+365. ZNB
+   • Empresa: N/A
+   • Fecha: 2025-08-22
+   • Tipo: Reverse
+
+366. OESX
+   • Empresa: N/A
+   • Fecha: 2025-08-22
+   • Tipo: Reverse
+
+363. FRSX
+   • Empresa: N/A
+   • Fecha: 2025-08-25
+   • Tipo: Reverse
+
+358. SVRN
+   • Empresa: N/A
+   • Fecha: 2025-08-25
+   • Tipo: Reverse
+
+364. BCTX
+   • Empresa: N/A
+   • Fecha: 2025-08-25
+   • Tipo: Reverse
+
+361. GWAV
+   • Empresa: N/A
+   • Fecha: 2025-08-25
+   • Tipo: Reverse
+
+359. SUGP
+   • Empresa: N/A
+   • Fecha: 2025-08-25
+   • Tipo: Reverse
+
+357. AKAN
+   • Empresa: N/A
+   • Fecha: 2025-08-26
+   • Tipo: Reverse
+
+356. CMMB
+   • Empresa: N/A
+   • Fecha: 2025-08-26
+   • Tipo: Reverse
+
+353. DRIO
+   • Empresa: N/A
+   • Fecha: 2025-08-28
+   • Tipo: Reverse
+
+352. GDHG
+   • Empresa: N/A
+   • Fecha: 2025-08-28
+   • Tipo: Reverse
+
+350. SEGG
+   • Empresa: N/A
+   • Fecha: 2025-08-29
+   • Tipo: Reverse
+
+349. TC
+   • Empresa: N/A
+   • Fecha: 2025-08-29
+   • Tipo: Reverse
+
+344. QCLS
+   • Empresa: N/A
+   • Fecha: 2025-09-02
+   • Tipo: Reverse
+
+347. LCID
+   • Empresa: N/A
+   • Fecha: 2025-09-02
+   • Tipo: Reverse
+
+348. ELAB
+   • Empresa: N/A
+   • Fecha: 2025-09-02
+   • Tipo: Reverse
+
+343. ABTC
+   • Empresa: N/A
+   • Fecha: 2025-09-03
+   • Tipo: Reverse
+
+341. KITT
+   • Empresa: N/A
+   • Fecha: 2025-09-05
+   • Tipo: Reverse
+
+339. GLXG
+   • Empresa: N/A
+   • Fecha: 2025-09-08
+   • Tipo: Reverse
+
+337. OLOX
+   • Empresa: N/A
+   • Fecha: 2025-09-08
+   • Tipo: Reverse
+
+336. OXLC
+   • Empresa: N/A
+   • Fecha: 2025-09-08
+   • Tipo: Reverse
+
+335. SDST
+   • Empresa: N/A
+   • Fecha: 2025-09-08
+   • Tipo: Reverse
+
+334. WAI
+   • Empresa: N/A
+   • Fecha: 2025-09-08
+   • Tipo: Reverse
+
+333. DGNX
+   • Empresa: N/A
+   • Fecha: 2025-09-09
+   • Tipo: Forward
+
+332. GP
+   • Empresa: N/A
+   • Fecha: 2025-09-09
+   • Tipo: Reverse
+
+331. STKH
+   • Empresa: N/A
+   • Fecha: 2025-09-10
+   • Tipo: Reverse
+
+330. BDSX
+   • Empresa: N/A
+   • Fecha: 2025-09-15
+   • Tipo: Reverse
+
+328. SDOT
+   • Empresa: N/A
+   • Fecha: 2025-09-15
+   • Tipo: Reverse
+
+327. NXTT
+   • Empresa: N/A
+   • Fecha: 2025-09-16
+   • Tipo: Reverse
+
+325. VCIG
+   • Empresa: N/A
+   • Fecha: 2025-09-16
+   • Tipo: Reverse
+
+322. LONA
+   • Empresa: N/A
+   • Fecha: 2025-09-18
+   • Tipo: Reverse
+
+321. BIAF
+   • Empresa: N/A
+   • Fecha: 2025-09-19
+   • Tipo: Reverse
+
+320. VOR
+   • Empresa: N/A
+   • Fecha: 2025-09-19
+   • Tipo: Reverse
+
+318. NXTS
+   • Empresa: N/A
+   • Fecha: 2025-09-22
+   • Tipo: Reverse
+
+316. GMEX
+   • Empresa: N/A
+   • Fecha: 2025-09-23
+   • Tipo: Reverse
+
+315. NRIM
+   • Empresa: N/A
+   • Fecha: 2025-09-23
+   • Tipo: Forward
+
+314. MNDR
+   • Empresa: N/A
+   • Fecha: 2025-09-25
+   • Tipo: Reverse
+
+312. LVO
+   • Empresa: N/A
+   • Fecha: 2025-09-26
+   • Tipo: Reverse
+
+313. IBG
+   • Empresa: N/A
+   • Fecha: 2025-09-26
+   • Tipo: Reverse
+
+311. CETX
+   • Empresa: N/A
+   • Fecha: 2025-09-29
+   • Tipo: Reverse
+
+310. LESL
+   • Empresa: N/A
+   • Fecha: 2025-09-29
+   • Tipo: Reverse
+
+309. ORKT
+   • Empresa: N/A
+   • Fecha: 2025-09-29
+   • Tipo: Reverse
+
+308. AGPU
+   • Empresa: N/A
+   • Fecha: 2025-09-30
+   • Tipo: Reverse
+
+307. LNAI
+   • Empresa: N/A
+   • Fecha: 2025-09-30
+   • Tipo: Reverse
+
+306. RAYA
+   • Empresa: N/A
+   • Fecha: 2025-09-30
+   • Tipo: Reverse
+
+305. YAAS
+   • Empresa: N/A
+   • Fecha: 2025-09-30
+   • Tipo: Reverse
+
+304. YHGJ
+   • Empresa: N/A
+   • Fecha: 2025-10-01
+   • Tipo: Reverse
+
+303. AREB
+   • Empresa: N/A
+   • Fecha: 2025-10-03
+   • Tipo: Reverse
+
+300. NVNI
+   • Empresa: N/A
+   • Fecha: 2025-10-06
+   • Tipo: Reverse
+
+299. PMAX
+   • Empresa: N/A
+   • Fecha: 2025-10-06
+   • Tipo: Reverse
+
+302. CETY
+   • Empresa: N/A
+   • Fecha: 2025-10-06
+   • Tipo: Reverse
+
+301. GGR
+   • Empresa: N/A
+   • Fecha: 2025-10-06
+   • Tipo: Reverse
+
+298. CHAI
+   • Empresa: N/A
+   • Fecha: 2025-10-07
+   • Tipo: Reverse
+
+294. CLIK
+   • Empresa: N/A
+   • Fecha: 2025-10-10
+   • Tipo: Reverse
+
+293. MOVE
+   • Empresa: N/A
+   • Fecha: 2025-10-10
+   • Tipo: Reverse
+
+292. CDT
+   • Empresa: N/A
+   • Fecha: 2025-10-13
+   • Tipo: Reverse
+
+291. JYD
+   • Empresa: N/A
+   • Fecha: 2025-10-13
+   • Tipo: Reverse
+
+290. LGCL
+   • Empresa: N/A
+   • Fecha: 2025-10-13
+   • Tipo: Reverse
+
+289. LPSN
+   • Empresa: N/A
+   • Fecha: 2025-10-13
+   • Tipo: Reverse
+
+288. PSIG
+   • Empresa: N/A
+   • Fecha: 2025-10-13
+   • Tipo: Reverse
+
+287. AEMD
+   • Empresa: N/A
+   • Fecha: 2025-10-20
+   • Tipo: Reverse
+
+285. FRMM
+   • Empresa: N/A
+   • Fecha: 2025-10-20
+   • Tipo: Reverse
+
+284. SENS
+   • Empresa: N/A
+   • Fecha: 2025-10-20
+   • Tipo: Reverse
+
+282. WOK
+   • Empresa: N/A
+   • Fecha: 2025-10-21
+   • Tipo: Reverse
+
+283. GNPX
+   • Empresa: N/A
+   • Fecha: 2025-10-21
+   • Tipo: Reverse
+
+281. SMX
+   • Empresa: N/A
+   • Fecha: 2025-10-23
+   • Tipo: Reverse
+
+280. QTI
+   • Empresa: N/A
+   • Fecha: 2025-10-24
+   • Tipo: Reverse
+
+279. CYCU
+   • Empresa: N/A
+   • Fecha: 2025-10-27
+   • Tipo: Reverse
+
+278. GURE
+   • Empresa: N/A
+   • Fecha: 2025-10-27
+   • Tipo: Reverse
+
+277. IPW
+   • Empresa: N/A
+   • Fecha: 2025-10-27
+   • Tipo: Reverse
+
+276. SONM
+   • Empresa: N/A
+   • Fecha: 2025-10-27
+   • Tipo: Reverse
+
+275. YYAI
+   • Empresa: N/A
+   • Fecha: 2025-10-27
+   • Tipo: Reverse
+
+274. ENVB
+   • Empresa: N/A
+   • Fecha: 2025-10-28
+   • Tipo: Reverse
+
+273. LINK
+   • Empresa: N/A
+   • Fecha: 2025-10-29
+   • Tipo: Forward
+
+272. NVA
+   • Empresa: N/A
+   • Fecha: 2025-10-29
+   • Tipo: Forward
+
+271. NCEL
+   • Empresa: N/A
+   • Fecha: 2025-10-31
+   • Tipo: Reverse
+
+266. RETO
+   • Empresa: N/A
+   • Fecha: 2025-11-03
+   • Tipo: Reverse
+
+269. ADTX
+   • Empresa: N/A
+   • Fecha: 2025-11-03
+   • Tipo: Reverse
+
+268. DCX
+   • Empresa: N/A
+   • Fecha: 2025-11-03
+   • Tipo: Reverse
+
+265. FLYE
+   • Empresa: N/A
+   • Fecha: 2025-11-04
+   • Tipo: Reverse
+
+264. IPST
+   • Empresa: N/A
+   • Fecha: 2025-11-05
+   • Tipo: Reverse
+
+263. RAY
+   • Empresa: N/A
+   • Fecha: 2025-11-07
+   • Tipo: Reverse
+
+262. IOTR
+   • Empresa: N/A
+   • Fecha: 2025-11-10
+   • Tipo: Reverse
+
+260. NCEW
+   • Empresa: N/A
+   • Fecha: 2025-11-14
+   • Tipo: Reverse
+
+259. YDKG
+   • Empresa: N/A
+   • Fecha: 2025-11-14
+   • Tipo: Reverse
+
+256. NFLX
+   • Empresa: N/A
+   • Fecha: 2025-11-17
+   • Tipo: Forward
+
+254. SMX
+   • Empresa: N/A
+   • Fecha: 2025-11-18
+   • Tipo: Reverse
+
+250. MIGI
+   • Empresa: N/A
+   • Fecha: 2025-11-21
+   • Tipo: Reverse
+
+249. WTO
+   • Empresa: N/A
+   • Fecha: 2025-11-21
+   • Tipo: Reverse
+
+252. EZGO
+   • Empresa: N/A
+   • Fecha: 2025-11-21
+   • Tipo: Reverse
+
+251. JXG
+   • Empresa: N/A
+   • Fecha: 2025-11-21
+   • Tipo: Reverse
+
+246. RJET
+   • Empresa: N/A
+   • Fecha: 2025-11-25
+   • Tipo: Reverse
+
+245. LGHL
+   • Empresa: N/A
+   • Fecha: 2025-11-26
+   • Tipo: Reverse
+
+244. IVF
+   • Empresa: N/A
+   • Fecha: 2025-11-28
+   • Tipo: Reverse
+
+243. PLRZ
+   • Empresa: N/A
+   • Fecha: 2025-11-28
+   • Tipo: Reverse
+
+242. PMN
+   • Empresa: N/A
+   • Fecha: 2025-11-28
+   • Tipo: Reverse
+
+241. KXIN
+   • Empresa: N/A
+   • Fecha: 2025-12-01
+   • Tipo: Reverse
+
+240. LARK
+   • Empresa: N/A
+   • Fecha: 2025-12-01
+   • Tipo: Forward
+
+239. MBRX
+   • Empresa: N/A
+   • Fecha: 2025-12-01
+   • Tipo: Reverse
+
+238. NIVF
+   • Empresa: N/A
+   • Fecha: 2025-12-01
+   • Tipo: Reverse
+
+237. CBSH
+   • Empresa: N/A
+   • Fecha: 2025-12-02
+   • Tipo: Forward
+
+235. RUBI
+   • Empresa: N/A
+   • Fecha: 2025-12-02
+   • Tipo: Reverse
+
+234. SPHL
+   • Empresa: N/A
+   • Fecha: 2025-12-02
+   • Tipo: Reverse
+
+232. XHLD
+   • Empresa: N/A
+   • Fecha: 2025-12-02
+   • Tipo: Reverse
+
+233. TLRY
+   • Empresa: N/A
+   • Fecha: 2025-12-02
+   • Tipo: Reverse
+
+231. STRO
+   • Empresa: N/A
+   • Fecha: 2025-12-03
+   • Tipo: Reverse
+
+229. MTVA
+   • Empresa: N/A
+   • Fecha: 2025-12-05
+   • Tipo: Reverse
+
+228. TGL
+   • Empresa: N/A
+   • Fecha: 2025-12-05
+   • Tipo: Reverse
+
+227. WKHS
+   • Empresa: N/A
+   • Fecha: 2025-12-08
+   • Tipo: Reverse
+
+226. PSNY
+   • Empresa: N/A
+   • Fecha: 2025-12-09
+   • Tipo: Reverse
+
+225. SVRE
+   • Empresa: N/A
+   • Fecha: 2025-12-10
+   • Tipo: Reverse
+
+224. BNKK
+   • Empresa: N/A
+   • Fecha: 2025-12-11
+   • Tipo: Reverse
+
+223. JZXN
+   • Empresa: N/A
+   • Fecha: 2025-12-11
+   • Tipo: Reverse
+
+222. ARBK
+   • Empresa: N/A
+   • Fecha: 2025-12-12
+   • Tipo: Reverse
+
+221. AZI
+   • Empresa: N/A
+   • Fecha: 2025-12-12
+   • Tipo: Reverse
+
+220. BNAI
+   • Empresa: N/A
+   • Fecha: 2025-12-12
+   • Tipo: Reverse
+
+215. XBP
+   • Empresa: N/A
+   • Fecha: 2025-12-15
+   • Tipo: Reverse
+
+216. NVVE
+   • Empresa: N/A
+   • Fecha: 2025-12-15
+   • Tipo: Reverse
+
+218. CMND
+   • Empresa: N/A
+   • Fecha: 2025-12-15
+   • Tipo: Reverse
+
+219. BENF
+   • Empresa: N/A
+   • Fecha: 2025-12-15
+   • Tipo: Reverse
+
+217. FRGT
+   • Empresa: N/A
+   • Fecha: 2025-12-15
+   • Tipo: Reverse
+
+214. INBS
+   • Empresa: N/A
+   • Fecha: 2025-12-16
+   • Tipo: Reverse
+
+212. PCSA
+   • Empresa: N/A
+   • Fecha: 2025-12-17
+   • Tipo: Reverse
+
+211. DFLI
+   • Empresa: N/A
+   • Fecha: 2025-12-18
+   • Tipo: Reverse
+
+210. MNTS
+   • Empresa: N/A
+   • Fecha: 2025-12-18
+   • Tipo: Reverse
+
+208. PAVS
+   • Empresa: N/A
+   • Fecha: 2025-12-18
+   • Tipo: Reverse
+
+207. INHD
+   • Empresa: N/A
+   • Fecha: 2025-12-22
+   • Tipo: Reverse
+
+205. VSA
+   • Empresa: N/A
+   • Fecha: 2025-12-22
+   • Tipo: Reverse
+
+202. TNMG
+   • Empresa: N/A
+   • Fecha: 2025-12-23
+   • Tipo: Reverse
+
+204. BOXL
+   • Empresa: N/A
+   • Fecha: 2025-12-23
+   • Tipo: Reverse
+
+203. CHR
+   • Empresa: N/A
+   • Fecha: 2025-12-23
+   • Tipo: Reverse
+
+200. RBNE
+   • Empresa: N/A
+   • Fecha: 2025-12-24
+   • Tipo: Reverse
+
+199. ASRT
+   • Empresa: N/A
+   • Fecha: 2025-12-26
+   • Tipo: Reverse
+
+197. ELPW
+   • Empresa: N/A
+   • Fecha: 2025-12-26
+   • Tipo: Reverse
+
+196. SCWO
+   • Empresa: N/A
+   • Fecha: 2025-12-26
+   • Tipo: Reverse
+
+195. WOK
+   • Empresa: N/A
+   • Fecha: 2025-12-29
+   • Tipo: Reverse
+
+194. ACET
+   • Empresa: N/A
+   • Fecha: 2025-12-30
+   • Tipo: Reverse
+
+193. APVO
+   • Empresa: N/A
+   • Fecha: 2025-12-30
+   • Tipo: Reverse
+
+192. BIYA
+   • Empresa: N/A
+   • Fecha: 2025-12-30
+   • Tipo: Reverse
+
+191. ILAG
+   • Empresa: N/A
+   • Fecha: 2025-12-30
+   • Tipo: Reverse
+
+190. ORIS
+   • Empresa: N/A
+   • Fecha: 2025-12-30
+   • Tipo: Reverse
+
+186. RVYL
+   • Empresa: N/A
+   • Fecha: 2026-01-02
+   • Tipo: Reverse
+
+187. PAVM
+   • Empresa: N/A
+   • Fecha: 2026-01-02
+   • Tipo: Reverse
+
+188. CODX
+   • Empresa: N/A
+   • Fecha: 2026-01-02
+   • Tipo: Reverse
+
+185. BVC
+   • Empresa: N/A
+   • Fecha: 2026-01-05
+   • Tipo: Reverse
+
+183. ICU
+   • Empresa: N/A
+   • Fecha: 2026-01-05
+   • Tipo: Reverse
+
+182. MLEC
+   • Empresa: N/A
+   • Fecha: 2026-01-05
+   • Tipo: Reverse
+
+180. ELAB
+   • Empresa: N/A
+   • Fecha: 2026-01-06
+   • Tipo: Reverse
+
+179. GMEX
+   • Empresa: N/A
+   • Fecha: 2026-01-08
+   • Tipo: Reverse
+
+178. ICON
+   • Empresa: N/A
+   • Fecha: 2026-01-08
+   • Tipo: Reverse
+
+177. KUST
+   • Empresa: N/A
+   • Fecha: 2026-01-08
+   • Tipo: Reverse
+
+176. AKAN
+   • Empresa: N/A
+   • Fecha: 2026-01-12
+   • Tipo: Reverse
+
+175. DRCT
+   • Empresa: N/A
+   • Fecha: 2026-01-12
+   • Tipo: Reverse
+
+174. GOVX
+   • Empresa: N/A
+   • Fecha: 2026-01-12
+   • Tipo: Reverse
+
+173. VSME
+   • Empresa: N/A
+   • Fecha: 2026-01-12
+   • Tipo: Reverse
+
+172. VMAR
+   • Empresa: N/A
+   • Fecha: 2026-01-14
+   • Tipo: Reverse
+
+169. HUBC
+   • Empresa: N/A
+   • Fecha: 2026-01-16
+   • Tipo: Reverse
+
+170. ASBP
+   • Empresa: N/A
+   • Fecha: 2026-01-16
+   • Tipo: Reverse
+
+168. OCG
+   • Empresa: N/A
+   • Fecha: 2026-01-16
+   • Tipo: Reverse
+
+164. SXTP
+   • Empresa: N/A
+   • Fecha: 2026-01-20
+   • Tipo: Reverse
+
+167. BTOG
+   • Empresa: N/A
+   • Fecha: 2026-01-20
+   • Tipo: Reverse
+
+166. FTFT
+   • Empresa: N/A
+   • Fecha: 2026-01-20
+   • Tipo: Reverse
+
+165. NVNO
+   • Empresa: N/A
+   • Fecha: 2026-01-20
+   • Tipo: Reverse
+
+163. DCX
+   • Empresa: N/A
+   • Fecha: 2026-01-22
+   • Tipo: Reverse
+
+162. CCTG
+   • Empresa: N/A
+   • Fecha: 2026-01-23
+   • Tipo: Reverse
+
+161. SLE
+   • Empresa: N/A
+   • Fecha: 2026-01-23
+   • Tipo: Reverse
+
+160. UONE
+   • Empresa: N/A
+   • Fecha: 2026-01-23
+   • Tipo: Reverse
+
+159. UONEK
+   • Empresa: N/A
+   • Fecha: 2026-01-23
+   • Tipo: Reverse
+
+150. XXII
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+151. PCLA
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+152. NIVF
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+153. MTEN
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+155. LRHC
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+156. GRI
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+158. BNRG
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+154. MKDW
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+157. CISS
+   • Empresa: N/A
+   • Fecha: 2026-01-26
+   • Tipo: Reverse
+
+149. REVB
+   • Empresa: N/A
+   • Fecha: 2026-01-28
+   • Tipo: Reverse
+
+148. BJDX
+   • Empresa: N/A
+   • Fecha: 2026-01-29
+   • Tipo: Reverse
+
+147. IBG
+   • Empresa: N/A
+   • Fecha: 2026-01-30
+   • Tipo: Reverse
+
+143. PBM
+   • Empresa: N/A
+   • Fecha: 2026-02-02
+   • Tipo: Reverse
+
+146. AREB
+   • Empresa: N/A
+   • Fecha: 2026-02-02
+   • Tipo: Reverse
+
+145. ATOS
+   • Empresa: N/A
+   • Fecha: 2026-02-02
+   • Tipo: Reverse
+
+141. SXTC
+   • Empresa: N/A
+   • Fecha: 2026-02-03
+   • Tipo: Reverse
+
+142. EDBL
+   • Empresa: N/A
+   • Fecha: 2026-02-03
+   • Tipo: Reverse
+
+140. RVSN
+   • Empresa: N/A
+   • Fecha: 2026-02-04
+   • Tipo: Reverse
+
+139. ADIL
+   • Empresa: N/A
+   • Fecha: 2026-02-06
+   • Tipo: Reverse
+
+138. ASST
+   • Empresa: N/A
+   • Fecha: 2026-02-06
+   • Tipo: Reverse
+
+137. PRFX
+   • Empresa: N/A
+   • Fecha: 2026-02-06
+   • Tipo: Reverse
+
+136. RLYB
+   • Empresa: N/A
+   • Fecha: 2026-02-06
+   • Tipo: Reverse
+
+135. EDHL
+   • Empresa: N/A
+   • Fecha: 2026-02-09
+   • Tipo: Reverse
+
+134. FCUV
+   • Empresa: N/A
+   • Fecha: 2026-02-09
+   • Tipo: Reverse
+
+133. PFSA
+   • Empresa: N/A
+   • Fecha: 2026-02-09
+   • Tipo: Reverse
+
+132. UGRO
+   • Empresa: N/A
+   • Fecha: 2026-02-09
+   • Tipo: Reverse
+
+128. HCTI
+   • Empresa: N/A
+   • Fecha: 2026-02-10
+   • Tipo: Reverse
+
+130. ATPC
+   • Empresa: N/A
+   • Fecha: 2026-02-10
+   • Tipo: Reverse
+
+129. FGL
+   • Empresa: N/A
+   • Fecha: 2026-02-10
+   • Tipo: Reverse
+
+131. ANY
+   • Empresa: N/A
+   • Fecha: 2026-02-10
+   • Tipo: Reverse
+
+127. RUBI
+   • Empresa: N/A
+   • Fecha: 2026-02-12
+   • Tipo: Reverse
+
+126. CRE
+   • Empresa: N/A
+   • Fecha: 2026-02-13
+   • Tipo: Reverse
+
+125. FGNX
+   • Empresa: N/A
+   • Fecha: 2026-02-13
+   • Tipo: Reverse
+
+120. WTO
+   • Empresa: N/A
+   • Fecha: 2026-02-17
+   • Tipo: Reverse
+
+124. EEIQ
+   • Empresa: N/A
+   • Fecha: 2026-02-17
+   • Tipo: Reverse
+
+123. INTJ
+   • Empresa: N/A
+   • Fecha: 2026-02-17
+   • Tipo: Reverse
+
+122. NEXR
+   • Empresa: N/A
+   • Fecha: 2026-02-17
+   • Tipo: Reverse
+
+121. SMX
+   • Empresa: N/A
+   • Fecha: 2026-02-17
+   • Tipo: Reverse
+
+119. NDLS
+   • Empresa: N/A
+   • Fecha: 2026-02-18
+   • Tipo: Reverse
+
+117. INTS
+   • Empresa: N/A
+   • Fecha: 2026-02-19
+   • Tipo: Reverse
+
+116. ZDAI
+   • Empresa: N/A
+   • Fecha: 2026-02-19
+   • Tipo: Reverse
+
+118. AURE
+   • Empresa: N/A
+   • Fecha: 2026-02-19
+   • Tipo: Reverse
+
+115. ADVB
+   • Empresa: N/A
+   • Fecha: 2026-02-20
+   • Tipo: Reverse
+
+114. BYAH
+   • Empresa: N/A
+   • Fecha: 2026-02-20
+   • Tipo: Reverse
+
+113. BTM
+   • Empresa: N/A
+   • Fecha: 2026-02-23
+   • Tipo: Reverse
+
+112. DSY
+   • Empresa: N/A
+   • Fecha: 2026-02-23
+   • Tipo: Reverse
+
+108. LFWD
+   • Empresa: N/A
+   • Fecha: 2026-02-24
+   • Tipo: Reverse
+
+107. RPGL
+   • Empresa: N/A
+   • Fecha: 2026-02-24
+   • Tipo: Reverse
+
+106. TRNR
+   • Empresa: N/A
+   • Fecha: 2026-02-24
+   • Tipo: Reverse
+
+105. SVRE
+   • Empresa: N/A
+   • Fecha: 2026-02-25
+   • Tipo: Reverse
+
+104. FRSX
+   • Empresa: N/A
+   • Fecha: 2026-02-26
+   • Tipo: Reverse
+
+99. VCIG
+   • Empresa: N/A
+   • Fecha: 2026-02-27
+   • Tipo: Reverse
+
+102. PTLE
+   • Empresa: N/A
+   • Fecha: 2026-02-27
+   • Tipo: Reverse
+
+103. IXHL
+   • Empresa: N/A
+   • Fecha: 2026-02-27
+   • Tipo: Reverse
+
+100. SFHG
+   • Empresa: N/A
+   • Fecha: 2026-02-27
+   • Tipo: Reverse
+
+97. PPBT
+   • Empresa: N/A
+   • Fecha: 2026-03-02
+   • Tipo: Reverse
+
+96. ZCMD
+   • Empresa: N/A
+   • Fecha: 2026-03-02
+   • Tipo: Reverse
+
+95. MRDN
+   • Empresa: N/A
+   • Fecha: 2026-03-03
+   • Tipo: Reverse
+
+94. BWAY
+   • Empresa: N/A
+   • Fecha: 2026-03-04
+   • Tipo: Forward
+
+93. SPRC
+   • Empresa: N/A
+   • Fecha: 2026-03-04
+   • Tipo: Reverse
+
+92. AEHL
+   • Empresa: N/A
+   • Fecha: 2026-03-05
+   • Tipo: Reverse
+
+89. GSIW
+   • Empresa: N/A
+   • Fecha: 2026-03-06
+   • Tipo: Reverse
+
+88. TVGN
+   • Empresa: N/A
+   • Fecha: 2026-03-06
+   • Tipo: Reverse
+
+87. WCT
+   • Empresa: N/A
+   • Fecha: 2026-03-06
+   • Tipo: Reverse
+
+82. RVPH
+   • Empresa: N/A
+   • Fecha: 2026-03-09
+   • Tipo: Reverse
+
+86. ADTX
+   • Empresa: N/A
+   • Fecha: 2026-03-09
+   • Tipo: Reverse
+
+84. DCOY
+   • Empresa: N/A
+   • Fecha: 2026-03-09
+   • Tipo: Reverse
+
+81. ARTL
+   • Empresa: N/A
+   • Fecha: 2026-03-10
+   • Tipo: Reverse
+
+80. ELAB
+   • Empresa: N/A
+   • Fecha: 2026-03-10
+   • Tipo: Reverse
+
+79. KIDZ
+   • Empresa: N/A
+   • Fecha: 2026-03-10
+   • Tipo: Reverse
+
+78. WLDS
+   • Empresa: N/A
+   • Fecha: 2026-03-11
+   • Tipo: Reverse
+
+77. ELPW
+   • Empresa: N/A
+   • Fecha: 2026-03-12
+   • Tipo: Reverse
+
+76. ZNB
+   • Empresa: N/A
+   • Fecha: 2026-03-12
+   • Tipo: Reverse
+
+75. KXIN
+   • Empresa: N/A
+   • Fecha: 2026-03-13
+   • Tipo: Reverse
+
+73. STFS
+   • Empresa: N/A
+   • Fecha: 2026-03-13
+   • Tipo: Reverse
+
+64. ZJYL
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+65. XLO
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+67. SKYQ
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+70. HBIO
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+69. MASK
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+71. DXST
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+72. CLIR
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+68. NIVF
+   • Empresa: N/A
+   • Fecha: 2026-03-16
+   • Tipo: Reverse
+
+62. CIIT
+   • Empresa: N/A
+   • Fecha: 2026-03-20
+   • Tipo: Reverse
+
+61. ORGN
+   • Empresa: N/A
+   • Fecha: 2026-03-20
+   • Tipo: Reverse
+
+53. YYGH
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+54. SNEX
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Forward
+
+56. FCHL
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+55. JDZG
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+58. CLMB
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Forward
+
+59. AZI
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+60. AREB
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+57. EUDA
+   • Empresa: N/A
+   • Fecha: 2026-03-23
+   • Tipo: Reverse
+
+50. JFB
+   • Empresa: N/A
+   • Fecha: 2026-03-25
+   • Tipo: Forward
+
+49. ONCO
+   • Empresa: N/A
+   • Fecha: 2026-03-25
+   • Tipo: Reverse
+
+48. XTLB
+   • Empresa: N/A
+   • Fecha: 2026-03-25
+   • Tipo: Reverse
+
+47. RENX
+   • Empresa: N/A
+   • Fecha: 2026-03-26
+   • Tipo: Reverse
+
+46. ADV
+   • Empresa: N/A
+   • Fecha: 2026-03-27
+   • Tipo: Reverse
+
+45. CDT
+   • Empresa: N/A
+   • Fecha: 2026-03-27
+   • Tipo: Reverse
+
+44. IVF
+   • Empresa: N/A
+   • Fecha: 2026-03-27
+   • Tipo: Reverse
+
+43. LBGJ
+   • Empresa: N/A
+   • Fecha: 2026-03-27
+   • Tipo: Reverse
+
+42. TRUG
+   • Empresa: N/A
+   • Fecha: 2026-03-27
+   • Tipo: Reverse
+
+38. SVRN
+   • Empresa: N/A
+   • Fecha: 2026-03-30
+   • Tipo: Reverse
+
+39. FBLG
+   • Empresa: N/A
+   • Fecha: 2026-03-30
+   • Tipo: Reverse
+
+40. EJH
+   • Empresa: N/A
+   • Fecha: 2026-03-30
+   • Tipo: Reverse
+
+41. ATXG
+   • Empresa: N/A
+   • Fecha: 2026-03-30
+   • Tipo: Reverse
+
+36. AKTX
+   • Empresa: N/A
+   • Fecha: 2026-03-31
+   • Tipo: Reverse
+
+35. MODD
+   • Empresa: N/A
+   • Fecha: 2026-03-31
+   • Tipo: Reverse
+
+34. PAVS
+   • Empresa: N/A
+   • Fecha: 2026-03-31
+   • Tipo: Reverse
+
+33. AUUD
+   • Empresa: N/A
+   • Fecha: 2026-04-01
+   • Tipo: Reverse
+
+31. UCAR
+   • Empresa: N/A
+   • Fecha: 2026-04-01
+   • Tipo: Reverse
+
+30. NCT
+   • Empresa: N/A
+   • Fecha: 2026-04-02
+   • Tipo: Reverse
+
+29. PSTV
+   • Empresa: N/A
+   • Fecha: 2026-04-02
+   • Tipo: Reverse
+
+16. XRTX
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+17. WNW
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+18. SKK
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+19. POWL
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Forward
+
+20. LNKS
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+21. INLF
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+26. BDRX
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+23. HKIT
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+24. GNLN
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+25. BKNG
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Forward
+
+27. BCAB
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+28. AIIO
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+22. HTCR
+   • Empresa: N/A
+   • Fecha: 2026-04-06
+   • Tipo: Reverse
+
+15. CHR
+   • Empresa: N/A
+   • Fecha: 2026-04-07
+   • Tipo: Reverse
+
+14. MOBX
+   • Empresa: N/A
+   • Fecha: 2026-04-07
+   • Tipo: Reverse
+
+13. JTAI
+   • Empresa: N/A
+   • Fecha: 2026-04-08
+   • Tipo: Reverse
+
+12. NXTS
+   • Empresa: N/A
+   • Fecha: 2026-04-08
+   • Tipo: Reverse
+
+11. RDGT
+   • Empresa: N/A
+   • Fecha: 2026-04-08
+   • Tipo: Reverse
+
+10. RUBI
+   • Empresa: N/A
+   • Fecha: 2026-04-09
+   • Tipo: Reverse
+
+9. WORX
+   • Empresa: N/A
+   • Fecha: 2026-04-10
+   • Tipo: Reverse
+
+8. CENN
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+7. HCAI
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+6. JEM
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+5. MSAI
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+4. NXPL
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+3. PN
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+2. QNCX
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+
+1. WFF
+   • Empresa: N/A
+   • Fecha: 2026-04-13
+   • Tipo: Reverse
+

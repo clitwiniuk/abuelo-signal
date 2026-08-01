@@ -1,0 +1,1 @@
+{"run_at": "2026-07-08T04:23:25.375643+00:00", "data_folder": "/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/data_audit_system/real_run/data", "n_filas": 92839, "n_tickers": 187, "pct_dias_validos": 90.2, "pct_tickers_validos": 95.7, "pct_datos_descartados": 100.0, "violaciones_por_severidad": {"WARNING": 717, "INFO": 136, "CRITICAL": 28}}

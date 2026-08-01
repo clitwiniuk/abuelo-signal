@@ -1,7 +1,0 @@
-2025-12-14 13:50:06 - Worker.vwap - INFO - Worker logging initialized - vwap -> logs/worker_vwap.log
-2025-12-14 13:50:06 - Worker.vwap - INFO - 🔧 Worker vwap initialized with separate logging + ODS support + Event Logger + Swing Transition
-2025-12-14 13:50:06 - Worker.vwap - INFO - 🎯 VWAP Breakout Worker configured: vol>=1.5x, price=$2.0-$50.0
-2025-12-14 13:50:06 - Worker.vwap - INFO -    VWAP Window: 120min, Min Trend: +0.08%
-2025-12-14 13:50:06 - Worker.vwap - INFO -    Stop Manager: WorkerStopConfig(stop_loss_pct=400.0, take_profit_pct=1000.0, quick_target_pct=None, trailing_activation=500.0, trailing_distance=250.0, min_profit_for_trailing=10.0, max_position_hours=1.0, end_of_day_hour=15.75)
-2025-12-14 13:50:06 - Worker.vwap - INFO - 📊 JBLU: VWAP pattern completion = 65%
-2025-12-14 13:50:06 - Worker.vwap - INFO - ⚪ JBLU: VWAP pattern not ready (65% < 70%)

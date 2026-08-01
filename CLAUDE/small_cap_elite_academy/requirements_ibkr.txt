@@ -1,0 +1,25 @@
+# Requisitos para conexión con Interactive Brokers
+# Instalar con: pip install -r requirements_ibkr.txt
+
+# API de Interactive Brokers
+ibapi>=9.81.1
+
+# Dependencias adicionales para trading
+pandas>=1.3.0
+numpy>=1.21.0
+streamlit>=1.20.0
+
+# Para gráficos profesionales
+plotly>=5.0.0
+
+# Para datos de mercado (fallback)
+yfinance>=0.1.87
+
+# Para manejo de fechas
+python-dateutil>=2.8.2
+
+# Para logging
+logging>=0.4.9.6
+
+# Para threading
+threading-utils>=0.3.6

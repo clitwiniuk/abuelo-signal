@@ -1,3 +1,0 @@
-{"timestamp": "2025-12-12T21:35:52.126925", "worker": "test", "event_type": "worker_decision", "symbol": "TEST", "decision": "ACCEPTED", "reason": "test_initialization", "test": true}
-{"timestamp": "2025-12-12T21:54:18.351613", "worker": "test", "event_type": "worker_decision", "symbol": "TEST", "decision": "ACCEPTED", "reason": "test_initialization", "test": true}
-{"timestamp": "2025-12-12T22:17:22.240359", "worker": "debug_verifier", "event_type": "worker_decision", "symbol": "TEST-GRAFANA", "decision": "ACCEPTED", "reason": "verification_test", "message": "Check Grafana NOW! If you see this, connection is working!", "value": 100}

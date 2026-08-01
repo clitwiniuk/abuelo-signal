@@ -1,0 +1,882 @@
+ticker,date,check_type,severity,detail
+*,2026-04-10,look_ahead,CRITICAL,Columna 'downloaded_at' ausente en todo el dataset: imposible verificar disponibilidad temporal de los datos.
+AEHL,2026-05-13,overnight_gap_suspect,CRITICAL,"Gap overnight de 114.5% (> 50.0%) sin volumen que lo confirme (vol día = 47,265,290). Posible split no ajustado."
+BRIA,2026-06-09,frozen_candles,CRITICAL,Racha de 51 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+CAST,2026-06-15,overnight_gap_suspect,CRITICAL,"Gap overnight de 156.1% (> 50.0%) sin volumen que lo confirme (vol día = 79,711,384). Posible split no ajustado."
+CAST,2026-06-18,overnight_gap_suspect,CRITICAL,"Gap overnight de 184.7% (> 50.0%) sin volumen que lo confirme (vol día = 48,051,719). Posible split no ajustado."
+CDT,2026-06-18,frozen_candles,CRITICAL,Racha de 62 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+CDT,2026-06-18,frozen_candles,CRITICAL,Racha de 37 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+CLWT,2026-06-17,frozen_candles,CRITICAL,Racha de 39 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+CMND,2026-06-05,overnight_gap_suspect,CRITICAL,"Gap overnight de 66.9% (> 50.0%) sin volumen que lo confirme (vol día = 13,842,345). Posible split no ajustado."
+CODX,2026-05-21,overnight_gap_suspect,CRITICAL,"Gap overnight de 60.7% (> 50.0%) sin volumen que lo confirme (vol día = 69,950,606). Posible split no ajustado."
+CTNT,2026-04-24,overnight_gap_suspect,CRITICAL,"Gap overnight de 69.8% (> 50.0%) sin volumen que lo confirme (vol día = 6,296,186). Posible split no ajustado."
+CUPR,2026-06-12,frozen_candles,CRITICAL,Racha de 42 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+CUPR,2026-06-12,frozen_candles,CRITICAL,Racha de 46 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+EDHL,2026-06-11,overnight_gap_suspect,CRITICAL,"Gap overnight de 284.4% (> 50.0%) sin volumen que lo confirme (vol día = 11,128,292). Posible split no ajustado."
+EZGO,2026-05-11,overnight_gap_suspect,CRITICAL,"Gap overnight de 63.7% (> 50.0%) sin volumen que lo confirme (vol día = 3,741,828). Posible split no ajustado."
+HTCO,2026-06-03,overnight_gap_suspect,CRITICAL,"Gap overnight de 69.9% (> 50.0%) sin volumen que lo confirme (vol día = 2,118,539). Posible split no ajustado."
+HUBC,2026-05-19,overnight_gap_suspect,CRITICAL,"Gap overnight de 97.5% (> 50.0%) sin volumen que lo confirme (vol día = 2,492,212). Posible split no ajustado."
+ICCM,2026-06-17,frozen_candles,CRITICAL,Racha de 71 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+INHD,2026-06-08,overnight_gap_suspect,CRITICAL,"Gap overnight de 52.9% (> 50.0%) sin volumen que lo confirme (vol día = 237,100,613). Posible split no ajustado."
+LNKS,2026-06-18,overnight_gap_suspect,CRITICAL,"Gap overnight de 95.1% (> 50.0%) sin volumen que lo confirme (vol día = 19,064,538). Posible split no ajustado."
+NXTS,2026-06-22,frozen_candles,CRITICAL,Racha de 38 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+PBM,2026-04-20,overnight_gap_suspect,CRITICAL,"Gap overnight de 74.2% (> 50.0%) sin volumen que lo confirme (vol día = 19,677,984). Posible split no ajustado."
+QTEX,2026-05-26,overnight_gap_suspect,CRITICAL,"Gap overnight de 117.4% (> 50.0%) sin volumen que lo confirme (vol día = 109,687,317). Posible split no ajustado."
+SDOT,2026-06-08,overnight_gap_suspect,CRITICAL,"Gap overnight de 110.6% (> 50.0%) sin volumen que lo confirme (vol día = 3,233,972). Posible split no ajustado."
+SPRC,2026-06-04,overnight_gap_suspect,CRITICAL,"Gap overnight de 125.8% (> 50.0%) sin volumen que lo confirme (vol día = 2,213,912). Posible split no ajustado."
+SUGP,2026-06-16,frozen_candles,CRITICAL,Racha de 71 velas 1-min sin cambio de precio (máximo contrato: 30): dato congelado (hay volumen pero el precio no se mueve).
+VRAX,2026-05-18,overnight_gap_suspect,CRITICAL,"Gap overnight de 84.5% (> 50.0%) sin volumen que lo confirme (vol día = 491,243,522). Posible split no ajustado."
+VSME,2026-06-15,overnight_gap_suspect,CRITICAL,"Gap overnight de 100.0% (> 50.0%) sin volumen que lo confirme (vol día = 21,973,545). Posible split no ajustado."
+AEHL,2026-05-14,volume_zero,INFO,95 velas con volumen = 0 (posible relleno sintético de la fuente).
+AGPU,2026-04-22,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+AHMA,2026-06-09,volume_zero,INFO,75 velas con volumen = 0 (posible relleno sintético de la fuente).
+AIIO,2026-05-14,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+AKTX,2026-05-22,volume_zero,INFO,26 velas con volumen = 0 (posible relleno sintético de la fuente).
+AMST,2026-04-23,volume_zero,INFO,146 velas con volumen = 0 (posible relleno sintético de la fuente).
+ASTC,2026-05-27,volume_zero,INFO,13 velas con volumen = 0 (posible relleno sintético de la fuente).
+ASYS,2026-05-08,volume_zero,INFO,78 velas con volumen = 0 (posible relleno sintético de la fuente).
+ATRA,2026-05-07,volume_zero,INFO,17 velas con volumen = 0 (posible relleno sintético de la fuente).
+AZI,2026-06-09,volume_zero,INFO,17 velas con volumen = 0 (posible relleno sintético de la fuente).
+BBCP,2026-06-05,volume_zero,INFO,14 velas con volumen = 0 (posible relleno sintético de la fuente).
+BESS,2026-06-05,volume_zero,INFO,19 velas con volumen = 0 (posible relleno sintético de la fuente).
+BIYA,2026-05-26,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+BNRG,2026-04-15,volume_zero,INFO,267 velas con volumen = 0 (posible relleno sintético de la fuente).
+BOOM,2026-05-01,volume_zero,INFO,24 velas con volumen = 0 (posible relleno sintético de la fuente).
+BRIA,2026-06-09,volume_zero,INFO,317 velas con volumen = 0 (posible relleno sintético de la fuente).
+BZH,2026-05-11,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+CAST,2026-04-24,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+CAST,2026-06-18,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+CCTG,2026-06-09,volume_zero,INFO,260 velas con volumen = 0 (posible relleno sintético de la fuente).
+CDT,2026-06-18,volume_zero,INFO,181 velas con volumen = 0 (posible relleno sintético de la fuente).
+CIIT,2026-06-10,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+CISS,2026-05-18,volume_zero,INFO,37 velas con volumen = 0 (posible relleno sintético de la fuente).
+CLIK,2026-04-21,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+CLWT,2026-06-17,volume_zero,INFO,38 velas con volumen = 0 (posible relleno sintético de la fuente).
+CMND,2026-04-20,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+CMND,2026-06-05,volume_zero,INFO,3 velas con volumen = 0 (posible relleno sintético de la fuente).
+CPOP,2026-06-09,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+CPSH,2026-05-26,volume_zero,INFO,9 velas con volumen = 0 (posible relleno sintético de la fuente).
+CRE,2026-06-16,volume_zero,INFO,42 velas con volumen = 0 (posible relleno sintético de la fuente).
+CRE,2026-06-17,volume_zero,INFO,14 velas con volumen = 0 (posible relleno sintético de la fuente).
+CRMT,2026-06-22,volume_zero,INFO,57 velas con volumen = 0 (posible relleno sintético de la fuente).
+CUPR,2026-06-12,volume_zero,INFO,208 velas con volumen = 0 (posible relleno sintético de la fuente).
+CUPR,2026-06-15,volume_zero,INFO,158 velas con volumen = 0 (posible relleno sintético de la fuente).
+DSY,2026-06-10,volume_zero,INFO,56 velas con volumen = 0 (posible relleno sintético de la fuente).
+DSY,2026-06-12,volume_zero,INFO,76 velas con volumen = 0 (posible relleno sintético de la fuente).
+DXST,2026-06-15,volume_zero,INFO,40 velas con volumen = 0 (posible relleno sintético de la fuente).
+EDHL,2026-06-04,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+EDHL,2026-06-11,volume_zero,INFO,47 velas con volumen = 0 (posible relleno sintético de la fuente).
+EDSA,2026-04-28,volume_zero,INFO,32 velas con volumen = 0 (posible relleno sintético de la fuente).
+EHGO,2026-06-22,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+EPSM,2026-06-09,volume_zero,INFO,10 velas con volumen = 0 (posible relleno sintético de la fuente).
+ERNA,2026-05-06,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+EZGO,2026-05-06,volume_zero,INFO,20 velas con volumen = 0 (posible relleno sintético de la fuente).
+FCHL,2026-04-20,volume_zero,INFO,12 velas con volumen = 0 (posible relleno sintético de la fuente).
+FGL,2026-05-27,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+FNKO,2026-05-08,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+FOFO,2026-06-03,volume_zero,INFO,47 velas con volumen = 0 (posible relleno sintético de la fuente).
+FRSX,2026-06-08,volume_zero,INFO,3 velas con volumen = 0 (posible relleno sintético de la fuente).
+FSEA,2026-05-05,volume_zero,INFO,199 velas con volumen = 0 (posible relleno sintético de la fuente).
+GDHG,2026-06-16,volume_zero,INFO,5 velas con volumen = 0 (posible relleno sintético de la fuente).
+GLXG,2026-06-11,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+GLXG,2026-06-15,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+GOVX,2026-05-18,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+HCAI,2026-05-18,volume_zero,INFO,51 velas con volumen = 0 (posible relleno sintético de la fuente).
+HTCO,2026-05-12,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+HTCO,2026-06-03,volume_zero,INFO,78 velas con volumen = 0 (posible relleno sintético de la fuente).
+HUBC,2026-05-19,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+HWH,2026-06-10,volume_zero,INFO,10 velas con volumen = 0 (posible relleno sintético de la fuente).
+ICCM,2026-06-17,volume_zero,INFO,77 velas con volumen = 0 (posible relleno sintético de la fuente).
+INHD,2026-06-08,volume_zero,INFO,175 velas con volumen = 0 (posible relleno sintético de la fuente).
+IOTR,2026-05-28,volume_zero,INFO,24 velas con volumen = 0 (posible relleno sintético de la fuente).
+JLHL,2026-04-17,volume_zero,INFO,177 velas con volumen = 0 (posible relleno sintético de la fuente).
+JLHL,2026-04-20,volume_zero,INFO,131 velas con volumen = 0 (posible relleno sintético de la fuente).
+JRSH,2026-06-15,volume_zero,INFO,15 velas con volumen = 0 (posible relleno sintético de la fuente).
+KUST,2026-06-03,volume_zero,INFO,91 velas con volumen = 0 (posible relleno sintético de la fuente).
+KXIN,2026-06-15,volume_zero,INFO,116 velas con volumen = 0 (posible relleno sintético de la fuente).
+LABT,2026-05-01,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+LNKS,2026-04-10,volume_zero,INFO,12 velas con volumen = 0 (posible relleno sintético de la fuente).
+LNKS,2026-05-14,volume_zero,INFO,14 velas con volumen = 0 (posible relleno sintético de la fuente).
+LOBO,2026-04-21,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+MOBX,2026-05-14,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+MSAI,2026-06-03,volume_zero,INFO,40 velas con volumen = 0 (posible relleno sintético de la fuente).
+MSW,2026-06-10,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+MTEN,2026-06-09,volume_zero,INFO,148 velas con volumen = 0 (posible relleno sintético de la fuente).
+MWC,2026-05-20,volume_zero,INFO,12 velas con volumen = 0 (posible relleno sintético de la fuente).
+NAMM,2026-06-01,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+NEXR,2026-06-08,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+NICM,2026-04-15,volume_zero,INFO,13 velas con volumen = 0 (posible relleno sintético de la fuente).
+NIXX,2026-06-15,volume_zero,INFO,60 velas con volumen = 0 (posible relleno sintético de la fuente).
+NPT,2026-04-17,volume_zero,INFO,27 velas con volumen = 0 (posible relleno sintético de la fuente).
+NXTS,2026-06-16,volume_zero,INFO,71 velas con volumen = 0 (posible relleno sintético de la fuente).
+NXTS,2026-06-22,volume_zero,INFO,186 velas con volumen = 0 (posible relleno sintético de la fuente).
+OBAI,2026-06-16,volume_zero,INFO,162 velas con volumen = 0 (posible relleno sintético de la fuente).
+OLOX,2026-05-29,volume_zero,INFO,10 velas con volumen = 0 (posible relleno sintético de la fuente).
+ONEG,2026-04-28,volume_zero,INFO,220 velas con volumen = 0 (posible relleno sintético de la fuente).
+ONEG,2026-05-05,volume_zero,INFO,26 velas con volumen = 0 (posible relleno sintético de la fuente).
+PAVS,2026-06-09,volume_zero,INFO,113 velas con volumen = 0 (posible relleno sintético de la fuente).
+PBM,2026-04-17,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+PN,2026-05-05,volume_zero,INFO,66 velas con volumen = 0 (posible relleno sintético de la fuente).
+QH,2026-06-11,volume_zero,INFO,40 velas con volumen = 0 (posible relleno sintético de la fuente).
+QTEX,2026-05-22,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+QUCY,2026-05-15,volume_zero,INFO,34 velas con volumen = 0 (posible relleno sintético de la fuente).
+RECT,2026-04-13,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+RECT,2026-04-16,volume_zero,INFO,31 velas con volumen = 0 (posible relleno sintético de la fuente).
+RGNT,2026-06-09,volume_zero,INFO,27 velas con volumen = 0 (posible relleno sintético de la fuente).
+RLYB,2026-05-04,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+RMSG,2026-04-13,volume_zero,INFO,24 velas con volumen = 0 (posible relleno sintético de la fuente).
+RYOJ,2026-05-22,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+SBFM,2026-05-18,volume_zero,INFO,99 velas con volumen = 0 (posible relleno sintético de la fuente).
+SDOT,2026-06-03,volume_zero,INFO,41 velas con volumen = 0 (posible relleno sintético de la fuente).
+SDOT,2026-06-08,volume_zero,INFO,10 velas con volumen = 0 (posible relleno sintético de la fuente).
+SDOT,2026-06-17,volume_zero,INFO,108 velas con volumen = 0 (posible relleno sintético de la fuente).
+SKYQ,2026-04-10,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+SMTK,2026-06-08,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+SNAL,2026-04-14,volume_zero,INFO,65 velas con volumen = 0 (posible relleno sintético de la fuente).
+SNAL,2026-05-14,volume_zero,INFO,8 velas con volumen = 0 (posible relleno sintético de la fuente).
+SPHL,2026-06-05,volume_zero,INFO,58 velas con volumen = 0 (posible relleno sintético de la fuente).
+SPRC,2026-04-21,volume_zero,INFO,14 velas con volumen = 0 (posible relleno sintético de la fuente).
+SPRC,2026-06-04,volume_zero,INFO,52 velas con volumen = 0 (posible relleno sintético de la fuente).
+SQFT,2026-04-10,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+STAK,2026-06-05,volume_zero,INFO,95 velas con volumen = 0 (posible relleno sintético de la fuente).
+STFS,2026-05-08,volume_zero,INFO,147 velas con volumen = 0 (posible relleno sintético de la fuente).
+STG,2026-05-29,volume_zero,INFO,5 velas con volumen = 0 (posible relleno sintético de la fuente).
+SUGP,2026-06-16,volume_zero,INFO,88 velas con volumen = 0 (posible relleno sintético de la fuente).
+SUNE,2026-06-08,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+TDIC,2026-04-24,volume_zero,INFO,91 velas con volumen = 0 (posible relleno sintético de la fuente).
+TDIC,2026-04-27,volume_zero,INFO,149 velas con volumen = 0 (posible relleno sintético de la fuente).
+TDIC,2026-05-13,volume_zero,INFO,42 velas con volumen = 0 (posible relleno sintético de la fuente).
+TDIC,2026-06-08,volume_zero,INFO,17 velas con volumen = 0 (posible relleno sintético de la fuente).
+TDIC,2026-06-16,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+TRAW,2026-05-11,volume_zero,INFO,1 velas con volumen = 0 (posible relleno sintético de la fuente).
+TWAV,2026-06-04,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+UBXG,2026-06-12,volume_zero,INFO,164 velas con volumen = 0 (posible relleno sintético de la fuente).
+UPC,2026-06-16,volume_zero,INFO,59 velas con volumen = 0 (posible relleno sintético de la fuente).
+UTSI,2026-06-17,volume_zero,INFO,30 velas con volumen = 0 (posible relleno sintético de la fuente).
+VSA,2026-06-02,volume_zero,INFO,31 velas con volumen = 0 (posible relleno sintético de la fuente).
+VSME,2026-06-10,volume_zero,INFO,13 velas con volumen = 0 (posible relleno sintético de la fuente).
+WEST,2026-05-08,volume_zero,INFO,2 velas con volumen = 0 (posible relleno sintético de la fuente).
+WKSP,2026-06-18,volume_zero,INFO,28 velas con volumen = 0 (posible relleno sintético de la fuente).
+WLDS,2026-04-20,volume_zero,INFO,9 velas con volumen = 0 (posible relleno sintético de la fuente).
+WNW,2026-05-19,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+WNW,2026-05-20,volume_zero,INFO,27 velas con volumen = 0 (posible relleno sintético de la fuente).
+WOK,2026-05-12,volume_zero,INFO,148 velas con volumen = 0 (posible relleno sintético de la fuente).
+WSHP,2026-04-22,volume_zero,INFO,92 velas con volumen = 0 (posible relleno sintético de la fuente).
+WTO,2026-05-01,volume_zero,INFO,4 velas con volumen = 0 (posible relleno sintético de la fuente).
+*,2026-04-10,universe_too_small,WARNING,Solo 9 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-13,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-14,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-15,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-16,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-17,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-20,universe_too_small,WARNING,Solo 7 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-21,universe_too_small,WARNING,Solo 6 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-22,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-23,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-24,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-27,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-28,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-29,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-04-30,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-01,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-04,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-05,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-06,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-07,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-08,universe_too_small,WARNING,Solo 6 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-11,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-12,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-13,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-14,universe_too_small,WARNING,Solo 7 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-15,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-18,universe_too_small,WARNING,Solo 6 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-19,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-20,universe_too_small,WARNING,Solo 4 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-21,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-22,universe_too_small,WARNING,Solo 7 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-26,universe_too_small,WARNING,Solo 6 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-27,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-28,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-05-29,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-01,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-02,universe_too_small,WARNING,Solo 3 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-03,universe_too_small,WARNING,Solo 8 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-04,universe_too_small,WARNING,Solo 8 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-05,universe_too_small,WARNING,Solo 9 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-08,universe_too_small,WARNING,Solo 9 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-09,universe_too_small,WARNING,Solo 10 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-10,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-11,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-12,universe_too_small,WARNING,Solo 6 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-15,universe_too_small,WARNING,Solo 9 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-16,universe_too_small,WARNING,Solo 7 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-17,universe_too_small,WARNING,Solo 8 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-18,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-22,universe_too_small,WARNING,Solo 5 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+*,2026-06-23,universe_too_small,WARNING,Solo 2 tickers con datos (mínimo contrato: 15). Día no representativo del universo.
+AEHL,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-11..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+AEHL,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AGPU,2026-04-22,survivorship,WARNING,Ticker desaparece tras 2026-04-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AHMA,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AIIO,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AIXI,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AKTX,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ALLO,2026-04-13,survivorship,WARNING,Ticker desaparece tras 2026-04-13 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ALP,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AMST,2026-04-23,survivorship,WARNING,Ticker desaparece tras 2026-04-23 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ANY,2026-06-01,survivorship,WARNING,Ticker desaparece tras 2026-06-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ASTC,2026-05-27,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 13.7%). Posible dato corrupto o split intradía.
+ASTC,2026-05-27,survivorship,WARNING,Ticker desaparece tras 2026-05-27 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ASYS,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ATRA,2026-05-07,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 10.1%). Posible dato corrupto o split intradía.
+ATRA,2026-05-07,survivorship,WARNING,Ticker desaparece tras 2026-05-07 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AUUD,2026-05-15,survivorship,WARNING,Ticker desaparece tras 2026-05-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AVNS,2026-04-14,survivorship,WARNING,Ticker desaparece tras 2026-04-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+AZI,2026-06-09,price_jump_no_volume,WARNING,6 saltos intradía > 10.0% sin volumen acorde (peor: 17.1%). Posible dato corrupto o split intradía.
+AZI,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BBBY,2026-04-28,survivorship,WARNING,Ticker desaparece tras 2026-04-28 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BBCP,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BCDA,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BESS,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BGMS,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BIYA,2026-05-26,survivorship,WARNING,Ticker desaparece tras 2026-05-26 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BNRG,2026-04-15,survivorship,WARNING,Ticker desaparece tras 2026-04-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BOOM,2026-05-01,survivorship,WARNING,Ticker desaparece tras 2026-05-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BRIA,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BYAH,2026-06-12,survivorship,WARNING,Ticker desaparece tras 2026-06-12 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+BZH,2026-05-11,survivorship,WARNING,Ticker desaparece tras 2026-05-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CAST,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CAST,2026-06-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+CCHH,2026-06-11,survivorship,WARNING,Ticker desaparece tras 2026-06-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CCTG,2026-06-09,frozen_candles,WARNING,Racha de 51 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+CCTG,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CDT,2026-06-18,frozen_candles,WARNING,Racha de 39 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+CERS,2026-05-01,survivorship,WARNING,Ticker desaparece tras 2026-05-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CIIT,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CIIT,2026-06-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-23). Posible descarga incompleta o halt de jornada completa.
+CISS,2026-05-18,survivorship,WARNING,Ticker desaparece tras 2026-05-18 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CLIK,2026-04-21,survivorship,WARNING,Ticker desaparece tras 2026-04-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CLWT,2026-06-17,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 14.2%). Posible dato corrupto o split intradía.
+CMND,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-20..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+CMND,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CNSP,2026-05-04,survivorship,WARNING,Ticker desaparece tras 2026-05-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CODX,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-19..2026-05-21). Posible descarga incompleta o halt de jornada completa.
+CODX,2026-05-21,survivorship,WARNING,Ticker desaparece tras 2026-05-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CPOP,2026-06-09,price_jump_no_volume,WARNING,2 saltos intradía > 10.0% sin volumen acorde (peor: 10.4%). Posible dato corrupto o split intradía.
+CPOP,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CPSH,2026-05-26,survivorship,WARNING,Ticker desaparece tras 2026-05-26 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CRE,2026-06-16,price_jump_no_volume,WARNING,2 saltos intradía > 10.0% sin volumen acorde (peor: 15.0%). Posible dato corrupto o split intradía.
+CRML,2026-04-17,survivorship,WARNING,Ticker desaparece tras 2026-04-17 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CRMT,2026-06-22,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 10.3%). Posible dato corrupto o split intradía.
+CTNT,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-16..2026-04-24). Posible descarga incompleta o halt de jornada completa.
+CTNT,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-16..2026-04-24). Posible descarga incompleta o halt de jornada completa.
+CTNT,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-16..2026-04-24). Posible descarga incompleta o halt de jornada completa.
+CTNT,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-16..2026-04-24). Posible descarga incompleta o halt de jornada completa.
+CTNT,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-16..2026-04-24). Posible descarga incompleta o halt de jornada completa.
+CTNT,2026-04-24,survivorship,WARNING,Ticker desaparece tras 2026-04-24 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CUPR,2026-06-12,frozen_candles,WARNING,Racha de 113 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+CUPR,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+CXAI,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+DEVS,2026-05-29,survivorship,WARNING,Ticker desaparece tras 2026-05-29 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+DSY,2026-06-10,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 13.8%). Posible dato corrupto o split intradía.
+DSY,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-12). Posible descarga incompleta o halt de jornada completa.
+DSY,2026-06-12,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 11.1%). Posible dato corrupto o split intradía.
+DSY,2026-06-12,survivorship,WARNING,Ticker desaparece tras 2026-06-12 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+DXST,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EDHL,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-04..2026-06-11). Posible descarga incompleta o halt de jornada completa.
+EDHL,2026-06-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-04..2026-06-11). Posible descarga incompleta o halt de jornada completa.
+EDHL,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-04..2026-06-11). Posible descarga incompleta o halt de jornada completa.
+EDHL,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-04..2026-06-11). Posible descarga incompleta o halt de jornada completa.
+EDHL,2026-06-11,survivorship,WARNING,Ticker desaparece tras 2026-06-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EDSA,2026-04-28,survivorship,WARNING,Ticker desaparece tras 2026-04-28 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EHGO,2026-06-17,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 12.6%). Posible dato corrupto o split intradía.
+EHGO,2026-06-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-17..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+ELPW,2026-04-24,survivorship,WARNING,Ticker desaparece tras 2026-04-24 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ENVB,2026-04-20,survivorship,WARNING,Ticker desaparece tras 2026-04-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EPSM,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ERNA,2026-05-06,survivorship,WARNING,Ticker desaparece tras 2026-05-06 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ESPR,2026-05-01,survivorship,WARNING,Ticker desaparece tras 2026-05-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EVC,2026-05-06,survivorship,WARNING,Ticker desaparece tras 2026-05-06 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+EZGO,2026-05-06,price_jump_no_volume,WARNING,8 saltos intradía > 10.0% sin volumen acorde (peor: 14.6%). Posible dato corrupto o split intradía.
+EZGO,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-06..2026-05-11). Posible descarga incompleta o halt de jornada completa.
+EZGO,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-06..2026-05-11). Posible descarga incompleta o halt de jornada completa.
+EZGO,2026-05-11,survivorship,WARNING,Ticker desaparece tras 2026-05-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FATN,2026-04-30,survivorship,WARNING,Ticker desaparece tras 2026-04-30 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FCHL,2026-04-21,survivorship,WARNING,Ticker desaparece tras 2026-04-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FGL,2026-05-27,survivorship,WARNING,Ticker desaparece tras 2026-05-27 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FNKO,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FOFO,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FOXX,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FRSX,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+FSEA,2026-05-05,survivorship,WARNING,Ticker desaparece tras 2026-05-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GDC,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GDHG,2026-06-16,survivorship,WARNING,Ticker desaparece tras 2026-06-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GELS,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GLXG,2026-06-11,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 10.6%). Posible dato corrupto o split intradía.
+GLXG,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-11..2026-06-15). Posible descarga incompleta o halt de jornada completa.
+GLXG,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GMM,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-09..2026-06-12). Posible descarga incompleta o halt de jornada completa.
+GMM,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-09..2026-06-12). Posible descarga incompleta o halt de jornada completa.
+GMM,2026-06-12,survivorship,WARNING,Ticker desaparece tras 2026-06-12 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GNS,2026-05-28,survivorship,WARNING,Ticker desaparece tras 2026-05-28 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+GOVX,2026-05-18,survivorship,WARNING,Ticker desaparece tras 2026-05-18 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HCAI,2026-05-18,survivorship,WARNING,Ticker desaparece tras 2026-05-18 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HIMX,2026-05-07,survivorship,WARNING,Ticker desaparece tras 2026-05-07 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HIVE,2026-05-18,survivorship,WARNING,Ticker desaparece tras 2026-05-18 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HKIT,2026-06-11,survivorship,WARNING,Ticker desaparece tras 2026-06-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HTCO,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-12..2026-06-03). Posible descarga incompleta o halt de jornada completa.
+HTCO,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HUBC,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-06-02). Posible descarga incompleta o halt de jornada completa.
+HUBC,2026-06-02,survivorship,WARNING,Ticker desaparece tras 2026-06-02 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HWH,2026-06-10,survivorship,WARNING,Ticker desaparece tras 2026-06-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+HYLN,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ICCM,2026-06-17,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 22.9%). Posible dato corrupto o split intradía.
+IMMP,2026-04-15,survivorship,WARNING,Ticker desaparece tras 2026-04-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+INHD,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+INHD,2026-06-08,price_jump_no_volume,WARNING,6 saltos intradía > 10.0% sin volumen acorde (peor: 106.8%). Posible dato corrupto o split intradía.
+INHD,2026-06-08,frozen_candles,WARNING,Racha de 125 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+INHD,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+IOTR,2026-05-28,survivorship,WARNING,Ticker desaparece tras 2026-05-28 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ISPC,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+JLHL,2026-04-20,survivorship,WARNING,Ticker desaparece tras 2026-04-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+JRSH,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+KUST,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+KXIN,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LABT,2026-05-01,survivorship,WARNING,Ticker desaparece tras 2026-05-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LASE,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LESL,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LFS,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LNKS,2026-04-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LNKS,2026-06-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-10..2026-06-18). Posible descarga incompleta o halt de jornada completa.
+LOBO,2026-04-21,survivorship,WARNING,Ticker desaparece tras 2026-04-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+LOCL,2026-04-21,survivorship,WARNING,Ticker desaparece tras 2026-04-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MEHA,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MNTS,2026-05-26,survivorship,WARNING,Ticker desaparece tras 2026-05-26 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MOBX,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MSAI,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MSW,2026-06-10,survivorship,WARNING,Ticker desaparece tras 2026-06-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MTEN,2026-06-09,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 14.7%). Posible dato corrupto o split intradía.
+MTEN,2026-06-09,frozen_candles,WARNING,Racha de 34 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+MTEN,2026-06-09,frozen_candles,WARNING,Racha de 49 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+MTEN,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MTVA,2026-05-20,survivorship,WARNING,Ticker desaparece tras 2026-05-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+MWC,2026-05-20,survivorship,WARNING,Ticker desaparece tras 2026-05-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NAMM,2026-06-01,survivorship,WARNING,Ticker desaparece tras 2026-06-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NCRA,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-26..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NCRA,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NEXR,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-06-08). Posible descarga incompleta o halt de jornada completa.
+NEXR,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NICM,2026-04-15,survivorship,WARNING,Ticker desaparece tras 2026-04-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NIXX,2026-06-15,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 10.4%). Posible dato corrupto o split intradía.
+NIXX,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NPT,2026-04-17,survivorship,WARNING,Ticker desaparece tras 2026-04-17 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+NXTS,2026-06-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-16..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+NXTS,2026-06-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-16..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+NXTS,2026-06-22,frozen_candles,WARNING,Racha de 70 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+OBAI,2026-06-16,price_jump_no_volume,WARNING,2 saltos intradía > 10.0% sin volumen acorde (peor: 13.6%). Posible dato corrupto o split intradía.
+OBAI,2026-06-16,frozen_candles,WARNING,Racha de 94 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+OBAI,2026-06-16,survivorship,WARNING,Ticker desaparece tras 2026-06-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+OCC,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+OLOX,2026-05-29,survivorship,WARNING,Ticker desaparece tras 2026-05-29 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ONEG,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-05-05). Posible descarga incompleta o halt de jornada completa.
+ONEG,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-05-05). Posible descarga incompleta o halt de jornada completa.
+ONEG,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-05-05). Posible descarga incompleta o halt de jornada completa.
+ONEG,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-28..2026-05-05). Posible descarga incompleta o halt de jornada completa.
+ONEG,2026-05-05,survivorship,WARNING,Ticker desaparece tras 2026-05-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+OSRH,2026-04-30,survivorship,WARNING,Ticker desaparece tras 2026-04-30 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+OTLK,2026-05-26,survivorship,WARNING,Ticker desaparece tras 2026-05-26 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PAVS,2026-06-09,price_jump_no_volume,WARNING,8 saltos intradía > 10.0% sin volumen acorde (peor: 26.5%). Posible dato corrupto o split intradía.
+PAVS,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PBM,2026-04-20,survivorship,WARNING,Ticker desaparece tras 2026-04-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PCLA,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PMI,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PMNT,2026-04-14,survivorship,WARNING,Ticker desaparece tras 2026-04-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+PN,2026-05-05,survivorship,WARNING,Ticker desaparece tras 2026-05-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+POM,2026-05-11,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 15.8%). Posible dato corrupto o split intradía.
+POM,2026-05-11,survivorship,WARNING,Ticker desaparece tras 2026-05-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+QH,2026-06-11,survivorship,WARNING,Ticker desaparece tras 2026-06-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+QTEX,2026-05-26,survivorship,WARNING,Ticker desaparece tras 2026-05-26 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+QUCY,2026-05-15,survivorship,WARNING,Ticker desaparece tras 2026-05-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RAYA,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RECT,2026-04-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-04-16). Posible descarga incompleta o halt de jornada completa.
+RECT,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-04-16). Posible descarga incompleta o halt de jornada completa.
+RECT,2026-04-16,survivorship,WARNING,Ticker desaparece tras 2026-04-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RGNT,2026-06-09,survivorship,WARNING,Ticker desaparece tras 2026-06-09 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RLYB,2026-05-04,survivorship,WARNING,Ticker desaparece tras 2026-05-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RMSG,2026-04-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-06-05). Posible descarga incompleta o halt de jornada completa.
+RMSG,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ROLR,2026-04-14,survivorship,WARNING,Ticker desaparece tras 2026-04-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RXT,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+RYOJ,2026-05-22,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 10.3%). Posible dato corrupto o split intradía.
+RYOJ,2026-05-22,survivorship,WARNING,Ticker desaparece tras 2026-05-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SAGT,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SAGT,2026-06-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-29..2026-06-22). Posible descarga incompleta o halt de jornada completa.
+SBEV,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SBFM,2026-05-18,price_jump_no_volume,WARNING,3 saltos intradía > 10.0% sin volumen acorde (peor: 16.4%). Posible dato corrupto o split intradía.
+SBFM,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-18..2026-05-21). Posible descarga incompleta o halt de jornada completa.
+SBFM,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-18..2026-05-21). Posible descarga incompleta o halt de jornada completa.
+SBFM,2026-05-21,survivorship,WARNING,Ticker desaparece tras 2026-05-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SDOT,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SDOT,2026-06-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-05-05..2026-06-17). Posible descarga incompleta o halt de jornada completa.
+SGMT,2026-04-27,survivorship,WARNING,Ticker desaparece tras 2026-04-27 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SKYQ,2026-04-13,survivorship,WARNING,Ticker desaparece tras 2026-04-13 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SLXN,2026-05-20,survivorship,WARNING,Ticker desaparece tras 2026-05-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SMTK,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SNAL,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-14..2026-05-14). Posible descarga incompleta o halt de jornada completa.
+SNAL,2026-05-14,survivorship,WARNING,Ticker desaparece tras 2026-05-14 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SPHL,2026-06-05,price_jump_no_volume,WARNING,2 saltos intradía > 10.0% sin volumen acorde (peor: 16.5%). Posible dato corrupto o split intradía.
+SPHL,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SPRC,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-21..2026-06-04). Posible descarga incompleta o halt de jornada completa.
+SPRC,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SQFT,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+STAK,2026-06-05,survivorship,WARNING,Ticker desaparece tras 2026-06-05 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+STFS,2026-05-08,frozen_candles,WARNING,Racha de 51 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+STFS,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+STG,2026-05-29,survivorship,WARNING,Ticker desaparece tras 2026-05-29 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SUGP,2026-06-16,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 17.2%). Posible dato corrupto o split intradía.
+SUGP,2026-06-16,survivorship,WARNING,Ticker desaparece tras 2026-06-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+SUNE,2026-06-08,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 12.9%). Posible dato corrupto o split intradía.
+SUNE,2026-06-08,survivorship,WARNING,Ticker desaparece tras 2026-06-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+TDIC,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-13,price_jump_no_volume,WARNING,5 saltos intradía > 10.0% sin volumen acorde (peor: 15.6%). Posible dato corrupto o split intradía.
+TDIC,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-18,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-19,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-26,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-05-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-02,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-03,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-09,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-10,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-24..2026-06-16). Posible descarga incompleta o halt de jornada completa.
+TDIC,2026-06-16,survivorship,WARNING,Ticker desaparece tras 2026-06-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+TOVX,2026-04-20,survivorship,WARNING,Ticker desaparece tras 2026-04-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+TRAW,2026-05-11,survivorship,WARNING,Ticker desaparece tras 2026-05-11 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+TRT,2026-04-23,survivorship,WARNING,Ticker desaparece tras 2026-04-23 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+TWAV,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+UBXG,2026-06-12,frozen_candles,WARNING,Racha de 53 velas 1-min sin cambio de precio (máximo contrato: 30): posible halt o relleno sintético (volumen 0).
+UBXG,2026-06-12,survivorship,WARNING,Ticker desaparece tras 2026-06-12 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+UCAR,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+UPC,2026-06-16,survivorship,WARNING,Ticker desaparece tras 2026-06-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+VCIG,2026-05-27,survivorship,WARNING,Ticker desaparece tras 2026-05-27 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+VRAX,2026-04-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-16,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-17,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-20,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-21,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-22,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-23,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-24,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-27,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-28,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-29,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-04-30,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-01,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-04,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-05,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-06,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-07,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-08,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-12,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-13,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-14,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-15,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-04-13..2026-05-19). Posible descarga incompleta o halt de jornada completa.
+VRAX,2026-05-19,survivorship,WARNING,Ticker desaparece tras 2026-05-19 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+VSA,2026-06-02,survivorship,WARNING,Ticker desaparece tras 2026-06-02 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+VSME,2026-06-11,missing_data,WARNING,Día de mercado sin ninguna vela (rango del ticker: 2026-06-10..2026-06-15). Posible descarga incompleta o halt de jornada completa.
+VSME,2026-06-15,survivorship,WARNING,Ticker desaparece tras 2026-06-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WEST,2026-05-08,survivorship,WARNING,Ticker desaparece tras 2026-05-08 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WGRX,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WKSP,2026-06-18,price_jump_no_volume,WARNING,1 saltos intradía > 10.0% sin volumen acorde (peor: 13.7%). Posible dato corrupto o split intradía.
+WLDS,2026-04-20,survivorship,WARNING,Ticker desaparece tras 2026-04-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WNW,2026-05-20,survivorship,WARNING,Ticker desaparece tras 2026-05-20 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WOK,2026-05-12,survivorship,WARNING,Ticker desaparece tras 2026-05-12 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WSHP,2026-04-22,survivorship,WARNING,Ticker desaparece tras 2026-04-22 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+WTO,2026-05-01,survivorship,WARNING,Ticker desaparece tras 2026-05-01 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+XNDU,2026-04-15,survivorship,WARNING,Ticker desaparece tras 2026-04-15 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+XOS,2026-06-03,survivorship,WARNING,Ticker desaparece tras 2026-06-03 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+XRTX,2026-04-21,survivorship,WARNING,Ticker desaparece tras 2026-04-21 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+YXT,2026-04-17,survivorship,WARNING,Ticker desaparece tras 2026-04-17 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+YYGH,2026-06-04,survivorship,WARNING,Ticker desaparece tras 2026-06-04 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ZNTL,2026-04-10,survivorship,WARNING,Ticker desaparece tras 2026-04-10 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.
+ZSPC,2026-04-16,survivorship,WARNING,Ticker desaparece tras 2026-04-16 sin delisting conocido (dataset llega hasta 2026-06-23). Posible error de descarga o cambio de símbolo.

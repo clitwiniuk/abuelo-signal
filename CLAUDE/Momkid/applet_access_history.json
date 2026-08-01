@@ -1,0 +1,14 @@
+{
+  "applets": [{
+    "lastAccessTime": "2026-02-17T05:06:34.698106Z",
+    "firstAccessTime": "2026-02-15T07:03:24.910676Z",
+    "source": {
+      "drive": {
+        "resourceId": "1O48oPY00-aqbb4EvE1mCNlap177ZIaoa",
+        "revisionId": "0B7dNf8Y5fucESjZQM3o4T2k2OXBIL3lQV3NwWXZxTlJjOUg4PQ"
+      }
+    },
+    "name": "Momkid",
+    "description": "Una aplicación colaborativa y privada para la gestión inteligente de fotos en eventos escolares mediante reconocimiento facial."
+  }]
+}

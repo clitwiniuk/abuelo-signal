@@ -8,14 +8,19 @@
                    positive = momentum accelerating
                    negative = momentum dying
     persistence  — N snapshots seen in Top Gainers today
+    duration_min — elapsed minutes from first TG snapshot to now
     mom_score    — composite: chg_initial × sign(vel) × log(1+persistence)
                    comparable across price ranges (all % based)
 
-  Signal classification:
-    "confirmed"     — vel>0, persistence>=8, chg 20-40%  → proven edge
-    "accelerating"  — vel>0, chg 20-40%, persistence<8   → watch
-    "topping"       — velocity turning negative            → avoid/exit
-    "new"           — first/second appearance, no vel yet  → wait
+  Signal classification (priority order, first match wins):
+    "sustained_continuation" — duration≥60min + was TG yesterday → max priority
+    "continuation"           — was TG yesterday, any duration      → cross-day edge
+    "explosive"              — chg≥60% + duration≥120min, not topping → reactive edge (WR~21%)
+    "sustained"              — duration≥60min, vel≥0, not topping  → real momentum
+    "confirmed"              — vel>0, persistence>=8, chg 20-40%   → proven edge
+    "accelerating"           — vel>0, chg 20-40%, persistence<8    → watch
+    "topping"                — velocity turning negative            → avoid/exit
+    "new"                    — first/second appearance, no vel yet  → wait
 
   DB column mapping (backward-compat with frontend):
     hype_cum        ← mom_score
@@ -39,10 +44,13 @@ import pytz
 log = logging.getLogger(__name__)
 ET = pytz.timezone("America/New_York")
 
-# Signal thresholds (from empirical analysis on 14 days data)
-CHG_LO, CHG_HI   = 20.0, 40.0   # proven edge bucket
+# Signal thresholds
+CHG_LO, CHG_HI   = 20.0, 40.0   # proven edge bucket (legacy confirmed/accelerating)
 VEL_ACC           = 0.0           # velocity > 0 = accelerating
-PERSIST_CONFIRMED = 8             # ≥8 snapshots ≈ ≥2h in list → 100% WR
+PERSIST_CONFIRMED = 8             # ≥8 snapshots ≈ 40 min → legacy confirmed signal
+DURATION_SUSTAINED = 60           # minutes in TG without exit → sustained momentum
+DURATION_EXPLOSIVE = 120          # minutes + CHG_EXPLOSIVE → reactive edge
+CHG_EXPLOSIVE      = 60.0         # chg_initial ≥ 60% + 120 min → explosive signal
 
 
 # ------------------------------------------------------------------
@@ -58,10 +66,14 @@ def compute_hype(db_path: str, day: str | None = None):
 
     conn = sqlite3.connect(db_path)
     try:
+        yesterday = _prev_trading_day(conn, day)
+        tickers_yesterday = _get_finviz_tickers(conn, yesterday) if yesterday else set()
+
         tickers = _get_finviz_tickers(conn, day)
         computed = 0
         for ticker in tickers:
-            if _compute_momentum(conn, ticker, day, timestamp):
+            was_tg_yesterday = ticker in tickers_yesterday
+            if _compute_momentum(conn, ticker, day, timestamp, was_tg_yesterday):
                 computed += 1
         conn.commit()
         if computed:
@@ -74,7 +86,7 @@ def compute_hype(db_path: str, day: str | None = None):
 # CORE COMPUTATION
 # ------------------------------------------------------------------
 
-def _compute_momentum(conn, ticker: str, day: str, timestamp: str) -> bool:
+def _compute_momentum(conn, ticker: str, day: str, timestamp: str, was_tg_yesterday: bool = False) -> bool:
     df = pd.read_sql(
         "SELECT timestamp, price, change_pct, volume FROM snapshots "
         "WHERE ticker=? AND timestamp LIKE ? AND category='Top Gainers' ORDER BY timestamp",
@@ -104,13 +116,16 @@ def _compute_momentum(conn, ticker: str, day: str, timestamp: str) -> bool:
 
     price_change  = price_now - float(df.iloc[-2]["price_f"]) if len(df) >= 2 and pd.notna(df.iloc[-2]["price_f"]) else 0.0
 
+    # Duration: elapsed minutes from first TG snapshot to last
+    duration_min = (last["ts"] - first["ts"]).total_seconds() / 60.0
+
     # Velocity: linear regression of chg_f over elapsed minutes
     velocity = _compute_velocity(df)
 
     # Momentum score: directional, normalized, persistence-weighted
     mom_score = chg_initial * math.copysign(1, velocity) * math.log1p(persistence) if velocity != 0 else 0.0
 
-    signal = _classify_signal(chg_initial, velocity, persistence)
+    signal = _classify_signal(chg_initial, velocity, persistence, duration_min, was_tg_yesterday)
 
     finviz_cat = _last_finviz_cat(conn, ticker, day)
 
@@ -161,17 +176,48 @@ def _compute_velocity(df: pd.DataFrame) -> float:
         return 0.0
 
 
-def _classify_signal(chg_initial: float, velocity: float, persistence: int) -> str | None:
-    in_bucket = CHG_LO <= chg_initial < CHG_HI
-    if velocity < -0.01:
+def _classify_signal(
+    chg_initial: float,
+    velocity: float,
+    persistence: int,
+    duration_min: float = 0.0,
+    was_tg_yesterday: bool = False,
+) -> str | None:
+    is_topping   = velocity < -0.01
+    is_new       = persistence < 2
+    is_sustained = duration_min >= DURATION_SUSTAINED and not is_topping
+    is_explosive = chg_initial >= CHG_EXPLOSIVE and duration_min >= DURATION_EXPLOSIVE and not is_topping
+    in_bucket    = CHG_LO <= chg_initial < CHG_HI
+
+    # Priority order: highest-confidence signals first
+    if is_sustained and was_tg_yesterday:
+        return "sustained_continuation"   # duration ≥60 min + was TG yesterday
+    if was_tg_yesterday and not is_topping:
+        return "continuation"             # was TG yesterday, still active
+    if is_explosive:
+        return "explosive"                # chg≥60% + ≥120 min → reactive edge
+    if is_sustained:
+        return "sustained"                # ≥60 min in TG, velocity not negative
+    if is_topping:
         return "topping"
-    if persistence < 2:
+    if is_new:
         return "new"
     if in_bucket and velocity > VEL_ACC and persistence >= PERSIST_CONFIRMED:
-        return "confirmed"   # 100% WR historically
+        return "confirmed"
     if in_bucket and velocity > VEL_ACC:
         return "accelerating"
     return None
+
+
+def _prev_trading_day(conn, day: str) -> str | None:
+    """Return the most recent trading day before `day` that has TG snapshots."""
+    # Use substr instead of DATE() — SQLite DATE() returns NULL for tz-aware timestamps
+    row = conn.execute(
+        "SELECT MAX(substr(timestamp, 1, 10)) FROM snapshots "
+        "WHERE category='Top Gainers' AND substr(timestamp, 1, 10) < ?",
+        (day,)
+    ).fetchone()
+    return row[0] if row and row[0] else None
 
 
 def _get_finviz_tickers(conn, day: str) -> set[str]:

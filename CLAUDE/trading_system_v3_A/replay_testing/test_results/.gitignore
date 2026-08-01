@@ -1,5 +1,0 @@
-# Regression test results (keep only latest)
-*.txt
-
-# Keep README
-!README.md

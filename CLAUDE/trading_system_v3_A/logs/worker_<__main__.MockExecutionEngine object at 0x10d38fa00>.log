@@ -1,2 +1,0 @@
-2026-01-06 11:14:31 - Worker.<__main__.MockExecutionEngine object at 0x10d38fa00> - INFO - Worker logging initialized - <__main__.MockExecutionEngine object at 0x10d38fa00> -> logs/worker_<__main__.MockExecutionEngine object at 0x10d38fa00>.log
-2026-01-06 11:14:31 - Worker.<__main__.MockExecutionEngine object at 0x10d38fa00> - INFO - 🔧 Worker <__main__.MockExecutionEngine object at 0x10d38fa00> initialized with separate logging + ODS support + Event Logger + Swing Transition

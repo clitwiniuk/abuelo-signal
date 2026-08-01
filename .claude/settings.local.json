@@ -3,7 +3,9 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(sqlite3:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(python3 -m pytest trader_engine/tests/catalyst_detector/test_signal_emitter.py::TestRedisPublish::test_redis_publish_called -q)",
+      "Bash(ssh -i ~/.ssh/id_ed25519_vps -p 22 -o ConnectTimeout=10 carlos@169.58.43.234 \"cd /home/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3 && sqlite3 trader_engine/db/trader_engine.db \\\\\"SELECT timestamp, event_type, symbol, substr\\(payload,1,400\\) FROM events_log WHERE symbol='DFLI' AND date\\(timestamp\\)='2026-07-31' ORDER BY timestamp;\\\\\"\")"
     ]
   }
 }

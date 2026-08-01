@@ -1,4 +1,0 @@
-nbacktrader>=1.9.76.123
-pandas>=1.5.0
-numpy>=1.21.0
-sqlite3

@@ -1,6 +1,0 @@
-{
-  "data_directory": "data/",
-  "setup_date": "2025-07-04T19:52:27.248331",
-  "note": "API key now loaded from POLYGON_API_KEY environment variable",
-  "polygon_api_key": "Gn56b6ujVDqEQPEG28vKJRBPkRsVpn9o"
-}

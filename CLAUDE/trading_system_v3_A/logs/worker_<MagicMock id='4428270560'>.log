@@ -1,3 +1,0 @@
-2026-01-05 22:38:04 - Worker.<MagicMock id='4428270560'> - INFO - Worker logging initialized - <MagicMock id='4428270560'> -> logs/worker_<MagicMock id='4428270560'>.log
-2026-01-05 22:38:04 - Worker.<MagicMock id='4428270560'> - INFO - 🔧 Worker <MagicMock id='4428270560'> initialized with separate logging + ODS support + Event Logger + Swing Transition
-2026-01-05 22:38:04 - Worker.<MagicMock id='4428270560'> - INFO - 🚀 Initialized SmallcapVwapRunner: Q>=65.0, Stop=2.0%, Trail=3.0%

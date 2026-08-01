@@ -1,0 +1,549 @@
+2026-04-01 22:05:25,790 [INFO] ============================================================
+2026-04-01 22:05:25,791 [INFO]   SCRAPER OFICINAS AMPOSTA
+2026-04-01 22:05:25,791 [INFO]   Criterios: 200-300 m² | oficina | alquiler
+2026-04-01 22:05:25,791 [INFO]   Portales: 19
+2026-04-01 22:05:25,791 [INFO] ============================================================
+2026-04-01 22:05:25,791 [INFO] 
+▶ Scraping: Idealista
+2026-04-01 22:05:25,791 [INFO] [Idealista] Página 1: https://www.idealista.com/alquiler-oficinas/amposta-tarragona/
+2026-04-01 22:05:25,925 [WARNING] HTTP 403 en https://www.idealista.com/alquiler-oficinas/amposta-tarragona/
+2026-04-01 22:05:31,090 [INFO] [Idealista] ✔ 0 anuncios
+2026-04-01 22:05:35,170 [INFO] 
+▶ Scraping: Fotocasa
+2026-04-01 22:05:35,173 [INFO] [Fotocasa] Página 1: https://www.fotocasa.es/es/alquiler/locales-y-oficinas/amposta/todas-las-zonas/l
+2026-04-01 22:05:35,421 [WARNING] HTTP 404 en https://www.fotocasa.es/es/alquiler/locales-y-oficinas/amposta/todas-las-zonas/l
+2026-04-01 22:05:40,959 [WARNING] [Fotocasa] Sin acceso o captcha
+2026-04-01 22:05:40,961 [INFO] [Fotocasa] ✔ 0 anuncios
+2026-04-01 22:05:46,786 [INFO] 
+▶ Scraping: Habitaclia
+2026-04-01 22:05:46,789 [INFO] [Habitaclia] Página 1: https://www.habitaclia.com/lloguer-local_comercial-a-amposta.htm
+2026-04-01 22:05:47,043 [WARNING] HTTP 404 en https://www.habitaclia.com/lloguer-local_comercial-a-amposta.htm
+2026-04-01 22:05:51,862 [INFO] [Habitaclia] ✔ 0 anuncios
+2026-04-01 22:05:56,677 [INFO] 
+▶ Scraping: Pisos.com
+2026-04-01 22:05:56,680 [INFO] [Pisos.com] Página 1: https://www.pisos.com/alquiler/oficinas-amposta/
+2026-04-01 22:06:00,664 [INFO] [Pisos.com] ✔ 28 anuncios
+2026-04-01 22:06:05,888 [INFO] 
+▶ Scraping: Yaencontre
+2026-04-01 22:06:05,901 [INFO] [Yaencontre] Página 1: https://www.yaencontre.com/alquiler/oficinas/amposta
+2026-04-01 22:06:06,056 [WARNING] HTTP 403 en https://www.yaencontre.com/alquiler/oficinas/amposta
+2026-04-01 22:06:09,722 [INFO] [Yaencontre] ✔ 0 anuncios
+2026-04-01 22:06:14,320 [INFO] 
+▶ Scraping: Finques Marivent
+2026-04-01 22:06:14,338 [INFO] [Finques Marivent] https://www.finquesmarivent.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:15,845 [WARNING] HTTP 404 en https://www.finquesmarivent.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:19,052 [INFO] [Finques Marivent] https://www.finquesmarivent.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:06:20,153 [WARNING] HTTP 404 en https://www.finquesmarivent.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:06:24,822 [INFO] [Finques Marivent] https://www.finquesmarivent.com/es/buscar/?operation=2&tipo=4
+2026-04-01 22:06:25,652 [WARNING] HTTP 404 en https://www.finquesmarivent.com/es/buscar/?operation=2&tipo=4
+2026-04-01 22:06:30,953 [INFO] [Finques Marivent] ✔ 0 anuncios total
+2026-04-01 22:06:34,093 [INFO] 
+▶ Scraping: Finques Farnós
+2026-04-01 22:06:34,096 [INFO] [Finques Farnós] https://www.finquesfarnos.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:34,837 [WARNING] HTTP 404 en https://www.finquesfarnos.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:38,663 [INFO] [Finques Farnós] https://www.finquesfarnos.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:06:39,078 [WARNING] HTTP 404 en https://www.finquesfarnos.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:06:43,638 [INFO] [Finques Farnós] https://www.finquesfarnos.com/es/buscar/?operation=2&tipo=4
+2026-04-01 22:06:44,053 [WARNING] HTTP 404 en https://www.finquesfarnos.com/es/buscar/?operation=2&tipo=4
+2026-04-01 22:06:47,181 [INFO] [Finques Farnós] ✔ 0 anuncios total
+2026-04-01 22:06:50,961 [INFO] 
+▶ Scraping: Romeu Immobles
+2026-04-01 22:06:50,965 [INFO] [Romeu Immobles] https://www.romeuimmobles.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:51,641 [WARNING] HTTP 404 en https://www.romeuimmobles.com/es/alquiler/locales/amposta/
+2026-04-01 22:06:55,075 [INFO] [Romeu Immobles] https://www.romeuimmobles.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:06:55,474 [WARNING] HTTP 404 en https://www.romeuimmobles.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:07:01,190 [INFO] [Romeu Immobles] ✔ 0 anuncios total
+2026-04-01 22:07:05,210 [INFO] 
+▶ Scraping: Trading Habitat
+2026-04-01 22:07:05,215 [INFO] [Trading Habitat] http://www.tradinghabitat.com/es/alquiler/locales/amposta/
+2026-04-01 22:07:06,854 [WARNING] HTTP 404 en http://www.tradinghabitat.com/es/alquiler/locales/amposta/
+2026-04-01 22:07:12,215 [INFO] [Trading Habitat] http://www.tradinghabitat.com/es/alquiler/oficinas/
+2026-04-01 22:07:13,520 [WARNING] HTTP 404 en http://www.tradinghabitat.com/es/alquiler/oficinas/
+2026-04-01 22:07:16,783 [INFO] [Trading Habitat] ✔ 0 anuncios total
+2026-04-01 22:07:19,858 [INFO] 
+▶ Scraping: Finques Garcia
+2026-04-01 22:07:19,861 [INFO] [Finques Garcia] http://www.finquesgarcia.com/es/alquiler/locales/amposta/
+2026-04-01 22:07:21,596 [WARNING] HTTP 404 en http://www.finquesgarcia.com/es/alquiler/locales/amposta/
+2026-04-01 22:07:26,952 [INFO] [Finques Garcia] http://www.finquesgarcia.com/es/alquiler/oficinas/
+2026-04-01 22:07:27,880 [WARNING] HTTP 404 en http://www.finquesgarcia.com/es/alquiler/oficinas/
+2026-04-01 22:07:31,604 [INFO] [Finques Garcia] ✔ 0 anuncios total
+2026-04-01 22:07:36,623 [INFO] 
+▶ Scraping: Minerva Inmobiliaria
+2026-04-01 22:07:36,641 [INFO] [Minerva Inmobiliaria] https://www.minervainmobiliaria.es/es/alquiler/locales/amposta/
+2026-04-01 22:07:36,898 [WARNING] HTTP 403 en https://www.minervainmobiliaria.es/es/alquiler/locales/amposta/
+2026-04-01 22:07:42,797 [INFO] [Minerva Inmobiliaria] https://www.minervainmobiliaria.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:07:45,120 [WARNING] HTTP 404 en https://www.minervainmobiliaria.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:07:50,721 [INFO] [Minerva Inmobiliaria] ✔ 0 anuncios total
+2026-04-01 22:07:55,434 [INFO] 
+▶ Scraping: Home In
+2026-04-01 22:07:55,436 [INFO] [Home In] http://www.homein.cat/ca/lloguer/locals/amposta/
+2026-04-01 22:07:59,293 [ERROR]   Error inesperado en Home In: not enough values to unpack (expected 2, got 1)
+2026-04-01 22:08:04,652 [INFO] 
+▶ Scraping: Ebre Taxacions
+2026-04-01 22:08:04,655 [INFO] [Ebre Taxacions] http://www.ebretaxacions.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:06,210 [WARNING] HTTP 404 en http://www.ebretaxacions.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:10,519 [INFO] [Ebre Taxacions] http://www.ebretaxacions.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:08:11,009 [WARNING] HTTP 404 en http://www.ebretaxacions.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:08:14,057 [INFO] [Ebre Taxacions] ✔ 0 anuncios total
+2026-04-01 22:08:17,512 [INFO] 
+▶ Scraping: Ferrer International
+2026-04-01 22:08:17,515 [INFO] [Ferrer International Group] https://www.ferrerinternationalgroup.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:17,571 [ERROR] Error al acceder a https://www.ferrerinternationalgroup.com/es/alquiler/locales/amposta/: HTTPSConnectionPool(host='www.ferrerinternationalgroup.com', port=443): Max retries exceeded with url: /es/alquiler/locales/amposta/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11d6fca00>: Failed to resolve 'www.ferrerinternationalgroup.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-01 22:08:22,741 [INFO] [Ferrer International Group] https://www.ferrerinternationalgroup.com/es/alquiler/oficinas/
+2026-04-01 22:08:22,751 [ERROR] Error al acceder a https://www.ferrerinternationalgroup.com/es/alquiler/oficinas/: HTTPSConnectionPool(host='www.ferrerinternationalgroup.com', port=443): Max retries exceeded with url: /es/alquiler/oficinas/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11d6fd330>: Failed to resolve 'www.ferrerinternationalgroup.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-01 22:08:27,583 [INFO] [Ferrer International Group] ✔ 0 anuncios total
+2026-04-01 22:08:33,444 [INFO] 
+▶ Scraping: ImmoEbre
+2026-04-01 22:08:33,450 [INFO] [ImmoEbre] https://www.immoebre.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:08:35,339 [WARNING] HTTP 404 en https://www.immoebre.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:08:39,217 [INFO] [ImmoEbre] https://www.immoebre.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:40,966 [WARNING] HTTP 404 en https://www.immoebre.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:44,444 [INFO] [ImmoEbre] ✔ 0 anuncios total
+2026-04-01 22:08:49,709 [INFO] 
+▶ Scraping: Delta del Ebro
+2026-04-01 22:08:49,712 [INFO] [Inmobiliaria Delta del Ebro] https://inmobiliaria-deltadelebro.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:54,831 [INFO] [Inmobiliaria Delta del Ebro] 0 anuncios en https://inmobiliaria-deltadelebro.com/es/alquiler/locales/amposta/
+2026-04-01 22:08:54,832 [INFO] [Inmobiliaria Delta del Ebro] https://inmobiliaria-deltadelebro.com/es/alquiler/oficinas/
+2026-04-01 22:08:58,234 [INFO] [Inmobiliaria Delta del Ebro] 0 anuncios en https://inmobiliaria-deltadelebro.com/es/alquiler/oficinas/
+2026-04-01 22:08:58,242 [INFO] [Inmobiliaria Delta del Ebro] ✔ 0 anuncios total
+2026-04-01 22:09:02,070 [INFO] 
+▶ Scraping: Finques Roca
+2026-04-01 22:09:02,114 [INFO] [Finques Roca] https://www.finquesroca.com/es/alquiler/locales/amposta/
+2026-04-01 22:09:03,367 [WARNING] HTTP 404 en https://www.finquesroca.com/es/alquiler/locales/amposta/
+2026-04-01 22:09:07,751 [INFO] [Finques Roca] https://www.finquesroca.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:08,564 [WARNING] HTTP 404 en https://www.finquesroca.com/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:12,205 [INFO] [Finques Roca] ✔ 0 anuncios total
+2026-04-01 22:09:17,508 [INFO] 
+▶ Scraping: IAD España
+2026-04-01 22:09:17,517 [INFO] [IAD España] https://www.iadespana.es/es/alquiler/locales/amposta/
+2026-04-01 22:09:18,044 [WARNING] HTTP 404 en https://www.iadespana.es/es/alquiler/locales/amposta/
+2026-04-01 22:09:21,797 [INFO] [IAD España] https://www.iadespana.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:21,988 [WARNING] HTTP 404 en https://www.iadespana.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:26,262 [INFO] [IAD España] ✔ 0 anuncios total
+2026-04-01 22:09:31,010 [INFO] 
+▶ Scraping: SAFTI España
+2026-04-01 22:09:31,012 [INFO] [SAFTI España] https://www.safti.es/es/alquiler/locales/amposta/
+2026-04-01 22:09:31,344 [WARNING] HTTP 404 en https://www.safti.es/es/alquiler/locales/amposta/
+2026-04-01 22:09:36,422 [INFO] [SAFTI España] https://www.safti.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:36,579 [WARNING] HTTP 404 en https://www.safti.es/es/alquiler/oficinas/amposta/
+2026-04-01 22:09:41,505 [INFO] [SAFTI España] ✔ 0 anuncios total
+2026-04-01 22:09:44,879 [INFO] 
+============================================================
+2026-04-01 22:09:44,879 [INFO]   RESUMEN POR PORTAL
+2026-04-01 22:09:44,879 [INFO] ============================================================
+2026-04-01 22:09:44,880 [INFO]   Idealista                         0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Fotocasa                          0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Habitaclia                        0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Pisos.com                        28 anuncios
+2026-04-01 22:09:44,880 [INFO]   Yaencontre                        0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Finques Marivent                  0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Finques Farnós                    0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Romeu Immobles                    0 anuncios
+2026-04-01 22:09:44,880 [INFO]   Trading Habitat                   0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Finques Garcia                    0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Minerva Inmobiliaria              0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Home In                           0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Ebre Taxacions                    0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Ferrer International              0 anuncios
+2026-04-01 22:09:44,881 [INFO]   ImmoEbre                          0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Delta del Ebro                    0 anuncios
+2026-04-01 22:09:44,881 [INFO]   Finques Roca                      0 anuncios
+2026-04-01 22:09:44,881 [INFO]   IAD España                        0 anuncios
+2026-04-01 22:09:44,881 [INFO]   SAFTI España                      0 anuncios
+2026-04-01 22:09:44,881 [INFO] 
+  TOTAL ÚNICO: 5 anuncios
+2026-04-01 22:09:44,881 [INFO] ============================================================
+2026-04-01 22:09:45,877 [INFO] ✅ Excel guardado: oficinas_alquiler_amposta_20260401_220944.xlsx
+2026-04-01 22:09:45,883 [INFO] ✅ CSV guardado: oficinas_alquiler_amposta_20260401_220944.csv
+2026-04-01 22:17:34,219 [INFO] ============================================================
+2026-04-01 22:17:34,219 [INFO]   SCRAPER LOCALES/OFICINAS — AMPOSTA  v3.0
+2026-04-01 22:17:34,219 [INFO]   Filtro: 200–300 m²  |  Fuentes: 20
+2026-04-01 22:17:34,219 [INFO] ============================================================
+2026-04-01 22:17:34,219 [INFO] 
+▶ Idealista
+2026-04-01 22:17:34,220 [INFO] [Idealista] pág.1: https://www.idealista.com/alquiler-locales/amposta-tarragona/
+2026-04-01 22:17:34,331 [WARNING] HTTP 403 → https://www.idealista.com/alquiler-locales/amposta-tarragona/
+2026-04-01 22:17:37,931 [INFO] [Idealista] ✔ 0
+2026-04-01 22:17:44,914 [INFO] 
+▶ Fotocasa
+2026-04-01 22:17:44,926 [INFO] [Fotocasa] pág.1: https://www.fotocasa.es/es/alquiler/locales/amposta/todas-las-zonas/l
+2026-04-01 22:17:50,330 [INFO] [Fotocasa] ✔ 0
+2026-04-01 22:17:54,630 [INFO] 
+▶ Habitaclia
+2026-04-01 22:17:54,638 [INFO] [Habitaclia] pág.1: https://www.habitaclia.com/alquiler-locales_comerciales-amposta.htm
+2026-04-01 22:18:00,907 [INFO] [Habitaclia] ✔ 29
+2026-04-01 22:18:06,892 [INFO] 
+▶ Pisos.com
+2026-04-01 22:18:06,894 [INFO] [Pisos.com] pág.1: https://www.pisos.com/alquiler/locales-amposta/
+2026-04-01 22:18:14,506 [INFO] [Pisos.com] ✔ 248
+2026-04-01 22:18:20,938 [INFO] 
+▶ Yaencontre
+2026-04-01 22:18:20,940 [INFO] [Yaencontre] pág.1: https://www.yaencontre.com/alquiler/locales/amposta
+2026-04-01 22:18:24,228 [INFO] [Yaencontre] ✔ 6
+2026-04-01 22:18:28,185 [INFO] 
+▶ Wallapop
+2026-04-01 22:18:28,187 [INFO] [Wallapop] https://es.wallapop.com/inmobiliaria/alquilar-locales/amposta
+2026-04-01 22:18:32,607 [INFO] [Wallapop] https://es.wallapop.com/inmobiliaria/alquilar-oficinas/amposta
+2026-04-01 22:18:38,468 [INFO] [Wallapop] ✔ 7
+2026-04-01 22:18:44,063 [INFO] 
+▶ Finques Marivent
+2026-04-01 22:18:44,076 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/ca/propietats/?operacio=lloguer
+2026-04-01 22:18:45,308 [WARNING] HTTP 404 → https://www.finquesmarivent.com/ca/propietats/?operacio=lloguer
+2026-04-01 22:18:51,429 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/es/propiedades/?operacion=alquiler
+2026-04-01 22:18:52,372 [WARNING] HTTP 404 → https://www.finquesmarivent.com/es/propiedades/?operacion=alquiler
+2026-04-01 22:18:58,956 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/ca/lloguer/
+2026-04-01 22:18:59,775 [WARNING] HTTP 404 → https://www.finquesmarivent.com/ca/lloguer/
+2026-04-01 22:19:04,334 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/es/alquiler/
+2026-04-01 22:19:05,273 [WARNING] HTTP 404 → https://www.finquesmarivent.com/es/alquiler/
+2026-04-01 22:19:10,866 [INFO] [Finques Marivent] Descubriendo desde home: https://www.finquesmarivent.com
+2026-04-01 22:19:17,008 [INFO] [Finques Marivent] 0 candidatos descubiertos
+2026-04-01 22:19:17,009 [INFO] [Finques Marivent] ✔ Total: 0
+2026-04-01 22:19:21,360 [INFO] 
+▶ Finques Farnós
+2026-04-01 22:19:21,384 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/propiedades/?operacion=alquiler
+2026-04-01 22:19:22,362 [WARNING] HTTP 404 → https://www.finquesfarnos.com/propiedades/?operacion=alquiler
+2026-04-01 22:19:26,718 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ca/propietats/?operacio=lloguer
+2026-04-01 22:19:26,989 [WARNING] HTTP 404 → https://www.finquesfarnos.com/ca/propietats/?operacio=lloguer
+2026-04-01 22:19:32,117 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/es/alquiler/
+2026-04-01 22:19:32,421 [WARNING] HTTP 404 → https://www.finquesfarnos.com/es/alquiler/
+2026-04-01 22:19:36,149 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ca/lloguer/
+2026-04-01 22:19:36,426 [WARNING] HTTP 404 → https://www.finquesfarnos.com/ca/lloguer/
+2026-04-01 22:19:40,354 [INFO] [Finques Farnós] Descubriendo desde home: https://www.finquesfarnos.com
+2026-04-01 22:19:47,954 [INFO] [Finques Farnós] 3 candidatos descubiertos
+2026-04-01 22:19:47,956 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/alquiler/
+2026-04-01 22:19:55,025 [INFO] [Finques Farnós]   0 anuncios
+2026-04-01 22:19:55,026 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ficha/local-comercial/deltebre/urbanizacion-la-cava/6931/28493154/es/
+2026-04-01 22:19:59,218 [INFO] [Finques Farnós]   1 anuncios ✔
+2026-04-01 22:19:59,218 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ficha/oficina/amposta/av-catalunya/7335/9426774/es/
+2026-04-01 22:20:04,612 [INFO] [Finques Farnós]   3 anuncios ✔
+2026-04-01 22:20:04,612 [INFO] [Finques Farnós] ✔ Total: 4
+2026-04-01 22:20:10,707 [INFO] 
+▶ Romeu Immobles
+2026-04-01 22:20:10,710 [INFO] [Romeu Immobles] → https://www.romeuimmobles.com/localizacion/catalunya/tarragona/terres-del-ebre-delta-del-ebre/amposta/?operacion=alquiler
+2026-04-01 22:20:16,880 [INFO] [Romeu Immobles]   0 anuncios
+2026-04-01 22:20:16,881 [INFO] [Romeu Immobles] → https://www.romeuimmobles.com/localizacion/catalunya/tarragona/terres-del-ebre-delta-del-ebre/amposta/
+2026-04-01 22:20:22,436 [INFO] [Romeu Immobles]   0 anuncios
+2026-04-01 22:20:22,436 [INFO] [Romeu Immobles] → https://www.romeuimmobles.com/?operacion=alquiler&tipo=local
+2026-04-01 22:20:28,133 [INFO] [Romeu Immobles]   0 anuncios
+2026-04-01 22:20:28,134 [INFO] [Romeu Immobles] Descubriendo desde home: https://www.romeuimmobles.com
+2026-04-01 22:20:34,578 [INFO] [Romeu Immobles] 0 candidatos descubiertos
+2026-04-01 22:20:34,580 [INFO] [Romeu Immobles] ✔ Total: 0
+2026-04-01 22:20:39,882 [INFO] 
+▶ Trading Habitat
+2026-04-01 22:20:39,885 [INFO] [Trading Habitat] → https://www.tradinghabitat.com/alquileres/
+2026-04-01 22:20:51,452 [INFO] [Trading Habitat]   1 anuncios
+2026-04-01 22:20:51,453 [INFO] [Trading Habitat] ✔ 1 (via URL directa)
+2026-04-01 22:20:57,080 [INFO] 
+▶ Finques Garcia
+2026-04-01 22:20:57,082 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/propiedades/?operacion=alquiler
+2026-04-01 22:20:58,055 [WARNING] HTTP 404 → http://www.finquesgarcia.com/propiedades/?operacion=alquiler
+2026-04-01 22:21:03,567 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/es/alquiler/
+2026-04-01 22:21:04,126 [WARNING] HTTP 404 → http://www.finquesgarcia.com/es/alquiler/
+2026-04-01 22:21:08,816 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/ca/lloguer/
+2026-04-01 22:21:09,325 [WARNING] HTTP 404 → http://www.finquesgarcia.com/ca/lloguer/
+2026-04-01 22:21:15,422 [INFO] [Finques Garcia] Descubriendo desde home: http://www.finquesgarcia.com
+2026-04-01 22:21:21,335 [INFO] [Finques Garcia] 3 candidatos descubiertos
+2026-04-01 22:21:21,336 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/alquiler/
+2026-04-01 22:21:27,988 [INFO] [Finques Garcia]   4 anuncios ✔
+2026-04-01 22:21:27,989 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/ficha/local-comercial/amposta/juzgados-consell-comarcal/3701/27647205/es/
+2026-04-01 22:21:32,572 [INFO] [Finques Garcia]   1 anuncios ✔
+2026-04-01 22:21:32,572 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/ficha/local-comercial/amposta/valletes/3701/9443707/es/
+2026-04-01 22:21:39,779 [INFO] [Finques Garcia]   1 anuncios ✔
+2026-04-01 22:21:39,780 [INFO] [Finques Garcia] ✔ Total: 6
+2026-04-01 22:21:44,718 [INFO] 
+▶ Minerva Inmobiliaria
+2026-04-01 22:21:44,719 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/propiedades/?operacion=alquiler
+2026-04-01 22:21:44,874 [WARNING] HTTP 403 → https://www.minervainmobiliaria.es/propiedades/?operacion=alquiler
+2026-04-01 22:21:50,256 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/alquiler/
+2026-04-01 22:21:59,247 [INFO] [Minerva Inmobiliaria]   0 anuncios
+2026-04-01 22:21:59,247 [INFO] [Minerva Inmobiliaria] Descubriendo desde home: https://www.minervainmobiliaria.es
+2026-04-01 22:22:07,392 [INFO] [Minerva Inmobiliaria] 0 candidatos descubiertos
+2026-04-01 22:22:07,393 [INFO] [Minerva Inmobiliaria] ✔ Total: 0
+2026-04-01 22:22:13,487 [INFO] 
+▶ Home In
+2026-04-01 22:22:13,488 [INFO] [Home In] → http://www.homein.cat/ca/lloguer/
+2026-04-01 22:22:17,068 [INFO] [Home In]   0 anuncios
+2026-04-01 22:22:17,068 [INFO] [Home In] → http://www.homein.cat/es/alquiler/
+2026-04-01 22:22:21,459 [INFO] [Home In]   0 anuncios
+2026-04-01 22:22:21,460 [INFO] [Home In] Descubriendo desde home: http://www.homein.cat
+2026-04-01 22:22:28,370 [INFO] [Home In] 0 candidatos descubiertos
+2026-04-01 22:22:28,372 [INFO] [Home In] ✔ Total: 0
+2026-04-01 22:22:34,782 [INFO] 
+▶ Ebre Taxacions
+2026-04-01 22:22:34,784 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/propiedades/?operacion=alquiler
+2026-04-01 22:22:35,279 [WARNING] HTTP 404 → http://www.ebretaxacions.com/propiedades/?operacion=alquiler
+2026-04-01 22:22:38,720 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/es/alquiler/
+2026-04-01 22:22:39,057 [WARNING] HTTP 404 → http://www.ebretaxacions.com/es/alquiler/
+2026-04-01 22:22:43,092 [INFO] [Ebre Taxacions] Descubriendo desde home: http://www.ebretaxacions.com
+2026-04-01 22:22:49,610 [INFO] [Ebre Taxacions] 2 candidatos descubiertos
+2026-04-01 22:22:49,611 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/alquiler/
+2026-04-01 22:22:54,605 [INFO] [Ebre Taxacions]   0 anuncios
+2026-04-01 22:22:54,606 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/ficha/local-comercial/amposta/centro/5978/26266706/es/
+2026-04-01 22:22:59,248 [INFO] [Ebre Taxacions]   3 anuncios ✔
+2026-04-01 22:22:59,248 [INFO] [Ebre Taxacions] ✔ Total: 3
+2026-04-01 22:23:03,482 [INFO] 
+▶ Ferrer International
+2026-04-01 22:23:03,484 [INFO] [Ferrer International] → https://www.ferrerinternationalgroup.com/propiedades/?operacion=alquiler
+2026-04-01 22:23:03,494 [ERROR] Error → https://www.ferrerinternationalgroup.com/propiedades/?operacion=alquiler: HTTPSConnectionPool(host='www.ferrerinternationalgroup.com', port=443): Max retries exceeded with url: /propiedades/?operacion=alquiler (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11414f310>: Failed to resolve 'www.ferrerinternationalgroup.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-01 22:23:09,237 [INFO] [Ferrer International] → https://www.ferrerinternationalgroup.com/es/alquiler/
+2026-04-01 22:23:09,246 [ERROR] Error → https://www.ferrerinternationalgroup.com/es/alquiler/: HTTPSConnectionPool(host='www.ferrerinternationalgroup.com', port=443): Max retries exceeded with url: /es/alquiler/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1154119f0>: Failed to resolve 'www.ferrerinternationalgroup.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-01 22:23:14,458 [INFO] [Ferrer International] Descubriendo desde home: https://www.ferrerinternationalgroup.com
+2026-04-01 22:23:14,463 [ERROR] Error → https://www.ferrerinternationalgroup.com: HTTPSConnectionPool(host='www.ferrerinternationalgroup.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x115411c90>: Failed to resolve 'www.ferrerinternationalgroup.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-01 22:23:20,551 [INFO] [Ferrer International] 0 candidatos descubiertos
+2026-04-01 22:23:20,552 [INFO] [Ferrer International] ✔ Total: 0
+2026-04-01 22:23:23,932 [INFO] 
+▶ ImmoEbre
+2026-04-01 22:23:23,933 [INFO] [ImmoEbre] → https://www.immoebre.com/propietats/?operacio=lloguer&tipus=local&municipi=amposta
+2026-04-01 22:23:25,740 [WARNING] HTTP 404 → https://www.immoebre.com/propietats/?operacio=lloguer&tipus=local&municipi=amposta
+2026-04-01 22:23:30,267 [INFO] [ImmoEbre] → https://www.immoebre.com/propiedades/?operacion=alquiler&tipo=local&ciudad=amposta
+2026-04-01 22:23:31,902 [WARNING] HTTP 404 → https://www.immoebre.com/propiedades/?operacion=alquiler&tipo=local&ciudad=amposta
+2026-04-01 22:23:37,480 [INFO] [ImmoEbre] → https://www.immoebre.com/propietats/?operacio=lloguer
+2026-04-01 22:23:39,093 [WARNING] HTTP 404 → https://www.immoebre.com/propietats/?operacio=lloguer
+2026-04-01 22:23:43,070 [INFO] [ImmoEbre] → https://www.immoebre.com/propiedades/?operacion=alquiler
+2026-04-01 22:23:44,717 [WARNING] HTTP 404 → https://www.immoebre.com/propiedades/?operacion=alquiler
+2026-04-01 22:23:49,618 [INFO] [ImmoEbre] Descubriendo desde home: https://www.immoebre.com
+2026-04-01 22:23:54,846 [INFO] [ImmoEbre] 0 candidatos descubiertos
+2026-04-01 22:23:54,849 [INFO] [ImmoEbre] ✔ Total: 0
+2026-04-01 22:23:59,072 [INFO] 
+▶ Delta del Ebro
+2026-04-01 22:23:59,073 [INFO] [Delta del Ebro] → https://inmobiliaria-deltadelebro.com/es/alquiler/
+2026-04-01 22:24:03,700 [INFO] [Delta del Ebro]   0 anuncios
+2026-04-01 22:24:03,701 [INFO] [Delta del Ebro] → https://inmobiliaria-deltadelebro.com/propiedades/?operacion=alquiler
+2026-04-01 22:24:11,842 [INFO] [Delta del Ebro]   0 anuncios
+2026-04-01 22:24:11,843 [INFO] [Delta del Ebro] Descubriendo desde home: https://inmobiliaria-deltadelebro.com
+2026-04-01 22:24:17,932 [INFO] [Delta del Ebro] 0 candidatos descubiertos
+2026-04-01 22:24:17,935 [INFO] [Delta del Ebro] ✔ Total: 0
+2026-04-01 22:24:24,130 [INFO] 
+▶ Finques Roca
+2026-04-01 22:24:24,135 [INFO] [Finques Roca] → https://www.finquesroca.com/propietats/?operacio=lloguer
+2026-04-01 22:24:24,694 [WARNING] HTTP 404 → https://www.finquesroca.com/propietats/?operacio=lloguer
+2026-04-01 22:24:29,568 [INFO] [Finques Roca] → https://www.finquesroca.com/ca/lloguer/
+2026-04-01 22:24:29,897 [WARNING] HTTP 404 → https://www.finquesroca.com/ca/lloguer/
+2026-04-01 22:24:35,962 [INFO] [Finques Roca] → https://www.finquesroca.com/es/alquiler/
+2026-04-01 22:24:36,355 [WARNING] HTTP 404 → https://www.finquesroca.com/es/alquiler/
+2026-04-01 22:24:39,806 [INFO] [Finques Roca] Descubriendo desde home: https://www.finquesroca.com
+2026-04-01 22:24:45,748 [INFO] [Finques Roca] 2 candidatos descubiertos
+2026-04-01 22:24:45,751 [INFO] [Finques Roca] → https://www.finquesroca.com/alquiler/
+2026-04-01 22:24:50,692 [INFO] [Finques Roca]   2 anuncios ✔
+2026-04-01 22:24:50,692 [INFO] [Finques Roca] → https://www.finquesroca.com/tel:[[oficinas=>tfijo]]
+2026-04-01 22:24:51,057 [WARNING] HTTP 404 → https://www.finquesroca.com/tel:[[oficinas=>tfijo]]
+2026-04-01 22:24:57,699 [INFO] [Finques Roca] ✔ Total: 2
+2026-04-01 22:25:04,007 [INFO] 
+▶ IAD España
+2026-04-01 22:25:04,009 [INFO] [IAD España] → https://www.iadespana.es/comprar-alquilar/alquiler/?localidad=amposta
+2026-04-01 22:25:04,351 [WARNING] HTTP 404 → https://www.iadespana.es/comprar-alquilar/alquiler/?localidad=amposta
+2026-04-01 22:25:08,409 [INFO] [IAD España] → https://www.iadespana.es/buscar-inmueble/?operacion=alquiler&ciudad=amposta
+2026-04-01 22:25:08,536 [WARNING] HTTP 404 → https://www.iadespana.es/buscar-inmueble/?operacion=alquiler&ciudad=amposta
+2026-04-01 22:25:13,340 [INFO] [IAD España] Descubriendo desde home: https://www.iadespana.es
+2026-04-01 22:25:16,786 [INFO] [IAD España] 0 candidatos descubiertos
+2026-04-01 22:25:16,786 [INFO] [IAD España] ✔ Total: 0
+2026-04-01 22:25:23,024 [INFO] 
+▶ SAFTI España
+2026-04-01 22:25:23,027 [INFO] [SAFTI España] → https://www.safti.es/propiedades/?operacion=alquiler&ciudad=amposta
+2026-04-01 22:25:23,357 [WARNING] HTTP 404 → https://www.safti.es/propiedades/?operacion=alquiler&ciudad=amposta
+2026-04-01 22:25:28,669 [INFO] [SAFTI España] → https://www.safti.es/alquiler/?ciudad=amposta
+2026-04-01 22:25:28,823 [WARNING] HTTP 404 → https://www.safti.es/alquiler/?ciudad=amposta
+2026-04-01 22:25:32,809 [INFO] [SAFTI España] Descubriendo desde home: https://www.safti.es
+2026-04-01 22:25:36,969 [INFO] [SAFTI España] 0 candidatos descubiertos
+2026-04-01 22:25:36,969 [INFO] [SAFTI España] ✔ Total: 0
+2026-04-01 22:25:40,843 [INFO] 
+============================================================
+2026-04-01 22:25:40,844 [INFO]   RESUMEN FINAL
+2026-04-01 22:25:40,844 [INFO]   — Idealista                       0
+2026-04-01 22:25:40,844 [INFO]   — Fotocasa                        0
+2026-04-01 22:25:40,844 [INFO]   ✔ Habitaclia                     29
+2026-04-01 22:25:40,844 [INFO]   ✔ Pisos.com                     248
+2026-04-01 22:25:40,844 [INFO]   ✔ Yaencontre                      6
+2026-04-01 22:25:40,844 [INFO]   ✔ Wallapop                        7
+2026-04-01 22:25:40,845 [INFO]   — Finques Marivent                0
+2026-04-01 22:25:40,845 [INFO]   ✔ Finques Farnós                  4
+2026-04-01 22:25:40,845 [INFO]   — Romeu Immobles                  0
+2026-04-01 22:25:40,845 [INFO]   ✔ Trading Habitat                 1
+2026-04-01 22:25:40,845 [INFO]   ✔ Finques Garcia                  6
+2026-04-01 22:25:40,845 [INFO]   — Minerva Inmobiliaria            0
+2026-04-01 22:25:40,845 [INFO]   — Home In                         0
+2026-04-01 22:25:40,845 [INFO]   ✔ Ebre Taxacions                  3
+2026-04-01 22:25:40,846 [INFO]   — Ferrer International            0
+2026-04-01 22:25:40,846 [INFO]   — ImmoEbre                        0
+2026-04-01 22:25:40,846 [INFO]   — Delta del Ebro                  0
+2026-04-01 22:25:40,846 [INFO]   ✔ Finques Roca                    2
+2026-04-01 22:25:40,846 [INFO]   — IAD España                      0
+2026-04-01 22:25:40,846 [INFO]   — SAFTI España                    0
+2026-04-01 22:25:40,846 [INFO] 
+  TOTAL ÚNICO: 67
+2026-04-01 22:25:40,846 [INFO] ============================================================
+2026-04-01 22:25:41,508 [INFO] ✅ Excel: oficinas_amposta_20260401_222540.xlsx
+2026-04-01 22:25:41,513 [INFO] ✅ CSV: oficinas_amposta_20260401_222540.csv
+2026-04-01 22:39:58,136 [INFO] ============================================================
+2026-04-01 22:39:58,136 [INFO]   SCRAPER LOCALES/OFICINAS — AMPOSTA  v4.0 (Playwright)
+2026-04-01 22:39:58,136 [INFO]   Filtro: 200–300 m²  |  Fuentes: 19
+2026-04-01 22:39:58,136 [INFO] ============================================================
+2026-04-01 22:40:02,461 [INFO] Navegador iniciado
+2026-04-01 22:40:02,461 [INFO] 
+▶ Idealista
+2026-04-01 22:40:02,462 [INFO] [Idealista] pág.1
+2026-04-01 22:40:16,349 [WARNING] [Idealista] ⚠ Captcha detectado
+2026-04-01 22:40:16,351 [INFO] [Idealista] ✔ 0
+2026-04-01 22:40:21,818 [INFO] 
+▶ Fotocasa
+2026-04-01 22:40:21,820 [INFO] [Fotocasa] pág.1
+2026-04-01 22:40:26,273 [INFO] [Fotocasa] 55 items
+2026-04-01 22:40:26,283 [INFO] [Fotocasa] ✔ 1
+2026-04-01 22:40:29,569 [INFO] 
+▶ Habitaclia
+2026-04-01 22:40:29,571 [INFO] [Habitaclia] pág.1
+2026-04-01 22:40:39,223 [INFO] [Habitaclia] 30 items
+2026-04-01 22:40:39,229 [INFO] [Habitaclia] ✔ 29
+2026-04-01 22:40:43,653 [INFO] 
+▶ Pisos.com
+2026-04-01 22:40:43,654 [INFO] [Pisos.com] pág.1
+2026-04-01 22:40:46,419 [INFO] [Pisos.com] 380 items
+2026-04-01 22:40:46,455 [INFO] [Pisos.com] ✔ 248
+2026-04-01 22:40:49,797 [INFO] 
+▶ Yaencontre
+2026-04-01 22:40:49,798 [INFO] [Yaencontre] pág.1
+2026-04-01 22:41:02,106 [INFO] [Yaencontre] 0 items
+2026-04-01 22:41:02,107 [INFO] [Yaencontre] ✔ 0
+2026-04-01 22:41:07,000 [INFO] 
+▶ Wallapop
+2026-04-01 22:41:07,002 [INFO] [Wallapop] https://es.wallapop.com/inmobiliaria/alquilar-locales/amposta
+2026-04-01 22:41:16,725 [INFO] [Wallapop] https://es.wallapop.com/inmobiliaria/alquilar-oficinas/amposta
+2026-04-01 22:41:27,349 [INFO] [Wallapop] ✔ 7
+2026-04-01 22:41:34,034 [INFO] 
+▶ Finques Marivent
+2026-04-01 22:41:34,039 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/ca/propietats/
+2026-04-01 22:41:46,782 [INFO] [Finques Marivent]   0 anuncios
+2026-04-01 22:41:46,783 [INFO] [Finques Marivent] → https://www.finquesmarivent.com/es/propiedades/
+2026-04-01 22:41:54,918 [INFO] [Finques Marivent]   0 anuncios
+2026-04-01 22:41:54,918 [INFO] [Finques Marivent] Descubriendo desde home (JS): https://www.finquesmarivent.com
+2026-04-01 22:42:03,111 [INFO] [Finques Marivent] 0 candidatos descubiertos
+2026-04-01 22:42:03,112 [INFO] [Finques Marivent] ✔ Total: 0
+2026-04-01 22:42:07,829 [INFO] 
+▶ Finques Farnós
+2026-04-01 22:42:07,830 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/propiedades/
+2026-04-01 22:42:14,659 [INFO] [Finques Farnós]   0 anuncios
+2026-04-01 22:42:14,660 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/inmuebles/
+2026-04-01 22:42:21,607 [INFO] [Finques Farnós]   0 anuncios
+2026-04-01 22:42:21,608 [INFO] [Finques Farnós] Descubriendo desde home (JS): https://www.finquesfarnos.com
+2026-04-01 22:42:29,352 [INFO] [Finques Farnós] 6 candidatos descubiertos
+2026-04-01 22:42:29,353 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/alquiler/
+2026-04-01 22:42:35,851 [INFO] [Finques Farnós]   0 anuncios
+2026-04-01 22:42:35,852 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ficha/local-comercial/deltebre/urbanizacion-la-cava/6931/28493154/es/
+2026-04-01 22:42:43,155 [INFO] [Finques Farnós]   1 anuncios
+2026-04-01 22:42:43,155 [INFO] [Finques Farnós] → https://www.finquesfarnos.com/ficha/oficina/amposta/av-catalunya/7335/9426774/es/
+2026-04-01 22:42:50,867 [INFO] [Finques Farnós]   3 anuncios
+2026-04-01 22:42:50,868 [INFO] [Finques Farnós] ✔ Total: 4
+2026-04-01 22:42:54,444 [INFO] 
+▶ Romeu Immobles
+2026-04-01 22:42:54,444 [INFO] [Romeu Immobles] → https://www.romeuimmobles.com/localizacion/catalunya/tarragona/terres-del-ebre-delta-del-ebre/amposta/
+2026-04-01 22:43:00,949 [INFO] [Romeu Immobles]   24 anuncios
+2026-04-01 22:43:00,949 [INFO] [Romeu Immobles] ✔ 24 (URL directa)
+2026-04-01 22:43:07,369 [INFO] 
+▶ Trading Habitat
+2026-04-01 22:43:07,371 [INFO] [Trading Habitat] → https://www.tradinghabitat.com/alquileres/
+2026-04-01 22:43:19,186 [INFO] [Trading Habitat]   1 anuncios
+2026-04-01 22:43:19,187 [INFO] [Trading Habitat] ✔ 1 (URL directa)
+2026-04-01 22:43:23,368 [INFO] 
+▶ Finques Garcia
+2026-04-01 22:43:23,369 [INFO] [Finques Garcia] → http://www.finquesgarcia.com/propiedades/
+2026-04-01 22:43:31,892 [INFO] [Finques Garcia]   1 anuncios
+2026-04-01 22:43:31,896 [INFO] [Finques Garcia] ✔ 1 (URL directa)
+2026-04-01 22:43:36,246 [INFO] 
+▶ Minerva Inmobiliaria
+2026-04-01 22:43:36,247 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/propiedades/
+2026-04-01 22:43:44,567 [INFO] [Minerva Inmobiliaria]   0 anuncios
+2026-04-01 22:43:44,568 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/alquiler/
+2026-04-01 22:43:51,270 [INFO] [Minerva Inmobiliaria]   0 anuncios
+2026-04-01 22:43:51,270 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/inmuebles/
+2026-04-01 22:43:57,568 [INFO] [Minerva Inmobiliaria]   0 anuncios
+2026-04-01 22:43:57,568 [INFO] [Minerva Inmobiliaria] Descubriendo desde home (JS): https://www.minervainmobiliaria.es
+2026-04-01 22:44:04,993 [INFO] [Minerva Inmobiliaria] 2 candidatos descubiertos
+2026-04-01 22:44:04,994 [INFO] [Minerva Inmobiliaria] → https://www.minervainmobiliaria.es/ficha/local-comercial/amposta/valletes/10966/23654702/es/
+2026-04-01 22:44:15,142 [INFO] [Minerva Inmobiliaria]   3 anuncios
+2026-04-01 22:44:15,142 [INFO] [Minerva Inmobiliaria] ✔ Total: 3
+2026-04-01 22:44:20,803 [INFO] 
+▶ Home In
+2026-04-01 22:44:20,804 [INFO] [Home In] → http://www.homein.cat/ca/lloguer/
+2026-04-01 22:44:27,061 [INFO] [Home In]   1 anuncios
+2026-04-01 22:44:27,062 [INFO] [Home In] ✔ 1 (URL directa)
+2026-04-01 22:44:31,543 [INFO] 
+▶ Ebre Taxacions
+2026-04-01 22:44:31,544 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/propiedades/
+2026-04-01 22:44:38,532 [INFO] [Ebre Taxacions]   0 anuncios
+2026-04-01 22:44:38,532 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/alquiler/
+2026-04-01 22:44:45,042 [INFO] [Ebre Taxacions]   0 anuncios
+2026-04-01 22:44:45,042 [INFO] [Ebre Taxacions] Descubriendo desde home (JS): http://www.ebretaxacions.com
+2026-04-01 22:44:51,586 [INFO] [Ebre Taxacions] 2 candidatos descubiertos
+2026-04-01 22:44:51,586 [INFO] [Ebre Taxacions] → http://www.ebretaxacions.com/ficha/local-comercial/amposta/centro/5978/26266706/es/
+2026-04-01 22:44:58,061 [INFO] [Ebre Taxacions]   3 anuncios
+2026-04-01 22:44:58,061 [INFO] [Ebre Taxacions] ✔ Total: 3
+2026-04-01 22:45:02,164 [INFO] 
+▶ ImmoEbre
+2026-04-01 22:45:02,166 [INFO] [ImmoEbre] → https://www.immoebre.com/cerca/
+2026-04-01 22:45:11,632 [INFO] [ImmoEbre]   0 anuncios
+2026-04-01 22:45:11,632 [INFO] [ImmoEbre] → https://www.immoebre.com/buscar/
+2026-04-01 22:45:20,226 [INFO] [ImmoEbre]   0 anuncios
+2026-04-01 22:45:20,227 [INFO] [ImmoEbre] → https://www.immoebre.com/propietats/
+2026-04-01 22:45:28,608 [INFO] [ImmoEbre]   0 anuncios
+2026-04-01 22:45:28,609 [INFO] [ImmoEbre] Descubriendo desde home (JS): https://www.immoebre.com
+2026-04-01 22:45:38,137 [INFO] [ImmoEbre] 0 candidatos descubiertos
+2026-04-01 22:45:38,138 [INFO] [ImmoEbre] ✔ Total: 0
+2026-04-01 22:45:41,200 [INFO] 
+▶ Delta del Ebro
+2026-04-01 22:45:41,201 [INFO] [Delta del Ebro] → https://inmobiliaria-deltadelebro.com/es/alquiler/
+2026-04-01 22:45:46,883 [INFO] [Delta del Ebro]   3 anuncios
+2026-04-01 22:45:46,883 [INFO] [Delta del Ebro] ✔ 3 (URL directa)
+2026-04-01 22:45:53,795 [INFO] 
+▶ Finques Roca
+2026-04-01 22:45:53,797 [INFO] [Finques Roca] → https://www.finquesroca.com/ca/lloguer/
+2026-04-01 22:46:01,943 [INFO] [Finques Roca]   0 anuncios
+2026-04-01 22:46:01,943 [INFO] [Finques Roca] → https://www.finquesroca.com/propietats/
+2026-04-01 22:46:10,049 [INFO] [Finques Roca]   0 anuncios
+2026-04-01 22:46:10,050 [INFO] [Finques Roca] Descubriendo desde home (JS): https://www.finquesroca.com
+2026-04-01 22:46:18,884 [INFO] [Finques Roca] 3 candidatos descubiertos
+2026-04-01 22:46:18,884 [INFO] [Finques Roca] → https://www.finquesroca.com/alquiler/
+2026-04-01 22:46:25,991 [INFO] [Finques Roca]   2 anuncios
+2026-04-01 22:46:25,991 [INFO] [Finques Roca] → https://www.finquesroca.com/tel:[[oficinas=>tfijo]]
+2026-04-01 22:46:34,024 [INFO] [Finques Roca]   0 anuncios
+2026-04-01 22:46:34,037 [INFO] [Finques Roca] ✔ Total: 2
+2026-04-01 22:46:37,378 [INFO] 
+▶ IAD España
+2026-04-01 22:46:37,379 [INFO] [IAD España] → https://www.iadespana.es/anuncios/alquiler/locales/amposta/
+2026-04-01 22:46:45,404 [INFO] [IAD España]   6 anuncios
+2026-04-01 22:46:45,405 [INFO] [IAD España] ✔ 6 (URL directa)
+2026-04-01 22:46:49,182 [INFO] 
+▶ SAFTI España
+2026-04-01 22:46:49,183 [INFO] [SAFTI España] → https://www.safti.es/anuncios/?operacion=alquiler&localidad=amposta
+2026-04-01 22:46:56,197 [INFO] [SAFTI España]   0 anuncios
+2026-04-01 22:46:56,198 [INFO] [SAFTI España] → https://www.safti.es/propiedades/
+2026-04-01 22:47:03,379 [INFO] [SAFTI España]   0 anuncios
+2026-04-01 22:47:03,380 [INFO] [SAFTI España] Descubriendo desde home (JS): https://www.safti.es
+2026-04-01 22:47:10,971 [INFO] [SAFTI España] 0 candidatos descubiertos
+2026-04-01 22:47:10,971 [INFO] [SAFTI España] ✔ Total: 0
+2026-04-01 22:47:15,224 [INFO] 
+============================================================
+2026-04-01 22:47:15,225 [INFO]   RESUMEN FINAL
+2026-04-01 22:47:15,225 [INFO]   — Idealista                       0
+2026-04-01 22:47:15,225 [INFO]   ✔ Fotocasa                        1
+2026-04-01 22:47:15,225 [INFO]   ✔ Habitaclia                     29
+2026-04-01 22:47:15,225 [INFO]   ✔ Pisos.com                     248
+2026-04-01 22:47:15,225 [INFO]   — Yaencontre                      0
+2026-04-01 22:47:15,225 [INFO]   ✔ Wallapop                        7
+2026-04-01 22:47:15,225 [INFO]   — Finques Marivent                0
+2026-04-01 22:47:15,225 [INFO]   ✔ Finques Farnós                  4
+2026-04-01 22:47:15,225 [INFO]   ✔ Romeu Immobles                 24
+2026-04-01 22:47:15,225 [INFO]   ✔ Trading Habitat                 1
+2026-04-01 22:47:15,225 [INFO]   ✔ Finques Garcia                  1
+2026-04-01 22:47:15,225 [INFO]   ✔ Minerva Inmobiliaria            3
+2026-04-01 22:47:15,225 [INFO]   ✔ Home In                         1
+2026-04-01 22:47:15,225 [INFO]   ✔ Ebre Taxacions                  3
+2026-04-01 22:47:15,225 [INFO]   — ImmoEbre                        0
+2026-04-01 22:47:15,225 [INFO]   ✔ Delta del Ebro                  3
+2026-04-01 22:47:15,225 [INFO]   ✔ Finques Roca                    2
+2026-04-01 22:47:15,225 [INFO]   ✔ IAD España                      6
+2026-04-01 22:47:15,225 [INFO]   — SAFTI España                    0
+2026-04-01 22:47:15,225 [INFO] 
+  TOTAL ÚNICO: 86
+2026-04-01 22:47:15,225 [INFO] ============================================================
+2026-04-01 22:47:15,883 [INFO] ✅ Excel: oficinas_amposta_20260401_224715.xlsx
+2026-04-01 22:47:15,889 [INFO] ✅ CSV guardado

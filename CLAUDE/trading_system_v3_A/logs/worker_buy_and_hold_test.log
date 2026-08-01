@@ -1,8 +1,0 @@
-2025-12-29 21:23:09 - Worker.buy_and_hold_test - INFO - Worker logging initialized - buy_and_hold_test -> logs/worker_buy_and_hold_test.log
-2025-12-29 21:23:09 - Worker.buy_and_hold_test - INFO - 🔧 Worker buy_and_hold_test initialized with separate logging + ODS support + Event Logger + Swing Transition
-2025-12-29 21:23:09 - Worker.buy_and_hold_test - INFO - 🚀 Buy and Hold Worker initialized
-   Trading window: 9.50h - 16.00h ET
-   VWAP requirement: +0.5% minimum, slope 0.0001
-   Quality threshold: 60
-   Max trades per symbol: 1
-   Stops: SL=5%, TP=15%, Trailing=8%/3%, Max=24h
