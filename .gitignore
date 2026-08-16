@@ -19,3 +19,17 @@ rules_insample.csv
 
 # macOS
 .DS_Store
+
+# Python build artefacts — 475 .pyc files were tracked until 2026-08-16
+# (9.5 MB). They are machine- and interpreter-version specific, so they
+# produce diff noise on every run and never carry information.
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtualenvs — never commit
+.venv/
+venv/
