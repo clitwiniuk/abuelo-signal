@@ -36,6 +36,7 @@ class IBKRDataService:
         self._ib      = None
         self._loop    = asyncio.new_event_loop()
         self._thread  = threading.Thread(target=self._run, daemon=True, name="ibkr-svc")
+        self._consecutive_zero_fetches = 0
 
     # ------------------------------------------------------------------
     # PUBLIC API
@@ -101,16 +102,44 @@ class IBKRDataService:
                     continue
 
             try:
-                await self._fetch_all_bars()
+                saved_count, requested_count = await self._fetch_all_bars()
                 self.last_fetch = datetime.now(ET)
+                if requested_count > 0 and saved_count == 0:
+                    self._consecutive_zero_fetches += 1
+                else:
+                    self._consecutive_zero_fetches = 0
             except Exception as e:
                 log.error(f"IBKR fetch error: {e}")
                 self.error_msg = str(e)
                 self.connected = False
+                self._consecutive_zero_fetches = 0
                 try:
                     self._ib.disconnect()
                 except Exception:
                     pass
+
+            # Re-requesting the exact same tickers/bar-size/duration every 60s
+            # forever is what trips IBKR's "identical historical data request"
+            # pacing limit in the first place (seen 2026-09-02..09-10: stuck at
+            # 0/40 for over a week because the retry loop kept re-triggering
+            # the same violation). Once several cycles in a row come back
+            # empty, force a fresh connection (new session resets IBKR's
+            # per-client pacing state) and back off well past 60s before
+            # hammering it again.
+            if self._consecutive_zero_fetches >= 3:
+                log.warning(
+                    f"IBKR: {self._consecutive_zero_fetches} consecutive empty fetches — "
+                    "forcing reconnect and backing off 10min to clear the historical-data "
+                    "pacing violation instead of retrying every 60s."
+                )
+                try:
+                    self._ib.disconnect()
+                except Exception:
+                    pass
+                self.connected = False
+                self._consecutive_zero_fetches = 0
+                await asyncio.sleep(600)
+                continue
 
             await asyncio.sleep(60)  # fetch every minute
 
@@ -122,7 +151,7 @@ class IBKRDataService:
 
         if not tickers:
             log.info("IBKR fetch_all_bars: no tickers tracked yet")
-            return
+            return 0, 0
 
         log.info(f"IBKR fetching bars for {len(tickers)} tickers: {tickers[:10]}{'...' if len(tickers)>10 else ''}")
         saved_count = 0
@@ -153,7 +182,7 @@ class IBKRDataService:
                 log.debug(f"  {symbol}: timeout")
                 return False
             except Exception as e:
-                log.debug(f"  {symbol}: {e}")
+                log.warning(f"  {symbol}: reqHistoricalData failed: {e}")
                 return False
 
         # Procesar en batches de BATCH tickers en paralelo
@@ -164,6 +193,13 @@ class IBKRDataService:
             await asyncio.sleep(0.5)  # pausa entre batches
 
         log.info(f"IBKR fetch complete: {saved_count}/{len(tickers)} tickers had data")
+        if saved_count == 0:
+            log.warning(
+                f"IBKR fetch got 0/{len(tickers)} tickers — likely a historical-data "
+                "pacing violation on this persistent connection (clientId="
+                f"{CLIENT_ID}). See per-symbol warnings above for the actual IBKR error. "
+                "Caller will force a reconnect after 3 consecutive empty fetches."
+            )
 
         if self._on_status_change:
             self._on_status_change(f"⚡ IBKR: {saved_count}/{len(tickers)} tickers con bars")
@@ -172,6 +208,8 @@ class IBKRDataService:
                 self._on_bars_saved()
             except Exception as e:
                 log.warning(f"on_bars_saved callback error: {e}")
+
+        return saved_count, len(tickers)
 
     def _save_bars(self, symbol: str, bars):
         conn = sqlite3.connect(self.db_path)
