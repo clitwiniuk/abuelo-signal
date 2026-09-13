@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Finviz snapshot capture server (python/server.py). Found 2026-09-13
+         that this had not been running since 2026-07-29 -- it was only ever
+         started manually (Electron UI "Start" button or a manual `python3
+         server.py`), never auto-started, so the candidate universe this
+         project uses for V6 Long / PMH_TOUCH research (burst_universe,
+         derived from these snapshots) silently stopped growing the same day
+         V6 Long was disabled. The server itself already self-gates on market
+         hours (is_market_open()) and auto-calls start_scheduler() on boot
+         (fix f13ed02, 2026-07-20) -- it only needed to actually be running.
+         This plist keeps it running continuously (KeepAlive) independent of
+         whether V6 Long is enabled or disabled -- pure read-only market-data
+         capture, no orders, no relation to v6_long_enabled.
+         Install:  launchctl bootstrap gui/$UID ~/Library/LaunchAgents/com.trading.finviz-snapshot-server.plist
+         Logs:     logs/launchd_finviz_snapshot_server.log
+         Data:     ~/Library/Application Support/finviz-dashboard/finviz_snapshots.db -->
+    <key>Label</key>
+    <string>com.trading.finviz-snapshot-server</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/trading_system_v3/.venv/bin/python3</string>
+        <string>server.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/finviz-dashboard/python</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/finviz-dashboard/logs/launchd_finviz_snapshot_server.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/carlos/proyectos/TRADING/1_PROYECTOS_ACTIVOS/CLAUDE/finviz-dashboard/logs/launchd_finviz_snapshot_server.log</string>
+</dict>
+</plist>
