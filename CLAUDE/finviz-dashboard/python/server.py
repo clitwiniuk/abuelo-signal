@@ -82,6 +82,29 @@ _US_MARKET_HOLIDAYS = {
 }
 
 FINVIZ_URL = "https://finviz.com/"
+
+
+def _finviz_session() -> requests.Session:
+    """Session that connects over IPv4 only.
+
+    Since 2026-09-30 Cloudflare answers finviz.com with 403 to the VPS's IPv6
+    address while IPv4 from the same host returns 200, and getaddrinfo lists
+    IPv6 first. Binding the source address to 0.0.0.0 makes urllib3 skip IPv6
+    for this session only. Set FINVIZ_FORCE_IPV4=0 to go back to the default.
+    """
+    from requests.adapters import HTTPAdapter
+
+    class _IPv4Adapter(HTTPAdapter):
+        def init_poolmanager(self, *args, **kwargs):
+            kwargs["source_address"] = ("0.0.0.0", 0)
+            super().init_poolmanager(*args, **kwargs)
+
+    session = requests.Session()
+    if os.environ.get("FINVIZ_FORCE_IPV4", "1") != "0":
+        session.mount("https://", _IPv4Adapter())
+        session.mount("http://", _IPv4Adapter())
+    return session
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -281,7 +304,7 @@ def parse_volume(v):
 
 def fetch_homepage() -> list:
     try:
-        resp = requests.get(FINVIZ_URL, headers=HEADERS, timeout=20)
+        resp = _finviz_session().get(FINVIZ_URL, headers=HEADERS, timeout=20)
         resp.raise_for_status()
     except Exception as e:
         add_log(f"ERROR descargando finviz.com: {e}")
