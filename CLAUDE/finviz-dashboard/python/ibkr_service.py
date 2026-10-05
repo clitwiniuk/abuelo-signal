@@ -7,12 +7,13 @@
 """
 import asyncio
 import os
-import sqlite3
 import threading
 import logging
 from datetime import datetime
 
 import pytz
+
+from sqlite_writer import execute_write
 
 log = logging.getLogger(__name__)
 ET = pytz.timezone("America/New_York")
@@ -212,23 +213,23 @@ class IBKRDataService:
         return saved_count, len(tickers)
 
     def _save_bars(self, symbol: str, bars):
-        conn = sqlite3.connect(self.db_path)
-        for bar in bars:
-            try:
-                dt = bar.date
-                if hasattr(dt, "strftime"):
-                    bar_time = dt.astimezone(ET).strftime("%Y-%m-%dT%H:%M:%S")
-                else:
-                    bar_time = str(dt)
-                vwap = getattr(bar, "average", None)
-                conn.execute(
-                    """INSERT OR REPLACE INTO market_bars
-                           (bar_time, ticker, open, high, low, close, volume, vwap)
-                       VALUES (?,?,?,?,?,?,?,?)""",
-                    (bar_time, symbol, bar.open, bar.high, bar.low,
-                     bar.close, bar.volume, vwap),
-                )
-            except Exception as e:
-                log.warning(f"Save bar error {symbol}: {e}")
-        conn.commit()
-        conn.close()
+        def insert_bars(conn):
+            for bar in bars:
+                try:
+                    dt = bar.date
+                    if hasattr(dt, "strftime"):
+                        bar_time = dt.astimezone(ET).strftime("%Y-%m-%dT%H:%M:%S")
+                    else:
+                        bar_time = str(dt)
+                    vwap = getattr(bar, "average", None)
+                    conn.execute(
+                        """INSERT OR REPLACE INTO market_bars
+                               (bar_time, ticker, open, high, low, close, volume, vwap)
+                           VALUES (?,?,?,?,?,?,?,?)""",
+                        (bar_time, symbol, bar.open, bar.high, bar.low,
+                         bar.close, bar.volume, vwap),
+                    )
+                except Exception as e:
+                    log.warning(f"Save bar error {symbol}: {e}")
+
+        execute_write(self.db_path, insert_bars)
