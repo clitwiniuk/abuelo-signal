@@ -33,6 +33,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from ibkr_service import IBKRDataService
+from scheduler_guard import run_scheduler_cycle as _run_scheduler_cycle
+from sqlite_writer import DB_WRITE_LOCK, execute_write, insert_snapshot_rows
 
 def df_records(df):
     """Convierte DataFrame a lista de dicts reemplazando NaN/Inf por None."""
@@ -82,6 +84,29 @@ _US_MARKET_HOLIDAYS = {
 }
 
 FINVIZ_URL = "https://finviz.com/"
+
+
+def _finviz_session() -> requests.Session:
+    """Session that connects over IPv4 only.
+
+    Since 2026-09-30 Cloudflare answers finviz.com with 403 to the VPS's IPv6
+    address while IPv4 from the same host returns 200, and getaddrinfo lists
+    IPv6 first. Binding the source address to 0.0.0.0 makes urllib3 skip IPv6
+    for this session only. Set FINVIZ_FORCE_IPV4=0 to go back to the default.
+    """
+    from requests.adapters import HTTPAdapter
+
+    class _IPv4Adapter(HTTPAdapter):
+        def init_poolmanager(self, *args, **kwargs):
+            kwargs["source_address"] = ("0.0.0.0", 0)
+            super().init_poolmanager(*args, **kwargs)
+
+    session = requests.Session()
+    if os.environ.get("FINVIZ_FORCE_IPV4", "1") != "0":
+        session.mount("https://", _IPv4Adapter())
+        session.mount("http://", _IPv4Adapter())
+    return session
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -99,6 +124,7 @@ KNOWN_CATEGORIES = {
 scheduler_status = {
     "running":       False,
     "last_snapshot": None,
+    "last_scheduler_error": None,
     "market_open":   False,
     "logs":          [],
 }
@@ -109,7 +135,8 @@ log = logging.getLogger(__name__)
 def _on_ibkr_bars_saved():
     """Callback: se llama cada vez que IBKR termina de guardar bars (cada ~60s)."""
     try:
-        compute_hype(DB_PATH)
+        with DB_WRITE_LOCK:
+            compute_hype(DB_PATH)
         scheduler_status["last_hype_refresh"] = datetime.now(ET_TIMEZONE).isoformat()
         add_log(f"⚡ Hype actualizado (IBKR bars)")
         log.info("Hype recalculado tras fetch IBKR")
@@ -281,7 +308,7 @@ def parse_volume(v):
 
 def fetch_homepage() -> list:
     try:
-        resp = requests.get(FINVIZ_URL, headers=HEADERS, timeout=20)
+        resp = _finviz_session().get(FINVIZ_URL, headers=HEADERS, timeout=20)
         resp.raise_for_status()
     except Exception as e:
         add_log(f"ERROR descargando finviz.com: {e}")
@@ -344,15 +371,11 @@ def fetch_homepage() -> list:
 def save_rows(rows: list, timestamp: str) -> int:
     if not rows:
         return 0
-    conn = sqlite3.connect(DB_PATH)
-    for r in rows:
-        conn.execute(
-            "INSERT INTO snapshots (timestamp, category, ticker, price, change_pct, volume) "
-            "VALUES (?,?,?,?,?,?)",
-            (timestamp, r["category"], r["ticker"], r["price"], r["change_pct"], r["volume"])
-        )
-    conn.commit()
-    conn.close()
+
+    def insert_rows(conn):
+        insert_snapshot_rows(conn, rows, timestamp)
+
+    execute_write(DB_PATH, insert_rows)
     return len(rows)
 
 # ------------------------------------------------------------------
@@ -400,7 +423,8 @@ def run_snapshot(force: bool = False):
 
     # Calcular métricas hype
     try:
-        compute_hype(DB_PATH)
+        with DB_WRITE_LOCK:
+            compute_hype(DB_PATH)
         scheduler_status["last_hype_refresh"] = datetime.now(ET_TIMEZONE).isoformat()
         add_log(f"Hype calculado para {len(tickers)} tickers")
     except Exception as e:
@@ -408,7 +432,8 @@ def run_snapshot(force: bool = False):
 
     # Calcular inplay scores
     try:
-        inplay = compute_inplay_scores(DB_PATH)
+        with DB_WRITE_LOCK:
+            inplay = compute_inplay_scores(DB_PATH)
         top_grades = [r for r in inplay if r["inplay_grade"] in ("A+", "A")]
         add_log(f"Inplay: {len(top_grades)} tickers A+/A de {len(inplay)} — " +
                 ", ".join(f"{r['ticker']}({r['inplay_grade']})" for r in top_grades[:5]))
@@ -421,11 +446,21 @@ def run_snapshot(force: bool = False):
 
 def scheduler_loop():
     while scheduler_status["running"]:
-        run_snapshot()
+        run_scheduler_cycle()
         for _ in range(INTERVAL_SEC * 2):
             if not scheduler_status["running"]:
                 break
             time.sleep(0.5)
+
+
+def run_scheduler_cycle():
+    """Run one snapshot cycle without allowing one failure to kill the worker."""
+    error = _run_scheduler_cycle(run_snapshot, log, add_log)
+    scheduler_status["last_scheduler_error"] = (
+        {"message": str(error), "at": datetime.now(ET_TIMEZONE).isoformat()}
+        if error
+        else None
+    )
 
 # ------------------------------------------------------------------
 # ENDPOINTS — LIVE (existentes)
@@ -459,13 +494,16 @@ def manual_snapshot():
 def reset_hype():
     """Borra solo hype_metrics de hoy (mantiene market_bars) y recomputa desde cero."""
     day = datetime.now(ET_TIMEZONE).strftime("%Y-%m-%d")
-    conn = sqlite3.connect(DB_PATH)
-    deleted = conn.execute("DELETE FROM hype_metrics WHERE timestamp LIKE ?", (f"{day}%",)).rowcount
-    conn.commit()
-    conn.close()
+    def delete_today(conn):
+        return conn.execute(
+            "DELETE FROM hype_metrics WHERE timestamp LIKE ?", (f"{day}%",)
+        ).rowcount
+
+    deleted = execute_write(DB_PATH, delete_today)
     add_log(f"Hype reset: {deleted} filas borradas, recomputando...")
     try:
-        compute_hype(DB_PATH)
+        with DB_WRITE_LOCK:
+            compute_hype(DB_PATH)
         add_log("✅ Hype recomputado desde cero")
     except Exception as e:
         add_log(f"ERROR recompute: {e}")
