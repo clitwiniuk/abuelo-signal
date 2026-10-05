@@ -82,10 +82,16 @@ curl -X POST http://localhost:8000/api/worker/stop \
 ---
 
 ## Tests
-Para ejecutar los tests automatizados:
+El comando de tests desde la raíz ejecuta la smoke suite mantenida del
+backend Python de Finviz Dashboard:
+
 ```bash
-USE_DUMMY_BROKER=true pytest -v algoplatform/tests/
+pytest -q
 ```
+
+Las suites históricas de trading y los proyectos independientes no forman
+parte de la colección raíz. Deben ejecutarse desde su propio directorio,
+con su configuración y dependencias específicas.
 
 ---
 
