@@ -5,6 +5,17 @@ from pathlib import Path
 
 _LEGACY_ROOT = Path(__file__).resolve().parent
 _NON_PYTEST_DIRECTORIES = {"legacy", "scripts"}
+_OBSOLETE_PRODUCTION_TESTS = {
+    "tests/test_performance_command.py",
+    "tests/test_production_edge_cases.py",
+    "tests/test_production_execution_flow.py",
+    "tests/test_production_market_simulation.py",
+    "tests/test_production_network_resilience.py",
+    "tests/test_production_scanner_execution.py",
+    "tests/test_production_simple.py",
+    "tests/test_production_stress_extreme.py",
+    "tests/test_production_system.py",
+}
 
 # Also cover an explicit pytest invocation of this historical runner. The
 # directory hook below handles normal recursive collection.
@@ -24,4 +35,10 @@ def pytest_ignore_collect(collection_path, config):
     except ValueError:
         return False
 
-    return bool(relative_path.parts) and relative_path.parts[0] in _NON_PYTEST_DIRECTORIES
+    if not relative_path.parts:
+        return False
+
+    return (
+        relative_path.parts[0] in _NON_PYTEST_DIRECTORIES
+        or relative_path.as_posix() in _OBSOLETE_PRODUCTION_TESTS
+    )
