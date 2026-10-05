@@ -34,7 +34,7 @@ from contextlib import asynccontextmanager
 
 from ibkr_service import IBKRDataService
 from scheduler_guard import run_scheduler_cycle as _run_scheduler_cycle
-from sqlite_writer import DB_WRITE_LOCK, execute_write
+from sqlite_writer import DB_WRITE_LOCK, execute_write, insert_snapshot_rows
 
 def df_records(df):
     """Convierte DataFrame a lista de dicts reemplazando NaN/Inf por None."""
@@ -373,14 +373,7 @@ def save_rows(rows: list, timestamp: str) -> int:
         return 0
 
     def insert_rows(conn):
-        conn.executemany(
-            "INSERT INTO snapshots (timestamp, category, ticker, price, change_pct, volume) "
-            "VALUES (?,?,?,?,?,?)",
-            [
-                (timestamp, r["category"], r["ticker"], r["price"], r["change_pct"], r["volume"])
-                for r in rows
-            ],
-        )
+        insert_snapshot_rows(conn, rows, timestamp)
 
     execute_write(DB_PATH, insert_rows)
     return len(rows)

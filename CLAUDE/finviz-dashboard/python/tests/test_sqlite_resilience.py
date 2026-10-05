@@ -9,7 +9,7 @@ PYTHON_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PYTHON_DIR))
 
 from scheduler_guard import run_scheduler_cycle
-from sqlite_writer import execute_write
+from sqlite_writer import execute_write, insert_snapshot_rows
 
 
 def _create_events_db(path):
@@ -63,6 +63,35 @@ def test_write_retries_after_an_external_lock_is_released(tmp_path):
 
     with sqlite3.connect(db_path) as conn:
         assert conn.execute("SELECT COUNT(*) FROM events").fetchone()[0] == 1
+
+
+def test_snapshot_write_is_idempotent_for_the_same_snapshot(tmp_path):
+    db_path = tmp_path / "snapshots.db"
+    with sqlite3.connect(db_path) as conn:
+        conn.execute(
+            """CREATE TABLE snapshots (
+                timestamp TEXT, category TEXT, ticker TEXT,
+                price TEXT, change_pct TEXT, volume TEXT
+            )"""
+        )
+
+    rows = [{
+        "category": "Top Gainers",
+        "ticker": "TEST",
+        "price": "1.00",
+        "change_pct": "20%",
+        "volume": "100K",
+    }]
+    write_snapshot = lambda: execute_write(
+        db_path,
+        lambda conn: insert_snapshot_rows(conn, rows, "2026-10-05T09:45:00-0400"),
+    )
+
+    write_snapshot()
+    write_snapshot()
+
+    with sqlite3.connect(db_path) as conn:
+        assert conn.execute("SELECT COUNT(*) FROM snapshots").fetchone()[0] == 1
 
 
 def test_scheduler_cycle_logs_failure_without_dying():

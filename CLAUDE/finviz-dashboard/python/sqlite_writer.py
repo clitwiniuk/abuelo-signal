@@ -21,6 +21,33 @@ DEFAULT_BUSY_TIMEOUT_MS = 1_000
 DEFAULT_RETRY_DELAYS = (0.05, 0.1, 0.2, 0.4, 0.8, 1.6)
 
 
+def insert_snapshot_rows(conn: sqlite3.Connection, rows: list[dict], timestamp: str) -> None:
+    """Insert a Finviz snapshot once, even if its transaction is replayed."""
+    conn.executemany(
+        """INSERT INTO snapshots
+               (timestamp, category, ticker, price, change_pct, volume)
+           SELECT ?, ?, ?, ?, ?, ?
+           WHERE NOT EXISTS (
+               SELECT 1 FROM snapshots
+               WHERE timestamp=? AND category=? AND ticker=?
+           )""",
+        [
+            (
+                timestamp,
+                row["category"],
+                row["ticker"],
+                row["price"],
+                row["change_pct"],
+                row["volume"],
+                timestamp,
+                row["category"],
+                row["ticker"],
+            )
+            for row in rows
+        ],
+    )
+
+
 def execute_write(
     db_path: str | Path,
     operation: Callable[[sqlite3.Connection], T],
