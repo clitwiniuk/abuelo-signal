@@ -142,7 +142,7 @@ Expected: four tests pass and Python compilation succeeds.
 
 **Interfaces:**
 - Consumes: verified configuration and documentation from Tasks 2–3.
-- Produces: a clean pushed branch and PR targeting `feature/scanner-backtest`.
+- Produces: a clean pushed branch and stacked PR targeting `fix/finviz-sqlite-lock`; it can target `feature/scanner-backtest` after the base Finviz PR is merged.
 
 - [ ] **Step 1: Review the final diff**
 
